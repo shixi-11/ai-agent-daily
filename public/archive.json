@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-07-24T00:25:06.1648130Z",
+  "generatedAt": "2026-07-25T00:57:01.4211370Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-07-24",
-    "url": "/daily/2026/07/24/",
+    "date": "2026-07-25",
+    "url": "/daily/2026/07/25/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/07/24/"
+    "alternateUrl": "/daily/en/2026/07/25/"
   },
   "reports": [
+    {
+      "date": "2026-07-25",
+      "title": "AI Agent策略随运行流动",
+      "lead": "今天最有价值的变化，是网络白名单、持久文件、后台 Agent、工具增删、调用取消与恢复 epoch 开始共同定义一次生产运行：状态不仅要留下，还要携带当时有效的权限和责任。",
+      "url": "/daily/2026/07/25/",
+      "alternateUrl": "/daily/en/2026/07/25/",
+      "publicPath": "2026/07/25/index.html",
+      "sourceFile": "20260725_ALUX_AI智能体情报日报.html",
+      "sha256": "180f43bc12a6cfdafae17d90019427b7b8d2338f7e07d98a8f80586f34943818",
+      "publicSha256": "ebd068ce22e63e3ccd9b9c3a930fd60b61e8e46e90214a264aaf3e6d3f8cc212"
+    },
     {
       "date": "2026-07-24",
       "title": "AI Agent状态权限一体收敛",
@@ -21,7 +32,7 @@
       "publicPath": "2026/07/24/index.html",
       "sourceFile": "20260724_ALUX_AI智能体情报日报.html",
       "sha256": "7cca2fd978df3bc0ac2276659e97fde99bd76b3b6ce453356d7a451159baaace",
-      "publicSha256": "469d2736dafd1e68b35e7a3d2de361070b7940230b9fc140e30d2d7c363b21a2"
+      "publicSha256": "46d971889041b2d6fa8579c5568dfff9aaf094d7639b23e51a2a55536730af68"
     },
     {
       "date": "2026-07-23",
