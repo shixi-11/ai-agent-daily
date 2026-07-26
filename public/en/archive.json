@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-07-25T00:57:01.4211370Z",
+  "generatedAt": "2026-07-26T00:52:47.5234020Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-07-25",
-    "url": "/daily/en/2026/07/25/",
+    "date": "2026-07-26",
+    "url": "/daily/en/2026/07/26/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/07/25/"
+    "alternateUrl": "/daily/2026/07/26/"
   },
   "reports": [
+    {
+      "date": "2026-07-26",
+      "title": "AI Agent — Recovery Semantics Become Protocol",
+      "lead": "Today’s highest-value shift is not another tool. Frameworks are confronting a harder question: after a broken connection, a parallel branch, a model upgrade, or an upstream event-schema change, how can a system continue without duplicating effects, pairing the wrong state, or leaking its evidence?",
+      "url": "/daily/en/2026/07/26/",
+      "alternateUrl": "/daily/2026/07/26/",
+      "publicPath": "en/2026/07/26/index.html",
+      "sourceFile": "20260726.body.html",
+      "sha256": "50846f98d7f4ec9d485efe8bf8791e01d7096cc78554fce1fd3cde2cce11efd0",
+      "publicSha256": "dda5dba44f6a0a847955c28e8157dd122c677f892d6b6b66a922a6a655deaaf5"
+    },
     {
       "date": "2026-07-25",
       "title": "AI Agent — Policy moves with the run",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/07/25/index.html",
       "sourceFile": "20260725.body.html",
       "sha256": "ce944d5f80d7f983f4f420d772c0c47185d52e4198608a2e31c745c9d17ed1cf",
-      "publicSha256": "ed21fedb51ae70c552ac75722272108248b7d23b9a222b001bd5aa91b6355b41"
+      "publicSha256": "3716755fbf03533cad6eae916c3d1b694ef3f4592bcc3624c038c6459df6a367"
     },
     {
       "date": "2026-07-24",

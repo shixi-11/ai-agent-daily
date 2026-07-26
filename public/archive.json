@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-07-25T00:57:01.4211370Z",
+  "generatedAt": "2026-07-26T00:52:47.5234020Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-07-25",
-    "url": "/daily/2026/07/25/",
+    "date": "2026-07-26",
+    "url": "/daily/2026/07/26/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/07/25/"
+    "alternateUrl": "/daily/en/2026/07/26/"
   },
   "reports": [
+    {
+      "date": "2026-07-26",
+      "title": "AI Agent恢复语义进入协议",
+      "lead": "今天最有价值的变化，不是 Agent 又多会一种工具，而是框架开始正面处理一个更难的问题：连接中断、并行分支、模型版本和上游事件变化后，系统怎样继续而不重复动作、不配错状态，也不泄露证据。",
+      "url": "/daily/2026/07/26/",
+      "alternateUrl": "/daily/en/2026/07/26/",
+      "publicPath": "2026/07/26/index.html",
+      "sourceFile": "20260726_ALUX_AI智能体情报日报.html",
+      "sha256": "d7cb136ec59352067d81e48a40d81f338299007186a01ff78771fd6f1e13d74a",
+      "publicSha256": "6228868e43625a56ce89320d9f4ebb81db34f916a8a2f4942a5e8f4995dbbb9b"
+    },
     {
       "date": "2026-07-25",
       "title": "AI Agent策略随运行流动",
@@ -21,7 +32,7 @@
       "publicPath": "2026/07/25/index.html",
       "sourceFile": "20260725_ALUX_AI智能体情报日报.html",
       "sha256": "180f43bc12a6cfdafae17d90019427b7b8d2338f7e07d98a8f80586f34943818",
-      "publicSha256": "ebd068ce22e63e3ccd9b9c3a930fd60b61e8e46e90214a264aaf3e6d3f8cc212"
+      "publicSha256": "955578a6bbab4056fb8b31db60dc7f337045634cc31f56d9d6c175ddc0293d69"
     },
     {
       "date": "2026-07-24",
