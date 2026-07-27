@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-07-26T00:52:47.5234020Z",
+  "generatedAt": "2026-07-27T01:06:48.0492370Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-07-26",
-    "url": "/daily/en/2026/07/26/",
+    "date": "2026-07-27",
+    "url": "/daily/en/2026/07/27/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/07/26/"
+    "alternateUrl": "/daily/2026/07/27/"
   },
   "reports": [
+    {
+      "date": "2026-07-27",
+      "title": "AI Agent — Capability provenance enters the accountability chain",
+      "lead": "Today’s most important shift is that skills, model routes, session state, and trace context are no longer just framework configuration. Production systems must now account for their provenance and versions, along with approval bypasses and supply-chain risk.",
+      "url": "/daily/en/2026/07/27/",
+      "alternateUrl": "/daily/2026/07/27/",
+      "publicPath": "en/2026/07/27/index.html",
+      "sourceFile": "20260727.body.html",
+      "sha256": "f6c0c16cd65150bebb243b5c119f28f43605b1da6107457befeb707d5b55feb9",
+      "publicSha256": "dba8ca91a7d6252316dae6e0c48c5f2c84f0b91d8fad6564a5bd86924dc42138"
+    },
     {
       "date": "2026-07-26",
       "title": "AI Agent — Recovery Semantics Become Protocol",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/07/26/index.html",
       "sourceFile": "20260726.body.html",
       "sha256": "50846f98d7f4ec9d485efe8bf8791e01d7096cc78554fce1fd3cde2cce11efd0",
-      "publicSha256": "dda5dba44f6a0a847955c28e8157dd122c677f892d6b6b66a922a6a655deaaf5"
+      "publicSha256": "23b9dad7fb558896eec9330b59fdc2704dcdcc199cec24cee203505ffb79fa74"
     },
     {
       "date": "2026-07-25",
