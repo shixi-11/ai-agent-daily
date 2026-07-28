@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-07-27T01:06:48.0492370Z",
+  "generatedAt": "2026-07-28T00:28:46.0524570Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-07-27",
-    "url": "/daily/2026/07/27/",
+    "date": "2026-07-28",
+    "url": "/daily/2026/07/28/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/07/27/"
+    "alternateUrl": "/daily/en/2026/07/28/"
   },
   "reports": [
+    {
+      "date": "2026-07-28",
+      "title": "AI Agent程序执行需要责任边界",
+      "lead": "今天最重要的变化，是模型开始用代码协调工具，连接器、浏览器、记忆和观测系统则同步暴露权限、恢复与证据缺口。Agent 的“大脑”继续加速，生产责任正在向运行时下沉。",
+      "url": "/daily/2026/07/28/",
+      "alternateUrl": "/daily/en/2026/07/28/",
+      "publicPath": "2026/07/28/index.html",
+      "sourceFile": "20260728_ALUX_AI智能体情报日报.html",
+      "sha256": "f34ea1ebb658ca3b14f5cc4f9b33ee2b113feac008071080f69cdca5e5fabac3",
+      "publicSha256": "795dd8b17f3525422baf68a1368cc6099ff91470742f1aa184d4cf2777734b37"
+    },
     {
       "date": "2026-07-27",
       "title": "AI Agent能力来源进入责任链",
@@ -21,7 +32,7 @@
       "publicPath": "2026/07/27/index.html",
       "sourceFile": "20260727_ALUX_AI智能体情报日报.html",
       "sha256": "00160112d6f5c4e69f9e637ad8cf20d3c0b89dded350bf83c83691706d9a39ca",
-      "publicSha256": "ebafd785c473085032569c7a3cd5b1218fd47f6527a4826e0ffe506b7c12d696"
+      "publicSha256": "0ac930de55a4ff7dae0963b0f319825f9a0d7d02113739bddb094ddcd89d7ac6"
     },
     {
       "date": "2026-07-26",

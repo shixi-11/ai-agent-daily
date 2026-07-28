@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-07-27T01:06:48.0492370Z",
+  "generatedAt": "2026-07-28T00:28:46.0524570Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-07-27",
-    "url": "/daily/en/2026/07/27/",
+    "date": "2026-07-28",
+    "url": "/daily/en/2026/07/28/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/07/27/"
+    "alternateUrl": "/daily/2026/07/28/"
   },
   "reports": [
+    {
+      "date": "2026-07-28",
+      "title": "AI Agent — Program execution needs clear accountability boundaries",
+      "lead": "Today’s most important shift is that models are beginning to coordinate tools through code, while connectors, browsers, memory, and observability systems are exposing gaps in authorization, recovery, and evidence. The agent’s “brain” keeps advancing as production responsibility moves down into the runtime.",
+      "url": "/daily/en/2026/07/28/",
+      "alternateUrl": "/daily/2026/07/28/",
+      "publicPath": "en/2026/07/28/index.html",
+      "sourceFile": "20260728.body.html",
+      "sha256": "c602f79b648a86ad28b795562a88bad6c2417bc00b64ce4d278a3ad8cb17a1a4",
+      "publicSha256": "ca0f3817659b06a0282bfc3c1f70761579644c57c0fd7578a9c2ccda4593341a"
+    },
     {
       "date": "2026-07-27",
       "title": "AI Agent — Capability provenance enters the accountability chain",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/07/27/index.html",
       "sourceFile": "20260727.body.html",
       "sha256": "f6c0c16cd65150bebb243b5c119f28f43605b1da6107457befeb707d5b55feb9",
-      "publicSha256": "dba8ca91a7d6252316dae6e0c48c5f2c84f0b91d8fad6564a5bd86924dc42138"
+      "publicSha256": "a63df89f339836c3d77f34bb4004c52b069b498f60236d1196e5d0878fef9576"
     },
     {
       "date": "2026-07-26",
