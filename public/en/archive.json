@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-07-28T00:28:46.0524570Z",
+  "generatedAt": "2026-07-29T00:20:49.7236140Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-07-28",
-    "url": "/daily/en/2026/07/28/",
+    "date": "2026-07-29",
+    "url": "/daily/en/2026/07/29/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/07/28/"
+    "alternateUrl": "/daily/2026/07/29/"
   },
   "reports": [
+    {
+      "date": "2026-07-29",
+      "title": "AI Agent — Suspension and Recovery Enter the Responsibility Chain",
+      "lead": "Today’s most important shift is that agent frameworks are formalizing long-running job suspension, cancellation propagation, collaboration reconnects, and per-call termination. Yet workspace isolation, capability scope, and external effects remain outside a unified runtime proof boundary.",
+      "url": "/daily/en/2026/07/29/",
+      "alternateUrl": "/daily/2026/07/29/",
+      "publicPath": "en/2026/07/29/index.html",
+      "sourceFile": "20260729.body.html",
+      "sha256": "e02c1aec6aee6c1c696240f6abd99d0a39441a413c8486b821e6d6921ec351df",
+      "publicSha256": "566b45dfe57ff01945f96d064fd4e354a720c357f9a5708fdb8c6503ffdb8657"
+    },
     {
       "date": "2026-07-28",
       "title": "AI Agent — Program execution needs clear accountability boundaries",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/07/28/index.html",
       "sourceFile": "20260728.body.html",
       "sha256": "c602f79b648a86ad28b795562a88bad6c2417bc00b64ce4d278a3ad8cb17a1a4",
-      "publicSha256": "ca0f3817659b06a0282bfc3c1f70761579644c57c0fd7578a9c2ccda4593341a"
+      "publicSha256": "058806db82c3cc40d3e1bbf7925b6bf911a778ceae540f05a45e2777f41d7fad"
     },
     {
       "date": "2026-07-27",

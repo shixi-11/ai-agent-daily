@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-07-28T00:28:46.0524570Z",
+  "generatedAt": "2026-07-29T00:20:49.7236140Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-07-28",
-    "url": "/daily/2026/07/28/",
+    "date": "2026-07-29",
+    "url": "/daily/2026/07/29/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/07/28/"
+    "alternateUrl": "/daily/en/2026/07/29/"
   },
   "reports": [
+    {
+      "date": "2026-07-29",
+      "title": "AI Agent暂停恢复进入责任链",
+      "lead": "今天最重要的变化，是 Agent 框架开始显式处理长任务暂停、取消传播、协作重连和逐调用终止；与此同时，工作区隔离、能力范围与外部效果仍没有被同一运行时统一证明。",
+      "url": "/daily/2026/07/29/",
+      "alternateUrl": "/daily/en/2026/07/29/",
+      "publicPath": "2026/07/29/index.html",
+      "sourceFile": "20260729_ALUX_AI智能体情报日报.html",
+      "sha256": "10bf6254d958a9e5eab6ee830b4a51b193cd82cdaec432ad054ccc580e723e93",
+      "publicSha256": "c13531aa699cdca12aeb605e1e482fd8ce12400ebbe0a13b4cb7a3e8665d2f56"
+    },
     {
       "date": "2026-07-28",
       "title": "AI Agent程序执行需要责任边界",
@@ -21,7 +32,7 @@
       "publicPath": "2026/07/28/index.html",
       "sourceFile": "20260728_ALUX_AI智能体情报日报.html",
       "sha256": "f34ea1ebb658ca3b14f5cc4f9b33ee2b113feac008071080f69cdca5e5fabac3",
-      "publicSha256": "795dd8b17f3525422baf68a1368cc6099ff91470742f1aa184d4cf2777734b37"
+      "publicSha256": "954d658e43b533d32627c4cab2e6956c95fd2419e1d2cb3bab34f986486cb29e"
     },
     {
       "date": "2026-07-27",
