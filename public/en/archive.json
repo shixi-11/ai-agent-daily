@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-07-29T00:20:49.7236140Z",
+  "generatedAt": "2026-07-30T00:18:58.4924480Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-07-29",
-    "url": "/daily/en/2026/07/29/",
+    "date": "2026-07-30",
+    "url": "/daily/en/2026/07/30/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/07/29/"
+    "alternateUrl": "/daily/2026/07/30/"
   },
   "reports": [
+    {
+      "date": "2026-07-30",
+      "title": "AI Agent — Permissions and recovery share one chain",
+      "lead": "Today’s most important shift is not another model feature. Write contracts, patch activation, cancellation propagation, protocol schemas, budget termination, and observability alerts are moving into the agent’s formal runtime surface.",
+      "url": "/daily/en/2026/07/30/",
+      "alternateUrl": "/daily/2026/07/30/",
+      "publicPath": "en/2026/07/30/index.html",
+      "sourceFile": "20260730.body.html",
+      "sha256": "d842c7be450bef4c8fe5935d439c59717e56f766deb27b1d600390e198c73017",
+      "publicSha256": "45dda12f95a8066616756f712d0737f7aaa2d813660df36b7f14d35659339a3c"
+    },
     {
       "date": "2026-07-29",
       "title": "AI Agent — Suspension and Recovery Enter the Responsibility Chain",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/07/29/index.html",
       "sourceFile": "20260729.body.html",
       "sha256": "e02c1aec6aee6c1c696240f6abd99d0a39441a413c8486b821e6d6921ec351df",
-      "publicSha256": "566b45dfe57ff01945f96d064fd4e354a720c357f9a5708fdb8c6503ffdb8657"
+      "publicSha256": "0b4d0d3b22b99385c608a00f049d53561aa4fad9ea325353dcc8e5b4483d353c"
     },
     {
       "date": "2026-07-28",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-07-29T00:20:49.7236140Z",
+  "generatedAt": "2026-07-30T00:18:58.4924480Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-07-29",
-    "url": "/daily/2026/07/29/",
+    "date": "2026-07-30",
+    "url": "/daily/2026/07/30/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/07/29/"
+    "alternateUrl": "/daily/en/2026/07/30/"
   },
   "reports": [
+    {
+      "date": "2026-07-30",
+      "title": "AI Agent权限与恢复同链",
+      "lead": "今天最重要的变化不是模型再加一项能力，而是写入契约、补丁激活、取消传播、协议 schema、预算终止和观测告警开始进入 Agent 的正式运行面。",
+      "url": "/daily/2026/07/30/",
+      "alternateUrl": "/daily/en/2026/07/30/",
+      "publicPath": "2026/07/30/index.html",
+      "sourceFile": "20260730_ALUX_AI智能体情报日报.html",
+      "sha256": "5abd7a7483e98530573368e1d2b76475c854b6830787e522408a89835e39aa3f",
+      "publicSha256": "3db2102029b0621105685682146aa1b495f5199177af12a0990957847c9cf1bb"
+    },
     {
       "date": "2026-07-29",
       "title": "AI Agent暂停恢复进入责任链",
@@ -21,7 +32,7 @@
       "publicPath": "2026/07/29/index.html",
       "sourceFile": "20260729_ALUX_AI智能体情报日报.html",
       "sha256": "10bf6254d958a9e5eab6ee830b4a51b193cd82cdaec432ad054ccc580e723e93",
-      "publicSha256": "c13531aa699cdca12aeb605e1e482fd8ce12400ebbe0a13b4cb7a3e8665d2f56"
+      "publicSha256": "7d0315d2cfdc44b5cb3cac9d1f8ab686214b3fd6df8fe1faee79c5e7d0461c2b"
     },
     {
       "date": "2026-07-28",
