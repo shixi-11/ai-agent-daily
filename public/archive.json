@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-07-30T00:18:58.4924480Z",
+  "generatedAt": "2026-07-31T00:26:29.0085600Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-07-30",
-    "url": "/daily/2026/07/30/",
+    "date": "2026-07-31",
+    "url": "/daily/2026/07/31/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/07/30/"
+    "alternateUrl": "/daily/en/2026/07/31/"
   },
   "reports": [
+    {
+      "date": "2026-07-31",
+      "title": "AI Agent恢复开始携带责任",
+      "lead": "今天最重要的变化，是检查点、工具失败、工作区信任、A2A 认证、插件 Agent、状态命名空间与制品签名开始被写成可验证的生产责任。",
+      "url": "/daily/2026/07/31/",
+      "alternateUrl": "/daily/en/2026/07/31/",
+      "publicPath": "2026/07/31/index.html",
+      "sourceFile": "20260731_ALUX_AI智能体情报日报.html",
+      "sha256": "5ee97d908fd60bd951092f111a778dd8eb5818e759f7e23e5ae972e3494fb1c0",
+      "publicSha256": "937737af405ec108bd4c4edab6820deb004b6366eee4f649629a4d5af0ff0b6b"
+    },
     {
       "date": "2026-07-30",
       "title": "AI Agent权限与恢复同链",
@@ -21,7 +32,7 @@
       "publicPath": "2026/07/30/index.html",
       "sourceFile": "20260730_ALUX_AI智能体情报日报.html",
       "sha256": "5abd7a7483e98530573368e1d2b76475c854b6830787e522408a89835e39aa3f",
-      "publicSha256": "3db2102029b0621105685682146aa1b495f5199177af12a0990957847c9cf1bb"
+      "publicSha256": "58702699c0634501afc8f02f83a1c2a84598dfc35e96689d8fd9464ace13c941"
     },
     {
       "date": "2026-07-29",

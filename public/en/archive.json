@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-07-30T00:18:58.4924480Z",
+  "generatedAt": "2026-07-31T00:26:29.0085600Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-07-30",
-    "url": "/daily/en/2026/07/30/",
+    "date": "2026-07-31",
+    "url": "/daily/en/2026/07/31/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/07/30/"
+    "alternateUrl": "/daily/2026/07/31/"
   },
   "reports": [
+    {
+      "date": "2026-07-31",
+      "title": "AI Agent — Recovery now comes with accountability",
+      "lead": "Today’s most important shift is that checkpoints, tool failures, workspace trust, A2A authentication, plugin agents, state namespaces, and artifact signatures are becoming verifiable production responsibilities.",
+      "url": "/daily/en/2026/07/31/",
+      "alternateUrl": "/daily/2026/07/31/",
+      "publicPath": "en/2026/07/31/index.html",
+      "sourceFile": "20260731.body.html",
+      "sha256": "3a8f77cb31699b9190b0d9f9cf580bf8867ffd3641d8422df98639e8bf9b0bff",
+      "publicSha256": "a20236f745b48e6492796700260c8c1efaeb53218dd8eb634cf2dd089a52e8de"
+    },
     {
       "date": "2026-07-30",
       "title": "AI Agent — Permissions and recovery share one chain",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/07/30/index.html",
       "sourceFile": "20260730.body.html",
       "sha256": "d842c7be450bef4c8fe5935d439c59717e56f766deb27b1d600390e198c73017",
-      "publicSha256": "45dda12f95a8066616756f712d0737f7aaa2d813660df36b7f14d35659339a3c"
+      "publicSha256": "f45b38522ac7afea070354717b0205666080aeedad95520ca20c12702d97a24e"
     },
     {
       "date": "2026-07-29",
