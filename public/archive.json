@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-07-31T00:26:29.0085600Z",
+  "generatedAt": "2026-08-01T00:20:56.6256520Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-07-31",
-    "url": "/daily/2026/07/31/",
+    "date": "2026-08-01",
+    "url": "/daily/2026/08/01/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/07/31/"
+    "alternateUrl": "/daily/en/2026/08/01/"
   },
   "reports": [
+    {
+      "date": "2026-08-01",
+      "title": "AI Agent副作用决定恢复边界",
+      "lead": "今天最值得看的变化，不是 Agent 又多了一项功能，而是副作用、循环预算、启动环境、沙箱镜像、工具结果与中断状态开始决定它能否安全继续。",
+      "url": "/daily/2026/08/01/",
+      "alternateUrl": "/daily/en/2026/08/01/",
+      "publicPath": "2026/08/01/index.html",
+      "sourceFile": "20260801_ALUX_AI智能体情报日报.html",
+      "sha256": "cbf41c8f8e9cfff8e73e51a94ff479dfa680c111d0e462394cadcee2629c5ce3",
+      "publicSha256": "af029b40db7048db3e8a4eb1ff5c0c1069f4f30e8b1d07ed985cac3aeaeda6d6"
+    },
     {
       "date": "2026-07-31",
       "title": "AI Agent恢复开始携带责任",
@@ -21,7 +32,7 @@
       "publicPath": "2026/07/31/index.html",
       "sourceFile": "20260731_ALUX_AI智能体情报日报.html",
       "sha256": "5ee97d908fd60bd951092f111a778dd8eb5818e759f7e23e5ae972e3494fb1c0",
-      "publicSha256": "937737af405ec108bd4c4edab6820deb004b6366eee4f649629a4d5af0ff0b6b"
+      "publicSha256": "4dbe9bd084f7ee378760ad68f8c10904048de431de252db195d8fab4edf55710"
     },
     {
       "date": "2026-07-30",

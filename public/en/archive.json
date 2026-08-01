@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-07-31T00:26:29.0085600Z",
+  "generatedAt": "2026-08-01T00:20:56.6256520Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-07-31",
-    "url": "/daily/en/2026/07/31/",
+    "date": "2026-08-01",
+    "url": "/daily/en/2026/08/01/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/07/31/"
+    "alternateUrl": "/daily/2026/08/01/"
   },
   "reports": [
+    {
+      "date": "2026-08-01",
+      "title": "AI Agent — Side effects define the recovery boundary",
+      "lead": "Today’s consequential shift is not another agent feature. Side effects, loop budgets, startup context, sandbox images, tool outcomes, and interruption state are beginning to determine whether an agent may safely continue.",
+      "url": "/daily/en/2026/08/01/",
+      "alternateUrl": "/daily/2026/08/01/",
+      "publicPath": "en/2026/08/01/index.html",
+      "sourceFile": "20260801.body.html",
+      "sha256": "47a733a06ef7eda8ba6828a1bedbc7782f7bdd6eb9138908e3f91e9df67b3246",
+      "publicSha256": "340f6afbb2e910588d9dc96a0cf4d160c5f2aadde8752ae149f00b87839930a9"
+    },
     {
       "date": "2026-07-31",
       "title": "AI Agent — Recovery now comes with accountability",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/07/31/index.html",
       "sourceFile": "20260731.body.html",
       "sha256": "3a8f77cb31699b9190b0d9f9cf580bf8867ffd3641d8422df98639e8bf9b0bff",
-      "publicSha256": "a20236f745b48e6492796700260c8c1efaeb53218dd8eb634cf2dd089a52e8de"
+      "publicSha256": "a7e016ade450725525df98c449251ddf5c4d136ea79a6baedf5fd74f48288eae"
     },
     {
       "date": "2026-07-30",
