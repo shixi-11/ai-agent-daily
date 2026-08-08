@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-01T00:20:56.6256520Z",
+  "generatedAt": "2026-08-08T04:33:15.9038010Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-01",
-    "url": "/daily/2026/08/01/",
+    "date": "2026-08-08",
+    "url": "/daily/2026/08/08/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/01/"
+    "alternateUrl": "/daily/en/2026/08/08/"
   },
   "reports": [
+    {
+      "date": "2026-08-08",
+      "title": "AI Agent失败路径开始有状态",
+      "lead": "今天最有价值的变化不在模型更会说什么，而在系统如何处理取消、护栏、检查点、沙箱、后台执行与渠道委派：异常路径正被写成明确状态。",
+      "url": "/daily/2026/08/08/",
+      "alternateUrl": "/daily/en/2026/08/08/",
+      "publicPath": "2026/08/08/index.html",
+      "sourceFile": "20260808_ALUX_AI智能体情报日报.html",
+      "sha256": "c52b7de5ccb3c94501d442a694c47404fdfa6c8eca009e30216d6232e5631c93",
+      "publicSha256": "1c845d146bc329a74a8962b5273c4483236bf0947eeae4233e0bb8ccec220ac8"
+    },
     {
       "date": "2026-08-01",
       "title": "AI Agent副作用决定恢复边界",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/01/index.html",
       "sourceFile": "20260801_ALUX_AI智能体情报日报.html",
       "sha256": "cbf41c8f8e9cfff8e73e51a94ff479dfa680c111d0e462394cadcee2629c5ce3",
-      "publicSha256": "af029b40db7048db3e8a4eb1ff5c0c1069f4f30e8b1d07ed985cac3aeaeda6d6"
+      "publicSha256": "2d2170130f5a102e3f8dc7a1a603b19ad4552a02bb8e0b8ac16a97fe4f015c62"
     },
     {
       "date": "2026-07-31",

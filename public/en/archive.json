@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-01T00:20:56.6256520Z",
+  "generatedAt": "2026-08-08T04:33:15.9038010Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-01",
-    "url": "/daily/en/2026/08/01/",
+    "date": "2026-08-08",
+    "url": "/daily/en/2026/08/08/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/01/"
+    "alternateUrl": "/daily/2026/08/08/"
   },
   "reports": [
+    {
+      "date": "2026-08-08",
+      "title": "AI Agent — Failure paths are becoming stateful",
+      "lead": "Today’s most valuable changes are not about what models can say. They are about how systems handle cancellation, guardrails, checkpoints, sandboxes, background execution, and channel delegation: exceptional paths are becoming explicit runtime state.",
+      "url": "/daily/en/2026/08/08/",
+      "alternateUrl": "/daily/2026/08/08/",
+      "publicPath": "en/2026/08/08/index.html",
+      "sourceFile": "20260808.body.html",
+      "sha256": "d03a794bae96b92195d7ea536cebf5fae33f058c494f2c518347a0fab8fa34e6",
+      "publicSha256": "6274b14958a1d608da33aaf417a87c27e582e4c3b6544c44c17e75b52d8fc49a"
+    },
     {
       "date": "2026-08-01",
       "title": "AI Agent — Side effects define the recovery boundary",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/01/index.html",
       "sourceFile": "20260801.body.html",
       "sha256": "47a733a06ef7eda8ba6828a1bedbc7782f7bdd6eb9138908e3f91e9df67b3246",
-      "publicSha256": "340f6afbb2e910588d9dc96a0cf4d160c5f2aadde8752ae149f00b87839930a9"
+      "publicSha256": "f1dbdb6937ece528812545026862f9e1289bfc618a00d2e3e7d3b25bc422b491"
     },
     {
       "date": "2026-07-31",
