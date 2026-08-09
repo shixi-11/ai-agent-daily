@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-08T04:33:15.9038010Z",
+  "generatedAt": "2026-08-09T00:18:34.4513240Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-08",
-    "url": "/daily/en/2026/08/08/",
+    "date": "2026-08-09",
+    "url": "/daily/en/2026/08/09/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/08/"
+    "alternateUrl": "/daily/2026/08/09/"
   },
   "reports": [
+    {
+      "date": "2026-08-09",
+      "title": "AI Agent — Sessions are crossing execution surfaces",
+      "lead": "The most important shift today is that sessions are moving across devices, self-hosted machines, and child execution surfaces. At the same time, tool revelation, cancellation, snapshots, approvals, artifact signatures, and cost attribution are becoming production responsibilities.",
+      "url": "/daily/en/2026/08/09/",
+      "alternateUrl": "/daily/2026/08/09/",
+      "publicPath": "en/2026/08/09/index.html",
+      "sourceFile": "20260809.body.html",
+      "sha256": "91f270fa499c136570252796b9cae08910e6a0a836ca60c79b2670dce553f0a2",
+      "publicSha256": "3bff8c6660cf06371acf890b8c2c58eb968b9c971e3e7ecd0f2b04909448242b"
+    },
     {
       "date": "2026-08-08",
       "title": "AI Agent — Failure paths are becoming stateful",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/08/index.html",
       "sourceFile": "20260808.body.html",
       "sha256": "d03a794bae96b92195d7ea536cebf5fae33f058c494f2c518347a0fab8fa34e6",
-      "publicSha256": "6274b14958a1d608da33aaf417a87c27e582e4c3b6544c44c17e75b52d8fc49a"
+      "publicSha256": "fba2a8ba8d9eb89d7f333b1994a9ac6ed3faa3b55dda0cae99df9a1bb755a976"
     },
     {
       "date": "2026-08-01",

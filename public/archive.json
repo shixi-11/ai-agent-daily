@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-08T04:33:15.9038010Z",
+  "generatedAt": "2026-08-09T00:18:34.4513240Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-08",
-    "url": "/daily/2026/08/08/",
+    "date": "2026-08-09",
+    "url": "/daily/2026/08/09/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/08/"
+    "alternateUrl": "/daily/en/2026/08/09/"
   },
   "reports": [
+    {
+      "date": "2026-08-09",
+      "title": "AI Agent会话开始跨越执行面",
+      "lead": "今天最重要的变化，是会话开始跨设备、自托管机器与子执行面流动；与此同时，工具显露、取消、快照、审批、制品签名和成本归属开始被写成生产责任。",
+      "url": "/daily/2026/08/09/",
+      "alternateUrl": "/daily/en/2026/08/09/",
+      "publicPath": "2026/08/09/index.html",
+      "sourceFile": "20260809_ALUX_AI智能体情报日报.html",
+      "sha256": "e6be83cb1c90aaedd7c4d1de458dbbbcbf8e86ccb88eb10033d6c655d73da20c",
+      "publicSha256": "814b61ff4b94da2af2cbde86edebc07b19b4cca1ee7d2c360fb23df9bcd96c51"
+    },
     {
       "date": "2026-08-08",
       "title": "AI Agent失败路径开始有状态",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/08/index.html",
       "sourceFile": "20260808_ALUX_AI智能体情报日报.html",
       "sha256": "c52b7de5ccb3c94501d442a694c47404fdfa6c8eca009e30216d6232e5631c93",
-      "publicSha256": "1c845d146bc329a74a8962b5273c4483236bf0947eeae4233e0bb8ccec220ac8"
+      "publicSha256": "7e50818cc61c30b37595b9011caa1a78ce678050ce96460745ef907507850295"
     },
     {
       "date": "2026-08-01",
