@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-09T00:18:34.4513240Z",
+  "generatedAt": "2026-08-10T00:20:39.9309159Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-09",
-    "url": "/daily/2026/08/09/",
+    "date": "2026-08-10",
+    "url": "/daily/2026/08/10/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/09/"
+    "alternateUrl": "/daily/en/2026/08/10/"
   },
   "reports": [
+    {
+      "date": "2026-08-10",
+      "title": "AI Agent可靠性成为生产门槛",
+      "lead": "今天最值得追踪的不是又多了几个 Agent 功能，而是失败分类、资源预算、幂等回执、恢复历史和副作用控制开始进入正式产品合同。",
+      "url": "/daily/2026/08/10/",
+      "alternateUrl": "/daily/en/2026/08/10/",
+      "publicPath": "2026/08/10/index.html",
+      "sourceFile": "20260810_ALUX_AI智能体情报日报.html",
+      "sha256": "fd5e098a2406089a68db628aa74cd9f73a050c7fa816ddfd5e4767b74f59d269",
+      "publicSha256": "42e1d5216eaf145dfe81080e9f1d62801a1136126c43bfc694e57636b0f916ba"
+    },
     {
       "date": "2026-08-09",
       "title": "AI Agent会话开始跨越执行面",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/09/index.html",
       "sourceFile": "20260809_ALUX_AI智能体情报日报.html",
       "sha256": "e6be83cb1c90aaedd7c4d1de458dbbbcbf8e86ccb88eb10033d6c655d73da20c",
-      "publicSha256": "814b61ff4b94da2af2cbde86edebc07b19b4cca1ee7d2c360fb23df9bcd96c51"
+      "publicSha256": "623661049ccf9be5c8803fe0c965e398491476c3a255f16dfd8c2924dc454381"
     },
     {
       "date": "2026-08-08",

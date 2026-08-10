@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-09T00:18:34.4513240Z",
+  "generatedAt": "2026-08-10T00:20:39.9309159Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-09",
-    "url": "/daily/en/2026/08/09/",
+    "date": "2026-08-10",
+    "url": "/daily/en/2026/08/10/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/09/"
+    "alternateUrl": "/daily/2026/08/10/"
   },
   "reports": [
+    {
+      "date": "2026-08-10",
+      "title": "AI Agent — Reliability Is Becoming the Bar for Production",
+      "lead": "The most important shift is not another wave of agent features. Failure taxonomy, resource budgets, idempotency receipts, recoverable history, and side-effect controls are becoming part of the formal production contract.",
+      "url": "/daily/en/2026/08/10/",
+      "alternateUrl": "/daily/2026/08/10/",
+      "publicPath": "en/2026/08/10/index.html",
+      "sourceFile": "20260810.body.html",
+      "sha256": "3beede1b97e10669f29b2f2904844a937c37dc03e8e250206168c7d23675fac9",
+      "publicSha256": "7e9bc4fd1e628aff02adc91c0c51099ccbfdd11817f5ca3a42f4712d8f5baab3"
+    },
     {
       "date": "2026-08-09",
       "title": "AI Agent — Sessions are crossing execution surfaces",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/09/index.html",
       "sourceFile": "20260809.body.html",
       "sha256": "91f270fa499c136570252796b9cae08910e6a0a836ca60c79b2670dce553f0a2",
-      "publicSha256": "3bff8c6660cf06371acf890b8c2c58eb968b9c971e3e7ecd0f2b04909448242b"
+      "publicSha256": "1ab181227cfe7792d713ea508f66168d60d343e60529c621b34657c01ee594b8"
     },
     {
       "date": "2026-08-08",
