@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-10T00:20:39.9309159Z",
+  "generatedAt": "2026-08-11T05:59:16.1413643Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-10",
-    "url": "/daily/2026/08/10/",
+    "date": "2026-08-11",
+    "url": "/daily/2026/08/11/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/10/"
+    "alternateUrl": "/daily/en/2026/08/11/"
   },
   "reports": [
+    {
+      "date": "2026-08-11",
+      "title": "AI Agent恢复必须带着责任",
+      "lead": "今天最值得追踪的变化，是 Agent 恢复、连接与工具副作用开始共享同一组问题：新增输入属于哪次运行，旧审批还能否沿用，外部效果能不能撤销。",
+      "url": "/daily/2026/08/11/",
+      "alternateUrl": "/daily/en/2026/08/11/",
+      "publicPath": "2026/08/11/index.html",
+      "sourceFile": "20260811_ALUX_AI智能体情报日报.html",
+      "sha256": "68c730900ef8086dcc5ae10c584fa915d262c02097e6a93ef1c0055cc0f42a8b",
+      "publicSha256": "9e77260719a81e367847087c8f7cc2751cf7dfbe416131c2cc95bd363bf1e030"
+    },
     {
       "date": "2026-08-10",
       "title": "AI Agent可靠性成为生产门槛",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/10/index.html",
       "sourceFile": "20260810_ALUX_AI智能体情报日报.html",
       "sha256": "fd5e098a2406089a68db628aa74cd9f73a050c7fa816ddfd5e4767b74f59d269",
-      "publicSha256": "42e1d5216eaf145dfe81080e9f1d62801a1136126c43bfc694e57636b0f916ba"
+      "publicSha256": "aaf7bf36a3a1964894177b03738df44bf90f61e8e61f05feb6afacd27051b80c"
     },
     {
       "date": "2026-08-09",

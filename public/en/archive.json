@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-10T00:20:39.9309159Z",
+  "generatedAt": "2026-08-11T05:59:16.1413643Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-10",
-    "url": "/daily/en/2026/08/10/",
+    "date": "2026-08-11",
+    "url": "/daily/en/2026/08/11/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/10/"
+    "alternateUrl": "/daily/2026/08/11/"
   },
   "reports": [
+    {
+      "date": "2026-08-11",
+      "title": "AI Agent — Recovery Must Preserve Accountability",
+      "lead": "The most important shift is that agent recovery, connectivity, and tool side effects are converging on the same questions: which run should receive new input, whether prior approvals remain valid, and whether an external effect can be reversed.",
+      "url": "/daily/en/2026/08/11/",
+      "alternateUrl": "/daily/2026/08/11/",
+      "publicPath": "en/2026/08/11/index.html",
+      "sourceFile": "20260811.body.html",
+      "sha256": "03633591b287c043b6136ba093dd335f88ee8c40c74d54f4424b2b22bd144a99",
+      "publicSha256": "18a06ab6c19364616f50b37f2e9fc1bf0e1fa12588c07dcb6b2d40bfe7a9e0b0"
+    },
     {
       "date": "2026-08-10",
       "title": "AI Agent — Reliability Is Becoming the Bar for Production",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/10/index.html",
       "sourceFile": "20260810.body.html",
       "sha256": "3beede1b97e10669f29b2f2904844a937c37dc03e8e250206168c7d23675fac9",
-      "publicSha256": "7e9bc4fd1e628aff02adc91c0c51099ccbfdd11817f5ca3a42f4712d8f5baab3"
+      "publicSha256": "c50436bde41637bd21916d4332d027df47a0dfcdb0395eba9b3d2040e9630618"
     },
     {
       "date": "2026-08-09",
