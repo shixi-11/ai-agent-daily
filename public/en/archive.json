@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-11T05:59:16.1413643Z",
+  "generatedAt": "2026-08-12T00:23:02.1003833Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-11",
-    "url": "/daily/en/2026/08/11/",
+    "date": "2026-08-12",
+    "url": "/daily/en/2026/08/12/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/11/"
+    "alternateUrl": "/daily/2026/08/12/"
   },
   "reports": [
+    {
+      "date": "2026-08-12",
+      "title": "AI Agent — Admission Before Action",
+      "lead": "Today’s highest-value changes converge at the execution boundary: tools, sessions, paths, grants, recovery state, and human takeover increasingly require identifiable provenance and explicit boundaries.",
+      "url": "/daily/en/2026/08/12/",
+      "alternateUrl": "/daily/2026/08/12/",
+      "publicPath": "en/2026/08/12/index.html",
+      "sourceFile": "20260812.body.html",
+      "sha256": "b1c084716c14fde1fd37e8650000bc340cc1c0afd81c3afc7c8cb79a9b575100",
+      "publicSha256": "9f57fc4f42c1b167b2a166f5cedd3e6e02f17751f4546f7ef5250588d8c4bf8d"
+    },
     {
       "date": "2026-08-11",
       "title": "AI Agent — Recovery Must Preserve Accountability",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/11/index.html",
       "sourceFile": "20260811.body.html",
       "sha256": "03633591b287c043b6136ba093dd335f88ee8c40c74d54f4424b2b22bd144a99",
-      "publicSha256": "18a06ab6c19364616f50b37f2e9fc1bf0e1fa12588c07dcb6b2d40bfe7a9e0b0"
+      "publicSha256": "88041d1ce51d20de4cad04e8005f8ed12edc04b9985c03adcd2e4ac642e8159e"
     },
     {
       "date": "2026-08-10",

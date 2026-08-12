@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-11T05:59:16.1413643Z",
+  "generatedAt": "2026-08-12T00:23:02.1003833Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-11",
-    "url": "/daily/2026/08/11/",
+    "date": "2026-08-12",
+    "url": "/daily/2026/08/12/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/11/"
+    "alternateUrl": "/daily/en/2026/08/12/"
   },
   "reports": [
+    {
+      "date": "2026-08-12",
+      "title": "AI Agent执行资格先于动作",
+      "lead": "今天的高价值变化集中在执行入口：工具、会话、路径、授权、恢复状态和人类接管，都开始要求可识别的来源与边界。",
+      "url": "/daily/2026/08/12/",
+      "alternateUrl": "/daily/en/2026/08/12/",
+      "publicPath": "2026/08/12/index.html",
+      "sourceFile": "20260812_ALUX_AI智能体情报日报.html",
+      "sha256": "f91c4400d14f35c4a1ff9f5374810436f030f8333978954517eb229c6a7dd428",
+      "publicSha256": "1b4bc87071a1e42664d5255bfa4bd65e344531d80287c71cebf3e08b30a729e1"
+    },
     {
       "date": "2026-08-11",
       "title": "AI Agent恢复必须带着责任",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/11/index.html",
       "sourceFile": "20260811_ALUX_AI智能体情报日报.html",
       "sha256": "68c730900ef8086dcc5ae10c584fa915d262c02097e6a93ef1c0055cc0f42a8b",
-      "publicSha256": "9e77260719a81e367847087c8f7cc2751cf7dfbe416131c2cc95bd363bf1e030"
+      "publicSha256": "b8fafe1ad7de31c7cbcd0b6b293f54c3f06cc4ec2e18a3b2f04912ca6f644b90"
     },
     {
       "date": "2026-08-10",
