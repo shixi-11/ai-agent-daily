@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-12T00:23:02.1003833Z",
+  "generatedAt": "2026-08-13T00:24:48.3068143Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-12",
-    "url": "/daily/2026/08/12/",
+    "date": "2026-08-13",
+    "url": "/daily/2026/08/13/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/12/"
+    "alternateUrl": "/daily/en/2026/08/13/"
   },
   "reports": [
+    {
+      "date": "2026-08-13",
+      "title": "AI Agent恢复必须带着边界",
+      "lead": "今天的高价值变化不在模型更聪明，而在会话如何活下去：远程恢复、跨会话切换、长任务检查点、工具入口与 Trace 转移，都开始补一条可验证生命线。",
+      "url": "/daily/2026/08/13/",
+      "alternateUrl": "/daily/en/2026/08/13/",
+      "publicPath": "2026/08/13/index.html",
+      "sourceFile": "20260813_ALUX_AI智能体情报日报.html",
+      "sha256": "95aa05ec729f754dc0c49174cc05678d677e509191d462970e8de6433bbeda8f",
+      "publicSha256": "ce599fb0ab5d4546fbe0fb2a1dd195784397eaa3c61c3c86a55f9b422519b532"
+    },
     {
       "date": "2026-08-12",
       "title": "AI Agent执行资格先于动作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/12/index.html",
       "sourceFile": "20260812_ALUX_AI智能体情报日报.html",
       "sha256": "f91c4400d14f35c4a1ff9f5374810436f030f8333978954517eb229c6a7dd428",
-      "publicSha256": "1b4bc87071a1e42664d5255bfa4bd65e344531d80287c71cebf3e08b30a729e1"
+      "publicSha256": "437c97145ca1819198ae8b01430b18cf196a0f0d72dc13909ec5a0c1a6fbbd03"
     },
     {
       "date": "2026-08-11",

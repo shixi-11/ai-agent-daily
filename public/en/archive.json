@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-12T00:23:02.1003833Z",
+  "generatedAt": "2026-08-13T00:24:48.3068143Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-12",
-    "url": "/daily/en/2026/08/12/",
+    "date": "2026-08-13",
+    "url": "/daily/en/2026/08/13/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/12/"
+    "alternateUrl": "/daily/2026/08/13/"
   },
   "reports": [
+    {
+      "date": "2026-08-13",
+      "title": "AI Agent — Recovery Must Preserve Boundaries",
+      "lead": "Today’s highest-value changes are not about smarter models. They are about keeping sessions alive: remote resumption, cross-session handoffs, long-task checkpoints, tool admission, and trace transfers are beginning to form a verifiable lifeline.",
+      "url": "/daily/en/2026/08/13/",
+      "alternateUrl": "/daily/2026/08/13/",
+      "publicPath": "en/2026/08/13/index.html",
+      "sourceFile": "20260813.body.html",
+      "sha256": "bb5c6bd075abb62f6f9a1930bb5f6ee5095201bf59c22a48145b2f5856ea7137",
+      "publicSha256": "8a4b0133daa2d9fdd246e93fbb61b4014b48a15cc5124433353fa0303061b070"
+    },
     {
       "date": "2026-08-12",
       "title": "AI Agent — Admission Before Action",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/12/index.html",
       "sourceFile": "20260812.body.html",
       "sha256": "b1c084716c14fde1fd37e8650000bc340cc1c0afd81c3afc7c8cb79a9b575100",
-      "publicSha256": "9f57fc4f42c1b167b2a166f5cedd3e6e02f17751f4546f7ef5250588d8c4bf8d"
+      "publicSha256": "046f9184d1586772d9c9afd32bc333f27c30f1ba3890f3a52e6f22852b363282"
     },
     {
       "date": "2026-08-11",
