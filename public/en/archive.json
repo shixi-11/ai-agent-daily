@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-13T00:24:48.3068143Z",
+  "generatedAt": "2026-08-14T00:25:41.2114814Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-13",
-    "url": "/daily/en/2026/08/13/",
+    "date": "2026-08-14",
+    "url": "/daily/en/2026/08/14/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/13/"
+    "alternateUrl": "/daily/2026/08/14/"
   },
   "reports": [
+    {
+      "date": "2026-08-14",
+      "title": "AI Agent — Collaboration Entry Points Gain Authority",
+      "lead": "The highest-value shift today is not toward smarter models, but toward explicit boundaries for sessions, tools, plugins, identity, approvals, and recovery.",
+      "url": "/daily/en/2026/08/14/",
+      "alternateUrl": "/daily/2026/08/14/",
+      "publicPath": "en/2026/08/14/index.html",
+      "sourceFile": "20260814.body.html",
+      "sha256": "6118b7517d6f815dce309c3e404aa8f1c678ce7956de8971563ff4adf54bc93e",
+      "publicSha256": "c03eab924497f742d1d921cdfb754a54118a0f03209b2d249a0a545e78ae6f1c"
+    },
     {
       "date": "2026-08-13",
       "title": "AI Agent — Recovery Must Preserve Boundaries",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/13/index.html",
       "sourceFile": "20260813.body.html",
       "sha256": "bb5c6bd075abb62f6f9a1930bb5f6ee5095201bf59c22a48145b2f5856ea7137",
-      "publicSha256": "8a4b0133daa2d9fdd246e93fbb61b4014b48a15cc5124433353fa0303061b070"
+      "publicSha256": "f476a8ee9a7fbca89f3d9595435a4e4fe2374c8cfc8b12d13128518d8e6a0666"
     },
     {
       "date": "2026-08-12",

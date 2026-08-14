@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-13T00:24:48.3068143Z",
+  "generatedAt": "2026-08-14T00:25:41.2114814Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-13",
-    "url": "/daily/2026/08/13/",
+    "date": "2026-08-14",
+    "url": "/daily/2026/08/14/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/13/"
+    "alternateUrl": "/daily/en/2026/08/14/"
   },
   "reports": [
+    {
+      "date": "2026-08-14",
+      "title": "AI Agent协作入口开始带权",
+      "lead": "今天的高价值变化不在模型更聪明，而在会话、工具、插件、身份、审批与恢复开始携带明确边界。",
+      "url": "/daily/2026/08/14/",
+      "alternateUrl": "/daily/en/2026/08/14/",
+      "publicPath": "2026/08/14/index.html",
+      "sourceFile": "20260814_ALUX_AI智能体情报日报.html",
+      "sha256": "235a2e9ea68b3131d4a0806f9d3a35104a2852e88417ff3b9b837cb445e8a824",
+      "publicSha256": "88460fc63ed46457a53f5f9b961776b8e60b73b943873a1dc8060a0b23b5fd6c"
+    },
     {
       "date": "2026-08-13",
       "title": "AI Agent恢复必须带着边界",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/13/index.html",
       "sourceFile": "20260813_ALUX_AI智能体情报日报.html",
       "sha256": "95aa05ec729f754dc0c49174cc05678d677e509191d462970e8de6433bbeda8f",
-      "publicSha256": "ce599fb0ab5d4546fbe0fb2a1dd195784397eaa3c61c3c86a55f9b422519b532"
+      "publicSha256": "0a4d532b32fbf6d93baaee4b4c26b8f25dbadd43c098f300e5e8185f9ec6e3ad"
     },
     {
       "date": "2026-08-12",
