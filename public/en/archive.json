@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-14T00:25:41.2114814Z",
+  "generatedAt": "2026-08-15T00:22:29.1189396Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-14",
-    "url": "/daily/en/2026/08/14/",
+    "date": "2026-08-15",
+    "url": "/daily/en/2026/08/15/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/14/"
+    "alternateUrl": "/daily/2026/08/15/"
   },
   "reports": [
+    {
+      "date": "2026-08-15",
+      "title": "AI Agent — Provenance and capability determine execution",
+      "lead": "The consequential shift is not another tool. Browser origin, tool capability, executed evidence, observation completeness, and recovery scope are becoming the criteria that determine whether an agent action may continue.",
+      "url": "/daily/en/2026/08/15/",
+      "alternateUrl": "/daily/2026/08/15/",
+      "publicPath": "en/2026/08/15/index.html",
+      "sourceFile": "20260815.body.html",
+      "sha256": "a8f3d89d2ff268819a05250694da91aae43a6f68ec0d325c23825088035126d0",
+      "publicSha256": "ac8f70576b339dee687c31f1ae13875da01576268d80dd8cca22d21213814af8"
+    },
     {
       "date": "2026-08-14",
       "title": "AI Agent — Collaboration Entry Points Gain Authority",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/14/index.html",
       "sourceFile": "20260814.body.html",
       "sha256": "6118b7517d6f815dce309c3e404aa8f1c678ce7956de8971563ff4adf54bc93e",
-      "publicSha256": "c03eab924497f742d1d921cdfb754a54118a0f03209b2d249a0a545e78ae6f1c"
+      "publicSha256": "b095b6eaaa759d47380c28432468d07f7c46730523341260eb0ced9a2142c3ba"
     },
     {
       "date": "2026-08-13",

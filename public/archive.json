@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-14T00:25:41.2114814Z",
+  "generatedAt": "2026-08-15T00:22:29.1189396Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-14",
-    "url": "/daily/2026/08/14/",
+    "date": "2026-08-15",
+    "url": "/daily/2026/08/15/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/14/"
+    "alternateUrl": "/daily/en/2026/08/15/"
   },
   "reports": [
+    {
+      "date": "2026-08-15",
+      "title": "AI Agent来源能力决定执行",
+      "lead": "今天最值得看的不是工具又多了什么，而是浏览器来源、工具能力、执行见证、观察完整性与恢复范围开始决定一次 Agent 动作是否有资格继续。",
+      "url": "/daily/2026/08/15/",
+      "alternateUrl": "/daily/en/2026/08/15/",
+      "publicPath": "2026/08/15/index.html",
+      "sourceFile": "20260815_ALUX_AI智能体情报日报.html",
+      "sha256": "2147d88b723d0c4023590336b7d4f72f593498af506776b831e7db726e7582fd",
+      "publicSha256": "57782ddd501149528a270ee80b11951d5187c00c278176b9edee32df60456b83"
+    },
     {
       "date": "2026-08-14",
       "title": "AI Agent协作入口开始带权",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/14/index.html",
       "sourceFile": "20260814_ALUX_AI智能体情报日报.html",
       "sha256": "235a2e9ea68b3131d4a0806f9d3a35104a2852e88417ff3b9b837cb445e8a824",
-      "publicSha256": "88460fc63ed46457a53f5f9b961776b8e60b73b943873a1dc8060a0b23b5fd6c"
+      "publicSha256": "b6b63c66c347edb344aab841f01f79548e2ece58e5f41dc21cdf3320dd444771"
     },
     {
       "date": "2026-08-13",
