@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-15T00:22:29.1189396Z",
+  "generatedAt": "2026-08-16T00:27:13.2456373Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-15",
-    "url": "/daily/2026/08/15/",
+    "date": "2026-08-16",
+    "url": "/daily/2026/08/16/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/15/"
+    "alternateUrl": "/daily/en/2026/08/16/"
   },
   "reports": [
+    {
+      "date": "2026-08-16",
+      "title": "AI Agent运行状态开始可验证",
+      "lead": "今天的高价值变化不在模型参数，而在运行状态：测试、调用身份、审批轮次、压缩分叉、终止异常与上下文预算开始拥有可核验边界。",
+      "url": "/daily/2026/08/16/",
+      "alternateUrl": "/daily/en/2026/08/16/",
+      "publicPath": "2026/08/16/index.html",
+      "sourceFile": "20260816_ALUX_AI智能体情报日报.html",
+      "sha256": "a85e228366a6682f1f937185ea8c3de2e9cc3b9b7b86e75221133b30f009ce34",
+      "publicSha256": "9de2b6537ca17e29bdfd263b964dc215a04718715a675663a3bdd36bfccd24e3"
+    },
     {
       "date": "2026-08-15",
       "title": "AI Agent来源能力决定执行",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/15/index.html",
       "sourceFile": "20260815_ALUX_AI智能体情报日报.html",
       "sha256": "2147d88b723d0c4023590336b7d4f72f593498af506776b831e7db726e7582fd",
-      "publicSha256": "57782ddd501149528a270ee80b11951d5187c00c278176b9edee32df60456b83"
+      "publicSha256": "e923f263614da22e0802d55cd1ba51671bdd12ce3d99f22e538e5c91de426064"
     },
     {
       "date": "2026-08-14",

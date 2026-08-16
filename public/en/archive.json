@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-15T00:22:29.1189396Z",
+  "generatedAt": "2026-08-16T00:27:13.2456373Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-15",
-    "url": "/daily/en/2026/08/15/",
+    "date": "2026-08-16",
+    "url": "/daily/en/2026/08/16/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/15/"
+    "alternateUrl": "/daily/2026/08/16/"
   },
   "reports": [
+    {
+      "date": "2026-08-16",
+      "title": "AI Agent — Run State Becomes Verifiable",
+      "lead": "Today’s highest-value changes are not about model parameters. They are about run state: tests, invocation identity, approval rounds, compaction forks, terminal exceptions, and context budgets are gaining verifiable boundaries.",
+      "url": "/daily/en/2026/08/16/",
+      "alternateUrl": "/daily/2026/08/16/",
+      "publicPath": "en/2026/08/16/index.html",
+      "sourceFile": "20260816.body.html",
+      "sha256": "3e96028de5a14a171f350f70755d76720335086dc90d54f321b4538e2a452d61",
+      "publicSha256": "e84e1f0f3ec9d58a8a0ffcfd3414eb0a1f4e90219694e8c31f3d2510763ba4b4"
+    },
     {
       "date": "2026-08-15",
       "title": "AI Agent — Provenance and capability determine execution",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/15/index.html",
       "sourceFile": "20260815.body.html",
       "sha256": "a8f3d89d2ff268819a05250694da91aae43a6f68ec0d325c23825088035126d0",
-      "publicSha256": "ac8f70576b339dee687c31f1ae13875da01576268d80dd8cca22d21213814af8"
+      "publicSha256": "423cc55efab7dd7269ed3212016e30169edc2b2760feda2041af7a966726243e"
     },
     {
       "date": "2026-08-14",
