@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-16T00:27:13.2456373Z",
+  "generatedAt": "2026-08-17T00:30:24.7186876Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-16",
-    "url": "/daily/2026/08/16/",
+    "date": "2026-08-17",
+    "url": "/daily/2026/08/17/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/16/"
+    "alternateUrl": "/daily/en/2026/08/17/"
   },
   "reports": [
+    {
+      "date": "2026-08-17",
+      "title": "AI Agent边界成为运行合同",
+      "lead": "今天最值得看的，不是又多了多少功能，而是超时、断网、身份注入、会话分叉、守护进程恢复与工具失败开始被写成可核验边界。",
+      "url": "/daily/2026/08/17/",
+      "alternateUrl": "/daily/en/2026/08/17/",
+      "publicPath": "2026/08/17/index.html",
+      "sourceFile": "20260817_ALUX_AI智能体情报日报.html",
+      "sha256": "b5ad7823496ba83af3be9db4fa0c14a76a2e38fc0c566838c3f2f5bf7bfa6965",
+      "publicSha256": "810da581a5a400dee57aba5f2c8090c23c4eb52a332860587914b759943bac5d"
+    },
     {
       "date": "2026-08-16",
       "title": "AI Agent运行状态开始可验证",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/16/index.html",
       "sourceFile": "20260816_ALUX_AI智能体情报日报.html",
       "sha256": "a85e228366a6682f1f937185ea8c3de2e9cc3b9b7b86e75221133b30f009ce34",
-      "publicSha256": "9de2b6537ca17e29bdfd263b964dc215a04718715a675663a3bdd36bfccd24e3"
+      "publicSha256": "76f2185a5dfa17594d8af39263cca57a07f7fee6e96b2d916a3134ef8c4b8661"
     },
     {
       "date": "2026-08-15",

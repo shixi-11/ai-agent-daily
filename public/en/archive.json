@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-16T00:27:13.2456373Z",
+  "generatedAt": "2026-08-17T00:30:24.7186876Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-16",
-    "url": "/daily/en/2026/08/16/",
+    "date": "2026-08-17",
+    "url": "/daily/en/2026/08/17/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/16/"
+    "alternateUrl": "/daily/2026/08/17/"
   },
   "reports": [
+    {
+      "date": "2026-08-17",
+      "title": "AI Agent — Boundaries Become Runtime Contracts",
+      "lead": "The day's most consequential changes are not new features. Timeouts, network isolation, identity injection, session forks, daemon recovery, and tool failures are becoming explicit, testable boundaries.",
+      "url": "/daily/en/2026/08/17/",
+      "alternateUrl": "/daily/2026/08/17/",
+      "publicPath": "en/2026/08/17/index.html",
+      "sourceFile": "20260817.body.html",
+      "sha256": "18f48054b2c7dab02eb53124effd90855349a9a90b35ce931be20d2c025ee88c",
+      "publicSha256": "fc767e8c1ffc688d69a89da5164f1902f82643fbe73478c3a47dfecf30af09a4"
+    },
     {
       "date": "2026-08-16",
       "title": "AI Agent — Run State Becomes Verifiable",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/16/index.html",
       "sourceFile": "20260816.body.html",
       "sha256": "3e96028de5a14a171f350f70755d76720335086dc90d54f321b4538e2a452d61",
-      "publicSha256": "e84e1f0f3ec9d58a8a0ffcfd3414eb0a1f4e90219694e8c31f3d2510763ba4b4"
+      "publicSha256": "5058842a8bafcb75e5c3b9d538be713108a8e5a0fbca10147d66618a3d7becca"
     },
     {
       "date": "2026-08-15",
