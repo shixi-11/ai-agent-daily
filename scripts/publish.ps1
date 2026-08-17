@@ -123,10 +123,46 @@ if ($LASTEXITCODE -ne 0) {
     Write-Host $commitMessage -ForegroundColor Yellow
 }
 
-if (-not $NoPush) {
-    git -C $siteRoot push origin main
+function Resolve-EquivalentRemoteMain {
+    git -C $siteRoot fetch origin main --quiet
     if ($LASTEXITCODE -ne 0) {
-        throw 'GitHub 推送失败。'
+        return $false
+    }
+
+    $localHead = (git -C $siteRoot rev-parse HEAD 2>$null).Trim()
+    $remoteHead = (git -C $siteRoot rev-parse origin/main 2>$null).Trim()
+    if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace($localHead) -or [string]::IsNullOrWhiteSpace($remoteHead)) {
+        return $false
+    }
+    if ($localHead -eq $remoteHead) {
+        return $true
+    }
+
+    $localTree = (git -C $siteRoot rev-parse 'HEAD^{tree}' 2>$null).Trim()
+    $remoteTree = (git -C $siteRoot rev-parse 'origin/main^{tree}' 2>$null).Trim()
+    if ($LASTEXITCODE -ne 0 -or $localTree -ne $remoteTree) {
+        return $false
+    }
+
+    # Two publishers may commit the same release at nearly the same time.
+    # Rebase drops the duplicate commit while preserving the identical tree.
+    git -C $siteRoot rebase origin/main --quiet
+    if ($LASTEXITCODE -ne 0) {
+        git -C $siteRoot rebase --abort *> $null
+        return $false
+    }
+
+    $alignedHead = (git -C $siteRoot rev-parse HEAD 2>$null).Trim()
+    return $LASTEXITCODE -eq 0 -and $alignedHead -eq $remoteHead
+}
+
+if (-not $NoPush) {
+    $remoteAlreadyHasRelease = Resolve-EquivalentRemoteMain
+    if (-not $remoteAlreadyHasRelease) {
+        git -C $siteRoot push origin main
+        if ($LASTEXITCODE -ne 0 -and -not (Resolve-EquivalentRemoteMain)) {
+            throw 'GitHub 推送失败，且远端 main 不是同一份发布内容。'
+        }
     }
     Write-Host ('已直接提交并推送 main，无需 PR 或人工合并：{0}' -f $commitMessage) -ForegroundColor Green
     & $nodeExecutable (Join-Path $PSScriptRoot 'verify-official-deployment.cjs') $releaseDate
