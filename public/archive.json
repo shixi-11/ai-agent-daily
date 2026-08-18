@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-17T00:30:24.7186876Z",
+  "generatedAt": "2026-08-18T00:17:18.3558017Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-17",
-    "url": "/daily/2026/08/17/",
+    "date": "2026-08-18",
+    "url": "/daily/2026/08/18/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/17/"
+    "alternateUrl": "/daily/en/2026/08/18/"
   },
   "reports": [
+    {
+      "date": "2026-08-18",
+      "title": "AI Agent权限与恢复同轴收紧",
+      "lead": "今天最值得看的，是 Codex、Claude Code、Google ADK、Qwen Code、Browser Use 与 Langfuse 同时把权限、会话、恢复和失败从隐含行为改写成显式合同。",
+      "url": "/daily/2026/08/18/",
+      "alternateUrl": "/daily/en/2026/08/18/",
+      "publicPath": "2026/08/18/index.html",
+      "sourceFile": "20260818_ALUX_AI智能体情报日报.html",
+      "sha256": "64e9e5b88ea308a3d1f34965b6d13e179f60ff10c8515c18be231eb3f06ffca3",
+      "publicSha256": "13ff4cb480da0c8446b30686b160e976040daca21df45d7cc686c0bae0d5f522"
+    },
     {
       "date": "2026-08-17",
       "title": "AI Agent边界成为运行合同",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/17/index.html",
       "sourceFile": "20260817_ALUX_AI智能体情报日报.html",
       "sha256": "b5ad7823496ba83af3be9db4fa0c14a76a2e38fc0c566838c3f2f5bf7bfa6965",
-      "publicSha256": "810da581a5a400dee57aba5f2c8090c23c4eb52a332860587914b759943bac5d"
+      "publicSha256": "06df568ffdcae9489c0e4dc2ccf5972b3c31788c5a35c9f9dd2a55480ae52ba7"
     },
     {
       "date": "2026-08-16",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-17T00:30:24.7186876Z",
+  "generatedAt": "2026-08-18T00:17:18.3558017Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-17",
-    "url": "/daily/en/2026/08/17/",
+    "date": "2026-08-18",
+    "url": "/daily/en/2026/08/18/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/17/"
+    "alternateUrl": "/daily/2026/08/18/"
   },
   "reports": [
+    {
+      "date": "2026-08-18",
+      "title": "AI Agent — Permissions and Recovery Tighten Together",
+      "lead": "The day’s most consequential pattern is shared across Codex, Claude Code, Google ADK, Qwen Code, Browser Use, and Langfuse: permissions, sessions, recovery, and failure are moving from implicit behavior into explicit contracts.",
+      "url": "/daily/en/2026/08/18/",
+      "alternateUrl": "/daily/2026/08/18/",
+      "publicPath": "en/2026/08/18/index.html",
+      "sourceFile": "20260818.body.html",
+      "sha256": "07d03855d01994833be5f7b92f3c75bb848006b3448e93de4a1306e38fcb0c70",
+      "publicSha256": "95641719b436780ee3668977b4c492192d0f57156b9da0b432bce45359b7f1d4"
+    },
     {
       "date": "2026-08-17",
       "title": "AI Agent — Boundaries Become Runtime Contracts",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/17/index.html",
       "sourceFile": "20260817.body.html",
       "sha256": "18f48054b2c7dab02eb53124effd90855349a9a90b35ce931be20d2c025ee88c",
-      "publicSha256": "fc767e8c1ffc688d69a89da5164f1902f82643fbe73478c3a47dfecf30af09a4"
+      "publicSha256": "c5352bc222dfd14bbb8beb427cd4cf1cca9ece2c12f8b1f57a4357e52718c79c"
     },
     {
       "date": "2026-08-16",
