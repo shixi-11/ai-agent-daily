@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-18T00:17:18.3558017Z",
+  "generatedAt": "2026-08-20T19:11:45.8989220Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-18",
-    "url": "/daily/en/2026/08/18/",
+    "date": "2026-08-20",
+    "url": "/daily/en/2026/08/20/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/18/"
+    "alternateUrl": "/daily/2026/08/20/"
   },
   "reports": [
+    {
+      "date": "2026-08-20",
+      "title": "AI Agent — Control Planes Move Into the Runtime",
+      "lead": "Today’s most consequential shifts are not in conversational ability: guardrails, network egress, sessions, memory, and run evidence are beginning to constrain execution directly.",
+      "url": "/daily/en/2026/08/20/",
+      "alternateUrl": "/daily/2026/08/20/",
+      "publicPath": "en/2026/08/20/index.html",
+      "sourceFile": "20260820.body.html",
+      "sha256": "cbc4b4abbc406c02d9341b028d22f73249964045d95d1233d7bdae78f0e32fba",
+      "publicSha256": "c2678b235d053e3fab3046c443fef5b198fe692d9df14893efaaeabd787e256a"
+    },
     {
       "date": "2026-08-18",
       "title": "AI Agent — Permissions and Recovery Tighten Together",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/18/index.html",
       "sourceFile": "20260818.body.html",
       "sha256": "07d03855d01994833be5f7b92f3c75bb848006b3448e93de4a1306e38fcb0c70",
-      "publicSha256": "95641719b436780ee3668977b4c492192d0f57156b9da0b432bce45359b7f1d4"
+      "publicSha256": "69921ff2f22daa3633d9f63abed5d191b11831d147338d297d7ab659aa184600"
     },
     {
       "date": "2026-08-17",

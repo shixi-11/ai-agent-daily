@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-18T00:17:18.3558017Z",
+  "generatedAt": "2026-08-20T19:11:45.8989220Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-18",
-    "url": "/daily/2026/08/18/",
+    "date": "2026-08-20",
+    "url": "/daily/2026/08/20/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/18/"
+    "alternateUrl": "/daily/en/2026/08/20/"
   },
   "reports": [
+    {
+      "date": "2026-08-20",
+      "title": "AI Agent控制面进入运行时",
+      "lead": "今天最有价值的变化不在模型更会说，而在护栏、网络出口、会话、记忆和运行证据开始直接约束真实执行。",
+      "url": "/daily/2026/08/20/",
+      "alternateUrl": "/daily/en/2026/08/20/",
+      "publicPath": "2026/08/20/index.html",
+      "sourceFile": "20260820_ALUX_AI智能体情报日报.html",
+      "sha256": "3d3517cb409308bd6627ec0c3729889937cf1c926907d792a6c44a2c7bc71f48",
+      "publicSha256": "7bc40b4cc83a43fe22df75779ca3db39be77f4b0f3d8c239fe84b229c4d094a3"
+    },
     {
       "date": "2026-08-18",
       "title": "AI Agent权限与恢复同轴收紧",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/18/index.html",
       "sourceFile": "20260818_ALUX_AI智能体情报日报.html",
       "sha256": "64e9e5b88ea308a3d1f34965b6d13e179f60ff10c8515c18be231eb3f06ffca3",
-      "publicSha256": "13ff4cb480da0c8446b30686b160e976040daca21df45d7cc686c0bae0d5f522"
+      "publicSha256": "c66312b2d47c29d6dabe7909b6ed9b3115e5662e52c2ca22f636236b92ff9cd9"
     },
     {
       "date": "2026-08-17",
