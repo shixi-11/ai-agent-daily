@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-21T13:18:10.0188770Z",
+  "generatedAt": "2026-08-21T18:27:17.0967900Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
@@ -15,13 +15,13 @@
     {
       "date": "2026-08-21",
       "title": "AI Agents — Tools Are Becoming Systems",
-      "lead": "Today's story is about more than capable models. It is also about better multitasking workflows, observable memory, security scanning for Skills, local inference on the Mac, and protected multi-GPU architectures.",
+      "lead": "Eight shifts that materially affect the user experience: multitasking, recovery, secret handling, observable memory, local inference, and confidential GPUs.",
       "url": "/daily/en/2026/08/21/",
       "alternateUrl": "/daily/2026/08/21/",
       "publicPath": "en/2026/08/21/index.html",
       "sourceFile": "20260821.body.html",
-      "sha256": "7d96cd73a0732c453d6fe382421f5714dc5bf9db342c7f893e65b8f295d70977",
-      "publicSha256": "d39eeb5015050ba96f2930ef799516b643e88a76df39657ca507a140ac9a1723"
+      "sha256": "28639ac9c3e71882e8cd5a9143d303abd993c4c53c99f3c11fa4d7d343b088c6",
+      "publicSha256": "cda0b64edf3f6eea5d6dee07f01029d9bd6712a8eb536409070eee52bfa42b14"
     },
     {
       "date": "2026-08-20",

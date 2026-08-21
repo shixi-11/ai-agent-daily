@@ -1,23 +1,25 @@
 {
   "schemaVersion": 1,
-  "masterVersion": "2026-08-21-compact-v1",
+  "masterVersion": "2026-08-21-editorial-v2",
   "layoutVersion": "compact-v1",
   "effectiveFrom": "2026-08-21",
   "sourceDate": "2026-08-21",
   "sourceFile": "content/zh/20260821_ALUX_AI智能体情报日报.html",
-  "sourceCommit": "739924b763b7f39cb29a0bd9f9432e700e0591f5",
-  "sourceSha256": "a6b6c5f8787af928189c5b4e10fe98b30dc7be576681d227455cf029739a33be",
+  "sourceSha256": "06f9be2bb1be82a68a59bc6dd967cb6033d11d37b2b2704bb75669228389e06e",
   "styleSha256": "717884cd3fb921112595cc6bfe69681f3ed47626658572557749c3a1e0123584",
   "scope": "ALUX AI智能体情报日报 only",
   "lockedSurfaces": [
     "style block and color palette",
     "page width, typography, spacing, borders and responsive breakpoints",
     "hero and 今日AI导航 structure",
+    "hero statistics with distinct signal, trial, open-source and region semantics",
+    "short hero lead and judgment editorial rhythm",
     "RISC机器说明 placement and four-card structure",
+    "今日AI导航 as factual issue map and AI Agent雷达 as cross-signal synthesis",
     "AI Agent雷达 three-card structure",
     "compact-v1 single-flow news cards",
     "试试看 and 注意点 utility footer",
     "single-column closing insight"
   ],
-  "contentRule": "Copy structure and CSS only. Replace all dates, facts, titles, numbers, links, summaries and judgments with the current issue."
+  "contentRule": "Copy structure and CSS only. Replace all dates, facts, titles, numbers, links, summaries and judgments with the current issue. Use 7-9 signals, keep release-like items at or below 50%, keep hero statistics semantically distinct, and keep 今日AI导航 factual while AI Agent雷达 synthesizes multiple signals."
 }

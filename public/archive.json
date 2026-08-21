@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-21T13:18:10.0188770Z",
+  "generatedAt": "2026-08-21T18:27:17.0967900Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
@@ -15,13 +15,13 @@
     {
       "date": "2026-08-21",
       "title": "AI Agent工具开始长出系统感",
-      "lead": "今天值得看的不只是更强的模型，还有更好用的多任务工作流、可观察记忆、Skills 安全扫描、Mac 本地推理和受保护的多 GPU 架构。",
+      "lead": "这一期看八个真正影响使用体验的变化：多任务、恢复、安全凭据、可观察记忆、本地推理与机密 GPU。",
       "url": "/daily/2026/08/21/",
       "alternateUrl": "/daily/en/2026/08/21/",
       "publicPath": "2026/08/21/index.html",
       "sourceFile": "20260821_ALUX_AI智能体情报日报.html",
-      "sha256": "a6b6c5f8787af928189c5b4e10fe98b30dc7be576681d227455cf029739a33be",
-      "publicSha256": "e58c2d26b3f91e58ef295a884ed2c0016c36a7c19b5d118f3e1d6ba8fed0c913"
+      "sha256": "06f9be2bb1be82a68a59bc6dd967cb6033d11d37b2b2704bb75669228389e06e",
+      "publicSha256": "e511341e8f90f1405438a25b7ee71375d331f8ebc568c72abe1a81f84fe2335d"
     },
     {
       "date": "2026-08-20",

@@ -6,7 +6,7 @@
 
 `public/` 是可重建的部署结果；`content/`、`templates/`、`assets/`、`scripts/` 和翻译配置才是必须持久保存的工作数据。
 
-`templates/report-master.json` 固定日报的正式视觉母版。当前母版是 `2026-08-21-compact-v1`，指向 `content/zh/20260821_ALUX_AI智能体情报日报.html`；新一期只复制它的结构与 CSS，不以最近一期滚动继承版式。
+`templates/report-master.json` 固定日报的正式视觉与编辑母版。当前母版是 `2026-08-21-editorial-v2`，指向 `content/zh/20260821_ALUX_AI智能体情报日报.html`；新一期只复制它的结构与 CSS，并遵守 7-9 条、发布类不超过 50%、首屏精简、统计语义分离和导读/雷达分工，不以最近一期滚动继承版式。
 
 ## 2. 目录与文件规则
 

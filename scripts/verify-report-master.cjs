@@ -32,7 +32,7 @@ try {
   fail(`cannot read ${path.relative(root, contractFile)}: ${error.message}`);
 }
 
-if (contract.masterVersion !== '2026-08-21-compact-v1') {
+if (contract.masterVersion !== '2026-08-21-editorial-v2') {
   fail(`unexpected masterVersion: ${contract.masterVersion || 'missing'}`);
 }
 if (contract.layoutVersion !== 'compact-v1') {
@@ -84,9 +84,20 @@ for (const name of governedReports) {
   }
   const signals = classCount(report, 'signal');
   const utilityFooters = classCount(report, 'side');
-  if (signals < 6 || signals > 10 || utilityFooters !== signals) {
-    fail(`${name} must contain 6-10 signal cards and exactly one compact utility footer per signal`);
+  if (signals < 7 || signals > 9 || utilityFooters !== signals) {
+    fail(`${name} must contain 7-9 signal cards and exactly one compact utility footer per signal`);
   }
+  const statBlock = report.match(/<div\s+class=["']stats["'][^>]*>([\s\S]*?)<\/div>\s*<div\s+class=["']judgment["']/i)?.[1] || '';
+  const statLabels = Array.from(statBlock.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/gi)).map((match) => match[1].replace(/<[^>]+>/g, '').trim());
+  const expectedStatLabels = ['值得关注', '可动手试', '开源发现', '覆盖区域'];
+  if (statLabels.length !== 4 || expectedStatLabels.some((label, index) => statLabels[index] !== label)) {
+    fail(`${name} hero statistics must be: ${expectedStatLabels.join(' / ')}`);
+  }
+  const compactLength = (value) => Array.from(String(value || '').replace(/<[^>]+>/g, '').replace(/\s+/g, '')).length;
+  const lead = report.match(/<p\s+class=["']lead["'][^>]*>([\s\S]*?)<\/p>/i)?.[1] || '';
+  const judgment = report.match(/<div\s+class=["']judgment["'][^>]*>([\s\S]*?)<\/div>/i)?.[1] || '';
+  if (compactLength(lead) > 70) fail(`${name} hero lead exceeds 70 Chinese characters`);
+  if (compactLength(judgment) > 100) fail(`${name} hero judgment exceeds 100 Chinese characters`);
 }
 
 console.log(`report master verified: ${contract.masterVersion} -> ${contract.sourceFile}; governed reports: ${governedReports.length}`);

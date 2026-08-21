@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "3.2.0",
+  "contractVersion": "3.3.0",
   "task": "Global AI and AI Agent Intelligence Daily bilingual publish",
   "schedulePolicy": "Preserve the existing OpenClaw schedule and timezone; replace only the task workflow.",
   "automationTimezone": "preserve-existing",
@@ -70,9 +70,9 @@
       "evidence boundary"
     ],
     "selectionMix": {
-      "signalCount": "6-10",
+      "signalCount": "7-9",
       "minimumCategoryCount": 4,
-      "maximumProductModelSoftwareShare": 0.6,
+      "maximumProductModelSoftwareShare": 0.5,
       "minimumOpenSourceOrSkillCount": 2,
       "minimumHardwareArchitectureResearchOrMarketCount": 1
     },
@@ -103,9 +103,28 @@
     "effectiveFrom": "2026-08-21",
     "version": "compact-v1",
     "masterContract": "templates/report-master.json",
-    "masterVersion": "2026-08-21-compact-v1",
+    "masterVersion": "2026-08-21-editorial-v2",
     "masterSource": "content/zh/20260821_ALUX_AI智能体情报日报.html",
-    "visualBaseline": "Copy the pinned 2026-08-21 compact-v1 CSS and DOM structure exactly; replace current content only",
+    "visualBaseline": "Copy the pinned 2026-08-21 editorial-v2 CSS and DOM structure exactly; replace current content only",
+    "editorialRhythm": {
+      "heroLeadMaxChineseCharacters": 70,
+      "heroJudgmentMaxChineseCharacters": 100,
+      "heroStatistics": [
+        "signals worth watching",
+        "things readers can try",
+        "open-source discoveries",
+        "regions covered"
+      ],
+      "guideRole": "A factual map of the issue with counts, named examples and one watchpoint per row",
+      "radarRole": "Three concise cross-signal syntheses; each card must connect at least two selected signals",
+      "signalFieldGuidanceChineseCharacters": {
+        "whatHappened": "80-140",
+        "whyItMatters": "40-80",
+        "whoShouldCare": "20-45",
+        "tryIt": "35-70",
+        "keepInMind": "35-70"
+      }
+    },
     "signalCard": "Single article flow followed by a compact two-row utility footer; no equal-height side-by-side columns",
     "utilityRows": [
       "try it",
@@ -193,7 +212,8 @@
     "No private identity, credential, local path, internal artifact, work log, tool output or process narration may enter public release content.",
     "No visible editorial self-talk such as selection boundaries, why an item was selected, padding policy or empty-category explanations may appear in a published issue.",
     "The issue must satisfy editorialContract.selectionMix and the compact-v1 news-card layout.",
-    "Every issue from 2026-08-21 onward must byte-match the CSS in the pinned 2026-08-21-compact-v1 master and preserve its required DOM structure; the latest previous issue is not a substitute master.",
+    "Every issue from 2026-08-21 onward must byte-match the CSS in the pinned 2026-08-21-editorial-v2 master and preserve its required DOM structure; the latest previous issue is not a substitute master.",
+    "Every issue must use 7-9 signals, keep release-like items at or below 50%, keep hero statistics semantically distinct, keep the hero lead and judgment concise, and separate the factual role of 今日AI导航 from the cross-signal synthesis role of AI Agent雷达.",
     "Daily publication must commit and push the official main branch directly; it must not stop at a pull request or wait for a manual merge.",
     "Telegram notification is blocked until the new official domain serves byte-equivalent current home, latest and dated pages and every legacy route passes the single-308 compatibility gate.",
     "Routine Telegram delivery is text-only and must not include HTML, ZIP, image or other report attachments; the fixed official domain is the durable storage and bilingual reading surface.",
