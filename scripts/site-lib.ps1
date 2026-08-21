@@ -48,6 +48,31 @@ function Encode-Html {
     return [System.Net.WebUtility]::HtmlEncode($Value)
 }
 
+function Format-ArchiveDateRange {
+    param(
+        [Parameter(Mandatory)] [datetime]$StartDate,
+        [Parameter(Mandatory)] [datetime]$EndDate,
+        [Parameter(Mandatory)] [ValidateSet('zh-CN', 'en-US')] [string]$Language
+    )
+
+    if ($StartDate -gt $EndDate) {
+        throw '归档开始日期不能晚于结束日期。'
+    }
+
+    if ($Language -eq 'zh-CN') {
+        if ($StartDate.Year -eq $EndDate.Year) {
+            return $StartDate.ToString('yyyy年M月d日') + '—' + $EndDate.ToString('M月d日')
+        }
+        return $StartDate.ToString('yyyy年M月d日') + '—' + $EndDate.ToString('yyyy年M月d日')
+    }
+
+    $englishCulture = [System.Globalization.CultureInfo]::GetCultureInfo('en-US')
+    if ($StartDate.Year -eq $EndDate.Year) {
+        return $StartDate.ToString('MMM d', $englishCulture) + '–' + $EndDate.ToString('MMM d, yyyy', $englishCulture)
+    }
+    return $StartDate.ToString('MMM d, yyyy', $englishCulture) + '–' + $EndDate.ToString('MMM d, yyyy', $englishCulture)
+}
+
 function Get-HtmlText {
     param(
         [Parameter(Mandatory)] [string]$Html,

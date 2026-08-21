@@ -295,6 +295,8 @@ function New-ArchiveMarkup {
 $chineseArchiveMarkup = New-ArchiveMarkup -Items $reportsDescending -Language 'zh-CN' -LatestDateIso $latest.dateIso
 $englishArchiveMarkup = New-ArchiveMarkup -Items $reportsDescending -Language 'en-US' -LatestDateIso $latest.dateIso
 $monthGroups = $reportsDescending | Group-Object { $_.date.ToString('yyyy-MM') }
+$chineseDateRange = Format-ArchiveDateRange -StartDate $earliest.date -EndDate $latest.date -Language 'zh-CN'
+$englishDateRange = Format-ArchiveDateRange -StartDate $earliest.date -EndDate $latest.date -Language 'en-US'
 
 $chineseIndex = Get-Content -LiteralPath (Join-Path $TemplateRoot 'index.template.html') -Raw -Encoding UTF8
 $chineseReplacementMap = [ordered]@{
@@ -306,7 +308,7 @@ $chineseReplacementMap = [ordered]@{
     '{{LATEST_TITLE}}' = Encode-Html $latest.title
     '{{LATEST_LEAD}}' = Encode-Html $latest.lead
     '{{REPORT_COUNT}}' = [string]$reports.Count
-    '{{DATE_RANGE}}' = Encode-Html ($earliest.date.ToString('M月d日') + '—' + $latest.date.ToString('M月d日'))
+    '{{DATE_RANGE}}' = Encode-Html $chineseDateRange
     '{{MONTH_COUNT}}' = [string]$monthGroups.Count
     '{{ARCHIVE_GROUPS}}' = $chineseArchiveMarkup
     '{{GENERATED_AT}}' = $generatedAtLocal.ToString('yyyy-MM-dd HH:mm')
@@ -326,7 +328,7 @@ $englishReplacementMap = [ordered]@{
     '{{LATEST_TITLE}}' = Encode-Html $latest.titleEn
     '{{LATEST_LEAD}}' = Encode-Html $latest.leadEn
     '{{REPORT_COUNT}}' = [string]$reports.Count
-    '{{DATE_RANGE}}' = Encode-Html ($earliest.date.ToString('MMM d', $EnglishCulture) + '—' + $latest.date.ToString('MMM d', $EnglishCulture))
+    '{{DATE_RANGE}}' = Encode-Html $englishDateRange
     '{{MONTH_COUNT}}' = [string]$monthGroups.Count
     '{{ARCHIVE_GROUPS}}' = $englishArchiveMarkup
     '{{GENERATED_AT}}' = $generatedAtLocal.ToString('yyyy-MM-dd HH:mm')

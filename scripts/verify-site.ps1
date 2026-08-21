@@ -125,6 +125,19 @@ if ($chineseIndex.IndexOf($generatedAtStamp, [System.StringComparison]::Ordinal)
 }
 if ($chineseIndex -notmatch '<title>ALUX AI智能体情报日报</title>') { throw '中文首页站名不正确。' }
 if ($englishIndex -notmatch '<title>ALUX AI Agent Intelligence Daily</title>') { throw '英文首页站名不正确。' }
+$archiveDates = @(
+    $chineseReports |
+        ForEach-Object { [datetime]::ParseExact([string]$_.date, 'yyyy-MM-dd', [System.Globalization.CultureInfo]::InvariantCulture) } |
+        Sort-Object
+)
+$expectedChineseDateRange = Format-ArchiveDateRange -StartDate $archiveDates[0] -EndDate $archiveDates[-1] -Language 'zh-CN'
+$expectedEnglishDateRange = Format-ArchiveDateRange -StartDate $archiveDates[0] -EndDate $archiveDates[-1] -Language 'en-US'
+if ($chineseIndex.IndexOf('<b>' + (Encode-Html $expectedChineseDateRange) + '</b><span>归档时间范围</span>', [System.StringComparison]::Ordinal) -lt 0) {
+    throw "中文首页归档时间范围缺少年份或格式错误：应为 $expectedChineseDateRange"
+}
+if ($englishIndex.IndexOf('<b>' + (Encode-Html $expectedEnglishDateRange) + '</b><span>Archive Range</span>', [System.StringComparison]::Ordinal) -lt 0) {
+    throw "英文首页归档时间范围缺少年份或格式错误：应为 $expectedEnglishDateRange"
+}
 foreach ($homeCheck in @(
     @{ html = $chineseIndex; url = $BaseUrl + $BasePath + '/' },
     @{ html = $englishIndex; url = $BaseUrl + $BasePath + '/en/' }

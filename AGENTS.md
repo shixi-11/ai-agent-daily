@@ -2,7 +2,7 @@
 
 本文件是所有继续维护者的第一入口。克隆或同步仓库后，先读本文件，再读 `README.md`、`AUTOMATION.md`、`docs/OPERATIONS.md`、`docs/DOMAIN_ROUTING.md`、`docs/RESPONSIVE_LAYOUT_STANDARD.md`、`docs/PUBLIC_REPOSITORY_BOUNDARY.md` 与 `docs/SHARE_CARD_STANDARD.md`。OpenClaw Agent 还必须读 `automation/OPENCLAW_DAILY_TASK.md`，并用该合同升级现有定时任务的正文。
 
-当前自动化合同版本为 `2.6.0`。OpenClaw 发现现有日报任务没有 `[ALUX_DAILY_CONTRACT_VERSION: 2.6.0]` 时，必须保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得另建一个重复任务。日报主任务、验收任务和恢复任务统一使用 `openai/gpt-5.6-sol`、`thinking=high`、标准速度并禁用 fallback。
+当前自动化合同版本为 `3.0.0`。OpenClaw 发现现有日报任务没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.0.0]` 时，必须保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得另建一个重复任务。日报主任务、验收任务和恢复任务统一使用 `openai/gpt-5.6-sol`、`thinking=high`、标准速度并禁用 fallback。
 
 负责在其他电脑生成并提交日报的专用 Agent，必须额外阅读 `docs/DOMAIN_ROUTING.md`。DNS 已完成配置，日常发布不得修改 DNS；它只需按合同生成中英内容、重建站点、推送 `main`，再同时验证新主地址与旧域名兼容入口。
 
@@ -40,7 +40,7 @@
 1. 查看 `content/zh/`、`content/en/translation-manifest.json` 与 Git 状态，确认最新日期和未完事项。
 2. 新建 `content/zh/YYYYMMDD_ALUX_AI智能体情报日报.html`。不覆盖历史日期。
 3. 按项目翻译配置执行“分析 → 初译 → 独立审校 → 润色”，新建 `content/en/YYYYMMDD.body.html`；独立审校必须由不同编辑上下文完成，不能由初译同一遍输出自行认证。
-4. 核对中英两版的数字、产品名、版本号、融资金额、RISC 判断和外部来源链接。
+4. 核对中英两版的数字、产品名、版本号、类别、结构和外部来源链接。RISC 只保留前置机器说明，不对单条新闻打分。
 5. 更新翻译清单，只有人工或 Agent 精修复核后才可标记 `reviewed`。
 6. 依次执行：
 

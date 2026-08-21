@@ -19,7 +19,7 @@
 1. 读取 `automation/task-contract.json` 的 `contractVersion`。
 2. 找到你已经存在的日报自动化任务，不新建重复任务。
 3. 保留原任务 ID、schedule、时区、通知对象和凭据配置，只用 `automation/OPENCLAW_DAILY_TASK.md` 替换任务正文；运行档固定为 `openai/gpt-5.6-sol`、`thinking=high`、标准速度、无 fallback。
-4. 确认正文含当前版本标记 `[ALUX_DAILY_CONTRACT_VERSION: 2.6.0]`。
+4. 确认正文含当前版本标记 `[ALUX_DAILY_CONTRACT_VERSION: 3.0.0]`。
 5. 先手动执行一次 dry run；只有中英生成、构建和验收都通过，才让升级后的任务进入下一次定时运行。
 
 ## 你的完整任务
@@ -28,7 +28,7 @@
 
 1. 按日报风格生成中文母稿，保存到 `content/zh/`。
 2. 按项目术语表执行母语级英文精修，保存到 `content/en/`。
-3. 核对中英两版事实、数字、产品名、版本号、RISC 判断和所有来源链接。
+3. 核对中英两版事实、数字、产品名、版本号、章节结构和所有来源链接。RISC 只作为新版前置机器说明。
 4. 更新 `content/en/translation-manifest.json` 并将已精修的当期标记为 `reviewed`。
 5. 运行生成和验收脚本，让中英首页、最新页、日期页、语言切换、归档和 sitemap 同时更新。
 6. 全部验收通过后，只将当期中英母稿、翻译清单与 `public/` 成品一起直接提交并推送正式仓库 `main`；不创建 PR、不等待人工合并。内部研究包、日志、prompt、manifest、ledger、截图和工具输出不得进入仓库。
