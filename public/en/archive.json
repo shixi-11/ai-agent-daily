@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-20T19:11:45.8989220Z",
+  "generatedAt": "2026-08-21T04:11:35.3940600Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-20",
-    "url": "/daily/en/2026/08/20/",
+    "date": "2026-08-21",
+    "url": "/daily/en/2026/08/21/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/20/"
+    "alternateUrl": "/daily/2026/08/21/"
   },
   "reports": [
+    {
+      "date": "2026-08-21",
+      "title": "AI Agent — Sessions become run objects",
+      "lead": "Today’s most valuable development is not another agent interface. Queues, waits, parking, recovery, and connection rejection are beginning to define the run lifecycle itself.",
+      "url": "/daily/en/2026/08/21/",
+      "alternateUrl": "/daily/2026/08/21/",
+      "publicPath": "en/2026/08/21/index.html",
+      "sourceFile": "20260821.body.html",
+      "sha256": "698194dc8745a128bda8b749f5afc26ab6d6c74ef058e57f59bd40d4b52d449f",
+      "publicSha256": "cd46eb4572acd8f49001798e7f8332a1c8652ea670ca2615deb3c90420aa9aca"
+    },
     {
       "date": "2026-08-20",
       "title": "AI Agent — Control Planes Move Into the Runtime",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/20/index.html",
       "sourceFile": "20260820.body.html",
       "sha256": "cbc4b4abbc406c02d9341b028d22f73249964045d95d1233d7bdae78f0e32fba",
-      "publicSha256": "c2678b235d053e3fab3046c443fef5b198fe692d9df14893efaaeabd787e256a"
+      "publicSha256": "f78db08ccf9441fafc6710d75d5e63adf8902af4c2356f027b1589889aaeace3"
     },
     {
       "date": "2026-08-18",

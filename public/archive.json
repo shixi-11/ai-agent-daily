@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-20T19:11:45.8989220Z",
+  "generatedAt": "2026-08-21T04:11:35.3940600Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-20",
-    "url": "/daily/2026/08/20/",
+    "date": "2026-08-21",
+    "url": "/daily/2026/08/21/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/20/"
+    "alternateUrl": "/daily/en/2026/08/21/"
   },
   "reports": [
+    {
+      "date": "2026-08-21",
+      "title": "AI Agent会话成为运行对象",
+      "lead": "今天最有价值的变化不是再多一个 Agent 界面，而是队列、等待、停放、恢复和连接拒绝开始共同定义运行生命周期。",
+      "url": "/daily/2026/08/21/",
+      "alternateUrl": "/daily/en/2026/08/21/",
+      "publicPath": "2026/08/21/index.html",
+      "sourceFile": "20260821_ALUX_AI智能体情报日报.html",
+      "sha256": "26329e292bbd1a2ca17170551b6e0a1a381e7433bbc36d23ff09ae3f53b6a1a8",
+      "publicSha256": "f782eb0796ed12e4c8620fdb465357d7fca4728def7668bfdf20dc58365aa96e"
+    },
     {
       "date": "2026-08-20",
       "title": "AI Agent控制面进入运行时",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/20/index.html",
       "sourceFile": "20260820_ALUX_AI智能体情报日报.html",
       "sha256": "3d3517cb409308bd6627ec0c3729889937cf1c926907d792a6c44a2c7bc71f48",
-      "publicSha256": "7bc40b4cc83a43fe22df75779ca3db39be77f4b0f3d8c239fe84b229c4d094a3"
+      "publicSha256": "01e693e235ef058a93e819ebd1e761fdde808de383fe7021d141e218db4948db"
     },
     {
       "date": "2026-08-18",
