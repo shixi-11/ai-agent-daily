@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-21T04:11:35.3940600Z",
+  "generatedAt": "2026-08-21T12:11:58.3147350Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
@@ -14,14 +14,14 @@
   "reports": [
     {
       "date": "2026-08-21",
-      "title": "AI Agent — Sessions become run objects",
-      "lead": "Today’s most valuable development is not another agent interface. Queues, waits, parking, recovery, and connection rejection are beginning to define the run lifecycle itself.",
+      "title": "AI Agents — Tools Are Becoming Systems",
+      "lead": "Today's story is not just about more capable models. It is also about better multitasking workflows, observable memory, security scanning for Skills, local inference on the Mac, and protected multi-GPU architectures.",
       "url": "/daily/en/2026/08/21/",
       "alternateUrl": "/daily/2026/08/21/",
       "publicPath": "en/2026/08/21/index.html",
       "sourceFile": "20260821.body.html",
-      "sha256": "698194dc8745a128bda8b749f5afc26ab6d6c74ef058e57f59bd40d4b52d449f",
-      "publicSha256": "cd46eb4572acd8f49001798e7f8332a1c8652ea670ca2615deb3c90420aa9aca"
+      "sha256": "9ce196a66b52061da2d73071a371f2f944ac297b7cd2c60cb8c96d7cbf78c231",
+      "publicSha256": "57a9936f270b654e10c304ac2972b2e3953c18f7833ac3aa4f28ad33dbc1c345"
     },
     {
       "date": "2026-08-20",

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-21T04:11:35.3940600Z",
+  "generatedAt": "2026-08-21T12:11:58.3147350Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
@@ -14,14 +14,14 @@
   "reports": [
     {
       "date": "2026-08-21",
-      "title": "AI Agent会话成为运行对象",
-      "lead": "今天最有价值的变化不是再多一个 Agent 界面，而是队列、等待、停放、恢复和连接拒绝开始共同定义运行生命周期。",
+      "title": "AI Agent工具开始长出系统感",
+      "lead": "今天值得看的不只是更强的模型，还有更好用的多任务工作流、可观察记忆、Skills 安全扫描、Mac 本地推理和受保护的多 GPU 架构。",
       "url": "/daily/2026/08/21/",
       "alternateUrl": "/daily/en/2026/08/21/",
       "publicPath": "2026/08/21/index.html",
       "sourceFile": "20260821_ALUX_AI智能体情报日报.html",
-      "sha256": "26329e292bbd1a2ca17170551b6e0a1a381e7433bbc36d23ff09ae3f53b6a1a8",
-      "publicSha256": "f782eb0796ed12e4c8620fdb465357d7fca4728def7668bfdf20dc58365aa96e"
+      "sha256": "ca8c4ff896197dfbd4f58f2562533aa136300c4e6560e3331f78f63aeda85c7e",
+      "publicSha256": "89e0e4414805fc37ef4fc736233914403dbbac3c8aa07b7ad99c15c5e1803e50"
     },
     {
       "date": "2026-08-20",
