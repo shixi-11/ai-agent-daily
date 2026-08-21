@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "3.0.0",
+  "contractVersion": "3.1.0",
   "task": "Global AI and AI Agent Intelligence Daily bilingual publish",
   "schedulePolicy": "Preserve the existing OpenClaw schedule and timezone; replace only the task workflow.",
   "automationTimezone": "preserve-existing",
@@ -69,9 +69,48 @@
       "what to try or read",
       "evidence boundary"
     ],
+    "selectionMix": {
+      "signalCount": "6-10",
+      "minimumCategoryCount": 4,
+      "maximumProductModelSoftwareShare": 0.6,
+      "minimumOpenSourceOrSkillCount": 2,
+      "minimumHardwareArchitectureResearchOrMarketCount": 1
+    },
+    "visibleCardFields": [
+      "what happened",
+      "why it matters",
+      "who should care",
+      "try it",
+      "keep in mind"
+    ],
+    "forbiddenVisibleEditorialNarration": [
+      "selection boundary",
+      "why this was selected",
+      "why it is on today's list",
+      "we do not fill categories",
+      "leave blank rather than pad",
+      "选题边界",
+      "观察理由",
+      "为什么入选",
+      "本刊不会凑数",
+      "宁可留白"
+    ],
     "riscPolicy": "Keep the fixed RISC machine primer before the news; do not label or score individual news items",
     "financingPolicy": "No dedicated financing window; include financing only when it materially explains a technology, market or industry shift",
     "historicalPolicy": "Do not rewrite issues published before the effective date"
+  },
+  "layoutContract": {
+    "effectiveFrom": "2026-08-21",
+    "version": "compact-v1",
+    "visualBaseline": "Preserve the 2026-07-03 palette, typography, borders, page width and section hierarchy",
+    "signalCard": "Single article flow followed by a compact two-row utility footer; no equal-height side-by-side columns",
+    "utilityRows": [
+      "try it",
+      "keep in mind"
+    ],
+    "fixedCardMinHeightAllowed": false,
+    "closingInsightColumns": 1,
+    "mobileUtilityLayout": "single column"
   },
   "requiredReading": [
     "AGENTS.md",
@@ -147,6 +186,8 @@
     "The rendered heat-row overlap gate must pass and must not be bypassed or weakened.",
     "No file outside repositoryPublishAllowlist may enter a daily release commit.",
     "No private identity, credential, local path, internal artifact, work log, tool output or process narration may enter public release content.",
+    "No visible editorial self-talk such as selection boundaries, why an item was selected, padding policy or empty-category explanations may appear in a published issue.",
+    "The issue must satisfy editorialContract.selectionMix and the compact-v1 news-card layout.",
     "Daily publication must commit and push the official main branch directly; it must not stop at a pull request or wait for a manual merge.",
     "Telegram notification is blocked until the new official domain serves byte-equivalent current home, latest and dated pages and every legacy route passes the single-308 compatibility gate.",
     "Routine Telegram delivery is text-only and must not include HTML, ZIP, image or other report attachments; the fixed official domain is the durable storage and bilingual reading surface.",
