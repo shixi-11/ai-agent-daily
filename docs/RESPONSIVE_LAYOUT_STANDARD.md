@@ -15,6 +15,8 @@
 
 从 `data-layout-version="compact-v1"` 起：
 
+- 响应式母版固定读取 `templates/report-master.json` 指向的 `2026-08-21-compact-v1`，不继承最近一期可能产生的版式偏差。
+
 - `.signal` 使用单一正文流，不再把正文与说明做成左右等高双栏。
 - `.side` 位于正文之后，桌面和平板使用短标签列加正文列，只包含两组“试试看 / 注意点”；手机端改为单列。
 - `.item`、`.signal` 和 `.side` 不设置用于视觉齐高的固定 `min-height`。信息多少决定卡片高度，不能用空白补齐。

@@ -6,6 +6,8 @@
 
 `public/` 是可重建的部署结果；`content/`、`templates/`、`assets/`、`scripts/` 和翻译配置才是必须持久保存的工作数据。
 
+`templates/report-master.json` 固定日报的正式视觉母版。当前母版是 `2026-08-21-compact-v1`，指向 `content/zh/20260821_ALUX_AI智能体情报日报.html`；新一期只复制它的结构与 CSS，不以最近一期滚动继承版式。
+
 ## 2. 目录与文件规则
 
 ```text
@@ -58,6 +60,7 @@ content/
 ### 3.4 生成和验证
 
 ```powershell
+node .\scripts\verify-report-master.cjs
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\sync-reports.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\verify-site.ps1
 node .\scripts\render-check.cjs
@@ -72,7 +75,7 @@ node .\scripts\render-check.cjs
 - 站内导航、语言切换和上一期/下一期链接
 - 与翻译审核记录绑定的中英首页“最近更新”时间
 
-`verify-site.ps1` 负责内容、哈希、路径、链接和 SEO 属性验证。`render-check.cjs` 负责真实 Chrome 中的桌面、平板、手机、窄屏和关键断点渲染验收，并用真实文字边界硬性检测英文热区、面板标题、相邻单元重叠、整页裁切以及 Logo/语言切换对齐。
+`verify-report-master.cjs` 先确认正式母版文件、版本和样式指纹未漂移。`verify-site.ps1` 负责内容、哈希、路径、链接和 SEO 属性验证。`render-check.cjs` 负责真实 Chrome 中的桌面、平板、手机、窄屏和关键断点渲染验收，并用真实文字边界硬性检测英文热区、面板标题、相邻单元重叠、整页裁切以及 Logo/语言切换对齐。
 
 ## 4. 提交与部署
 

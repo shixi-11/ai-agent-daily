@@ -2,12 +2,12 @@
 
 这个文件不替你改变原有定时执行时间。同步仓库后，请保留你当前自动化的 schedule 和时区，将任务正文升级为下面的完整流程。
 
-当前合同版本为 `3.1.0`。如果现有任务正文没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.1.0]`，保留原任务 ID、执行时间、时区和凭据，只替换任务正文，完成一次手动 dry run 后再等待下一次定时执行；不要新建一个重复的定时任务。
+当前合同版本为 `3.2.0`。如果现有任务正文没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.2.0]`，保留原任务 ID、执行时间、时区和凭据，只替换任务正文，完成一次手动 dry run 后再等待下一次定时执行；不要新建一个重复的定时任务。
 
 ## 应写入自动化的任务正文
 
 ```text
-[ALUX_DAILY_CONTRACT_VERSION: 3.1.0]
+[ALUX_DAILY_CONTRACT_VERSION: 3.2.0]
 
 你负责生成、翻译、验收并发布当日的 ALUX AI智能体情报日报。
 
@@ -15,12 +15,12 @@
 
 开始前：
 1. 拉取 GitHub 仓库 main 的最新内容。
-2. 完整阅读根目录 AGENTS.md、AUTOMATION.md、docs/OPERATIONS.md、docs/DOMAIN_ROUTING.md、docs/REPORT_STYLE_GUIDE.md、docs/RESPONSIVE_LAYOUT_STANDARD.md、docs/DAILY_PUBLISH_CHECKLIST.md、docs/PUBLIC_REPOSITORY_BOUNDARY.md、automation/task-contract.json 和 .baoyu-skills/baoyu-translate/EXTEND.md。
+2. 完整阅读根目录 AGENTS.md、AUTOMATION.md、templates/report-master.json、docs/OPERATIONS.md、docs/DOMAIN_ROUTING.md、docs/REPORT_STYLE_GUIDE.md、docs/RESPONSIVE_LAYOUT_STANDARD.md、docs/DAILY_PUBLISH_CHECKLIST.md、docs/PUBLIC_REPOSITORY_BOUNDARY.md、automation/task-contract.json 和 .baoyu-skills/baoyu-translate/EXTEND.md，并运行 `node scripts/verify-report-master.cjs`。
 3. 查看 git status、content/zh/ 最新日期、content/en/translation-manifest.json 与现有未完工作。如有未完的当期英文或审核，先续完，不新开日期。
 
 内容生成：
 4. 按 docs/REPORT_STYLE_GUIDE.md 生成当日中文母稿，保存为 content/zh/YYYYMMDD_ALUX_AI智能体情报日报.html。
-5. 页面布局、类名、颜色、字体层级和响应式行为以 content/zh/ 中日期最新、已验收的报告为基准；保留结构，不复制旧事实和旧判断。
+5. 页面布局、类名、颜色、字体层级和响应式行为只以 `templates/report-master.json` 固定的 `2026-08-21-compact-v1` 为母版；复制该母版结构和 CSS，只替换当日日期、事实、标题、数字、链接、摘要和判断。不得改用最近一期滚动继承，也不得复制旧事实和旧判断。
 6. 以官方与一手来源为主，面向大众追踪全球 AI 新功能、AI Agent、GitHub 开源、Skills、软硬件、系统架构和市场变化。大厂与小项目按有趣、有用、有意义的程度选择，不强制每条映射 ALUX。主文通常 6-10 条且至少覆盖 4 类；产品/模型/软件更新合计不超过 60%，至少 2 条开源或 Skill，并至少 1 条硬件、架构、研究或有解释力的市场信号。
 7. 保留新闻前的 `RISC机器说明`，但不再对单条新闻打 RISC 主/辅标签或显示评分表。取消独立融资窗口；融资只在能说明技术、市场或产业结构变化时作为市场信号入选。
 8. 每条新闻正文只写“发生了什么、为什么值得关注、适合谁看”，底部紧凑区只写“试试看、注意点”。公开页面禁止出现“选题边界、观察理由、为什么入选、本刊不会凑数、宁可留白”等编辑过程或自我辩解。
@@ -33,7 +33,7 @@
 
 构建与验收：
 13. 使用当前系统可用的 PowerShell 7（macOS/Linux 用 `pwsh`）运行 scripts/sync-reports.ps1。不手工编辑 public/index.html 或 public/latest/。脚本必须一次性更新中英首页的日期、标题、摘要、统计和最近更新时间，同时更新 `/daily/latest/`、`/daily/en/latest/`、`/daily/` 下的中英日期页、归档清单和 sitemap。
-14. 新一期必须使用 `data-layout-version="compact-v1"`：保留 2026-07-03 的配色、字体、边框、页面宽度和章节秩序；新闻正文在上，底部仅两行“试试看 / 注意点”，不使用左右等高栏，不用固定 `min-height` 制造齐高空白，结尾洞察只用一个全宽框。
+14. 新一期必须使用 `data-layout-version="compact-v1"`，且 `<style>` 必须与正式母版完全一致：新闻正文在上，底部仅两行“试试看 / 注意点”，不使用左右等高栏，不用固定 `min-height` 制造齐高空白，结尾洞察只用一个全宽框。
 15. 运行 scripts/verify-site.ps1 与 scripts/render-check.cjs。检查 1920、1440、1024、768、620、430、390、320 px，并检查 621、920、921 px 断点；布局必须与当前已验收站点保持一致。英文热区矩阵宽屏标签列不得低于 172px，620px 及以下改为单列；`.panel-head` 在 920px 及以下上下排列；Logo 与语言切换外框保持 44px 等高。任何文字越过所属单元、与相邻元素重叠、卡片因等高布局出现明显空洞或控件错位都必须停止发布。
 16. 确认语言切换往返同一期，上一期/下一期正确，ALUX 三角 favicon 正常，canonical 和 hreflang 正确。
 

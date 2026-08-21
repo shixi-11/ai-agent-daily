@@ -19,6 +19,15 @@ $ReportPattern = '^\d{8}_ALUX_AI智能体情报日报\.html$'
 
 . (Join-Path $PSScriptRoot 'site-lib.ps1')
 
+$nodeCommand = Get-Command node -ErrorAction SilentlyContinue
+if (-not $nodeCommand) {
+    throw '没有找到 Node.js，无法验证固定日报母版。'
+}
+& $nodeCommand.Source (Join-Path $PSScriptRoot 'verify-report-master.cjs')
+if ($LASTEXITCODE -ne 0) {
+    throw '日报母版或当期版式与 2026-08-21-compact-v1 不一致，已停止验收。'
+}
+
 $requiredFiles = @(
     (Join-Path $PublicRoot 'index.html'),
     (Join-Path $PublicRoot 'en\index.html'),

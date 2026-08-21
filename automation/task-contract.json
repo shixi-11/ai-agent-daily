@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "3.1.0",
+  "contractVersion": "3.2.0",
   "task": "Global AI and AI Agent Intelligence Daily bilingual publish",
   "schedulePolicy": "Preserve the existing OpenClaw schedule and timezone; replace only the task workflow.",
   "automationTimezone": "preserve-existing",
@@ -102,7 +102,10 @@
   "layoutContract": {
     "effectiveFrom": "2026-08-21",
     "version": "compact-v1",
-    "visualBaseline": "Preserve the 2026-07-03 palette, typography, borders, page width and section hierarchy",
+    "masterContract": "templates/report-master.json",
+    "masterVersion": "2026-08-21-compact-v1",
+    "masterSource": "content/zh/20260821_ALUX_AI智能体情报日报.html",
+    "visualBaseline": "Copy the pinned 2026-08-21 compact-v1 CSS and DOM structure exactly; replace current content only",
     "signalCard": "Single article flow followed by a compact two-row utility footer; no equal-height side-by-side columns",
     "utilityRows": [
       "try it",
@@ -115,6 +118,7 @@
   "requiredReading": [
     "AGENTS.md",
     "AUTOMATION.md",
+    "templates/report-master.json",
     "docs/REPORT_STYLE_GUIDE.md",
     "docs/RESPONSIVE_LAYOUT_STANDARD.md",
     "docs/DOMAIN_ROUTING.md",
@@ -125,6 +129,7 @@
   ],
   "steps": [
     "Pull the latest main branch and inspect git status.",
+    "Read templates/report-master.json, verify its hashes, and use its pinned 2026-08-21 compact-v1 source instead of the latest previous issue as the visual master.",
     "Resume any unfinished translation or review before starting a new date.",
     "Generate the Chinese report in the current reviewed layout and the public-interest editorial contract; retain the RISC machine primer but remove per-news RISC scoring and the dedicated financing window.",
     "Create a refined en-US translation for global AI Agent, infrastructure, technology and business readers; complete analysis, initial translation, independent review in a separate editor context, and polish, and never translate literally word for word.",
@@ -188,6 +193,7 @@
     "No private identity, credential, local path, internal artifact, work log, tool output or process narration may enter public release content.",
     "No visible editorial self-talk such as selection boundaries, why an item was selected, padding policy or empty-category explanations may appear in a published issue.",
     "The issue must satisfy editorialContract.selectionMix and the compact-v1 news-card layout.",
+    "Every issue from 2026-08-21 onward must byte-match the CSS in the pinned 2026-08-21-compact-v1 master and preserve its required DOM structure; the latest previous issue is not a substitute master.",
     "Daily publication must commit and push the official main branch directly; it must not stop at a pull request or wait for a manual merge.",
     "Telegram notification is blocked until the new official domain serves byte-equivalent current home, latest and dated pages and every legacy route passes the single-308 compatibility gate.",
     "Routine Telegram delivery is text-only and must not include HTML, ZIP, image or other report attachments; the fixed official domain is the durable storage and bilingual reading surface.",
@@ -197,6 +203,7 @@
     "Do not push when any validation fails."
   ],
   "commands": [
+    "node ./scripts/verify-report-master.cjs",
     "pwsh -NoProfile -File ./scripts/update-translation-manifest.ps1 -Date YYYY-MM-DD -MarkReviewed",
     "pwsh -NoProfile -File ./scripts/sync-reports.ps1",
     "pwsh -NoProfile -File ./scripts/verify-site.ps1",
