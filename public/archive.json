@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-21T12:11:58.3147350Z",
+  "generatedAt": "2026-08-21T13:18:10.0188770Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
@@ -20,8 +20,8 @@
       "alternateUrl": "/daily/en/2026/08/21/",
       "publicPath": "2026/08/21/index.html",
       "sourceFile": "20260821_ALUX_AI智能体情报日报.html",
-      "sha256": "ca8c4ff896197dfbd4f58f2562533aa136300c4e6560e3331f78f63aeda85c7e",
-      "publicSha256": "89e0e4414805fc37ef4fc736233914403dbbac3c8aa07b7ad99c15c5e1803e50"
+      "sha256": "a6b6c5f8787af928189c5b4e10fe98b30dc7be576681d227455cf029739a33be",
+      "publicSha256": "e58c2d26b3f91e58ef295a884ed2c0016c36a7c19b5d118f3e1d6ba8fed0c913"
     },
     {
       "date": "2026-08-20",
