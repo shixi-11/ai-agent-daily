@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-21T18:27:17.0967900Z",
+  "generatedAt": "2026-08-22T00:22:15.3482930Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-21",
-    "url": "/daily/2026/08/21/",
+    "date": "2026-08-22",
+    "url": "/daily/2026/08/22/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/21/"
+    "alternateUrl": "/daily/en/2026/08/22/"
   },
   "reports": [
+    {
+      "date": "2026-08-22",
+      "title": "AI Agent可靠性来到用户面前",
+      "lead": "今天的八条变化都在追问同一件事：Agent如何更稳地等待、恢复、安装、升级和操作真实界面。",
+      "url": "/daily/2026/08/22/",
+      "alternateUrl": "/daily/en/2026/08/22/",
+      "publicPath": "2026/08/22/index.html",
+      "sourceFile": "20260822_ALUX_AI智能体情报日报.html",
+      "sha256": "42bf7ffb12f4683a375302d76f810b6677b9a641338323f49ac56f273009a6a9",
+      "publicSha256": "25a78815f5ee044e7f7fb82b43b0a3a7d71d621bd61a3c3c615e106f22730d34"
+    },
     {
       "date": "2026-08-21",
       "title": "AI Agent工具开始长出系统感",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/21/index.html",
       "sourceFile": "20260821_ALUX_AI智能体情报日报.html",
       "sha256": "06f9be2bb1be82a68a59bc6dd967cb6033d11d37b2b2704bb75669228389e06e",
-      "publicSha256": "e511341e8f90f1405438a25b7ee71375d331f8ebc568c72abe1a81f84fe2335d"
+      "publicSha256": "78e67a08cf0fd04fb1943cf7d0778fe198a0644e11b2a4fcc07ae4b89d6e9c25"
     },
     {
       "date": "2026-08-20",

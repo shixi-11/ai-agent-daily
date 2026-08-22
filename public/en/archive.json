@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-21T18:27:17.0967900Z",
+  "generatedAt": "2026-08-22T00:22:15.3482930Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-21",
-    "url": "/daily/en/2026/08/21/",
+    "date": "2026-08-22",
+    "url": "/daily/en/2026/08/22/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/21/"
+    "alternateUrl": "/daily/2026/08/22/"
   },
   "reports": [
+    {
+      "date": "2026-08-22",
+      "title": "AI Agents — Reliability Moves Into View",
+      "lead": "Eight changes ask the same practical question: how can agents wait, recover, install, upgrade, and operate real interfaces more reliably?",
+      "url": "/daily/en/2026/08/22/",
+      "alternateUrl": "/daily/2026/08/22/",
+      "publicPath": "en/2026/08/22/index.html",
+      "sourceFile": "20260822.body.html",
+      "sha256": "e94c8a9efca50501e71c074f669f27e9836b6873f8fa73cfd80da040f990a674",
+      "publicSha256": "7d80465c6e1b56fc72cf0f70d9bfa18a03e8de5d2a94ba44ee48133370a2e2cd"
+    },
     {
       "date": "2026-08-21",
       "title": "AI Agents — Tools Are Becoming Systems",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/21/index.html",
       "sourceFile": "20260821.body.html",
       "sha256": "28639ac9c3e71882e8cd5a9143d303abd993c4c53c99f3c11fa4d7d343b088c6",
-      "publicSha256": "cda0b64edf3f6eea5d6dee07f01029d9bd6712a8eb536409070eee52bfa42b14"
+      "publicSha256": "5ddacfa053e780aa756c7f35765954d7f18b1ac912939cf086c68b2987399367"
     },
     {
       "date": "2026-08-20",
