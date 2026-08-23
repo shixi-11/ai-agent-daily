@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-22T00:22:15.3482930Z",
+  "generatedAt": "2026-08-23T07:18:26.7239210Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-22",
-    "url": "/daily/en/2026/08/22/",
+    "date": "2026-08-23",
+    "url": "/daily/en/2026/08/23/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/22/"
+    "alternateUrl": "/daily/2026/08/23/"
   },
   "reports": [
+    {
+      "date": "2026-08-23",
+      "title": "AI Agents — Boundaries Become the Product",
+      "lead": "Eight changes show that reliable agents increasingly depend on sessions, permissions, tool gateways, research discipline, and memory infrastructure.",
+      "url": "/daily/en/2026/08/23/",
+      "alternateUrl": "/daily/2026/08/23/",
+      "publicPath": "en/2026/08/23/index.html",
+      "sourceFile": "20260823.body.html",
+      "sha256": "f6aa7bf17947382badfaf866402c04e532e5b9f892c51a1ea98e15e94e43de0a",
+      "publicSha256": "2aca0f08b69e1e1094d6eca03ba1ae41ff580d955f2521bd7ced72cf785e3f3c"
+    },
     {
       "date": "2026-08-22",
       "title": "AI Agents — Reliability Moves Into View",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/22/index.html",
       "sourceFile": "20260822.body.html",
       "sha256": "e94c8a9efca50501e71c074f669f27e9836b6873f8fa73cfd80da040f990a674",
-      "publicSha256": "7d80465c6e1b56fc72cf0f70d9bfa18a03e8de5d2a94ba44ee48133370a2e2cd"
+      "publicSha256": "2c99f7f48b0bfb05984fd1c13652a19e26a22be1bb12e6745f84108342cf7659"
     },
     {
       "date": "2026-08-21",

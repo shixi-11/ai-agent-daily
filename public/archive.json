@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-22T00:22:15.3482930Z",
+  "generatedAt": "2026-08-23T07:18:26.7239210Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-22",
-    "url": "/daily/2026/08/22/",
+    "date": "2026-08-23",
+    "url": "/daily/2026/08/23/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/22/"
+    "alternateUrl": "/daily/en/2026/08/23/"
   },
   "reports": [
+    {
+      "date": "2026-08-23",
+      "title": "AI Agent边界成为产品",
+      "lead": "今天的八条变化说明，Agent能否可靠工作，越来越取决于会话、权限、工具入口、科研流程和内存基础。",
+      "url": "/daily/2026/08/23/",
+      "alternateUrl": "/daily/en/2026/08/23/",
+      "publicPath": "2026/08/23/index.html",
+      "sourceFile": "20260823_ALUX_AI智能体情报日报.html",
+      "sha256": "abe10c8773416ddb8c7679ae8b1d67a21f37405bfb5002751120350abdcd4a4a",
+      "publicSha256": "4e7de644669648d7b4f64d48ca089818e5087f46e79a5fe9c204d98415ccd7a8"
+    },
     {
       "date": "2026-08-22",
       "title": "AI Agent可靠性来到用户面前",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/22/index.html",
       "sourceFile": "20260822_ALUX_AI智能体情报日报.html",
       "sha256": "42bf7ffb12f4683a375302d76f810b6677b9a641338323f49ac56f273009a6a9",
-      "publicSha256": "25a78815f5ee044e7f7fb82b43b0a3a7d71d621bd61a3c3c615e106f22730d34"
+      "publicSha256": "b4debc4075a3af4baee01ee3bbfb376753605faa89576878ffcb2fca7e51c361"
     },
     {
       "date": "2026-08-21",
