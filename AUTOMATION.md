@@ -19,14 +19,14 @@
 1. 读取 `automation/task-contract.json` 的 `contractVersion`。
 2. 找到你已经存在的日报自动化任务，不新建重复任务。
 3. 保留原任务 ID、schedule、时区、通知对象和凭据配置，只用 `automation/OPENCLAW_DAILY_TASK.md` 替换任务正文；运行档固定为 `openai/gpt-5.6-sol`、`thinking=high`、标准速度、无 fallback。
-4. 确认正文含当前版本标记 `[ALUX_DAILY_CONTRACT_VERSION: 3.4.0]`。
+4. 确认正文含当前版本标记 `[ALUX_DAILY_CONTRACT_VERSION: 3.5.0]`。
 5. 先手动执行一次 dry run；只有中英生成、构建和验收都通过，才让升级后的任务进入下一次定时运行。
 
 ## 你的完整任务
 
 一次日报发布不是“只生成一份中文 HTML 并上传”。完整交付必须包含：
 
-1. 先读取 `templates/report-master.json`，按其固定的 `2026-08-21-editorial-v2` 母版生成中文母稿并保存到 `content/zh/`；不得把“最近一期”当作可逐日漂移的新母版。在定稿前先完成私有的大厂 GitHub/Hugging Face 扫描，对所有 `must-review` 留下明确取舍，经核验的重要开放权重/开源发布优先入选。主文必须为 7-9 条，产品/模型/软件更新不超过 50%，并遵守首屏精简、统计语义分离以及导读/雷达分工。
+1. 先读取 `templates/report-master.json`，按其固定的 `2026-08-21-editorial-v2` 母版生成中文母稿并保存到 `content/zh/`；不得把“最近一期”当作可逐日漂移的新母版。在定稿前先完成私有的大厂 GitHub/Hugging Face 扫描，对所有 `must-review` 留下明确取舍，经核验的重要开放权重/开源发布优先入选；每天核对持续观察项，无变化不重复、正式开放变化立即入选。所有 GitHub 开源/Skill 推荐都要刷新当天 Stars 与许可证状态。主文必须为 7-9 条，产品/模型/软件更新不超过 50%，并遵守首屏精简、统计语义分离以及导读/雷达分工。
 2. 按项目术语表执行母语级英文精修，保存到 `content/en/`。
 3. 核对中英两版事实、数字、产品名、版本号、章节结构和所有来源链接。RISC 只作为新版前置机器说明。
 4. 更新 `content/en/translation-manifest.json` 并将已精修的当期标记为 `reviewed`。

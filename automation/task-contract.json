@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "3.4.0",
+  "contractVersion": "3.5.0",
   "task": "Global AI and AI Agent Intelligence Daily bilingual publish",
   "schedulePolicy": "Preserve the existing OpenClaw schedule and timezone; replace only the task workflow.",
   "automationTimezone": "preserve-existing",
@@ -86,6 +86,26 @@
       "rule": "Every must-review release receives an explicit internal disposition; every verified substantive major-vendor model, weight, code, dataset or framework release is selected unless it was already covered within 30 days and has no new evidence.",
       "licenseLanguage": "Distinguish OSI open source, source-available code, open weights and custom community licenses. Downloadable weights alone must not be described as OSI open source."
     },
+    "persistentWatchPolicy": {
+      "effectiveFrom": "2026-08-25",
+      "rule": "Check official sources every day for tracked announced releases. Do not repeat unchanged announcements; select an item immediately when official weights, code, modules or local runnable artifacts become available.",
+      "initialWatch": "MiniMax H3-Regenerate-2K: distinguish the existing 2K API workflow from the still-pending local open release."
+    },
+    "githubMetricsPolicy": {
+      "effectiveFrom": "2026-08-25",
+      "scope": "Selected open-source and skill-tool items backed by GitHub repositories",
+      "requiredFields": [
+        "githubRepository",
+        "githubStars",
+        "githubStarsObservedAt",
+        "githubLicenseSpdx"
+      ],
+      "display": "Show an exact same-day GitHub Stars snapshot and license status in both locales, plus one note that Stars measure attention at publication time rather than quality."
+    },
+    "freshnessPolicy": {
+      "effectiveFrom": "2026-08-25",
+      "rule": "Every selected signal has parseable publishedAt and same-day observedAt. Items older than 14 days require a verifiable newChange and must not be presented as newly published today."
+    },
     "visibleCardFields": [
       "what happened",
       "why it matters",
@@ -161,6 +181,8 @@
     "Read templates/report-master.json, verify its hashes, and use its pinned 2026-08-21 compact-v1 source instead of the latest previous issue as the visual master.",
     "Resume any unfinished translation or review before starting a new date.",
     "Run the private major-vendor open-source scan across the official GitHub and Hugging Face watchlist, review every must-review candidate and reserve a slot for every qualified substantive release before ordinary version updates.",
+    "Review every persistent watch against official sources; keep unchanged announcements internal and select confirmed open-release changes immediately.",
+    "Refresh GitHub Stars and license status for every selected GitHub open-source or Skill item, then keep the same snapshot in Chinese and English.",
     "Generate the Chinese report in the current reviewed layout and the public-interest editorial contract; retain the RISC machine primer but remove per-news RISC scoring and the dedicated financing window.",
     "Create a refined en-US translation for global AI Agent, infrastructure, technology and business readers; complete analysis, initial translation, independent review in a separate editor context, and polish, and never translate literally word for word.",
     "Mark the translation reviewed and refresh source/translation hashes.",
@@ -226,6 +248,9 @@
     "Every issue from 2026-08-21 onward must byte-match the CSS in the pinned 2026-08-21-editorial-v2 master and preserve its required DOM structure; the latest previous issue is not a substitute master.",
     "Every issue must use 7-9 signals, keep release-like items at or below 50%, keep hero statistics semantically distinct, keep the hero lead and judgment concise, and separate the factual role of 今日AI导航 from the cross-signal synthesis role of AI Agent雷达.",
     "Every issue from 2026-08-25 onward must complete the major-vendor GitHub and Hugging Face scan, record an explicit disposition for every must-review candidate, and include every qualified substantive release in selectedSignals.",
+    "Every issue from 2026-08-25 onward must complete every persistent watch review, suppress unchanged announcements and select confirmed official open-release changes.",
+    "Every selected GitHub open-source or Skill item must show a same-day Stars snapshot and license status in both locales; Stars must be labeled as attention rather than quality.",
+    "Every selected signal must use parseable publishedAt and same-day observedAt; items older than 14 days require a verifiable newChange.",
     "Daily publication must commit and push the official main branch directly; it must not stop at a pull request or wait for a manual merge.",
     "Telegram notification is blocked until the new official domain serves byte-equivalent current home, latest and dated pages and every legacy route passes the single-308 compatibility gate.",
     "Routine Telegram delivery is text-only and must not include HTML, ZIP, image or other report attachments; the fixed official domain is the durable storage and bilingual reading surface.",
