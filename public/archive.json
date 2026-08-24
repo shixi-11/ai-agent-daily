@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-23T07:18:26.7239210Z",
+  "generatedAt": "2026-08-24T00:38:25.7699550Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-23",
-    "url": "/daily/2026/08/23/",
+    "date": "2026-08-24",
+    "url": "/daily/2026/08/24/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/23/"
+    "alternateUrl": "/daily/en/2026/08/24/"
   },
   "reports": [
+    {
+      "date": "2026-08-24",
+      "title": "AI Agent恢复必须带着证据",
+      "lead": "今天九条变化把同一问题推到台前：Agent要真正可用，恢复、授权、证据和执行环境必须一起成立。",
+      "url": "/daily/2026/08/24/",
+      "alternateUrl": "/daily/en/2026/08/24/",
+      "publicPath": "2026/08/24/index.html",
+      "sourceFile": "20260824_ALUX_AI智能体情报日报.html",
+      "sha256": "261fcddf3848df352fce8853fe0006ceb95ac4b01b76e39c56cbe1d7ebd07489",
+      "publicSha256": "694066a58a00cde91d62bd0d15348ae6e53eb6baa24aa1d02f4f6dbdfb963714"
+    },
     {
       "date": "2026-08-23",
       "title": "AI Agent边界成为产品",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/23/index.html",
       "sourceFile": "20260823_ALUX_AI智能体情报日报.html",
       "sha256": "abe10c8773416ddb8c7679ae8b1d67a21f37405bfb5002751120350abdcd4a4a",
-      "publicSha256": "4e7de644669648d7b4f64d48ca089818e5087f46e79a5fe9c204d98415ccd7a8"
+      "publicSha256": "a9f7341b77fc194f0a87bdfe5b23add75bf7e62102aacf7dfcd3bb76deb5b589"
     },
     {
       "date": "2026-08-22",

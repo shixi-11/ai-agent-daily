@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-23T07:18:26.7239210Z",
+  "generatedAt": "2026-08-24T00:38:25.7699550Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-23",
-    "url": "/daily/en/2026/08/23/",
+    "date": "2026-08-24",
+    "url": "/daily/en/2026/08/24/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/23/"
+    "alternateUrl": "/daily/2026/08/24/"
   },
   "reports": [
+    {
+      "date": "2026-08-24",
+      "title": "AI Agent — Recovery Needs Evidence",
+      "lead": "Nine changes converge on one point: for agents to be genuinely useful, recovery, authorization, evidence, and the execution environment must work as one.",
+      "url": "/daily/en/2026/08/24/",
+      "alternateUrl": "/daily/2026/08/24/",
+      "publicPath": "en/2026/08/24/index.html",
+      "sourceFile": "20260824.body.html",
+      "sha256": "ed13babc2dc766212db74fa3b0c2a380b5877a18f98506305c8d41abbb175b7c",
+      "publicSha256": "1e6dc747a50486d9a742361a1697b7b98118ac265e37eb59fb506f08ec4112cb"
+    },
     {
       "date": "2026-08-23",
       "title": "AI Agents — Boundaries Become the Product",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/23/index.html",
       "sourceFile": "20260823.body.html",
       "sha256": "f6aa7bf17947382badfaf866402c04e532e5b9f892c51a1ea98e15e94e43de0a",
-      "publicSha256": "2aca0f08b69e1e1094d6eca03ba1ae41ff580d955f2521bd7ced72cf785e3f3c"
+      "publicSha256": "c3380a7c25223e4fed5d3a5d87abbfb5a0a70d182c4829cc4a3e8a1229967abd"
     },
     {
       "date": "2026-08-22",
