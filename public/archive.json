@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-24T00:38:25.7699550Z",
+  "generatedAt": "2026-08-25T04:13:08.9143020Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-24",
-    "url": "/daily/2026/08/24/",
+    "date": "2026-08-25",
+    "url": "/daily/2026/08/25/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/24/"
+    "alternateUrl": "/daily/en/2026/08/25/"
   },
   "reports": [
+    {
+      "date": "2026-08-25",
+      "title": "AI Agent开放正在从模型长到系统",
+      "lead": "今天七条信号显示：开放权重、完整 Harness、可安装 Skills 与机器证明，正在把 AI 从能力展示推向可检查系统。",
+      "url": "/daily/2026/08/25/",
+      "alternateUrl": "/daily/en/2026/08/25/",
+      "publicPath": "2026/08/25/index.html",
+      "sourceFile": "20260825_ALUX_AI智能体情报日报.html",
+      "sha256": "49e2f20ffb1b26f1bedaf934bd4eeaed068b0876b14ac75103bba4ca5d6cca74",
+      "publicSha256": "0014ca2b7b551abfaa799c77f2e76ea32626d94db43530c62dca216ef33343f2"
+    },
     {
       "date": "2026-08-24",
       "title": "AI Agent恢复必须带着证据",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/24/index.html",
       "sourceFile": "20260824_ALUX_AI智能体情报日报.html",
       "sha256": "261fcddf3848df352fce8853fe0006ceb95ac4b01b76e39c56cbe1d7ebd07489",
-      "publicSha256": "694066a58a00cde91d62bd0d15348ae6e53eb6baa24aa1d02f4f6dbdfb963714"
+      "publicSha256": "e3eb372b12f388123be5c6e0d300fb4051c6660ae2219ab1bdb87c01b59f5815"
     },
     {
       "date": "2026-08-23",

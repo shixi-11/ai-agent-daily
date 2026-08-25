@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-24T00:38:25.7699550Z",
+  "generatedAt": "2026-08-25T04:13:08.9143020Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-24",
-    "url": "/daily/en/2026/08/24/",
+    "date": "2026-08-25",
+    "url": "/daily/en/2026/08/25/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/24/"
+    "alternateUrl": "/daily/2026/08/25/"
   },
   "reports": [
+    {
+      "date": "2026-08-25",
+      "title": "AI Agent — Openness Is Expanding from Models to Systems",
+      "lead": "Seven signals point to open weights, complete harnesses, installable Skills, and machine proofs moving AI beyond capability demos toward inspectable systems.",
+      "url": "/daily/en/2026/08/25/",
+      "alternateUrl": "/daily/2026/08/25/",
+      "publicPath": "en/2026/08/25/index.html",
+      "sourceFile": "20260825.body.html",
+      "sha256": "32cfc89e43300dd66d833678df5538399b7c0d006e81c154c1bd7ebd54b5d501",
+      "publicSha256": "427c09257191afa2b77156cad07c4e92402538c21f09dc939df01e41fdc664a7"
+    },
     {
       "date": "2026-08-24",
       "title": "AI Agent — Recovery Needs Evidence",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/24/index.html",
       "sourceFile": "20260824.body.html",
       "sha256": "ed13babc2dc766212db74fa3b0c2a380b5877a18f98506305c8d41abbb175b7c",
-      "publicSha256": "1e6dc747a50486d9a742361a1697b7b98118ac265e37eb59fb506f08ec4112cb"
+      "publicSha256": "fe9fc7f2b520ab893e38d3071829f4ceac1761f5f3a6c9fa23584fb335dc7f03"
     },
     {
       "date": "2026-08-23",
