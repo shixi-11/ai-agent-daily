@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-25T04:13:08.9143020Z",
+  "generatedAt": "2026-08-25T15:13:54.9403050Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
@@ -20,8 +20,8 @@
       "alternateUrl": "/daily/2026/08/25/",
       "publicPath": "en/2026/08/25/index.html",
       "sourceFile": "20260825.body.html",
-      "sha256": "32cfc89e43300dd66d833678df5538399b7c0d006e81c154c1bd7ebd54b5d501",
-      "publicSha256": "427c09257191afa2b77156cad07c4e92402538c21f09dc939df01e41fdc664a7"
+      "sha256": "4fc806e441cccda7b97f6f73df9ef5ba69109e1539544c02988a15c4369c3b56",
+      "publicSha256": "f9a554056324782ddb9f3d15c3702e5cefaa648ae07f2050e583f32ca6cf660d"
     },
     {
       "date": "2026-08-24",

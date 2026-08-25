@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "3.5.0",
+  "contractVersion": "3.5.1",
   "task": "Global AI and AI Agent Intelligence Daily bilingual publish",
   "schedulePolicy": "Preserve the existing OpenClaw schedule and timezone; replace only the task workflow.",
   "automationTimezone": "preserve-existing",
@@ -251,6 +251,7 @@
     "Every issue from 2026-08-25 onward must complete every persistent watch review, suppress unchanged announcements and select confirmed official open-release changes.",
     "Every selected GitHub open-source or Skill item must show a same-day Stars snapshot and license status in both locales; Stars must be labeled as attention rather than quality.",
     "Every selected signal must use parseable publishedAt and same-day observedAt; items older than 14 days require a verifiable newChange.",
+    "Each AI Agent radar title must state a concrete subject and change, stay within 20 Chinese visual units, and render with natural semantic line breaks at desktop and mobile widths.",
     "Daily publication must commit and push the official main branch directly; it must not stop at a pull request or wait for a manual merge.",
     "Telegram notification is blocked until the new official domain serves byte-equivalent current home, latest and dated pages and every legacy route passes the single-308 compatibility gate.",
     "Routine Telegram delivery is text-only and must not include HTML, ZIP, image or other report attachments; the fixed official domain is the durable storage and bilingual reading surface.",

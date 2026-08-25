@@ -249,6 +249,31 @@ async function inspectCommon(page, options = {}) {
           : [];
       })
       .slice(0, 12);
+    const dateRangeNode = document.querySelector('.fact:last-child b');
+    const dateRangeOwner = dateRangeNode?.closest('.fact');
+    const dateRangeNeighbour = document.querySelector('.latest');
+    let dateRangeBleed = null;
+    if (dateRangeNode && dateRangeOwner) {
+      const ownerRect = rectSnapshot(dateRangeOwner.getBoundingClientRect());
+      const neighbourRect = dateRangeNeighbour ? rectSnapshot(dateRangeNeighbour.getBoundingClientRect()) : null;
+      const glyphRects = textRects(dateRangeNode);
+      const escapedText = glyphRects.filter((rect) => rectEscapesHorizontally(rect, ownerRect, 2));
+      const intersections = neighbourRect
+        ? glyphRects.filter((rect) => rectsIntersect(rect, neighbourRect))
+        : [];
+      const scrollOverflow = dateRangeNode.clientWidth > 0 && dateRangeNode.scrollWidth > dateRangeNode.clientWidth + 2;
+      if (escapedText.length || intersections.length || scrollOverflow) {
+        dateRangeBleed = {
+          text: dateRangeNode.textContent.replace(/\s+/g, ' ').trim(),
+          ownerRect,
+          neighbourRect,
+          escapedText: escapedText.slice(0, 8),
+          intersections: intersections.slice(0, 8),
+          scrollWidth: dateRangeNode.scrollWidth,
+          clientWidth: dateRangeNode.clientWidth,
+        };
+      }
+    }
     const brandControl = document.querySelector('.brand-mark') || document.querySelector('.report-sitebrand');
     const languageSwitch = document.querySelector('.language-switch');
     return {
@@ -267,6 +292,7 @@ async function inspectCommon(page, options = {}) {
       languageSwitchHeight: languageSwitch?.getBoundingClientRect().height || 0,
       heatRowBleeds,
       panelHeadBleeds,
+      dateRangeBleed,
     };
   }, options);
 }
@@ -289,6 +315,7 @@ async function inspectHomepage(browser, locale, viewport) {
   if (result.offenders.length) throw new Error(`${locale.key}/${viewport.name}: clipped elements ${JSON.stringify(result.offenders)}`);
   if (result.monthLines.some((lines) => lines !== 1)) throw new Error(`${locale.key}/${viewport.name}: month heading wrapped ${result.monthLines}`);
   if (result.dateLines !== 1) throw new Error(`${locale.key}/${viewport.name}: archive range wrapped to ${result.dateLines} lines`);
+  if (result.dateRangeBleed) throw new Error(`${locale.key}/${viewport.name}: archive range escaped its fact cell ${JSON.stringify(result.dateRangeBleed)}`);
   if (!result.logoLoaded || result.favicon !== '/daily/assets/alux-mark.png') throw new Error(`${locale.key}/${viewport.name}: ALUX logo/favicon missing`);
   if (result.currentLang !== locale.currentLang) throw new Error(`${locale.key}/${viewport.name}: language state mismatch ${result.currentLang}`);
   if (result.navHeight < 43) throw new Error(`${locale.key}/${viewport.name}: latest nav target too short ${result.navHeight}`);

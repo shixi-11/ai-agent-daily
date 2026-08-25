@@ -37,9 +37,9 @@
     h1{margin:18px 0 20px;font-family:"Songti SC","Noto Serif CJK SC",SimSun,Georgia,serif;font-size:clamp(42px,6.2vw,76px);line-height:1.03;letter-spacing:-.025em;color:#101827}
     h1 span{display:block;margin-top:12px;color:var(--indigo);font-family:Georgia,"Times New Roman",serif;font-size:.55em;letter-spacing:-.01em}
     .intro{max-width:700px;margin:0;color:#3d4857;font-size:clamp(17px,1.7vw,20px);line-height:1.65;text-wrap:pretty;word-break:auto-phrase}
-    .facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:30px}
-    .fact{padding:14px 15px;border-top:2px solid var(--navy);background:rgba(255,255,255,.58)}
-    .fact b{display:block;color:var(--navy);font-size:clamp(18px,1.4vw,22px);font-variant-numeric:tabular-nums;white-space:nowrap;word-break:keep-all}.fact:last-child b{font-size:clamp(17px,1.25vw,20px);letter-spacing:-.035em}.fact span{display:block;margin-top:4px;color:var(--muted);font-size:12px}
+    .facts{display:grid;grid-template-columns:minmax(82px,.72fr) minmax(82px,.72fr) minmax(250px,1.56fr);gap:10px;margin-top:30px}
+    .fact{min-width:0;padding:14px 15px;border-top:2px solid var(--navy);background:rgba(255,255,255,.58)}
+    .fact b{display:block;color:var(--navy);font-size:clamp(18px,1.4vw,22px);font-variant-numeric:tabular-nums;white-space:nowrap;word-break:keep-all}.fact:last-child b{font-size:clamp(15px,1.15vw,18px);line-height:1.25;letter-spacing:0;white-space:normal;word-break:normal;overflow-wrap:anywhere}.fact span{display:block;margin-top:4px;color:var(--muted);font-size:12px}
     .latest{position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:space-between;min-height:440px;padding:30px;background:var(--navy);color:#f8fbff;box-shadow:var(--shadow);overflow:hidden}
     .latest:before{content:"";position:absolute;z-index:-1;inset:-20%;background:radial-gradient(circle at 80% 18%,rgba(58,184,160,.24),transparent 34%),linear-gradient(135deg,transparent 40%,rgba(255,255,255,.04) 40%,rgba(255,255,255,.04) 41%,transparent 41%);background-size:auto,26px 26px}
     .latest-kicker{display:flex;justify-content:space-between;gap:18px;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:#a8d8ce}
@@ -402,7 +402,7 @@
 
   <footer class="shell">
     <span>ALUX AI Agent Intelligence Daily</span>
-    <span>最近更新（中国标准时间）：2026-08-25 12:13 · <a href="/daily/archive.json">归档清单</a></span>
+    <span>最近更新（中国标准时间）：2026-08-25 23:13 · <a href="/daily/archive.json">归档清单</a></span>
   </footer>
   <script>
     (() => {
