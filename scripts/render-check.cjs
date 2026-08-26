@@ -28,12 +28,12 @@ const fixedLayoutRegressionDates = ['2026-07-15'];
 
 const viewports = [
   { name: 'wide', width: 1920, height: 1080 },
-  { name: 'desktop', width: 1440, height: 1000, capture: true },
+  { name: 'desktop', width: 1440, height: 1000, capture: true, semanticWrap: true, deviceClass: 'desktop' },
   { name: 'laptop', width: 1024, height: 768 },
-  { name: 'tablet', width: 768, height: 1024, capture: true },
+  { name: 'tablet', width: 768, height: 1024, capture: true, semanticWrap: true, deviceClass: 'tablet' },
   { name: 'small-tablet', width: 620, height: 900 },
   { name: 'phone-large', width: 430, height: 932 },
-  { name: 'phone', width: 390, height: 844, capture: true, checkOrphans: true },
+  { name: 'phone', width: 390, height: 844, capture: true, checkOrphans: true, semanticWrap: true, deviceClass: 'mobile' },
   { name: 'narrow', width: 320, height: 568, capture: true, checkOrphans: true },
 ];
 
@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
 });
 
 async function inspectCommon(page, options = {}) {
-  return page.evaluate(({ checkOrphans, reportPage }) => {
+  return page.evaluate(({ checkOrphans, reportPage, checkSemanticWrap, localeKey }) => {
     const width = document.documentElement.clientWidth;
     const bodyWidth = document.body.scrollWidth;
     const rectSnapshot = (rect) => ({
@@ -186,6 +186,85 @@ async function inspectCommon(page, options = {}) {
         }
       }
     }
+
+    const semanticWrapIssues = [];
+    if (checkSemanticWrap) {
+      const selectors = reportPage
+        ? '.hero h1,.section h2,.item h3,.signal h3,.panel-head strong'
+        : '.latest h2,.month-strip h3,.report-copy strong';
+      const englishConnectors = new Set(['a', 'an', 'and', 'as', 'at', 'by', 'for', 'from', 'in', 'of', 'on', 'or', 'the', 'to', 'with']);
+      for (const [index, element] of [...document.querySelectorAll(selectors)].entries()) {
+        if (element.querySelector('br')) {
+          semanticWrapIssues.push({ index, kind: 'manual-break', text: element.textContent.trim().slice(0, 120) });
+          continue;
+        }
+        const segments = [];
+        const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+        while (walker.nextNode()) {
+          const textNode = walker.currentNode;
+          const pattern = localeKey === 'en' ? /\S+/gu : /\S/gu;
+          for (const match of textNode.data.matchAll(pattern)) {
+            const range = document.createRange();
+            range.setStart(textNode, match.index);
+            range.setEnd(textNode, match.index + match[0].length);
+            const rect = range.getBoundingClientRect();
+            if (rect.width > 0 && rect.height > 0) segments.push({ text: match[0], top: Math.round(rect.top) });
+          }
+        }
+        const lines = [];
+        for (const segment of segments) {
+          let line = lines.find((candidate) => Math.abs(candidate.top - segment.top) <= 1);
+          if (!line) {
+            line = { top: segment.top, parts: [] };
+            lines.push(line);
+          }
+          line.parts.push(segment.text);
+        }
+        lines.sort((a, b) => a.top - b.top);
+        if (lines.length < 2) continue;
+        const lineTexts = lines.map((line) => line.parts.join(localeKey === 'en' ? ' ' : ''));
+        if (localeKey === 'en') {
+          const lastWords = lineTexts.at(-1).match(/[A-Za-z0-9][A-Za-z0-9'’+.-]*/g) || [];
+          const allWords = segments.map((segment) => segment.text).filter((text) => /[A-Za-z0-9]/.test(text));
+          if (allWords.length > 4 && lastWords.length === 1) {
+            semanticWrapIssues.push({ index, kind: 'english-orphan-word', lines: lineTexts, text: element.textContent.trim().slice(0, 120) });
+          }
+          lineTexts.slice(0, -1).forEach((lineText, lineIndex) => {
+            const lineWords = lineText.toLowerCase().match(/[a-z0-9][a-z0-9'’+.-]*/g) || [];
+            if (englishConnectors.has(lineWords.at(-1))) {
+              semanticWrapIssues.push({ index, lineIndex, kind: 'english-dangling-connector', lines: lineTexts, text: element.textContent.trim().slice(0, 120) });
+            }
+          });
+        } else {
+          const lastLine = lineTexts.at(-1);
+          const cjkCount = [...lastLine].filter((char) => /[\u3400-\u9fff]/u.test(char)).length;
+          if (cjkCount === 1 && lastLine.replace(/[\s\p{P}]/gu, '').length <= 1) {
+            semanticWrapIssues.push({ index, kind: 'chinese-orphan-character', lines: lineTexts, text: element.textContent.trim().slice(0, 120) });
+          }
+          lineTexts.forEach((lineText, lineIndex) => {
+            if (/^[，。！？；：、）》】]/u.test(lineText)) {
+              semanticWrapIssues.push({ index, lineIndex, kind: 'chinese-leading-punctuation', lines: lineTexts, text: element.textContent.trim().slice(0, 120) });
+            }
+            if (/[（《【]$/u.test(lineText)) {
+              semanticWrapIssues.push({ index, lineIndex, kind: 'chinese-trailing-opening-punctuation', lines: lineTexts, text: element.textContent.trim().slice(0, 120) });
+            }
+          });
+        }
+      }
+    }
+
+    const gridColumnCount = (selector) => {
+      const node = document.querySelector(selector);
+      if (!node) return 0;
+      const columns = getComputedStyle(node).gridTemplateColumns.trim();
+      return columns && columns !== 'none' ? columns.split(/\s+/).length : 0;
+    };
+    const layoutSnapshot = reportPage ? {
+      statsColumns: gridColumnCount('.stats'),
+      radarColumns: gridColumnCount('.radar'),
+      riscColumns: gridColumnCount('.risc-primer-grid'),
+      utilityColumns: gridColumnCount('.side'),
+    } : null;
 
     const favicon = document.querySelector('link[rel="icon"]');
     const heatRowBleeds = [...document.querySelectorAll('.heat-row')]
@@ -281,6 +360,8 @@ async function inspectCommon(page, options = {}) {
       viewportWidth: width,
       offenders,
       orphanBlocks: orphanBlocks.slice(0, 20),
+      semanticWrapIssues: semanticWrapIssues.slice(0, 20),
+      layoutSnapshot,
       favicon: favicon?.getAttribute('href') || '',
       htmlLang: document.documentElement.lang,
       monthLines: [...document.querySelectorAll('.month-strip h3')].map(countLines),
@@ -300,7 +381,12 @@ async function inspectCommon(page, options = {}) {
 async function inspectHomepage(browser, locale, viewport) {
   const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height }, deviceScaleFactor: 1 });
   await page.goto(`http://127.0.0.1:${port}${locale.home}`, { waitUntil: 'networkidle' });
-  const common = await inspectCommon(page, { checkOrphans: viewport.checkOrphans && locale.key === 'zh', reportPage: false });
+  const common = await inspectCommon(page, {
+    checkOrphans: viewport.checkOrphans && locale.key === 'zh',
+    checkSemanticWrap: latestDate >= '2026-08-27' && viewport.semanticWrap,
+    localeKey: locale.key,
+    reportPage: false,
+  });
   const result = {
     ...common,
     title: await page.title(),
@@ -324,6 +410,7 @@ async function inspectHomepage(browser, locale, viewport) {
     throw new Error(`${locale.key}/${viewport.name}: logo/language controls misaligned ${result.brandControlHeight}/${result.languageSwitchHeight}`);
   }
   if (result.orphanBlocks.length) throw new Error(`${locale.key}/${viewport.name}: Chinese orphan lines ${JSON.stringify(result.orphanBlocks)}`);
+  if (result.semanticWrapIssues.length) throw new Error(`${locale.key}/${viewport.name}: awkward semantic wrapping ${JSON.stringify(result.semanticWrapIssues)}`);
   if (viewport.capture) await page.screenshot({ path: path.join(artifactRoot, `homepage-${locale.key}-${viewport.name}.png`), fullPage: true });
   await page.close();
   return result;
@@ -389,7 +476,7 @@ async function auditAllEnglishLayouts(browser) {
       let heatRowsChecked = 0;
       for (const report of archiveEn.reports) {
         await page.goto(`http://127.0.0.1:${port}${report.url}`, { waitUntil: 'networkidle' });
-        const common = await inspectCommon(page, { checkOrphans: false, reportPage: true });
+        const common = await inspectCommon(page, { checkOrphans: false, checkSemanticWrap: false, localeKey: 'en', reportPage: true });
         const heatRowCount = await page.locator('.heat-row').count();
         if (heatRowCount !== 4) throw new Error(`en/${viewport.name}${report.url}: expected 4 heat rows, got ${heatRowCount}`);
         if (common.bodyWidth > common.viewportWidth) {
@@ -425,7 +512,14 @@ async function auditAllEnglishLayouts(browser) {
 async function inspectReport(browser, locale, viewport, url, capture) {
   const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height }, deviceScaleFactor: 1 });
   await page.goto(`http://127.0.0.1:${port}${url}`, { waitUntil: 'networkidle' });
-  const common = await inspectCommon(page, { checkOrphans: viewport.checkOrphans && locale.key === 'zh', reportPage: true });
+  const isLatest = url === locale.latestHref;
+  const enforceThreeDeviceReadability = latestDate >= '2026-08-27' && isLatest && Boolean(viewport.deviceClass);
+  const common = await inspectCommon(page, {
+    checkOrphans: enforceThreeDeviceReadability && viewport.checkOrphans && locale.key === 'zh',
+    checkSemanticWrap: enforceThreeDeviceReadability && viewport.semanticWrap,
+    localeKey: locale.key,
+    reportPage: true,
+  });
   const result = {
     ...common,
     title: await page.title(),
@@ -452,6 +546,19 @@ async function inspectReport(browser, locale, viewport, url, capture) {
     throw new Error(`${locale.key}/${viewport.name}${url}: logo/language controls misaligned ${result.brandControlHeight}/${result.languageSwitchHeight}`);
   }
   if (result.orphanBlocks.length) throw new Error(`${locale.key}/${viewport.name}${url}: Chinese orphan lines ${JSON.stringify(result.orphanBlocks)}`);
+  if (result.semanticWrapIssues.length) throw new Error(`${locale.key}/${viewport.name}${url}: awkward semantic wrapping ${JSON.stringify(result.semanticWrapIssues)}`);
+  if (enforceThreeDeviceReadability) {
+    const expectedColumns = {
+      desktop: { statsColumns: 4, radarColumns: 3, riscColumns: 4, utilityColumns: 2 },
+      tablet: { statsColumns: 2, radarColumns: 1, riscColumns: 2, utilityColumns: 2 },
+      mobile: { statsColumns: 2, radarColumns: 1, riscColumns: 1, utilityColumns: 1 },
+    }[viewport.deviceClass];
+    for (const [key, expected] of Object.entries(expectedColumns)) {
+      if (result.layoutSnapshot?.[key] !== expected) {
+        throw new Error(`${locale.key}/${viewport.name}${url}: ${key} must be ${expected}, got ${result.layoutSnapshot?.[key]}`);
+      }
+    }
+  }
   if (capture) {
     const date = url.split('/').filter(Boolean).slice(-3).join('-');
     await page.screenshot({ path: path.join(artifactRoot, `report-${locale.key}-${date}-${viewport.name}.png`), fullPage: true });

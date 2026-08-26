@@ -52,6 +52,11 @@ foreach ($requiredFile in $requiredFiles) {
 $chineseArchive = Get-Content -LiteralPath (Join-Path $PublicRoot 'archive.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $englishArchive = Get-Content -LiteralPath (Join-Path $PublicRoot 'en\archive.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $translationManifest = Get-Content -LiteralPath (Join-Path $EnglishRoot 'translation-manifest.json') -Raw -Encoding UTF8 | ConvertFrom-Json
+$latestIssueDate = [string]$chineseArchive.latest.date
+& $nodeCommand.Source (Join-Path $PSScriptRoot 'verify-locale-copy.cjs') $latestIssueDate
+if ($LASTEXITCODE -ne 0) {
+    throw "$latestIssueDate 中英文断句、标题长度或语言习惯门禁失败。"
+}
 $chineseReports = @($chineseArchive.reports)
 $englishReports = @($englishArchive.reports)
 $translationEntries = @($translationManifest.reports)

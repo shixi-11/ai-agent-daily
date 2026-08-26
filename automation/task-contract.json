@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "3.5.1",
+  "contractVersion": "3.6.0",
   "task": "Global AI and AI Agent Intelligence Daily bilingual publish",
   "schedulePolicy": "Preserve the existing OpenClaw schedule and timezone; replace only the task workflow.",
   "automationTimezone": "preserve-existing",
@@ -102,6 +102,22 @@
       ],
       "display": "Show an exact same-day GitHub Stars snapshot and license status in both locales, plus one note that Stars measure attention at publication time rather than quality."
     },
+    "codexResetWatchPolicy": {
+      "effectiveFrom": "2026-08-27",
+      "eventTypes": [
+        "automatic-global-reset",
+        "banked-reset-card"
+      ],
+      "officialSurfaces": [
+        "OpenAI Codex plan help",
+        "OpenAI banked reset help",
+        "OpenAI public announcements",
+        "OpenAI status"
+      ],
+      "rule": "Review all official surfaces every day. Keep no-change reviews private. Publish a confirmed public event only with its event type, eligible plans or workspaces, reset scope, eligibility conditions, official source and effective time.",
+      "timeRule": "Convert an official exact effective time to Asia/Shanghai. If no official exact effective time exists, state that no exact Beijing time was announced and never substitute the announcement timestamp.",
+      "privacyRule": "Account-specific Usage-page evidence, reset balances, screenshots and identity details remain private and cannot be generalized into a public event."
+    },
     "freshnessPolicy": {
       "effectiveFrom": "2026-08-25",
       "rule": "Every selected signal has parseable publishedAt and same-day observedAt. Items older than 14 days require a verifiable newChange and must not be presented as newly published today."
@@ -162,7 +178,34 @@
     ],
     "fixedCardMinHeightAllowed": false,
     "closingInsightColumns": 1,
-    "mobileUtilityLayout": "single column"
+    "mobileUtilityLayout": "single column",
+    "localeTypography": {
+      "effectiveFrom": "2026-08-27",
+      "zh": "Write complete Chinese semantic phrases and natural pauses; avoid comma chains and isolated final-line Chinese characters or punctuation.",
+      "en": "Rewrite for native en-US syntax, clear subject-verb structure and complete title phrases; avoid orphan final-line words and dangling articles, prepositions or conjunctions.",
+      "manualBreaks": "Do not use br tags, non-breaking spaces or invisible characters to force a line break at one viewport."
+    },
+    "representativeDeviceLayouts": {
+      "effectiveFrom": "2026-08-27",
+      "desktop1440": {
+        "statistics": 4,
+        "radar": 3,
+        "risc": 4,
+        "utility": 2
+      },
+      "tablet768": {
+        "statistics": 2,
+        "radar": 1,
+        "risc": 2,
+        "utility": 2
+      },
+      "mobile390": {
+        "statistics": 2,
+        "radar": 1,
+        "risc": 1,
+        "utility": 1
+      }
+    }
   },
   "requiredReading": [
     "AGENTS.md",
@@ -182,9 +225,11 @@
     "Resume any unfinished translation or review before starting a new date.",
     "Run the private major-vendor open-source scan across the official GitHub and Hugging Face watchlist, review every must-review candidate and reserve a slot for every qualified substantive release before ordinary version updates.",
     "Review every persistent watch against official sources; keep unchanged announcements internal and select confirmed open-release changes immediately.",
+    "Review Codex automatic or global usage resets and banked reset cards across the official OpenAI surfaces; keep no-change and account-specific evidence private, and publish confirmed public events with eligibility, scope and Beijing time.",
     "Refresh GitHub Stars and license status for every selected GitHub open-source or Skill item, then keep the same snapshot in Chinese and English.",
     "Generate the Chinese report in the current reviewed layout and the public-interest editorial contract; retain the RISC machine primer but remove per-news RISC scoring and the dedicated financing window.",
     "Create a refined en-US translation for global AI Agent, infrastructure, technology and business readers; complete analysis, initial translation, independent review in a separate editor context, and polish, and never translate literally word for word.",
+    "Run the locale copy gate and inspect 1440 desktop, 768 tablet and 390 mobile renders for language-specific semantic wrapping and the contracted grid reflow.",
     "Mark the translation reviewed and refresh source/translation hashes.",
     "Build both locales and update both homepages, latest routes, dated routes, archives and sitemap together.",
     "Run structural, hash, link, SEO and multi-viewport rendering checks.",
@@ -252,6 +297,10 @@
     "Every selected GitHub open-source or Skill item must show a same-day Stars snapshot and license status in both locales; Stars must be labeled as attention rather than quality.",
     "Every selected signal must use parseable publishedAt and same-day observedAt; items older than 14 days require a verifiable newChange.",
     "Each AI Agent radar title must state a concrete subject and change, stay within 20 Chinese visual units, and render with natural semantic line breaks at desktop and mobile widths.",
+    "Every issue from 2026-08-27 onward must complete the official Codex reset review, distinguish automatic or global resets from banked reset cards, and keep account-specific evidence private.",
+    "Every confirmed public Codex reset event must state eligibility and scope and show an accurately converted Beijing effective time, or explicitly state that no exact Beijing time was announced.",
+    "Every issue from 2026-08-27 onward must pass the locale copy gate: Chinese and English use their own natural syntax, and headings or paragraphs contain no manual viewport-specific line breaks.",
+    "At the 1440 desktop, 768 tablet and 390 mobile representative viewports, statistics, radar, RISC and utility grids must match the contracted column counts and all visible headings must wrap semantically.",
     "Daily publication must commit and push the official main branch directly; it must not stop at a pull request or wait for a manual merge.",
     "Telegram notification is blocked until the new official domain serves byte-equivalent current home, latest and dated pages and every legacy route passes the single-308 compatibility gate.",
     "Routine Telegram delivery is text-only and must not include HTML, ZIP, image or other report attachments; the fixed official domain is the durable storage and bilingual reading surface.",
@@ -264,6 +313,7 @@
     "node ./scripts/verify-report-master.cjs",
     "pwsh -NoProfile -File ./scripts/update-translation-manifest.ps1 -Date YYYY-MM-DD -MarkReviewed",
     "pwsh -NoProfile -File ./scripts/sync-reports.ps1",
+    "node ./scripts/verify-locale-copy.cjs YYYY-MM-DD",
     "pwsh -NoProfile -File ./scripts/verify-site.ps1",
     "node ./scripts/render-check.cjs",
     "node ./scripts/verify-release-boundary.cjs YYYY-MM-DD",

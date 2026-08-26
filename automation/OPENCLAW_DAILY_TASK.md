@@ -2,12 +2,12 @@
 
 这个文件不替你改变原有定时执行时间。同步仓库后，请保留你当前自动化的 schedule 和时区，将任务正文升级为下面的完整流程。
 
-当前合同版本为 `3.5.1`。如果现有任务正文没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.5.1]`，保留原任务 ID、执行时间、时区和凭据，只替换任务正文，完成一次手动 dry run 后再等待下一次定时执行；不要新建一个重复的定时任务。
+当前合同版本为 `3.6.0`。如果现有任务正文没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.6.0]`，保留原任务 ID、执行时间、时区和凭据，只替换任务正文，完成一次手动 dry run 后再等待下一次定时执行；不要新建一个重复的定时任务。
 
 ## 应写入自动化的任务正文
 
 ```text
-[ALUX_DAILY_CONTRACT_VERSION: 3.5.1]
+[ALUX_DAILY_CONTRACT_VERSION: 3.6.0]
 
 你负责生成、翻译、验收并发布当日的 ALUX AI智能体情报日报。
 
@@ -26,24 +26,26 @@
    `AI Agent雷达` 三个卡片标题必须使用“具体主体 + 具体变化”的短句，中文视觉宽度最多 20 个中文字量；不得写“开始把……同时……交出来”一类拖长口语句，并在 1440、1024、390 宽度检查实际断行。
 8. 保留新闻前的 `RISC机器说明`，但不再对单条新闻打 RISC 主/辅标签或显示评分表。取消独立融资窗口；融资只在能说明技术、市场或产业结构变化时作为市场信号入选。
 9. 每条新闻正文只写“发生了什么、为什么值得关注、适合谁看”，底部紧凑区只写“试试看、注意点”。建议长度分别为 80-140、40-80、20-45、35-70、35-70 个中文字符，不为凑字数扩写。公开页面禁止出现“选题边界、观察理由、为什么入选、本刊不会凑数、宁可留白”等编辑过程或自我辩解。
+10. 每天核对 Codex 的自动/全局额度重置与重置卡（banked reset）两类事件。必须覆盖 OpenAI Codex 计划说明、重置卡说明、公开公告和状态页；没有官方确认只留内部记录，不在日报放占位消息。确认公开事件时写清类型、适用计划或工作区、重置范围、资格条件和官方来源；官方给出精确生效时刻时换算为北京时间，未给时明确写“官方未公布具体北京时间”，不得用公告发布时间代替。单一账户 Usage 页、余额、截图与身份信息只能作为私密证据，不能公开或泛化成全局活动。
 
 英文精修：
-10. 英文翻译合同固定为：目标语言美式英语（en-US）；翻译模式为精译并完整执行“分析 → 初译 → 独立审校 → 润色”；目标读者是全球 AI Agent、基础设施、技术与商业读者；文风是母语级科技情报出版物，专业、简洁、准确、权威，不逐字直译。独立审校必须由不同 subagent/editor 或隔离的新审校上下文完成；不得使用浏览器即时机翻、由初译者同一遍自行认证，或省略任一阶段。
-11. 将英文 body 母稿保存为 content/en/YYYYMMDD.body.html。它必须保留中文版的 HTML 结构、class、组件顺序、数字和来源 URL，不得包含 html/head/body/style 外壳。
-12. 逐项核对标题、lead、信号数、来源数、产品名、版本号、类别、结构和外链。英文不得残留未处理中文。
-13. 只有完成精修复核后，运行 scripts/update-translation-manifest.ps1 -Date YYYY-MM-DD -MarkReviewed。
+11. 英文翻译合同固定为：目标语言美式英语（en-US）；翻译模式为精译并完整执行“分析 → 初译 → 独立审校 → 润色”；目标读者是全球 AI Agent、基础设施、技术与商业读者；文风是母语级科技情报出版物，专业、简洁、准确、权威，不逐字直译。独立审校必须由不同 subagent/editor 或隔离的新审校上下文完成；不得使用浏览器即时机翻、由初译者同一遍自行认证，或省略任一阶段。
+12. 将英文 body 母稿保存为 content/en/YYYYMMDD.body.html。它必须保留中文版的 HTML 结构、class、组件顺序、数字和来源 URL，不得包含 html/head/body/style 外壳。
+13. 中文按完整语义短语和自然停顿组织，避免逗号串联多个主干；英文按 en-US 主谓、修饰关系和标题习惯重写，避免末行孤词以及冠词、介词、连词悬空。标题和正文不得用 `<br>`、`&nbsp;` 或不可见字符针对某个屏宽硬断行。
+14. 逐项核对标题、lead、信号数、来源数、产品名、版本号、类别、结构和外链。英文不得残留未处理中文。
+15. 只有完成精修复核后，运行 scripts/update-translation-manifest.ps1 -Date YYYY-MM-DD -MarkReviewed。
 
 构建与验收：
-14. 使用当前系统可用的 PowerShell 7（macOS/Linux 用 `pwsh`）运行 scripts/sync-reports.ps1。不手工编辑 public/index.html 或 public/latest/。脚本必须一次性更新中英首页的日期、标题、摘要、统计和最近更新时间，同时更新 `/daily/latest/`、`/daily/en/latest/`、`/daily/` 下的中英日期页、归档清单和 sitemap。
-15. 新一期必须使用 `data-layout-version="compact-v1"`，且 `<style>` 必须与正式母版完全一致：新闻正文在上，底部仅两行“试试看 / 注意点”，不使用左右等高栏，不用固定 `min-height` 制造齐高空白，结尾洞察只用一个全宽框。
-16. 运行 scripts/verify-site.ps1 与 scripts/render-check.cjs。检查 1920、1440、1024、768、620、430、390、320 px，并检查 621、920、921 px 断点；布局必须与当前已验收站点保持一致。英文热区矩阵宽屏标签列不得低于 172px，620px 及以下改为单列；`.panel-head` 在 920px 及以下上下排列；Logo 与语言切换外框保持 44px 等高。任何文字越过所属单元、与相邻元素重叠、卡片因等高布局出现明显空洞或控件错位都必须停止发布。
-17. 确认语言切换往返同一期，上一期/下一期正确，ALUX 三角 favicon 正常，canonical 和 hreflang 正确。
+16. 使用当前系统可用的 PowerShell 7（macOS/Linux 用 `pwsh`）运行 scripts/sync-reports.ps1。不手工编辑 public/index.html 或 public/latest/。脚本必须一次性更新中英首页的日期、标题、摘要、统计和最近更新时间，同时更新 `/daily/latest/`、`/daily/en/latest/`、`/daily/` 下的中英日期页、归档清单和 sitemap。
+17. 新一期必须使用 `data-layout-version="compact-v1"`，且 `<style>` 必须与正式母版完全一致：新闻正文在上，底部仅两行“试试看 / 注意点”，不使用左右等高栏，不用固定 `min-height` 制造齐高空白，结尾洞察只用一个全宽框。
+18. 先运行 `node scripts/verify-locale-copy.cjs YYYY-MM-DD`，再运行 scripts/verify-site.ps1 与 scripts/render-check.cjs。检查 1920、1440、1024、768、620、430、390、320 px，并检查 621、920、921 px 断点；布局必须与当前已验收站点保持一致。1440 桌面、768 平板、390 手机是三端代表视图，统计列必须为 4/2/2、雷达为 3/1/1、RISC 为 4/2/1、实用区为 2/2/1。英文热区矩阵宽屏标签列不得低于 172px，620px 及以下改为单列；`.panel-head` 在 920px 及以下上下排列；Logo 与语言切换外框保持 44px 等高。任何文字越过所属单元、与相邻元素重叠、出现中英语义硬断行、卡片因等高布局出现明显空洞或控件错位都必须停止发布。
+19. 确认语言切换往返同一期，上一期/下一期正确，ALUX 三角 favicon 正常，canonical 和 hreflang 正确。
 
 发布：
-18. 只有所有验收以及 `scripts/verify-release-boundary.cjs YYYY-MM-DD` 通过才能提交。同一次提交必须包含中文母稿、英文母稿、翻译清单和重建后的 public/。日常发布白名单之外的任何文件出现改动都要停止，不得把研究包、manifest、ledger、prompt、日志、截图、工具输出、本地路径、私人身份或凭据带进 GitHub。
-19. 提交信息使用“发布 YYYY-MM-DD 中英双语日报”，由 `scripts/publish.ps1` 直接提交并推送正式仓库 main；不创建 PR、不等待人工合并，也不要求用户手动操作 GitHub。
-20. 等待 Vercel 部署完成，运行 `node scripts/verify-official-deployment.cjs YYYY-MM-DD`，在 https://ai.alux.network/daily/ 验证中英首页、最新入口、当日中英日期页、语言切换和成品哈希；同时验证 https://ai-agent-daily.alux.network/ 及其英文、最新和日期路径均只经过一次永久重定向到新主地址。验证失败时不得发送 Telegram。
-21. 正式域名通过验证后，只向本机私密配置中的 Telegram 接收者发送纯文字链接通知，不发送 HTML、ZIP、图片或其他日报附件；私人 chat ID 不得写入公开仓库。正文必须严格使用以下格式并保留空行：
+20. 只有所有验收以及 `scripts/verify-release-boundary.cjs YYYY-MM-DD` 通过才能提交。同一次提交必须包含中文母稿、英文母稿、翻译清单和重建后的 public/。日常发布白名单之外的任何文件出现改动都要停止，不得把研究包、manifest、ledger、prompt、日志、截图、工具输出、本地路径、私人身份或凭据带进 GitHub。
+21. 提交信息使用“发布 YYYY-MM-DD 中英双语日报”，由 `scripts/publish.ps1` 直接提交并推送正式仓库 main；不创建 PR、不等待人工合并，也不要求用户手动操作 GitHub。
+22. 等待 Vercel 部署完成，运行 `node scripts/verify-official-deployment.cjs YYYY-MM-DD`，在 https://ai.alux.network/daily/ 验证中英首页、最新入口、当日中英日期页、语言切换和成品哈希；同时验证 https://ai-agent-daily.alux.network/ 及其英文、最新和日期路径均只经过一次永久重定向到新主地址。验证失败时不得发送 Telegram。
+23. 正式域名通过验证后，只向本机私密配置中的 Telegram 接收者发送纯文字链接通知，不发送 HTML、ZIP、图片或其他日报附件；私人 chat ID 不得写入公开仓库。正文必须严格使用以下格式并保留空行：
 
 【ALUX AI智能体情报日报】
 
@@ -63,6 +65,9 @@ https://ai.alux.network/daily/YYYY/MM/DD/
 - GitHub 开源/Skill 推荐缺少当天 Stars 快照、许可证状态或快照说明，或者数字与中英页面不一致时，整次发布停止。
 - 日期字段不可解析、观察日期不是当天，或超过 14 天且没有新变化证据时，整次发布停止。
 - `AI Agent雷达` 标题超过 20 个中文字量、使用拖长口语结构，或在桌面/手机出现难看的语义硬断句时，整次发布停止。
+- Codex 自动/全局重置与重置卡未完成当天官方核对、混为一种事件、把账户私密证据公开，或确认事件缺少资格、范围与北京时间时，整次发布停止。
+- 中文与英文未按各自语言习惯断句、出现人工 `<br>`/`&nbsp;`、中文单字或标点孤行、英文孤立末行单词或悬空连接词时，整次发布停止。
+- 1440、768、390 三端的统计、雷达、RISC、实用区未按合同列数重排时，整次发布停止。
 - 不得删除、绕过或降级 `render-check.cjs` 的 `heat-row` 重叠检测来让发布通过。
 - 首页最新日期、最近更新时间、`/daily/latest/` 与 `/daily/en/latest/` 必须在同一次构建和同一次 Git 提交中更新，不得半套发布。
 - 不得使用临时隧道、Vercel 预览域名或旧兼容域名替代新主地址；不得在新主地址内容哈希与旧域名单次 308 兼容验证全部通过前发 Telegram。
