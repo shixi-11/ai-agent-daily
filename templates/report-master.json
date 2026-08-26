@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "masterVersion": "2026-08-26-editorial-v3",
+  "masterVersion": "2026-08-26-editorial-v3.1",
   "layoutVersion": "compact-v1",
   "effectiveFrom": "2026-08-26",
   "sourceDate": "2026-08-26",
   "sourceFile": "content/zh/20260826_ALUX_AI智能体情报日报.html",
-  "sourceSha256": "591feeb5bb16edd5ef809ee0ded9f1bbe051547b4f787df4b4b6b1162ab6ad8f",
-  "styleSha256": "717884cd3fb921112595cc6bfe69681f3ed47626658572557749c3a1e0123584",
+  "sourceSha256": "cf46931779249d4fe60b1b67608be2664c569baeb0911910e819c22b6f3e822a",
+  "styleSha256": "91aedcf47b971f54e9dd6a1ab51e50a9e06d87c36ac0a8efff82b0131d2a3b54",
   "scope": "ALUX AI智能体情报日报 only",
   "lockedSurfaces": [
     "style block and color palette",
@@ -21,5 +21,5 @@
     "试试看 and 注意点 utility footer",
     "single-column closing insight"
   ],
-  "contentRule": "Copy structure and CSS only. Replace all dates, facts, titles, numbers, links, summaries and judgments with the current issue. Use 7-9 signals, keep release-like items at or below 50%, keep hero statistics semantically distinct, and keep 今日AI导航 factual while AI Agent雷达 synthesizes multiple signals."
+  "contentRule": "Copy structure and CSS only. Replace all dates, facts, titles, numbers, links, summaries and judgments with the current issue. Use 6-9 signals; normally select 7-9, but allow 6 when no seventh item clears the freshness, source and reader-value gates. Keep release-like items at or below 50%, keep hero statistics semantically distinct, and keep 今日AI导航 factual while AI Agent雷达 synthesizes multiple signals."
 }

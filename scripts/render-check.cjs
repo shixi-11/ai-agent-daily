@@ -351,6 +351,26 @@ async function inspectCommon(page, options = {}) {
           : [];
       })
       .slice(0, 12);
+    const sideLabelGaps = [...document.querySelectorAll('.side')].flatMap((side, sideIndex) => {
+      const children = [...side.children];
+      const pairs = [];
+      for (let index = 0; index + 1 < children.length; index += 2) {
+        const label = children[index];
+        const copy = children[index + 1];
+        if (label?.tagName !== 'STRONG' || copy?.tagName !== 'P') continue;
+        const labelRect = label.getBoundingClientRect();
+        const copyRect = copy.getBoundingClientRect();
+        const horizontal = Math.abs(labelRect.top - copyRect.top) <= 2;
+        pairs.push({
+          sideIndex,
+          rowIndex: index / 2,
+          label: label.textContent.replace(/\s+/g, ' ').trim(),
+          horizontal,
+          gap: horizontal ? Math.round((copyRect.left - labelRect.right) * 10) / 10 : null,
+        });
+      }
+      return pairs;
+    });
     const dateRangeNode = document.querySelector('.fact:last-child b');
     const dateRangeOwner = dateRangeNode?.closest('.fact');
     const dateRangeNeighbour = document.querySelector('.latest');
@@ -396,6 +416,7 @@ async function inspectCommon(page, options = {}) {
       languageSwitchHeight: languageSwitch?.getBoundingClientRect().height || 0,
       heatRowBleeds,
       panelHeadBleeds,
+      sideLabelGaps,
       dateRangeBleed,
     };
   }, options);
@@ -579,6 +600,12 @@ async function inspectReport(browser, locale, viewport, url, capture) {
     for (const [key, expected] of Object.entries(expectedColumns)) {
       if (result.layoutSnapshot?.[key] !== expected) {
         throw new Error(`${locale.key}/${viewport.name}${url}: ${key} must be ${expected}, got ${result.layoutSnapshot?.[key]}`);
+      }
+    }
+    if (viewport.deviceClass !== 'mobile') {
+      const badUtilityGaps = result.sideLabelGaps.filter((entry) => !entry.horizontal || entry.gap < 6 || entry.gap > 14);
+      if (badUtilityGaps.length) {
+        throw new Error(`${locale.key}/${viewport.name}${url}: utility label/copy gap must stay between 6px and 14px ${JSON.stringify(badUtilityGaps)}`);
       }
     }
   }

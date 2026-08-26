@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-26T14:42:12.0939410Z",
+  "generatedAt": "2026-08-26T16:55:15.7254210Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
@@ -15,13 +15,13 @@
     {
       "date": "2026-08-26",
       "title": "AI Agents — Enter Real Work",
-      "lead": "Seven signals point in one direction: agents are bringing industry permissions, local memory, usage rules, and custom silicon into real workflows.",
+      "lead": "Six signals point in one direction: agents are bringing industry permissions, local memory, and custom silicon into real workflows.",
       "url": "/daily/en/2026/08/26/",
       "alternateUrl": "/daily/2026/08/26/",
       "publicPath": "en/2026/08/26/index.html",
       "sourceFile": "20260826.body.html",
-      "sha256": "e3c64a9afd65c9048d2573aa4f4bb2fb23f96891c9911c36fd1d4fca15bc7cbc",
-      "publicSha256": "cb71bbb6161c7ece5b0f6486d5d3a1e227a95f64a70d053ec5cb4078a7da7a2e"
+      "sha256": "1c5fe55fd4291f2f0daa6ccaf1802ab6fcbfb30eb8069a90b7521f5b9b63ce32",
+      "publicSha256": "66c53b6c58e72fb84f53a6ea46c79f75267e29295a6d6ec580e91f0e2472c700"
     },
     {
       "date": "2026-08-25",

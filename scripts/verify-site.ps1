@@ -25,7 +25,7 @@ if (-not $nodeCommand) {
 }
 & $nodeCommand.Source (Join-Path $PSScriptRoot 'verify-report-master.cjs')
 if ($LASTEXITCODE -ne 0) {
-    throw '日报母版或当期版式与 2026-08-26-editorial-v3 不一致，已停止验收。'
+    throw '日报母版或当期版式与 2026-08-26-editorial-v3.1 不一致，已停止验收。'
 }
 
 $requiredFiles = @(
