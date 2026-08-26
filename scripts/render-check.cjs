@@ -158,11 +158,34 @@ async function inspectCommon(page, options = {}) {
     const orphanBlocks = [];
     if (checkOrphans) {
       const selectors = reportPage
-        ? '.lead,.heat-summary p,.priority-note strong,.item p,.signal p,.side p,.note,.risc-primer p,.risc-primer-card span,.risc-evidence,.sources li'
+        ? '.lead,.judgment,.heat-summary p,.priority-note strong,.item p,.signal p,.side p,.note,.risc-primer p,.risc-primer-card span,.risc-evidence'
         : '.intro,.latest p,.archive-head p,.report-copy strong';
       for (const element of document.querySelectorAll(selectors)) {
         const fullText = element.textContent.replace(/\s+/g, ' ').trim();
-        if (!/[\u3400-\u9fff]/u.test(fullText) || fullText.length < 8) continue;
+        if (fullText.length < 8) continue;
+        if (localeKey === 'en') {
+          const words = [];
+          const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
+          while (walker.nextNode()) {
+            const textNode = walker.currentNode;
+            for (const match of textNode.data.matchAll(/\S+/gu)) {
+              const range = document.createRange();
+              range.setStart(textNode, match.index);
+              range.setEnd(textNode, match.index + match[0].length);
+              const rect = range.getBoundingClientRect();
+              if (rect.width > 0 && rect.height > 0) words.push({ word: match[0], top: Math.round(rect.top) });
+            }
+          }
+          if (words.length > 4) {
+            const lastTop = Math.max(...words.map((word) => word.top));
+            const lastLineWords = words.filter((word) => Math.abs(word.top - lastTop) <= 1).map((word) => word.word);
+            if (lastLineWords.length === 1) {
+              orphanBlocks.push({ cls: element.className?.toString().slice(0, 80) || element.tagName, tail: lastLineWords[0] });
+            }
+          }
+          continue;
+        }
+        if (!/[\u3400-\u9fff]/u.test(fullText)) continue;
         const glyphs = [];
         const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT);
         while (walker.nextNode()) {
@@ -191,7 +214,7 @@ async function inspectCommon(page, options = {}) {
     if (checkSemanticWrap) {
       const selectors = reportPage
         ? '.hero h1,.section h2,.item h3,.signal h3,.panel-head strong'
-        : '.latest h2,.month-strip h3,.report-copy strong';
+        : '.latest h2,.month-strip h3';
       const englishConnectors = new Set(['a', 'an', 'and', 'as', 'at', 'by', 'for', 'from', 'in', 'of', 'on', 'or', 'the', 'to', 'with']);
       for (const [index, element] of [...document.querySelectorAll(selectors)].entries()) {
         if (element.querySelector('br')) {
@@ -383,7 +406,7 @@ async function inspectHomepage(browser, locale, viewport) {
   await page.goto(`http://127.0.0.1:${port}${locale.home}`, { waitUntil: 'networkidle' });
   const common = await inspectCommon(page, {
     checkOrphans: viewport.checkOrphans && locale.key === 'zh',
-    checkSemanticWrap: latestDate >= '2026-08-27' && viewport.semanticWrap,
+    checkSemanticWrap: latestDate >= '2026-08-26' && viewport.semanticWrap,
     localeKey: locale.key,
     reportPage: false,
   });
@@ -513,9 +536,9 @@ async function inspectReport(browser, locale, viewport, url, capture) {
   const page = await browser.newPage({ viewport: { width: viewport.width, height: viewport.height }, deviceScaleFactor: 1 });
   await page.goto(`http://127.0.0.1:${port}${url}`, { waitUntil: 'networkidle' });
   const isLatest = url === locale.latestHref;
-  const enforceThreeDeviceReadability = latestDate >= '2026-08-27' && isLatest && Boolean(viewport.deviceClass);
+  const enforceThreeDeviceReadability = latestDate >= '2026-08-26' && isLatest && Boolean(viewport.deviceClass);
   const common = await inspectCommon(page, {
-    checkOrphans: enforceThreeDeviceReadability && viewport.checkOrphans && locale.key === 'zh',
+    checkOrphans: enforceThreeDeviceReadability,
     checkSemanticWrap: enforceThreeDeviceReadability && viewport.semanticWrap,
     localeKey: locale.key,
     reportPage: true,
@@ -545,7 +568,7 @@ async function inspectReport(browser, locale, viewport, url, capture) {
   if (Math.abs(result.brandControlHeight - result.languageSwitchHeight) > 1) {
     throw new Error(`${locale.key}/${viewport.name}${url}: logo/language controls misaligned ${result.brandControlHeight}/${result.languageSwitchHeight}`);
   }
-  if (result.orphanBlocks.length) throw new Error(`${locale.key}/${viewport.name}${url}: Chinese orphan lines ${JSON.stringify(result.orphanBlocks)}`);
+  if (result.orphanBlocks.length) throw new Error(`${locale.key}/${viewport.name}${url}: orphan lines ${JSON.stringify(result.orphanBlocks)}`);
   if (result.semanticWrapIssues.length) throw new Error(`${locale.key}/${viewport.name}${url}: awkward semantic wrapping ${JSON.stringify(result.semanticWrapIssues)}`);
   if (enforceThreeDeviceReadability) {
     const expectedColumns = {

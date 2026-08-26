@@ -41,7 +41,7 @@
     "style": "Native-level technology intelligence publication: professional, concise, accurate and authoritative; never literal word-for-word translation"
   },
   "editorialContract": {
-    "effectiveFrom": "2026-08-21",
+    "effectiveFrom": "2026-08-26",
     "audience": "General global AI, AI Agent, developer, product, infrastructure, technology and business readers",
     "goal": "Select news that is fun, useful, meaningful and evidence-backed instead of forcing every item into an ALUX narrative",
     "coverage": [
@@ -103,7 +103,7 @@
       "display": "Show an exact same-day GitHub Stars snapshot and license status in both locales, plus one note that Stars measure attention at publication time rather than quality."
     },
     "codexResetWatchPolicy": {
-      "effectiveFrom": "2026-08-27",
+      "effectiveFrom": "2026-08-26",
       "eventTypes": [
         "automatic-global-reset",
         "banked-reset-card"
@@ -146,12 +146,12 @@
     "historicalPolicy": "Do not rewrite issues published before the effective date"
   },
   "layoutContract": {
-    "effectiveFrom": "2026-08-21",
+    "effectiveFrom": "2026-08-26",
     "version": "compact-v1",
     "masterContract": "templates/report-master.json",
-    "masterVersion": "2026-08-21-editorial-v2",
-    "masterSource": "content/zh/20260821_ALUX_AI智能体情报日报.html",
-    "visualBaseline": "Copy the pinned 2026-08-21 editorial-v2 CSS and DOM structure exactly; replace current content only",
+    "masterVersion": "2026-08-26-editorial-v3",
+    "masterSource": "content/zh/20260826_ALUX_AI智能体情报日报.html",
+    "visualBaseline": "Copy the pinned 2026-08-26 editorial-v3 CSS and DOM structure exactly; replace current content only",
     "editorialRhythm": {
       "heroLeadMaxChineseCharacters": 70,
       "heroJudgmentMaxChineseCharacters": 100,
@@ -180,13 +180,13 @@
     "closingInsightColumns": 1,
     "mobileUtilityLayout": "single column",
     "localeTypography": {
-      "effectiveFrom": "2026-08-27",
+      "effectiveFrom": "2026-08-26",
       "zh": "Write complete Chinese semantic phrases and natural pauses; avoid comma chains and isolated final-line Chinese characters or punctuation.",
       "en": "Rewrite for native en-US syntax, clear subject-verb structure and complete title phrases; avoid orphan final-line words and dangling articles, prepositions or conjunctions.",
       "manualBreaks": "Do not use br tags, non-breaking spaces or invisible characters to force a line break at one viewport."
     },
     "representativeDeviceLayouts": {
-      "effectiveFrom": "2026-08-27",
+      "effectiveFrom": "2026-08-26",
       "desktop1440": {
         "statistics": 4,
         "radar": 3,
@@ -221,7 +221,7 @@
   ],
   "steps": [
     "Pull the latest main branch and inspect git status.",
-    "Read templates/report-master.json, verify its hashes, and use its pinned 2026-08-21 compact-v1 source instead of the latest previous issue as the visual master.",
+    "Read templates/report-master.json, verify its hashes, and use its pinned 2026-08-26 compact-v1 source instead of the latest previous issue as the visual master.",
     "Resume any unfinished translation or review before starting a new date.",
     "Run the private major-vendor open-source scan across the official GitHub and Hugging Face watchlist, review every must-review candidate and reserve a slot for every qualified substantive release before ordinary version updates.",
     "Review every persistent watch against official sources; keep unchanged announcements internal and select confirmed open-release changes immediately.",
@@ -290,16 +290,16 @@
     "No private identity, credential, local path, internal artifact, work log, tool output or process narration may enter public release content.",
     "No visible editorial self-talk such as selection boundaries, why an item was selected, padding policy or empty-category explanations may appear in a published issue.",
     "The issue must satisfy editorialContract.selectionMix and the compact-v1 news-card layout.",
-    "Every issue from 2026-08-21 onward must byte-match the CSS in the pinned 2026-08-21-editorial-v2 master and preserve its required DOM structure; the latest previous issue is not a substitute master.",
+    "Every issue from 2026-08-26 onward must byte-match the CSS in the pinned 2026-08-26-editorial-v3 master and preserve its required DOM structure; the latest previous issue is not a substitute master.",
     "Every issue must use 7-9 signals, keep release-like items at or below 50%, keep hero statistics semantically distinct, keep the hero lead and judgment concise, and separate the factual role of 今日AI导航 from the cross-signal synthesis role of AI Agent雷达.",
     "Every issue from 2026-08-25 onward must complete the major-vendor GitHub and Hugging Face scan, record an explicit disposition for every must-review candidate, and include every qualified substantive release in selectedSignals.",
     "Every issue from 2026-08-25 onward must complete every persistent watch review, suppress unchanged announcements and select confirmed official open-release changes.",
     "Every selected GitHub open-source or Skill item must show a same-day Stars snapshot and license status in both locales; Stars must be labeled as attention rather than quality.",
     "Every selected signal must use parseable publishedAt and same-day observedAt; items older than 14 days require a verifiable newChange.",
     "Each AI Agent radar title must state a concrete subject and change, stay within 20 Chinese visual units, and render with natural semantic line breaks at desktop and mobile widths.",
-    "Every issue from 2026-08-27 onward must complete the official Codex reset review, distinguish automatic or global resets from banked reset cards, and keep account-specific evidence private.",
+    "Every issue from 2026-08-26 onward must complete the official Codex reset review, distinguish automatic or global resets from banked reset cards, and keep account-specific evidence private.",
     "Every confirmed public Codex reset event must state eligibility and scope and show an accurately converted Beijing effective time, or explicitly state that no exact Beijing time was announced.",
-    "Every issue from 2026-08-27 onward must pass the locale copy gate: Chinese and English use their own natural syntax, and headings or paragraphs contain no manual viewport-specific line breaks.",
+    "Every issue from 2026-08-26 onward must pass the locale copy gate: Chinese and English use their own natural syntax, and headings or paragraphs contain no manual viewport-specific line breaks.",
     "At the 1440 desktop, 768 tablet and 390 mobile representative viewports, statistics, radar, RISC and utility grids must match the contracted column counts and all visible headings must wrap semantically.",
     "Daily publication must commit and push the official main branch directly; it must not stop at a pull request or wait for a manual merge.",
     "Telegram notification is blocked until the new official domain serves byte-equivalent current home, latest and dated pages and every legacy route passes the single-308 compatibility gate.",

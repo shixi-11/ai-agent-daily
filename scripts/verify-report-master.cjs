@@ -32,7 +32,7 @@ try {
   fail(`cannot read ${path.relative(root, contractFile)}: ${error.message}`);
 }
 
-if (contract.masterVersion !== '2026-08-21-editorial-v2') {
+if (contract.masterVersion !== '2026-08-26-editorial-v3') {
   fail(`unexpected masterVersion: ${contract.masterVersion || 'missing'}`);
 }
 if (contract.layoutVersion !== 'compact-v1') {
@@ -48,10 +48,10 @@ const html = fs.readFileSync(sourceFile, 'utf8');
 const style = html.match(/<style>([\s\S]*?)<\/style>/i)?.[1]?.trim() || '';
 
 if (sha256(html) !== contract.sourceSha256) {
-  fail('sourceSha256 does not match the pinned 2026-08-21 report');
+  fail('sourceSha256 does not match the pinned 2026-08-26 report');
 }
 if (!style || sha256(style) !== contract.styleSha256) {
-  fail('styleSha256 does not match the pinned 2026-08-21 report');
+  fail('styleSha256 does not match the pinned 2026-08-26 report');
 }
 if (!/<main\b[^>]*\bdata-layout-version=["']compact-v1["']/i.test(html)) {
   fail('pinned report is not marked data-layout-version="compact-v1"');

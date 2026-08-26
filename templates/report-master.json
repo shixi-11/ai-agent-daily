@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "masterVersion": "2026-08-21-editorial-v2",
+  "masterVersion": "2026-08-26-editorial-v3",
   "layoutVersion": "compact-v1",
-  "effectiveFrom": "2026-08-21",
-  "sourceDate": "2026-08-21",
-  "sourceFile": "content/zh/20260821_ALUX_AI智能体情报日报.html",
-  "sourceSha256": "06f9be2bb1be82a68a59bc6dd967cb6033d11d37b2b2704bb75669228389e06e",
+  "effectiveFrom": "2026-08-26",
+  "sourceDate": "2026-08-26",
+  "sourceFile": "content/zh/20260826_ALUX_AI智能体情报日报.html",
+  "sourceSha256": "591feeb5bb16edd5ef809ee0ded9f1bbe051547b4f787df4b4b6b1162ab6ad8f",
   "styleSha256": "717884cd3fb921112595cc6bfe69681f3ed47626658572557749c3a1e0123584",
   "scope": "ALUX AI智能体情报日报 only",
   "lockedSurfaces": [

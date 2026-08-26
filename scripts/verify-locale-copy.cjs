@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const effectiveFrom = '2026-08-27';
+const effectiveFrom = '2026-08-26';
 const root = path.resolve(__dirname, '..');
 
 function decodeEntities(value) {
