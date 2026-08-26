@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-25T15:13:54.9403050Z",
+  "generatedAt": "2026-08-26T09:36:06.8095150Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-25",
-    "url": "/daily/2026/08/25/",
+    "date": "2026-08-26",
+    "url": "/daily/2026/08/26/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/25/"
+    "alternateUrl": "/daily/en/2026/08/26/"
   },
   "reports": [
+    {
+      "date": "2026-08-26",
+      "title": "AI Agent从通用助手走进专业现场",
+      "lead": "今天八条信号同时指向一件事：Agent 正把行业权限、本地记忆、专用芯片与专家评测接进真实工作。",
+      "url": "/daily/2026/08/26/",
+      "alternateUrl": "/daily/en/2026/08/26/",
+      "publicPath": "2026/08/26/index.html",
+      "sourceFile": "20260826_ALUX_AI智能体情报日报.html",
+      "sha256": "4fbb0a4c2fc5eaa8a32b7a4f23d0227ae5167bcfd8966daa7f2974400e1b0f97",
+      "publicSha256": "0d19043070b6a058fbcfb94380c2ee9e2c7caa4c6d58be2138974abb4cbc2b35"
+    },
     {
       "date": "2026-08-25",
       "title": "AI Agent开放正在从模型长到系统",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/25/index.html",
       "sourceFile": "20260825_ALUX_AI智能体情报日报.html",
       "sha256": "9439be60115b81e3beb5fdd3edd2db7fee05e7ebe2c73b4a3f99a49cd68dd18d",
-      "publicSha256": "b0b012cc51d41b0300dc855802e310b8079433c18967f4f75af47c8b6772a23d"
+      "publicSha256": "8d15e25ac9f79a25119ff3dee639552d65ad3dfc479700e73e929a9f83f89ca9"
     },
     {
       "date": "2026-08-24",

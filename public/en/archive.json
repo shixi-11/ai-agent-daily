@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-25T15:13:54.9403050Z",
+  "generatedAt": "2026-08-26T09:36:06.8095150Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-25",
-    "url": "/daily/en/2026/08/25/",
+    "date": "2026-08-26",
+    "url": "/daily/en/2026/08/26/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/25/"
+    "alternateUrl": "/daily/2026/08/26/"
   },
   "reports": [
+    {
+      "date": "2026-08-26",
+      "title": "AI Agent — From General Assistants to Professional Work",
+      "lead": "Eight signals point in one direction: agents are bringing industry permissions, local memory, custom silicon, and expert evaluation into real workflows.",
+      "url": "/daily/en/2026/08/26/",
+      "alternateUrl": "/daily/2026/08/26/",
+      "publicPath": "en/2026/08/26/index.html",
+      "sourceFile": "20260826.body.html",
+      "sha256": "0b2a764e7a4578896e7b38af6be905975bdb43d6481c60848a9397b06720584e",
+      "publicSha256": "4460845b32f06191ce97ea87f517e2546e66adc3462eb44eea529ad4f9ea0fb4"
+    },
     {
       "date": "2026-08-25",
       "title": "AI Agent — Openness Is Expanding from Models to Systems",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/25/index.html",
       "sourceFile": "20260825.body.html",
       "sha256": "4fc806e441cccda7b97f6f73df9ef5ba69109e1539544c02988a15c4369c3b56",
-      "publicSha256": "f9a554056324782ddb9f3d15c3702e5cefaa648ae07f2050e583f32ca6cf660d"
+      "publicSha256": "e49902d3e5e402616afcb958055dc5c653585eb242cdb218c2830bf0f40f2206"
     },
     {
       "date": "2026-08-24",
