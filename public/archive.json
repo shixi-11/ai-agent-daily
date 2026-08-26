@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-26T09:36:06.8095150Z",
+  "generatedAt": "2026-08-26T14:42:12.0939410Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
@@ -15,13 +15,13 @@
     {
       "date": "2026-08-26",
       "title": "AI Agent从通用助手走进专业现场",
-      "lead": "今天八条信号同时指向一件事：Agent 正把行业权限、本地记忆、专用芯片与专家评测接进真实工作。",
+      "lead": "今天七条信号同时指向一件事：Agent 正把行业权限、本地记忆、用量规则与专用芯片接进真实工作。",
       "url": "/daily/2026/08/26/",
       "alternateUrl": "/daily/en/2026/08/26/",
       "publicPath": "2026/08/26/index.html",
       "sourceFile": "20260826_ALUX_AI智能体情报日报.html",
-      "sha256": "4fbb0a4c2fc5eaa8a32b7a4f23d0227ae5167bcfd8966daa7f2974400e1b0f97",
-      "publicSha256": "0d19043070b6a058fbcfb94380c2ee9e2c7caa4c6d58be2138974abb4cbc2b35"
+      "sha256": "591feeb5bb16edd5ef809ee0ded9f1bbe051547b4f787df4b4b6b1162ab6ad8f",
+      "publicSha256": "69eeb07079373b0a0cb728dff37c01940f0ab58f057865110e1a67539e5854df"
     },
     {
       "date": "2026-08-25",
