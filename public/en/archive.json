@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-26T16:55:15.7254210Z",
+  "generatedAt": "2026-08-27T07:46:13.2541150Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-26",
-    "url": "/daily/en/2026/08/26/",
+    "date": "2026-08-27",
+    "url": "/daily/en/2026/08/27/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/26/"
+    "alternateUrl": "/daily/2026/08/27/"
   },
   "reports": [
+    {
+      "date": "2026-08-27",
+      "title": "AI Agents — Build on Open Systems",
+      "lead": "Seven signals show agents moving beyond single-session assistants toward production systems that coordinate tasks, Skills, evaluation, and hardware.",
+      "url": "/daily/en/2026/08/27/",
+      "alternateUrl": "/daily/2026/08/27/",
+      "publicPath": "en/2026/08/27/index.html",
+      "sourceFile": "20260827.body.html",
+      "sha256": "005cf04b94e2ce5d4aa425b91037b3635b2eec5cc22e204d05e4dc54b3ddc4d4",
+      "publicSha256": "2eaad293c66566ed08818515ca1d7eabc852872975ef63a3b24792a5bd0f4c39"
+    },
     {
       "date": "2026-08-26",
       "title": "AI Agents — Enter Real Work",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/26/index.html",
       "sourceFile": "20260826.body.html",
       "sha256": "1c5fe55fd4291f2f0daa6ccaf1802ab6fcbfb30eb8069a90b7521f5b9b63ce32",
-      "publicSha256": "66c53b6c58e72fb84f53a6ea46c79f75267e29295a6d6ec580e91f0e2472c700"
+      "publicSha256": "98d6a01ebcebe12438f5f17e5350f038e757edef2677c3984501ace035b8921c"
     },
     {
       "date": "2026-08-25",

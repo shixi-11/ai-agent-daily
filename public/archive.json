@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-26T16:55:15.7254210Z",
+  "generatedAt": "2026-08-27T07:46:13.2541150Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-26",
-    "url": "/daily/2026/08/26/",
+    "date": "2026-08-27",
+    "url": "/daily/2026/08/27/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/26/"
+    "alternateUrl": "/daily/en/2026/08/27/"
   },
   "reports": [
+    {
+      "date": "2026-08-27",
+      "title": "AI Agent任务网络接上开放架构",
+      "lead": "今天七条信号说明：Agent 正从单会话助手，变成任务、Skills、评测与芯片协同的生产系统。",
+      "url": "/daily/2026/08/27/",
+      "alternateUrl": "/daily/en/2026/08/27/",
+      "publicPath": "2026/08/27/index.html",
+      "sourceFile": "20260827_ALUX_AI智能体情报日报.html",
+      "sha256": "054f7495e9bbd5f3d8a9bb533c10f0d893ab130805a7a61331a9f133747cdd0b",
+      "publicSha256": "9acc773165af2300d5dd3d255f384b740ad5a9abb4aafb4a6ac31a7995a9fb05"
+    },
     {
       "date": "2026-08-26",
       "title": "AI Agent从通用助手走进专业现场",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/26/index.html",
       "sourceFile": "20260826_ALUX_AI智能体情报日报.html",
       "sha256": "cf46931779249d4fe60b1b67608be2664c569baeb0911910e819c22b6f3e822a",
-      "publicSha256": "5fe0dc6508f5dcd69606eb2e41f04afa983876d3b3b579b860d49b9cbf527537"
+      "publicSha256": "bdf6cdcbcf673322a13a4dcea70b6073aa4afc4ffc785ac6ae71ba8238f8002e"
     },
     {
       "date": "2026-08-25",
