@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-27T07:46:13.2541150Z",
+  "generatedAt": "2026-08-28T00:25:31.6041440Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-27",
-    "url": "/daily/en/2026/08/27/",
+    "date": "2026-08-28",
+    "url": "/daily/en/2026/08/28/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/27/"
+    "alternateUrl": "/daily/2026/08/28/"
   },
   "reports": [
+    {
+      "date": "2026-08-28",
+      "title": "AI Agents — Become Systems",
+      "lead": "Eight signals push agents deeper into the system stack: restricted execution, forked collaboration, file memory, geographic inference, specialized CPUs, and planetary prediction.",
+      "url": "/daily/en/2026/08/28/",
+      "alternateUrl": "/daily/2026/08/28/",
+      "publicPath": "en/2026/08/28/index.html",
+      "sourceFile": "20260828.body.html",
+      "sha256": "8a12e7a3e5ac7138544427c080f09cee9c2a878a115673bc85797aba8f778084",
+      "publicSha256": "9443a91a1289ec4072770d88aa9808bc313eb77a89b7394d4e52d25724b199f4"
+    },
     {
       "date": "2026-08-27",
       "title": "AI Agents — Build on Open Systems",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/27/index.html",
       "sourceFile": "20260827.body.html",
       "sha256": "005cf04b94e2ce5d4aa425b91037b3635b2eec5cc22e204d05e4dc54b3ddc4d4",
-      "publicSha256": "2eaad293c66566ed08818515ca1d7eabc852872975ef63a3b24792a5bd0f4c39"
+      "publicSha256": "b21e5926b16520b673b09ecbf9d9cc255682b8fa2cbd94ebfe7e144242c169da"
     },
     {
       "date": "2026-08-26",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-27T07:46:13.2541150Z",
+  "generatedAt": "2026-08-28T00:25:31.6041440Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-27",
-    "url": "/daily/2026/08/27/",
+    "date": "2026-08-28",
+    "url": "/daily/2026/08/28/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/27/"
+    "alternateUrl": "/daily/en/2026/08/28/"
   },
   "reports": [
+    {
+      "date": "2026-08-28",
+      "title": "AI Agent从会话走向系统",
+      "lead": "八条信号把 Agent 推入更深的系统层：受限运行、分叉协作、文件记忆、地域计算、专用 CPU 与行星级预测。",
+      "url": "/daily/2026/08/28/",
+      "alternateUrl": "/daily/en/2026/08/28/",
+      "publicPath": "2026/08/28/index.html",
+      "sourceFile": "20260828_ALUX_AI智能体情报日报.html",
+      "sha256": "6d7f40d5ea65911cd240239ee2f734aea6987744f6dcd674fcab3edc7da93180",
+      "publicSha256": "fdc16b6fabc1b7057f95b7bf04bd113116d236ef6a321c4e36aa22c32a0b60aa"
+    },
     {
       "date": "2026-08-27",
       "title": "AI Agent任务网络接上开放架构",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/27/index.html",
       "sourceFile": "20260827_ALUX_AI智能体情报日报.html",
       "sha256": "054f7495e9bbd5f3d8a9bb533c10f0d893ab130805a7a61331a9f133747cdd0b",
-      "publicSha256": "9acc773165af2300d5dd3d255f384b740ad5a9abb4aafb4a6ac31a7995a9fb05"
+      "publicSha256": "6e27c417ff154516bc45520da1b3b5228ae87c8dc29fcbe0f1b012d527302b41"
     },
     {
       "date": "2026-08-26",
