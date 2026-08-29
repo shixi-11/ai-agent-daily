@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-28T00:25:31.6041440Z",
+  "generatedAt": "2026-08-29T01:12:25.0000000Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-28",
-    "url": "/daily/2026/08/28/",
+    "date": "2026-08-29",
+    "url": "/daily/2026/08/29/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/28/"
+    "alternateUrl": "/daily/en/2026/08/29/"
   },
   "reports": [
+    {
+      "date": "2026-08-29",
+      "title": "AI Agent控制面正在成形",
+      "lead": "八条信号同时指向一件事：会话、评测、缓存、交易与故障域，正被写成 Agent 系统里的明确控制面。",
+      "url": "/daily/2026/08/29/",
+      "alternateUrl": "/daily/en/2026/08/29/",
+      "publicPath": "2026/08/29/index.html",
+      "sourceFile": "20260829_ALUX_AI智能体情报日报.html",
+      "sha256": "765957902fbe1b281e3c18f55135ef769db262b5a737d1c02dac4ce8d7f892cb",
+      "publicSha256": "b8f27d730f9bda852dff2befa228a576f810b08f6e20d2970043848745c278d9"
+    },
     {
       "date": "2026-08-28",
       "title": "AI Agent从会话走向系统",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/28/index.html",
       "sourceFile": "20260828_ALUX_AI智能体情报日报.html",
       "sha256": "6d7f40d5ea65911cd240239ee2f734aea6987744f6dcd674fcab3edc7da93180",
-      "publicSha256": "fdc16b6fabc1b7057f95b7bf04bd113116d236ef6a321c4e36aa22c32a0b60aa"
+      "publicSha256": "50f299860b68e1b984cf6a298cac9473f20ccef5f049e4fc276ac9c1ef8472d3"
     },
     {
       "date": "2026-08-27",

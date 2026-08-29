@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-28T00:25:31.6041440Z",
+  "generatedAt": "2026-08-29T01:12:25.0000000Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-28",
-    "url": "/daily/en/2026/08/28/",
+    "date": "2026-08-29",
+    "url": "/daily/en/2026/08/29/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/28/"
+    "alternateUrl": "/daily/2026/08/29/"
   },
   "reports": [
+    {
+      "date": "2026-08-29",
+      "title": "AI Agents — Gain a Control Plane",
+      "lead": "Eight signals point in one direction: sessions, evaluation, cache placement, transactions, and failure domains are becoming explicit control surfaces for agent systems.",
+      "url": "/daily/en/2026/08/29/",
+      "alternateUrl": "/daily/2026/08/29/",
+      "publicPath": "en/2026/08/29/index.html",
+      "sourceFile": "20260829.body.html",
+      "sha256": "6838bfd264cf03ce1dbfb7e93775b9add198887c6b99f2dc13a30bf0c31ea729",
+      "publicSha256": "212ac7c64a4347aacc6cf325077b1008bbdf04390eb49b4755e5618c3c87a6c8"
+    },
     {
       "date": "2026-08-28",
       "title": "AI Agents — Become Systems",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/28/index.html",
       "sourceFile": "20260828.body.html",
       "sha256": "8a12e7a3e5ac7138544427c080f09cee9c2a878a115673bc85797aba8f778084",
-      "publicSha256": "9443a91a1289ec4072770d88aa9808bc313eb77a89b7394d4e52d25724b199f4"
+      "publicSha256": "d6fcd79a505420d8785afaea6997298f2bbb8fec787cf92add2892b6ddb5d771"
     },
     {
       "date": "2026-08-27",
