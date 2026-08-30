@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-29T01:12:25.0000000Z",
+  "generatedAt": "2026-08-30T00:59:29.9794990Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-29",
-    "url": "/daily/en/2026/08/29/",
+    "date": "2026-08-30",
+    "url": "/daily/en/2026/08/30/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/29/"
+    "alternateUrl": "/daily/2026/08/30/"
   },
   "reports": [
+    {
+      "date": "2026-08-30",
+      "title": "AI Agent — Open Stacks Move Into Delivery",
+      "lead": "Nine signals map the path from tool results, durable operations, and training-rollout alignment to media pipelines and model contracts. AI engineering is gaining the explicit boundaries required for maintainable delivery.",
+      "url": "/daily/en/2026/08/30/",
+      "alternateUrl": "/daily/2026/08/30/",
+      "publicPath": "en/2026/08/30/index.html",
+      "sourceFile": "20260830.body.html",
+      "sha256": "7377127eeaf1fc2081bca87a52c0a49443a241e747eaae3d0bc60d184cbee58c",
+      "publicSha256": "89d14941c72232f74ee1b584a83c8aeb3fffb798a8d9258684548b112a87c619"
+    },
     {
       "date": "2026-08-29",
       "title": "AI Agents — Gain a Control Plane",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/29/index.html",
       "sourceFile": "20260829.body.html",
       "sha256": "6838bfd264cf03ce1dbfb7e93775b9add198887c6b99f2dc13a30bf0c31ea729",
-      "publicSha256": "212ac7c64a4347aacc6cf325077b1008bbdf04390eb49b4755e5618c3c87a6c8"
+      "publicSha256": "b5363d1c01b8be028308e1718b0803f6ac18944e1d9743bca56de06f2e50bdb0"
     },
     {
       "date": "2026-08-28",

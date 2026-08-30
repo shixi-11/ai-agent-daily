@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-29T01:12:25.0000000Z",
+  "generatedAt": "2026-08-30T00:59:29.9794990Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-29",
-    "url": "/daily/2026/08/29/",
+    "date": "2026-08-30",
+    "url": "/daily/2026/08/30/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/29/"
+    "alternateUrl": "/daily/en/2026/08/30/"
   },
   "reports": [
+    {
+      "date": "2026-08-30",
+      "title": "AI Agent开源栈进入交付日",
+      "lead": "九条信号从工具结果、持久操作、训练回放一路落到媒体管线与模型合同，AI 工程正在补齐可维护边界。",
+      "url": "/daily/2026/08/30/",
+      "alternateUrl": "/daily/en/2026/08/30/",
+      "publicPath": "2026/08/30/index.html",
+      "sourceFile": "20260830_ALUX_AI智能体情报日报.html",
+      "sha256": "8375274caa907f0a3583251e3e0977e99bca0bda3b066bf24d7fae68fdbf107d",
+      "publicSha256": "a425831069b7269d027cfc64f7d33b908a0d2e1a1080bb5a015a04d2b446e6ef"
+    },
     {
       "date": "2026-08-29",
       "title": "AI Agent控制面正在成形",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/29/index.html",
       "sourceFile": "20260829_ALUX_AI智能体情报日报.html",
       "sha256": "765957902fbe1b281e3c18f55135ef769db262b5a737d1c02dac4ce8d7f892cb",
-      "publicSha256": "b8f27d730f9bda852dff2befa228a576f810b08f6e20d2970043848745c278d9"
+      "publicSha256": "befcd485e7b13a2e82de28c90f57e612f5f6c56da5dab860cc4a1955db4f478b"
     },
     {
       "date": "2026-08-28",
