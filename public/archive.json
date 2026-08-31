@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-30T00:59:29.9794990Z",
+  "generatedAt": "2026-08-31T17:07:41.9512380Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-30",
-    "url": "/daily/2026/08/30/",
+    "date": "2026-08-31",
+    "url": "/daily/2026/08/31/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/30/"
+    "alternateUrl": "/daily/en/2026/08/31/"
   },
   "reports": [
+    {
+      "date": "2026-08-31",
+      "title": "AI Agent生产边界开始显形",
+      "lead": "七条信号把重连、状态清理、浏览器推理、空间视觉与真实人口语音评测，推向更清楚的生产边界。",
+      "url": "/daily/2026/08/31/",
+      "alternateUrl": "/daily/en/2026/08/31/",
+      "publicPath": "2026/08/31/index.html",
+      "sourceFile": "20260831_ALUX_AI智能体情报日报.html",
+      "sha256": "1458f4d33b1a9da86255dfd29b1ab2b2ac1bdbd8335ebcb5452a5402e5b9cfc9",
+      "publicSha256": "774881137d35288dfa37d312bd9245b0dd5077ad3a5403cf922211f9348c0f89"
+    },
     {
       "date": "2026-08-30",
       "title": "AI Agent开源栈进入交付日",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/30/index.html",
       "sourceFile": "20260830_ALUX_AI智能体情报日报.html",
       "sha256": "8375274caa907f0a3583251e3e0977e99bca0bda3b066bf24d7fae68fdbf107d",
-      "publicSha256": "a425831069b7269d027cfc64f7d33b908a0d2e1a1080bb5a015a04d2b446e6ef"
+      "publicSha256": "b3135d8516e438922b6d49562dabd9f5cfcb06aeb4cd2cc61ea7ba5a52c4c3c5"
     },
     {
       "date": "2026-08-29",

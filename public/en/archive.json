@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-30T00:59:29.9794990Z",
+  "generatedAt": "2026-08-31T17:07:41.9512380Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-30",
-    "url": "/daily/en/2026/08/30/",
+    "date": "2026-08-31",
+    "url": "/daily/en/2026/08/31/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/30/"
+    "alternateUrl": "/daily/2026/08/31/"
   },
   "reports": [
+    {
+      "date": "2026-08-31",
+      "title": "AI Agent — Production Boundaries Emerge",
+      "lead": "Seven signals—from reconnect handling and replay-state cleanup to browser inference, spatial vision, and population-aware speech evaluation—bring production boundaries into sharper focus.",
+      "url": "/daily/en/2026/08/31/",
+      "alternateUrl": "/daily/2026/08/31/",
+      "publicPath": "en/2026/08/31/index.html",
+      "sourceFile": "20260831.body.html",
+      "sha256": "db3b707eba811104641f4bfc52449f977cfdbbfbe8bf07d093ba90e5bd1571e7",
+      "publicSha256": "0d1d3d9094e7676cfb2ac807d5f7efc76e9ccca397ee2f4de5df384ad19c4043"
+    },
     {
       "date": "2026-08-30",
       "title": "AI Agent — Open Stacks Move Into Delivery",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/30/index.html",
       "sourceFile": "20260830.body.html",
       "sha256": "7377127eeaf1fc2081bca87a52c0a49443a241e747eaae3d0bc60d184cbee58c",
-      "publicSha256": "89d14941c72232f74ee1b584a83c8aeb3fffb798a8d9258684548b112a87c619"
+      "publicSha256": "f9b4d303aa3e47362c8891437c066bc82bd279666fcc9dd8b92363edd656c4b3"
     },
     {
       "date": "2026-08-29",
