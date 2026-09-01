@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-08-31T17:07:41.9512380Z",
+  "generatedAt": "2026-09-01T00:35:07.2254780Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-08-31",
-    "url": "/daily/2026/08/31/",
+    "date": "2026-09-01",
+    "url": "/daily/2026/09/01/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/08/31/"
+    "alternateUrl": "/daily/en/2026/09/01/"
   },
   "reports": [
+    {
+      "date": "2026-09-01",
+      "title": "AI Agent默认边界被重新书写",
+      "lead": "八条信号从视觉 Agent、框架安全、技能治理与开放医学模型，连到广告成为 AI 的新收入底座。",
+      "url": "/daily/2026/09/01/",
+      "alternateUrl": "/daily/en/2026/09/01/",
+      "publicPath": "2026/09/01/index.html",
+      "sourceFile": "20260901_ALUX_AI智能体情报日报.html",
+      "sha256": "fdaf6b80c8493467beed6e86319ca412f382c156f32d9377eceb0ecdc0d6ecf6",
+      "publicSha256": "ce998b874a82000d2de1658d81e043a594625428f7f1840f1cb2f931c0a0dcf8"
+    },
     {
       "date": "2026-08-31",
       "title": "AI Agent生产边界开始显形",
@@ -21,7 +32,7 @@
       "publicPath": "2026/08/31/index.html",
       "sourceFile": "20260831_ALUX_AI智能体情报日报.html",
       "sha256": "1458f4d33b1a9da86255dfd29b1ab2b2ac1bdbd8335ebcb5452a5402e5b9cfc9",
-      "publicSha256": "774881137d35288dfa37d312bd9245b0dd5077ad3a5403cf922211f9348c0f89"
+      "publicSha256": "18e75298cde0cec6958498a3731b64c20f9974264ae528276791a569fc952118"
     },
     {
       "date": "2026-08-30",

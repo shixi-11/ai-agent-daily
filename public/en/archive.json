@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-08-31T17:07:41.9512380Z",
+  "generatedAt": "2026-09-01T00:35:07.2254780Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-08-31",
-    "url": "/daily/en/2026/08/31/",
+    "date": "2026-09-01",
+    "url": "/daily/en/2026/09/01/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/08/31/"
+    "alternateUrl": "/daily/2026/09/01/"
   },
   "reports": [
+    {
+      "date": "2026-09-01",
+      "title": "AI Agent — Production Defaults Are Rewritten",
+      "lead": "Eight signals connect visual agents, framework security, skill governance, and open medical models to advertising as a new AI revenue base.",
+      "url": "/daily/en/2026/09/01/",
+      "alternateUrl": "/daily/2026/09/01/",
+      "publicPath": "en/2026/09/01/index.html",
+      "sourceFile": "20260901.body.html",
+      "sha256": "42ca4642477544e974e46acbb7ec47157e0f05af81c0745290d93e5f00eee17e",
+      "publicSha256": "2ba48a2f840ba004fc97d034f51c9027d0f65bb33e393a91c486a5f95386944c"
+    },
     {
       "date": "2026-08-31",
       "title": "AI Agent — Production Boundaries Emerge",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/08/31/index.html",
       "sourceFile": "20260831.body.html",
       "sha256": "db3b707eba811104641f4bfc52449f977cfdbbfbe8bf07d093ba90e5bd1571e7",
-      "publicSha256": "0d1d3d9094e7676cfb2ac807d5f7efc76e9ccca397ee2f4de5df384ad19c4043"
+      "publicSha256": "4f7d30ce9f5f9aa4035d398f0ecabae07daee8eff95d8fbb7f62eaac60c6fc47"
     },
     {
       "date": "2026-08-30",
