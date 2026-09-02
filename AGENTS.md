@@ -79,6 +79,7 @@
 - 日报页顶栏分隔线、品牌区和正文内容网格必须对齐；桌面、平板、手机分别跟随正文的 `22px`、`14px`、`10px` 内边距。
 - 语言切换必须指向同一期；`canonical` 与 `hreflang` 必须正确。
 - 中文站名固定为 `ALUX AI智能体情报日报`，不在 `AI` 与 `智能体` 之间加空格。
+- 首页固定界面文案按页面语言完整本地化：中文版副标题使用 `全球AI、智能体与开源`，眉题、最新一期、归档说明与页脚均使用中文；英文首页保留对应英文。`ALUX`、`AI`、`GitHub` 等品牌或技术专名及 `EN` 语言按钮不作机械翻译。模板和构建后的首页必须通过 `verify-locale-copy.cjs` 检查。
 - 英文站名固定为 `ALUX AI Agent Intelligence Daily`，公开链接固定使用 `https://ai.alux.network/daily/`，不得用 Vercel 预览域名替代。
 - `https://ai-agent-daily.alux.network/` 只作为永久兼容入口；旧首页、英文页、最新页和日期页必须以单次永久重定向到新主地址下的对应路径，不得形成跳转链或返回 404。
 - 对外扫码卡只交付 3:4、3072×4096、RGB JPG；二维码和版式必须通过 `docs/SHARE_CARD_STANDARD.md` 的压缩扫码门禁。

@@ -98,6 +98,29 @@ function validateCopyPair({ date, zhHtml, enHtml }) {
   return errors;
 }
 
+function validateHomepageCopy({ zhHtml, enHtml }) {
+  const errors = [];
+  const visibleText = (html) => textContent(html
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<(style|script)\b[^>]*>[\s\S]*?<\/\1>/gi, ''));
+  const zhText = visibleText(zhHtml);
+  const enText = visibleText(enHtml);
+  const labels = [
+    ['AI智能体情报日报', 'AI Agent Intelligence Daily'],
+    ['ALUX情报', 'ALUX Intelligence'],
+    ['日报归档', 'Daily Archive'],
+    ['全球AI、智能体与开源', 'Global AI, Agents & Open Source'],
+    ['最新一期', 'Latest Report'],
+    ['最新在前 · 固定链接', 'Newest First · Permanent URLs'],
+  ];
+  for (const [zh, en] of labels) {
+    if (!zhText.includes(zh)) errors.push(`zh homepage is missing localized copy: ${zh}`);
+    if (zhText.toLowerCase().includes(en.toLowerCase())) errors.push(`zh homepage contains untranslated UI copy: ${en}`);
+    if (!enText.includes(en)) errors.push(`en homepage is missing English UI copy: ${en}`);
+  }
+  return errors;
+}
+
 function main() {
   const date = process.argv[2];
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) throw new Error('usage: verify-locale-copy.cjs YYYY-MM-DD');
@@ -110,6 +133,15 @@ function main() {
     zhHtml: fs.readFileSync(zhFile, 'utf8'),
     enHtml: fs.readFileSync(enFile, 'utf8'),
   });
+  for (const [label, zhPath, enPath] of [
+    ['template', 'templates/index.template.html', 'templates/index.en.template.html'],
+    ['public', 'public/index.html', 'public/en/index.html'],
+  ]) {
+    errors.push(...validateHomepageCopy({
+      zhHtml: fs.readFileSync(path.join(root, zhPath), 'utf8'),
+      enHtml: fs.readFileSync(path.join(root, enPath), 'utf8'),
+    }).map((error) => `${label}: ${error}`));
+  }
   if (errors.length) throw new Error(errors.join('\n'));
   process.stdout.write(`locale copy verified: ${date}\n`);
 }
@@ -123,4 +155,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { validateCopyPair, chineseVisualUnits };
+module.exports = { validateCopyPair, validateHomepageCopy, chineseVisualUnits };

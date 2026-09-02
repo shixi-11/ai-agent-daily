@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 const assert = require('assert');
-const { validateCopyPair } = require('./verify-locale-copy.cjs');
+const fs = require('fs');
+const path = require('path');
+const { validateCopyPair, validateHomepageCopy } = require('./verify-locale-copy.cjs');
 
 const zhRadar = ['系统开始保存任务状态', '权限进入默认工作流', '本地工具补齐观察能力'];
 const enRadar = ['Systems preserve task state', 'Permissions enter default workflows', 'Local tools expose operational evidence'];
@@ -17,5 +19,26 @@ assert.deepEqual(validateCopyPair(valid), []);
 assert(validateCopyPair({ ...valid, enHtml: valid.enHtml.replace('Systems preserve task state', 'Systems preserve<br>task state') }).some((error) => error.includes('manual <br>')));
 assert(validateCopyPair({ ...valid, zhHtml: valid.zhHtml.replace('系统开始保存任务状态', '这是一个明显超过二十个中文字量并且会在多个屏幕宽度产生难看断行的雷达标题') }).some((error) => error.includes('20 visual units')));
 assert(validateCopyPair({ ...valid, enHtml: valid.enHtml.replace('Systems preserve task state', 'Systems preserve task state with') }).some((error) => error.includes('dangling function word')));
+
+const home = {
+  zhHtml: fs.readFileSync(path.join(__dirname, '../templates/index.template.html'), 'utf8'),
+  enHtml: fs.readFileSync(path.join(__dirname, '../templates/index.en.template.html'), 'utf8'),
+};
+assert.deepEqual(validateHomepageCopy(home), []);
+for (const [zh, en] of [
+  ['AI智能体情报日报</small>', 'AI Agent Intelligence Daily</small>'],
+  ['ALUX情报', 'ALUX Intelligence'],
+  ['日报归档', 'Daily Archive'],
+  ['全球AI、智能体与开源', 'Global AI, Agents &amp; Open Source'],
+  ['最新一期</span>', 'Latest Report</span>'],
+  ['最新在前 · 固定链接', 'Newest First · Permanent URLs'],
+]) {
+  assert(home.zhHtml.includes(zh));
+  assert(validateHomepageCopy({ ...home, zhHtml: home.zhHtml.replace(zh, en) })
+    .some((error) => error.includes('untranslated UI copy')), `must reject untranslated label: ${en}`);
+}
+assert(validateHomepageCopy({ ...home, enHtml: home.enHtml.replace('Global AI, Agents &amp; Open Source', '全球AI、智能体与开源') })
+  .some((error) => error.includes('en homepage')));
+assert.deepEqual(validateHomepageCopy({ ...home, zhHtml: home.zhHtml + '<!-- Global AI, Agents &amp; Open Source --><script>const title = "Daily Archive";</script>' }), []);
 
 process.stdout.write('Locale copy gate tests passed\n');

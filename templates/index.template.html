@@ -76,7 +76,7 @@
   <header class="shell topbar">
     <a class="brand" href="{{BASE_PATH}}/" aria-label="ALUX AI智能体情报日报首页">
       <span class="brand-mark"><img src="{{BASE_PATH}}/assets/alux-mark.png" alt="" width="23" height="23"></span>
-      <span class="brand-copy">ALUX AI智能体情报日报<small>AI Agent Intelligence Daily</small></span>
+      <span class="brand-copy">ALUX AI智能体情报日报<small>AI智能体情报日报</small></span>
     </a>
     <nav class="topnav" aria-label="主导航"><a class="nav-latest" href="{{BASE_PATH}}/latest/">最新一期</a><a class="nav-archive" href="#archive">历史归档</a><span class="language-switch" aria-label="语言切换"><a href="{{BASE_PATH}}/" lang="zh-CN" aria-current="page">中</a><a href="{{BASE_PATH}}/en/" lang="en">EN</a></span></nav>
   </header>
@@ -84,8 +84,8 @@
   <main class="shell">
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span>ALUX Intelligence</span><span>Daily Archive</span></div>
-        <h1 id="page-title">AI智能体<br>情报日报<span>Global AI, Agents &amp; Open Source</span></h1>
+        <div class="eyebrow"><span>ALUX情报</span><span>日报归档</span></div>
+        <h1 id="page-title">AI智能体<br>情报日报<span>全球AI、智能体与开源</span></h1>
         <p class="intro">追踪全球 AI 新功能、AI Agent、GitHub 开源、Skills、软硬件、系统架构与市场变化，挑出好玩、有用、值得关注的信号。</p>
         <div class="facts" aria-label="归档统计">
           <div class="fact"><b>{{REPORT_COUNT}}</b><span>已归档日报</span></div>
@@ -96,7 +96,7 @@
 
       <article class="latest">
         <div>
-          <div class="latest-kicker"><span>Latest Report</span><time datetime="{{LATEST_DATE_ISO}}">{{LATEST_DATE_ZH}}</time></div>
+          <div class="latest-kicker"><span>最新一期</span><time datetime="{{LATEST_DATE_ISO}}">{{LATEST_DATE_ZH}}</time></div>
           <h2>{{LATEST_TITLE}}</h2>
           <p>{{LATEST_LEAD}}</p>
         </div>
@@ -109,7 +109,7 @@
 
     <section id="archive" class="archive-head" aria-labelledby="archive-title">
       <div><h2 id="archive-title">历史归档</h2><p>每一期都拥有独立、固定的日期地址。首页和“最新一期”入口始终指向最新内容，已发布的<span class="no-break">日期链接</span>长期有效。</p></div>
-      <div class="archive-note">Newest First · Permanent URLs</div>
+      <div class="archive-note">最新在前 · 固定链接</div>
     </section>
 
     <div class="archive">
@@ -118,7 +118,7 @@
   </main>
 
   <footer class="shell">
-    <span>ALUX AI Agent Intelligence Daily</span>
+    <span>ALUX AI智能体情报日报</span>
     <span>最近更新（中国标准时间）：{{GENERATED_AT}} · <a href="{{BASE_PATH}}/archive.json">归档清单</a></span>
   </footer>
   <script>
