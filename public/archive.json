@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-01T00:35:07.2254780Z",
+  "generatedAt": "2026-09-02T01:11:52.2015920Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-01",
-    "url": "/daily/2026/09/01/",
+    "date": "2026-09-02",
+    "url": "/daily/2026/09/02/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/01/"
+    "alternateUrl": "/daily/en/2026/09/02/"
   },
   "reports": [
+    {
+      "date": "2026-09-02",
+      "title": "AI Agent上下文与执行边界同时收紧",
+      "lead": "八条信号从上下文管理、工具预算与推理队列，连到五十多个安全 Agent 组成的攻防闭环。",
+      "url": "/daily/2026/09/02/",
+      "alternateUrl": "/daily/en/2026/09/02/",
+      "publicPath": "2026/09/02/index.html",
+      "sourceFile": "20260902_ALUX_AI智能体情报日报.html",
+      "sha256": "fbde580c6d18595217ab046b1f8bf2f2102008aae408c3184aa3144aeaf80021",
+      "publicSha256": "7960789556e1b64b6c03e76d61595d5844ec4ae2b0d55e5f69e318b145816bf1"
+    },
     {
       "date": "2026-09-01",
       "title": "AI Agent默认边界被重新书写",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/01/index.html",
       "sourceFile": "20260901_ALUX_AI智能体情报日报.html",
       "sha256": "fdaf6b80c8493467beed6e86319ca412f382c156f32d9377eceb0ecdc0d6ecf6",
-      "publicSha256": "ce998b874a82000d2de1658d81e043a594625428f7f1840f1cb2f931c0a0dcf8"
+      "publicSha256": "b40c7d45dd4fe2935d86e21ba739c25ca8968fd98d290b31cd06dff565f01c7c"
     },
     {
       "date": "2026-08-31",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-01T00:35:07.2254780Z",
+  "generatedAt": "2026-09-02T01:11:52.2015920Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-01",
-    "url": "/daily/en/2026/09/01/",
+    "date": "2026-09-02",
+    "url": "/daily/en/2026/09/02/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/01/"
+    "alternateUrl": "/daily/2026/09/02/"
   },
   "reports": [
+    {
+      "date": "2026-09-02",
+      "title": "AI Agent — Context Limits, Execution Controls Tighten",
+      "lead": "Eight signals connect context management, tool budgets, and inference queues to a cyber-defense loop powered by more than 50 agents.",
+      "url": "/daily/en/2026/09/02/",
+      "alternateUrl": "/daily/2026/09/02/",
+      "publicPath": "en/2026/09/02/index.html",
+      "sourceFile": "20260902.body.html",
+      "sha256": "a80de431b4d1ab7220dac5c9edfd14a87afd76782c265ce983292fd3b54f9996",
+      "publicSha256": "55f73f55f679f4c07e9dd60e250b342554d4e03700cafaf6bcc6abb245c3681c"
+    },
     {
       "date": "2026-09-01",
       "title": "AI Agent — Production Defaults Are Rewritten",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/01/index.html",
       "sourceFile": "20260901.body.html",
       "sha256": "42ca4642477544e974e46acbb7ec47157e0f05af81c0745290d93e5f00eee17e",
-      "publicSha256": "2ba48a2f840ba004fc97d034f51c9027d0f65bb33e393a91c486a5f95386944c"
+      "publicSha256": "432ddd39471e5a0818be6b0764dd5c069ef7f14a556b104af4ad2d13301a30fc"
     },
     {
       "date": "2026-08-31",
