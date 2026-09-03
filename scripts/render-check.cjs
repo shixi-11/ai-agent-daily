@@ -436,6 +436,18 @@ async function inspectHomepage(browser, locale, viewport) {
     title: await page.title(),
     latestHref: await page.locator('.latest .button').getAttribute('href'),
     logoLoaded: await page.locator('.brand-mark img').evaluate((img) => img.complete && img.naturalWidth > 0),
+    logoSrc: await page.locator('.brand-mark img').getAttribute('src'),
+    factBalance: await page.locator('.fact').evaluateAll((cards) => cards.map((card) => {
+      const title = card.querySelector('b');
+      const label = card.querySelector('span');
+      const cardRect = card.getBoundingClientRect();
+      const titleRect = title.getBoundingClientRect();
+      const labelRect = label.getBoundingClientRect();
+      return {
+        top: Number((titleRect.top - cardRect.top).toFixed(2)),
+        bottom: Number((cardRect.bottom - labelRect.bottom).toFixed(2)),
+      };
+    })),
     currentLang: await page.locator('.language-switch a[aria-current="page"]').getAttribute('lang'),
   };
   if (result.title !== locale.title) throw new Error(`${locale.key}/${viewport.name}: title mismatch`);
@@ -446,7 +458,12 @@ async function inspectHomepage(browser, locale, viewport) {
   if (result.monthLines.some((lines) => lines !== 1)) throw new Error(`${locale.key}/${viewport.name}: month heading wrapped ${result.monthLines}`);
   if (result.dateLines !== 1) throw new Error(`${locale.key}/${viewport.name}: archive range wrapped to ${result.dateLines} lines`);
   if (result.dateRangeBleed) throw new Error(`${locale.key}/${viewport.name}: archive range escaped its fact cell ${JSON.stringify(result.dateRangeBleed)}`);
-  if (!result.logoLoaded || result.favicon !== '/daily/assets/alux-mark.png') throw new Error(`${locale.key}/${viewport.name}: ALUX logo/favicon missing`);
+  if (!result.logoLoaded || result.logoSrc !== '/daily/assets/alux-mark.png' || result.favicon !== '/daily/assets/alux-mark.png') {
+    throw new Error(`${locale.key}/${viewport.name}: framed ALUX logo/favicon missing`);
+  }
+  if (result.factBalance.some(({ top, bottom }) => Math.abs((top - 2) - bottom) > 1.5)) {
+    throw new Error(`${locale.key}/${viewport.name}: archive facts are not vertically centered ${JSON.stringify(result.factBalance)}`);
+  }
   if (result.currentLang !== locale.currentLang) throw new Error(`${locale.key}/${viewport.name}: language state mismatch ${result.currentLang}`);
   if (result.navHeight < 43) throw new Error(`${locale.key}/${viewport.name}: latest nav target too short ${result.navHeight}`);
   if (result.languageHeight < 43) throw new Error(`${locale.key}/${viewport.name}: language target too short ${result.languageHeight}`);
