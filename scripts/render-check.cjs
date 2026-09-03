@@ -568,6 +568,7 @@ async function inspectReport(browser, locale, viewport, url, capture) {
     ...common,
     title: await page.title(),
     sitebar: await page.locator('.report-sitebar').count(),
+    logoLoaded: await page.locator('.report-sitebrand-mark img').evaluate((img) => img.complete && img.naturalWidth > 0),
     footer: await page.locator('.report-sitefooter').count(),
     alternate: await page.locator(`.language-switch a:not([aria-current="page"])`).getAttribute('href'),
     canonical: await page.locator('link[rel="canonical"]').getAttribute('href'),
@@ -576,6 +577,7 @@ async function inspectReport(browser, locale, viewport, url, capture) {
   if (result.bodyWidth > result.viewportWidth) throw new Error(`${locale.key}/${viewport.name}${url}: horizontal overflow ${result.bodyWidth}/${result.viewportWidth}`);
   if (result.offenders.length) throw new Error(`${locale.key}/${viewport.name}${url}: clipped elements ${JSON.stringify(result.offenders)}`);
   if (result.sitebar !== 1 || result.footer !== 1) throw new Error(`${locale.key}/${viewport.name}${url}: site navigation missing`);
+  if (!result.logoLoaded) throw new Error(`${locale.key}/${viewport.name}${url}: framed ALUX logo missing`);
   if (!result.alternate) throw new Error(`${locale.key}/${viewport.name}${url}: language alternate missing`);
   if (!result.canonical?.startsWith('https://ai.alux.network/daily/')) throw new Error(`${locale.key}/${viewport.name}${url}: canonical mismatch`);
   if (result.externalLinks === 0) throw new Error(`${locale.key}/${viewport.name}${url}: external sources missing`);

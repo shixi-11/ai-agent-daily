@@ -26,9 +26,6 @@ const home = {
 };
 assert.deepEqual(validateHomepageCopy(home), []);
 for (const [zh, en] of [
-  ['AI智能体情报日报</small>', 'AI Agent Intelligence Daily</small>'],
-  ['ALUX情报', 'ALUX Intelligence'],
-  ['日报归档', 'Daily Archive'],
   ['全球AI、智能体与开源', 'Global AI, Agents &amp; Open Source'],
   ['最新一期</span>', 'Latest Report</span>'],
   ['最新在前 · 固定链接', 'Newest First · Permanent URLs'],
@@ -37,6 +34,11 @@ for (const [zh, en] of [
   assert(validateHomepageCopy({ ...home, zhHtml: home.zhHtml.replace(zh, en) })
     .some((error) => error.includes('untranslated UI copy')), `must reject untranslated label: ${en}`);
 }
+assert(home.zhHtml.includes('AI智能体情报日报<small lang="en">AI AGENT INTELLIGENCE DAILY</small>'));
+assert(!home.zhHtml.includes('ALUX情报'));
+assert(!home.zhHtml.includes('日报归档'));
+assert(!home.enHtml.includes('ALUX Intelligence'));
+assert(!home.enHtml.includes('Daily Archive'));
 assert(validateHomepageCopy({ ...home, enHtml: home.enHtml.replace('Global AI, Agents &amp; Open Source', '全球AI、智能体与开源') })
   .some((error) => error.includes('en homepage')));
 assert.deepEqual(validateHomepageCopy({ ...home, zhHtml: home.zhHtml + '<!-- Global AI, Agents &amp; Open Source --><script>const title = "Daily Archive";</script>' }), []);

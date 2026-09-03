@@ -248,7 +248,7 @@ function Add-ReportSiteChrome {
     if ($Language -eq 'zh-CN') {
         $homePath = $sitePath + '/'
         $latestPath = $sitePath + '/latest/'
-        $brand = 'ALUX AI智能体情报日报'
+        $brand = 'AI智能体情报日报'
         $brandTagline = 'AI Agent Intelligence Daily'
         $latestLabel = '最新一期'
         $archiveLabel = '历史归档'
@@ -261,7 +261,7 @@ function Add-ReportSiteChrome {
     } else {
         $homePath = $sitePath + '/en/'
         $latestPath = $sitePath + '/en/latest/'
-        $brand = 'ALUX AI Agent Intelligence Daily'
+        $brand = 'AI Agent Intelligence Daily'
         $brandTagline = 'Signals for Agent Infrastructure'
         $latestLabel = 'Latest'
         $archiveLabel = 'Archive'
@@ -276,7 +276,7 @@ function Add-ReportSiteChrome {
     $nav = @"
 <!-- site:i18n-nav:start -->
 <header class="report-sitebar">
-  <a class="report-sitebrand" href="$homePath"><span class="report-sitebrand-copy"><span>$(Encode-Html $brand)</span><small>$(Encode-Html $brandTagline)</small></span></a>
+  <a class="report-sitebrand" href="$homePath"><span class="report-sitebrand-mark" aria-hidden="true"><img src="$sitePath/assets/alux-mark.png" alt=""></span><span class="report-sitebrand-copy"><span>$(Encode-Html $brand)</span><small>$(Encode-Html $brandTagline)</small></span></a>
   <nav class="report-sitenav" aria-label="$(Encode-Html $archiveLabel)">
     <a href="$latestPath">$(Encode-Html $latestLabel)</a>
     <a href="$homePath#archive">$(Encode-Html $archiveLabel)</a>

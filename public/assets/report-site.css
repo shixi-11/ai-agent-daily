@@ -63,8 +63,7 @@
   white-space: nowrap;
 }
 
-.report-sitebrand::before {
-  content: "";
+.report-sitebrand-mark {
   display: grid;
   place-items: center;
   box-sizing: border-box;
@@ -72,11 +71,15 @@
   height: 44px;
   flex: 0 0 44px;
   border: 1px solid #d7dfe5;
-  background-color: #fff;
-  background-image: url("./alux-mark.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 26px 26px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.report-sitebrand-mark img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
 }
 
 .report-sitenav {
@@ -359,7 +362,13 @@ html[lang="en-US"] .panel-head span {
     max-width: 205px;
   }
 
-  .report-sitebrand::before {
-    display: none;
+  .report-sitebrand-mark {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+  }
+
+  .report-sitebrand-copy > span {
+    font-size: 11px;
   }
 }

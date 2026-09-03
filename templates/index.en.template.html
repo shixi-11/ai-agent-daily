@@ -33,8 +33,7 @@
     .language-switch{display:inline-flex;align-items:stretch;height:44px;padding:0;border:0;background:rgba(255,255,255,.72);box-shadow:inset 0 0 0 1px #aeb9c6}.language-switch a{justify-content:center;min-width:44px;min-height:44px;padding:0 7px}.language-switch a[aria-current="page"]{background:var(--navy);color:#fff}
     .hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);gap:34px;align-items:stretch;padding:54px 0 60px}
     .hero-copy{display:flex;flex-direction:column;justify-content:center;min-width:0}
-    .eyebrow{display:flex;flex-wrap:wrap;gap:8px 14px;color:var(--teal);font-size:12px;font-weight:850;letter-spacing:.11em;text-transform:uppercase}
-    h1{margin:18px 0 20px;font-family:"Songti SC","Noto Serif CJK SC",SimSun,Georgia,serif;font-size:clamp(42px,6.2vw,76px);line-height:1.03;letter-spacing:-.025em;color:#101827}
+    h1{margin:0 0 20px;font-family:"Songti SC","Noto Serif CJK SC",SimSun,Georgia,serif;font-size:clamp(42px,6.2vw,76px);line-height:1.03;letter-spacing:-.025em;color:#101827}
     h1 span{display:block;margin-top:12px;color:var(--indigo);font-family:Georgia,"Times New Roman",serif;font-size:.55em;letter-spacing:-.01em}
     .intro{max-width:700px;margin:0;color:#3d4857;font-size:clamp(17px,1.7vw,20px);line-height:1.65;text-wrap:pretty;word-break:auto-phrase}
     .facts{display:grid;grid-template-columns:minmax(82px,.72fr) minmax(82px,.72fr) minmax(250px,1.56fr);gap:10px;margin-top:30px}
@@ -68,15 +67,15 @@
     @media(min-width:901px) and (max-width:1100px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(360px,.8fr)}}
     @media(max-width:900px){.shell{width:min(100% - 28px,760px)}.hero{grid-template-columns:1fr;padding:42px 0 48px}.latest{min-height:360px}.archive-group{grid-template-columns:1fr}.month-strip{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-right:0;border-bottom:1px solid var(--line)}.month-strip h3{position:static;font-size:20px}.month-strip span{margin:0}.archive-head{grid-template-columns:1fr}.archive-note{justify-self:start}}
     @media(max-width:620px){.shell{width:calc(100% - 20px)}.topbar{padding:16px 0}.topnav{gap:8px}.topnav .nav-archive{display:none}.hero{gap:22px;padding:34px 0 40px}h1{font-size:clamp(39px,13vw,57px)}.facts{grid-template-columns:1fr 1fr}.fact:last-child{grid-column:1/-1}.latest{min-height:380px;padding:22px}.latest-kicker{flex-direction:column;gap:5px}.latest h2{margin-top:34px}.archive-head{padding-top:30px}.report-row{grid-template-columns:52px minmax(0,1fr);gap:14px;min-height:0;padding:20px 16px}.report-row time b{font-size:26px}.report-copy strong{font-size:18px}.report-copy p{-webkit-line-clamp:3}.report-arrow{display:none}footer{flex-direction:column;gap:8px}}
-    @media(max-width:360px){.topbar{gap:8px}.brand{gap:8px}.brand-copy{white-space:nowrap;font-size:0}.brand-copy:before{content:"ALUX";font-size:13px}.brand-copy small{display:none}.language-switch a{min-width:44px;padding:0 5px}.report-row{grid-template-columns:44px minmax(0,1fr);gap:10px;padding:18px 14px}.report-copy strong{font-size:17px}}
+    @media(max-width:360px){.topbar{gap:8px}.brand{gap:8px}.brand-copy{white-space:nowrap;font-size:0}.brand-copy:before{content:"AI Agent Daily";font-size:12px}.brand-copy small{display:none}.language-switch a{min-width:44px;padding:0 5px}.report-row{grid-template-columns:44px minmax(0,1fr);gap:10px;padding:18px 14px}.report-copy strong{font-size:17px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.report-row,.report-arrow{transition:none}}
   </style>
 </head>
 <body>
   <header class="shell topbar">
-    <a class="brand" href="{{BASE_PATH}}/en/" aria-label="ALUX AI Agent Intelligence Daily home">
+    <a class="brand" href="{{BASE_PATH}}/en/" aria-label="AI Agent Intelligence Daily home">
       <span class="brand-mark"><img src="{{BASE_PATH}}/assets/alux-mark.png" alt="" width="23" height="23"></span>
-      <span class="brand-copy">ALUX AI Agent Intelligence Daily<small>Signals for Agent Infrastructure</small></span>
+      <span class="brand-copy">AI Agent Intelligence Daily<small>Signals for Agent Infrastructure</small></span>
     </a>
     <nav class="topnav" aria-label="Primary navigation"><a class="nav-latest" href="{{BASE_PATH}}/en/latest/">Latest</a><a class="nav-archive" href="#archive">Archive</a><span class="language-switch" aria-label="Language switcher"><a href="{{BASE_PATH}}/" lang="zh-CN">中</a><a href="{{BASE_PATH}}/en/" lang="en" aria-current="page">EN</a></span></nav>
   </header>
@@ -84,7 +83,6 @@
   <main class="shell">
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-copy">
-        <div class="eyebrow"><span>ALUX Intelligence</span><span>Daily Archive</span></div>
         <h1 id="page-title">AI Agent<br>Intelligence Daily<span>Global AI, Agents &amp; Open Source</span></h1>
         <p class="intro">Tracking notable AI features, agents, GitHub projects, Skills, software, hardware, architecture and market shifts worldwide—with an eye for what is useful, surprising and worth trying.</p>
         <div class="facts" aria-label="Archive statistics">

@@ -106,13 +106,19 @@ function validateHomepageCopy({ zhHtml, enHtml }) {
   const zhText = visibleText(zhHtml);
   const enText = visibleText(enHtml);
   const labels = [
-    ['AI智能体情报日报', 'AI Agent Intelligence Daily'],
-    ['ALUX情报', 'ALUX Intelligence'],
-    ['日报归档', 'Daily Archive'],
     ['全球AI、智能体与开源', 'Global AI, Agents & Open Source'],
     ['最新一期', 'Latest Report'],
     ['最新在前 · 固定链接', 'Newest First · Permanent URLs'],
   ];
+  if (!zhText.includes('AI智能体情报日报')) errors.push('zh homepage is missing localized copy: AI智能体情报日报');
+  if (!zhText.includes('AI AGENT INTELLIGENCE DAILY')) errors.push('zh homepage is missing English brand subtitle: AI AGENT INTELLIGENCE DAILY');
+  if (!enText.includes('AI Agent Intelligence Daily')) errors.push('en homepage is missing English brand: AI Agent Intelligence Daily');
+  for (const retired of ['ALUX情报', '日报归档']) {
+    if (zhText.includes(retired)) errors.push(`zh homepage still contains retired hero eyebrow: ${retired}`);
+  }
+  for (const retired of ['ALUX Intelligence', 'Daily Archive']) {
+    if (enText.includes(retired)) errors.push(`en homepage still contains retired hero eyebrow: ${retired}`);
+  }
   for (const [zh, en] of labels) {
     if (!zhText.includes(zh)) errors.push(`zh homepage is missing localized copy: ${zh}`);
     if (zhText.toLowerCase().includes(en.toLowerCase())) errors.push(`zh homepage contains untranslated UI copy: ${en}`);
