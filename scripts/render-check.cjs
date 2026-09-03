@@ -97,7 +97,7 @@ const server = http.createServer((req, res) => {
 });
 
 async function inspectCommon(page, options = {}) {
-  return page.evaluate(({ checkOrphans, reportPage, checkSemanticWrap, localeKey }) => {
+  return page.evaluate(async ({ checkOrphans, reportPage, checkSemanticWrap, localeKey }) => {
     const width = document.documentElement.clientWidth;
     const bodyWidth = document.body.scrollWidth;
     const rectSnapshot = (rect) => ({
@@ -290,6 +290,32 @@ async function inspectCommon(page, options = {}) {
     } : null;
 
     const favicon = document.querySelector('link[rel="icon"]');
+    const faviconSurface = await new Promise((resolve) => {
+      if (!favicon) return resolve(null);
+      const image = new Image();
+      image.onload = () => {
+        const canvas = document.createElement('canvas');
+        canvas.width = 32;
+        canvas.height = 32;
+        const context = canvas.getContext('2d', { willReadFrequently: true });
+        context.drawImage(image, 0, 0, 32, 32);
+        const pixels = context.getImageData(0, 0, 32, 32).data;
+        const cornerIndexes = [0, 31, 31 * 32, 32 * 32 - 1];
+        const cornersAreWhite = cornerIndexes.every((pixelIndex) => {
+          const offset = pixelIndex * 4;
+          return pixels[offset] >= 245 && pixels[offset + 1] >= 245 && pixels[offset + 2] >= 245 && pixels[offset + 3] === 255;
+        });
+        let opaquePixels = 0;
+        let darkPixels = 0;
+        for (let offset = 0; offset < pixels.length; offset += 4) {
+          if (pixels[offset + 3] === 255) opaquePixels += 1;
+          if (pixels[offset] < 80 && pixels[offset + 1] < 80 && pixels[offset + 2] < 80) darkPixels += 1;
+        }
+        resolve({ naturalWidth: image.naturalWidth, naturalHeight: image.naturalHeight, cornersAreWhite, opaquePixels, darkPixels });
+      };
+      image.onerror = () => resolve(null);
+      image.src = favicon.href;
+    });
     const heatRowBleeds = [...document.querySelectorAll('.heat-row')]
       .flatMap((row, index) => {
         const labelCell = row.children[0];
@@ -406,6 +432,7 @@ async function inspectCommon(page, options = {}) {
       semanticWrapIssues: semanticWrapIssues.slice(0, 20),
       layoutSnapshot,
       favicon: favicon?.getAttribute('href') || '',
+      faviconSurface,
       htmlLang: document.documentElement.lang,
       monthLines: [...document.querySelectorAll('.month-strip h3')].map(countLines),
       dateLines: countLines(document.querySelector('.fact:last-child b')),
@@ -470,13 +497,17 @@ async function inspectHomepage(browser, locale, viewport) {
   if (result.monthLines.some((lines) => lines !== 1)) throw new Error(`${locale.key}/${viewport.name}: month heading wrapped ${result.monthLines}`);
   if (result.dateLines !== 1) throw new Error(`${locale.key}/${viewport.name}: archive range wrapped to ${result.dateLines} lines`);
   if (result.dateRangeBleed) throw new Error(`${locale.key}/${viewport.name}: archive range escaped its fact cell ${JSON.stringify(result.dateRangeBleed)}`);
-  if (!result.logoLoaded || result.logoSrc !== '/daily/assets/alux-mark.png' || result.favicon !== '/daily/assets/alux-mark.png') {
+  if (!result.logoLoaded || result.logoSrc !== '/daily/assets/alux-mark.png' || result.favicon !== '/daily/assets/alux-favicon.png') {
     throw new Error(`${locale.key}/${viewport.name}: ALUX logo/favicon missing`);
   }
-  if (result.logoAppearance.background !== 'rgb(34, 53, 111)' ||
-      result.logoAppearance.imageWidth < 30 ||
-      result.logoAppearance.filter === 'none') {
-    throw new Error(`${locale.key}/${viewport.name}: ALUX dark-surface logo is visually weak ${JSON.stringify(result.logoAppearance)}`);
+  if (result.logoAppearance.background !== 'rgb(255, 255, 255)' ||
+      result.logoAppearance.imageWidth < 26 ||
+      result.logoAppearance.filter !== 'none') {
+    throw new Error(`${locale.key}/${viewport.name}: framed ALUX page mark drifted ${JSON.stringify(result.logoAppearance)}`);
+  }
+  if (!result.faviconSurface || !result.faviconSurface.cornersAreWhite ||
+      result.faviconSurface.opaquePixels !== 1024 || result.faviconSurface.darkPixels < 24) {
+    throw new Error(`${locale.key}/${viewport.name}: favicon is not an opaque white-backed ALUX mark ${JSON.stringify(result.faviconSurface)}`);
   }
   if (result.factBalance.some(({ top, bottom }) => Math.abs((top - 2) - bottom) > 1.5)) {
     throw new Error(`${locale.key}/${viewport.name}: archive facts are not vertically centered ${JSON.stringify(result.factBalance)}`);
@@ -624,15 +655,19 @@ async function inspectReport(browser, locale, viewport, url, capture) {
   if (result.offenders.length) throw new Error(`${locale.key}/${viewport.name}${url}: clipped elements ${JSON.stringify(result.offenders)}`);
   if (result.sitebar !== 1 || result.footer !== 1) throw new Error(`${locale.key}/${viewport.name}${url}: site navigation missing`);
   if (!result.logoLoaded) throw new Error(`${locale.key}/${viewport.name}${url}: ALUX logo missing`);
-  if (result.logoAppearance.background !== 'rgb(34, 53, 111)' ||
-      result.logoAppearance.imageWidth < 30 ||
-      result.logoAppearance.filter === 'none') {
-    throw new Error(`${locale.key}/${viewport.name}${url}: ALUX dark-surface logo is visually weak ${JSON.stringify(result.logoAppearance)}`);
+  if (result.logoAppearance.background !== 'rgb(255, 255, 255)' ||
+      result.logoAppearance.imageWidth < 26 ||
+      result.logoAppearance.filter !== 'none') {
+    throw new Error(`${locale.key}/${viewport.name}${url}: framed ALUX page mark drifted ${JSON.stringify(result.logoAppearance)}`);
   }
   if (!result.alternate) throw new Error(`${locale.key}/${viewport.name}${url}: language alternate missing`);
   if (!result.canonical?.startsWith('https://ai.alux.network/daily/')) throw new Error(`${locale.key}/${viewport.name}${url}: canonical mismatch`);
   if (result.externalLinks === 0) throw new Error(`${locale.key}/${viewport.name}${url}: external sources missing`);
-  if (result.favicon !== '/daily/assets/alux-mark.png') throw new Error(`${locale.key}/${viewport.name}${url}: favicon missing`);
+  if (result.favicon !== '/daily/assets/alux-favicon.png') throw new Error(`${locale.key}/${viewport.name}${url}: favicon missing`);
+  if (!result.faviconSurface || !result.faviconSurface.cornersAreWhite ||
+      result.faviconSurface.opaquePixels !== 1024 || result.faviconSurface.darkPixels < 24) {
+    throw new Error(`${locale.key}/${viewport.name}${url}: favicon is not an opaque white-backed ALUX mark ${JSON.stringify(result.faviconSurface)}`);
+  }
   if (result.heatRowBleeds.length) throw new Error(`${locale.key}/${viewport.name}${url}: heat-row label overlap ${JSON.stringify(result.heatRowBleeds)}`);
   if (result.panelHeadBleeds.length) throw new Error(`${locale.key}/${viewport.name}${url}: panel-head overlap ${JSON.stringify(result.panelHeadBleeds)}`);
   if (result.viewportWidth > 620 && result.navHeight < 43) {

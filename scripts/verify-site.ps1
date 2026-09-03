@@ -40,6 +40,7 @@ $requiredFiles = @(
     (Join-Path $PublicRoot '404.html'),
     (Join-Path $PublicRoot 'assets\report-site.css'),
     (Join-Path $PublicRoot 'assets\alux-mark.png'),
+    (Join-Path $PublicRoot 'assets\alux-favicon.png'),
     (Join-Path $EnglishRoot 'translation-manifest.json'),
     (Join-Path $SiteRoot 'vercel.json')
 )
@@ -162,8 +163,8 @@ foreach ($homeCheck in @(
     }
 }
 foreach ($indexCheck in @(
-    @{ html = $chineseIndex; required = @('href="/daily/en/"', 'hreflang="en"', '/daily/assets/alux-mark.png') },
-    @{ html = $englishIndex; required = @('href="/daily/"', 'hreflang="zh-CN"', '/daily/assets/alux-mark.png') }
+    @{ html = $chineseIndex; required = @('href="/daily/en/"', 'hreflang="en"', '/daily/assets/alux-mark.png', '/daily/assets/alux-favicon.png') },
+    @{ html = $englishIndex; required = @('href="/daily/"', 'hreflang="zh-CN"', '/daily/assets/alux-mark.png', '/daily/assets/alux-favicon.png') }
 )) {
     foreach ($required in $indexCheck.required) {
         if ($indexCheck.html.IndexOf($required, [System.StringComparison]::OrdinalIgnoreCase) -lt 0) {
@@ -214,7 +215,7 @@ foreach ($chineseReport in $chineseReports) {
     $englishHtml = Get-Content -LiteralPath $englishPublicPath -Raw -Encoding UTF8
     foreach ($html in @($chineseHtml, $englishHtml)) {
         if ($html -match '(?i)(?:src|href)\s*=\s*[\x22\x27](?:file:|[a-z]:[\\/])') { throw "$dateIso 公开页含本地引用。" }
-        foreach ($required in @('site:i18n-head:start', 'site:i18n-nav:start', 'site:issue-footer:start', '/daily/assets/alux-mark.png')) {
+        foreach ($required in @('site:i18n-head:start', 'site:i18n-nav:start', 'site:issue-footer:start', '/daily/assets/alux-mark.png', '/daily/assets/alux-favicon.png')) {
             if ($html.IndexOf($required, [System.StringComparison]::OrdinalIgnoreCase) -lt 0) { throw "$dateIso 公开页缺少：$required" }
         }
         if ($html.IndexOf($LegacyBaseUrl, [System.StringComparison]::OrdinalIgnoreCase) -ge 0) { throw "$dateIso 公开页仍把旧域名作为页面地址。" }
@@ -252,9 +253,11 @@ $latestZhHash = (Get-FileHash -LiteralPath (Join-Path $PublicRoot 'latest\index.
 $latestEnHash = (Get-FileHash -LiteralPath (Join-Path $PublicRoot 'en\latest\index.html') -Algorithm SHA256).Hash.ToLowerInvariant()
 if ($latestZhHash -ne [string]$latestZh.publicSha256 -or $latestEnHash -ne [string]$latestEn.publicSha256) { throw '中英 latest 与最新日期页不一致。' }
 
-$assetSourceHash = (Get-FileHash -LiteralPath (Join-Path $SiteRoot 'assets\alux-mark.png') -Algorithm SHA256).Hash
-$assetPublicHash = (Get-FileHash -LiteralPath (Join-Path $PublicRoot 'assets\alux-mark.png') -Algorithm SHA256).Hash
-if ($assetSourceHash -ne $assetPublicHash) { throw 'ALUX 品牌图标源文件与公开资产不一致。' }
+foreach ($assetName in @('alux-mark.png', 'alux-favicon.png')) {
+    $assetSourceHash = (Get-FileHash -LiteralPath (Join-Path $SiteRoot ('assets\' + $assetName)) -Algorithm SHA256).Hash
+    $assetPublicHash = (Get-FileHash -LiteralPath (Join-Path $PublicRoot ('assets\' + $assetName)) -Algorithm SHA256).Hash
+    if ($assetSourceHash -ne $assetPublicHash) { throw "ALUX 品牌资产源文件与公开资产不一致：$assetName" }
+}
 
 if ($sitemap.IndexOf($BaseUrl + $BasePath + '/latest/', [System.StringComparison]::OrdinalIgnoreCase) -ge 0) {
     throw 'sitemap 不应收录 canonical 指向日期页的 latest 别名。'

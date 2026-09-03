@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="{{BASE_PATH}}/assets/alux-mark.png">
-  <link rel="apple-touch-icon" href="{{BASE_PATH}}/assets/alux-mark.png">
+  <link rel="icon" type="image/png" href="{{BASE_PATH}}/assets/alux-favicon.png">
+  <link rel="apple-touch-icon" href="{{BASE_PATH}}/assets/alux-favicon.png">
   <title>ALUX AI智能体情报日报</title>
   <meta name="description" content="ALUX AI智能体情报日报：追踪全球 AI 新功能、AI Agent、GitHub 开源、Skills、软硬件、架构与市场变化。">
   <link rel="canonical" href="{{BASE_URL}}{{BASE_PATH}}/">
@@ -27,7 +27,7 @@
     .shell{width:min(1180px,calc(100% - 40px));margin:0 auto}
     .topbar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 0 18px;border-bottom:1px solid rgba(20,33,61,.18)}
     .brand{display:flex;align-items:center;gap:12px;min-height:44px;text-decoration:none;font-weight:850;letter-spacing:.04em}
-    .brand-mark{display:grid;place-items:center;width:44px;height:44px;overflow:hidden;border:1px solid #6577a8;background:#22356f;box-shadow:0 6px 18px rgba(20,33,61,.16)}.brand-mark img{display:block;width:32px;height:32px;filter:brightness(0) invert(1);object-fit:contain}
+    .brand-mark{display:grid;place-items:center;width:44px;height:44px;overflow:hidden;border:1px solid var(--line);background:#fff}.brand-mark img{display:block;width:26px;height:26px;object-fit:contain}
     .brand-copy{display:grid;line-height:1.15}.brand-copy small{margin-top:4px;color:var(--muted);font-size:10px;letter-spacing:.16em;text-transform:uppercase}
     .topnav{display:flex;align-items:center;gap:22px;font-size:13px;font-weight:750}.topnav a{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;text-decoration:none;color:#354052}.topnav a:hover{color:var(--teal)}
     .language-switch{display:inline-flex;align-items:stretch;height:44px;padding:0;border:0;background:rgba(255,255,255,.72);box-shadow:inset 0 0 0 1px #aeb9c6}.language-switch a{justify-content:center;min-width:44px;min-height:44px;padding:0 7px}.language-switch a[aria-current="page"]{background:var(--navy);color:#fff}
@@ -74,7 +74,7 @@
 <body>
   <header class="shell topbar">
     <a class="brand" href="{{BASE_PATH}}/" aria-label="AI智能体情报日报首页">
-      <span class="brand-mark"><img src="{{BASE_PATH}}/assets/alux-mark.png" alt="" width="32" height="32"></span>
+      <span class="brand-mark"><img src="{{BASE_PATH}}/assets/alux-mark.png" alt="" width="26" height="26"></span>
       <span class="brand-copy">AI智能体情报日报<small lang="en">AI AGENT INTELLIGENCE DAILY</small></span>
     </a>
     <nav class="topnav" aria-label="主导航"><a class="nav-latest" href="{{BASE_PATH}}/latest/">最新一期</a><a class="nav-archive" href="#archive">历史归档</a><span class="language-switch" aria-label="语言切换"><a href="{{BASE_PATH}}/" lang="zh-CN" aria-current="page">中</a><a href="{{BASE_PATH}}/en/" lang="en">EN</a></span></nav>

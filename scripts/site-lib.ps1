@@ -235,8 +235,8 @@ function Add-ReportSiteChrome {
 <link rel="alternate" hreflang="x-default" href="$(Encode-Html ($base + $ChinesePath))">
 <meta property="og:locale" content="$(if ($Language -eq 'zh-CN') { 'zh_CN' } else { 'en_US' })">
 <meta property="og:url" content="$(Encode-Html $canonicalUrl)">
-<link rel="icon" type="image/png" href="$sitePath/assets/alux-mark.png">
-<link rel="apple-touch-icon" href="$sitePath/assets/alux-mark.png">
+<link rel="icon" type="image/png" href="$sitePath/assets/alux-favicon.png">
+<link rel="apple-touch-icon" href="$sitePath/assets/alux-favicon.png">
 <link rel="stylesheet" href="$sitePath/assets/report-site.css">
 <!-- site:i18n-head:end -->
 "@

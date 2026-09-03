@@ -37,6 +37,8 @@ for (const [zh, en] of [
 assert(home.zhHtml.includes('AI智能体情报日报<small lang="en">AI AGENT INTELLIGENCE DAILY</small>'));
 assert(home.zhHtml.includes('/assets/alux-mark.png'));
 assert(home.enHtml.includes('/assets/alux-mark.png'));
+assert(home.zhHtml.includes('/assets/alux-favicon.png'));
+assert(home.enHtml.includes('/assets/alux-favicon.png'));
 assert(!home.zhHtml.includes('ALUX情报'));
 assert(!home.zhHtml.includes('日报归档'));
 assert(!home.enHtml.includes('ALUX Intelligence'));

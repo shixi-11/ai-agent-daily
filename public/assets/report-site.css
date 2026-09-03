@@ -70,17 +70,15 @@
   width: 44px;
   height: 44px;
   flex: 0 0 44px;
-  border: 1px solid #6577a8;
-  background: #22356f;
-  box-shadow: 0 6px 18px rgba(20, 33, 61, .16);
+  border: 1px solid #d7dfe5;
+  background: #fff;
   overflow: hidden;
 }
 
 .report-sitebrand-mark img {
   display: block;
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1);
+  width: 26px;
+  height: 26px;
   object-fit: contain;
 }
 
@@ -368,11 +366,6 @@ html[lang="en-US"] .panel-head span {
     width: 40px;
     height: 40px;
     flex-basis: 40px;
-  }
-
-  .report-sitebrand-mark img {
-    width: 30px;
-    height: 30px;
   }
 
   .report-sitebrand-copy > span {

@@ -253,6 +253,7 @@ if (-not (Test-Path -LiteralPath $publicAssetRoot -PathType Container)) {
 }
 Copy-Item -LiteralPath (Join-Path $AssetRoot 'report-site.css') -Destination (Join-Path $PublicRoot 'assets\report-site.css') -Force
 Copy-Item -LiteralPath (Join-Path $AssetRoot 'alux-mark.png') -Destination (Join-Path $PublicRoot 'assets\alux-mark.png') -Force
+Copy-Item -LiteralPath (Join-Path $AssetRoot 'alux-favicon.png') -Destination (Join-Path $PublicRoot 'assets\alux-favicon.png') -Force
 
 function New-ArchiveMarkup {
     param(
