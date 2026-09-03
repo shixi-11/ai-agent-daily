@@ -437,6 +437,18 @@ async function inspectHomepage(browser, locale, viewport) {
     latestHref: await page.locator('.latest .button').getAttribute('href'),
     logoLoaded: await page.locator('.brand-mark img').evaluate((img) => img.complete && img.naturalWidth > 0),
     logoSrc: await page.locator('.brand-mark img').getAttribute('src'),
+    logoAppearance: await page.locator('.brand-mark').evaluate((mark) => {
+      const image = mark.querySelector('img');
+      const markStyle = getComputedStyle(mark);
+      const imageStyle = getComputedStyle(image);
+      const imageRect = image.getBoundingClientRect();
+      return {
+        background: markStyle.backgroundColor,
+        border: markStyle.borderTopColor,
+        imageWidth: Number(imageRect.width.toFixed(2)),
+        filter: imageStyle.filter,
+      };
+    }),
     factBalance: await page.locator('.fact').evaluateAll((cards) => cards.map((card) => {
       const title = card.querySelector('b');
       const label = card.querySelector('span');
@@ -459,7 +471,12 @@ async function inspectHomepage(browser, locale, viewport) {
   if (result.dateLines !== 1) throw new Error(`${locale.key}/${viewport.name}: archive range wrapped to ${result.dateLines} lines`);
   if (result.dateRangeBleed) throw new Error(`${locale.key}/${viewport.name}: archive range escaped its fact cell ${JSON.stringify(result.dateRangeBleed)}`);
   if (!result.logoLoaded || result.logoSrc !== '/daily/assets/alux-mark.png' || result.favicon !== '/daily/assets/alux-mark.png') {
-    throw new Error(`${locale.key}/${viewport.name}: framed ALUX logo/favicon missing`);
+    throw new Error(`${locale.key}/${viewport.name}: ALUX logo/favicon missing`);
+  }
+  if (result.logoAppearance.background !== 'rgb(34, 53, 111)' ||
+      result.logoAppearance.imageWidth < 30 ||
+      result.logoAppearance.filter === 'none') {
+    throw new Error(`${locale.key}/${viewport.name}: ALUX dark-surface logo is visually weak ${JSON.stringify(result.logoAppearance)}`);
   }
   if (result.factBalance.some(({ top, bottom }) => Math.abs((top - 2) - bottom) > 1.5)) {
     throw new Error(`${locale.key}/${viewport.name}: archive facts are not vertically centered ${JSON.stringify(result.factBalance)}`);
@@ -586,6 +603,18 @@ async function inspectReport(browser, locale, viewport, url, capture) {
     title: await page.title(),
     sitebar: await page.locator('.report-sitebar').count(),
     logoLoaded: await page.locator('.report-sitebrand-mark img').evaluate((img) => img.complete && img.naturalWidth > 0),
+    logoAppearance: await page.locator('.report-sitebrand-mark').evaluate((mark) => {
+      const image = mark.querySelector('img');
+      const markStyle = getComputedStyle(mark);
+      const imageStyle = getComputedStyle(image);
+      const imageRect = image.getBoundingClientRect();
+      return {
+        background: markStyle.backgroundColor,
+        border: markStyle.borderTopColor,
+        imageWidth: Number(imageRect.width.toFixed(2)),
+        filter: imageStyle.filter,
+      };
+    }),
     footer: await page.locator('.report-sitefooter').count(),
     alternate: await page.locator(`.language-switch a:not([aria-current="page"])`).getAttribute('href'),
     canonical: await page.locator('link[rel="canonical"]').getAttribute('href'),
@@ -594,7 +623,12 @@ async function inspectReport(browser, locale, viewport, url, capture) {
   if (result.bodyWidth > result.viewportWidth) throw new Error(`${locale.key}/${viewport.name}${url}: horizontal overflow ${result.bodyWidth}/${result.viewportWidth}`);
   if (result.offenders.length) throw new Error(`${locale.key}/${viewport.name}${url}: clipped elements ${JSON.stringify(result.offenders)}`);
   if (result.sitebar !== 1 || result.footer !== 1) throw new Error(`${locale.key}/${viewport.name}${url}: site navigation missing`);
-  if (!result.logoLoaded) throw new Error(`${locale.key}/${viewport.name}${url}: framed ALUX logo missing`);
+  if (!result.logoLoaded) throw new Error(`${locale.key}/${viewport.name}${url}: ALUX logo missing`);
+  if (result.logoAppearance.background !== 'rgb(34, 53, 111)' ||
+      result.logoAppearance.imageWidth < 30 ||
+      result.logoAppearance.filter === 'none') {
+    throw new Error(`${locale.key}/${viewport.name}${url}: ALUX dark-surface logo is visually weak ${JSON.stringify(result.logoAppearance)}`);
+  }
   if (!result.alternate) throw new Error(`${locale.key}/${viewport.name}${url}: language alternate missing`);
   if (!result.canonical?.startsWith('https://ai.alux.network/daily/')) throw new Error(`${locale.key}/${viewport.name}${url}: canonical mismatch`);
   if (result.externalLinks === 0) throw new Error(`${locale.key}/${viewport.name}${url}: external sources missing`);
