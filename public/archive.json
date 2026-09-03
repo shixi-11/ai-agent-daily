@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-02T01:11:52.2015920Z",
+  "generatedAt": "2026-09-03T00:38:21.6434120Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-02",
-    "url": "/daily/2026/09/02/",
+    "date": "2026-09-03",
+    "url": "/daily/2026/09/03/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/02/"
+    "alternateUrl": "/daily/en/2026/09/03/"
   },
   "reports": [
+    {
+      "date": "2026-09-03",
+      "title": "AI Agent权限失败与地域路由",
+      "lead": "九条信号从组织级 MCP、失败可见性与跨区推理，连到漏洞修复和代码文档的生产闭环。",
+      "url": "/daily/2026/09/03/",
+      "alternateUrl": "/daily/en/2026/09/03/",
+      "publicPath": "2026/09/03/index.html",
+      "sourceFile": "20260903_ALUX_AI智能体情报日报.html",
+      "sha256": "c64607d5998db01550fa1e9c10bc8b01b03c02992a166fa5fe0f1d28d6d6109b",
+      "publicSha256": "e44b8c796b37a25b83ae6239e64c0ec961d48a1fa0c09f13f1e883f53401e2c9"
+    },
     {
       "date": "2026-09-02",
       "title": "AI Agent上下文与执行边界同时收紧",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/02/index.html",
       "sourceFile": "20260902_ALUX_AI智能体情报日报.html",
       "sha256": "fbde580c6d18595217ab046b1f8bf2f2102008aae408c3184aa3144aeaf80021",
-      "publicSha256": "7960789556e1b64b6c03e76d61595d5844ec4ae2b0d55e5f69e318b145816bf1"
+      "publicSha256": "506624ed155154cf00f17eabf2b559856a46cc276cc54931f5790a306489f278"
     },
     {
       "date": "2026-09-01",

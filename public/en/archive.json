@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-02T01:11:52.2015920Z",
+  "generatedAt": "2026-09-03T00:38:21.6434120Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-02",
-    "url": "/daily/en/2026/09/02/",
+    "date": "2026-09-03",
+    "url": "/daily/en/2026/09/03/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/02/"
+    "alternateUrl": "/daily/2026/09/03/"
   },
   "reports": [
+    {
+      "date": "2026-09-03",
+      "title": "AI Agent — Permissions, Failures, Routing Move Into the Control Plane",
+      "lead": "Nine signals connect managed MCP, visible failure, and cross-region inference to production loops for vulnerability repair and code documentation.",
+      "url": "/daily/en/2026/09/03/",
+      "alternateUrl": "/daily/2026/09/03/",
+      "publicPath": "en/2026/09/03/index.html",
+      "sourceFile": "20260903.body.html",
+      "sha256": "9eaec0c96d854266375937eab027f51bfec26b308e0ad762f89864f5612c6521",
+      "publicSha256": "bd7efa15667f037bdddcb9e12fe810b5aaf355f66af4cf1c873b3dc6a19c7150"
+    },
     {
       "date": "2026-09-02",
       "title": "AI Agent — Context Limits, Execution Controls Tighten",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/02/index.html",
       "sourceFile": "20260902.body.html",
       "sha256": "a80de431b4d1ab7220dac5c9edfd14a87afd76782c265ce983292fd3b54f9996",
-      "publicSha256": "55f73f55f679f4c07e9dd60e250b342554d4e03700cafaf6bcc6abb245c3681c"
+      "publicSha256": "8a202132968cc4898fd8b1e5b1de82eb53345e1fe58f4187d45a78cccf324d3f"
     },
     {
       "date": "2026-09-01",
