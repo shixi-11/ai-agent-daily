@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-03T00:38:21.6434120Z",
+  "generatedAt": "2026-09-04T01:29:11.9905120Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-03",
-    "url": "/daily/2026/09/03/",
+    "date": "2026-09-04",
+    "url": "/daily/2026/09/04/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/03/"
+    "alternateUrl": "/daily/en/2026/09/04/"
   },
   "reports": [
+    {
+      "date": "2026-09-04",
+      "title": "AI Agent入口记忆与本地算力重排",
+      "lead": "九条信号从资源即代码、跨工具记忆与漏洞身份，连到开放模型入口、本地算力池和科学重建。",
+      "url": "/daily/2026/09/04/",
+      "alternateUrl": "/daily/en/2026/09/04/",
+      "publicPath": "2026/09/04/index.html",
+      "sourceFile": "20260904_ALUX_AI智能体情报日报.html",
+      "sha256": "8a9ab1aac13dce7cbfc5aa8d1d2d15ef7b5cf827a1ec6d29eb0f606d1ab10738",
+      "publicSha256": "1c198e2e14cbc8d3e29e772f8ac16fbc1e8ce9e84c904cf3d508439f328a3da6"
+    },
     {
       "date": "2026-09-03",
       "title": "AI Agent权限失败与地域路由",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/03/index.html",
       "sourceFile": "20260903_ALUX_AI智能体情报日报.html",
       "sha256": "c64607d5998db01550fa1e9c10bc8b01b03c02992a166fa5fe0f1d28d6d6109b",
-      "publicSha256": "0d9bbfb936f5ca4c4711c3b98145497da1f748024a8b0b7099fdb45d74b801ba"
+      "publicSha256": "5ac72c39e783fa533123a83c00f47a6e47eb864f9f3ff0f25ad345ebdcb32e1c"
     },
     {
       "date": "2026-09-02",

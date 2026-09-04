@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-03T00:38:21.6434120Z",
+  "generatedAt": "2026-09-04T01:29:11.9905120Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-03",
-    "url": "/daily/en/2026/09/03/",
+    "date": "2026-09-04",
+    "url": "/daily/en/2026/09/04/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/03/"
+    "alternateUrl": "/daily/2026/09/04/"
   },
   "reports": [
+    {
+      "date": "2026-09-04",
+      "title": "AI Agent — Control, Memory & Local Compute Become Assets",
+      "lead": "Nine signals connect infrastructure as code, cross-tool memory, and finding identity to model distribution, local compute pools, and scientific reconstruction.",
+      "url": "/daily/en/2026/09/04/",
+      "alternateUrl": "/daily/2026/09/04/",
+      "publicPath": "en/2026/09/04/index.html",
+      "sourceFile": "20260904.body.html",
+      "sha256": "188a27e906f8881cb2109dd020030311b2a144497dc1762de8aa53ec2fe687a1",
+      "publicSha256": "115f01119749b7cf3516874069cf1377b98717cf2420d9128337a1aa10b13df6"
+    },
     {
       "date": "2026-09-03",
       "title": "AI Agent — Permissions, Failures, Routing Move Into the Control Plane",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/03/index.html",
       "sourceFile": "20260903.body.html",
       "sha256": "9eaec0c96d854266375937eab027f51bfec26b308e0ad762f89864f5612c6521",
-      "publicSha256": "47319b21336c6aa8e427583ca6b7a9c3daa92121e5a3f0321e5486324be63caa"
+      "publicSha256": "9ebc7f41a9d1b10dbaccac1cd3bdbd6ba7d291b67e212b9472bf6137adfe4788"
     },
     {
       "date": "2026-09-02",
