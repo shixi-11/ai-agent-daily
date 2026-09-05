@@ -57,8 +57,8 @@ if ($LASTEXITCODE -ne 0 -or [string]::IsNullOrWhiteSpace(($remote -join ''))) {
     throw '项目根目录还没有连接 GitHub origin。'
 }
 $remoteUrl = ($remote -join '').Trim()
-if ($remoteUrl -notmatch 'github\.com[/:]shixi-11/alux-ai-agent-daily(?:\.git)?$') {
-    throw "origin 不是 ALUX 日报正式仓库：$remoteUrl"
+if ($remoteUrl -notmatch '^(?:https://github\.com/|git@github\.com:)shixi-11/(?:alux-)?ai-agent-daily(?:\.git)?$') {
+    throw "origin 不是 AI Agent Daily 正式仓库：$remoteUrl"
 }
 
 $branch = (git -C $siteRoot branch --show-current).Trim()

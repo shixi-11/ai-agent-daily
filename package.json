@@ -1,8 +1,8 @@
 {
-  "name": "alux-ai-agent-daily",
+  "name": "ai-agent-daily",
   "version": "1.0.0",
   "private": true,
-  "description": "Build and multi-viewport verification tools for ALUX AI Agent Intelligence Daily.",
+  "description": "Build and verification tools for AI Agent Daily.",
   "scripts": {
     "verify:master": "node scripts/verify-report-master.cjs",
     "verify:render": "node scripts/render-check.cjs",

@@ -1,5 +1,7 @@
 # ALUX AI Agent Intelligence Daily · Agent 接班说明
 
+仓库公开名称为 `shixi-11/ai-agent-daily`，正式 origin 为 `https://github.com/shixi-11/ai-agent-daily.git`；旧仓库地址由 GitHub 重定向。Vercel 稳定源站和既有本地路径仍保留兼容名称，不能机械替换所有 `alux-ai-agent-daily` 字符串。
+
 ## 2026-09-06 个人域名展示合同（优先于下方历史说明）
 
 对外主入口为 https://shixilin.com/ai/agent-daily ，浏览器必须停留在此域名；英文、日期页和资源使用该路径的对应子路径。两个旧域名保留，以单次 308 跳到个人域名对应页面，查询参数保留。收藏名称与浏览器标题去掉 ALUX，汇总首页为 Agent Daily · AI 日报。

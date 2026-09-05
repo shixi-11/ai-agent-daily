@@ -1,4 +1,6 @@
-<div align="center">
+# AI Agent Daily
+
+代码仓库：[shixi-11/ai-agent-daily](https://github.com/shixi-11/ai-agent-daily)。旧仓库名 `alux-ai-agent-daily` 由 GitHub 保留跳转；已有克隆建议更新 origin。Vercel 源站地址和本地工作目录属于现有部署/自动化的兼容名称，不随本次仓库改名变更。
 
 ## 2026-09-06 个人域名展示合同（优先于下方历史说明）
 
