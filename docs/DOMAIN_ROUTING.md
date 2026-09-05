@@ -42,7 +42,7 @@ Vercel 在外部以 `/daily/...` 提供页面，内部再 rewrite 到 `public/` 
 ## 其他电脑上的日报专用 Agent 应如何工作
 
 1. 拉取正式仓库 `main`，完整阅读 `AGENTS.md`、`AUTOMATION.md`、本文件与 `automation/OPENCLAW_DAILY_TASK.md`。
-2. 如果自动化正文没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.6.0]`，保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得新建重复任务。主日报固定使用 `openai/gpt-5.6-sol`、`thinking=high`、标准速度、无 fallback；验收与恢复按其 command payload 执行。
+2. 如果自动化正文没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.8.0]`，保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得新建重复任务。主日报固定使用 `openai/gpt-5.6-sol`、`thinking=high`、标准速度、无 fallback；验收与恢复按其 command payload 执行。
 3. 生成中文母稿、完成美式英语精译与独立审校、更新翻译清单。
 4. 运行构建、结构验证、响应式渲染、公开边界和发布白名单检查。
 5. 由 `scripts/publish.ps1` 直接提交并推送正式仓库 `main`；Vercel 会自动部署。
@@ -70,3 +70,10 @@ Vercel 在外部以 `/daily/...` 提供页面，内部再 rewrite 到 `public/` 
 5. DNS 正常但 HTTPS 未就绪：等待 Vercel 证书签发并检查项目域名绑定；不要用关闭安全校验的方式绕过。
 
 本记录只描述公开域名与稳定路由合同，不保存域名服务商的私密运维数据。后续如修改域名合同，必须在同一次维护提交中更新本文件、自动化合同、验证脚本和 `vercel.json`。
+
+
+## 个人网站产品入口
+
+`https://shixilin.com/ai/agent-daily`（含结尾斜杠）通过个人站的 HTTP 307 自动跳转到 `https://ai.alux.network/daily/`。这是可分享的产品入口，日报继续在原站发布，原首页、中英文日期页与永久兼容域名均保留。该入口不作为第二套内容站，不替换已有 canonical、sitemap 或历史链接。个人站的首页与 AI 产品页统一引用此入口。
+
+日报的中英文汇总首页在顶部导航及页脚提供 `https://shixilin.com/` 链接，移动端导航可换行；期刊正文沿用原有版式。

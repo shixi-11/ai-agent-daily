@@ -84,8 +84,8 @@ for (const name of governedReports) {
   }
   const signals = classCount(report, 'signal');
   const utilityFooters = classCount(report, 'side');
-  if (signals < 6 || signals > 9 || utilityFooters !== signals) {
-    fail(`${name} must contain 6-9 signal cards and exactly one compact utility footer per signal`);
+  if (signals < 6 || (name.slice(0, 8) < '20260906' && signals > 9) || utilityFooters !== signals) {
+    fail(`${name} must contain valid signal cards (6-9 before 2026-09-06; editorial gate governs later quantity) and one compact utility footer per signal`);
   }
   const statBlock = report.match(/<div\s+class=["']stats["'][^>]*>([\s\S]*?)<\/div>\s*<div\s+class=["']judgment["']/i)?.[1] || '';
   const statLabels = Array.from(statBlock.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/gi)).map((match) => match[1].replace(/<[^>]+>/g, '').trim());

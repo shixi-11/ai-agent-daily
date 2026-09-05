@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "contractVersion": "3.7.0",
+  "contractVersion": "3.8.0",
   "task": "Global AI and AI Agent Intelligence Daily bilingual publish",
   "schedulePolicy": "Preserve the existing OpenClaw schedule and timezone; replace only the task workflow.",
   "automationTimezone": "preserve-existing",
@@ -41,7 +41,7 @@
     "style": "Native-level technology intelligence publication: professional, concise, accurate and authoritative; never literal word-for-word translation"
   },
   "editorialContract": {
-    "effectiveFrom": "2026-08-26",
+    "effectiveFrom": "2026-09-06",
     "audience": "General global AI, AI Agent, developer, product, infrastructure, technology and business readers",
     "goal": "Select news that is fun, useful, meaningful and evidence-backed instead of forcing every item into an ALUX narrative",
     "coverage": [
@@ -70,11 +70,12 @@
       "evidence boundary"
     ],
     "selectionMix": {
-      "signalCount": "6-9, normally 7-9; six only when no seventh candidate passes freshness, source and reader-value gates",
+      "signalCount": "12-18 distinct events normally; 5-7 features, remaining briefs; evidence-based exceptions required",
       "minimumCategoryCount": 4,
-      "maximumProductModelSoftwareShare": 0.5,
       "minimumOpenSourceOrSkillCount": 2,
-      "minimumHardwareArchitectureResearchOrMarketCount": 1
+      "minimumHardwareArchitectureResearchOrMarketCount": 1,
+      "maximumRoutineDeveloperUpdates": 2,
+      "minimumFunDiscoveryTarget": 3
     },
     "majorVendorOpenSourcePolicy": {
       "effectiveFrom": "2026-08-25",
@@ -145,7 +146,13 @@
     ],
     "riscPolicy": "Keep the fixed RISC machine primer before the news; do not label or score individual news items",
     "financingPolicy": "No dedicated financing window; include financing only when it materially explains a technology, market or industry shift",
-    "historicalPolicy": "Do not rewrite issues published before the effective date"
+    "historicalPolicy": "Do not rewrite issues published before the effective date",
+    "modelAndDiscoveryPolicy": {
+      "required": true,
+      "rule": "Check official vendor news and API/product releases for closed and open models, plus six discovery areas; retain a real candidate pool, dated source checks and explicit dispositions. Verified major model releases must be selected or proven already covered in the ledger. A GitHub/Hugging Face scan alone is insufficient.",
+      "coverageConfig": "tasks/alux-daily-editorial-coverage.json",
+      "gate": "scripts/alux-daily-editorial-gate.cjs"
+    }
   },
   "layoutContract": {
     "effectiveFrom": "2026-08-26",
@@ -171,6 +178,13 @@
         "whoShouldCare": "20-45",
         "tryIt": "35-70",
         "keepInMind": "35-70"
+      },
+      "briefFieldGuidanceChineseCharacters": {
+        "whatHappened": "35-80",
+        "whyItMatters": "10-40",
+        "whoShouldCare": "5-25",
+        "tryIt": "10-40",
+        "keepInMind": "10-40"
       }
     },
     "signalCard": "Single article flow followed by a compact two-row utility footer; no equal-height side-by-side columns",
