@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-04T01:29:11.9905120Z",
+  "generatedAt": "2026-09-05T01:11:17.6697430Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-04",
-    "url": "/daily/2026/09/04/",
+    "date": "2026-09-05",
+    "url": "/daily/2026/09/05/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/04/"
+    "alternateUrl": "/daily/en/2026/09/05/"
   },
   "reports": [
+    {
+      "date": "2026-09-05",
+      "title": "AI Agent技能会话与运维边界重写",
+      "lead": "八条信号从 Skill 成本、会话持有锁与无状态 MCP，连到集群控制面、记忆清理和跨人群模型边界。",
+      "url": "/daily/2026/09/05/",
+      "alternateUrl": "/daily/en/2026/09/05/",
+      "publicPath": "2026/09/05/index.html",
+      "sourceFile": "20260905_ALUX_AI智能体情报日报.html",
+      "sha256": "f6a2dcad9a6967ba377fc249bb7f631fb11949d401003ff833b44a618b74dc97",
+      "publicSha256": "be48ba5ead4439c35c454f4065bf390fcbc9dd9c16ad358b6e2654943bb87bda"
+    },
     {
       "date": "2026-09-04",
       "title": "AI Agent入口记忆与本地算力重排",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/04/index.html",
       "sourceFile": "20260904_ALUX_AI智能体情报日报.html",
       "sha256": "8a9ab1aac13dce7cbfc5aa8d1d2d15ef7b5cf827a1ec6d29eb0f606d1ab10738",
-      "publicSha256": "1c198e2e14cbc8d3e29e772f8ac16fbc1e8ce9e84c904cf3d508439f328a3da6"
+      "publicSha256": "c94272ef6ec929e2eee92ec9a27171b35d8d7f375c3522c698001463da5316ef"
     },
     {
       "date": "2026-09-03",

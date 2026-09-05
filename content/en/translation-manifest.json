@@ -549,7 +549,7 @@
       "sourceSha256": "c64607d5998db01550fa1e9c10bc8b01b03c02992a166fa5fe0f1d28d6d6109b",
       "translationSha256": "9eaec0c96d854266375937eab027f51bfec26b308e0ad762f89864f5612c6521",
       "status": "reviewed",
-      "reviewedAt": "2026-09-03T00:38:21.6434120Z"
+      "reviewedAt": "2026-09-03T00:38:21.643412Z"
     },
     {
       "date": "2026-09-04",
@@ -558,7 +558,16 @@
       "sourceSha256": "8a9ab1aac13dce7cbfc5aa8d1d2d15ef7b5cf827a1ec6d29eb0f606d1ab10738",
       "translationSha256": "188a27e906f8881cb2109dd020030311b2a144497dc1762de8aa53ec2fe687a1",
       "status": "reviewed",
-      "reviewedAt": "2026-09-04T01:29:11.9905120Z"
+      "reviewedAt": "2026-09-04T01:29:11.990512Z"
+    },
+    {
+      "date": "2026-09-05",
+      "sourceFile": "20260905_ALUX_AI智能体情报日报.html",
+      "translationFile": "20260905.body.html",
+      "sourceSha256": "f6a2dcad9a6967ba377fc249bb7f631fb11949d401003ff833b44a618b74dc97",
+      "translationSha256": "26bd2151201a977ea43adadc78e3f8427d7001dc062c7135bed7057ce51dc2c7",
+      "status": "reviewed",
+      "reviewedAt": "2026-09-05T01:11:17.6697430Z"
     }
   ]
 }

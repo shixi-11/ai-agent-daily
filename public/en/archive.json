@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-04T01:29:11.9905120Z",
+  "generatedAt": "2026-09-05T01:11:17.6697430Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-04",
-    "url": "/daily/en/2026/09/04/",
+    "date": "2026-09-05",
+    "url": "/daily/en/2026/09/05/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/04/"
+    "alternateUrl": "/daily/2026/09/05/"
   },
   "reports": [
+    {
+      "date": "2026-09-05",
+      "title": "AI Agent — Skills, Sessions, Operations: Boundaries Redrawn",
+      "lead": "Eight signals link skill costs, session ownership, and stateless MCP with cluster control planes, memory cleanup, and cross-population modeling limits.",
+      "url": "/daily/en/2026/09/05/",
+      "alternateUrl": "/daily/2026/09/05/",
+      "publicPath": "en/2026/09/05/index.html",
+      "sourceFile": "20260905.body.html",
+      "sha256": "26bd2151201a977ea43adadc78e3f8427d7001dc062c7135bed7057ce51dc2c7",
+      "publicSha256": "d60c565cb435ad883dec3943e6cf2c68b12503afc6b93bb69b6790c9d31f829b"
+    },
     {
       "date": "2026-09-04",
       "title": "AI Agent — Control, Memory & Local Compute Become Assets",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/04/index.html",
       "sourceFile": "20260904.body.html",
       "sha256": "188a27e906f8881cb2109dd020030311b2a144497dc1762de8aa53ec2fe687a1",
-      "publicSha256": "115f01119749b7cf3516874069cf1377b98717cf2420d9128337a1aa10b13df6"
+      "publicSha256": "d40614cc9d152966020aa638db439714e33e6e83c014fad4c48966c9a2a76381"
     },
     {
       "date": "2026-09-03",
