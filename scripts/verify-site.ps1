@@ -286,16 +286,31 @@ $vercelConfig = Get-Content -LiteralPath (Join-Path $SiteRoot 'vercel.json') -Ra
 if ($vercelConfig.outputDirectory -ne 'public' -or $null -ne $vercelConfig.framework) {
     throw 'Vercel 配置必须以 public 为输出目录，并使用 Other（framework: null）。'
 }
-foreach ($spec in @(
-    @{ source = '/'; destination = 'https://ai.alux.network/daily/' },
-    @{ source = '/daily/(.*)'; destination = 'https://ai.alux.network/daily/$1' },
-    @{ source = '/(.*)'; destination = 'https://ai.alux.network/daily/$1' }
-)) {
-    $matches = @($vercelConfig.redirects) | Where-Object {
-        $_.source -eq $spec.source -and $_.destination -eq $spec.destination -and $_.permanent -eq $true -and
-        @($_.has | Where-Object { $_.type -eq 'host' -and $_.value -eq 'ai-agent-daily.alux.network' }).Count -eq 1
+$presentationSite = 'https://shixilin.com/ai/agent-daily'
+foreach ($legacyHost in @('ai.alux.network', 'ai-agent-daily.alux.network')) {
+    $redirectSpecs = @(
+        @{ source = '/'; destination = $presentationSite },
+        @{ source = '/daily'; destination = $presentationSite },
+        @{ source = '/daily/'; destination = $presentationSite },
+        @{ source = '/daily/(.*)'; destination = $presentationSite + '/$1' }
+    )
+    if ($legacyHost -eq 'ai-agent-daily.alux.network') {
+        $redirectSpecs += @{ source = '/(.*)'; destination = $presentationSite + '/$1' }
     }
-    if (@($matches).Count -ne 1) { throw "Vercel 缺少旧域名兼容规则：$($spec.source)" }
+    foreach ($spec in $redirectSpecs) {
+        $matches = @($vercelConfig.redirects) | Where-Object {
+            $_.source -eq $spec.source -and $_.destination -eq $spec.destination -and $_.permanent -eq $true -and
+            @($_.has | Where-Object { $_.type -eq 'host' -and $_.value -eq $legacyHost }).Count -eq 1
+        }
+        if (@($matches).Count -ne 1) { throw "Vercel 缺少个人域名兼容规则：$legacyHost$($spec.source)" }
+    }
+}
+# Every redirect must be restricted to the compatibility hosts, leaving the fetch origin available.
+foreach ($redirect in @($vercelConfig.redirects)) {
+    $hostRules = @($redirect.has | Where-Object { $_.type -eq 'host' })
+    if ($hostRules.Count -ne 1 -or $hostRules[0].value -notin @('ai.alux.network', 'ai-agent-daily.alux.network')) {
+        throw 'Vercel 重定向必须仅匹配两个兼容域名，不能重定向稳定源站。'
+    }
 }
 foreach ($spec in @(
     @{ source = '/daily/(.*)'; destination = '/$1' }

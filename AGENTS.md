@@ -8,6 +8,8 @@
 
 日报仍由本仓库发布，稳定源站为 https://alux-ai-agent-daily.vercel.app 。个人站服务端读取源站，并统一转换站内路径、canonical、hreflang、sitemap 和收藏标题。源站默认域名不得重定向到个人站，以免循环。为保留历史哈希与现有生成合同，本仓库原始构建产物继续使用 /daily 和旧域名；它们属于内部兼容格式，个人域名实际响应使用新地址。部署门禁比较经过 scripts/daily-public-presentation.cjs 确定性转换后的完整正文哈希，不能跳过内容一致性验证。
 
+从 2026-09-06 起的新一期日报仅在页脚署名：中文 `Agent Daily · 由光之十一出品`，英文 `Agent Daily · Published by Shixi Lin`，作者名链接 `https://shixilin.com/`。由共享构建脚本按期刊日期注入当日及之后的日期页与最新页；此前历史期刊保留原页脚，不在每篇顶部重复添加个人主页入口。
+
 维护转换规则时同步个人站 lib/agent-daily.js 和本仓库 scripts/daily-public-presentation.cjs。普通每日发布不需要改 DNS，也不需要重新部署个人站；源站内容更新后个人站缓存通常 60 秒刷新。现有任务的兼容链接可继续使用且会自动进入个人域名；历史内容和已发通知不批量重写。
 
 
