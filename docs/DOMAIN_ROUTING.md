@@ -1,79 +1,32 @@
-# 域名路由、迁移记录与 Agent 接班说明
+# Agent Daily 域名与发布路由
 
-本文件是日报专用 Agent 在任何电脑上处理发布、域名与线上故障时的权威说明。根目录 `AGENTS.md`、`AUTOMATION.md`、`automation/task-contract.json` 与本文件必须保持一致。
+## 2026-09-06 个人域名展示合同（优先于下方历史说明）
 
-## 当前正式地址
+对外主入口为 https://shixilin.com/ai/agent-daily ，浏览器必须停留在此域名；英文、日期页和资源使用该路径的对应子路径。两个旧域名保留，以单次 308 跳到个人域名对应页面，查询参数保留。收藏名称与浏览器标题去掉 ALUX，汇总首页为 Agent Daily · AI 日报。
 
-- 正式主地址：<https://ai.alux.network/daily/>
-- 英文首页：<https://ai.alux.network/daily/en/>
-- 中文日期页：`https://ai.alux.network/daily/YYYY/MM/DD/`
-- 英文日期页：`https://ai.alux.network/daily/en/YYYY/MM/DD/`
-- 永久兼容入口：<https://ai-agent-daily.alux.network/>
+日报仍由本仓库发布，稳定源站为 https://alux-ai-agent-daily.vercel.app 。个人站服务端读取源站，并统一转换站内路径、canonical、hreflang、sitemap 和收藏标题。源站默认域名不得重定向到个人站，以免循环。为保留历史哈希与现有生成合同，本仓库原始构建产物继续使用 /daily 和旧域名；它们属于内部兼容格式，个人域名实际响应使用新地址。部署门禁比较经过 scripts/daily-public-presentation.cjs 确定性转换后的完整正文哈希，不能跳过内容一致性验证。
 
-所有新生成页面、canonical、hreflang、sitemap、二维码、分享卡、公告和 Telegram 文案只使用新主地址。旧域名只用于兼容已经发出的链接，不再作为品牌主地址。
+维护转换规则时同步个人站 lib/agent-daily.js 和本仓库 scripts/daily-public-presentation.cjs。普通每日发布不需要改 DNS，也不需要重新部署个人站；源站内容更新后个人站缓存通常 60 秒刷新。现有任务的兼容链接可继续使用且会自动进入个人域名；历史内容和已发通知不批量重写。
 
-## 2026-07-16 迁移记录
+## 路径验收
 
-### DNS
-
-`ai.alux.network` 已完成 DNS 与部署平台绑定。正常日报发布不得添加、删除或修改 DNS；日报专用 Agent 不需要持有域名服务商账号。
-
-公开仓库不复制域名服务商控制台的具体记录值、所有权验证信息、账号、验证码、截图或凭据。DNS 目标可能由平台调整；只有域名失效且项目所有者明确授权排障时，才应实时查询权威 DNS，并与部署平台当时给出的目标核对。
-
-### Vercel 路由合同
-
-仓库 `vercel.json` 实现以下行为：
-
-| 请求 | 预期结果 |
+| 请求 | 结果 |
 | --- | --- |
-| `https://ai.alux.network/` | 临时 `307` 到 `/daily/` |
-| `https://ai.alux.network/daily/` | 中文首页 `200` |
-| `https://ai.alux.network/daily/en/` | 英文首页 `200` |
-| `https://ai-agent-daily.alux.network/` | 永久 `308` 到新中文首页 |
-| 旧域名 `/en/`、`/latest/`、`/en/latest/`、中英日期页 | 单次 `308` 到新主地址下的同路径内容 |
-| 旧域名 `/daily/...` | 单次 `308` 到新主地址 `/daily/...`，不得出现 `/daily/daily/...` |
+| https://shixilin.com/ai/agent-daily | 中文汇总首页 200，地址不变 |
+| 个人路径 /en/、/latest/、/en/latest/、/YYYY/MM/DD/、/en/YYYY/MM/DD/ | 同期对应页面 200，站内切换留在个人域名 |
+| https://ai.alux.network/daily/ 及同期子路径 | 单次 308 到个人地址 |
+| https://ai-agent-daily.alux.network/ 及同期子路径 | 单次 308 到个人地址 |
+| https://ai.alux.network/ | 单次 308 到个人汇总首页 |
+| https://alux-ai-agent-daily.vercel.app/ | 稳定源站 200，不跨域跳转 |
 
-旧链接的查询参数必须保留。旧入口不得形成跳转链，也不得返回 404。
+旧链接带查询参数时仍保留参数；旧日期页不得跳到最新一期。个人站正常根首页继续显示个人网站。
 
-Vercel 在外部以 `/daily/...` 提供页面，内部再 rewrite 到 `public/` 的对应成品。不要为迁移复制第二套 `public/daily/`，也不要直接编辑 `public/`。
+## 发布与故障检查
 
-站点启用了结尾斜杠规范化。2026-07-16 首次部署验收发现普通 `:path*` 写法没有覆盖带结尾 `/` 的正式路径，因此路由已改用同时覆盖目录首页与深层路径的显式正则。维护者不得把它退回为只匹配无结尾斜杠的规则；每次改动都必须在真实域名上同时验证 `/daily/`、`/daily/en/`、最新页和日期页。
+1. 拉取 main，按 3.8.0 合同生成中英日报、独立审校、构建并通过结构、版式和发布边界检查。
+2. 日常使用 scripts/publish.ps1；维护更改单独提交。Vercel 从 main 自动部署原始日报。
+3. 运行 node scripts/verify-official-deployment.cjs YYYY-MM-DD，验证个人域名六页完整内容及两个旧域名的单次 308。
+4. 内容未更新先核对日报仓库部署与缓存；502 检查个人站函数能否读取稳定源站；子页 404 检查含尾斜杠的路径匹配。
+5. 日常不改 DNS，不记录密钥、账号、Cookie 或私密运行记录。原始 content 母稿与翻译哈希不因域名迁移而重写。
 
-## 其他电脑上的日报专用 Agent 应如何工作
-
-1. 拉取正式仓库 `main`，完整阅读 `AGENTS.md`、`AUTOMATION.md`、本文件与 `automation/OPENCLAW_DAILY_TASK.md`。
-2. 如果自动化正文没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.8.0]`，保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得新建重复任务。主日报固定使用 `openai/gpt-5.6-sol`、`thinking=high`、标准速度、无 fallback；验收与恢复按其 command payload 执行。
-3. 生成中文母稿、完成美式英语精译与独立审校、更新翻译清单。
-4. 运行构建、结构验证、响应式渲染、公开边界和发布白名单检查。
-5. 由 `scripts/publish.ps1` 直接提交并推送正式仓库 `main`；Vercel 会自动部署。
-6. 部署后运行 `node scripts/verify-official-deployment.cjs YYYY-MM-DD`。该门禁必须同时通过：
-   - 新主地址中英首页、最新页和日期页为 `200`，且字节哈希与本地 `public/` 一致；
-   - 旧域名对应路径只经过一次 `308`，`Location` 精确指向新主地址；
-   - 旧 `/daily/` 不会叠加成 `/daily/daily/`；
-   - 带查询参数的旧链接仍保留查询参数。
-7. 只有正式部署验证全部通过后，才可以发送纯文字固定链接通知；固定域名承担长期存储和双语阅读，不再发送日报附件。
-
-## 不得做的事
-
-- 不把新日报只发布到旧域名或 Vercel 预览域名。
-- 不把旧域名写进 canonical、hreflang、sitemap、二维码或新公告。
-- 不手工维护两套站点，也不在 `public/daily/` 复制成品。
-- 不为了让验证通过而降低 308、哈希、双语一致性或响应式门槛。
-- 不在 GitHub 中记录域名或部署服务商的登录信息、验证码、令牌、Cookie、私密接收者或本机凭据。
-
-## 故障定位顺序
-
-1. `ai.alux.network` 无法解析：实时查询权威 DNS，并与部署平台当前给出的目标核对；不要依赖旧截图或旧记录值。
-2. `/daily/` 返回 404：检查最新 `main` 是否已部署、`vercel.json` 的 rewrites 是否生效。
-3. 旧域名不跳转或出现两次跳转：检查旧 Host 的特定 `/daily/:path*` 规则是否位于通配 `/:path*` 规则之前。
-4. 页面能打开但内容不是最新一期：重新运行构建，检查翻译清单哈希，再核对 Vercel 正式部署与 Git 提交。
-5. DNS 正常但 HTTPS 未就绪：等待 Vercel 证书签发并检查项目域名绑定；不要用关闭安全校验的方式绕过。
-
-本记录只描述公开域名与稳定路由合同，不保存域名服务商的私密运维数据。后续如修改域名合同，必须在同一次维护提交中更新本文件、自动化合同、验证脚本和 `vercel.json`。
-
-
-## 个人网站产品入口
-
-`https://shixilin.com/ai/agent-daily`（含结尾斜杠）通过个人站的 HTTP 307 自动跳转到 `https://ai.alux.network/daily/`。这是可分享的产品入口，日报继续在原站发布，原首页、中英文日期页与永久兼容域名均保留。该入口不作为第二套内容站，不替换已有 canonical、sitemap 或历史链接。个人站的首页与 AI 产品页统一引用此入口。
-
-日报的中英文汇总首页在顶部导航及页脚提供 `https://shixilin.com/` 链接，移动端导航可换行；期刊正文沿用原有版式。
+汇总首页顶部与页脚提供 https://shixilin.com/ 个人站链接；手机端导航换行。个人站首页及 AI 产品卡指向个人日报主入口。

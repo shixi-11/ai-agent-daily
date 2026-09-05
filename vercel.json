@@ -12,10 +12,76 @@
       "has": [
         {
           "type": "host",
+          "value": "ai.alux.network"
+        }
+      ],
+      "destination": "https://shixilin.com/ai/agent-daily",
+      "permanent": true
+    },
+    {
+      "source": "/daily",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai.alux.network"
+        }
+      ],
+      "destination": "https://shixilin.com/ai/agent-daily",
+      "permanent": true
+    },
+    {
+      "source": "/daily/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai.alux.network"
+        }
+      ],
+      "destination": "https://shixilin.com/ai/agent-daily",
+      "permanent": true
+    },
+    {
+      "source": "/daily/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai.alux.network"
+        }
+      ],
+      "destination": "https://shixilin.com/ai/agent-daily/$1",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
           "value": "ai-agent-daily.alux.network"
         }
       ],
-      "destination": "https://ai.alux.network/daily/",
+      "destination": "https://shixilin.com/ai/agent-daily",
+      "permanent": true
+    },
+    {
+      "source": "/daily",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-agent-daily.alux.network"
+        }
+      ],
+      "destination": "https://shixilin.com/ai/agent-daily",
+      "permanent": true
+    },
+    {
+      "source": "/daily/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-agent-daily.alux.network"
+        }
+      ],
+      "destination": "https://shixilin.com/ai/agent-daily",
       "permanent": true
     },
     {
@@ -26,7 +92,7 @@
           "value": "ai-agent-daily.alux.network"
         }
       ],
-      "destination": "https://ai.alux.network/daily/$1",
+      "destination": "https://shixilin.com/ai/agent-daily/$1",
       "permanent": true
     },
     {
@@ -37,19 +103,8 @@
           "value": "ai-agent-daily.alux.network"
         }
       ],
-      "destination": "https://ai.alux.network/daily/$1",
+      "destination": "https://shixilin.com/ai/agent-daily/$1",
       "permanent": true
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "ai.alux.network"
-        }
-      ],
-      "destination": "https://ai.alux.network/daily/",
-      "permanent": false
     }
   ],
   "rewrites": [

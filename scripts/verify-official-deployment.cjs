@@ -1,13 +1,14 @@
+const { rewriteDailyText } = require('./daily-public-presentation.cjs');
 const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
 const siteRoot = path.resolve(__dirname, '..');
 const publicRoot = path.join(siteRoot, 'public');
-const configuredOfficialSite = new URL(process.env.ALUX_OFFICIAL_SITE || 'https://ai.alux.network/daily/');
+const configuredOfficialSite = new URL(process.env.ALUX_OFFICIAL_SITE || 'https://shixilin.com/ai/agent-daily');
 const officialOrigin = (process.env.ALUX_OFFICIAL_ORIGIN || configuredOfficialSite.origin).replace(/\/+$/, '');
 const publicationPath = (`/${(process.env.ALUX_PUBLICATION_PATH || configuredOfficialSite.pathname).replace(/^\/+|\/+$/g, '')}`).replace(/^\/$/, '');
-const officialSite = `${officialOrigin}${publicationPath}/`;
+const officialSite = `${officialOrigin}${publicationPath}`;
 const legacyOrigin = (process.env.ALUX_LEGACY_ORIGIN || 'https://ai-agent-daily.alux.network').replace(/\/+$/, '');
 const date = process.argv[2];
 const timeoutMs = Number.parseInt(process.env.ALUX_DEPLOY_TIMEOUT_MS || '600000', 10);
@@ -20,7 +21,7 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(date || '')) {
 
 const [year, month, day] = date.split('-');
 const datedPath = `/${year}/${month}/${day}/`;
-const publishPath = (suffix = '/') => `${publicationPath}${suffix.startsWith('/') ? suffix : `/${suffix}`}`;
+const publishPath = (suffix = '/') => suffix === '/' ? publicationPath : `${publicationPath}${suffix.startsWith('/') ? suffix : `/${suffix}`}`;
 const routes = [
   { urlPath: publishPath('/'), file: 'index.html' },
   { urlPath: publishPath('/en/'), file: 'en/index.html' },
@@ -80,7 +81,7 @@ async function verifyOfficialContent() {
   for (const route of routes) {
     const localPath = path.join(publicRoot, route.file);
     if (!fs.existsSync(localPath)) throw new Error(`missing local deployment file: ${route.file}`);
-    const localBody = normalizeHtml(fs.readFileSync(localPath));
+    const localBody = normalizeHtml(rewriteDailyText(fs.readFileSync(localPath, 'utf8')));
     const url = `${officialOrigin}${route.urlPath}`;
     const { response, body } = await fetchText(url);
     const contentType = response.headers.get('content-type') || '';
@@ -107,9 +108,9 @@ async function verifyOfficialContent() {
 
 async function verifyLegacyRedirects() {
   const checks = [];
-  for (const route of legacyRoutes) {
+  for (const route of [...legacyRoutes.map(r => ({...r, origin: legacyOrigin})), ...legacyRoutes.filter(r => r.legacyPath !== '/daily/').map(r => ({...r, origin: 'https://ai.alux.network', legacyPath: '/daily' + r.legacyPath}))]) {
     const query = route.query || '';
-    const sourceUrl = `${legacyOrigin}${route.legacyPath}${query}`;
+    const sourceUrl = `${route.origin}${route.legacyPath}${query}`;
     const expectedLocation = `${officialOrigin}${route.destinationPath}${query}`;
     const response = await fetchResponse(sourceUrl, 'manual');
     const rawLocation = response.headers.get('location');
@@ -129,7 +130,7 @@ async function verifyLegacyRedirects() {
       throw new Error(`${sourceUrl} is not a single-hop redirect; destination returned HTTP ${destinationResponse.status}`);
     }
     checks.push({
-      source: `${route.legacyPath}${query}`,
+      source: sourceUrl,
       status: response.status,
       location: actualLocation,
       destinationStatus: destinationResponse.status,
@@ -139,11 +140,12 @@ async function verifyLegacyRedirects() {
 }
 
 async function verifyOfficialRootConvenienceRedirect() {
-  const response = await fetchResponse(`${officialOrigin}/`, 'manual');
+  const oldOrigin = 'https://ai.alux.network';
+  const response = await fetchResponse(`${oldOrigin}/`, 'manual');
   const rawLocation = response.headers.get('location');
-  const actualLocation = rawLocation ? new URL(rawLocation, `${officialOrigin}/`).href : '';
-  if (response.status !== 307) {
-    throw new Error(`${officialOrigin}/ returned HTTP ${response.status}; expected temporary 307`);
+  const actualLocation = rawLocation ? new URL(rawLocation, `${oldOrigin}/`).href : '';
+  if (response.status !== 308) {
+    throw new Error(`${officialOrigin}/ returned HTTP ${response.status}; expected permanent 308`);
   }
   if (actualLocation !== officialSite) {
     throw new Error(`${officialOrigin}/ redirects to ${actualLocation || '(missing Location)'}; expected ${officialSite}`);

@@ -336,5 +336,16 @@
     "node ./scripts/verify-release-boundary.cjs YYYY-MM-DD",
     "pwsh -NoProfile -File ./scripts/publish.ps1",
     "node ./scripts/verify-official-deployment.cjs YYYY-MM-DD"
-  ]
+  ],
+  "publicPresentation": {
+    "officialSite": "https://shixilin.com/ai/agent-daily",
+    "sourceOrigin": "https://alux-ai-agent-daily.vercel.app",
+    "compatibilitySites": [
+      "https://ai.alux.network/daily/",
+      "https://ai-agent-daily.alux.network/"
+    ],
+    "bookmarkTitle": "Agent Daily · AI 日报",
+    "internalBuildConvention": "Existing officialSite and routeContract fields remain the raw build and delivery compatibility format. Public HTML is transformed on the personal domain. Never redirect the sourceOrigin.",
+    "verification": "Compare full transformed HTML hashes with personal-domain responses and verify both compatibility sites use one permanent redirect."
+  }
 }

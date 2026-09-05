@@ -1,5 +1,14 @@
 # ALUX AI Agent Intelligence Daily · Agent 接班说明
 
+## 2026-09-06 个人域名展示合同（优先于下方历史说明）
+
+对外主入口为 https://shixilin.com/ai/agent-daily ，浏览器必须停留在此域名；英文、日期页和资源使用该路径的对应子路径。两个旧域名保留，以单次 308 跳到个人域名对应页面，查询参数保留。收藏名称与浏览器标题去掉 ALUX，汇总首页为 Agent Daily · AI 日报。
+
+日报仍由本仓库发布，稳定源站为 https://alux-ai-agent-daily.vercel.app 。个人站服务端读取源站，并统一转换站内路径、canonical、hreflang、sitemap 和收藏标题。源站默认域名不得重定向到个人站，以免循环。为保留历史哈希与现有生成合同，本仓库原始构建产物继续使用 /daily 和旧域名；它们属于内部兼容格式，个人域名实际响应使用新地址。部署门禁比较经过 scripts/daily-public-presentation.cjs 确定性转换后的完整正文哈希，不能跳过内容一致性验证。
+
+维护转换规则时同步个人站 lib/agent-daily.js 和本仓库 scripts/daily-public-presentation.cjs。普通每日发布不需要改 DNS，也不需要重新部署个人站；源站内容更新后个人站缓存通常 60 秒刷新。现有任务的兼容链接可继续使用且会自动进入个人域名；历史内容和已发通知不批量重写。
+
+
 本文件是所有继续维护者的第一入口。克隆或同步仓库后，先读本文件，再读 `README.md`、`AUTOMATION.md`、`docs/OPERATIONS.md`、`docs/DOMAIN_ROUTING.md`、`docs/RESPONSIVE_LAYOUT_STANDARD.md`、`docs/PUBLIC_REPOSITORY_BOUNDARY.md` 与 `docs/SHARE_CARD_STANDARD.md`。OpenClaw Agent 还必须读 `automation/OPENCLAW_DAILY_TASK.md`，并用该合同升级现有定时任务的正文。
 
 当前自动化合同版本为 `3.8.0`。OpenClaw 发现现有日报任务没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.8.0]` 时，必须保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得另建一个重复任务。日报主任务使用 `openai/gpt-5.6-sol`、`thinking=high`、标准速度并禁用 fallback；验收与恢复继续按各自无模型 command payload 执行，只有内容级恢复才唤起同一模型。
