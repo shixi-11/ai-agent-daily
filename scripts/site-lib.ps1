@@ -258,7 +258,7 @@ function Add-ReportSiteChrome {
         $previousLabel = '← 上一期'
         $nextLabel = '下一期 →'
         $footerBrand = 'ALUX AI智能体情报日报'
-        $publisherCredit = 'Agent Daily · 由 <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">光之十一</a> 出品'
+        $publisherCredit = 'Agent Daily · 由 <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">光之十一 <span aria-hidden="true">↗</span></a> 出品'
     } else {
         $homePath = $sitePath + '/en/'
         $latestPath = $sitePath + '/en/latest/'
@@ -272,7 +272,7 @@ function Add-ReportSiteChrome {
         $previousLabel = '← Previous Issue'
         $nextLabel = 'Next Issue →'
         $footerBrand = 'ALUX AI Agent Intelligence Daily'
-        $publisherCredit = 'Agent Daily · Published by <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">Shixi Lin</a>'
+        $publisherCredit = 'Agent Daily · Published by <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">Shixi Lin <span aria-hidden="true">↗</span></a>'
     }
 
     $nav = @"

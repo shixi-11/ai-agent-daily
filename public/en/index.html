@@ -63,6 +63,7 @@
     .latest-pill{display:inline-flex;margin-bottom:8px;padding:2px 7px;background:#0b615a;color:#fff;font-size:10px;font-weight:900;letter-spacing:.1em}
     .report-arrow{display:grid;place-items:center;width:32px;height:32px;border:1px solid #aeb9c6;color:var(--teal);font-size:18px;transition:transform .2s ease,background .2s ease}.report-row:hover .report-arrow{transform:translate(2px,-2px);background:#fff}
     footer{display:flex;justify-content:space-between;gap:24px;padding:25px 0 34px;border-top:1px solid rgba(20,33,61,.18);color:var(--muted);font-size:12px}footer a{color:var(--teal);text-underline-offset:3px}
+    .nav-owner,footer a[href="https://shixilin.com/"]{cursor:pointer;white-space:nowrap}.nav-owner:hover,.nav-owner:focus-visible,footer a[href="https://shixilin.com/"]:hover,footer a[href="https://shixilin.com/"]:focus-visible{color:#0b615a;text-decoration:underline;text-underline-offset:3px}
     .no-break{white-space:nowrap;word-break:keep-all}
     @media(min-width:901px) and (max-width:1100px){.hero{grid-template-columns:minmax(0,1.2fr) minmax(360px,.8fr)}}
     @media(max-width:900px){.shell{width:min(100% - 28px,760px)}.hero{grid-template-columns:1fr;padding:42px 0 48px}.latest{min-height:360px}.archive-group{grid-template-columns:1fr}.month-strip{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-right:0;border-bottom:1px solid var(--line)}.month-strip h3{position:static;font-size:20px}.month-strip span{margin:0}.archive-head{grid-template-columns:1fr}.archive-note{justify-self:start}}
@@ -468,7 +469,7 @@
   </main>
 
   <footer class="shell">
-    <span>ALUX AI Agent Intelligence Daily · <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">Shixi Lin · Personal website</a></span>
+    <span>ALUX AI Agent Intelligence Daily · <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">Shixi Lin · Personal website <span aria-hidden="true">↗</span></a></span>
     <span>Last updated (China Standard Time): 2026-09-06 09:01 · <a href="/daily/en/archive.json">Archive Manifest</a></span>
   </footer>
   <script>

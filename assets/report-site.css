@@ -144,6 +144,13 @@
   padding: 12px 0;
   text-decoration: underline;
   text-underline-offset: 3px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.report-sitefooter .report-credit a:hover,
+.report-sitefooter .report-credit a:focus-visible {
+  color: #0f766e;
 }
 
 .issue-nav {
