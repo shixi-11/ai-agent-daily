@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-05T01:11:17.6697430Z",
+  "generatedAt": "2026-09-06T01:01:26.6491220Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-05",
-    "url": "/daily/en/2026/09/05/",
+    "date": "2026-09-06",
+    "url": "/daily/en/2026/09/06/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/05/"
+    "alternateUrl": "/daily/2026/09/06/"
   },
   "reports": [
+    {
+      "date": "2026-09-06",
+      "title": "AI Agent — Enters the Real World",
+      "lead": "Sixteen signals put new models, voice pipelines, interactive worlds, browser compute, and robotics research on the same map.",
+      "url": "/daily/en/2026/09/06/",
+      "alternateUrl": "/daily/2026/09/06/",
+      "publicPath": "en/2026/09/06/index.html",
+      "sourceFile": "20260906.body.html",
+      "sha256": "35e6ed8511b5ba578201ceedaaf45ef775f0c2e27bd79254eadbf8cdb6167d07",
+      "publicSha256": "c307797dd3678f6f6e65617ea205ef02f5dd3be5398f3e8e4f39b19dc275ee47"
+    },
     {
       "date": "2026-09-05",
       "title": "AI Agent — Skills, Sessions, Operations: Boundaries Redrawn",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/05/index.html",
       "sourceFile": "20260905.body.html",
       "sha256": "26bd2151201a977ea43adadc78e3f8427d7001dc062c7135bed7057ce51dc2c7",
-      "publicSha256": "d60c565cb435ad883dec3943e6cf2c68b12503afc6b93bb69b6790c9d31f829b"
+      "publicSha256": "18c45985be6589e03ff668e75bda772597812d90f6db87660d0710713f3ef6a9"
     },
     {
       "date": "2026-09-04",
