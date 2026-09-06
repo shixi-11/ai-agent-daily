@@ -138,8 +138,8 @@ $generatedAtStamp = $generatedAtLocal.ToString('yyyy-MM-dd HH:mm')
 if ($chineseIndex.IndexOf($generatedAtStamp, [System.StringComparison]::Ordinal) -lt 0 -or $englishIndex.IndexOf($generatedAtStamp, [System.StringComparison]::Ordinal) -lt 0) {
     throw '中英首页的最近更新时间没有与翻译审核清单同步。'
 }
-if ($chineseIndex -notmatch '<title>ALUX AI智能体情报日报</title>') { throw '中文首页站名不正确。' }
-if ($englishIndex -notmatch '<title>ALUX AI Agent Intelligence Daily</title>') { throw '英文首页站名不正确。' }
+if ($chineseIndex -notmatch '<title>Agent Daily · AI智能体日报</title>') { throw '中文首页站名不正确。' }
+if ($englishIndex -notmatch '<title>Agent Daily · AI智能体日报</title>') { throw '英文首页站名不正确。' }
 $archiveDates = @(
     $chineseReports |
         ForEach-Object { [datetime]::ParseExact([string]$_.date, 'yyyy-MM-dd', [System.Globalization.CultureInfo]::InvariantCulture) } |

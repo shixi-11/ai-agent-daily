@@ -41,7 +41,7 @@ const locales = [
   {
     key: 'zh',
     home: `${publicationPath}/`,
-    title: 'ALUX AI智能体情报日报',
+    title: 'Agent Daily · AI智能体日报',
     latestHref: archiveZh.latest.url,
     currentLang: 'zh-CN',
     archive: archiveZh,
@@ -49,7 +49,7 @@ const locales = [
   {
     key: 'en',
     home: `${publicationPath}/en/`,
-    title: 'ALUX AI Agent Intelligence Daily',
+    title: 'Agent Daily · AI智能体日报',
     latestHref: archiveEn.latest.url,
     currentLang: 'en',
     archive: archiveEn,
