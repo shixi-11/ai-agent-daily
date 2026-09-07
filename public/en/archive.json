@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-06T01:01:26.6491220Z",
+  "generatedAt": "2026-09-07T00:51:22.9438130Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-06",
-    "url": "/daily/en/2026/09/06/",
+    "date": "2026-09-07",
+    "url": "/daily/en/2026/09/07/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/06/"
+    "alternateUrl": "/daily/2026/09/07/"
   },
   "reports": [
+    {
+      "date": "2026-09-07",
+      "title": "AI Agent — The Agent Body Takes Shape",
+      "lead": "From speaker identification and road planning to 3D topology and new chips, the perception and execution stacks around AI models are becoming more substantial.",
+      "url": "/daily/en/2026/09/07/",
+      "alternateUrl": "/daily/2026/09/07/",
+      "publicPath": "en/2026/09/07/index.html",
+      "sourceFile": "20260907.body.html",
+      "sha256": "6341d0154b7815d002334410ae80678aeff68769c62ddb7a5752c2e70cc83348",
+      "publicSha256": "17476d7ccdc0417e83e530538124b2920ee009c7c6531070257eccbcaeaccaf2"
+    },
     {
       "date": "2026-09-06",
       "title": "AI Agent — Enters the Real World",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/06/index.html",
       "sourceFile": "20260906.body.html",
       "sha256": "35e6ed8511b5ba578201ceedaaf45ef775f0c2e27bd79254eadbf8cdb6167d07",
-      "publicSha256": "a9e84faebfb84e434118183f67a3de88f5d3f119595fa8d8e4098620fe536385"
+      "publicSha256": "a4013082b33115d3fbedfb10933ecb9ffb51db2b85340573dbd322d30710f17e"
     },
     {
       "date": "2026-09-05",

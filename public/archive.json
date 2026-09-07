@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-06T01:01:26.6491220Z",
+  "generatedAt": "2026-09-07T00:51:22.9438130Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-06",
-    "url": "/daily/2026/09/06/",
+    "date": "2026-09-07",
+    "url": "/daily/2026/09/07/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/06/"
+    "alternateUrl": "/daily/en/2026/09/07/"
   },
   "reports": [
+    {
+      "date": "2026-09-07",
+      "title": "AI Agent智能体开始长出身体",
+      "lead": "从说话人识别、道路规划到三维拓扑与新型芯片，模型周边的感知和执行系统正在变厚。",
+      "url": "/daily/2026/09/07/",
+      "alternateUrl": "/daily/en/2026/09/07/",
+      "publicPath": "2026/09/07/index.html",
+      "sourceFile": "20260907_ALUX_AI智能体情报日报.html",
+      "sha256": "32b25936cbcffb4f49b103d8c0a67630a3d4abc47a513ca8090f17e7258b7923",
+      "publicSha256": "caaa36781fbcb4963dba3390b9e7c7a3927aa091c1f2a780726630adcdc2ae24"
+    },
     {
       "date": "2026-09-06",
       "title": "AI Agent模型走进真实世界",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/06/index.html",
       "sourceFile": "20260906_ALUX_AI智能体情报日报.html",
       "sha256": "09e301aa7f12d6632739e5ed6c89f4fffb635cafd6941e8522f1e3c60b22d493",
-      "publicSha256": "db19220190f8fd89c23f2d9e8e2ba6919370da9f8f86c04040dd3ce2c282c438"
+      "publicSha256": "061ae4d9ae5ae0866ba394c3be00700d06f1b06e4dc13c3630798686ab9b0dd2"
     },
     {
       "date": "2026-09-05",
