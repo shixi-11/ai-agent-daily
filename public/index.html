@@ -35,7 +35,8 @@
     .hero-copy{display:flex;flex-direction:column;justify-content:center;min-width:0}
     h1{margin:0 0 20px;font-family:"Songti SC","Noto Serif CJK SC",SimSun,Georgia,serif;font-size:clamp(42px,6.2vw,76px);line-height:1.03;letter-spacing:-.025em;color:#101827}
     h1 span{display:block;margin-top:12px;color:var(--indigo);font-family:Georgia,"Times New Roman",serif;font-size:.55em;letter-spacing:-.01em}
-    .intro{max-width:700px;margin:0;color:#3d4857;font-size:clamp(17px,1.7vw,20px);line-height:1.65;text-wrap:pretty;word-break:auto-phrase}
+    .intro{max-width:700px;margin:0;color:#3d4857;font-size:clamp(17px,1.7vw,20px);line-height:1.65;text-wrap:wrap;word-break:normal;line-break:strict}
+    .intro + .intro{margin-top:.65em}
     .facts{display:grid;grid-template-columns:minmax(82px,.72fr) minmax(82px,.72fr) minmax(250px,1.56fr);gap:10px;margin-top:30px}
     .fact{display:flex;min-width:0;min-height:86px;flex-direction:column;justify-content:center;padding:14px 15px;border-top:2px solid var(--navy);background:rgba(255,255,255,.58)}
     .fact b{display:block;color:var(--navy);font-size:clamp(18px,1.4vw,22px);font-variant-numeric:tabular-nums;white-space:nowrap;word-break:keep-all}.fact:last-child b{font-size:clamp(15px,1.15vw,18px);line-height:1.25;letter-spacing:0;white-space:normal;word-break:normal;overflow-wrap:anywhere}.fact span{display:block;margin-top:4px;color:var(--muted);font-size:12px}
@@ -86,7 +87,8 @@
     <section class="hero" aria-labelledby="page-title">
       <div class="hero-copy">
         <h1 id="page-title">AI智能体<br>情报日报<span>全球AI、智能体与开源</span></h1>
-        <p class="intro">追踪全球 AI 新功能、AI Agent、GitHub 开源、Skills、软硬件、系统架构与市场变化，挑出好玩、有用、值得关注的信号。</p>
+        <p class="intro">追踪全球 <span class="no-break">AI 新功能</span>、<span class="no-break">AI Agent</span>、<span class="no-break">GitHub 开源</span>、Skills、<span class="no-break">软硬件</span>、<span class="no-break">系统架构</span>与<span class="no-break">市场变化</span>。</p>
+        <p class="intro">挑出好玩、有用、值得关注的信号。</p>
         <div class="facts" aria-label="归档统计">
           <div class="fact"><b>65</b><span>已归档日报</span></div>
           <div class="fact"><b>4</b><span>覆盖月份</span></div>
