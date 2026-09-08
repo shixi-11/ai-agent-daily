@@ -258,6 +258,8 @@ function Add-ReportSiteChrome {
         $previousLabel = '← 上一期'
         $nextLabel = '下一期 →'
         $footerBrand = 'ALUX AI智能体情报日报'
+        $supportLabel = '支持这份日报'
+        $supportUrl = 'https://shixilin.com/support?lang=zh'
         $publisherCredit = 'Agent Daily · 由 <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">光之十一 <span aria-hidden="true">↗</span></a> 出品'
     } else {
         $homePath = $sitePath + '/en/'
@@ -272,6 +274,8 @@ function Add-ReportSiteChrome {
         $previousLabel = '← Previous Issue'
         $nextLabel = 'Next Issue →'
         $footerBrand = 'ALUX AI Agent Intelligence Daily'
+        $supportLabel = 'Support this project'
+        $supportUrl = 'https://shixilin.com/support?lang=en'
         $publisherCredit = 'Agent Daily · Published by <a href="https://shixilin.com/" target="_blank" rel="noopener noreferrer">Shixi Lin <span aria-hidden="true">↗</span></a>'
     }
 
@@ -313,6 +317,7 @@ function Add-ReportSiteChrome {
     $footer = @"
 <!-- site:issue-footer:start -->
 <footer class="report-sitefooter">
+  <div class="report-support"><a href="$supportUrl">$(Encode-Html $supportLabel)</a></div>
   <nav class="issue-nav" aria-label="$(Encode-Html $archiveLabel)">$previousMarkup$nextMarkup</nav>
   $footerCreditMarkup
 </footer>
