@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-07T00:51:22.9438130Z",
+  "generatedAt": "2026-09-08T04:17:07.6988220Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-07",
-    "url": "/daily/2026/09/07/",
+    "date": "2026-09-08",
+    "url": "/daily/2026/09/08/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/07/"
+    "alternateUrl": "/daily/en/2026/09/08/"
   },
   "reports": [
+    {
+      "date": "2026-09-08",
+      "title": "AI Agent智能体交付可验证结果",
+      "lead": "从机器证明、持久任务板到本地文档与凭据注入，智能体正在把答案变成可复查、可恢复、可治理的工作。",
+      "url": "/daily/2026/09/08/",
+      "alternateUrl": "/daily/en/2026/09/08/",
+      "publicPath": "2026/09/08/index.html",
+      "sourceFile": "20260908_ALUX_AI智能体情报日报.html",
+      "sha256": "574ac58b7a1e4674ce2706eadf17d57020cba3468ed597f029503d7ccaf31cb1",
+      "publicSha256": "b11361177d8203d941d475b713d589648670400eec11f547a593bc3bbcb9a9a2"
+    },
     {
       "date": "2026-09-07",
       "title": "AI Agent智能体开始长出身体",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/07/index.html",
       "sourceFile": "20260907_ALUX_AI智能体情报日报.html",
       "sha256": "32b25936cbcffb4f49b103d8c0a67630a3d4abc47a513ca8090f17e7258b7923",
-      "publicSha256": "caaa36781fbcb4963dba3390b9e7c7a3927aa091c1f2a780726630adcdc2ae24"
+      "publicSha256": "328bb9aaa53fe5271bf565a1320acdbcb51f6f2c4c2722690a415e936c3e7efb"
     },
     {
       "date": "2026-09-06",

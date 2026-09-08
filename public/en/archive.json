@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-07T00:51:22.9438130Z",
+  "generatedAt": "2026-09-08T04:17:07.6988220Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-07",
-    "url": "/daily/en/2026/09/07/",
+    "date": "2026-09-08",
+    "url": "/daily/en/2026/09/08/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/07/"
+    "alternateUrl": "/daily/2026/09/08/"
   },
   "reports": [
+    {
+      "date": "2026-09-08",
+      "title": "AI Agent — Agents Deliver Verifiable Work",
+      "lead": "From machine-checked proofs and durable task boards to local documents and secret injection, agents are turning answers into work that can be inspected, resumed, and governed.",
+      "url": "/daily/en/2026/09/08/",
+      "alternateUrl": "/daily/2026/09/08/",
+      "publicPath": "en/2026/09/08/index.html",
+      "sourceFile": "20260908.body.html",
+      "sha256": "90220c8fdec3ba73c5ffa989d8025f6060049323fb73ee1b1fd8dc2ffebd46bd",
+      "publicSha256": "e50af573ca0efcc6a932cc671d2bc4e9808ccc0dcf34c0eefead6589ac1ebf41"
+    },
     {
       "date": "2026-09-07",
       "title": "AI Agent — The Agent Body Takes Shape",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/07/index.html",
       "sourceFile": "20260907.body.html",
       "sha256": "44a51e2fff9e90e978e76cb55fde45bcaf169b43597fea7f616a9bb62f265ca7",
-      "publicSha256": "5adfbe76fb490e036ea6eabb86e92b61690560ebeb25a85e0e5d39a842828bd3"
+      "publicSha256": "f8b2a44c9b8f2f1b65cf558d36a646bf5dde2e78998e9338a6d49b37cd0883c3"
     },
     {
       "date": "2026-09-06",
