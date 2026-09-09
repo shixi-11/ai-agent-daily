@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-08T04:17:07.6988220Z",
+  "generatedAt": "2026-09-09T04:33:18.0000000Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-08",
-    "url": "/daily/en/2026/09/08/",
+    "date": "2026-09-09",
+    "url": "/daily/en/2026/09/09/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/08/"
+    "alternateUrl": "/daily/2026/09/09/"
   },
   "reports": [
+    {
+      "date": "2026-09-09",
+      "title": "AI Agent — Agents Enter Verification Loops",
+      "lead": "From visual intent and formal proofs to experimental feedback and tool guardrails, agent capabilities are entering workflows that can be inspected, resumed, and governed.",
+      "url": "/daily/en/2026/09/09/",
+      "alternateUrl": "/daily/2026/09/09/",
+      "publicPath": "en/2026/09/09/index.html",
+      "sourceFile": "20260909.body.html",
+      "sha256": "e22a2cff66915f572543135b643a74f5631d04bc9df88d1cec43cbece0bcce74",
+      "publicSha256": "3e21ce4cec156282e1e49c736e3518ba7ff12186d81952d0b823bf3caa1a11b1"
+    },
     {
       "date": "2026-09-08",
       "title": "AI Agent — Agents Deliver Verifiable Work",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/08/index.html",
       "sourceFile": "20260908.body.html",
       "sha256": "90220c8fdec3ba73c5ffa989d8025f6060049323fb73ee1b1fd8dc2ffebd46bd",
-      "publicSha256": "a0108e4cae76f0d45146b2f5a6393e1eb9d8a600950a4a17572b77f57bd7d657"
+      "publicSha256": "7e20e0265cadfebfeae0c17f8770300f655d0447bde2488f532099597afde33f"
     },
     {
       "date": "2026-09-07",

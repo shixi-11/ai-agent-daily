@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-08T04:17:07.6988220Z",
+  "generatedAt": "2026-09-09T04:33:18.0000000Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-08",
-    "url": "/daily/2026/09/08/",
+    "date": "2026-09-09",
+    "url": "/daily/2026/09/09/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/08/"
+    "alternateUrl": "/daily/en/2026/09/09/"
   },
   "reports": [
+    {
+      "date": "2026-09-09",
+      "title": "AI Agent智能体进入验证闭环",
+      "lead": "从图像意图、形式化证明到实验反馈与工具护栏，智能体正在把生成能力接进可检查、可恢复的工作链。",
+      "url": "/daily/2026/09/09/",
+      "alternateUrl": "/daily/en/2026/09/09/",
+      "publicPath": "2026/09/09/index.html",
+      "sourceFile": "20260909_ALUX_AI智能体情报日报.html",
+      "sha256": "67b53d66da839490f8860fe5c53815c14f2a151ab838a6e6e926e99ef30b17ca",
+      "publicSha256": "548f6ef33354b2f2690d836c6c59f5ed8c373bb93ea9358f958ebced13e1e296"
+    },
     {
       "date": "2026-09-08",
       "title": "AI Agent智能体交付可验证结果",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/08/index.html",
       "sourceFile": "20260908_ALUX_AI智能体情报日报.html",
       "sha256": "574ac58b7a1e4674ce2706eadf17d57020cba3468ed597f029503d7ccaf31cb1",
-      "publicSha256": "971b65b9a58bc02230f439524f82ca616d6132b0b068b3c120c4a9bdf1c75772"
+      "publicSha256": "ca43c8a79aa398fbbb7840ce2036b47beba59a5869448a0f2c7677d2f429c239"
     },
     {
       "date": "2026-09-07",
