@@ -209,6 +209,22 @@ function Assert-EnglishBodyFragment {
     }
 }
 
+function Get-SocialPreviewHead {
+    param([Parameter(Mandatory)] [string]$BaseUrl, [Parameter(Mandatory)] [string]$BasePath)
+    $imageUrl = $BaseUrl.TrimEnd('/') + '/' + $BasePath.Trim('/') + '/assets/agent-daily-social-v1.png'
+    return @"
+<meta property="og:site_name" content="Agent Daily">
+<meta property="og:image" content="$(Encode-Html $imageUrl)">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1734">
+<meta property="og:image:height" content="907">
+<meta property="og:image:alt" content="Agent Daily — AI news by Shixi Lin, with an orbital glass sphere">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="$(Encode-Html $imageUrl)">
+<meta name="twitter:image:alt" content="Agent Daily — AI news by Shixi Lin, with an orbital glass sphere">
+"@
+}
+
 function Add-ReportSiteChrome {
     param(
         [Parameter(Mandatory)] [string]$Html,
@@ -227,8 +243,16 @@ function Add-ReportSiteChrome {
     $sitePath = '/' + $BasePath.Trim('/')
     $canonicalPath = if ($Language -eq 'zh-CN') { $ChinesePath } else { $EnglishPath }
     $canonicalUrl = $base + $canonicalPath
+    $socialHead = Get-SocialPreviewHead -BaseUrl $BaseUrl -BasePath $BasePath
+    $socialTitle = if ($Language -eq 'zh-CN') { "Agent Daily · AI智能体日报 | $DateIso" } else { "Agent Daily | $DateIso" }
+    $socialDescription = if ($Language -eq 'zh-CN') { '新模型、新产品与有趣发现。由光之十一出品。' } else { 'New AI models, products and interesting discoveries. Published by Shixi Lin.' }
+    $Html = [regex]::Replace($Html, '(?is)<meta\b[^>]*(?:property|name)=["''](?:og:(?:title|type|description|site_name|image(?::[^"'']+)?)|twitter:[^"'']+)["''][^>]*>\s*', '')
     $head = @"
 <!-- site:i18n-head:start -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="$(Encode-Html $socialTitle)">
+<meta property="og:description" content="$(Encode-Html $socialDescription)">
+$socialHead
 <link rel="canonical" href="$(Encode-Html $canonicalUrl)">
 <link rel="alternate" hreflang="zh-CN" href="$(Encode-Html ($base + $ChinesePath))">
 <link rel="alternate" hreflang="en" href="$(Encode-Html ($base + $EnglishPath))">

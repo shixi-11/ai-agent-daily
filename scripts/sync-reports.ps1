@@ -251,6 +251,7 @@ $publicAssetRoot = Join-Path $PublicRoot 'assets'
 if (-not (Test-Path -LiteralPath $publicAssetRoot -PathType Container)) {
     New-Item -ItemType Directory -Path $publicAssetRoot -Force | Out-Null
 }
+Copy-Item -LiteralPath (Join-Path $AssetRoot 'agent-daily-social-v1.png') -Destination (Join-Path $publicAssetRoot 'agent-daily-social-v1.png') -Force
 Copy-Item -LiteralPath (Join-Path $AssetRoot 'report-site.css') -Destination (Join-Path $PublicRoot 'assets\report-site.css') -Force
 Copy-Item -LiteralPath (Join-Path $AssetRoot 'alux-mark.png') -Destination (Join-Path $PublicRoot 'assets\alux-mark.png') -Force
 Copy-Item -LiteralPath (Join-Path $AssetRoot 'alux-favicon.png') -Destination (Join-Path $PublicRoot 'assets\alux-favicon.png') -Force
@@ -301,6 +302,7 @@ $englishDateRange = Format-ArchiveDateRange -StartDate $earliest.date -EndDate $
 
 $chineseIndex = Get-Content -LiteralPath (Join-Path $TemplateRoot 'index.template.html') -Raw -Encoding UTF8
 $chineseReplacementMap = [ordered]@{
+    '{{SOCIAL_PREVIEW_HEAD}}' = Get-SocialPreviewHead -BaseUrl $BaseUrl -BasePath $BasePath
     '{{BASE_URL}}' = $BaseUrl
     '{{BASE_PATH}}' = $BasePath
     '{{LATEST_DATE_ISO}}' = $latest.dateIso
@@ -321,6 +323,7 @@ Write-Utf8NoBom -Path (Join-Path $PublicRoot 'index.html') -Content $chineseInde
 
 $englishIndex = Get-Content -LiteralPath (Join-Path $TemplateRoot 'index.en.template.html') -Raw -Encoding UTF8
 $englishReplacementMap = [ordered]@{
+    '{{SOCIAL_PREVIEW_HEAD}}' = Get-SocialPreviewHead -BaseUrl $BaseUrl -BasePath $BasePath
     '{{BASE_URL}}' = $BaseUrl
     '{{BASE_PATH}}' = $BasePath
     '{{LATEST_DATE_ISO}}' = $latest.dateIso

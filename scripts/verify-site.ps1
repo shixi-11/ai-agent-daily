@@ -23,6 +23,8 @@ $nodeCommand = Get-Command node -ErrorAction SilentlyContinue
 if (-not $nodeCommand) {
     throw '没有找到 Node.js，无法验证固定日报母版。'
 }
+& $nodeCommand.Source (Join-Path $PSScriptRoot 'verify-social-preview.cjs')
+if ($LASTEXITCODE -ne 0) { throw '分享预览验收失败。' }
 & $nodeCommand.Source (Join-Path $PSScriptRoot 'verify-report-master.cjs')
 if ($LASTEXITCODE -ne 0) {
     throw '日报母版或当期版式与 2026-08-26-editorial-v3.1 不一致，已停止验收。'

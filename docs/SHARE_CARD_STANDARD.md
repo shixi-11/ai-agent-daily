@@ -58,3 +58,9 @@ python .\tools\share-card\finalize_share_card.py
 - 不得依赖图片查看器裁图、浏览器整页截图或后期拉伸取得 3:4。
 - 不得保留最终 PNG 成品或把临时 PNG 提交到 GitHub。
 - 不得只修改导出图片而不更新模板、生成脚本和本标准。
+
+## Telegram 链接预览
+
+链接自动展开的横版预览独立于上述微信二维码扫码卡。使用 `assets/agent-daily-social-v1.png`（1734×907 PNG），展示 Agent Daily、AI智能体日报与光之十一署名，不含日期。
+
+共享构建函数将 Open Graph 图片、尺寸、类型与替代文字，以及 Twitter 大图信息注入中英首页、最新页和日期页；同期日期保留在分享标题中。个人域名代理将图片路径转换为正式域名。构建自动复制图片，`verify-social-preview.cjs` 检查所有页面和实际图片尺寸，后续日报自动继承。替换图片时使用新版本文件名并同步尺寸，避免旧图片缓存。
