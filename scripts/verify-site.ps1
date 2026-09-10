@@ -54,6 +54,8 @@ $chineseArchive = Get-Content -LiteralPath (Join-Path $PublicRoot 'archive.json'
 $englishArchive = Get-Content -LiteralPath (Join-Path $PublicRoot 'en\archive.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $translationManifest = Get-Content -LiteralPath (Join-Path $EnglishRoot 'translation-manifest.json') -Raw -Encoding UTF8 | ConvertFrom-Json
 $latestIssueDate = [string]$chineseArchive.latest.date
+& $nodeCommand.Source (Join-Path $PSScriptRoot 'verify-freshness.cjs') $latestIssueDate
+if ($LASTEXITCODE -ne 0) { throw '近30天存在重复新闻标题或来源，已停止发布。请重新选题；同产品新进展必须使用新的事件来源。' }
 & $nodeCommand.Source (Join-Path $PSScriptRoot 'verify-locale-copy.cjs') $latestIssueDate
 if ($LASTEXITCODE -ne 0) {
     throw "$latestIssueDate 中英文断句、标题长度或语言习惯门禁失败。"

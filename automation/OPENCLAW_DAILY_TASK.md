@@ -54,15 +54,12 @@
 20. 只有所有验收以及 `scripts/verify-release-boundary.cjs YYYY-MM-DD` 通过才能提交。同一次提交必须包含中文母稿、英文母稿、翻译清单和重建后的 public/。日常发布白名单之外的任何文件出现改动都要停止，不得把研究包、manifest、ledger、prompt、日志、截图、工具输出、本地路径、私人身份或凭据带进 GitHub。
 21. 提交信息使用“发布 YYYY-MM-DD 中英双语日报”，由 `scripts/publish.ps1` 直接提交并推送正式仓库 main；不创建 PR、不等待人工合并，也不要求用户手动操作 GitHub。
 22. 等待 Vercel 部署完成，运行 `node scripts/verify-official-deployment.cjs YYYY-MM-DD`，在 https://ai.alux.network/daily/ 验证中英首页、最新入口、当日中英日期页、语言切换和成品哈希；同时验证 https://ai-agent-daily.alux.network/ 及其英文、最新和日期路径均只经过一次永久重定向到新主地址。验证失败时不得发送 Telegram。
-23. 正式域名通过验证后，只向本机私密配置中的 Telegram 接收者发送纯文字链接通知，不发送 HTML、ZIP、图片或其他日报附件；私人 chat ID 不得写入公开仓库。正文必须严格使用以下格式并保留空行：
+23. 正式域名通过验证后，只向本机私密配置中的 Telegram 接收者发送纯文字链接通知，不发送 HTML、ZIP、图片或其他日报附件；私人 chat ID 不得写入公开仓库。正文必须严格使用以下四行格式，不添加空行：
 
-【ALUX AI智能体情报日报】
-
+【AI智能体情报日报】
 固定入口：
 https://ai.alux.network/daily/
-
-YYYY-MM-DD：
-https://ai.alux.network/daily/YYYY/MM/DD/
+YYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/
 
 硬性规则：
 - 中文或英文任何一侧缺失、未 reviewed、哈希过期、验证失败或布局溢出时，整次发布停止。
@@ -100,3 +97,6 @@ https://ai.alux.network/daily/YYYY/MM/DD/
 新模型逐厂商检查官网公告、产品/API 更新，覆盖闭源与开放权重；另行扫描图像视频、音乐声音、互动游戏、生活创作、机器人与独立项目。候选保留来源和取舍理由，重大新模型漏报即阻断。OpenClaw 完整执行细则见本机 `tasks/alux-ai-agent-daily-brief-cron-prompt.md` 与 `tasks/alux-daily-editorial-coverage.json`，发布 pre 门禁会调用专用选题检查器。
 
 详报和短讯都保留原 `.signal`、`.side` DOM、来源与日期，按主题混排于现有栏目；短讯五项文字分别为 35-80、10-40、5-25、10-40、10-40 字。旧单卡长字数指引只适用于详报。条数目标的例外须有完成扫描和候选取舍的内部证据。历史期数按原日期规则验收。
+
+## 2026-09-10 跨日去重
+成稿前对照近30天 ledger 与 content/zh 的实际标题、来源，排除已报道事件。不得沿用昨日候选或雷达正文改日期充当新一期。同产品确有新进展时，必须使用新事件专属公告、发布标签或论文链接并重写标题；观察时间、仓库更新时间和聚合站收录时间不是事件发布日期。发布与发送前必须通过 scripts/verify-freshness.cjs；发现重复须补查替换，不得修改旧期、删除历史记录或豁免去重来放行。

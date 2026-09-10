@@ -1,0 +1,12 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {titleKey,urlKey,extract,compare}=require('./verify-freshness.cjs');
+const previous={date:'2026-09-09',titles:['AI 新模型：v6'],urls:['https://github.com/Org/Repo/releases/tag/v6','https://example.com/article']};
+assert.equal(compare({titles:['AI新模型 v6'],urls:[]},[previous]).length,1);
+assert.equal(compare({titles:['Changed headline'],urls:['http://www.example.com/article/?utm_source=news#top']},[previous]).length,1);
+assert.equal(compare({titles:[],urls:['https://github.com/org/repo/releases/tag/v6/']},[previous]).length,1);
+assert.equal(compare({titles:['v7 adds new voices'],urls:['https://github.com/Org/Repo/releases/tag/v7']},[previous]).length,0);
+assert.notEqual(urlKey('https://example.com/watch?v=one'),urlKey('https://example.com/watch?v=two'));
+const data=extract('<article class="item"><h3>Recurring radar</h3></article><article class="signal"><div><h3>New &amp; useful</h3></div></article><ol class="sources"><li><a href="https://example.com/a">source</a></li></ol><a href="https://shixilin.com">home</a>');
+assert.deepEqual(data,{titles:['New & useful'],urls:['https://example.com/a']});
+console.log('Freshness regressions passed: renamed headlines, tracking URLs, GitHub case, new releases, semantic query and navigation exclusion.');
