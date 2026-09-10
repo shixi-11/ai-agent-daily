@@ -108,12 +108,14 @@
 
 ## OpenClaw Telegram 交付
 
-OpenClaw 只能在正式域名通过部署验证后发送纯文字链接通知，不再发送 HTML、ZIP、图片或其他日报附件。固定域名承担长期存储、双语切换和历史归档。正文固定为以下四行格式，不添加空行：
+OpenClaw 只能在正式域名通过部署验证后发送纯文字链接通知，不再发送 HTML、ZIP、图片或其他日报附件。固定域名承担长期存储、双语切换和历史归档。正文固定为以下格式，标题后和固定入口链接后各保留一个空行：
 
 ```text
 【AI智能体情报日报】
+
 固定入口：
 https://ai.alux.network/daily/
+
 YYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/
 ```
 

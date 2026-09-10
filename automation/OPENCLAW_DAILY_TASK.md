@@ -54,11 +54,13 @@
 20. 只有所有验收以及 `scripts/verify-release-boundary.cjs YYYY-MM-DD` 通过才能提交。同一次提交必须包含中文母稿、英文母稿、翻译清单和重建后的 public/。日常发布白名单之外的任何文件出现改动都要停止，不得把研究包、manifest、ledger、prompt、日志、截图、工具输出、本地路径、私人身份或凭据带进 GitHub。
 21. 提交信息使用“发布 YYYY-MM-DD 中英双语日报”，由 `scripts/publish.ps1` 直接提交并推送正式仓库 main；不创建 PR、不等待人工合并，也不要求用户手动操作 GitHub。
 22. 等待 Vercel 部署完成，运行 `node scripts/verify-official-deployment.cjs YYYY-MM-DD`，在 https://ai.alux.network/daily/ 验证中英首页、最新入口、当日中英日期页、语言切换和成品哈希；同时验证 https://ai-agent-daily.alux.network/ 及其英文、最新和日期路径均只经过一次永久重定向到新主地址。验证失败时不得发送 Telegram。
-23. 正式域名通过验证后，只向本机私密配置中的 Telegram 接收者发送纯文字链接通知，不发送 HTML、ZIP、图片或其他日报附件；私人 chat ID 不得写入公开仓库。正文必须严格使用以下四行格式，不添加空行：
+23. 正式域名通过验证后，只向本机私密配置中的 Telegram 接收者发送纯文字链接通知，不发送 HTML、ZIP、图片或其他日报附件；私人 chat ID 不得写入公开仓库。正文必须严格使用以下格式，标题后和固定入口链接后各保留一个空行：
 
 【AI智能体情报日报】
+
 固定入口：
 https://ai.alux.network/daily/
+
 YYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/
 
 硬性规则：

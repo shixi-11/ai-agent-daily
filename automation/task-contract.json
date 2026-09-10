@@ -275,8 +275,8 @@
     "mode": "text-only official-site notification",
     "attachmentsAllowed": false,
     "sendAfter": "official deployment verification passes",
-    "preserveBlankLines": false,
-    "messageTemplate": "【AI智能体情报日报】\n固定入口：\nhttps://ai.alux.network/daily/\nYYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/"
+    "preserveBlankLines": true,
+    "messageTemplate": "【AI智能体情报日报】\n\n固定入口：\nhttps://ai.alux.network/daily/\n\nYYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/"
   },
   "atomicReleaseFields": [
     "homepage latest date",
