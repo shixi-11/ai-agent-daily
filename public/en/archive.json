@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-09T04:33:18.0000000Z",
+  "generatedAt": "2026-09-10T07:57:04.5033230Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-09",
-    "url": "/daily/en/2026/09/09/",
+    "date": "2026-09-10",
+    "url": "/daily/en/2026/09/10/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/09/"
+    "alternateUrl": "/daily/2026/09/10/"
   },
   "reports": [
+    {
+      "date": "2026-09-10",
+      "title": "AI Agents — Enter Review Loops",
+      "lead": "From visual intent and formal proofs to experimental feedback and tool guardrails, agent capabilities are entering workflows that can be inspected, resumed, and governed.",
+      "url": "/daily/en/2026/09/10/",
+      "alternateUrl": "/daily/2026/09/10/",
+      "publicPath": "en/2026/09/10/index.html",
+      "sourceFile": "20260910.body.html",
+      "sha256": "7ff393751ae50afcffa54c2340077e0b07b327994dae84684ac60e787dd11ba3",
+      "publicSha256": "ad9fccdbd16a8159060e27cbe46ce85f5441255fefa3f68aa953923ddd9e35e5"
+    },
     {
       "date": "2026-09-09",
       "title": "AI Agent — Agents Enter Verification Loops",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/09/index.html",
       "sourceFile": "20260909.body.html",
       "sha256": "e22a2cff66915f572543135b643a74f5631d04bc9df88d1cec43cbece0bcce74",
-      "publicSha256": "3e21ce4cec156282e1e49c736e3518ba7ff12186d81952d0b823bf3caa1a11b1"
+      "publicSha256": "68bc1310e979fe2addd1f9db9d768b28065821be27995b0bead6bfbf8f3b1af0"
     },
     {
       "date": "2026-09-08",
