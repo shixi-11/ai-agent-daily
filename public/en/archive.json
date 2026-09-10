@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-10T07:57:04.5033230Z",
+  "generatedAt": "2026-09-10T14:31:30.7543110Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
@@ -14,14 +14,14 @@
   "reports": [
     {
       "date": "2026-09-10",
-      "title": "AI Agents — Enter Review Loops",
-      "lead": "From visual intent and formal proofs to experimental feedback and tool guardrails, agent capabilities are entering workflows that can be inspected, resumed, and governed.",
+      "title": "AI Agent — More control for creators",
+      "lead": "Suno v6 introduces targeted song edits, while animation, ad, and video tools add precise controls. Research agents face new tests of sustained performance.",
       "url": "/daily/en/2026/09/10/",
       "alternateUrl": "/daily/2026/09/10/",
       "publicPath": "en/2026/09/10/index.html",
       "sourceFile": "20260910.body.html",
-      "sha256": "7ff393751ae50afcffa54c2340077e0b07b327994dae84684ac60e787dd11ba3",
-      "publicSha256": "ad9fccdbd16a8159060e27cbe46ce85f5441255fefa3f68aa953923ddd9e35e5"
+      "sha256": "08e3f2b8b5e797d382a7a5045020fd0826b648e154f0bfbf01633f251ca12eb1",
+      "publicSha256": "0904294fdc5dbd9bfa648f89b94b560754601b2c27a3c09181612a7b273d7435"
     },
     {
       "date": "2026-09-09",

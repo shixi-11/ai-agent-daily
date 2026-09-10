@@ -1,7 +1,7 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-10T07:57:04.5033230Z",
+  "generatedAt": "2026-09-10T14:31:30.7543110Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
@@ -14,14 +14,14 @@
   "reports": [
     {
       "date": "2026-09-10",
-      "title": "AI Agent智能体进入验证闭环",
-      "lead": "从图像意图、形式化证明到实验反馈与工具护栏，智能体正在把生成能力接进可检查、可恢复的工作链。",
+      "title": "AI Agent创作有了更多控制",
+      "lead": "Suno v6 从局部改曲开始，动画、广告和视频工具提供更细的编辑入口；研究 Agent 则迎来长时间任务的新检验。",
       "url": "/daily/2026/09/10/",
       "alternateUrl": "/daily/en/2026/09/10/",
       "publicPath": "2026/09/10/index.html",
       "sourceFile": "20260910_ALUX_AI智能体情报日报.html",
-      "sha256": "30397c2bb7f812407cc6cb2ee2776565cb9c2b282307e8bfdeedc7a3c8fbe271",
-      "publicSha256": "07882dc53c4f1d446ba10de165aecb2ca3e46d4c22a5680f9d0ff985404798ec"
+      "sha256": "1295724db635e11e627451b67a3f774520858f7fdcae1ab0d20c7926f2cd2021",
+      "publicSha256": "1e4d918d6abb2e4ba64e38a9ac3fd2b797f0dd3048c6ff9f3ec5f8ead0a088fe"
     },
     {
       "date": "2026-09-09",
