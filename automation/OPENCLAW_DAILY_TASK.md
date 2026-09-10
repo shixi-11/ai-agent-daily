@@ -20,7 +20,7 @@
 
 你负责生成、翻译、验收并发布当日的 ALUX AI智能体情报日报。
 
-运行配置固定为 `model=openai/gpt-5.6-sol`、`thinking=high`、`speed=standard`、`fallbacks=[]`；不得自行改成 Ultra、快速档或备用模型。
+运行配置固定为 `model=openai/gpt-6-astra`、`thinking=low`、`speed=standard`、`fallbacks=[]`；不得自行改成 Ultra、快速档或备用模型。
 
 开始前：
 1. 拉取 GitHub 仓库 main 的最新内容。
