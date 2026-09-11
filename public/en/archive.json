@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-10T14:31:30.7543110Z",
+  "generatedAt": "2026-09-11T15:36:55.2966310Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-10",
-    "url": "/daily/en/2026/09/10/",
+    "date": "2026-09-11",
+    "url": "/daily/en/2026/09/11/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/10/"
+    "alternateUrl": "/daily/2026/09/11/"
   },
   "reports": [
+    {
+      "date": "2026-09-11",
+      "title": "AI Agent — New models meet real tasks",
+      "lead": "DeepSeek updates its vision architecture and GPT‑Live‑1 opens API access. Translation, 3D avatars, and lunar science give model capabilities more specific uses.",
+      "url": "/daily/en/2026/09/11/",
+      "alternateUrl": "/daily/2026/09/11/",
+      "publicPath": "en/2026/09/11/index.html",
+      "sourceFile": "20260911.body.html",
+      "sha256": "9dee3ee0dacd33d188b1c4ccf7ce36a2336a1749a21850b085900896aa389a96",
+      "publicSha256": "aee5f4f3d3c34fa22c07ccaccf89a16dee200a2a953c5ec790910adf320d5d0b"
+    },
     {
       "date": "2026-09-10",
       "title": "AI Agent — More control for creators",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/10/index.html",
       "sourceFile": "20260910.body.html",
       "sha256": "08e3f2b8b5e797d382a7a5045020fd0826b648e154f0bfbf01633f251ca12eb1",
-      "publicSha256": "d24319e902dbaaf4d5b373ca624ca5d576e14520d78dac61c267817531a3393d"
+      "publicSha256": "485c0b3f5caa55fc9e1399953da2a23a3f12f751b7c31b09a39450f582e34e73"
     },
     {
       "date": "2026-09-09",

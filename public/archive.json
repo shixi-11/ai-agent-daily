@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-10T14:31:30.7543110Z",
+  "generatedAt": "2026-09-11T15:36:55.2966310Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-10",
-    "url": "/daily/2026/09/10/",
+    "date": "2026-09-11",
+    "url": "/daily/2026/09/11/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/10/"
+    "alternateUrl": "/daily/en/2026/09/11/"
   },
   "reports": [
+    {
+      "date": "2026-09-11",
+      "title": "AI Agent新模型走进真实场景",
+      "lead": "DeepSeek 更新视觉架构，GPT‑Live‑1 开放语音 API；翻译、三维头像与月球探索，让模型能力有了更具体的去处。",
+      "url": "/daily/2026/09/11/",
+      "alternateUrl": "/daily/en/2026/09/11/",
+      "publicPath": "2026/09/11/index.html",
+      "sourceFile": "20260911_ALUX_AI智能体情报日报.html",
+      "sha256": "8c8e624fade2d732d626f21d65c12d69cdf14c33a5b88d35addb99ce08edb704",
+      "publicSha256": "bd8abc7339ce7b6d18a384a5e49266a310ba2c3c9b99cc4d1621a5e90e784967"
+    },
     {
       "date": "2026-09-10",
       "title": "AI Agent创作有了更多控制",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/10/index.html",
       "sourceFile": "20260910_ALUX_AI智能体情报日报.html",
       "sha256": "1295724db635e11e627451b67a3f774520858f7fdcae1ab0d20c7926f2cd2021",
-      "publicSha256": "c4027a4756334d5188bbb58dc4f1527a676afff7774f438bda6560b2ac96b056"
+      "publicSha256": "0a783536953f7dc53e0fd1c5bd7bb09441ebc86389b0faacaba13072e8d3e3c5"
     },
     {
       "date": "2026-09-09",
