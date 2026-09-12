@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-11T15:36:55.2966310Z",
+  "generatedAt": "2026-09-12T08:06:10.0372320Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-11",
-    "url": "/daily/en/2026/09/11/",
+    "date": "2026-09-12",
+    "url": "/daily/en/2026/09/12/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/11/"
+    "alternateUrl": "/daily/2026/09/12/"
   },
   "reports": [
+    {
+      "date": "2026-09-12",
+      "title": "AI Agent — Keep Working After Generation",
+      "lead": "Rooms can be measured, image workflows rewired, and scientific predictions searched. Today's focus is not just what AI generates, but how its outputs can be checked, changed, and put to use.",
+      "url": "/daily/en/2026/09/12/",
+      "alternateUrl": "/daily/2026/09/12/",
+      "publicPath": "en/2026/09/12/index.html",
+      "sourceFile": "20260912.body.html",
+      "sha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
+      "publicSha256": "cb0d4e2a59d03e0f958835c07fa34f3359553dc392f6d9bd1603e5cb1d7f0a5b"
+    },
     {
       "date": "2026-09-11",
       "title": "AI Agent — New models meet real tasks",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/11/index.html",
       "sourceFile": "20260911.body.html",
       "sha256": "9dee3ee0dacd33d188b1c4ccf7ce36a2336a1749a21850b085900896aa389a96",
-      "publicSha256": "aee5f4f3d3c34fa22c07ccaccf89a16dee200a2a953c5ec790910adf320d5d0b"
+      "publicSha256": "2a7ff0fc6eda7863a09e205a17bc645405ff48cf575402851ff314a9994aa325"
     },
     {
       "date": "2026-09-10",

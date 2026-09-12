@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-11T15:36:55.2966310Z",
+  "generatedAt": "2026-09-12T08:06:10.0372320Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-11",
-    "url": "/daily/2026/09/11/",
+    "date": "2026-09-12",
+    "url": "/daily/2026/09/12/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/11/"
+    "alternateUrl": "/daily/en/2026/09/12/"
   },
   "reports": [
+    {
+      "date": "2026-09-12",
+      "title": "AI Agent生成之后还可继续改",
+      "lead": "房间能测量，图像流程能重接，科研预测能查询。今天的重点不只是生成什么，而是结果还能怎样检查、修改与使用。",
+      "url": "/daily/2026/09/12/",
+      "alternateUrl": "/daily/en/2026/09/12/",
+      "publicPath": "2026/09/12/index.html",
+      "sourceFile": "20260912_ALUX_AI智能体情报日报.html",
+      "sha256": "6e8b362b5e2070a82402d8464b33a0d0e604bee18d285a2e3e823caf33549e92",
+      "publicSha256": "8d2065c46a7ccd29579cdb603f5a23cd5d735f766c977223eef3f34e2cd5e004"
+    },
     {
       "date": "2026-09-11",
       "title": "AI Agent新模型走进真实场景",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/11/index.html",
       "sourceFile": "20260911_ALUX_AI智能体情报日报.html",
       "sha256": "8c8e624fade2d732d626f21d65c12d69cdf14c33a5b88d35addb99ce08edb704",
-      "publicSha256": "bd8abc7339ce7b6d18a384a5e49266a310ba2c3c9b99cc4d1621a5e90e784967"
+      "publicSha256": "158195a7cc0c16c7978e483c0c7aad7ac7fe658ac093399badae7e7bcb0961df"
     },
     {
       "date": "2026-09-10",
