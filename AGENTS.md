@@ -136,3 +136,7 @@ YYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/
 
 ## 2026-09-10 跨日去重
 成稿前对照近30天 ledger 与 content/zh 的实际标题、来源，排除已报道事件。不得沿用昨日候选或雷达正文改日期充当新一期。同产品确有新进展时，必须使用新事件专属公告、发布标签或论文链接并重写标题；观察时间、仓库更新时间和聚合站收录时间不是事件发布日期。发布与发送前必须通过 scripts/verify-freshness.cjs；发现重复须补查替换，不得修改旧期、删除历史记录或豁免去重来放行。
+
+## 日报模型与同步校验
+
+日报主任务和内容恢复必须从 `automation/task-contract.json.runtimeProfile` 读取 Astra low 配置，并在调用模型前执行 `scripts/verify-runtime-profile.cjs`，校验宿主允许列表。不得在 shell 中另写模型常量。迁移或同步后必须执行该检查；Telegram 通道可连接不代表日报模型任务可运行。
