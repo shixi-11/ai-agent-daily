@@ -53,6 +53,8 @@
     .latest:before{content:"";position:absolute;z-index:-1;inset:-20%;background:radial-gradient(circle at 80% 18%,rgba(58,184,160,.24),transparent 34%),linear-gradient(135deg,transparent 40%,rgba(255,255,255,.04) 40%,rgba(255,255,255,.04) 41%,transparent 41%);background-size:auto,26px 26px}
     .latest-kicker{display:flex;justify-content:space-between;gap:18px;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase;color:#a8d8ce}
     .latest h2{margin:46px 0 16px;font-family:"Songti SC","Noto Serif CJK SC",SimSun,Georgia,serif;font-size:clamp(29px,3.1vw,40px);line-height:1.18;letter-spacing:-.02em;text-wrap:balance}
+    .latest-title-brand{display:block;margin-bottom:10px;font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.3;letter-spacing:0;color:#a8d8ce}
+    .latest-title-subject{display:block;word-break:normal;overflow-wrap:normal;text-wrap:balance}
     .latest p{margin:0;color:#d8e1eb;font-size:15px;line-height:1.72;text-wrap:pretty;word-break:auto-phrase}
     .latest-actions{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin-top:30px}
     .button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;background:#f4faf8;color:#143b36;text-decoration:none;font-weight:850;font-size:14px}
@@ -109,7 +111,7 @@
       <article class="latest">
         <div>
           <div class="latest-kicker"><span>最新一期</span><time datetime="2026-09-13">2026年9月13日</time></div>
-          <h2>AI Agent模型之外的可见证据</h2>
+          <h2 aria-label="AI Agent · 模型之外的可见证据"><span class="latest-title-brand">AI Agent</span><span class="latest-title-subject">模型之外的可见证据</span></h2>
           <p>一套声音模型能改录音，小型编码器能找文档，录屏助手能看帧。今天也看那些公开方法、限制和失败的小实验。</p>
         </div>
         <div class="latest-actions">

@@ -458,6 +458,41 @@ async function inspectHomepage(browser, locale, viewport) {
     localeKey: locale.key,
     reportPage: false,
   });
+  // Check the Chinese cover at every width, including narrow phones. Whole-word
+  // checks catch breaks such as 模型之 / 外 which orphan-character checks miss.
+  if (locale.key === 'zh') {
+    const titleIssues = await page.locator('.latest h2').evaluate((heading) => {
+      const brand = heading.querySelector('.latest-title-brand');
+      const subject = heading.querySelector('.latest-title-subject');
+      if (!brand || !subject) return ['missing separate brand and subject'];
+      const errors = [];
+      if (brand.getBoundingClientRect().bottom > subject.getBoundingClientRect().top) errors.push('brand and subject overlap');
+      const walker = document.createTreeWalker(subject, NodeFilter.SHOW_TEXT);
+      const segmenter = new Intl.Segmenter('zh-CN', { granularity: 'word' });
+      const lines = new Map();
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        for (let i = 0; i < node.length; i++) {
+          const range = document.createRange();
+          range.setStart(node, i); range.setEnd(node, i + 1);
+          const top = Math.round(range.getBoundingClientRect().top);
+          lines.set(top, (lines.get(top) || '') + node.data[i]);
+        }
+        for (const word of segmenter.segment(node.data)) {
+          if (!word.isWordLike || word.segment.length < 2) continue;
+          const range = document.createRange();
+          range.setStart(node, word.index); range.setEnd(node, word.index + word.segment.length);
+          const rows = new Set([...range.getClientRects()].map(rect => Math.round(rect.top)));
+          if (rows.size > 1) errors.push(`split Chinese word: ${word.segment}`);
+        }
+      }
+      const lineTexts = [...lines.values()].map(text => text.trim()).filter(Boolean);
+      if (lineTexts.some(text => /^[\p{Script=Han}，。！？、；：]$/u.test(text))) errors.push('single-character title line');
+      if (lineTexts.slice(1).some(text => /^[的了着过，。！？、；：]/u.test(text))) errors.push('dangling particle or punctuation');
+      return errors;
+    });
+    if (titleIssues.length) throw new Error(`zh/${viewport.name}: cover title ${JSON.stringify(titleIssues)}`);
+  }
   const result = {
     ...common,
     title: await page.title(),
