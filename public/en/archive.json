@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-12T08:06:10.0372320Z",
+  "generatedAt": "2026-09-13T06:45:46.2965340Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-12",
-    "url": "/daily/en/2026/09/12/",
+    "date": "2026-09-13",
+    "url": "/daily/en/2026/09/13/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/12/"
+    "alternateUrl": "/daily/2026/09/13/"
   },
   "reports": [
+    {
+      "date": "2026-09-13",
+      "title": "AI Agent — Evidence Beyond the Model",
+      "lead": "One model edits speech, compact encoders retrieve pages, and a recording assistant inspects frames. Small experiments also expose their methods, limits, and failures.",
+      "url": "/daily/en/2026/09/13/",
+      "alternateUrl": "/daily/2026/09/13/",
+      "publicPath": "en/2026/09/13/index.html",
+      "sourceFile": "20260913.body.html",
+      "sha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
+      "publicSha256": "bcdfd8f2675abbeaec70ebcae4e73175abc9bef075e6fe72cbc8dfe3b417ca3f"
+    },
     {
       "date": "2026-09-12",
       "title": "AI Agent — Keep Working After Generation",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/12/index.html",
       "sourceFile": "20260912.body.html",
       "sha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
-      "publicSha256": "cb0d4e2a59d03e0f958835c07fa34f3359553dc392f6d9bd1603e5cb1d7f0a5b"
+      "publicSha256": "5c361d1f681af963c27ef597de19c6a47106b8d31a1eaae945db4b6290531d52"
     },
     {
       "date": "2026-09-11",
