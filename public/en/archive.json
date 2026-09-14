@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-13T06:45:46.2965340Z",
+  "generatedAt": "2026-09-14T01:48:50.5530140Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-13",
-    "url": "/daily/en/2026/09/13/",
+    "date": "2026-09-14",
+    "url": "/daily/en/2026/09/14/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/13/"
+    "alternateUrl": "/daily/2026/09/14/"
   },
   "reports": [
+    {
+      "date": "2026-09-14",
+      "title": "AI Agent — Capabilities become verifiable work",
+      "lead": "Official model weights, specialized inference engines, and standalone applications are arriving together. What matters is not just what they can do, but how they run and how their results can be checked.",
+      "url": "/daily/en/2026/09/14/",
+      "alternateUrl": "/daily/2026/09/14/",
+      "publicPath": "en/2026/09/14/index.html",
+      "sourceFile": "20260914.body.html",
+      "sha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
+      "publicSha256": "c6e3605494256aba21eb0a2cea79c7453aa774f69e31a9220f2099a8bc839d18"
+    },
     {
       "date": "2026-09-13",
       "title": "AI Agent — Evidence Beyond the Model",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/13/index.html",
       "sourceFile": "20260913.body.html",
       "sha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
-      "publicSha256": "bcdfd8f2675abbeaec70ebcae4e73175abc9bef075e6fe72cbc8dfe3b417ca3f"
+      "publicSha256": "40978d3c50b19fc74cad194f855de3fecc448c47aff96cf3c4e51a5717333dd6"
     },
     {
       "date": "2026-09-12",

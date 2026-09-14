@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-13T06:45:46.2965340Z",
+  "generatedAt": "2026-09-14T01:48:50.5530140Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-13",
-    "url": "/daily/2026/09/13/",
+    "date": "2026-09-14",
+    "url": "/daily/2026/09/14/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/13/"
+    "alternateUrl": "/daily/en/2026/09/14/"
   },
   "reports": [
+    {
+      "date": "2026-09-14",
+      "title": "AI Agent从能力展示到可核验的工作",
+      "lead": "正式权重、专用推理引擎与独立应用一起出现，值得看的不只是什么能做，还有怎样运行、如何核对。",
+      "url": "/daily/2026/09/14/",
+      "alternateUrl": "/daily/en/2026/09/14/",
+      "publicPath": "2026/09/14/index.html",
+      "sourceFile": "20260914_ALUX_AI智能体情报日报.html",
+      "sha256": "71b1cefeda3ca3f0bf683927bd00a970b335546b5b30fe3308f0e051de697b73",
+      "publicSha256": "e82f8a1f2173cb6bd46be579d037f392a0d6d4cfa6e5240ca802c24a1a634b78"
+    },
     {
       "date": "2026-09-13",
       "title": "AI Agent模型之外的可见证据",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/13/index.html",
       "sourceFile": "20260913_ALUX_AI智能体情报日报.html",
       "sha256": "78cf698ba45d14d33597f7e557495b6a2cded534bd2d7cc9ac98d307e0149499",
-      "publicSha256": "2516196fe4b85b56334bdd4a472abbe0c0e1d3fbe21cb801f724cce5224e9ebb"
+      "publicSha256": "6303bc8e33ab9202e477136e90615261ae0097eaeab168d1b850fbc4ddcd70cc"
     },
     {
       "date": "2026-09-12",
