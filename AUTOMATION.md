@@ -61,12 +61,13 @@
 
 不手工编辑首页，也不手工复制到 `public/latest/`。
 
-`scripts/sync-reports.ps1` 会扫描 `content/zh/` 中日期最新的母稿，找到同日期的已审英文母稿，然后自动更新：
+`scripts/sync-reports.cjs`（Windows 上仍可通过 `scripts/sync-reports.ps1` 调用）会扫描 `content/zh/` 中日期最新的母稿，找到同日期的已审英文母稿，然后自动更新：
 
 - <https://ai.alux.network/daily/> 的最新一期卡片、日期、摘要、数量和历史归档
+- 其余 7 个语种首页（繁中、日、韩、西、法、德、阿）
 - `/daily/latest/` 与 `/daily/en/latest/`
-- 中英日期页和同期语言切换
-- `/daily/archive.json`、`/daily/en/archive.json` 和 `/daily/sitemap.xml`
+- 中英日期页和同期语言切换；可选语种日期页仅在 `content/{locale}` 有已审译文时生成
+- `/daily/archive.json`、各语种 `archive.json`、`feed.xml` 和 `/daily/sitemap.xml`
 
 正式部署后还必须验证 `https://ai-agent-daily.alux.network/` 及其 `/en/`、`/latest/`、日期路径均以单次永久重定向到 `https://ai.alux.network/daily/` 下的对应路径。旧域名只承担兼容，不得继续写入 canonical、hreflang、sitemap 或新生成的对外物料。
 

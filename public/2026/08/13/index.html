@@ -8,7 +8,7 @@
  @media (max-width:520px){.page{padding-left:10px;padding-right:10px}.intel-panel{padding:14px;gap:12px}.panel-head strong{white-space:normal}.heat-list{grid-template-rows:none}.heat-row{grid-template-columns:1fr;gap:6px;align-items:start;padding:13px 0}.heat-row strong{display:inline;margin-right:8px}.heat-row .strength{margin-top:0;vertical-align:middle}.priority-note strong .nowrap,.priority-note .priority-brand,.nowrap{white-space:normal;overflow-wrap:anywhere}.risc-head{flex-direction:column;gap:4px}.stat span{white-space:normal}.sources li{overflow-wrap:anywhere}}
  </style><!-- site:i18n-head:start -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="Agent Daily &#183; AI智能体日报 | 2026-08-13">
+<meta property="og:title" content="Agent Daily · AI智能体日报 | 2026-08-13">
 <meta property="og:description" content="新模型、新产品与有趣发现。由光之十一出品。">
 <meta property="og:site_name" content="Agent Daily">
 <meta property="og:image" content="https://ai.alux.network/daily/assets/agent-daily-social-v1.png">
@@ -29,6 +29,7 @@
 <link rel="apple-touch-icon" href="/daily/assets/alux-favicon.png">
 <link rel="stylesheet" href="/daily/assets/report-site.css">
 <!-- site:i18n-head:end -->
+
 </head><body>
 <!-- site:i18n-nav:start -->
 <header class="report-sitebar">
@@ -40,9 +41,22 @@
       <a href="/daily/2026/08/13/" lang="zh-CN" aria-current="page">中文</a>
       <a href="/daily/en/2026/08/13/" lang="en">EN</a>
     </span>
+    <details class="language-more">
+      <summary aria-label="更多语言"><span aria-hidden="true">···</span></summary>
+      <div class="language-more-menu">
+      <a href="/daily/zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+      <a href="/daily/ja/" lang="ja" hreflang="ja">日本語</a>
+      <a href="/daily/ko/" lang="ko" hreflang="ko">한국어</a>
+      <a href="/daily/es/" lang="es" hreflang="es">Español</a>
+      <a href="/daily/fr/" lang="fr" hreflang="fr">Français</a>
+      <a href="/daily/de/" lang="de" hreflang="de">Deutsch</a>
+      <a href="/daily/ar/" lang="ar" hreflang="ar">العربية</a>
+      </div>
+    </details>
   </nav>
 </header>
-<!-- site:i18n-nav:end --><main class="page">
+<!-- site:i18n-nav:end -->
+<main class="page">
 <section class="hero"><div class="hero-copy"><div class="eyebrow"><span>ALUX AI Agent Daily</span><span>2026-08-13</span><span>Infrastructure Brief</span></div><h1><span class="title-en">AI Agent</span><span class="title-cn">恢复必须带着边界</span></h1><p class="lead">今天的高价值变化不在模型更聪明，而在会话如何活下去：远程恢复、跨会话切换、长任务检查点、工具入口与 Trace 转移，都开始补一条可验证生命线。</p><div class="stats" aria-label="今日情报概览"><div class="stat"><b>8</b><span>重点信号</span></div><div class="stat"><b>96</b><span>候选信号</span></div><div class="stat"><b>8</b><span>官方 / 一手来源</span></div><div class="stat"><b>1</b><span>最高优先级动作</span></div></div><div class="judgment"><strong>今日总判断：</strong>R · 强韧 / 机体与 S · 安全 / 免疫最强。Agent 的准入、存活、恢复、授权和终态必须共享一条状态链，否则“继续运行”只会把旧风险带进新会话。</div></div><aside class="intel-panel"><div class="panel-head"><strong>今日热区矩阵</strong><span>RISC × ALUX 机会</span></div><div class="heat-summary"><b>主轴：会话正在获得一条可验证生命线</b><p>Pydantic AI、Claude Code、Qwen Code、LeapFlow 与 MCP Inspector 的变化共同指向：恢复不仅是找回文本，更要找回边界、能力与未决效果。</p></div><div class="heat-list"><div class="heat-row"><div><strong>R · 机体</strong><span class="strength">极强</span></div><div><p>keepalive、检查点、假进展识别、取消确认和终态证据进入执行链。</p><em>ALUX 动作：统一恢复 epoch 与在途效果。</em></div></div><div class="heat-row"><div><strong>I · 大脑</strong><span class="strength">中</span></div><div><p>模型路由、存储与中断变成可编排阶段，但不是今日主轴。</p><em>ALUX 动作：记录模型选择与阶段边界。</em></div></div><div class="heat-row"><div><strong>S · 免疫</strong><span class="strength">极强</span></div><div><p>网页入口、loopback、审批传播、OAuth 主体与 Trace 所有权收紧。</p><em>ALUX 动作：让每次恢复携带能力快照。</em></div></div><div class="heat-row"><div><strong>C · 社会</strong><span class="strength">强</span></div><div><p>跨会话事务、远程继续、Trace 转移和 MCP 工具恢复形成交接。</p><em>ALUX 动作：定义可恢复会话类型。</em></div></div></div><div class="priority-note"><span>最高优先级动作</span><strong>建议由 <span class="priority-brand">ALUX</span> 形成一份 <span class="nowrap">Agent Run Continuity Receipt v0</span>：把准入来源、会话所有权、能力范围、检查点、存活序列、在途效果与终态裁决绑定到同一条<span class="nowrap">长交易</span>。</strong></div></aside></section>
 <section class="section"><h2>RISC 机器说明</h2><div class="risc-primer"><div class="risc-primer-intro"><div><p class="risc-equation">RISC = 生产级 Agent / 机器人身体的四个系统</p><p>一个真正能上生产的 Agent，不能只有大脑。它还要持续行动、扛住故障、抵御越权，并进入真实组织协作。</p></div><div class="risc-primer-line">行业已经交付了一颗出色的大脑，但生产级 Agent 还需要机体、免疫和社会。<span class="risc-primer-close"><span class="nowrap">ALUX</span> 构建的，就是这台完整机器。</span></div></div><div class="risc-primer-grid"><article class="risc-primer-card"><b>R｜强韧 / 机体</b><span>持久执行、容错、恢复与水平扩展。身体站不住，一次故障就会把工作清空。</span></article><article class="risc-primer-card"><b>I｜智能 / 大脑</b><span>模型循环、记忆、工具与编排。它决定 Agent 如何思考、调用和完成复杂工作。</span></article><article class="risc-primer-card"><b>S｜安全 / 免疫</b><span>能力对象、策略审批、回滚与审计。没有免疫，恢复与连接会扩大失控半径。</span></article><article class="risc-primer-card"><b>C｜连接 / 社会</b><span>跨公司授权、中立基底、会话类型与生态连接。没有社会接口，Agent 只能停在单一产品里。</span></article></div></div></section>
 <section class="section"><h2><span class="nowrap">ALUX</span> 今日雷达</h2><div class="radar"><article class="item"><span class="tag green">机会</span><h3>恢复协议可成为运行时产品入口</h3><p>把准入、存活、检查点、能力快照和终态收进一份收据，能同时讲清 ALUX 的机体与免疫价值。</p></article><article class="item"><span class="tag amber">风险</span><h3>恢复文本不等于恢复执行真相</h3><p>如果 session、工具、授权和在途效果不同步，“继续”会重复动作、继承过期权限或掩盖未决状态。</p></article><article class="item"><span class="tag">可行动资产</span><h3>Agent Run Continuity Receipt v0</h3><p>建议统一 admission_ref、session_owner、capability_snapshot、checkpoint_ref、liveness_seq、pending_effects 与 terminal_verdict。</p></article></div></section>
@@ -55,4 +69,5 @@
   <a href="/daily/">AI智能体情报日报 · 2026-08-13</a>
 </footer>
 <!-- site:issue-footer:end -->
+
 </body></html>

@@ -17,6 +17,17 @@
 
 当前自动化合同版本为 `3.8.0`。OpenClaw 发现现有日报任务没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.8.0]` 时，必须保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得另建一个重复任务。日报主任务使用 `openai/gpt-6-astra`、`thinking=low`、标准速度并禁用 fallback；验收与恢复继续按各自无模型 command payload 执行，只有内容级恢复才唤起同一模型。
 
+Linux / CI 发布链以 Node 为准，不再依赖本机 PowerShell：
+
+```bash
+node scripts/sync-reports.cjs
+node scripts/verify-site.cjs
+node scripts/render-check.cjs
+```
+
+`scripts/*.ps1` 是调用上述 Node 脚本的薄封装。GitHub Actions 的 `collect.yml` 只采集公开信号，不写正文、不提交；`watchdog.yml` 在中国标准时间 22:00 之后检查当天中英母稿是否入库。内容权威源仍是 `content/zh` 与 `content/en`；可选语种正文放在 `content/{locale}/YYYYMMDD.body.html`，并由 `content/i18n-manifest.json` 标记 `reviewed` 后才生成日期页。9 个语种首页始终生成。顶栏 `.language-switch` 只保留 中/EN，其它语种必须放在旁边的 `.language-more`，以免破坏 `render-check.cjs`。
+
+
 负责在其他电脑生成并提交日报的专用 Agent，必须额外阅读 `docs/DOMAIN_ROUTING.md`。DNS 已完成配置，日常发布不得修改 DNS；它只需按合同生成中英内容、重建站点、推送 `main`，再同时验证新主地址与旧域名兼容入口。
 
 ## 任务目标

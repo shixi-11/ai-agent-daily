@@ -29,6 +29,7 @@
 <link rel="apple-touch-icon" href="/daily/assets/alux-favicon.png">
 <link rel="stylesheet" href="/daily/assets/report-site.css">
 <!-- site:i18n-head:end -->
+
 </head><body>
 <!-- site:i18n-nav:start -->
 <header class="report-sitebar">
@@ -40,9 +41,22 @@
       <a href="/daily/2026/09/02/" lang="zh-CN">中文</a>
       <a href="/daily/en/2026/09/02/" lang="en" aria-current="page">EN</a>
     </span>
+    <details class="language-more">
+      <summary aria-label="More languages"><span aria-hidden="true">···</span></summary>
+      <div class="language-more-menu">
+      <a href="/daily/zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+      <a href="/daily/ja/" lang="ja" hreflang="ja">日本語</a>
+      <a href="/daily/ko/" lang="ko" hreflang="ko">한국어</a>
+      <a href="/daily/es/" lang="es" hreflang="es">Español</a>
+      <a href="/daily/fr/" lang="fr" hreflang="fr">Français</a>
+      <a href="/daily/de/" lang="de" hreflang="de">Deutsch</a>
+      <a href="/daily/ar/" lang="ar" hreflang="ar">العربية</a>
+      </div>
+    </details>
   </nav>
 </header>
 <!-- site:i18n-nav:end -->
+
 <main class="page" data-layout-version="compact-v1">
 <section class="hero"><div class="hero-copy"><div class="eyebrow"><span>ALUX AI Agent Intelligence Daily</span><span>2026-09-02</span><span>Global AI Brief</span></div><h1><span class="title-en">AI Agent</span><span class="title-cn">Context Limits, Execution Controls Tighten</span></h1><p class="lead">Eight signals connect context management, tool budgets, and inference queues to a cyber-defense loop powered by more than 50 agents.</p><div class="stats" aria-label="Today's intelligence overview"><div class="stat"><b>8</b><span>Signals to watch</span></div><div class="stat"><b>8</b><span>Things to try</span></div><div class="stat"><b>4</b><span>Open-source finds</span></div><div class="stat"><b>4</b><span>Regions covered</span></div></div><div class="judgment"><strong>Today's take:</strong> Competition among production-grade agents is shifting toward boundary design: what context is retained, how much output each tool may return, when requests expire, and where automation must stop.</div></div><aside class="intel-panel"><div class="panel-head"><strong>Today's Signal Map</strong><span>Context management · Permission controls · Inference routing · Time series · Security loops</span></div><div class="heat-summary"><b>Theme: Defaults now carry production responsibility</b><p>Eight signals span self-managed context, containment approvals, tool budgets, KV state, queue TTLs, API Skills, and security agents.</p></div><div class="heat-list"><div class="heat-row"><div><strong>Agent control</strong><span class="strength">2 changes</span></div><div><p>Claude narrows auto-approval; Codex budgets each MCP tool's output.</p><em>Watch for: permissions and resource limits entering the default control plane.</em></div></div><div class="heat-row"><div><strong>Inference stack</strong><span class="strength">2 layers</span></div><div><p>LMDeploy connects distributed KV state; Mistral expires queued work by scope.</p><em>Watch for: state and scheduling jointly determining cost.</em></div></div><div class="heat-row"><div><strong>Context intelligence</strong><span class="strength">2 models</span></div><div><p>ContextPilot edits memory proactively; TimesFM gives temporal structure a dedicated model.</p><em>Watch for: context expanding beyond a longer text window.</em></div></div><div class="heat-row"><div><strong>Skills and security</strong><span class="strength">2 shifts</span></div><div><p>Anthropic refreshes its API Skill; CrowdStrike coevolves red and blue agents.</p><em>Watch for: operational contracts and defense loops becoming products.</em></div></div></div><div class="priority-note"><span>Today's best quick experiment</span><strong>Set a token ceiling for one verbose <span class="priority-brand">MCP tool</span>, resume the session, and verify that the truncation remains identical.</strong></div></aside></section>
 <section class="section"><h2>RISC Machine Primer</h2><div class="risc-primer"><div class="risc-primer-intro"><div><p class="risc-equation">RISC = the four systems that make an agent production-ready</p><p>A production-grade agent needs more than a brain. It must keep operating, survive failure, resist overreach, and participate in real organizational workflows.</p></div><div class="risc-primer-line">The industry has delivered an excellent brain, but a production-grade agent also needs a body, an immune system, and a social layer.<span class="risc-primer-close"><span class="nowrap">ALUX</span> is building that complete machine.</span></div></div><div class="risc-primer-grid"><article class="risc-primer-card"><b>R | Robust — Body</b><span>Durable execution, fault tolerance, recovery, and horizontal scale. Without a resilient body, one failure can erase the work.</span></article><article class="risc-primer-card"><b>I | Intelligent — Brain</b><span>Model loops, memory, tools, and orchestration. This system determines how an agent reasons, uses tools, and completes complex work.</span></article><article class="risc-primer-card"><b>S | Secure — Immune System</b><span>Object-capability security, policy approvals, rollback, and audit. Without an immune system, recovery and connectivity expand the blast radius.</span></article><article class="risc-primer-card"><b>C | Connected — Social</b><span>Cross-company authorization, neutral substrate, session types, and ecosystem connectors. Without a social interface, an agent remains confined to one product.</span></article></div></div></section>
@@ -59,4 +73,5 @@
   <a href="/daily/en/">AI Agent Intelligence Daily · 2026-09-02</a>
 </footer>
 <!-- site:issue-footer:end -->
+
 </body></html>

@@ -23,9 +23,15 @@
 content/
 ├─ zh/
 │  └─ YYYYMMDD_ALUX_AI智能体情报日报.html
-└─ en/
-   ├─ YYYYMMDD.body.html
-   └─ translation-manifest.json
+├─ en/
+│  ├─ YYYYMMDD.body.html
+│  └─ translation-manifest.json
+├─ {ja,ko,es,fr,de,ar,zh-Hant}/   # 可选，有审校译文才生成日期页
+│  └─ YYYYMMDD.body.html
+└─ i18n-manifest.json
+locales/
+├─ catalog.json
+└─ ui.json
 ```
 
 中文母稿是完整 HTML 文档。英文母稿只保存 `<main class="page">` 到 `</main>` 的 body 内容，共享中文页面的结构与基础样式，再由构建脚本注入英文排版覆盖、站点导航、语言切换、前后期链接、canonical 和 hreflang。
