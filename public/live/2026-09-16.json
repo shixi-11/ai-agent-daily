@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-16",
-  "generatedAt": "2026-09-15T23:01:06.588Z",
-  "generatedAtShanghai": "2026-09-16 07:01",
-  "collectedAt": "2026-09-15T23:01:06.588Z",
+  "generatedAt": "2026-09-15T23:35:45.580Z",
+  "generatedAtShanghai": "2026-09-16 07:35",
+  "collectedAt": "2026-09-15T23:35:45.580Z",
   "counts": {
     "rss": 255,
     "githubReleases": 69,
@@ -199,7 +199,7 @@
     "features": 6,
     "openSource": 4,
     "newSites": 4,
-    "regions": 4
+    "regions": 5
   },
   "hero": {
     "subjectZh": "模型平台：Introducing Gemini",
@@ -214,10 +214,10 @@
       "category": "new-site",
       "tagZh": "新站新项目",
       "tagEn": "New sites",
-      "titleZh": "github.com有新信号",
+      "titleZh": "新站新项目有新信号",
       "titleEn": "New sites moved",
-      "bodyZh": "github.com、Matthew0822/ToolReplay、FankChen/tracecrate 给出可点击的原始页面，适合对照来源而不是把摘要当结论。",
-      "bodyEn": "github.com, Matthew0822/ToolReplay, FankChen/tracecrate published a public page. Treat the original source as the claim, not this summary."
+      "bodyZh": "Matthew0822/ToolReplay、FankChen/tracecrate、github.com 给出可点击的原始页面，适合对照来源而不是把摘要当结论。",
+      "bodyEn": "Matthew0822/ToolReplay, FankChen/tracecrate, github.com published a public page. Treat the original source as the claim, not this summary."
     },
     {
       "category": "product",
@@ -414,35 +414,6 @@
       "hasCjk": false
     },
     {
-      "title": "Talk to Claude – voice agent designs, plans, builds across all projects",
-      "category": "new-site",
-      "categoryZh": "新站新项目",
-      "categoryEn": "New sites",
-      "region": "全球社区",
-      "sourceLabel": "github.com",
-      "url": "https://github.com/ethanplusai/jarvis",
-      "publishedAt": "2026-09-15",
-      "observedAt": "2026-09-16",
-      "origin": "rss",
-      "repo": "",
-      "stars": 0,
-      "license": "",
-      "versionLike": false,
-      "whatZh": "github.com：Article URL: https://github.com/ethanplusai/jarvis Comments URL: https://news.ycombinator.com/item?id=49714089 Points: 2 # Comments: 0",
-      "whyZh": "新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。",
-      "whoZh": "愿意动手试新工具的开发者和独立作者。",
-      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
-      "noteZh": "本条由公开 RSS、GitHub 或 Hugging Face 自动收录，摘要来自原始页面，未经人工精修。",
-      "whatEn": "github.com: Article URL: https://github.com/ethanplusai/jarvis Comments URL: https://news.ycombinator.com/item?id=49714089 Points: 2 # Comments: 0",
-      "whyEn": "A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.",
-      "whoEn": "Developers and indie builders who try new tools early.",
-      "tryEn": "Open the original link and verify the date, license and stated scope.",
-      "noteEn": "Collected automatically from a public feed. The summary is from the source page, not a human rewrite.",
-      "isFeature": false,
-      "score": 24,
-      "hasCjk": false
-    },
-    {
       "title": "Matthew0822/ToolReplay: Audit AI agent tool-call transcripts: hash-chain sealing, deterministic replay, and scope overreach checks. Dependency-free Python CLI.",
       "category": "new-site",
       "categoryZh": "新站新项目",
@@ -498,6 +469,35 @@
       "noteEn": "Collected automatically from a public feed. The summary is from the source page, not a human rewrite.",
       "isFeature": false,
       "score": 23.23454259131153,
+      "hasCjk": false
+    },
+    {
+      "title": "Async multi-agent coordination across physical environments",
+      "category": "new-site",
+      "categoryZh": "新站新项目",
+      "categoryEn": "New sites",
+      "region": "全球社区",
+      "sourceLabel": "github.com",
+      "url": "https://github.com/BlahBlah23406/agent-comms",
+      "publishedAt": "2026-09-15",
+      "observedAt": "2026-09-16",
+      "origin": "rss",
+      "repo": "",
+      "stars": 0,
+      "license": "",
+      "versionLike": false,
+      "whatZh": "github.com：hey HN, I started to get tired when I had to switch from Claude on one computer to Gemini on a different computer for a single project that ran in sync on mult…",
+      "whyZh": "新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。",
+      "whoZh": "愿意动手试新工具的开发者和独立作者。",
+      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
+      "noteZh": "本条由公开 RSS、GitHub 或 Hugging Face 自动收录，摘要来自原始页面，未经人工精修。",
+      "whatEn": "github.com: hey HN, I started to get tired when I had to switch from Claude on one computer to Gemini on a different computer for a single project that ran in sync on mult…",
+      "whyEn": "A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.",
+      "whoEn": "Developers and indie builders who try new tools early.",
+      "tryEn": "Open the original link and verify the date, license and stated scope.",
+      "noteEn": "Collected automatically from a public feed. The summary is from the source page, not a human rewrite.",
+      "isFeature": false,
+      "score": 22,
       "hasCjk": false
     },
     {
@@ -559,33 +559,33 @@
       "hasCjk": false
     },
     {
-      "title": "Async multi-agent coordination across physical environments",
+      "title": "Xu123-Bob/Baize: 白泽 —— 中国古代神话中通晓万物的瑞兽，如今化身为 Vibe Coding 助手。 一个开源的 AI Coding Agent CLI，支持多后端（DeepSeek / OpenAI 兼容 / Ollama 本地），具备工具调用、技能加载、子代理委派、上下文压缩、安全沙箱等完整能力。在终端即可与 AI 结对编程。",
       "category": "new-site",
       "categoryZh": "新站新项目",
       "categoryEn": "New sites",
-      "region": "全球社区",
-      "sourceLabel": "github.com",
-      "url": "https://github.com/BlahBlah23406/agent-comms",
-      "publishedAt": "2026-09-15",
+      "region": "中国",
+      "sourceLabel": "Xu123-Bob/Baize",
+      "url": "https://github.com/Xu123-Bob/Baize",
+      "publishedAt": "2026-09-12",
       "observedAt": "2026-09-16",
-      "origin": "rss",
-      "repo": "",
-      "stars": 0,
-      "license": "",
+      "origin": "github-repo",
+      "repo": "Xu123-Bob/Baize",
+      "stars": 70,
+      "license": "MIT",
       "versionLike": false,
-      "whatZh": "github.com：hey HN, I started to get tired when I had to switch from Claude on one computer to Gemini on a different computer for a single project that ran in sync on mult…",
+      "whatZh": "新公开仓库 Xu123-Bob/Baize。白泽 —— 中国古代神话中通晓万物的瑞兽，如今化身为 Vibe Coding 助手。 一个开源的 AI Coding Agent CLI，支持多后端（DeepSeek / OpenAI 兼容 / Ollama 本地），具备工具调用、技能加载、子代理委派、上下文压缩、安全沙箱等完整能力。在终端即可与 AI 结对编程。",
       "whyZh": "新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。",
       "whoZh": "愿意动手试新工具的开发者和独立作者。",
       "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
       "noteZh": "本条由公开 RSS、GitHub 或 Hugging Face 自动收录，摘要来自原始页面，未经人工精修。",
-      "whatEn": "github.com: hey HN, I started to get tired when I had to switch from Claude on one computer to Gemini on a different computer for a single project that ran in sync on mult…",
+      "whatEn": "New public repository Xu123-Bob/Baize. 白泽 —— 中国古代神话中通晓万物的瑞兽，如今化身为 Vibe Coding 助手。 一个开源的 AI Coding Agent CLI，支持多后端（DeepSeek / OpenAI 兼容 / Ollama 本地），具备工具调用、技能加载、子代理委派、上下文压缩、安全沙箱等完整能力。在终端即可与 AI 结对编程。",
       "whyEn": "A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.",
       "whoEn": "Developers and indie builders who try new tools early.",
       "tryEn": "Open the original link and verify the date, license and stated scope.",
       "noteEn": "Collected automatically from a public feed. The summary is from the source page, not a human rewrite.",
       "isFeature": false,
-      "score": 22,
-      "hasCjk": false
+      "score": 21.70251669743815,
+      "hasCjk": true
     },
     {
       "title": "AI for Societal Impact",
@@ -704,5 +704,5 @@
       "hasCjk": false
     }
   ],
-  "leftover": 243
+  "leftover": 241
 }
