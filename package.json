@@ -4,9 +4,16 @@
   "private": true,
   "description": "Build and verification tools for AI Agent Daily.",
   "scripts": {
+    "sync": "node scripts/sync-reports.cjs",
+    "verify": "node scripts/verify-site.cjs",
     "verify:master": "node scripts/verify-report-master.cjs",
     "verify:render": "node scripts/render-check.cjs",
-    "verify:boundary": "node scripts/verify-release-boundary.cjs"
+    "verify:boundary": "node scripts/verify-release-boundary.cjs",
+    "collect": "node scripts/collect-signals.cjs",
+    "watchdog": "node scripts/check-today.cjs",
+    "preview": "node scripts/serve-preview.cjs",
+    "publish": "node scripts/publish.cjs --no-push"
+
   },
   "devDependencies": {
     "playwright": "^1.54.0"

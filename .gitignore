@@ -6,6 +6,7 @@ local-archive/
 tools/share-card/qr.png
 tools/share-card/.share-card-render.tmp.png
 artifacts/
+collectors/out/
 test-results/
 .playwright/
 outputs/

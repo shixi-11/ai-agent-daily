@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Agent Daily · AI智能体日报</title>
+    <link>https://ai.alux.network/daily/</link>
+    <description>新模型、新产品与有趣发现。由光之十一出品。</description>
+    <language>zh-CN</language>
+    <item>
+      <title>2026-09-14 AI Agent从能力展示到可核验的工作</title>
+      <link>https://ai.alux.network/daily/2026/09/14/</link>
+      <guid>https://ai.alux.network/daily/2026/09/14/</guid>
+      <pubDate>Sun, 13 Sep 2026 16:00:00 GMT</pubDate>
+      <description>正式权重、专用推理引擎与独立应用一起出现，值得看的不只是什么能做，还有怎样运行、如何核对。</description>
+    </item>
+    <item>
+      <title>2026-09-13 AI Agent模型之外的可见证据</title>
+      <link>https://ai.alux.network/daily/2026/09/13/</link>
+      <guid>https://ai.alux.network/daily/2026/09/13/</guid>
+      <pubDate>Sat, 12 Sep 2026 16:00:00 GMT</pubDate>
+      <description>一套声音模型能改录音，小型编码器能找文档，录屏助手能看帧。今天也看那些公开方法、限制和失败的小实验。</description>
+    </item>
+    <item>
+      <title>2026-09-12 AI Agent生成之后还可继续改</title>
+      <link>https://ai.alux.network/daily/2026/09/12/</link>
+      <guid>https://ai.alux.network/daily/2026/09/12/</guid>
+      <pubDate>Fri, 11 Sep 2026 16:00:00 GMT</pubDate>
+      <description>房间能测量，图像流程能重接，科研预测能查询。今天的重点不只是生成什么，而是结果还能怎样检查、修改与使用。</description>
+    </item>
+    <item>
+      <title>2026-09-11 AI Agent新模型走进真实场景</title>
+      <link>https://ai.alux.network/daily/2026/09/11/</link>
+      <guid>https://ai.alux.network/daily/2026/09/11/</guid>
+      <pubDate>Thu, 10 Sep 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek 更新视觉架构，GPT‑Live‑1 开放语音 API；翻译、三维头像与月球探索，让模型能力有了更具体的去处。</description>
+    </item>
+    <item>
+      <title>2026-09-10 AI Agent创作有了更多控制</title>
+      <link>https://ai.alux.network/daily/2026/09/10/</link>
+      <guid>https://ai.alux.network/daily/2026/09/10/</guid>
+      <pubDate>Wed, 09 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Suno v6 从局部改曲开始，动画、广告和视频工具提供更细的编辑入口；研究 Agent 则迎来长时间任务的新检验。</description>
+    </item>
+    <item>
+      <title>2026-09-09 AI Agent智能体进入验证闭环</title>
+      <link>https://ai.alux.network/daily/2026/09/09/</link>
+      <guid>https://ai.alux.network/daily/2026/09/09/</guid>
+      <pubDate>Tue, 08 Sep 2026 16:00:00 GMT</pubDate>
+      <description>从图像意图、形式化证明到实验反馈与工具护栏，智能体正在把生成能力接进可检查、可恢复的工作链。</description>
+    </item>
+    <item>
+      <title>2026-09-08 AI Agent智能体交付可验证结果</title>
+      <link>https://ai.alux.network/daily/2026/09/08/</link>
+      <guid>https://ai.alux.network/daily/2026/09/08/</guid>
+      <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
+      <description>从机器证明、持久任务板到本地文档与凭据注入，智能体正在把答案变成可复查、可恢复、可治理的工作。</description>
+    </item>
+    <item>
+      <title>2026-09-07 AI Agent智能体开始长出身体</title>
+      <link>https://ai.alux.network/daily/2026/09/07/</link>
+      <guid>https://ai.alux.network/daily/2026/09/07/</guid>
+      <pubDate>Sun, 06 Sep 2026 16:00:00 GMT</pubDate>
+      <description>从说话人识别、道路规划到三维拓扑与新型芯片，模型周边的感知和执行系统正在变厚。</description>
+    </item>
+    <item>
+      <title>2026-09-06 AI Agent模型走进真实世界</title>
+      <link>https://ai.alux.network/daily/2026/09/06/</link>
+      <guid>https://ai.alux.network/daily/2026/09/06/</guid>
+      <pubDate>Sat, 05 Sep 2026 16:00:00 GMT</pubDate>
+      <description>十六条信号把新模型、语音管线、互动世界、浏览器算力和机器人研究放到同一张地图上。</description>
+    </item>
+    <item>
+      <title>2026-09-05 AI Agent技能会话与运维边界重写</title>
+      <link>https://ai.alux.network/daily/2026/09/05/</link>
+      <guid>https://ai.alux.network/daily/2026/09/05/</guid>
+      <pubDate>Fri, 04 Sep 2026 16:00:00 GMT</pubDate>
+      <description>八条信号从 Skill 成本、会话持有锁与无状态 MCP，连到集群控制面、记忆清理和跨人群模型边界。</description>
+    </item>
+    <item>
+      <title>2026-09-04 AI Agent入口记忆与本地算力重排</title>
+      <link>https://ai.alux.network/daily/2026/09/04/</link>
+      <guid>https://ai.alux.network/daily/2026/09/04/</guid>
+      <pubDate>Thu, 03 Sep 2026 16:00:00 GMT</pubDate>
+      <description>九条信号从资源即代码、跨工具记忆与漏洞身份，连到开放模型入口、本地算力池和科学重建。</description>
+    </item>
+    <item>
+      <title>2026-09-03 AI Agent权限失败与地域路由</title>
+      <link>https://ai.alux.network/daily/2026/09/03/</link>
+      <guid>https://ai.alux.network/daily/2026/09/03/</guid>
+      <pubDate>Wed, 02 Sep 2026 16:00:00 GMT</pubDate>
+      <description>九条信号从组织级 MCP、失败可见性与跨区推理，连到漏洞修复和代码文档的生产闭环。</description>
+    </item>
+    <item>
+      <title>2026-09-02 AI Agent上下文与执行边界同时收紧</title>
+      <link>https://ai.alux.network/daily/2026/09/02/</link>
+      <guid>https://ai.alux.network/daily/2026/09/02/</guid>
+      <pubDate>Tue, 01 Sep 2026 16:00:00 GMT</pubDate>
+      <description>八条信号从上下文管理、工具预算与推理队列，连到五十多个安全 Agent 组成的攻防闭环。</description>
+    </item>
+    <item>
+      <title>2026-09-01 AI Agent默认边界被重新书写</title>
+      <link>https://ai.alux.network/daily/2026/09/01/</link>
+      <guid>https://ai.alux.network/daily/2026/09/01/</guid>
+      <pubDate>Mon, 31 Aug 2026 16:00:00 GMT</pubDate>
+      <description>八条信号从视觉 Agent、框架安全、技能治理与开放医学模型，连到广告成为 AI 的新收入底座。</description>
+    </item>
+    <item>
+      <title>2026-08-31 AI Agent生产边界开始显形</title>
+      <link>https://ai.alux.network/daily/2026/08/31/</link>
+      <guid>https://ai.alux.network/daily/2026/08/31/</guid>
+      <pubDate>Sun, 30 Aug 2026 16:00:00 GMT</pubDate>
+      <description>七条信号把重连、状态清理、浏览器推理、空间视觉与真实人口语音评测，推向更清楚的生产边界。</description>
+    </item>
+    <item>
+      <title>2026-08-30 AI Agent开源栈进入交付日</title>
+      <link>https://ai.alux.network/daily/2026/08/30/</link>
+      <guid>https://ai.alux.network/daily/2026/08/30/</guid>
+      <pubDate>Sat, 29 Aug 2026 16:00:00 GMT</pubDate>
+      <description>九条信号从工具结果、持久操作、训练回放一路落到媒体管线与模型合同，AI 工程正在补齐可维护边界。</description>
+    </item>
+    <item>
+      <title>2026-08-29 AI Agent控制面正在成形</title>
+      <link>https://ai.alux.network/daily/2026/08/29/</link>
+      <guid>https://ai.alux.network/daily/2026/08/29/</guid>
+      <pubDate>Fri, 28 Aug 2026 16:00:00 GMT</pubDate>
+      <description>八条信号同时指向一件事：会话、评测、缓存、交易与故障域，正被写成 Agent 系统里的明确控制面。</description>
+    </item>
+    <item>
+      <title>2026-08-28 AI Agent从会话走向系统</title>
+      <link>https://ai.alux.network/daily/2026/08/28/</link>
+      <guid>https://ai.alux.network/daily/2026/08/28/</guid>
+      <pubDate>Thu, 27 Aug 2026 16:00:00 GMT</pubDate>
+      <description>八条信号把 Agent 推入更深的系统层：受限运行、分叉协作、文件记忆、地域计算、专用 CPU 与行星级预测。</description>
+    </item>
+    <item>
+      <title>2026-08-27 AI Agent任务网络接上开放架构</title>
+      <link>https://ai.alux.network/daily/2026/08/27/</link>
+      <guid>https://ai.alux.network/daily/2026/08/27/</guid>
+      <pubDate>Wed, 26 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天七条信号说明：Agent 正从单会话助手，变成任务、Skills、评测与芯片协同的生产系统。</description>
+    </item>
+    <item>
+      <title>2026-08-26 AI Agent从通用助手走进专业现场</title>
+      <link>https://ai.alux.network/daily/2026/08/26/</link>
+      <guid>https://ai.alux.network/daily/2026/08/26/</guid>
+      <pubDate>Tue, 25 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天六条信号同时指向一件事：Agent 正把行业权限、本地记忆与专用芯片接进真实工作。</description>
+    </item>
+    <item>
+      <title>2026-08-25 AI Agent开放正在从模型长到系统</title>
+      <link>https://ai.alux.network/daily/2026/08/25/</link>
+      <guid>https://ai.alux.network/daily/2026/08/25/</guid>
+      <pubDate>Mon, 24 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天七条信号显示：开放权重、完整 Harness、可安装 Skills 与机器证明，正在把 AI 从能力展示推向可检查系统。</description>
+    </item>
+    <item>
+      <title>2026-08-24 AI Agent恢复必须带着证据</title>
+      <link>https://ai.alux.network/daily/2026/08/24/</link>
+      <guid>https://ai.alux.network/daily/2026/08/24/</guid>
+      <pubDate>Sun, 23 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天九条变化把同一问题推到台前：Agent要真正可用，恢复、授权、证据和执行环境必须一起成立。</description>
+    </item>
+    <item>
+      <title>2026-08-23 AI Agent边界成为产品</title>
+      <link>https://ai.alux.network/daily/2026/08/23/</link>
+      <guid>https://ai.alux.network/daily/2026/08/23/</guid>
+      <pubDate>Sat, 22 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天的八条变化说明，Agent能否可靠工作，越来越取决于会话、权限、工具入口、科研流程和内存基础。</description>
+    </item>
+    <item>
+      <title>2026-08-22 AI Agent可靠性来到用户面前</title>
+      <link>https://ai.alux.network/daily/2026/08/22/</link>
+      <guid>https://ai.alux.network/daily/2026/08/22/</guid>
+      <pubDate>Fri, 21 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天的八条变化都在追问同一件事：Agent如何更稳地等待、恢复、安装、升级和操作真实界面。</description>
+    </item>
+    <item>
+      <title>2026-08-21 AI Agent工具开始长出系统感</title>
+      <link>https://ai.alux.network/daily/2026/08/21/</link>
+      <guid>https://ai.alux.network/daily/2026/08/21/</guid>
+      <pubDate>Thu, 20 Aug 2026 16:00:00 GMT</pubDate>
+      <description>这一期看八个真正影响使用体验的变化：多任务、恢复、安全凭据、可观察记忆、本地推理与机密 GPU。</description>
+    </item>
+    <item>
+      <title>2026-08-20 AI Agent控制面进入运行时</title>
+      <link>https://ai.alux.network/daily/2026/08/20/</link>
+      <guid>https://ai.alux.network/daily/2026/08/20/</guid>
+      <pubDate>Wed, 19 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天最有价值的变化不在模型更会说，而在护栏、网络出口、会话、记忆和运行证据开始直接约束真实执行。</description>
+    </item>
+    <item>
+      <title>2026-08-18 AI Agent权限与恢复同轴收紧</title>
+      <link>https://ai.alux.network/daily/2026/08/18/</link>
+      <guid>https://ai.alux.network/daily/2026/08/18/</guid>
+      <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天最值得看的，是 Codex、Claude Code、Google ADK、Qwen Code、Browser Use 与 Langfuse 同时把权限、会话、恢复和失败从隐含行为改写成显式合同。</description>
+    </item>
+    <item>
+      <title>2026-08-17 AI Agent边界成为运行合同</title>
+      <link>https://ai.alux.network/daily/2026/08/17/</link>
+      <guid>https://ai.alux.network/daily/2026/08/17/</guid>
+      <pubDate>Sun, 16 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天最值得看的，不是又多了多少功能，而是超时、断网、身份注入、会话分叉、守护进程恢复与工具失败开始被写成可核验边界。</description>
+    </item>
+    <item>
+      <title>2026-08-16 AI Agent运行状态开始可验证</title>
+      <link>https://ai.alux.network/daily/2026/08/16/</link>
+      <guid>https://ai.alux.network/daily/2026/08/16/</guid>
+      <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天的高价值变化不在模型参数，而在运行状态：测试、调用身份、审批轮次、压缩分叉、终止异常与上下文预算开始拥有可核验边界。</description>
+    </item>
+    <item>
+      <title>2026-08-15 AI Agent来源能力决定执行</title>
+      <link>https://ai.alux.network/daily/2026/08/15/</link>
+      <guid>https://ai.alux.network/daily/2026/08/15/</guid>
+      <pubDate>Fri, 14 Aug 2026 16:00:00 GMT</pubDate>
+      <description>今天最值得看的不是工具又多了什么，而是浏览器来源、工具能力、执行见证、观察完整性与恢复范围开始决定一次 Agent 动作是否有资格继续。</description>
+    </item>
+  </channel>
+</rss>

@@ -21,7 +21,7 @@
       "publicPath": "en/2026/09/14/index.html",
       "sourceFile": "20260914.body.html",
       "sha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
-      "publicSha256": "c6e3605494256aba21eb0a2cea79c7453aa774f69e31a9220f2099a8bc839d18"
+      "publicSha256": "433aff6206ffcd92697682a455b4ff4177fb97b678328fd4ccc3a0de19fb8fc0"
     },
     {
       "date": "2026-09-13",
@@ -32,7 +32,7 @@
       "publicPath": "en/2026/09/13/index.html",
       "sourceFile": "20260913.body.html",
       "sha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
-      "publicSha256": "40978d3c50b19fc74cad194f855de3fecc448c47aff96cf3c4e51a5717333dd6"
+      "publicSha256": "bf500310981bfd7f53069c7a1da8495ed570e5315f695b28254253f14b39906f"
     },
     {
       "date": "2026-09-12",
@@ -43,7 +43,7 @@
       "publicPath": "en/2026/09/12/index.html",
       "sourceFile": "20260912.body.html",
       "sha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
-      "publicSha256": "5c361d1f681af963c27ef597de19c6a47106b8d31a1eaae945db4b6290531d52"
+      "publicSha256": "19423e83c628632e76c983a7ccc00724fff2c7feec63633e0c5b2ddc545128a8"
     },
     {
       "date": "2026-09-11",
@@ -54,7 +54,7 @@
       "publicPath": "en/2026/09/11/index.html",
       "sourceFile": "20260911.body.html",
       "sha256": "9dee3ee0dacd33d188b1c4ccf7ce36a2336a1749a21850b085900896aa389a96",
-      "publicSha256": "2a7ff0fc6eda7863a09e205a17bc645405ff48cf575402851ff314a9994aa325"
+      "publicSha256": "3ffcd5667063ff70bada3535757764a41a4665ee77695b6651676b90f83bbe57"
     },
     {
       "date": "2026-09-10",
@@ -65,7 +65,7 @@
       "publicPath": "en/2026/09/10/index.html",
       "sourceFile": "20260910.body.html",
       "sha256": "08e3f2b8b5e797d382a7a5045020fd0826b648e154f0bfbf01633f251ca12eb1",
-      "publicSha256": "485c0b3f5caa55fc9e1399953da2a23a3f12f751b7c31b09a39450f582e34e73"
+      "publicSha256": "c780643174a5b273f393f8e2445285e527a4cd0609f263406bf48da80206df45"
     },
     {
       "date": "2026-09-09",
@@ -76,7 +76,7 @@
       "publicPath": "en/2026/09/09/index.html",
       "sourceFile": "20260909.body.html",
       "sha256": "e22a2cff66915f572543135b643a74f5631d04bc9df88d1cec43cbece0bcce74",
-      "publicSha256": "95ac4566910f8e2b34a9ef8af924e9b4a7d8f6026ccb1f969af137da9d1af087"
+      "publicSha256": "2cc1dc42265f449e2b4286199a32553510af7be09ccb42e21bb2eb7de4f05d55"
     },
     {
       "date": "2026-09-08",
@@ -87,7 +87,7 @@
       "publicPath": "en/2026/09/08/index.html",
       "sourceFile": "20260908.body.html",
       "sha256": "90220c8fdec3ba73c5ffa989d8025f6060049323fb73ee1b1fd8dc2ffebd46bd",
-      "publicSha256": "44b30a757f2feb99b40761678f527931f35682b722bef066597413c8bd21caa4"
+      "publicSha256": "ae42efcafa08c1340151034b4f76cc2248c297f392dc0f39ac7c24bd3af8b60a"
     },
     {
       "date": "2026-09-07",
@@ -98,7 +98,7 @@
       "publicPath": "en/2026/09/07/index.html",
       "sourceFile": "20260907.body.html",
       "sha256": "44a51e2fff9e90e978e76cb55fde45bcaf169b43597fea7f616a9bb62f265ca7",
-      "publicSha256": "27f22b25bec75a9455ab357973a1d867eda318cc0fc1d23df7ec3f130882f9aa"
+      "publicSha256": "b9c35be1aa51119effb12f6b18bb4483050604fa6b735300674be2837a38c704"
     },
     {
       "date": "2026-09-06",
@@ -109,7 +109,7 @@
       "publicPath": "en/2026/09/06/index.html",
       "sourceFile": "20260906.body.html",
       "sha256": "35e6ed8511b5ba578201ceedaaf45ef775f0c2e27bd79254eadbf8cdb6167d07",
-      "publicSha256": "5fd31245a9f40a217aa15fc39ad3e7f963ce43343ca026374992a2cd0d8d570f"
+      "publicSha256": "ff142f5a1bed339d329c5816b90e9b8a2f593d160d18b81cd6bf6effd8ec9f47"
     },
     {
       "date": "2026-09-05",
@@ -120,7 +120,7 @@
       "publicPath": "en/2026/09/05/index.html",
       "sourceFile": "20260905.body.html",
       "sha256": "26bd2151201a977ea43adadc78e3f8427d7001dc062c7135bed7057ce51dc2c7",
-      "publicSha256": "cae47f9d4e2de056f30ee573996326e77abd445fab8ac8aa6a3c7a015d3d896c"
+      "publicSha256": "75baad80215e293f0595fcaae5a20475a5f80c6eb987773ba9e314ae8a4b5604"
     },
     {
       "date": "2026-09-04",
@@ -131,7 +131,7 @@
       "publicPath": "en/2026/09/04/index.html",
       "sourceFile": "20260904.body.html",
       "sha256": "188a27e906f8881cb2109dd020030311b2a144497dc1762de8aa53ec2fe687a1",
-      "publicSha256": "8d7a6fc0a7cc078ac88e9e8d735ae44df71e95f102183b1be1f2d286112cd6fd"
+      "publicSha256": "c2d1a2a06b0aa5228a1ccff97fc987b8c7e2b8f62a5881cd9a31cf0182f565c8"
     },
     {
       "date": "2026-09-03",
@@ -142,7 +142,7 @@
       "publicPath": "en/2026/09/03/index.html",
       "sourceFile": "20260903.body.html",
       "sha256": "9eaec0c96d854266375937eab027f51bfec26b308e0ad762f89864f5612c6521",
-      "publicSha256": "b55dd170dfdec47248530190313c7ced27b6002f59a12493a99b5c43bb640ebc"
+      "publicSha256": "7702a651355c29e089509f402fd1cac0c76214a90d1659c4132e0b1059d79cf2"
     },
     {
       "date": "2026-09-02",
@@ -153,7 +153,7 @@
       "publicPath": "en/2026/09/02/index.html",
       "sourceFile": "20260902.body.html",
       "sha256": "a80de431b4d1ab7220dac5c9edfd14a87afd76782c265ce983292fd3b54f9996",
-      "publicSha256": "8fa6a48cb7a6d33844980b0772ffc2cde6a76b3713f823d2ac07a42038a36627"
+      "publicSha256": "c09c621b4c3a2af796c7a30ebe8eee8113c294772307d47ecb678912e00729c4"
     },
     {
       "date": "2026-09-01",
@@ -164,7 +164,7 @@
       "publicPath": "en/2026/09/01/index.html",
       "sourceFile": "20260901.body.html",
       "sha256": "42ca4642477544e974e46acbb7ec47157e0f05af81c0745290d93e5f00eee17e",
-      "publicSha256": "635ba2ebf4a23451120f2fe383b440506c19012d1f7ef086b182759189a743e3"
+      "publicSha256": "8059f9236bca6f294007d50351219b41e85d989ad096ca07fdcb5ddc28aaa05c"
     },
     {
       "date": "2026-08-31",
@@ -175,7 +175,7 @@
       "publicPath": "en/2026/08/31/index.html",
       "sourceFile": "20260831.body.html",
       "sha256": "db3b707eba811104641f4bfc52449f977cfdbbfbe8bf07d093ba90e5bd1571e7",
-      "publicSha256": "e611850bfa8efab034dd0c7210e643dbc91c7f1be628e4d699c60d9e86969c61"
+      "publicSha256": "e0d869e7218b8a96c1ab6a8651608dd5f9f2feea4271db91a39cd87d37d73276"
     },
     {
       "date": "2026-08-30",
@@ -186,7 +186,7 @@
       "publicPath": "en/2026/08/30/index.html",
       "sourceFile": "20260830.body.html",
       "sha256": "7377127eeaf1fc2081bca87a52c0a49443a241e747eaae3d0bc60d184cbee58c",
-      "publicSha256": "f6ef294d3c3c52e1d863e260cc117411e602446e506b4947254d6d39fd2e5baa"
+      "publicSha256": "69285229fd40335a37eb70bd102f0181e0ff191ce15192c5636a6afb1de5cb30"
     },
     {
       "date": "2026-08-29",
@@ -197,7 +197,7 @@
       "publicPath": "en/2026/08/29/index.html",
       "sourceFile": "20260829.body.html",
       "sha256": "6838bfd264cf03ce1dbfb7e93775b9add198887c6b99f2dc13a30bf0c31ea729",
-      "publicSha256": "6414eb9905f1149faa17bf7a97efbbfe374f0e46e9e4be91b320988702aa293b"
+      "publicSha256": "c12d810d39d0d739dc5c4bb982bdd469ded7f517ee316a9f83b6f59d202acaf5"
     },
     {
       "date": "2026-08-28",
@@ -208,7 +208,7 @@
       "publicPath": "en/2026/08/28/index.html",
       "sourceFile": "20260828.body.html",
       "sha256": "8a12e7a3e5ac7138544427c080f09cee9c2a878a115673bc85797aba8f778084",
-      "publicSha256": "21b1f80c26de29d475347a370ab8a9653ffee1377f3b448335d6bcff7193b494"
+      "publicSha256": "e76679e5b45098e9c51c244d3675f231fa06b5f99f6f5e17360dcf90abbe8086"
     },
     {
       "date": "2026-08-27",
@@ -219,7 +219,7 @@
       "publicPath": "en/2026/08/27/index.html",
       "sourceFile": "20260827.body.html",
       "sha256": "005cf04b94e2ce5d4aa425b91037b3635b2eec5cc22e204d05e4dc54b3ddc4d4",
-      "publicSha256": "58780f2e8d86c00e59b5b830735542c94a11e1563937b75707a72f4ee5a04fdb"
+      "publicSha256": "11a0626d787aa009555c084912e4493c92c04f38abe106037cbfd3d4d85dbbf1"
     },
     {
       "date": "2026-08-26",
@@ -230,7 +230,7 @@
       "publicPath": "en/2026/08/26/index.html",
       "sourceFile": "20260826.body.html",
       "sha256": "1c5fe55fd4291f2f0daa6ccaf1802ab6fcbfb30eb8069a90b7521f5b9b63ce32",
-      "publicSha256": "5b6c27df7e49ce0cdf2480fa69e65ffa23c0f8cff2ca1c7049d4e326f2d88e59"
+      "publicSha256": "bb678ced9223a2ee38eb4782e7394f3516a9ebe611eb605ac5e04c0de688a807"
     },
     {
       "date": "2026-08-25",
@@ -241,7 +241,7 @@
       "publicPath": "en/2026/08/25/index.html",
       "sourceFile": "20260825.body.html",
       "sha256": "4fc806e441cccda7b97f6f73df9ef5ba69109e1539544c02988a15c4369c3b56",
-      "publicSha256": "426d11019af3510c8498c7cbac31dc453150b7872e7a662af82eaf7e51664d3f"
+      "publicSha256": "5f565911760f6bd04ab657aa03d9659b145db1bd80d8b3378f5b42d8cd6ccb94"
     },
     {
       "date": "2026-08-24",
@@ -252,7 +252,7 @@
       "publicPath": "en/2026/08/24/index.html",
       "sourceFile": "20260824.body.html",
       "sha256": "ed13babc2dc766212db74fa3b0c2a380b5877a18f98506305c8d41abbb175b7c",
-      "publicSha256": "2f36f715df09841397b10e1d163686a705e417c4223c8f58254bd05f2a0a0901"
+      "publicSha256": "cb0fc7fb8f4fa17d1faee8dff4e9a01e2559bc55e81344ca9d80c4d9cc49a4e9"
     },
     {
       "date": "2026-08-23",
@@ -263,7 +263,7 @@
       "publicPath": "en/2026/08/23/index.html",
       "sourceFile": "20260823.body.html",
       "sha256": "f6aa7bf17947382badfaf866402c04e532e5b9f892c51a1ea98e15e94e43de0a",
-      "publicSha256": "b97d32217ab32b6163ed8658eddcbeb7aed53813513218a476652304e4da9646"
+      "publicSha256": "cd952c2226c9fbcf84ff21791632e4daa94e84bdf7c10260f098e15f8c2b8d94"
     },
     {
       "date": "2026-08-22",
@@ -274,7 +274,7 @@
       "publicPath": "en/2026/08/22/index.html",
       "sourceFile": "20260822.body.html",
       "sha256": "e94c8a9efca50501e71c074f669f27e9836b6873f8fa73cfd80da040f990a674",
-      "publicSha256": "5a3bdf4df09857288c738da3661bdf339a362398f1a04f98f2ceb38fd5334f60"
+      "publicSha256": "2168edfc4748f68f96640033933d7cd552487ea4e7a5733654b08574fadcdb0b"
     },
     {
       "date": "2026-08-21",
@@ -285,7 +285,7 @@
       "publicPath": "en/2026/08/21/index.html",
       "sourceFile": "20260821.body.html",
       "sha256": "28639ac9c3e71882e8cd5a9143d303abd993c4c53c99f3c11fa4d7d343b088c6",
-      "publicSha256": "c13f177ffff0500dcc6f0d7ead7abacea201178209e5619c056c6f929ccd93ff"
+      "publicSha256": "c6ea6716611f23e2d38ac79ff6b83292670b5f094f13a55dcdc53fad9d17a9d5"
     },
     {
       "date": "2026-08-20",
@@ -296,7 +296,7 @@
       "publicPath": "en/2026/08/20/index.html",
       "sourceFile": "20260820.body.html",
       "sha256": "cbc4b4abbc406c02d9341b028d22f73249964045d95d1233d7bdae78f0e32fba",
-      "publicSha256": "bd690867c6d3e4046b2661a09b31064f1f19c07a92a82d3864ca55cdd373e037"
+      "publicSha256": "194fe2a57a72efa9a35fa047bb46681ec45d3b06ea959318b4eaf246657b2c20"
     },
     {
       "date": "2026-08-18",
@@ -307,7 +307,7 @@
       "publicPath": "en/2026/08/18/index.html",
       "sourceFile": "20260818.body.html",
       "sha256": "07d03855d01994833be5f7b92f3c75bb848006b3448e93de4a1306e38fcb0c70",
-      "publicSha256": "16b2417201a3eba4720ea54db6b14a906d8c1cdd9d52224f6fff8381e9082f96"
+      "publicSha256": "665d722be78eb0b07bc6370d64e6376070c80daaf5f32b98dc2dec231a22849d"
     },
     {
       "date": "2026-08-17",
@@ -318,7 +318,7 @@
       "publicPath": "en/2026/08/17/index.html",
       "sourceFile": "20260817.body.html",
       "sha256": "18f48054b2c7dab02eb53124effd90855349a9a90b35ce931be20d2c025ee88c",
-      "publicSha256": "dfc7ad89214dbb911bf15347d1dd65f2051c843df80f74fcb1d9bc6466b76f74"
+      "publicSha256": "7975a53cc87ae31d701a7bf4d82c68359ed73c381fc6b563627bc337586d53c3"
     },
     {
       "date": "2026-08-16",
@@ -329,7 +329,7 @@
       "publicPath": "en/2026/08/16/index.html",
       "sourceFile": "20260816.body.html",
       "sha256": "3e96028de5a14a171f350f70755d76720335086dc90d54f321b4538e2a452d61",
-      "publicSha256": "c4a8018de65979dbdb7d716e31a7fe1b9b85802246ff9257a4406e6594415945"
+      "publicSha256": "1fc87d5f176253f9338d28c72ae3618dfedd8b6517721538bb012c372ee3a85a"
     },
     {
       "date": "2026-08-15",
@@ -340,7 +340,7 @@
       "publicPath": "en/2026/08/15/index.html",
       "sourceFile": "20260815.body.html",
       "sha256": "a8f3d89d2ff268819a05250694da91aae43a6f68ec0d325c23825088035126d0",
-      "publicSha256": "8329d67f9d3de99bf4f46c1b959092b2333d781cf3fdff042f4c5e60c8810821"
+      "publicSha256": "5add37869b9fcebae3e8257975d05654bf0336eded9fb24b3c65eaefb0acb6da"
     },
     {
       "date": "2026-08-14",
@@ -351,7 +351,7 @@
       "publicPath": "en/2026/08/14/index.html",
       "sourceFile": "20260814.body.html",
       "sha256": "6118b7517d6f815dce309c3e404aa8f1c678ce7956de8971563ff4adf54bc93e",
-      "publicSha256": "96d69832c66d77811d5c551d9bc7dfd96f9b7325014aca27108bf5470897f84e"
+      "publicSha256": "48a2040c3af23f0879632b6e3b34c48077818d4e21400053849f77bc7c910e44"
     },
     {
       "date": "2026-08-13",
@@ -362,7 +362,7 @@
       "publicPath": "en/2026/08/13/index.html",
       "sourceFile": "20260813.body.html",
       "sha256": "bb5c6bd075abb62f6f9a1930bb5f6ee5095201bf59c22a48145b2f5856ea7137",
-      "publicSha256": "9210f41ce4b5cb09ef87aa4d2420b5158eb6c2f8743d0ed639a1884aff80a72d"
+      "publicSha256": "0bfad58f0f67759c917e3be1fd3ae55dd043f295ca7618136f8debec0486c5eb"
     },
     {
       "date": "2026-08-12",
@@ -373,7 +373,7 @@
       "publicPath": "en/2026/08/12/index.html",
       "sourceFile": "20260812.body.html",
       "sha256": "b1c084716c14fde1fd37e8650000bc340cc1c0afd81c3afc7c8cb79a9b575100",
-      "publicSha256": "b97f691403c7b032063312d9561afc337da3d99b0e8dede31c33e5ecf5428b7f"
+      "publicSha256": "1f9ee965664a5e3ecca5faa98abdfc9f4a65253bcd1e3ad7b9b6329b6029a419"
     },
     {
       "date": "2026-08-11",
@@ -384,7 +384,7 @@
       "publicPath": "en/2026/08/11/index.html",
       "sourceFile": "20260811.body.html",
       "sha256": "03633591b287c043b6136ba093dd335f88ee8c40c74d54f4424b2b22bd144a99",
-      "publicSha256": "ba4c6224ea6aa11f741f49330da612f7d7a9bfe83d380fbf50010f8c45f74931"
+      "publicSha256": "5174ba1706a4585b094a84e1acb42b06a32d03a146e70dde5ee8537fe4cd2d6a"
     },
     {
       "date": "2026-08-10",
@@ -395,7 +395,7 @@
       "publicPath": "en/2026/08/10/index.html",
       "sourceFile": "20260810.body.html",
       "sha256": "3beede1b97e10669f29b2f2904844a937c37dc03e8e250206168c7d23675fac9",
-      "publicSha256": "8a068b586e50d0b5576ee1c9effd735c89551513e34dc695a221946cb7829b6e"
+      "publicSha256": "657dddfd1e13e7241ef7b71f278e46dafbfa9771ebdfad2a35fa8deb3f2ad582"
     },
     {
       "date": "2026-08-09",
@@ -406,7 +406,7 @@
       "publicPath": "en/2026/08/09/index.html",
       "sourceFile": "20260809.body.html",
       "sha256": "91f270fa499c136570252796b9cae08910e6a0a836ca60c79b2670dce553f0a2",
-      "publicSha256": "e868307152e35beb9c06b073c9e156903de76e02cd8646d93ca21f2057f17100"
+      "publicSha256": "bfd75b8b24ffecb2943e9eb966505b7af4e823442560c629bb8629b8a33d2866"
     },
     {
       "date": "2026-08-08",
@@ -417,7 +417,7 @@
       "publicPath": "en/2026/08/08/index.html",
       "sourceFile": "20260808.body.html",
       "sha256": "d03a794bae96b92195d7ea536cebf5fae33f058c494f2c518347a0fab8fa34e6",
-      "publicSha256": "eb1c261c6c7ccf06011b66657bd300d2e89859dbea58f12ab0143e7f9424a4da"
+      "publicSha256": "015abdd83fbd9a576e5fd5792087d4c8aa9f3b956be880cd7b2511a9d3e71400"
     },
     {
       "date": "2026-08-01",
@@ -428,7 +428,7 @@
       "publicPath": "en/2026/08/01/index.html",
       "sourceFile": "20260801.body.html",
       "sha256": "47a733a06ef7eda8ba6828a1bedbc7782f7bdd6eb9138908e3f91e9df67b3246",
-      "publicSha256": "ea68d29cb59b523002164bcbe5cd768504b2381565b4a99813708959971b30d0"
+      "publicSha256": "dc9b39052edf99e65061b2a74328d84609c673605b2d0853bff50f4dbdffe4b5"
     },
     {
       "date": "2026-07-31",
@@ -439,7 +439,7 @@
       "publicPath": "en/2026/07/31/index.html",
       "sourceFile": "20260731.body.html",
       "sha256": "3a8f77cb31699b9190b0d9f9cf580bf8867ffd3641d8422df98639e8bf9b0bff",
-      "publicSha256": "948719b52983e9687c0d97ae8913db34b05d0cdece07eee7b910599b2334d41f"
+      "publicSha256": "07ff43ac5a1f1fe2f0d0839a60a5736d1c80e508d7fbac8fefeac11d6b518ee0"
     },
     {
       "date": "2026-07-30",
@@ -450,7 +450,7 @@
       "publicPath": "en/2026/07/30/index.html",
       "sourceFile": "20260730.body.html",
       "sha256": "d842c7be450bef4c8fe5935d439c59717e56f766deb27b1d600390e198c73017",
-      "publicSha256": "c45b6b7b477f1ff0140431a01e5c993222c3513181da25a281213cd0882974ce"
+      "publicSha256": "1862eb58189edd764f68d59916a1b0fb7605f105c10fda2071b297d681408f4e"
     },
     {
       "date": "2026-07-29",
@@ -461,7 +461,7 @@
       "publicPath": "en/2026/07/29/index.html",
       "sourceFile": "20260729.body.html",
       "sha256": "e02c1aec6aee6c1c696240f6abd99d0a39441a413c8486b821e6d6921ec351df",
-      "publicSha256": "1e2fd2d15cbd01eddfaf838224d8f967c093b285b04e1c8e1705534c6542eace"
+      "publicSha256": "362a4bee40884d67f7ee1264c0b8e9e4c77bfa2af3c0d41c310006b88ca307aa"
     },
     {
       "date": "2026-07-28",
@@ -472,7 +472,7 @@
       "publicPath": "en/2026/07/28/index.html",
       "sourceFile": "20260728.body.html",
       "sha256": "c602f79b648a86ad28b795562a88bad6c2417bc00b64ce4d278a3ad8cb17a1a4",
-      "publicSha256": "a16f29e2368b3af151595150bd4a843d9ed0fd8840e05aa146cfed0e4aef9118"
+      "publicSha256": "35894146b1e72252a93dee4124f83ac0f5735cbf619a36da29e2ea74058fdc33"
     },
     {
       "date": "2026-07-27",
@@ -483,7 +483,7 @@
       "publicPath": "en/2026/07/27/index.html",
       "sourceFile": "20260727.body.html",
       "sha256": "f6c0c16cd65150bebb243b5c119f28f43605b1da6107457befeb707d5b55feb9",
-      "publicSha256": "61c49731a394cbb330ea4fb816d833b919af3d20fb0f471e0d48f74f06ed498c"
+      "publicSha256": "4942a7150cf33de0c570d39875d2fc2b3748bc8cc3400593858e0f90cccc59c6"
     },
     {
       "date": "2026-07-26",
@@ -494,7 +494,7 @@
       "publicPath": "en/2026/07/26/index.html",
       "sourceFile": "20260726.body.html",
       "sha256": "50846f98d7f4ec9d485efe8bf8791e01d7096cc78554fce1fd3cde2cce11efd0",
-      "publicSha256": "e4bb669b5ef58398ad967c90ea5f9ee2e1725e828f2cbd86763ed682b33dfd34"
+      "publicSha256": "5eb5ad3ac6705558eab5a987d6e67f3d330034918ea2d3c9ddcdd9650d4687ca"
     },
     {
       "date": "2026-07-25",
@@ -505,7 +505,7 @@
       "publicPath": "en/2026/07/25/index.html",
       "sourceFile": "20260725.body.html",
       "sha256": "ce944d5f80d7f983f4f420d772c0c47185d52e4198608a2e31c745c9d17ed1cf",
-      "publicSha256": "deb50ae722f04e065f103f0df8a93cbc6e51e97f7b539ac081dd2a70a350d4d9"
+      "publicSha256": "634c1d876910fb8c969d6e968627b3c9636ac0afffe81f6376d8376148c61843"
     },
     {
       "date": "2026-07-24",
@@ -516,7 +516,7 @@
       "publicPath": "en/2026/07/24/index.html",
       "sourceFile": "20260724.body.html",
       "sha256": "0cc39e6c40cd7381def926b5c39047170766dcb160ba6b0bf4ac8f8816b48b26",
-      "publicSha256": "1d28dcac7cc4e32d20fda7b050cf63312c073f98a6d4b664671c5e7aa9089c78"
+      "publicSha256": "800a0bdf5b64ed75c2cb879fb05ee4fd073229cb8778b02d47d99adc44f100c3"
     },
     {
       "date": "2026-07-23",
@@ -527,7 +527,7 @@
       "publicPath": "en/2026/07/23/index.html",
       "sourceFile": "20260723.body.html",
       "sha256": "a4b963c1b424fb014dcfd003c7f0f6d6ad00f18edcaedcb6b11aec00096f5f25",
-      "publicSha256": "79e69a1b5541c04f68c2534c6e69b726901663cce17c548c298ac30d391449a7"
+      "publicSha256": "dc6d6f9908a377c9ead2c1225204d889d0ece9b6fc2fe7277de06c1e82936049"
     },
     {
       "date": "2026-07-22",
@@ -538,7 +538,7 @@
       "publicPath": "en/2026/07/22/index.html",
       "sourceFile": "20260722.body.html",
       "sha256": "5c7f302b3c96d4fc626772218446288e41f43a28409beb1dbeb3586b7dc72362",
-      "publicSha256": "571f4a77fc12c60b02655284a9e1f481361c25eefdc6b12feba5c5c4f187186e"
+      "publicSha256": "720bd16863cb7582515be0c8a45e835c1a4571ae4f3049170de67252f48031e2"
     },
     {
       "date": "2026-07-21",
@@ -549,7 +549,7 @@
       "publicPath": "en/2026/07/21/index.html",
       "sourceFile": "20260721.body.html",
       "sha256": "2ede5979e816950786f0829e07e6e2ffd8c365e1f79fd7a91680a95fabb07f01",
-      "publicSha256": "87ce21cbbecaef79d357f5a6003916b8a8228cec309375b16824afa2bad25871"
+      "publicSha256": "1f2569faec4216bb5b972279bd250cd738f2d21ce7dad6be1a081c2534f91436"
     },
     {
       "date": "2026-07-20",
@@ -560,7 +560,7 @@
       "publicPath": "en/2026/07/20/index.html",
       "sourceFile": "20260720.body.html",
       "sha256": "199a9290e77f5a34b27b9be8ea28f76d299b7c012cd0a26787d51c44b3b00e24",
-      "publicSha256": "dd1db961f42f39407a6bdf75ad3e654922122864c239becdb27c234106af84a3"
+      "publicSha256": "7d4adbfb4bf917444516396e9c6da2a080df5e78bf485d997bd8f3e717317585"
     },
     {
       "date": "2026-07-19",
@@ -571,7 +571,7 @@
       "publicPath": "en/2026/07/19/index.html",
       "sourceFile": "20260719.body.html",
       "sha256": "96fef54843f81ef1629a72aef389d13a4011bd9b8fd789e27986ffc7215478be",
-      "publicSha256": "fc6a294efac0c70b4217a0966baf2d1ba79fa65d64c66f9fbe4cd4db46460206"
+      "publicSha256": "c5c6fa5ce9d5f9531b5eac8b7868f3fd4e0ded2c8a424061fa0587c34b191611"
     },
     {
       "date": "2026-07-18",
@@ -582,7 +582,7 @@
       "publicPath": "en/2026/07/18/index.html",
       "sourceFile": "20260718.body.html",
       "sha256": "ba914e79fa256c436d7dc3ec424f31a726ebc372d31510cc4252fd3660608fd5",
-      "publicSha256": "dba6ee87406e11411e939dbbe0abfe678758d7d5d9f8577c8e352c5fdcb919e3"
+      "publicSha256": "8020a924eeb452caeaf591940a8bbe70bae02136a4fa5802275044f7726e85a9"
     },
     {
       "date": "2026-07-17",
@@ -593,7 +593,7 @@
       "publicPath": "en/2026/07/17/index.html",
       "sourceFile": "20260717.body.html",
       "sha256": "a73fc20bb415752c3551873242c255488d6764854e0564de6d0f19a80c9b6a34",
-      "publicSha256": "4c066e3c66db5d94591ccfc59c8016d78dce53ce5cf32b3e5a03113d198700cb"
+      "publicSha256": "96c3915c85933b240e7b82e4c064718853c31e524369b1549eb0d5056048edfe"
     },
     {
       "date": "2026-07-16",
@@ -604,7 +604,7 @@
       "publicPath": "en/2026/07/16/index.html",
       "sourceFile": "20260716.body.html",
       "sha256": "c6e2dbc4d4f3628f6990d823b5ea58cd0ddc5668dc4ea0559364d9ece3df93a2",
-      "publicSha256": "4f9fff64b16e17b4e2b4850b3a1019df93e2b85c71538d06a0b6a5c2342e962d"
+      "publicSha256": "62627c5a1c625a1025e378588626207bac4af2121252459de286ed1503efe657"
     },
     {
       "date": "2026-07-15",
@@ -615,7 +615,7 @@
       "publicPath": "en/2026/07/15/index.html",
       "sourceFile": "20260715.body.html",
       "sha256": "3014a4f06c4c708ee4d3ab7dc633411ffa7014d6e1a415fa0706d42fe9d9c415",
-      "publicSha256": "78e56c315548306afb7bf3900e060a8e87a6f30b98ad73a419cd0d872e85e173"
+      "publicSha256": "b1931dead905c8afc835d61811dc4cafc7b0d53ea76e5566ee4fce8873912672"
     },
     {
       "date": "2026-07-14",
@@ -626,7 +626,7 @@
       "publicPath": "en/2026/07/14/index.html",
       "sourceFile": "20260714.body.html",
       "sha256": "2b872d6a302040b9b85b5ce36f719bf7ebf2f6041c20b2af4a954e8a474629a7",
-      "publicSha256": "d656f84c643d5fa1f364cc2e8fc4d34fa78060d36b02e675dda2aaae4e201ea1"
+      "publicSha256": "d03cb41b0123904ddb9cc4fb9ec86fd13e630b5b39b537ba0c57b1e91e2813fa"
     },
     {
       "date": "2026-07-13",
@@ -637,7 +637,7 @@
       "publicPath": "en/2026/07/13/index.html",
       "sourceFile": "20260713.body.html",
       "sha256": "d6ab16ca6e124099a3f79b349dfb03160098bc53142e3e3ba596c0c3bd208c0b",
-      "publicSha256": "870180447f49ac4bd9cc3cc5f47f9c226ef9a5cdeb82d0448d9cd0c82255f1f1"
+      "publicSha256": "25ff1cab68b3f9a9db8366aa0b4ab2ad33174dd90ab77c57a29b1a4f2266545f"
     },
     {
       "date": "2026-07-12",
@@ -648,51 +648,51 @@
       "publicPath": "en/2026/07/12/index.html",
       "sourceFile": "20260712.body.html",
       "sha256": "49413f841579ffbcee8f4dab8537c24dd101b23f74740f8c8a310a4a80f1584f",
-      "publicSha256": "cb55b13b7d58f47f4b5b5698dc0fd363022d04cec10c34a54f95b1ee904cb978"
+      "publicSha256": "018bf00c0d09f75b9d614be9b8f4398a51ab9c8a6d141d4bc196a72868c47af2"
     },
     {
       "date": "2026-07-11",
       "title": "AI Agent — The Body and Its Boundaries Take Shape",
-      "lead": "AWS is turning isolation, state retention, and pause-and-resume into cloud primitives, while Tencent is productizing dedicated state spaces for agents at massive scale. Today’s strongest momentum is not in a new brain, but in R · Resilience / Body and S · Security / Immune System.",
+      "lead": "AWS is turning isolation, state retention, and pause-and-resume into cloud primitives, while Tencent is productizing dedicated state spaces for agents at massive scale. Today’s strongest momentum is not in a new brain, but in R · Resilience / Body and S · Security / Immune System .",
       "url": "/daily/en/2026/07/11/",
       "alternateUrl": "/daily/2026/07/11/",
       "publicPath": "en/2026/07/11/index.html",
       "sourceFile": "20260711.body.html",
       "sha256": "0f17270a2ba621aad5a5ea54fcfc757bb63f8b495bb9be000f5f09eea85975e6",
-      "publicSha256": "43f0454f91f632989a053804742a3e42dd30496b15f43c9c3269c408386a8bdc"
+      "publicSha256": "752e2aa8fc3e56f2689c37fb983c134b97e85b8c19d3b55aaf0db0f13da404ec"
     },
     {
       "date": "2026-07-10",
       "title": "AI Agent — Production Accountability Moves into the Runtime",
-      "lead": "Today’s signals do not rely on grand narratives: frameworks are adding nested-state recovery, progressive tool disclosure, session TTL, execution graphs, and resource validation. For ALUX, the clearest opportunity is to consolidate these scattered fixes into a verifiable chain of accountability for long-running transactions.",
+      "lead": "Today’s signals do not rely on grand narratives: frameworks are adding nested-state recovery, progressive tool disclosure, session TTL, execution graphs, and resource validation. For ALUX , the clearest opportunity is to consolidate these scattered fixes into a verifiable chain of accountability for long-running transactions .",
       "url": "/daily/en/2026/07/10/",
       "alternateUrl": "/daily/2026/07/10/",
       "publicPath": "en/2026/07/10/index.html",
       "sourceFile": "20260710.body.html",
       "sha256": "d82a13664a0993473b1888264305dcfe2661ba021e9de4dac6f4ac04f11aa8a6",
-      "publicSha256": "522796c420facbc0c9055edb77ca3ed22d7af0201a9ba8613b9d0ec02b46011f"
+      "publicSha256": "c78fd5c417c0c1b2fe6572d06b9ed77e91099830206564f86367ee950cfc38ee"
     },
     {
       "date": "2026-07-09",
       "title": "AI Agent — Entering the Distributable, Isolated, and Auditable Phase",
-      "lead": "Today’s primary signal is that agents are no longer merely “running” inside IDEs, chat boxes, or internal automation. Across marketplaces, registries, runtime security, observability exports, and team sessions, they are becoming enterprise objects. The market is pushing agents beyond the feature layer and into the accountability boundary of the production-grade runtime.",
+      "lead": "Today’s primary signal is that agents are no longer merely “running” inside IDEs, chat boxes, or internal automation. Across marketplaces, registries, runtime security, observability exports, and team sessions, they are becoming enterprise objects. The market is pushing agents beyond the feature layer and into the accountability boundary of the production-grade runtime .",
       "url": "/daily/en/2026/07/09/",
       "alternateUrl": "/daily/2026/07/09/",
       "publicPath": "en/2026/07/09/index.html",
       "sourceFile": "20260709.body.html",
       "sha256": "d0ae2e51c9e9746fab18b3ffb476e88910ae11861566aa671da25f5f1d388741",
-      "publicSha256": "dbf7be2e161de35408722d25e7c24f17efe6c0d23db31cfcd524644094da1a8b"
+      "publicSha256": "c2f689f0cc592f91aae6d8ff1facbc43527c4ee73c83d8a43a72ef1720afedcb"
     },
     {
       "date": "2026-07-08",
       "title": "AI Agent — The Connectivity Layer Is Standardizing",
-      "lead": "Today’s central signal is that competition in the agent industry continues to shift away from “How intelligent is the model?” and toward “Who controls the tools, resources, authorization, and runtime state?” Microsoft, GitHub, AAIF-adjacent gateway work, Qwen Code, and Arcade.dev all point to the same conclusion: a production-grade agent needs a production-grade runtime capable of handling long-running transactions, permissions, recovery, and audits.",
+      "lead": "Today’s central signal is that competition in the agent industry continues to shift away from “How intelligent is the model?” and toward “Who controls the tools, resources, authorization, and runtime state?” Microsoft, GitHub, AAIF-adjacent gateway work, Qwen Code, and Arcade.dev all point to the same conclusion: a production-grade agent needs a production-grade runtime capable of handling long-running transactions , permissions, recovery, and audits.",
       "url": "/daily/en/2026/07/08/",
       "alternateUrl": "/daily/2026/07/08/",
       "publicPath": "en/2026/07/08/index.html",
       "sourceFile": "20260708.body.html",
       "sha256": "03ff58bb6d486dfff3e0a29b8bbd30aaac8d769742d6c492379b5e4e16d0dab6",
-      "publicSha256": "f853345b13d43987c288a578484ee22968292751c1ff1b0ca09907cd7b317b0a"
+      "publicSha256": "9c96020c502616049911f30deaa6c413e622e57bc85b0457152459cfc63cb24a"
     },
     {
       "date": "2026-07-07",
@@ -703,7 +703,7 @@
       "publicPath": "en/2026/07/07/index.html",
       "sourceFile": "20260707.body.html",
       "sha256": "3e09de2fa02f5fa311048fd5eccfb84d6cc4d5022b86af84f1f43f01b3eae4af",
-      "publicSha256": "b40ff57bee3bda3152c998ee084ace6b1a7d5131f35d31f3c8e270154524bdd9"
+      "publicSha256": "e20ae86fc005bd8a8f98d20ea67f31abce463f6c8cab0a78f50693f4eb5a1bdd"
     },
     {
       "date": "2026-07-06",
@@ -714,7 +714,7 @@
       "publicPath": "en/2026/07/06/index.html",
       "sourceFile": "20260706.body.html",
       "sha256": "8277667e4f71c2cb23c1beb38e6be8c23ab2ec03d256dc71f36b5398cb2db0ad",
-      "publicSha256": "1df365ae4d151cac54b1dc3476973e14c56db3ca5471a02b0dab68096011172e"
+      "publicSha256": "6dc380a8a8ad7f969de042743167dc78f9bd2ebf6cc3961da3764f00674726f3"
     },
     {
       "date": "2026-07-05",
@@ -725,7 +725,7 @@
       "publicPath": "en/2026/07/05/index.html",
       "sourceFile": "20260705.body.html",
       "sha256": "ed8c88b74ca212bfedaccb497cf146dceb9d59d3e680d16eb204021409d9c1da",
-      "publicSha256": "51718b3af0034ece08ba99b5797f7374f6cd45fec054b443a39a5d78a0d647f4"
+      "publicSha256": "e1caac6f4e4b261c2b993edb676812fa9ac439ef4adf29781640d0cf1fa5ae43"
     },
     {
       "date": "2026-07-04",
@@ -736,29 +736,29 @@
       "publicPath": "en/2026/07/04/index.html",
       "sourceFile": "20260704.body.html",
       "sha256": "69e346ea5cb05b15163898dd20db4730e4320f4107a7e44d246439c9942387c4",
-      "publicSha256": "5e7f3644375ba0561c4b18750462dbd86c863e728cb8bb0f868ac1dab7239ba5"
+      "publicSha256": "cf0874a661a591cacc6df10923b67c75656737eef5adaaebc065737db4c0fe07"
     },
     {
       "date": "2026-07-03",
       "title": "AI Agent — The Control Plane Moves Down into the Runtime",
-      "lead": "Today’s central signal is the shift from agents that “can do the work” to agents that enterprises can trust with the work. Multi-agent orchestration, connector governance, durable task queues, open-source coding agents, and Agent Gateway discussions are all intensifying, showing that the market is looking for a production-grade runtime capable of carrying long-running transactions, permissions, recovery, and audits.",
+      "lead": "Today’s central signal is the shift from agents that “can do the work” to agents that enterprises can trust with the work. Multi-agent orchestration, connector governance, durable task queues, open-source coding agents, and Agent Gateway discussions are all intensifying, showing that the market is looking for a production-grade runtime capable of carrying long-running transactions , permissions, recovery, and audits.",
       "url": "/daily/en/2026/07/03/",
       "alternateUrl": "/daily/2026/07/03/",
       "publicPath": "en/2026/07/03/index.html",
       "sourceFile": "20260703.body.html",
       "sha256": "a01238c30836467d971207a688edc32c94ab053777a44f53333676a86bbd57e8",
-      "publicSha256": "0a2da956883e4319c14343e3e61029de25d7a092a524388f611a2ed9d18e6163"
+      "publicSha256": "20b0a24b5f8c134faddf0eca99984f95f2d30976fd7c50d80adb4bc30c45f95b"
     },
     {
       "date": "2026-07-02",
       "title": "AI Agent — From Workbench to Runtime",
-      "lead": "Today’s strongest signal is not a leap by any single model. It is the convergence of shared workspaces, long-horizon CLIs, browser agents, enterprise model permissions, and security funding—all pushing agents into the production chain of accountability. ALUX should focus on the two most critical elements of RISC: R | Resilience and S | Security.",
+      "lead": "Today’s strongest signal is not a leap by any single model. It is the convergence of shared workspaces , long-horizon CLIs, browser agents, enterprise model permissions, and security funding—all pushing agents into the production chain of accountability. ALUX should focus on the two most critical elements of RISC : R | Resilience and S | Security .",
       "url": "/daily/en/2026/07/02/",
       "alternateUrl": "/daily/2026/07/02/",
       "publicPath": "en/2026/07/02/index.html",
       "sourceFile": "20260702.body.html",
       "sha256": "0ae41b6bcef28d9772c49353a8f7842f8d62d97dbd26ce3c84d8a87fbb0251ee",
-      "publicSha256": "8637a8d5191ec4bc2a4be76b325b7b275e07e04b02308d2447fd9ad1f012e67d"
+      "publicSha256": "e89f14bee1af3c40ddc67af1808b5d5f41d6d889762b37458cedc9ed2e16b9a7"
     },
     {
       "date": "2026-07-01",
@@ -769,40 +769,40 @@
       "publicPath": "en/2026/07/01/index.html",
       "sourceFile": "20260701.body.html",
       "sha256": "8bb53bb55072a450692736930f50ce1f18cf71e903cb4a0a93c9c3ba7dceef91",
-      "publicSha256": "e6e19a65d60f032f068af5092def01e86c82f63620afb0166e9c168c11ca75bf"
+      "publicSha256": "878bc423755a16595ce3f8f71ff5b2738920ce6513ff9bfa337bb4d681e7cbea"
     },
     {
       "date": "2026-06-30",
       "title": "AI Agent — Runtime Boundaries Come Into Focus",
-      "lead": "Today’s defining signal is that once agents connect to real economic actions and enterprise control planes, runtime boundaries are forced into view. Payments, gateways, persistent workspaces, local control-plane vulnerabilities, checkpoints, and observability all point to one conclusion: what enterprises actually need to buy is a production-grade runtime.",
+      "lead": "Today’s defining signal is that once agents connect to real economic actions and enterprise control planes, runtime boundaries are forced into view. Payments, gateways, persistent workspaces, local control-plane vulnerabilities, checkpoints, and observability all point to one conclusion: what enterprises actually need to buy is a production-grade runtime .",
       "url": "/daily/en/2026/06/30/",
       "alternateUrl": "/daily/2026/06/30/",
       "publicPath": "en/2026/06/30/index.html",
       "sourceFile": "20260630.body.html",
       "sha256": "e2a908d890d99a255343593f459782728bd026732117f42a03f614363453880d",
-      "publicSha256": "9d8bd121fd5a59c43391587cf91f370a7238f42483c73c8e924b809951219769"
+      "publicSha256": "ed12237090bd6a1990ce83d6ec4298fa714c8601260e4ff32ee668176a2812ff"
     },
     {
       "date": "2026-06-29",
       "title": "AI Agent — Long-Horizon Execution Becomes the Main Battleground",
-      "lead": "Today’s central signal is that AI agents are moving beyond “completing one task” toward working continuously under traceable constraints with recoverable state. OpenAI, Microsoft, AWS, LangChain, Langfuse, xAI, and Chinese open-source models all point to the same conclusion: model brains keep improving, but what enterprises truly want to buy is a production-grade runtime.",
+      "lead": "Today’s central signal is that AI agents are moving beyond “completing one task” toward working continuously under traceable constraints with recoverable state. OpenAI, Microsoft, AWS, LangChain, Langfuse, xAI, and Chinese open-source models all point to the same conclusion: model brains keep improving, but what enterprises truly want to buy is a production-grade runtime .",
       "url": "/daily/en/2026/06/29/",
       "alternateUrl": "/daily/2026/06/29/",
       "publicPath": "en/2026/06/29/index.html",
       "sourceFile": "20260629.body.html",
       "sha256": "76c76489d7e630aaeea8e47daf57c05bb94fa97e6c2bd54a5691a77f8bf91689",
-      "publicSha256": "1767497c1736c78947e1890d99316449d0e87dbdad771401835146fdbd2d817c"
+      "publicSha256": "b47719d4b08f3994bd6a83825bbf9612eb249538fc30c56b34d1300d9c0a63f2"
     },
     {
       "date": "2026-06-28",
       "title": "AI Agent — Production Readiness Begins to Converge",
-      "lead": "Today’s central signal is not that models keep getting smarter, but that competition in enterprise agents is moving down into runtime governance. Web retrieval, identity and permissions, state recovery, evaluation and observability, and long-horizon execution are all being priced simultaneously by cloud providers, open-source frameworks, and capital markets.",
+      "lead": "Today’s central signal is not that models keep getting smarter, but that competition in enterprise agents is moving down into runtime governance . Web retrieval , identity and permissions , state recovery , evaluation and observability , and long-horizon execution are all being priced simultaneously by cloud providers, open-source frameworks, and capital markets.",
       "url": "/daily/en/2026/06/28/",
       "alternateUrl": "/daily/2026/06/28/",
       "publicPath": "en/2026/06/28/index.html",
       "sourceFile": "20260628.body.html",
       "sha256": "6a2754e8e3aa062915812daa608256b063d5e686fd2bbe7fd34bb253e5394464",
-      "publicSha256": "a5856d5355da5316fe98aca70e830e643e0939a9191d31ddb6e6323fa10cae91"
+      "publicSha256": "8c58e0fcdbde77b6edecc6bedfc5c0dba2f2a49132470eafb8c850f58174fb6d"
     }
   ]
 }

@@ -8,7 +8,7 @@
  @media (max-width:520px){.page{padding-left:10px;padding-right:10px}.intel-panel{padding:14px;gap:12px}.panel-head strong{white-space:normal}.heat-list{grid-template-rows:none}.heat-row{grid-template-columns:1fr;gap:6px;align-items:start;padding:13px 0}.heat-row strong{display:inline;margin-right:8px}.heat-row .strength{margin-top:0;vertical-align:middle}.priority-note strong .nowrap,.priority-note .priority-brand,.nowrap{white-space:normal;overflow-wrap:anywhere}.risc-head{flex-direction:column;gap:4px}.stat span{white-space:normal}.sources li{overflow-wrap:anywhere}}
  </style><!-- site:i18n-head:start -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="Agent Daily &#183; AI智能体日报 | 2026-08-30">
+<meta property="og:title" content="Agent Daily · AI智能体日报 | 2026-08-30">
 <meta property="og:description" content="新模型、新产品与有趣发现。由光之十一出品。">
 <meta property="og:site_name" content="Agent Daily">
 <meta property="og:image" content="https://ai.alux.network/daily/assets/agent-daily-social-v1.png">
@@ -29,6 +29,7 @@
 <link rel="apple-touch-icon" href="/daily/assets/alux-favicon.png">
 <link rel="stylesheet" href="/daily/assets/report-site.css">
 <!-- site:i18n-head:end -->
+
 </head><body>
 <!-- site:i18n-nav:start -->
 <header class="report-sitebar">
@@ -40,9 +41,22 @@
       <a href="/daily/2026/08/30/" lang="zh-CN" aria-current="page">中文</a>
       <a href="/daily/en/2026/08/30/" lang="en">EN</a>
     </span>
+    <details class="language-more">
+      <summary aria-label="更多语言"><span aria-hidden="true">···</span></summary>
+      <div class="language-more-menu">
+      <a href="/daily/zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a>
+      <a href="/daily/ja/" lang="ja" hreflang="ja">日本語</a>
+      <a href="/daily/ko/" lang="ko" hreflang="ko">한국어</a>
+      <a href="/daily/es/" lang="es" hreflang="es">Español</a>
+      <a href="/daily/fr/" lang="fr" hreflang="fr">Français</a>
+      <a href="/daily/de/" lang="de" hreflang="de">Deutsch</a>
+      <a href="/daily/ar/" lang="ar" hreflang="ar">العربية</a>
+      </div>
+    </details>
   </nav>
 </header>
-<!-- site:i18n-nav:end --><main class="page" data-layout-version="compact-v1">
+<!-- site:i18n-nav:end -->
+<main class="page" data-layout-version="compact-v1">
 <section class="hero"><div class="hero-copy"><div class="eyebrow"><span>ALUX AI Agent Daily</span><span>2026-08-30</span><span>Global AI Brief</span></div><h1><span class="title-en">AI Agent</span><span class="title-cn">开源栈进入交付日</span></h1><p class="lead">九条信号从工具结果、持久操作、训练回放一路落到媒体管线与模型合同，AI 工程正在补齐可维护边界。</p><div class="stats" aria-label="今日情报概览"><div class="stat"><b>9</b><span>值得关注</span></div><div class="stat"><b>8</b><span>可动手试</span></div><div class="stat"><b>6</b><span>开源发现</span></div><div class="stat"><b>4</b><span>覆盖区域</span></div></div><div class="judgment"><strong>今日总判断：</strong>今天的价值不在又多一个模型，而在结果可检查、操作可恢复、训练可对齐、制品可回退，以及供应关系能否切换。</div></div><aside class="intel-panel"><div class="panel-head"><strong>今日AI导航</strong><span>工具结果·持久操作·训练回放·媒体管线·供应关系</span></div><div class="heat-summary"><b>主轴：开放能力开始补齐交付边界</b><p>九条信号覆盖 MCP 结果变换、Agent 工具超时、持久后端、RL 对齐、视觉与推理底座、音频制品和模型合同。</p></div><div class="heat-list"><div class="heat-row"><div><strong>运行控制</strong><span class="strength">3 项</span></div><div><p>Codex 开放结果检查点，Pydantic 公开持久后端，MiniMax 为流与下载划定边界。</p><em>看点：执行前后开始都有可编程边界。</em></div></div><div class="heat-row"><div><strong>训练推理</strong><span class="strength">2 层</span></div><div><p>slime 对齐训练与 rollout，LMDeploy 同时重做 MoE、缓存和多模态。</p><em>看点：正确性正在追上规模扩张。</em></div></div><div class="heat-row"><div><strong>媒体工具</strong><span class="strength">3 个</span></div><div><p>Stable Audio 修制品，Microsoft 留人工审稿，timm 把 Agent 发现收进测试。</p><em>看点：生成能力开始尊重编辑与回退链。</em></div></div><div class="heat-row"><div><strong>供应关系</strong><span class="strength">2 面</span></div><div><p>LMDeploy 扩展模型与硬件入口，OpenAI 则将结束向 Cursor 供模。</p><em>看点：接入便利和可替换性必须同时设计。</em></div></div></div><div class="priority-note"><span>今天最值得顺手试试</span><strong>用 <span class="priority-brand">Pydantic AI 2.36</span> 标记一个可撤销持久操作，再模拟中断和重复投递，检查副作用是否只发生一次。</strong></div></aside></section>
 <section class="section"><h2>RISC机器说明</h2><div class="risc-primer"><div class="risc-primer-intro"><div><p class="risc-equation">RISC = 生产级 Agent / 机器人身体的四个系统</p><p>一个真正能上生产的 Agent，不能只有大脑。它还要持续行动、扛住故障、抵御越权，并进入真实组织协作。</p></div><div class="risc-primer-line">行业已经交付了一颗出色的大脑，但生产级 Agent 还需要机体、免疫和社会。<span class="risc-primer-close"><span class="nowrap">ALUX</span> 构建的，就是这台完整机器。</span></div></div><div class="risc-primer-grid"><article class="risc-primer-card"><b>R｜强韧 / 机体</b><span>持久执行、容错、恢复与水平扩展。身体站不住，一次故障就会把工作清空。</span></article><article class="risc-primer-card"><b>I｜智能 / 大脑</b><span>模型循环、记忆、工具与编排。它决定 Agent 如何思考、调用和完成复杂工作。</span></article><article class="risc-primer-card"><b>S｜安全 / 免疫</b><span>能力对象、策略审批、回滚与审计。没有免疫，恢复与连接会扩大失控半径。</span></article><article class="risc-primer-card"><b>C｜连接 / 社会</b><span>跨公司授权、中立基底、会话类型与生态连接。没有社会接口，Agent 只能停在单一产品里。</span></article></div></div></section>
 <section class="section"><h2>AI Agent雷达</h2><div class="radar"><article class="item"><span class="tag green">执行边界可编程</span><h3>Codex 与 MiniMax 收紧工具入口</h3><p>Codex 把工具结果交给扩展检查，MiniMax 则给长时视频流和资源下载设定上限；工具的输入与输出都开始出现可核验边界。</p></article><article class="item"><span class="tag amber">恢复语义进入框架</span><h3>Pydantic 与 slime 固化恢复语义</h3><p>一个给持久操作开放后端，一个让训练和 rollout 确定性对齐；两者都在减少“看似继续、实际重做”的隐性分叉。</p></article><article class="item"><span class="tag">供应链成为变量</span><h3>Stable Audio 与 Cursor 暴露供应风险</h3><p>前者因校准问题撤下部署制品，后者因所有权变化面临供模收尾；模型可用不等于供应链稳定。</p></article></div></section>
@@ -57,4 +71,5 @@
   <a href="/daily/">AI智能体情报日报 · 2026-08-30</a>
 </footer>
 <!-- site:issue-footer:end -->
+
 </body></html>

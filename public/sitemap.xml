@@ -4,12 +4,117 @@
     <loc>https://ai.alux.network/daily/</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
   </url>
   <url>
     <loc>https://ai.alux.network/daily/en/</loc>
     <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
+  </url>
+  <url>
+    <loc>https://ai.alux.network/daily/zh-Hant/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
+  </url>
+  <url>
+    <loc>https://ai.alux.network/daily/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
+  </url>
+  <url>
+    <loc>https://ai.alux.network/daily/ko/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
+  </url>
+  <url>
+    <loc>https://ai.alux.network/daily/es/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
+  </url>
+  <url>
+    <loc>https://ai.alux.network/daily/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
+  </url>
+  <url>
+    <loc>https://ai.alux.network/daily/de/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
+  </url>
+  <url>
+    <loc>https://ai.alux.network/daily/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://ai.alux.network/daily/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ai.alux.network/daily/en/" />
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://ai.alux.network/daily/zh-Hant/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://ai.alux.network/daily/ja/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://ai.alux.network/daily/ko/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://ai.alux.network/daily/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ai.alux.network/daily/fr/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://ai.alux.network/daily/de/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ai.alux.network/daily/ar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ai.alux.network/daily/" />
   </url>
   <url>

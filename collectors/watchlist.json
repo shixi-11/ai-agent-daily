@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "lookbackDays": 14,
+  "githubRepos": [
+    "openai/openai-python",
+    "openai/codex",
+    "anthropics/anthropic-sdk-python",
+    "google-gemini/gemini-cli",
+    "huggingface/transformers",
+    "huggingface/huggingface_hub",
+    "deepseek-ai/DeepSeek-V3",
+    "InternLM/InternLM",
+    "QwenLM/Qwen3",
+    "MoonshotAI/Kimi-K2",
+    "MiniMax-AI/MiniMax-M1",
+    "meta-llama/llama-models",
+    "vercel/ai",
+    "sst/opencode",
+    "cline/cline",
+    "modelcontextprotocol/servers",
+    "langchain-ai/langchain",
+    "microsoft/markitdown"
+  ],
+  "huggingfaceOrgs": [
+    "openai",
+    "deepseek-ai",
+    "internlm",
+    "Qwen",
+    "moonshotai",
+    "MiniMaxAI",
+    "meta-llama",
+    "google",
+    "mistralai",
+    "anthropic"
+  ],
+  "rssFeeds": [
+    { "id": "openai-news", "url": "https://openai.com/news/rss.xml" },
+    { "id": "anthropic-news", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/master/feeds/anthropic.xml", "optional": true },
+    { "id": "google-ai-blog", "url": "https://blog.google/technology/ai/rss/" },
+    { "id": "huggingface-blog", "url": "https://huggingface.co/blog/feed.xml" },
+    { "id": "simonwillison", "url": "https://simonwillison.net/atom.xml" },
+    { "id": "github-blog", "url": "https://github.blog/ai-and-ml/feed/" }
+  ],
+  "persistentWatch": [
+    {
+      "id": "minimax-h3-regenerate-2k",
+      "label": "MiniMax H3-Regenerate-2K local open release",
+      "note": "Distinguish the existing 2K API workflow from a still-pending local open release."
+    }
+  ]
+}

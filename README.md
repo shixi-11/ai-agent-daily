@@ -45,6 +45,8 @@
 | 固定日期地址 | `/daily/YYYY/MM/DD/` | `/daily/en/YYYY/MM/DD/` |
 | 机器可读归档 | [中文归档数据](https://ai.alux.network/daily/archive.json) | [English Archive Data](https://ai.alux.network/daily/en/archive.json) |
 
+顶栏中/EN 之外，首页还提供繁中、日、韩、西、法、德、阿 7 个语种入口。可选语种日期页只在该期已审译文入库后生成，不回写历史 72 期。Linux 重建站点：`node scripts/sync-reports.cjs && node scripts/verify-site.cjs`。
+
 每期固定日期地址长期保留，不被后续日报覆盖。首页可以直接查看最新一期，也可以按日期查阅全部历史日报。
 
 ## 编辑与出版原则

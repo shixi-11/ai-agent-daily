@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Agent Daily</title>
+    <link>https://ai.alux.network/daily/en/</link>
+    <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
+    <language>en</language>
+    <item>
+      <title>2026-09-14 AI Agent — Capabilities become verifiable work</title>
+      <link>https://ai.alux.network/daily/en/2026/09/14/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/14/</guid>
+      <pubDate>Sun, 13 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Official model weights, specialized inference engines, and standalone applications are arriving together. What matters is not just what they can do, but how they run and how their results can be checked.</description>
+    </item>
+    <item>
+      <title>2026-09-13 AI Agent — Evidence Beyond the Model</title>
+      <link>https://ai.alux.network/daily/en/2026/09/13/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/13/</guid>
+      <pubDate>Sat, 12 Sep 2026 16:00:00 GMT</pubDate>
+      <description>One model edits speech, compact encoders retrieve pages, and a recording assistant inspects frames. Small experiments also expose their methods, limits, and failures.</description>
+    </item>
+    <item>
+      <title>2026-09-12 AI Agent — Keep Working After Generation</title>
+      <link>https://ai.alux.network/daily/en/2026/09/12/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/12/</guid>
+      <pubDate>Fri, 11 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Rooms can be measured, image workflows rewired, and scientific predictions searched. Today's focus is not just what AI generates, but how its outputs can be checked, changed, and put to use.</description>
+    </item>
+    <item>
+      <title>2026-09-11 AI Agent — New models meet real tasks</title>
+      <link>https://ai.alux.network/daily/en/2026/09/11/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/11/</guid>
+      <pubDate>Thu, 10 Sep 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek updates its vision architecture and GPT‑Live‑1 opens API access. Translation, 3D avatars, and lunar science give model capabilities more specific uses.</description>
+    </item>
+    <item>
+      <title>2026-09-10 AI Agent — More control for creators</title>
+      <link>https://ai.alux.network/daily/en/2026/09/10/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/10/</guid>
+      <pubDate>Wed, 09 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Suno v6 introduces targeted song edits, while animation, ad, and video tools add precise controls. Research agents face new tests of sustained performance.</description>
+    </item>
+    <item>
+      <title>2026-09-09 AI Agent — Agents Enter Verification Loops</title>
+      <link>https://ai.alux.network/daily/en/2026/09/09/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/09/</guid>
+      <pubDate>Tue, 08 Sep 2026 16:00:00 GMT</pubDate>
+      <description>From visual intent and formal proofs to experimental feedback and tool guardrails, agent capabilities are entering workflows that can be inspected, resumed, and governed.</description>
+    </item>
+    <item>
+      <title>2026-09-08 AI Agent — Agents Deliver Verifiable Work</title>
+      <link>https://ai.alux.network/daily/en/2026/09/08/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/08/</guid>
+      <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
+      <description>From machine-checked proofs and durable task boards to local documents and secret injection, agents are turning answers into work that can be inspected, resumed, and governed.</description>
+    </item>
+    <item>
+      <title>2026-09-07 AI Agent — The Agent Body Takes Shape</title>
+      <link>https://ai.alux.network/daily/en/2026/09/07/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/07/</guid>
+      <pubDate>Sun, 06 Sep 2026 16:00:00 GMT</pubDate>
+      <description>From speaker identification and road planning to 3D topology and new chips, the perception and execution stacks around AI models are becoming more substantial.</description>
+    </item>
+    <item>
+      <title>2026-09-06 AI Agent — Enters the Real World</title>
+      <link>https://ai.alux.network/daily/en/2026/09/06/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/06/</guid>
+      <pubDate>Sat, 05 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Sixteen signals put new models, voice pipelines, interactive worlds, browser compute, and robotics research on the same map.</description>
+    </item>
+    <item>
+      <title>2026-09-05 AI Agent — Skills, Sessions, Operations: Boundaries Redrawn</title>
+      <link>https://ai.alux.network/daily/en/2026/09/05/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/05/</guid>
+      <pubDate>Fri, 04 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Eight signals link skill costs, session ownership, and stateless MCP with cluster control planes, memory cleanup, and cross-population modeling limits.</description>
+    </item>
+    <item>
+      <title>2026-09-04 AI Agent — Control, Memory &amp; Local Compute Become Assets</title>
+      <link>https://ai.alux.network/daily/en/2026/09/04/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/04/</guid>
+      <pubDate>Thu, 03 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Nine signals connect infrastructure as code, cross-tool memory, and finding identity to model distribution, local compute pools, and scientific reconstruction.</description>
+    </item>
+    <item>
+      <title>2026-09-03 AI Agent — Permissions, Failures, Routing Move Into the Control Plane</title>
+      <link>https://ai.alux.network/daily/en/2026/09/03/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/03/</guid>
+      <pubDate>Wed, 02 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Nine signals connect managed MCP, visible failure, and cross-region inference to production loops for vulnerability repair and code documentation.</description>
+    </item>
+    <item>
+      <title>2026-09-02 AI Agent — Context Limits, Execution Controls Tighten</title>
+      <link>https://ai.alux.network/daily/en/2026/09/02/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/02/</guid>
+      <pubDate>Tue, 01 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Eight signals connect context management, tool budgets, and inference queues to a cyber-defense loop powered by more than 50 agents.</description>
+    </item>
+    <item>
+      <title>2026-09-01 AI Agent — Production Defaults Are Rewritten</title>
+      <link>https://ai.alux.network/daily/en/2026/09/01/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/01/</guid>
+      <pubDate>Mon, 31 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Eight signals connect visual agents, framework security, skill governance, and open medical models to advertising as a new AI revenue base.</description>
+    </item>
+    <item>
+      <title>2026-08-31 AI Agent — Production Boundaries Emerge</title>
+      <link>https://ai.alux.network/daily/en/2026/08/31/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/31/</guid>
+      <pubDate>Sun, 30 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Seven signals—from reconnect handling and replay-state cleanup to browser inference, spatial vision, and population-aware speech evaluation—bring production boundaries into sharper focus.</description>
+    </item>
+    <item>
+      <title>2026-08-30 AI Agent — Open Stacks Move Into Delivery</title>
+      <link>https://ai.alux.network/daily/en/2026/08/30/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/30/</guid>
+      <pubDate>Sat, 29 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Nine signals map the path from tool results, durable operations, and training-rollout alignment to media pipelines and model contracts. AI engineering is gaining the explicit boundaries required for maintainable delivery.</description>
+    </item>
+    <item>
+      <title>2026-08-29 AI Agents — Gain a Control Plane</title>
+      <link>https://ai.alux.network/daily/en/2026/08/29/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/29/</guid>
+      <pubDate>Fri, 28 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Eight signals point in one direction: sessions, evaluation, cache placement, transactions, and failure domains are becoming explicit control surfaces for agent systems.</description>
+    </item>
+    <item>
+      <title>2026-08-28 AI Agents — Become Systems</title>
+      <link>https://ai.alux.network/daily/en/2026/08/28/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/28/</guid>
+      <pubDate>Thu, 27 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Eight signals push agents deeper into the system stack: restricted execution, forked collaboration, file memory, geographic inference, specialized CPUs, and planetary prediction.</description>
+    </item>
+    <item>
+      <title>2026-08-27 AI Agents — Build on Open Systems</title>
+      <link>https://ai.alux.network/daily/en/2026/08/27/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/27/</guid>
+      <pubDate>Wed, 26 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Seven signals show agents moving beyond single-session assistants toward production systems that coordinate tasks, Skills, evaluation, and hardware.</description>
+    </item>
+    <item>
+      <title>2026-08-26 AI Agents — Enter Real Work</title>
+      <link>https://ai.alux.network/daily/en/2026/08/26/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/26/</guid>
+      <pubDate>Tue, 25 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Six signals point in one direction: agents are bringing industry permissions, local memory, and custom silicon into real workflows.</description>
+    </item>
+    <item>
+      <title>2026-08-25 AI Agent — Openness Is Expanding from Models to Systems</title>
+      <link>https://ai.alux.network/daily/en/2026/08/25/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/25/</guid>
+      <pubDate>Mon, 24 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Seven signals point to open weights, complete harnesses, installable Skills, and machine proofs moving AI beyond capability demos toward inspectable systems.</description>
+    </item>
+    <item>
+      <title>2026-08-24 AI Agent — Recovery Needs Evidence</title>
+      <link>https://ai.alux.network/daily/en/2026/08/24/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/24/</guid>
+      <pubDate>Sun, 23 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Nine changes converge on one point: for agents to be genuinely useful, recovery, authorization, evidence, and the execution environment must work as one.</description>
+    </item>
+    <item>
+      <title>2026-08-23 AI Agents — Boundaries Become the Product</title>
+      <link>https://ai.alux.network/daily/en/2026/08/23/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/23/</guid>
+      <pubDate>Sat, 22 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Eight changes show that reliable agents increasingly depend on sessions, permissions, tool gateways, research discipline, and memory infrastructure.</description>
+    </item>
+    <item>
+      <title>2026-08-22 AI Agents — Reliability Moves Into View</title>
+      <link>https://ai.alux.network/daily/en/2026/08/22/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/22/</guid>
+      <pubDate>Fri, 21 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Eight changes ask the same practical question: how can agents wait, recover, install, upgrade, and operate real interfaces more reliably?</description>
+    </item>
+    <item>
+      <title>2026-08-21 AI Agents — Tools Are Becoming Systems</title>
+      <link>https://ai.alux.network/daily/en/2026/08/21/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/21/</guid>
+      <pubDate>Thu, 20 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Eight shifts that materially affect the user experience: multitasking, recovery, secret handling, observable memory, local inference, and confidential GPUs.</description>
+    </item>
+    <item>
+      <title>2026-08-20 AI Agent — Control Planes Move Into the Runtime</title>
+      <link>https://ai.alux.network/daily/en/2026/08/20/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/20/</guid>
+      <pubDate>Wed, 19 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Today’s most consequential shifts are not in conversational ability: guardrails, network egress, sessions, memory, and run evidence are beginning to constrain execution directly.</description>
+    </item>
+    <item>
+      <title>2026-08-18 AI Agent — Permissions and Recovery Tighten Together</title>
+      <link>https://ai.alux.network/daily/en/2026/08/18/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/18/</guid>
+      <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
+      <description>The day’s most consequential pattern is shared across Codex, Claude Code, Google ADK, Qwen Code, Browser Use, and Langfuse: permissions, sessions, recovery, and failure are moving from implicit behavior into explicit contracts.</description>
+    </item>
+    <item>
+      <title>2026-08-17 AI Agent — Boundaries Become Runtime Contracts</title>
+      <link>https://ai.alux.network/daily/en/2026/08/17/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/17/</guid>
+      <pubDate>Sun, 16 Aug 2026 16:00:00 GMT</pubDate>
+      <description>The day's most consequential changes are not new features. Timeouts, network isolation, identity injection, session forks, daemon recovery, and tool failures are becoming explicit, testable boundaries.</description>
+    </item>
+    <item>
+      <title>2026-08-16 AI Agent — Run State Becomes Verifiable</title>
+      <link>https://ai.alux.network/daily/en/2026/08/16/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/16/</guid>
+      <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
+      <description>Today’s highest-value changes are not about model parameters. They are about run state: tests, invocation identity, approval rounds, compaction forks, terminal exceptions, and context budgets are gaining verifiable boundaries.</description>
+    </item>
+    <item>
+      <title>2026-08-15 AI Agent — Provenance and capability determine execution</title>
+      <link>https://ai.alux.network/daily/en/2026/08/15/</link>
+      <guid>https://ai.alux.network/daily/en/2026/08/15/</guid>
+      <pubDate>Fri, 14 Aug 2026 16:00:00 GMT</pubDate>
+      <description>The consequential shift is not another tool. Browser origin, tool capability, executed evidence, observation completeness, and recovery scope are becoming the criteria that determine whether an agent action may continue.</description>
+    </item>
+  </channel>
+</rss>
