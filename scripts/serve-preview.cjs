@@ -4,7 +4,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const { rewriteDailyText } = require('./daily-public-presentation.cjs');
+const { rewriteDailyText, fallbackDailyPath } = require('./daily-public-presentation.cjs');
 const { generateLive } = require('./generate-live.cjs');
 const { renderLiveHtml } = require('./lib/live-render.cjs');
 
@@ -81,6 +81,20 @@ function resolvePublic(urlPath) {
   return fs.existsSync(candidate) && fs.statSync(candidate).isFile() ? candidate : null;
 }
 
+function fallbackLocation(urlPath) {
+  let clean = decodeURIComponent((urlPath || '/').split('?')[0]);
+  let prefix = '/';
+  if (clean.startsWith('/ai/agent-daily/')) {
+    prefix = '/ai/agent-daily/';
+    clean = clean.slice('/ai/agent-daily'.length);
+  } else if (clean.startsWith('/daily/')) {
+    prefix = '/daily/';
+    clean = clean.slice('/daily'.length);
+  }
+  const fallback = fallbackDailyPath(clean.replace(/^\/+/, ''));
+  return fallback ? `${prefix}${fallback}`.replace(/\/{2,}/g, '/') : null;
+}
+
 function injectHomeLive(html, urlPath) {
   if (!liveBriefing || !liveBriefing.items || !html.includes('data-live-list')) return html;
   const english = /\/en(\/|$)/.test(urlPath);
@@ -127,6 +141,12 @@ const server = http.createServer((req, res) => {
 
   const filePath = resolvePublic(urlPath);
   if (!filePath) {
+    const fallback = fallbackLocation(pathOnly);
+    if (fallback) {
+      res.writeHead(302, { location: fallback, 'cache-control': 'no-store' });
+      res.end();
+      return;
+    }
     const notFound = path.join(publicRoot, '404.html');
     res.writeHead(404, { 'content-type': mimeTypes['.html'] });
     res.end(fs.existsSync(notFound) ? fs.readFileSync(notFound) : 'Not found');

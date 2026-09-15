@@ -17,4 +17,13 @@ function rewriteDailyText(text) {
 }
 
 
-module.exports = { rewriteDailyText };
+function fallbackDailyPath(value) {
+  if (typeof value !== 'string') return null;
+  const path = value.replace(/^\/+|\/+$/g, '');
+  const match = path.match(/^(zh-Hant|ja|ko|es|fr|de|ar)\/(latest|20\d{2}\/\d{2}\/\d{2})$/);
+  if (!match) return null;
+  const rest = `${match[2]}/`;
+  return match[1] === 'zh-Hant' ? rest : `en/${rest}`;
+}
+
+module.exports = { rewriteDailyText, fallbackDailyPath };
