@@ -4,9 +4,23 @@ on:
   schedule:
     - cron: '50 16 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'content/zh/**'
+      - 'content/en/**'
+      - 'locales/glossary.json'
+      - 'scripts/translate-issues.cjs'
+      - 'scripts/lib/align-html.cjs'
+      - 'scripts/lib/translate.cjs'
+      - '.github/workflows/translate.yml'
 
 permissions:
   contents: write
+
+concurrency:
+  group: translate-main
+  cancel-in-progress: false
 
 jobs:
   translate:
@@ -21,8 +35,8 @@ jobs:
           python-version: '3.12'
       - name: Install OpenCC
         run: pip install opencc-python-reimplemented
-      - name: Convert Traditional Chinese archive and translate latest issue
-        run: node scripts/translate-issues.cjs --hant-all --latest --continue
+      - name: Convert Traditional Chinese and translate recent issues
+        run: node scripts/translate-issues.cjs --hant-all --backfill 3 --continue
       - name: Rebuild public pages
         run: node scripts/sync-reports.cjs
       - name: Publish translations

@@ -76,6 +76,7 @@
     .live-strip p{margin:0;color:#5d6877;font-size:14px;line-height:1.65;max-width:520px}
     .live-strip-list{display:grid;background:rgba(255,255,255,.82);border:1px solid var(--line)}
     .live-story{display:grid;grid-template-columns:108px minmax(0,1fr);gap:12px;align-items:center;min-height:72px;padding:14px 16px;text-decoration:none;border-bottom:1px solid var(--line);color:inherit}
+    .live-story:first-child{background:#f3faf7;box-shadow:inset 3px 0 0 #0f766e}
     .live-story:last-child{border-bottom:0}.live-story:hover{background:#f0f6f4}
     .live-story small{color:#0f766e;font-size:11px;font-weight:800}
     .live-story strong{display:block;color:#19243a;font-size:15px;line-height:1.4}
@@ -182,7 +183,7 @@
       const moreLabel = more ? more.textContent : '{{LIVE_OPEN}}';
       const escape = (value) => String(value || '').replace(/[&<>"]/g, (ch) => ({'&':'&','<':'<','>':'>','"':'"'}[ch]));
       const fill = (items) => {
-        list.innerHTML = items.slice(0, 4).map((item) => '<a class="live-story" href="' + escape(item.url || moreHref) + '" target="_blank" rel="noopener"><small>' + escape(item.sourceLabel || item.source || '') + '</small><strong>' + escape(item.title) + '</strong></a>').join('') + '<a class="live-strip-fallback" href="' + moreHref + '">' + moreLabel + '</a>';
+        list.innerHTML = items.slice(0, 4).map((item) => '<a class="live-story" href="' + escape(item.url || moreHref) + '" target="_blank" rel="noopener"><small>' + escape(item.sourceLabel || item.source || '') + (item.category ? ' · ' + escape(item.category) : '') + '</small><strong>' + escape(item.title) + '</strong></a>').join('') + '<a class="live-strip-fallback" href="' + moreHref + '">' + moreLabel + '</a>';
       };
       const urls = ['{{BASE_PATH}}/live/latest.json', '{{BASE_PATH}}/api/live.json', '/api/live.json'];
       (async () => {

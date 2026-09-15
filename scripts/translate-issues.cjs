@@ -86,14 +86,10 @@ async function main() {
   const dates = listChineseDates(siteRoot);
   if (!dates.length) throw new Error('没有中文日报');
   const latest = dates[dates.length - 1];
-  let selectedDates = [];
-  if (args.date) selectedDates = [String(args.date)];
-  else if (args.latest || args['latest'] === true) selectedDates = [latest];
-  if (args['hant-all']) {
-    selectedDates = dates;
-  } else if (!selectedDates.length) {
-    selectedDates = [latest];
-  }
+  const backfill = Math.max(1, Number(args.backfill || (args.latest ? 1 : 1)));
+  const mintDates = args.date ? [String(args.date)] : dates.slice(-backfill);
+  let selectedDates = args['hant-all'] ? dates : mintDates;
+  if (args.date && !args['hant-all']) selectedDates = mintDates;
 
   let locales = optionalLocales;
   if (args.locales) {
@@ -103,7 +99,7 @@ async function main() {
       if (!locale || locale.kind !== 'optional-translation') throw new Error(`不是可选语种：${id}`);
       return locale;
     });
-  } else if (args['hant-all'] && !args.latest && !args.date) {
+  } else if (args['hant-all'] && !args.latest && !args.date && !args.backfill) {
     locales = [localesById['zh-Hant']];
   }
 
@@ -112,8 +108,8 @@ async function main() {
   const results = [];
   for (const dateIso of selectedDates) {
     for (const locale of locales) {
-      if (args['hant-all'] && !args.latest && !args.date && locale.id !== 'zh-Hant') continue;
-      if (args.latest && args['hant-all'] && dateIso !== latest && locale.id !== 'zh-Hant') continue;
+      if (locale.id !== 'zh-Hant' && !mintDates.includes(dateIso)) continue;
+      if (args['hant-all'] && !args.backfill && !args.latest && !args.date && locale.id !== 'zh-Hant') continue;
       try {
         const row = await translateOne(siteRoot, dateIso, locale, {
           manifest,

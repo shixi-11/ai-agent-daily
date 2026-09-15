@@ -515,3 +515,79 @@ html[lang="en-US"] .panel-head span {
     font-size: 11px;
   }
 }
+
+.page .stat:first-child {
+  background: #14213d;
+  border-color: #14213d;
+}
+
+.page .stat:first-child b {
+  color: #fff;
+}
+
+.page .stat:first-child span {
+  color: rgba(255, 255, 255, .76);
+}
+
+.page .judgment {
+  border-left: 4px solid #0f766e;
+}
+
+.page .priority-note {
+  border-left: 4px solid #0f766e;
+}
+
+.page .signals > .signal:first-child,
+.page .signal-lead {
+  border-color: #9ec9bf;
+  box-shadow: 0 12px 28px rgba(15, 118, 110, .08);
+}
+
+.page .signal-lead {
+  border-left: 4px solid #0f766e;
+  background: linear-gradient(90deg, #f3faf7 0%, #fff 46%);
+}
+
+.page .lead-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  margin: 0 0 8px;
+  padding: 0 8px;
+  background: #0f766e;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.page .meta span:first-child {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  min-height: 22px;
+  padding: 0 6px;
+  background: #14213d;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+
+.page .source-tier {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #e8f4f1;
+}
+
+.page .radar .item:first-child {
+  border-color: #0f766e;
+  background: #f4faf8;
+}
+
+.page .risc-primer-card:first-child {
+  border-color: #0f766e;
+  background: #f3faf7;
+}

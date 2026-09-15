@@ -31,7 +31,7 @@ a{color:var(--indigo);text-decoration:none;border-bottom:1px solid rgba(34,53,11
 .heat-row:last-child{border-bottom:0}
 .heat-row strong{display:block;font-size:15px;color:#172033}
 .heat-row p{margin:0;color:#3e4856;font-size:13px;line-height:1.45}
-.filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0;position:sticky;top:0;z-index:12;padding:10px 0;background:linear-gradient(#f5f7fa 70%,rgba(245,247,250,.92))}
 .filters button{min-height:40px;padding:0 12px;border:1px solid var(--line-strong);background:#fff;color:#22356f;font-weight:700;font-size:13px;cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
 .section{padding:36px 0;border-bottom:1px solid var(--line)}.section:last-child{border-bottom:0}
@@ -39,8 +39,14 @@ a{color:var(--indigo);text-decoration:none;border-bottom:1px solid rgba(34,53,11
 .radar{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 .item,.signal{background:#fff;border:1px solid var(--line);padding:18px 20px;min-width:0}
 .tag{display:inline-flex;align-items:center;font-size:12px;font-weight:800;color:#22356f;background:#e8edf8;padding:4px 9px;border-radius:999px}
-.tag.green{color:#166049;background:#dcefe8}.tag.amber{color:#805711;background:#efe5ce}
+.tag.green,.tag-new-site,.tag-open-source{color:#166049;background:#dcefe8}.tag.amber,.tag-research{color:#805711;background:#efe5ce}
+.tag-agent,.tag-model-platform{color:#22356f;background:#e8edf8}.tag-product{color:#0f5e55;background:#edf4f2}
 .item h3,.signal h3{font-size:19px;line-height:1.3;margin:12px 0 8px;color:#172033}
+.signal-lead{border-left:4px solid #0f766e;background:linear-gradient(90deg,#f3faf7 0%,#fff 46%)}
+.lead-kicker{display:inline-flex;align-items:center;min-height:24px;margin:0 0 8px;padding:0 8px;background:#0f766e;color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em}
+.stat:first-child{background:#14213d;border-color:#14213d}.stat:first-child b{color:#fff}.stat:first-child span{color:rgba(255,255,255,.76)}
+.judgment{border-left:4px solid #0f766e}
+.radar .item:first-child{border-color:#0f766e;background:#f4faf8}
 .signals{display:grid;gap:12px}
 .meta{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:7px 12px}
 .meta a{border-bottom:0;color:#0f5e55;font-weight:750}
@@ -121,8 +127,12 @@ function cardMarkup(item, index, locale) {
   const noteLabel = isEn ? 'Keep in mind' : '注意点';
   const stars = item.stars ? `<span>GitHub Stars ${item.stars}</span>` : '';
   const license = item.license ? `<span>${encodeHtml(item.license)}</span>` : '';
-  return `<article class="signal" data-category="${encodeHtml(item.category)}">
+  const lead = item.isFeature
+    ? `<span class="lead-kicker">${isEn ? 'LEAD' : '今日重点'}</span>`
+    : '';
+  return `<article class="signal${item.isFeature ? ' signal-lead' : ''}" data-category="${encodeHtml(item.category)}">
   <div>
+    ${lead}
     <div class="meta"><span>${String(index + 1).padStart(2, '0')}</span><span>${encodeHtml(item.sourceLabel)}</span><span>${encodeHtml(item.region)}</span><span>${encodeHtml(item.publishedAt)} / ${encodeHtml(item.observedAt)}</span><span>${encodeHtml(cat)}</span>${stars}${license}<a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">source</a></div>
     <h3>${encodeHtml(item.title)}</h3>
     <p><strong>${happened}：</strong>${encodeHtml(what)}</p>
@@ -147,7 +157,7 @@ function renderLiveHtml(briefing, locale = 'zh', basePath = '/daily') {
     ['research', isEn ? 'Research' : '研究'],
     ['product', isEn ? 'Products' : '产品'],
   ];
-  const radar = (briefing.radar || []).map((card) => `<article class="item"><span class="tag">${encodeHtml(isEn ? card.tagEn : card.tagZh)}</span><h3>${encodeHtml(isEn ? card.titleEn : card.titleZh)}</h3><p>${encodeHtml(isEn ? card.bodyEn : card.bodyZh)}</p></article>`).join('');
+  const radar = (briefing.radar || []).map((card, index) => `<article class="item"><span class="tag tag-${encodeHtml(card.category || '')}${index === 0 ? ' green' : ''}">${encodeHtml(isEn ? card.tagEn : card.tagZh)}</span><h3>${encodeHtml(isEn ? card.titleEn : card.titleZh)}</h3><p>${encodeHtml(isEn ? card.bodyEn : card.bodyZh)}</p></article>`).join('');
   const features = briefing.items.filter((item) => item.isFeature);
   const rest = briefing.items.filter((item) => !item.isFeature);
   const sources = briefing.items.map((item) => `<li><a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">${encodeHtml(item.sourceLabel)}：${encodeHtml(item.title)}</a></li>`).join('');
@@ -253,7 +263,7 @@ function injectHomeLiveStrip(html, briefing, locale = 'zh', basePath = '/daily')
   const href = isEn ? `${basePath}/live/en/` : `${basePath}/live/`;
   const more = isEn ? 'Open the live radar ↗' : '打开完整自动雷达 ↗';
   const items = briefing.items.slice(0, 4).map((item) => (
-    `<a class="live-story" href="${encodeHtml(item.url)}" target="_blank" rel="noopener"><small>${encodeHtml(item.sourceLabel)}</small><strong>${encodeHtml(item.title)}</strong></a>`
+    `<a class="live-story" href="${encodeHtml(item.url)}" target="_blank" rel="noopener"><small>${encodeHtml(item.sourceLabel)}${item.categoryZh || item.categoryEn ? ` · ${encodeHtml(locale === 'en' ? item.categoryEn : item.categoryZh)}` : ''}</small><strong>${encodeHtml(item.title)}</strong></a>`
   )).join('');
   const markup = `<div class="live-strip-list" data-live-list>${items}<a class="live-strip-fallback" href="${href}">${more}</a></div>`;
   return html.replace(/<div class="live-strip-list"[^>]*>[\s\S]*?<\/div>/, markup);
