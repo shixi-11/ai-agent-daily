@@ -6,7 +6,7 @@ const path = require('path');
 const { writeUtf8, parseArgs } = require('./lib/io.cjs');
 const { collectAll } = require('./lib/live-collect.cjs');
 const { composeBriefing } = require('./lib/live-compose.cjs');
-const { renderLiveHtml, renderTeaser } = require('./lib/live-render.cjs');
+const { renderLiveHtml, renderTeaser, injectAllHomepages } = require('./lib/live-render.cjs');
 const { shanghaiDateIso } = require('./lib/locales.cjs');
 
 async function generateLive(siteRoot, options = {}) {
@@ -28,6 +28,7 @@ async function generateLive(siteRoot, options = {}) {
   writeUtf8(path.join(liveRoot, 'en/index.html'), renderLiveHtml(briefing, 'en', basePath));
   writeUtf8(path.join(liveRoot, year, month, day, 'index.html'), renderLiveHtml(briefing, 'zh', basePath));
   writeUtf8(path.join(siteRoot, 'collectors/out', `${dateIso}.live.json`), `${JSON.stringify({ collectedAt: collected.collectedAt, counts: collected.counts, feedReports: collected.feedReports }, null, 2)}\n`);
+  injectAllHomepages(path.join(siteRoot, 'public'), briefing, basePath);
 
   return { briefing, collected, liveRoot };
 }

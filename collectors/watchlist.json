@@ -56,6 +56,8 @@
     { "id": "techcrunch-ai", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "optional": true, "weight": 5, "region": "美国", "kind": "press" },
     { "id": "theverge-ai", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "optional": true, "weight": 5, "region": "美国", "kind": "press" },
     { "id": "hn-ai", "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+agent+OR+MCP", "weight": 6, "region": "全球社区", "kind": "community" },
+    { "id": "hn-show", "url": "https://hnrss.org/show?q=AI+OR+LLM+OR+agent+OR+MCP", "optional": true, "weight": 8, "region": "全球社区", "kind": "new-site" },
+    { "id": "producthunt", "url": "https://www.producthunt.com/feed", "optional": true, "weight": 6, "region": "全球社区", "kind": "new-site" },
     { "id": "arxiv-cs-ai", "url": "https://export.arxiv.org/rss/cs.AI", "weight": 7, "region": "全球研究", "kind": "research" },
     { "id": "arxiv-cs-cl", "url": "https://export.arxiv.org/rss/cs.CL", "weight": 7, "region": "全球研究", "kind": "research" },
     { "id": "arxiv-cs-lg", "url": "https://export.arxiv.org/rss/cs.LG", "optional": true, "weight": 6, "region": "全球研究", "kind": "research" },

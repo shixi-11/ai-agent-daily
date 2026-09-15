@@ -127,7 +127,7 @@
       <div>
         <p class="live-kicker">自动雷达 · 公开源</p>
         <h2 id="live-title">今日正在发生</h2>
-        <p>站点自己抓取官方博客、GitHub 与 Hugging Face，不调用 GPT，也不走付费新闻接口。精编日报仍按原归档阅读。</p>
+        <p>站点自己抓取官方博客、GitHub、新仓库与 Show HN，不调用 GPT，也不走付费新闻接口。精编日报仍按原归档阅读。</p>
       </div>
       <div class="live-strip-list" data-live-list>
         <a class="live-strip-fallback" href="{{BASE_PATH}}/live/">打开今日自动雷达 ↗</a>
@@ -183,7 +183,7 @@
       const fill = (items) => {
         list.innerHTML = items.slice(0, 4).map((item) => '<a class="live-story" href="' + escape(item.url || moreHref) + '" target="_blank" rel="noopener"><small>' + escape(item.sourceLabel || item.source || '') + '</small><strong>' + escape(item.title) + '</strong></a>').join('') + '<a class="live-strip-fallback" href="' + moreHref + '">' + moreLabel + '</a>';
       };
-      const urls = ['/api/live.json', '{{BASE_PATH}}/live/latest.json', '/live/latest.json'];
+      const urls = ['{{BASE_PATH}}/live/latest.json', '{{BASE_PATH}}/api/live.json', '/api/live.json'];
       (async () => {
         for (const url of urls) {
           try {

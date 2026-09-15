@@ -4,6 +4,14 @@ const { shanghaiDateIso, shanghaiStamp } = require('./locales.cjs');
 const { decodeHtml } = require('./io.cjs');
 
 const CATEGORIES = {
+  'new-site': {
+    zh: '新站新项目',
+    en: 'New sites',
+    whyZh: '新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。',
+    whyEn: 'A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.',
+    whoZh: '愿意动手试新工具的开发者和独立作者。',
+    whoEn: 'Developers and indie builders who try new tools early.',
+  },
   'model-platform': {
     zh: '模型平台',
     en: 'Models',
@@ -63,6 +71,7 @@ const CATEGORIES = {
 };
 
 const KEYWORDS = [
+  { category: 'new-site', pattern: /\b(show hn|launched|new (?:site|app|tool)|独立站|上线)\b/i, bonus: 4 },
   { category: 'agent', pattern: /\b(agent|mcp|skill|orchestr|tool[- ]use|multi-agent|智能体|工作流)\b/i, bonus: 3 },
   { category: 'model-platform', pattern: /\b(gpt|claude|gemini|llama|qwen|deepseek|kimi|minimax|grok|mistral|model|weights?|checkpoint|开放权重)\b/i, bonus: 3 },
   { category: 'open-source', pattern: /\b(github|open[- ]source|release|apache|mit license|huggingface|开源|权重)\b/i, bonus: 2 },
@@ -72,7 +81,7 @@ const KEYWORDS = [
   { category: 'market', pattern: /\b(fund|acqui|series [a-d]|ipo|融资|并购)\b/i, bonus: 1 },
 ];
 
-const NOISE = /(weekly roundup|what you (need|should) (to )?know|job posting|hiring|comment on|comments of|redirect notice)/i;
+const NOISE = /(weekly roundup|what you (need|should) (to )?know|job posting|hiring|comment on|comments of|redirect notice|is hiring)/i;
 
 function hasCjk(text) {
   return /[\u3400-\u9fff]/.test(text || '');
@@ -96,9 +105,30 @@ function hostOf(url) {
   }
 }
 
+function isVersionNoise(item) {
+  const title = String(item.title || '');
+  return Boolean(item.versionLike)
+    || /^(?:release\s+)?v?\d[\w.-]*$/i.test(title)
+    || /^[\w.-]+\/[\w.-]+\s+v?\d[\w.-]*$/i.test(title)
+    || /nightly|preview\.\d|b\d{4,}/i.test(title);
+}
+
+function cleanTitle(item) {
+  let title = String(item.title || '').replace(/\s+/g, ' ').trim();
+  title = title.replace(/^show hn:\s*/i, '');
+  if (/^(?:release\s+)?v?\d[\w.-]*$/i.test(title) && item.repo) {
+    return `${item.repo} ${title.replace(/^release\s+/i, '')}`;
+  }
+  if (/^release\s+/i.test(title) && item.repo) {
+    return `${item.repo} ${title.replace(/^release\s+/i, '')}`;
+  }
+  return title;
+}
+
 function detectCategory(item) {
+  if (item.origin === 'show-hn' || item.origin === 'github-repo' || item.kind === 'new-site') return 'new-site';
   if (item.origin === 'huggingface' || item.kind === 'model-platform') return 'model-platform';
-  if (item.origin === 'github-release' || item.origin === 'github-repo' || item.kind === 'open-source') return 'open-source';
+  if (item.origin === 'github-release' || item.kind === 'open-source') return 'open-source';
   if (item.kind === 'research' || /arxiv\.org/i.test(item.url || '')) return 'research';
   const hay = `${item.title} ${item.summary} ${item.sourceId}`;
   let best = 'product';
@@ -140,11 +170,16 @@ function scoreItem(item) {
   for (const rule of KEYWORDS) {
     if (rule.pattern.test(hay)) score += rule.bonus;
   }
-  if (item.stars) score += Math.min(5, Math.log10(item.stars + 1));
-  if (item.origin === 'github-release') score += item.versionLike ? -2 : 2;
+  if (item.stars) score += Math.min(6, Math.log10(item.stars + 1) * 2);
+  if (item.origin === 'github-release') score += item.versionLike ? -6 : 2;
+  if (item.origin === 'github-repo' || item.origin === 'show-hn') score += 3;
+  if (item.kind === 'official') score += 4;
+  if (/awesome[-_ ]|curated (list|collection)|awesome-/i.test(hay)) score -= 12;
+  if (item.origin === 'github-repo' && /awesome/i.test(item.repo || item.title || '')) score -= 8;
+  if (/^v?\d[\w.-]*:\s*docs\(/i.test(item.title || '')) score -= 8;
   if (item.points) score += Math.min(4, item.points / 40);
   if (NOISE.test(hay)) score -= 8;
-  if (/^(?:[\w.-]+\/)?(?:v?\d[\w.-]*|b\d+)$/i.test(item.title || '')) score -= 4;
+  if (/^(?:[\w.-]+\/)?(?:v?\d[\w.-]*|b\d+)$/i.test(item.title || '')) score -= 6;
   return score;
 }
 
@@ -160,6 +195,7 @@ function snippetOf(item, max = 160) {
 }
 
 function sourceLabel(item) {
+  if (item.origin === 'show-hn') return 'Show HN';
   if (item.repo) return item.repo;
   if (item.origin === 'hacker-news') return 'Hacker News';
   if (item.origin === 'huggingface') return 'Hugging Face';
@@ -172,13 +208,22 @@ function composeCopy(item, category, observedAt) {
   const snippet = snippetOf(item);
   const published = item.date ? item.date.toISOString().slice(0, 10) : '日期未知';
   const label = sourceLabel(item);
-  const title = item.title.replace(/\s+/g, ' ').trim();
-  const whatZh = snippet
-    ? `${label} 发布「${title}」。${snippet}`
-    : `${label} 在公开源发布了「${title}」。`;
-  const whatEn = snippet
-    ? `${label} published “${title}”. ${snippet}`
-    : `${label} published “${title}” on a public feed.`;
+  const title = cleanTitle(item);
+  let whatZh;
+  let whatEn;
+  if (item.origin === 'github-repo') {
+    whatZh = `新公开仓库 ${item.repo}。${snippet || title}`;
+    whatEn = `New public repository ${item.repo}. ${snippet || title}`;
+  } else if (item.origin === 'show-hn') {
+    whatZh = `Show HN 出现「${title}」。${snippet}`;
+    whatEn = `Show HN posted “${title}”. ${snippet}`;
+  } else if (snippet) {
+    whatZh = `${label}：${snippet}`;
+    whatEn = `${label}: ${snippet}`;
+  } else {
+    whatZh = `${label} 在公开源发布了「${title}」。`;
+    whatEn = `${label} published “${title}” on a public feed.`;
+  }
   return {
     title,
     category,
@@ -193,6 +238,7 @@ function composeCopy(item, category, observedAt) {
     repo: item.repo || '',
     stars: item.stars || 0,
     license: item.license || '',
+    versionLike: Boolean(item.versionLike || isVersionNoise({ ...item, title })),
     whatZh: whatZh.slice(0, 220),
     whyZh: meta.whyZh,
     whoZh: meta.whoZh,
@@ -212,32 +258,38 @@ function pickMix(ranked) {
   const seenCat = {};
   const seenRepo = new Set();
   const push = (item) => {
-    if (selected.length >= 16) return;
-    if (selected.some((row) => row.url === item.url)) return;
-    if (item.repo && item.origin === 'github-release') {
-      if (seenRepo.has(item.repo)) return;
+    if (selected.length >= 16) return false;
+    if (selected.some((row) => row.url === item.url || row.title === item.title)) return false;
+    if (item.repo && (item.origin === 'github-release' || item.origin === 'github-repo')) {
+      if (seenRepo.has(item.repo)) return false;
       seenRepo.add(item.repo);
     }
     selected.push(item);
     seenCat[item.category] = (seenCat[item.category] || 0) + 1;
+    return true;
   };
+
   const used = new Set();
   for (const item of ranked) {
-    if (/nightly/i.test(item.title)) continue;
+    if (isVersionNoise(item) || item.category === 'new-site') continue;
     if (selected.length >= 6) break;
     if (used.has(item.category) && used.size < 4) continue;
-    push(item);
-    used.add(item.category);
+    if (push(item)) used.add(item.category);
   }
   for (const item of ranked) {
-    if (/nightly/i.test(item.title)) continue;
+    if (item.category !== 'new-site') continue;
+    if (selected.filter((row) => row.category === 'new-site').length >= 3) break;
+    push(item);
+  }
+  for (const item of ranked) {
+    if (isVersionNoise(item)) continue;
     if (selected.length >= 16) break;
-    if (item.origin === 'github-release' && selected.filter((row) => row.origin === 'github-release').length >= 3) continue;
+    if (item.origin === 'github-release' && selected.filter((row) => row.origin === 'github-release').length >= 2) continue;
     if ((seenCat[item.category] || 0) >= 4) continue;
     push(item);
   }
   for (const item of ranked) {
-    if (/nightly/i.test(item.title)) continue;
+    if (isVersionNoise(item)) continue;
     if (selected.length >= 16) break;
     push(item);
   }
@@ -258,18 +310,26 @@ function radarCards(items) {
     .slice(0, 3)
     .map(([category, group]) => {
       const meta = CATEGORIES[category];
-      const names = group.slice(0, 2).map((item) => item.sourceLabel);
-      const zhTitle = `${meta.zh}出现可核验更新`.slice(0, 20);
+      const names = [...new Set(group.slice(0, 3).map((item) => item.sourceLabel))];
+      const lead = group[0];
+      const source = lead.sourceLabel.length > 14 ? meta.zh : lead.sourceLabel;
+      const titleZh = `${source}有新信号`.slice(0, 20);
       return {
         category,
         tagZh: meta.zh,
         tagEn: meta.en,
-        titleZh: zhTitle,
-        titleEn: `${meta.en} show verifiable updates`,
-        bodyZh: `${names.join('、')} 等来源在公开渠道给出新文件或新说明，适合对照原始页面查看。`,
-        bodyEn: `${names.join(', ')} published new files or notes on public channels. Check the original pages before treating them as product claims.`,
+        titleZh,
+        titleEn: `${meta.en} moved`.slice(0, 48),
+        bodyZh: `${names.join('、')} 给出可点击的原始页面，适合对照来源而不是把摘要当结论。`,
+        bodyEn: `${names.join(', ')} published a public page. Treat the original source as the claim, not this summary.`,
       };
     });
+}
+
+function pickHero(selected) {
+  const official = selected.find((item) => /openai|google|deepmind|anthropic|huggingface|nvidia|gemini/i.test(`${item.sourceLabel} ${item.url} ${item.title}`) && !item.versionLike);
+  const newsy = selected.find((item) => !item.versionLike && item.category !== 'new-site' && String(item.title || '').length >= 12);
+  return official || newsy || selected.find((item) => !item.versionLike) || selected[0] || null;
 }
 
 function composeBriefing(collected, options = {}) {
@@ -283,27 +343,28 @@ function composeBriefing(collected, options = {}) {
     const date = raw.date instanceof Date ? raw.date : raw.date ? new Date(raw.date) : null;
     if (date && hoursAgo(date) > lookbackHours + 24) continue;
     if (NOISE.test(raw.title || '')) continue;
-    const key = `${hostOf(raw.url)}|${normalizeTitle(raw.title)}`;
+    const cleaned = { ...raw, title: cleanTitle(raw), date };
+    const key = `${hostOf(cleaned.url)}|${normalizeTitle(cleaned.title)}`;
     if (!key.endsWith('|') && seen.has(key)) continue;
     seen.add(key);
-    const item = { ...raw, date };
-    const category = detectCategory(item);
-    const card = composeCopy(item, category, observedAt);
-    card.score = scoreItem(item);
+    const category = detectCategory(cleaned);
+    const card = composeCopy(cleaned, category, observedAt);
+    card.score = scoreItem(cleaned);
     card.hasCjk = hasCjk(card.title);
     ranked.push(card);
   }
 
   ranked.sort((a, b) => b.score - a.score);
   const selected = pickMix(ranked);
-  const openSource = selected.filter((item) => item.category === 'open-source').length;
+  const openSource = selected.filter((item) => item.category === 'open-source' || item.category === 'new-site').length;
+  const newSites = selected.filter((item) => item.category === 'new-site').length;
   const regions = new Set(selected.map((item) => item.region));
   const features = selected.filter((item) => item.isFeature);
-  const top = selected.find((item) => /gemini|gpt-|claude|openai|deepmind|qwen|llama|codex/i.test(`${item.title} ${item.url}`)) || selected[0];
-  const heroSubjectZh = top
-    ? (top.hasCjk ? top.title.slice(0, 22) : (top.title.length <= 18 ? top.title : '公开源里的新模型与工具'))
+  const top = pickHero(selected);
+  const shortZh = top
+    ? (top.hasCjk ? top.title.slice(0, 22) : `${top.categoryZh}：${top.title.slice(0, 18)}`)
     : '公开源自动雷达';
-  const heroSubjectEn = top ? top.title.slice(0, 72) : 'Public-source radar';
+  const subjectEn = top ? top.title.slice(0, 72) : 'Public-source radar';
 
   return {
     schemaVersion: 1,
@@ -318,13 +379,14 @@ function composeBriefing(collected, options = {}) {
       watching: selected.length,
       features: features.length,
       openSource,
+      newSites,
       regions: regions.size,
     },
     hero: {
-      subjectZh: heroSubjectZh,
-      subjectEn: heroSubjectEn,
-      leadZh: `从 ${collected.counts?.total || 0} 条公开源里选出 ${selected.length} 条，覆盖官方博客、GitHub、Hugging Face 与论文源。`,
-      leadEn: `Selected ${selected.length} items from ${collected.counts?.total || 0} public-source records across official blogs, GitHub, Hugging Face and paper feeds.`,
+      subjectZh: shortZh,
+      subjectEn,
+      leadZh: `从 ${collected.counts?.total || 0} 条公开源里选出 ${selected.length} 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。`,
+      leadEn: `Selected ${selected.length} items from ${collected.counts?.total || 0} public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.`,
       judgmentZh: '这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。',
       judgmentEn: 'Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue.',
     },
@@ -336,5 +398,7 @@ function composeBriefing(collected, options = {}) {
 
 module.exports = {
   composeBriefing,
+  cleanTitle,
+  pickHero,
   CATEGORIES,
 };

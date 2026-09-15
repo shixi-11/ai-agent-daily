@@ -130,7 +130,7 @@ async function collectGithubAtoms(repos) {
     try {
       const xml = await fetchText(`https://github.com/${repo}/releases.atom`);
       return parseFeed(xml, 4).map((item) => {
-        const versionLike = /^(v?\d[\w.-]*|b\d+)$/i.test(item.title);
+        const versionLike = /^(?:release\s+)?v?\d[\w.-]*$/i.test(item.title) || /^v?\d+\.\d+/.test(item.title);
         const summary = String(item.summary || '')
           .replace(/^what's changed\s*/i, '')
           .slice(0, 280);
@@ -196,42 +196,81 @@ async function collectHackerNews() {
   }
 }
 
-async function collectGithubSearch(sinceIso, token) {
-  const headers = token ? { authorization: `Bearer ${token}` } : {};
+async function collectShowHn() {
   try {
-    const data = await fetchJson(
-      `https://api.github.com/search/repositories?q=${encodeURIComponent(`created:>=${sinceIso} (agent OR llm OR mcp) in:name,description`)}&sort=stars&order=desc&per_page=10`,
-      headers,
-    );
-    return (data.items || []).map((repo) => ({
-      title: `${repo.full_name}: ${repo.description || repo.name}`,
-      url: repo.html_url,
-      date: parseDate(repo.created_at),
-      summary: repo.description || '',
-      sourceId: 'github-search',
-      sourceWeight: 6,
+    const data = await fetchJson('https://hn.algolia.com/api/v1/search_by_date?query=(AI%20OR%20LLM%20OR%20GPT%20OR%20Claude%20OR%20agent%20OR%20MCP%20OR%20open%20source)&tags=show_hn&hitsPerPage=16');
+    return (data.hits || []).map((hit) => ({
+      title: String(hit.title || '').replace(/^Show HN:\s*/i, ''),
+      url: hit.url || `https://news.ycombinator.com/item?id=${hit.objectID}`,
+      date: parseDate(hit.created_at),
+      summary: hit.story_text ? stripHtml(hit.story_text).slice(0, 280) : `Show HN ${hit.points || 0} 分，${hit.num_comments || 0} 条讨论。`,
+      sourceId: 'show-hn',
+      sourceWeight: 8,
       region: '全球社区',
-      kind: 'open-source',
-      origin: 'github-repo',
-      repo: repo.full_name,
-      stars: repo.stargazers_count,
-      license: repo.license?.spdx_id || '',
-    }));
+      kind: 'new-site',
+      origin: 'show-hn',
+      points: hit.points,
+    })).filter((item) => item.title && item.url && /^https?:\/\//i.test(item.url));
   } catch {
     return [];
   }
+}
+
+async function collectGithubSearch(sinceIso, token) {
+  const headers = token ? { authorization: `Bearer ${token}` } : {};
+  const queries = [
+    `created:>=${sinceIso} (agent OR llm OR mcp OR "ai tool") in:name,description stars:>8`,
+    `created:>=${sinceIso} topic:ai-agents stars:>5`,
+  ];
+  const groups = await mapLimit(queries, 2, async (query) => {
+    try {
+      const data = await fetchJson(
+        `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&sort=stars&order=desc&per_page=10`,
+        headers,
+      );
+      return (data.items || []).map((repo) => ({
+        title: `${repo.full_name}: ${repo.description || repo.name}`,
+        url: repo.html_url,
+        date: parseDate(repo.created_at),
+        summary: repo.description || '',
+        sourceId: 'github-search',
+        sourceWeight: 7,
+        region: '全球社区',
+        kind: 'new-site',
+        origin: 'github-repo',
+        repo: repo.full_name,
+        stars: repo.stargazers_count,
+        license: repo.license?.spdx_id || '',
+      }));
+    } catch {
+      return [];
+    }
+  });
+  const seen = new Set();
+  return groups.flat().filter((item) => {
+    if (seen.has(item.url)) return false;
+    seen.add(item.url);
+    return true;
+  });
 }
 
 async function collectAll(watchlist, options = {}) {
   const token = options.token || process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '';
   const since = new Date(Date.now() - Number(watchlist.lookbackDays || 7) * 24 * 60 * 60 * 1000);
   const sinceIso = since.toISOString().slice(0, 10);
+  const fast = Boolean(options.fast);
+  const feeds = fast
+    ? (watchlist.rssFeeds || []).filter((feed) => !feed.optional).slice(0, 8)
+    : (watchlist.rssFeeds || []);
+  const repos = fast ? (watchlist.githubRepos || []).slice(0, 6) : (watchlist.githubRepos || []);
+  const orgs = fast ? [] : (watchlist.huggingfaceOrgs || []);
 
-  const [rssResults, githubReleases, huggingface, hn, githubSearch] = await Promise.all([
-    mapLimit(watchlist.rssFeeds || [], 6, collectRss),
-    collectGithubAtoms(watchlist.githubRepos || []),
-    collectHuggingFace(watchlist.huggingfaceOrgs || []),
+  const [rssResults, githubReleases, huggingface, hn, showHn, githubSearch] = await Promise.all([
+    mapLimit(feeds, fast ? 8 : 6, collectRss),
+    collectGithubAtoms(repos),
+    collectHuggingFace(orgs),
     collectHackerNews(),
+    collectShowHn(),
     collectGithubSearch(sinceIso, token),
   ]);
 
@@ -240,6 +279,7 @@ async function collectAll(watchlist, options = {}) {
     ...githubReleases,
     ...huggingface,
     ...hn,
+    ...showHn,
     ...githubSearch,
   ];
 
@@ -259,6 +299,7 @@ async function collectAll(watchlist, options = {}) {
       githubReleases: githubReleases.length,
       huggingface: huggingface.length,
       hn: hn.length,
+      showHn: showHn.length,
       githubSearch: githubSearch.length,
       total: items.length,
     },

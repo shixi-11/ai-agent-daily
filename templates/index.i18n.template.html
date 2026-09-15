@@ -183,7 +183,7 @@
       const fill = (items) => {
         list.innerHTML = items.slice(0, 4).map((item) => '<a class="live-story" href="' + escape(item.url || moreHref) + '" target="_blank" rel="noopener"><small>' + escape(item.sourceLabel || item.source || '') + '</small><strong>' + escape(item.title) + '</strong></a>').join('') + '<a class="live-strip-fallback" href="' + moreHref + '">' + moreLabel + '</a>';
       };
-      const urls = ['/api/live.json', '{{BASE_PATH}}/live/latest.json', '/live/latest.json'];
+      const urls = ['{{BASE_PATH}}/live/latest.json', '{{BASE_PATH}}/api/live.json', '/api/live.json'];
       (async () => {
         for (const url of urls) {
           try {

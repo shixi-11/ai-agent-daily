@@ -2,9 +2,10 @@ name: Daily live radar
 
 on:
   schedule:
-    - cron: '20 0,12 * * *'
+    - cron: '20 */3 * * *'
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - 'collectors/watchlist.json'
       - 'scripts/generate-live.cjs'
@@ -32,10 +33,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/live
+          git add public/live public/index.html public/en/index.html public/zh-Hant/index.html public/ja/index.html public/ko/index.html public/es/index.html public/fr/index.html public/de/index.html public/ar/index.html
           if git diff --cached --quiet; then
             echo "No live radar changes"
             exit 0
           fi
           git commit -m "更新 $(date -u +%F) 自动雷达"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
           git push

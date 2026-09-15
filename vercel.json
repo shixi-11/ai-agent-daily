@@ -109,6 +109,14 @@
   ],
   "rewrites": [
     {
+      "source": "/api/live.json",
+      "destination": "/api/live"
+    },
+    {
+      "source": "/daily/api/live.json",
+      "destination": "/api/live"
+    },
+    {
       "source": "/daily/(.*)",
       "destination": "/$1"
     }

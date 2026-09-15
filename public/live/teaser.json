@@ -1,26 +1,14 @@
 {
   "zh": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-15T22:42:10.686Z",
-    "generatedAtShanghai": "2026-09-16 06:42",
+    "generatedAt": "2026-09-15T23:00:01.670Z",
+    "generatedAtShanghai": "2026-09-16 07:00",
     "locale": "zh",
     "watching": 16,
-    "subject": "Release v0.60.0",
-    "lead": "从 373 条公开源里选出 16 条，覆盖官方博客、GitHub、Hugging Face 与论文源。",
+    "subject": "模型平台：Introducing Gemini",
+    "lead": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
-      {
-        "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
-        "source": "arxiv.org",
-        "category": "研究评测",
-        "url": "https://arxiv.org/abs/2609.13356"
-      },
-      {
-        "title": "Release v0.60.0",
-        "source": "google-gemini/gemini-cli",
-        "category": "开源发现",
-        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0"
-      },
       {
         "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
         "source": "deepmind.google",
@@ -28,35 +16,35 @@
         "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
       },
       {
+        "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+        "source": "arxiv.org",
+        "category": "研究评测",
+        "url": "https://arxiv.org/abs/2609.13356"
+      },
+      {
         "title": "Your Agent Aced the Task. Will It Do It Again?",
         "source": "huggingface.co",
         "category": "智能体",
         "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+      },
+      {
+        "title": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
+        "source": "blogs.nvidia.com",
+        "category": "硬件架构",
+        "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-15T22:42:10.686Z",
-    "generatedAtShanghai": "2026-09-16 06:42",
+    "generatedAt": "2026-09-15T23:00:01.670Z",
+    "generatedAtShanghai": "2026-09-16 07:00",
     "locale": "en",
     "watching": 16,
-    "subject": "Release v0.60.0",
-    "lead": "Selected 16 items from 373 public-source records across official blogs, GitHub, Hugging Face and paper feeds.",
+    "subject": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+    "lead": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
-      {
-        "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
-        "source": "arxiv.org",
-        "category": "Research",
-        "url": "https://arxiv.org/abs/2609.13356"
-      },
-      {
-        "title": "Release v0.60.0",
-        "source": "google-gemini/gemini-cli",
-        "category": "Open source",
-        "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0"
-      },
       {
         "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
         "source": "deepmind.google",
@@ -64,10 +52,22 @@
         "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
       },
       {
+        "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
+        "source": "arxiv.org",
+        "category": "Research",
+        "url": "https://arxiv.org/abs/2609.13356"
+      },
+      {
         "title": "Your Agent Aced the Task. Will It Do It Again?",
         "source": "huggingface.co",
         "category": "Agents",
         "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+      },
+      {
+        "title": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
+        "source": "blogs.nvidia.com",
+        "category": "Hardware",
+        "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
       }
     ]
   }

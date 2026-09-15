@@ -634,6 +634,16 @@ writeUtf8(path.join(publicRoot, 'robots.txt'), `User-agent: *\nAllow: ${basePath
 const notFoundTemplate = readUtf8(path.join(templateRoot, '404.template.html')).replaceAll('{{BASE_PATH}}', basePath);
 writeUtf8(path.join(publicRoot, '404.html'), notFoundTemplate);
 
+try {
+  const { injectAllHomepages } = require('./lib/live-render.cjs');
+  const liveLatest = path.join(publicRoot, 'live/latest.json');
+  if (fs.existsSync(liveLatest)) {
+    injectAllHomepages(publicRoot, JSON.parse(fs.readFileSync(liveLatest, 'utf8')), basePath);
+  }
+} catch (error) {
+  console.warn(`live teaser inject skipped: ${error.message}`);
+}
+
 const optionalCount = reports.reduce((sum, report) => sum + Object.keys(report.optionals).length, 0);
 console.log(`已同步 ${reports.length} 期中英双语日报：${earliest.dateIso} 至 ${latest.dateIso}`);
 console.log(`可选语种已发布日期页 ${optionalCount} 篇；9 个语种首页已生成。`);

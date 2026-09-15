@@ -129,6 +129,7 @@ function renderLiveHtml(briefing, locale = 'zh', basePath = '/daily') {
     : `${briefing.dateIso}｜今日自动雷达`;
   const filters = [
     ['all', isEn ? 'All' : '全部'],
+    ['new-site', isEn ? 'New sites' : '新站'],
     ['model-platform', isEn ? 'Models' : '模型'],
     ['open-source', isEn ? 'Open source' : '开源'],
     ['agent', isEn ? 'Agents' : '智能体'],
@@ -138,7 +139,7 @@ function renderLiveHtml(briefing, locale = 'zh', basePath = '/daily') {
   const radar = (briefing.radar || []).map((card) => `<article class="item"><span class="tag">${encodeHtml(isEn ? card.tagEn : card.tagZh)}</span><h3>${encodeHtml(isEn ? card.titleEn : card.titleZh)}</h3><p>${encodeHtml(isEn ? card.bodyEn : card.bodyZh)}</p></article>`).join('');
   const features = briefing.items.filter((item) => item.isFeature);
   const rest = briefing.items.filter((item) => !item.isFeature);
-  const sources = briefing.items.map((item, index) => `<li><a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">${encodeHtml(item.sourceLabel)}：${encodeHtml(item.title)}</a></li>`).join('');
+  const sources = briefing.items.map((item) => `<li><a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">${encodeHtml(item.sourceLabel)}：${encodeHtml(item.title)}</a></li>`).join('');
   const scanned = briefing.feedReports?.filter((row) => row.ok).length || 0;
   const failed = briefing.feedReports?.filter((row) => !row.ok && !row.optional).length || 0;
 
@@ -156,7 +157,7 @@ function renderLiveHtml(briefing, locale = 'zh', basePath = '/daily') {
 <body>
 ${navMarkup(locale, basePath)}
 <main class="page" data-live-page>
-  <div class="live-banner"><b>LIVE</b><span>${encodeHtml(briefing.dateIso)}</span><span>${isEn ? 'Public RSS / GitHub / Hugging Face' : '公开 RSS · GitHub · Hugging Face'}</span><span>${isEn ? 'Updated' : '更新'} ${encodeHtml(briefing.generatedAtShanghai)}</span></div>
+  <div class="live-banner"><b>LIVE</b><span>${encodeHtml(briefing.dateIso)}</span><span>${isEn ? 'Public RSS / GitHub / Show HN' : '公开 RSS · GitHub · Show HN'}</span><span>${isEn ? 'Updated' : '更新'} ${encodeHtml(briefing.generatedAtShanghai)}</span></div>
   <section class="hero">
     <div>
       <h1><span class="title-en">Agent Daily</span><span class="title-cn">${encodeHtml(isEn ? briefing.hero.subjectEn : briefing.hero.subjectZh)}</span></h1>
@@ -197,7 +198,7 @@ ${navMarkup(locale, basePath)}
     });
   });
   const hydrate = async () => {
-    const urls = ['/api/live.json', '${basePath}/live/latest.json', '/live/latest.json'];
+    const urls = ['${basePath}/live/latest.json', '${basePath}/api/live.json', '/api/live.json'];
     for (const url of urls) {
       try {
         const response = await fetch(url, { cache: 'no-store' });
@@ -217,7 +218,6 @@ ${navMarkup(locale, basePath)}
 }
 
 function renderTeaser(briefing, locale = 'zh') {
-
   return {
     dateIso: briefing.dateIso,
     generatedAt: briefing.generatedAt,
@@ -236,43 +236,44 @@ function renderTeaser(briefing, locale = 'zh') {
   };
 }
 
-const HOME_TEASER_CSS = `
-.live-strip{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:start;margin:0 0 18px;padding:28px 0 8px;border-top:1px solid rgba(20,33,61,.18)}
-.live-kicker{margin:0 0 8px;color:#0f5e55;font-size:12px;font-weight:850;letter-spacing:.08em;text-transform:uppercase}
-.live-strip h2{margin:0 0 10px;font-family:"Songti SC","Noto Serif CJK SC",SimSun,Georgia,serif;font-size:clamp(26px,3vw,38px);line-height:1.15;color:#101827}
-.live-strip p{margin:0;color:#5d6877;font-size:14px;line-height:1.65;max-width:520px}
-.live-strip-list{display:grid;gap:0;background:rgba(255,255,255,.82);border:1px solid #d7dfe5}
-.live-story{display:grid;grid-template-columns:92px minmax(0,1fr);gap:12px;align-items:center;min-height:72px;padding:14px 16px;text-decoration:none;border-bottom:1px solid #d7dfe5;color:inherit}
-.live-story:last-child{border-bottom:0}
-.live-story:hover{background:#f0f6f4}
-.live-story small{color:#0f766e;font-size:11px;font-weight:800;letter-spacing:.04em}
-.live-story strong{display:block;color:#19243a;font-size:15px;line-height:1.4}
-.live-strip-fallback{display:flex;align-items:center;min-height:56px;padding:0 16px;color:#0f5e55;font-weight:750;text-decoration:none}
-@media(max-width:760px){.live-strip{grid-template-columns:1fr;gap:16px}.live-story{grid-template-columns:1fr;min-height:0}}
-`;
-
-function homeTeaserScript(locale) {
+function injectHomeLiveStrip(html, briefing, locale = 'zh', basePath = '/daily') {
+  if (!html || !html.includes('data-live-list') || !briefing?.items?.length) return html;
   const isEn = locale === 'en';
-  return `(() => {
-    const root = document.querySelector('[data-live-home]');
-    if (!root) return;
-    const list = root.querySelector('[data-live-list]');
-    const paths = ['/api/live.json', '{{BASE_PATH}}/live/latest.json', '/live/latest.json'];
-    const label = ${JSON.stringify(isEn ? 'Live radar' : '今日雷达')};
-    fetch(paths[0], { cache: 'no-store' }).catch(() => null)
-      .then((res) => res && res.ok ? res.json() : fetch(paths[1]).then((r) => r.ok ? r.json() : fetch(paths[2]).then((x) => x.ok ? x.json() : null)))
-      .then((data) => {
-        if (!data || !data.items || !data.items.length || !list) return;
-        const items = data.items.slice(0, 4);
-        list.innerHTML = items.map((item) => '<a class="live-story" href="' + (item.url || '${isEn ? '{{BASE_PATH}}/live/en/' : '{{BASE_PATH}}/live/'}') + '" target="_blank" rel="noopener"><small>' + (item.sourceLabel || item.source || label) + '</small><strong>' + String(item.title || '').replace(/[<>]/g, '') + '</strong></a>').join('') + '<a class="live-strip-fallback" href="${isEn ? '{{BASE_PATH}}/live/en/' : '{{BASE_PATH}}/live/'}">${isEn ? 'Open full live radar ↗' : '打开完整自动雷达 ↗'}</a>';
-      }).catch(() => {});
-  })();`;
+  const href = isEn ? `${basePath}/live/en/` : `${basePath}/live/`;
+  const more = isEn ? 'Open the live radar ↗' : '打开完整自动雷达 ↗';
+  const items = briefing.items.slice(0, 4).map((item) => (
+    `<a class="live-story" href="${encodeHtml(item.url)}" target="_blank" rel="noopener"><small>${encodeHtml(item.sourceLabel)}</small><strong>${encodeHtml(item.title)}</strong></a>`
+  )).join('');
+  const markup = `<div class="live-strip-list" data-live-list>${items}<a class="live-strip-fallback" href="${href}">${more}</a></div>`;
+  return html.replace(/<div class="live-strip-list"[^>]*>[\s\S]*?<\/div>/, markup);
+}
+
+function injectAllHomepages(publicRoot, briefing, basePath = '/daily') {
+  const fs = require('fs');
+  const path = require('path');
+  const { writeUtf8 } = require('./io.cjs');
+  const targets = [
+    ['index.html', 'zh'],
+    ['en/index.html', 'en'],
+    ['zh-Hant/index.html', 'zh'],
+    ['ja/index.html', 'en'],
+    ['ko/index.html', 'en'],
+    ['es/index.html', 'en'],
+    ['fr/index.html', 'en'],
+    ['de/index.html', 'en'],
+    ['ar/index.html', 'en'],
+  ];
+  for (const [relative, locale] of targets) {
+    const file = path.join(publicRoot, relative);
+    if (!fs.existsSync(file)) continue;
+    writeUtf8(file, injectHomeLiveStrip(fs.readFileSync(file, 'utf8'), briefing, locale, basePath));
+  }
 }
 
 module.exports = {
   renderLiveHtml,
   renderTeaser,
-  HOME_TEASER_CSS,
-  homeTeaserScript,
+  injectHomeLiveStrip,
+  injectAllHomepages,
   PAGE_CSS,
 };
