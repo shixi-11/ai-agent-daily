@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-16",
-  "generatedAt": "2026-09-15T23:00:01.670Z",
-  "generatedAtShanghai": "2026-09-16 07:00",
-  "collectedAt": "2026-09-15T23:00:01.669Z",
+  "generatedAt": "2026-09-15T23:01:06.588Z",
+  "generatedAtShanghai": "2026-09-16 07:01",
+  "collectedAt": "2026-09-15T23:01:06.588Z",
   "counts": {
-    "rss": 243,
+    "rss": 255,
     "githubReleases": 69,
     "huggingface": 54,
     "hn": 9,
     "showHn": 13,
     "githubSearch": 10,
-    "total": 398
+    "total": 410
   },
   "feedReports": [
     {
@@ -182,10 +182,9 @@
     },
     {
       "id": "reddit-localllama",
-      "ok": false,
-      "optional": true,
-      "count": 0,
-      "error": "HTTP 429"
+      "ok": true,
+      "count": 12,
+      "error": ""
     },
     {
       "id": "reddit-machinelearning",
@@ -205,8 +204,8 @@
   "hero": {
     "subjectZh": "模型平台：Introducing Gemini",
     "subjectEn": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "leadZh": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
-    "leadEn": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "leadZh": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "leadEn": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "judgmentZh": "这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。",
     "judgmentEn": "Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue."
   },
@@ -705,5 +704,5 @@
       "hasCjk": false
     }
   ],
-  "leftover": 232
+  "leftover": 243
 }

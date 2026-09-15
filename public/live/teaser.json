@@ -1,12 +1,12 @@
 {
   "zh": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-15T23:00:01.670Z",
-    "generatedAtShanghai": "2026-09-16 07:00",
+    "generatedAt": "2026-09-15T23:01:06.588Z",
+    "generatedAtShanghai": "2026-09-16 07:01",
     "locale": "zh",
     "watching": 16,
     "subject": "模型平台：Introducing Gemini",
-    "lead": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "lead": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
@@ -37,12 +37,12 @@
   },
   "en": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-15T23:00:01.670Z",
-    "generatedAtShanghai": "2026-09-16 07:00",
+    "generatedAt": "2026-09-15T23:01:06.588Z",
+    "generatedAtShanghai": "2026-09-16 07:01",
     "locale": "en",
     "watching": 16,
     "subject": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "lead": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "lead": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
