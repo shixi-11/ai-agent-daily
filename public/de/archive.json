@@ -23,21 +23,21 @@
     },
     {
       "date": "2026-09-13",
-      "title": "AI Agent — Evidence Beyond the Model",
-      "lead": "One model edits speech, compact encoders retrieve pages, and a recording assistant inspects frames. Small experiments also expose their methods, limits, and failures.",
-      "url": "/daily/en/2026/09/13/",
+      "title": "AI Agent — Beweise jenseits des Modells",
+      "lead": "Ein Modell bearbeitet Sprache, kompakte Encoder holen Seiten ab und ein Aufnahmemodell überprüft die Frames. Kleine Experimente zeigen auch ihre Methoden, ihre Grenzen und ihre Fehler.",
+      "url": "/daily/de/2026/09/13/",
       "alternateUrl": "/daily/2026/09/13/",
-      "publicPath": null,
-      "translated": false
+      "publicPath": "de/2026/09/13/index.html",
+      "translated": true
     },
     {
       "date": "2026-09-12",
-      "title": "AI Agent — Keep Working After Generation",
-      "lead": "Rooms can be measured, image workflows rewired, and scientific predictions searched. Today's focus is not just what AI generates, but how its outputs can be checked, changed, and put to use.",
-      "url": "/daily/en/2026/09/12/",
+      "title": "AI Agent — Arbeiten Sie nach Generationen weiter",
+      "lead": "Man kann Räume messen, Bildworkflows neu vernetzen und wissenschaftliche Vorhersagen durchsuchen. Der Fokus von heute liegt nicht nur darauf, was KI erzeugt, sondern auch darauf, wie ihre Ergebnisse überprüft, verändert und eingesetzt werden können.",
+      "url": "/daily/de/2026/09/12/",
       "alternateUrl": "/daily/2026/09/12/",
-      "publicPath": null,
-      "translated": false
+      "publicPath": "de/2026/09/12/index.html",
+      "translated": true
     },
     {
       "date": "2026-09-11",

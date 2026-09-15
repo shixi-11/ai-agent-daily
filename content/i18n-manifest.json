@@ -769,6 +769,33 @@
         "translationSha256": "6d2d54dc02d9a5ec14cfb3b1839ccb7261e1da2545827c1887c56c493c9dda5d",
         "sourceSha256": "6e8b362b5e2070a82402d8464b33a0d0e604bee18d285a2e3e823caf33549e92",
         "generatedAt": "2026-09-15T23:25:02.765Z"
+      },
+      "es": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260912.body.html",
+        "translationSha256": "62ef799b7726c14eb7a5ff1658395f4088af78f885da75b2fc561fc00cadba7f",
+        "sourceSha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
+        "generatedAt": "2026-09-15T23:42:46.046Z"
+      },
+      "fr": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260912.body.html",
+        "translationSha256": "cff09078f2461a5d7cf107ea42d28ef2fdf344aec715bbe260b3bceebb37b03a",
+        "sourceSha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
+        "generatedAt": "2026-09-15T23:43:16.917Z"
+      },
+      "de": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260912.body.html",
+        "translationSha256": "47daf5502b6329f163f277c0133670fa3aef455c6e58529590e3f9e910f55d8c",
+        "sourceSha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
+        "generatedAt": "2026-09-15T23:43:47.806Z"
       }
     },
     "2026-09-13": {
@@ -780,6 +807,33 @@
         "translationSha256": "5b16ec1c68fb959852914f31ebb8dc21d4f15ff96b1be77e0ef32aa1c4b71f54",
         "sourceSha256": "78cf698ba45d14d33597f7e557495b6a2cded534bd2d7cc9ac98d307e0149499",
         "generatedAt": "2026-09-15T23:25:02.856Z"
+      },
+      "es": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260913.body.html",
+        "translationSha256": "9fb3544b74ab8f58a9f2a231b55f1381a704a547ad5597eaee00259be076f0b4",
+        "sourceSha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
+        "generatedAt": "2026-09-15T23:45:11.606Z"
+      },
+      "fr": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260913.body.html",
+        "translationSha256": "2bda4142084f0b48072fa36f55db87a4e1007a9e4e869e7d61c9bd7e1794502d",
+        "sourceSha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
+        "generatedAt": "2026-09-15T23:45:34.023Z"
+      },
+      "de": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260913.body.html",
+        "translationSha256": "d1d67ce8828ee9d3c257710b1c9e0f4fee9044ca27bc624ea3235bf6de13608e",
+        "sourceSha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
+        "generatedAt": "2026-09-15T23:45:54.277Z"
       }
     },
     "2026-09-14": {
