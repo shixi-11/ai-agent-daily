@@ -1,6 +1,8 @@
 'use strict';
 
 const { encodeHtml } = require('./io.cjs');
+const { locales, localeUrl, localesById } = require('./locales.cjs');
+const { languageMoreMarkup } = require('./chrome.cjs');
 
 const PAGE_CSS = `
 :root{--ink:#111827;--muted:#5b6575;--subtle:#7a8493;--bg:#f5f7fa;--panel:#fff;--line:#d9e0e7;--line-strong:#aeb9c6;--indigo:#22356f;--teal:#0f766e;--navy:#14213d;--soft:#e7edf2}
@@ -73,23 +75,32 @@ a{color:var(--indigo);text-decoration:none;border-bottom:1px solid rgba(34,53,11
 `;
 
 function navMarkup(locale, basePath) {
-  const home = locale === 'en' ? `${basePath}/en/` : `${basePath}/`;
+  const loc = localesById[locale] || localesById.zh;
+  const home = locale === 'en' ? `${basePath}/en/` : localeUrl(loc, basePath, '/');
   const live = locale === 'en' ? `${basePath}/live/en/` : `${basePath}/live/`;
   const liveAlt = locale === 'en' ? `${basePath}/live/` : `${basePath}/live/en/`;
-  const latest = locale === 'en' ? `${basePath}/en/latest/` : `${basePath}/latest/`;
-  const brand = locale === 'en' ? 'AI Agent Intelligence Daily' : 'AI智能体情报日报';
-  const liveLabel = locale === 'en' ? 'Live' : '今日雷达';
-  const latestLabel = locale === 'en' ? 'Latest' : '最新一期';
-  const archiveLabel = locale === 'en' ? 'Archive' : '历史归档';
+  const latest = locale === 'en' ? `${basePath}/en/latest/` : localeUrl(loc, basePath, '/latest/');
+  const liveLabel = loc.ui.liveLabel;
+  const latestLabel = loc.ui.latestLabel;
+  const archiveLabel = loc.ui.archiveLabel;
+  const paths = Object.fromEntries(locales.map((item) => {
+    if (item.id === 'zh') return [item.id, `${basePath}/live/`];
+    if (item.id === 'en') return [item.id, `${basePath}/live/en/`];
+    return [item.id, localeUrl(item, basePath, '/')];
+  }));
+  const more = languageMoreMarkup(loc, paths, null, loc.ui);
   return `<header class="report-sitebar">
-  <a class="report-sitebrand" href="${home}"><span class="report-sitebrand-mark" aria-hidden="true"><img src="${basePath}/assets/alux-mark.png" alt=""></span><span class="report-sitebrand-copy"><span>${encodeHtml(brand)}</span><small>LIVE PUBLIC RADAR</small></span></a>
-  <nav class="report-sitenav" aria-label="${archiveLabel}">
-    <a href="${live}" aria-current="page">${liveLabel}</a>
-    <a href="${latest}">${latestLabel}</a>
-    <a href="${home}#archive">${archiveLabel}</a>
-    <span class="language-switch" aria-label="language">
-      <a href="${basePath}/live/" lang="zh-CN"${locale === 'zh' ? ' aria-current="page"' : ''}>中文</a>
+  <a class="report-sitebrand" href="${home}"><span class="report-sitebrand-mark" aria-hidden="true"><img src="${basePath}/assets/alux-mark.png" alt=""></span><span class="report-sitebrand-copy"><span>${encodeHtml(loc.ui.brand)}</span><small>LIVE PUBLIC RADAR</small></span></a>
+  <nav class="report-sitenav" aria-label="${encodeHtml(archiveLabel)}">
+    <a href="${live}" aria-current="page">${encodeHtml(liveLabel)}</a>
+    <a href="${latest}">${encodeHtml(latestLabel)}</a>
+    <a href="${home}#archive">${encodeHtml(archiveLabel)}</a>
+    <span class="language-group">
+    <span class="language-switch" aria-label="${encodeHtml(loc.ui.languageLabel)}">
+      <a href="${basePath}/live/" lang="zh-CN"${locale === 'zh' ? ' aria-current="page"' : ''}>中</a>
       <a href="${liveAlt}" lang="en"${locale === 'en' ? ' aria-current="page"' : ''}>EN</a>
+    </span>
+    ${more}
     </span>
   </nav>
 </header>`;

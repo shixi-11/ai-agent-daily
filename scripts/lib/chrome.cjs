@@ -22,19 +22,18 @@ function hreflangLinks(baseUrl, pathsByLocale, availableIds, xDefaultId = 'zh') 
 }
 
 function languageMoreMarkup(locale, pathsByLocale, availableIds, ui) {
-  const extras = locales.filter((item) => item.id !== 'zh' && item.id !== 'en');
-  const currentExtra = extras.find((item) => item.id === locale.id) || null;
-  const links = extras.map((item) => {
-    const href = pathsByLocale[item.id];
+  const currentExtra = locale.id !== 'zh' && locale.id !== 'en';
+  const mark = currentExtra ? locale.shortLabel : (locale.id === 'en' ? 'More' : '更多');
+  const currentAttr = currentExtra ? ' data-current="true"' : '';
+  const summaryCurrent = currentExtra ? ' aria-current="true"' : '';
+  const label = currentExtra ? `${ui.languageLabel} · ${locale.nativeLabel}` : ui.moreLanguagesLabel;
+  const links = locales.map((item) => {
+    const href = pathsByLocale[item.id] || localeUrl(item, '/daily', '/');
     const current = locale.id === item.id ? ' aria-current="page"' : '';
     return `      <a href="${encodeHtml(href)}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}><span class="language-code">${encodeHtml(item.shortLabel)}</span><span class="language-name">${encodeHtml(item.nativeLabel)}</span></a>`;
   }).join('\n');
-  const mark = currentExtra ? encodeHtml(currentExtra.shortLabel) : '···';
-  const currentAttr = currentExtra ? ' data-current="true"' : '';
-  const summaryCurrent = currentExtra ? ' aria-current="true"' : '';
-  const label = currentExtra ? `${ui.languageLabel} · ${currentExtra.nativeLabel}` : ui.moreLanguagesLabel;
   return `<details class="language-more"${currentAttr}>
-      <summary aria-label="${encodeHtml(label)}"${summaryCurrent}><span class="language-mark" aria-hidden="true">${mark}</span></summary>
+      <summary aria-label="${encodeHtml(label)}"${summaryCurrent}><span class="language-mark">${encodeHtml(mark)}</span><span class="language-caret" aria-hidden="true"></span></summary>
       <div class="language-more-menu">
 ${links}
       </div>
@@ -111,11 +110,13 @@ ${hreflangLinks(baseUrl, pathsByLocale, available)}
   <nav class="report-sitenav" aria-label="${encodeHtml(ui.archiveLabel)}">
     <a href="${latestPath}">${encodeHtml(ui.latestLabel)}</a>
     <a href="${homePath}#archive">${encodeHtml(ui.archiveLabel)}</a>
+    <span class="language-group">
     <span class="language-switch" aria-label="${encodeHtml(ui.languageLabel)}">
       <a href="${chinesePath}" lang="zh-CN"${chineseCurrent}>中文</a>
       <a href="${englishPath}" lang="en"${englishCurrent}>EN</a>
     </span>
     ${more}
+    </span>
   </nav>
 </header>
 <!-- site:i18n-nav:end -->
