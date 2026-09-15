@@ -5,6 +5,12 @@
     <link>https://ai.alux.network/daily/es/</link>
     <description>Nuevos modelos, productos y hallazgos. Publicado por Shixi Lin.</description>
     <language>es</language>
-
+    <item>
+      <title>2026-09-14 AI Agent — Las capacidades se convierten en trabajo verificable</title>
+      <link>https://ai.alux.network/daily/es/2026/09/14/</link>
+      <guid>https://ai.alux.network/daily/es/2026/09/14/</guid>
+      <pubDate>Sun, 13 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Los puestos de control oficiales de modelos, los motores de inferencia especializados y las aplicaciones independientes están llegando juntos. Lo importante no es sólo lo que pueden hacer, sino cómo funcionan y cómo se pueden comprobar sus resultados.</description>
+    </item>
   </channel>
 </rss>

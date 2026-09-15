@@ -202,6 +202,13 @@
   color: #14213d;
 }
 
+.machine-note {
+  margin: 10px 0 0;
+  color: #5d6877;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
 .report-sitefooter {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

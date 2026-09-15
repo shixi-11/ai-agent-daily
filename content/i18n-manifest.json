@@ -1,4 +1,851 @@
 {
   "schemaVersion": 1,
-  "reports": {}
+  "reports": {
+    "2026-06-28": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260628.body.html",
+        "translationSha256": "b368bea37fda2da342e5421549a77b0318eb6adecbd216fdc808f938cacd18b7",
+        "sourceSha256": "6ff2861a7bf06fa3afe7e12afc97b302834d61bd6526dd080524247f6c50fd6d",
+        "generatedAt": "2026-09-15T23:24:56.136Z"
+      }
+    },
+    "2026-06-29": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260629.body.html",
+        "translationSha256": "3eb4f1d034312c2ad1e0101e6ef0125a8eb7024aaf2d42507c2125eadf081398",
+        "sourceSha256": "0fd59b90fd546d0c854b9985aec32c26ae7a4e2a9e98c9c493acf23296d99ac5",
+        "generatedAt": "2026-09-15T23:24:56.230Z"
+      }
+    },
+    "2026-06-30": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260630.body.html",
+        "translationSha256": "a8b383b4f395892cd6c6b4cd943ce1b07023817cec1e7fff6addd6da08a1c84c",
+        "sourceSha256": "4ad8a6758bb8986d35907fe972ac58db1364496b053572d559f3faa13d974401",
+        "generatedAt": "2026-09-15T23:24:56.314Z"
+      }
+    },
+    "2026-07-01": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260701.body.html",
+        "translationSha256": "a81e2ba6f13e6873426fc205faa7b3ea070034b0820eee8afb13fce2623f6db3",
+        "sourceSha256": "0fcef64a8ebe184b8e15ae83946826e1895a99765ffb3bf696e3a55ccd0325ba",
+        "generatedAt": "2026-09-15T23:24:56.408Z"
+      }
+    },
+    "2026-07-02": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260702.body.html",
+        "translationSha256": "d211043286e74b475af85f5ad7b66ae6535d6af82e7766f607060dce346d29da",
+        "sourceSha256": "b1fbf92dc370d01bd8e6646cc4c0141968cf3635718503ff480c58c45fb03741",
+        "generatedAt": "2026-09-15T23:24:56.507Z"
+      }
+    },
+    "2026-07-03": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260703.body.html",
+        "translationSha256": "a62397cffbcca4f8de3cd3f026fc3b4b212be2a978b234f6c100b3a9a7abad3c",
+        "sourceSha256": "a739476a917bc57f6a94713dd73083f0ae9c8076c96c2a73dc3ec354ebbfff3c",
+        "generatedAt": "2026-09-15T23:24:56.613Z"
+      }
+    },
+    "2026-07-04": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260704.body.html",
+        "translationSha256": "6652bb7e9884f193705373ea18fa875e67c6602c9e138970242567303a22fc2c",
+        "sourceSha256": "2b71ed8cb40e30261d0921359cea087e54421f2b1bbb262f705d86e94b095937",
+        "generatedAt": "2026-09-15T23:24:56.711Z"
+      }
+    },
+    "2026-07-05": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260705.body.html",
+        "translationSha256": "fe9acb66f3b60dc33405e89d6a2683a0c3fc8310b1d305c2724de77f5320f5b5",
+        "sourceSha256": "7e4454422ce170e81c6aff9bbf5bd16a57a82371076d6d7a10934fe9da6d780b",
+        "generatedAt": "2026-09-15T23:24:56.806Z"
+      }
+    },
+    "2026-07-06": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260706.body.html",
+        "translationSha256": "3f5d0a88a3ef105f9fc2dcebde62463a0a55778b2140a31196a1ff1635a0ddd1",
+        "sourceSha256": "64619242852b3a83aca5bf2d7ebe354cce1c737fd0763b9d32b0697a15fd6ee1",
+        "generatedAt": "2026-09-15T23:24:56.933Z"
+      }
+    },
+    "2026-07-07": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260707.body.html",
+        "translationSha256": "20fd30439b96d7d047948f36fb0a35dc1c22df08bdc77e78dabf8a174c0a33e2",
+        "sourceSha256": "57207203e446b4782cb86318e9865863fee9f5d7691d74e02bb44ef09aa6d60b",
+        "generatedAt": "2026-09-15T23:24:57.031Z"
+      }
+    },
+    "2026-07-08": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260708.body.html",
+        "translationSha256": "4005d7750c08cb47e011f90b28086547deb046f300294092ea65548ba4246ca8",
+        "sourceSha256": "bc0f1fbd1a8011658152f5b19b706d474a354b979ab6c5a9cbc5502b29ae1fe5",
+        "generatedAt": "2026-09-15T23:24:57.172Z"
+      }
+    },
+    "2026-07-09": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260709.body.html",
+        "translationSha256": "cbb724face85849a2c062a45e43ad4722bca40e37d31d024dbe980e7a8b12fbf",
+        "sourceSha256": "75a138b69c5e3d89e9b04c912a813aaf47349ef15f8b573ba66e65f3de4357ef",
+        "generatedAt": "2026-09-15T23:24:57.282Z"
+      }
+    },
+    "2026-07-10": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260710.body.html",
+        "translationSha256": "24ca9b8e06631c06f3a1e9393faa16fa317e8de0c654aa02fbecec3fe61c98e2",
+        "sourceSha256": "4eb0c74ebd648fbe20dad6360b9a7b31684ddba4ff890c0521bd6331793821b1",
+        "generatedAt": "2026-09-15T23:24:57.378Z"
+      }
+    },
+    "2026-07-11": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260711.body.html",
+        "translationSha256": "8df9332566c9e132c343c9761497e21e98ad082ee87229d499ad9504ac5ad29c",
+        "sourceSha256": "4d2ca426e41daff3e65add8b372ab00059a32ce66cfd280e0abe241c5ae2952f",
+        "generatedAt": "2026-09-15T23:24:57.475Z"
+      }
+    },
+    "2026-07-12": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260712.body.html",
+        "translationSha256": "f010f114c7de821855cb61ad44a19dca4659351a1d1aa24eac3cbc59145b8863",
+        "sourceSha256": "ed6e42e47cb01c0963430f646955ac7bb47971ef4dadc7e56299bc7cc0dd0064",
+        "generatedAt": "2026-09-15T23:24:57.571Z"
+      }
+    },
+    "2026-07-13": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260713.body.html",
+        "translationSha256": "45247e1b6d8a6f26c57ec4c0d6a2323c2e901a6aec9c0c5f1a1beec760c81df2",
+        "sourceSha256": "ed58353c6f4ba65967d9f13bdeff2aed02e90303f297b6b15057bc5bc7dec5d7",
+        "generatedAt": "2026-09-15T23:24:57.663Z"
+      }
+    },
+    "2026-07-14": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260714.body.html",
+        "translationSha256": "e53a05d71c1d834df1d81051602db19f77ec01088c169fb899bf70398456f450",
+        "sourceSha256": "436d7ff772c8a9797c26a6a9af9ad4b8815cf133381e63f9b38486b23151ba0e",
+        "generatedAt": "2026-09-15T23:24:57.763Z"
+      }
+    },
+    "2026-07-15": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260715.body.html",
+        "translationSha256": "670c4f807d292cf66fea7f1a2cc4803068502e1ab97c0471caafb88c8ce86bf3",
+        "sourceSha256": "d03a3f396311bf5c2a8db373286f312d222fa25cbf79d797685d8db62585650c",
+        "generatedAt": "2026-09-15T23:24:57.869Z"
+      }
+    },
+    "2026-07-16": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260716.body.html",
+        "translationSha256": "dd52960046d4251b9a3af410a7dbc5056199555c1fd5c0c63a9494c8723c4af3",
+        "sourceSha256": "5f13d9fb664f01f31d6eb5b8b01d79e6416e90188656d84fb8a10a81ff5b5114",
+        "generatedAt": "2026-09-15T23:24:58.004Z"
+      }
+    },
+    "2026-07-17": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260717.body.html",
+        "translationSha256": "8d4d009d629ed357698f14fe19949b236c4eb2e0ff890285b2a92ae7e3cf5223",
+        "sourceSha256": "d4dc9d17ead25228637bec2c7d0341d757a2f3d5b4a43e736c5596a2e8bdc87d",
+        "generatedAt": "2026-09-15T23:24:58.112Z"
+      }
+    },
+    "2026-07-18": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260718.body.html",
+        "translationSha256": "7359040bd2e05750a02bb212186865e56b93d89fcc952659d57326281d0d816c",
+        "sourceSha256": "43a5591196ba32ccd746a8fed0e45535d28d88f7ec0c799b8ba4bb2735071fd8",
+        "generatedAt": "2026-09-15T23:24:58.216Z"
+      }
+    },
+    "2026-07-19": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260719.body.html",
+        "translationSha256": "9ab157795549d5e1b3dad9ce987c38df2e4df0f6980bb06081344ddc31df3420",
+        "sourceSha256": "9b8490633721545343579c420cd10d3c879575e9d6265fb5eec18eae95a74d91",
+        "generatedAt": "2026-09-15T23:24:58.309Z"
+      }
+    },
+    "2026-07-20": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260720.body.html",
+        "translationSha256": "16249d92458531680b740c243ef953da02ad7a5cd1f337aa9b7886207c5da9e2",
+        "sourceSha256": "b226e6d3a31a5e438d02a35f529a602287b3b3b67ca61a2ec6e9b0ceb117988b",
+        "generatedAt": "2026-09-15T23:24:58.400Z"
+      }
+    },
+    "2026-07-21": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260721.body.html",
+        "translationSha256": "ab67259fa13d5bf1a0524d9f99aa8e82865fbca7d60e5e7beae86b50247a8801",
+        "sourceSha256": "f9c4bba7b527da962ab0479dc935077183c4a17d8349d44420d06f42fb8e8a16",
+        "generatedAt": "2026-09-15T23:24:58.501Z"
+      }
+    },
+    "2026-07-22": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260722.body.html",
+        "translationSha256": "3700b4365b218f4a1fdd1c0ac683d43ca4541a6d822c96451af97fd301a63a2d",
+        "sourceSha256": "dba70034289d3dc8414cd9b070d9dc09dd02a2a7c1818c311f46a0f4d7eb9f51",
+        "generatedAt": "2026-09-15T23:24:58.602Z"
+      }
+    },
+    "2026-07-23": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260723.body.html",
+        "translationSha256": "fedd83ea1ba6072a889dda80eafd4f094c07000d8f6364b8d2cc8ded255facda",
+        "sourceSha256": "78509969fa7802f18bdbce8993b5e48d1739e02f64ee90acc9a8d1fe5606e5e3",
+        "generatedAt": "2026-09-15T23:24:58.702Z"
+      }
+    },
+    "2026-07-24": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260724.body.html",
+        "translationSha256": "519b953a4cf6105630d6007d039cc15f5abc2808a66bb9420b66fba2a5b6a524",
+        "sourceSha256": "7cca2fd978df3bc0ac2276659e97fde99bd76b3b6ce453356d7a451159baaace",
+        "generatedAt": "2026-09-15T23:24:58.803Z"
+      }
+    },
+    "2026-07-25": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260725.body.html",
+        "translationSha256": "7bf3f2e879bc97de2f2165e00162f513de0c4ccd957af554ec5f8916fc976a17",
+        "sourceSha256": "180f43bc12a6cfdafae17d90019427b7b8d2338f7e07d98a8f80586f34943818",
+        "generatedAt": "2026-09-15T23:24:58.907Z"
+      }
+    },
+    "2026-07-26": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260726.body.html",
+        "translationSha256": "a1f6cf3d26879c6d87912202cfa3e345a23e8603ae225bdecf2835a5335abebd",
+        "sourceSha256": "d7cb136ec59352067d81e48a40d81f338299007186a01ff78771fd6f1e13d74a",
+        "generatedAt": "2026-09-15T23:24:59.010Z"
+      }
+    },
+    "2026-07-27": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260727.body.html",
+        "translationSha256": "b91604d0fa75b12fb9db1812aff491916c59adfa4040767b4296c37911934811",
+        "sourceSha256": "00160112d6f5c4e69f9e637ad8cf20d3c0b89dded350bf83c83691706d9a39ca",
+        "generatedAt": "2026-09-15T23:24:59.110Z"
+      }
+    },
+    "2026-07-28": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260728.body.html",
+        "translationSha256": "728a9b64c7ae43ecd404ed30c7a41b7fe9d9b4d8049e9260f697ce456cdfda9a",
+        "sourceSha256": "f34ea1ebb658ca3b14f5cc4f9b33ee2b113feac008071080f69cdca5e5fabac3",
+        "generatedAt": "2026-09-15T23:24:59.217Z"
+      }
+    },
+    "2026-07-29": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260729.body.html",
+        "translationSha256": "54a8705ada7434e9a333a668c12e97984c001cdc7ee1e3037c18c80453e833a3",
+        "sourceSha256": "10bf6254d958a9e5eab6ee830b4a51b193cd82cdaec432ad054ccc580e723e93",
+        "generatedAt": "2026-09-15T23:24:59.319Z"
+      }
+    },
+    "2026-07-30": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260730.body.html",
+        "translationSha256": "73bde94cb693e827fc4eb00ddf63eb1491d44d0bdddc571e6919a479863d6e89",
+        "sourceSha256": "5abd7a7483e98530573368e1d2b76475c854b6830787e522408a89835e39aa3f",
+        "generatedAt": "2026-09-15T23:24:59.421Z"
+      }
+    },
+    "2026-07-31": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260731.body.html",
+        "translationSha256": "4277a8aa47aeefd9a88ab250bbdbaebe152120c682eda6c8c2bfb2c167b2d800",
+        "sourceSha256": "5ee97d908fd60bd951092f111a778dd8eb5818e759f7e23e5ae972e3494fb1c0",
+        "generatedAt": "2026-09-15T23:24:59.520Z"
+      }
+    },
+    "2026-08-01": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260801.body.html",
+        "translationSha256": "c6b54b50b24a246c927bc263b19fe46ad9f089dda779c002e15fb67fc7a47a69",
+        "sourceSha256": "cbf41c8f8e9cfff8e73e51a94ff479dfa680c111d0e462394cadcee2629c5ce3",
+        "generatedAt": "2026-09-15T23:24:59.614Z"
+      }
+    },
+    "2026-08-08": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260808.body.html",
+        "translationSha256": "8f8889331ca5a10bd8be48159191b12ebe92000c6db58b7d4f3b326ef208cbaa",
+        "sourceSha256": "c52b7de5ccb3c94501d442a694c47404fdfa6c8eca009e30216d6232e5631c93",
+        "generatedAt": "2026-09-15T23:24:59.712Z"
+      }
+    },
+    "2026-08-09": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260809.body.html",
+        "translationSha256": "6de14ccdc3d9dafe392574cac53a490bc4849c95a8743fb7a0e450272fae17e0",
+        "sourceSha256": "e6be83cb1c90aaedd7c4d1de458dbbbcbf8e86ccb88eb10033d6c655d73da20c",
+        "generatedAt": "2026-09-15T23:24:59.810Z"
+      }
+    },
+    "2026-08-10": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260810.body.html",
+        "translationSha256": "28eebbc9a3e960fa03a9a30cde75ecad441cf1f67c070e1cbb3b5bbbd9197926",
+        "sourceSha256": "fd5e098a2406089a68db628aa74cd9f73a050c7fa816ddfd5e4767b74f59d269",
+        "generatedAt": "2026-09-15T23:24:59.907Z"
+      }
+    },
+    "2026-08-11": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260811.body.html",
+        "translationSha256": "9318a77a61725502bdf3718d1f35ed14940db97c8e065b26f12fdf7463ef8791",
+        "sourceSha256": "68c730900ef8086dcc5ae10c584fa915d262c02097e6a93ef1c0055cc0f42a8b",
+        "generatedAt": "2026-09-15T23:25:00.005Z"
+      }
+    },
+    "2026-08-12": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260812.body.html",
+        "translationSha256": "4b1f5e1a14a6a9b37ddaefd4e9146d1b21b17d0115c77659a5e7da26bf976c86",
+        "sourceSha256": "f91c4400d14f35c4a1ff9f5374810436f030f8333978954517eb229c6a7dd428",
+        "generatedAt": "2026-09-15T23:25:00.098Z"
+      }
+    },
+    "2026-08-13": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260813.body.html",
+        "translationSha256": "2eddfa3c47bfb07c20e1f7ecf1acb77cbb8eb798eb8b1b1f595c503b55b811b2",
+        "sourceSha256": "95aa05ec729f754dc0c49174cc05678d677e509191d462970e8de6433bbeda8f",
+        "generatedAt": "2026-09-15T23:25:00.200Z"
+      }
+    },
+    "2026-08-14": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260814.body.html",
+        "translationSha256": "f3e67c0056dbf1df66e0d9a631ffa274046f96c08269b7dbef536450dfa99ea1",
+        "sourceSha256": "235a2e9ea68b3131d4a0806f9d3a35104a2852e88417ff3b9b837cb445e8a824",
+        "generatedAt": "2026-09-15T23:25:00.300Z"
+      }
+    },
+    "2026-08-15": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260815.body.html",
+        "translationSha256": "36cc14f87c8e91c7edbb3644b51e3ce813faba9b703311a337c30b6d2289ac69",
+        "sourceSha256": "2147d88b723d0c4023590336b7d4f72f593498af506776b831e7db726e7582fd",
+        "generatedAt": "2026-09-15T23:25:00.395Z"
+      }
+    },
+    "2026-08-16": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260816.body.html",
+        "translationSha256": "868899130102e58c51fee3d03de921833a41531d08feb6efea4ae01ec8b6591e",
+        "sourceSha256": "a85e228366a6682f1f937185ea8c3de2e9cc3b9b7b86e75221133b30f009ce34",
+        "generatedAt": "2026-09-15T23:25:00.482Z"
+      }
+    },
+    "2026-08-17": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260817.body.html",
+        "translationSha256": "f7a2b7e2fa9a40d25b3f85d785b57f89e9f03367517a4cc0b7a2aeaf3a6312c6",
+        "sourceSha256": "b5ad7823496ba83af3be9db4fa0c14a76a2e38fc0c566838c3f2f5bf7bfa6965",
+        "generatedAt": "2026-09-15T23:25:00.575Z"
+      }
+    },
+    "2026-08-18": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260818.body.html",
+        "translationSha256": "ec209b9fd05273287caf741e34b831c78886f67b717ff167a660c596e7fc118d",
+        "sourceSha256": "64e9e5b88ea308a3d1f34965b6d13e179f60ff10c8515c18be231eb3f06ffca3",
+        "generatedAt": "2026-09-15T23:25:00.664Z"
+      }
+    },
+    "2026-08-20": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260820.body.html",
+        "translationSha256": "fcf52147b0d046e7a181397969dd06925cdc404d070f024a7cff4fead97f61ec",
+        "sourceSha256": "3d3517cb409308bd6627ec0c3729889937cf1c926907d792a6c44a2c7bc71f48",
+        "generatedAt": "2026-09-15T23:25:00.764Z"
+      }
+    },
+    "2026-08-21": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260821.body.html",
+        "translationSha256": "86d83a2d9189ab82816d85a17997b7f4174cb1ebc457aa466a25f7b894061087",
+        "sourceSha256": "06f9be2bb1be82a68a59bc6dd967cb6033d11d37b2b2704bb75669228389e06e",
+        "generatedAt": "2026-09-15T23:25:00.845Z"
+      }
+    },
+    "2026-08-22": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260822.body.html",
+        "translationSha256": "ce06a5b9dc09dc5c1591dccbcb37161b950ba44680d7a2fae5e083169dd50786",
+        "sourceSha256": "42bf7ffb12f4683a375302d76f810b6677b9a641338323f49ac56f273009a6a9",
+        "generatedAt": "2026-09-15T23:25:00.928Z"
+      }
+    },
+    "2026-08-23": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260823.body.html",
+        "translationSha256": "e7ff7c9bbafb2ab63d9551b7c44f3dd7d2ba628221dee5f6c05bcac987f34436",
+        "sourceSha256": "abe10c8773416ddb8c7679ae8b1d67a21f37405bfb5002751120350abdcd4a4a",
+        "generatedAt": "2026-09-15T23:25:01.011Z"
+      }
+    },
+    "2026-08-24": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260824.body.html",
+        "translationSha256": "567917dbec5431c56eed196a97cdaf3bc14d74e21e39dacde9b7bf4979511088",
+        "sourceSha256": "261fcddf3848df352fce8853fe0006ceb95ac4b01b76e39c56cbe1d7ebd07489",
+        "generatedAt": "2026-09-15T23:25:01.098Z"
+      }
+    },
+    "2026-08-25": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260825.body.html",
+        "translationSha256": "25e7e8313d8f7f97d113fc694116346565095d2921c78acbffd69f590f16644e",
+        "sourceSha256": "9439be60115b81e3beb5fdd3edd2db7fee05e7ebe2c73b4a3f99a49cd68dd18d",
+        "generatedAt": "2026-09-15T23:25:01.179Z"
+      }
+    },
+    "2026-08-26": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260826.body.html",
+        "translationSha256": "f7fae1ad85a683ae5dcef945cd5ec3f59df25c8e75695e7cc8722d6895b49584",
+        "sourceSha256": "cf46931779249d4fe60b1b67608be2664c569baeb0911910e819c22b6f3e822a",
+        "generatedAt": "2026-09-15T23:25:01.259Z"
+      }
+    },
+    "2026-08-27": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260827.body.html",
+        "translationSha256": "80df7724d471badc115cbe8eebf4f5465d99d3a9faa7cc3badbc55d12ebe347f",
+        "sourceSha256": "054f7495e9bbd5f3d8a9bb533c10f0d893ab130805a7a61331a9f133747cdd0b",
+        "generatedAt": "2026-09-15T23:25:01.343Z"
+      }
+    },
+    "2026-08-28": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260828.body.html",
+        "translationSha256": "1945037ab89378a575841d048eb47935ed66f6f89e21aa5ea96e1c53a6d60d7c",
+        "sourceSha256": "6d7f40d5ea65911cd240239ee2f734aea6987744f6dcd674fcab3edc7da93180",
+        "generatedAt": "2026-09-15T23:25:01.429Z"
+      }
+    },
+    "2026-08-29": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260829.body.html",
+        "translationSha256": "19112234dbfec7ce25093cfda7ea3954a02126e4af5e8daca79e97ec9dc5c470",
+        "sourceSha256": "765957902fbe1b281e3c18f55135ef769db262b5a737d1c02dac4ce8d7f892cb",
+        "generatedAt": "2026-09-15T23:25:01.516Z"
+      }
+    },
+    "2026-08-30": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260830.body.html",
+        "translationSha256": "7573318ff98ed3e8779ca17d471ccc04496ed74df845d0d1bbe2148cf56de5d2",
+        "sourceSha256": "8375274caa907f0a3583251e3e0977e99bca0bda3b066bf24d7fae68fdbf107d",
+        "generatedAt": "2026-09-15T23:25:01.604Z"
+      }
+    },
+    "2026-08-31": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260831.body.html",
+        "translationSha256": "9652dd75bbe6ddee1d159eec6b6edbe54878c879234105982f39e39aa8e92b59",
+        "sourceSha256": "1458f4d33b1a9da86255dfd29b1ab2b2ac1bdbd8335ebcb5452a5402e5b9cfc9",
+        "generatedAt": "2026-09-15T23:25:01.686Z"
+      }
+    },
+    "2026-09-01": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260901.body.html",
+        "translationSha256": "4873a720ffa18a560a10dc3c8801db3fd18e38a7a2616342a5e69ba6ffd0a453",
+        "sourceSha256": "fdaf6b80c8493467beed6e86319ca412f382c156f32d9377eceb0ecdc0d6ecf6",
+        "generatedAt": "2026-09-15T23:25:01.772Z"
+      }
+    },
+    "2026-09-02": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260902.body.html",
+        "translationSha256": "1b6814e1bc23762abbe0f1dbbdcc31c30d0f206625066eae5661f8f0f946505c",
+        "sourceSha256": "fbde580c6d18595217ab046b1f8bf2f2102008aae408c3184aa3144aeaf80021",
+        "generatedAt": "2026-09-15T23:25:01.855Z"
+      }
+    },
+    "2026-09-03": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260903.body.html",
+        "translationSha256": "854a6f9903174521569388533b98b2434e3290e930ab828dc7073917458d2fef",
+        "sourceSha256": "c64607d5998db01550fa1e9c10bc8b01b03c02992a166fa5fe0f1d28d6d6109b",
+        "generatedAt": "2026-09-15T23:25:01.939Z"
+      }
+    },
+    "2026-09-04": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260904.body.html",
+        "translationSha256": "db2278164bd05cbe75798d812585a80281f1cd86732c679d62523810c5767434",
+        "sourceSha256": "8a9ab1aac13dce7cbfc5aa8d1d2d15ef7b5cf827a1ec6d29eb0f606d1ab10738",
+        "generatedAt": "2026-09-15T23:25:02.025Z"
+      }
+    },
+    "2026-09-05": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260905.body.html",
+        "translationSha256": "3f7688496ba6a55e49058a6adbab5162935a939a44342ba9d19a21c06467d708",
+        "sourceSha256": "f6a2dcad9a6967ba377fc249bb7f631fb11949d401003ff833b44a618b74dc97",
+        "generatedAt": "2026-09-15T23:25:02.110Z"
+      }
+    },
+    "2026-09-06": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260906.body.html",
+        "translationSha256": "fb9e4f1057cd734a8dd229e73147ea5e05a8e56e66940e2dd80122409f800888",
+        "sourceSha256": "09e301aa7f12d6632739e5ed6c89f4fffb635cafd6941e8522f1e3c60b22d493",
+        "generatedAt": "2026-09-15T23:25:02.211Z"
+      }
+    },
+    "2026-09-07": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260907.body.html",
+        "translationSha256": "f9f3ecd774ef8a6c4f28e98048b2b7edce1648bdd911d0e8ac4071674677eb92",
+        "sourceSha256": "32b25936cbcffb4f49b103d8c0a67630a3d4abc47a513ca8090f17e7258b7923",
+        "generatedAt": "2026-09-15T23:25:02.309Z"
+      }
+    },
+    "2026-09-08": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260908.body.html",
+        "translationSha256": "a5226d4512290c672b582f5e1b329f12f01b2ff0d87b6647d54152caee64ac68",
+        "sourceSha256": "574ac58b7a1e4674ce2706eadf17d57020cba3468ed597f029503d7ccaf31cb1",
+        "generatedAt": "2026-09-15T23:25:02.404Z"
+      }
+    },
+    "2026-09-09": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260909.body.html",
+        "translationSha256": "84118dd1ad43798557ec140555a3ff172065cc248d86cac907e247f458d6b66f",
+        "sourceSha256": "67b53d66da839490f8860fe5c53815c14f2a151ab838a6e6e926e99ef30b17ca",
+        "generatedAt": "2026-09-15T23:25:02.494Z"
+      }
+    },
+    "2026-09-10": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260910.body.html",
+        "translationSha256": "404390bf0a45762df2f85ef413ac65aa470b66194d383ee7fb100f8f5a133296",
+        "sourceSha256": "1295724db635e11e627451b67a3f774520858f7fdcae1ab0d20c7926f2cd2021",
+        "generatedAt": "2026-09-15T23:25:02.584Z"
+      }
+    },
+    "2026-09-11": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260911.body.html",
+        "translationSha256": "e640bf945e0d6c57491f963082b9c4a18edb4f89bcd29e010ca2f8f5acfe6c66",
+        "sourceSha256": "8c8e624fade2d732d626f21d65c12d69cdf14c33a5b88d35addb99ce08edb704",
+        "generatedAt": "2026-09-15T23:25:02.670Z"
+      }
+    },
+    "2026-09-12": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260912.body.html",
+        "translationSha256": "6d2d54dc02d9a5ec14cfb3b1839ccb7261e1da2545827c1887c56c493c9dda5d",
+        "sourceSha256": "6e8b362b5e2070a82402d8464b33a0d0e604bee18d285a2e3e823caf33549e92",
+        "generatedAt": "2026-09-15T23:25:02.765Z"
+      }
+    },
+    "2026-09-13": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260913.body.html",
+        "translationSha256": "5b16ec1c68fb959852914f31ebb8dc21d4f15ff96b1be77e0ef32aa1c4b71f54",
+        "sourceSha256": "78cf698ba45d14d33597f7e557495b6a2cded534bd2d7cc9ac98d307e0149499",
+        "generatedAt": "2026-09-15T23:25:02.856Z"
+      }
+    },
+    "2026-09-14": {
+      "zh-Hant": {
+        "status": "generated",
+        "engine": "opencc-s2twp",
+        "source": "zh",
+        "translationFile": "20260914.body.html",
+        "translationSha256": "9f3023ce8148d3c563d6f222a39fccab0583ec6e2af9bd07ebc0b20f023c7880",
+        "sourceSha256": "71b1cefeda3ca3f0bf683927bd00a970b335546b5b30fe3308f0e051de697b73",
+        "generatedAt": "2026-09-15T23:25:02.962Z"
+      },
+      "ja": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260914.body.html",
+        "translationSha256": "f7ab6e09d63fa2b8b1d9068be1ef9ff69bfa02830d89e364d1adc0ed19fc1e3f",
+        "sourceSha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
+        "generatedAt": "2026-09-15T23:30:06.884Z"
+      },
+      "ko": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260914.body.html",
+        "translationSha256": "381cc233ae764de82bcdf701e40f195810ca9d947243f9344b49fab742d21464",
+        "sourceSha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
+        "generatedAt": "2026-09-15T23:30:06.902Z"
+      },
+      "es": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260914.body.html",
+        "translationSha256": "814ecd1f8ffc7979b14a6b0bda436f6b33672b20341d932be91ca98ca08f6dae",
+        "sourceSha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
+        "generatedAt": "2026-09-15T23:30:06.917Z"
+      },
+      "fr": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260914.body.html",
+        "translationSha256": "9234b18ec6c9f7755e3473c16698c1249332d3c6d6cc9639b9a0162676367400",
+        "sourceSha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
+        "generatedAt": "2026-09-15T23:30:06.934Z"
+      },
+      "de": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260914.body.html",
+        "translationSha256": "7e1fd79af736541248104bc948cb9cae143ab4699bd358e72f52d5ed18dd0cd0",
+        "sourceSha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
+        "generatedAt": "2026-09-15T23:30:06.950Z"
+      },
+      "ar": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260914.body.html",
+        "translationSha256": "3c6d262c44c913f3e857a67841730697bc080beeb828a574cf4d59a3fd2c2196",
+        "sourceSha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
+        "generatedAt": "2026-09-15T23:30:06.969Z"
+      }
+    }
+  }
 }

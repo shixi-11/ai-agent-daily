@@ -11,6 +11,8 @@
     "verify:boundary": "node scripts/verify-release-boundary.cjs",
     "collect": "node scripts/collect-signals.cjs",
     "live": "node scripts/generate-live.cjs",
+    "translate": "node scripts/translate-issues.cjs --hant-all --latest",
+    "test:align": "node scripts/test-align-html.cjs",
     "test:live": "node scripts/test-live-compose.cjs",
     "watchdog": "node scripts/check-today.cjs",
     "preview": "node scripts/serve-preview.cjs",

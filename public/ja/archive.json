@@ -7,19 +7,19 @@
   "publicationUrl": "https://ai.alux.network/daily/ja/",
   "latest": {
     "date": "2026-09-14",
-    "url": "/daily/en/2026/09/14/",
-    "latestUrl": "/daily/en/latest/",
+    "url": "/daily/ja/2026/09/14/",
+    "latestUrl": "/daily/ja/latest/",
     "alternateUrl": "/daily/2026/09/14/"
   },
   "reports": [
     {
       "date": "2026-09-14",
-      "title": "AI Agent — Capabilities become verifiable work",
-      "lead": "Official model weights, specialized inference engines, and standalone applications are arriving together. What matters is not just what they can do, but how they run and how their results can be checked.",
-      "url": "/daily/en/2026/09/14/",
+      "title": "AI Agent — 能力は検証可能な仕事になる",
+      "lead": "公式のモデルチェックポイント 専門の推論エンジン 独立したアプリケーションが 集まる 重要なのは 実行方法や 結果を 確認する方法です",
+      "url": "/daily/ja/2026/09/14/",
       "alternateUrl": "/daily/2026/09/14/",
-      "publicPath": null,
-      "translated": false
+      "publicPath": "ja/2026/09/14/index.html",
+      "translated": true
     },
     {
       "date": "2026-09-13",

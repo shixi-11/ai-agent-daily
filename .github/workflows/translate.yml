@@ -1,0 +1,39 @@
+name: Align and translate
+
+on:
+  schedule:
+    - cron: '50 16 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OpenCC
+        run: pip install opencc-python-reimplemented
+      - name: Convert Traditional Chinese archive and translate latest issue
+        run: node scripts/translate-issues.cjs --hant-all --latest --continue
+      - name: Rebuild public pages
+        run: node scripts/sync-reports.cjs
+      - name: Publish translations
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content locales scripts public/zh-Hant public/ja public/ko public/es public/fr public/de public/ar public/assets/report-site.css public/sitemap.xml public/index.html public/en/index.html
+          if git diff --cached --quiet; then
+            echo "No translation changes"
+            exit 0
+          fi
+          git commit -m "更新自动对齐翻译 $(date -u +%F)"
+          git pull --rebase --autostash origin "${GITHUB_REF_NAME}" || true
+          git push

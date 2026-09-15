@@ -92,9 +92,9 @@ if (translationManifestByDate.size !== sourceFiles.length) {
   throw new Error(`翻译清单与中文日报数量不一致：清单 ${translationManifestByDate.size}，中文 ${sourceFiles.length}。`);
 }
 
-function reviewedOptional(dateIso, localeId) {
+function loadOptional(dateIso, localeId) {
   const entry = i18nManifest.reports?.[dateIso]?.[localeId];
-  if (!entry || entry.status !== 'reviewed') return null;
+  if (!entry || !['reviewed', 'generated'].includes(entry.status)) return null;
   const file = path.join(siteRoot, 'content', localeId, `${dateIso.replace(/-/g, '')}.body.html`);
   if (!fs.existsSync(file)) return null;
   const hash = sha256File(file);
@@ -149,7 +149,7 @@ for (const name of sourceFiles) {
   const relative = datedRelative(dateIso);
   const optionals = {};
   for (const locale of optionalLocales) {
-    const loaded = reviewedOptional(dateIso, locale.id);
+    const loaded = loadOptional(dateIso, locale.id);
     if (!loaded) continue;
     assertTranslationBody({
       bodyFragment: loaded.html,

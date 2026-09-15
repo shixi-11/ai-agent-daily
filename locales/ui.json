@@ -38,6 +38,7 @@
     "feedLabel": "RSS",
     "ownerNav": "光之十一 ↗",
     "untranslated": "此语种尚未翻译本期，先读中文或英文。",
+    "machineNote": "此页由结构对齐的机器翻译生成，未经人工精修。",
     "issueCount": "{n}期"
   },
   "en": {
@@ -79,6 +80,7 @@
     "feedLabel": "RSS",
     "ownerNav": "Shixi Lin ↗",
     "untranslated": "This issue is not translated yet. Read it in Chinese or English.",
+    "machineNote": "Aligned machine translation. Not a human edit.",
     "issueCount": "{n} Issues"
   },
   "zh-Hant": {
@@ -120,6 +122,7 @@
     "feedLabel": "RSS",
     "ownerNav": "光之十一 ↗",
     "untranslated": "此語種尚未翻譯本期，先讀中文或英文。",
+    "machineNote": "此頁由簡體原稿自動轉換為繁體，未經人工精修。",
     "issueCount": "{n}期"
   },
   "ja": {
@@ -161,6 +164,7 @@
     "feedLabel": "RSS",
     "ownerNav": "Shixi Lin ↗",
     "untranslated": "この号はまだ翻訳されていません。中国語または英語でお読みください。",
+    "machineNote": "構造を揃えた機械翻訳です。人手の精修はしていません。",
     "issueCount": "{n}号"
   },
   "ko": {
@@ -202,6 +206,7 @@
     "feedLabel": "RSS",
     "ownerNav": "Shixi Lin ↗",
     "untranslated": "이 호는 아직 번역되지 않았습니다. 중국어 또는 영어로 읽어 주세요.",
+    "machineNote": "구조를 맞춘 기계 번역이며, 사람 윤문을 거치지 않았습니다.",
     "issueCount": "{n}호"
   },
   "es": {
@@ -243,6 +248,7 @@
     "feedLabel": "RSS",
     "ownerNav": "Shixi Lin ↗",
     "untranslated": "Este número aún no está traducido. Léalo en chino o en inglés.",
+    "machineNote": "Traducción automática alineada. Sin edición humana.",
     "issueCount": "{n} números"
   },
   "fr": {
@@ -284,6 +290,7 @@
     "feedLabel": "RSS",
     "ownerNav": "Shixi Lin ↗",
     "untranslated": "Ce numéro n’est pas encore traduit. Lisez-le en chinois ou en anglais.",
+    "machineNote": "Traduction automatique alignée, sans relecture humaine.",
     "issueCount": "{n} numéros"
   },
   "de": {
@@ -325,6 +332,7 @@
     "feedLabel": "RSS",
     "ownerNav": "Shixi Lin ↗",
     "untranslated": "Diese Ausgabe ist noch nicht übersetzt. Bitte auf Chinesisch oder Englisch lesen.",
+    "machineNote": "Strukturtreue Maschinenübersetzung, ohne menschliche Redaktion.",
     "issueCount": "{n} Ausgaben"
   },
   "ar": {
@@ -366,6 +374,7 @@
     "feedLabel": "RSS",
     "ownerNav": "Shixi Lin ↗",
     "untranslated": "هذا العدد غير مترجم بعد. اقرأه بالصينية أو الإنجليزية.",
+    "machineNote": "ترجمة آلية محافظة على البنية، دون تحرير بشري.",
     "issueCount": "{n} أعداد"
   }
 }

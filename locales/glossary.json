@@ -1,0 +1,216 @@
+{
+  "version": 1,
+  "lock": [
+    "Agent Daily", "AI Agent Daily", "ALUX AI Agent Daily", "AI Agent", "ALUX", "GitHub", "GitHub Stars", "Hugging Face", "HuggingFace",
+    "OpenAI", "Anthropic", "Claude", "GPT", "Gemini", "DeepSeek", "DeepSelect", "DeepJIT",
+    "Cohere", "PyTorch", "CUDA", "Ascend", "BF16", "FP8", "Apache-2.0", "MIT", "MCP",
+    "Show HN", "Pinocchio", "Intern-S2", "Meta Muse", "Muse", "AgentSpork", "ClientCoded",
+    "Learnlance", "Swobu", "RunBoth", "WearableQA", "vLLM", "H100", "WhatsApp",
+    "Messages API", "Agent SDK", "Managed Agents", "Shop Pay", "1Password",
+    "RISC", "TopK", "NPU", "GPU", "SQL", "HTML", "HTTPS", "API", "SDK", "VM"
+  ],
+  "prephrases": [
+    ["\\bmodel weights\\b", "model checkpoints"],
+    ["\\bBF16 weights\\b", "BF16 checkpoints"],
+    ["\\bofficial weights\\b", "official checkpoints"],
+    ["\\bthe official weights\\b", "the official checkpoints"]
+  ],
+  "labels": {
+    "What changed:": {
+      "ja": "何が変わったか：",
+      "ko": "무엇이 달라졌나:",
+      "es": "Qué cambió:",
+      "fr": "Ce qui a changé :",
+      "de": "Was sich geändert hat:",
+      "ar": "ما الذي تغيّر:"
+    },
+    "Why it matters:": {
+      "ja": "なぜ重要か：",
+      "ko": "왜 중요한가:",
+      "es": "Por qué importa:",
+      "fr": "Pourquoi c’est important :",
+      "de": "Warum es zählt:",
+      "ar": "لماذا يهم:"
+    },
+    "Who should care:": {
+      "ja": "誰向けか：",
+      "ko": "누구에게 필요한가:",
+      "es": "A quién le importa:",
+      "fr": "Pour qui :",
+      "de": "Für wen:",
+      "ar": "لمن هذا:"
+    },
+    "Try it": {
+      "ja": "試す",
+      "ko": "직접 보기",
+      "es": "Pruébalo",
+      "fr": "Essayer",
+      "de": "Ausprobieren",
+      "ar": "جرّبه"
+    },
+    "Keep in mind": {
+      "ja": "注意点",
+      "ko": "참고",
+      "es": "Tener en cuenta",
+      "fr": "À retenir",
+      "de": "Im Blick behalten",
+      "ar": "تنبيه"
+    },
+    "RISC Machine Primer": {
+      "ja": "RISCマシン入門",
+      "ko": "RISC 머신 안내",
+      "es": "Guía de la máquina RISC",
+      "fr": "Primer de la machine RISC",
+      "de": "RISC-Maschinenleitfaden",
+      "ar": "مدخل آلة RISC"
+    },
+    "AI Agent Radar": {
+      "ja": "AI Agentレーダー",
+      "ko": "AI Agent 레이더",
+      "es": "Radar de AI Agent",
+      "fr": "Radar AI Agent",
+      "de": "AI-Agent-Radar",
+      "ar": "رادار الوكلاء"
+    },
+    "New Features Worth Watching": {
+      "ja": "注目の新機能",
+      "ko": "주목할 새 기능",
+      "es": "Nuevas funciones a seguir",
+      "fr": "Nouvelles fonctions à suivre",
+      "de": "Neue Funktionen im Blick",
+      "ar": "ميزات جديدة تستحق المتابعة"
+    },
+    "Open-Source Finds on GitHub": {
+      "ja": "GitHubのオープンソース",
+      "ko": "GitHub 오픈소스 발견",
+      "es": "Hallazgos open source en GitHub",
+      "fr": "Trouvailles open source sur GitHub",
+      "de": "Open-Source-Funde auf GitHub",
+      "ar": "اكتشافات مفتوحة على GitHub"
+    },
+    "Global Technology and Market Watch": {
+      "ja": "技術と市場の観察",
+      "ko": "기술·시장 관찰",
+      "es": "Tecnología y mercado",
+      "fr": "Techno et marché",
+      "de": "Technik und Markt",
+      "ar": "التقنية والسوق"
+    },
+    "Sources": {
+      "ja": "出典",
+      "ko": "출처",
+      "es": "Fuentes",
+      "fr": "Sources",
+      "de": "Quellen",
+      "ar": "المصادر"
+    },
+    "Today’s AI Guide": {
+      "ja": "今日のAI案内",
+      "ko": "오늘의 AI 안내",
+      "es": "Guía de IA de hoy",
+      "fr": "Guide IA du jour",
+      "de": "KI-Leitfaden heute",
+      "ar": "دليل اليوم"
+    },
+    "The big picture:": {
+      "ja": "全体像：",
+      "ko": "큰 그림:",
+      "es": "El panorama:",
+      "fr": "Le tableau d’ensemble :",
+      "de": "Das große Bild:",
+      "ar": "الصورة الكبيرة:"
+    },
+    "Worth watching": {
+      "ja": "注目",
+      "ko": "주목",
+      "es": "A seguir",
+      "fr": "À suivre",
+      "de": "Sehenswert",
+      "ar": "جدير بالمتابعة"
+    },
+    "Ready to explore": {
+      "ja": "試せる",
+      "ko": "바로 탐색",
+      "es": "Listo para explorar",
+      "fr": "Prêt à explorer",
+      "de": "Bereit zum Ausprobieren",
+      "ar": "جاهز للتجربة"
+    },
+    "Open-source finds": {
+      "ja": "オープンソース",
+      "ko": "오픈소스",
+      "es": "Open source",
+      "fr": "Open source",
+      "de": "Open Source",
+      "ar": "مصادر مفتوحة"
+    },
+    "Coverage areas": {
+      "ja": "対象領域",
+      "ko": "다루는 영역",
+      "es": "Áreas cubiertas",
+      "fr": "Domaines couverts",
+      "de": "Abgedeckte Felder",
+      "ar": "مجالات التغطية"
+    },
+    "Official announcement": {
+      "ja": "公式発表",
+      "ko": "공식 발표",
+      "es": "Anuncio oficial",
+      "fr": "Annonce officielle",
+      "de": "Offizielle Ankündigung",
+      "ar": "إعلان رسمي"
+    },
+    "Official code release": {
+      "ja": "公式コード公開",
+      "ko": "공식 코드 공개",
+      "es": "Código oficial",
+      "fr": "Code officiel",
+      "de": "Offizieller Code",
+      "ar": "إصدار شيفرة رسمي"
+    },
+    "Official research": {
+      "ja": "公式研究",
+      "ko": "공식 연구",
+      "es": "Investigación oficial",
+      "fr": "Recherche officielle",
+      "de": "Offizielle Forschung",
+      "ar": "بحث رسمي"
+    },
+    "China": { "ja": "中国", "ko": "중국", "es": "China", "fr": "Chine", "de": "China", "ar": "الصين" },
+    "United States": { "ja": "米国", "ko": "미국", "es": "Estados Unidos", "fr": "États-Unis", "de": "Vereinigte Staaten", "ar": "الولايات المتحدة" },
+    "Canada": { "ja": "カナダ", "ko": "캐나다", "es": "Canadá", "fr": "Canada", "de": "Kanada", "ar": "كندا" },
+    "Global": { "ja": "グローバル", "ko": "글로벌", "es": "Global", "fr": "Mondial", "de": "Global", "ar": "عالمي" },
+    "This issue’s takeaway:": {
+      "ja": "今号の要点：",
+      "ko": "이번 호의 핵심:",
+      "es": "Conclusión de este número:",
+      "fr": "À retenir de ce numéro :",
+      "de": "Fazit dieser Ausgabe:",
+      "ar": "خلاصة هذا العدد:"
+    },
+    "A small experiment to try": {
+      "ja": "今日試せること",
+      "ko": "오늘 해볼 작은 실험",
+      "es": "Un experimento pequeño",
+      "fr": "Une petite expérience",
+      "de": "Ein kleines Experiment",
+      "ar": "تجربة صغيرة"
+    },
+    "Models · Systems · Applications": {
+      "ja": "モデル · システム · 応用",
+      "ko": "모델 · 시스템 · 응용",
+      "es": "Modelos · Sistemas · Aplicaciones",
+      "fr": "Modèles · Systèmes · Applications",
+      "de": "Modelle · Systeme · Anwendungen",
+      "ar": "نماذج · أنظمة · تطبيقات"
+    },
+    "Global AI Brief": {
+      "ja": "グローバルAIブリーフ",
+      "ko": "글로벌 AI 브리프",
+      "es": "Briefing global de IA",
+      "fr": "Briefing IA mondial",
+      "de": "Globaler KI-Brief",
+      "ar": "موجز الذكاء الاصطناعي"
+    }
+  }
+}
