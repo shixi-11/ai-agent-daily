@@ -1,10 +1,11 @@
 {
-  "version": 1,
-  "lookbackDays": 14,
+  "version": 2,
+  "lookbackDays": 7,
   "githubRepos": [
     "openai/openai-python",
     "openai/codex",
     "anthropics/anthropic-sdk-python",
+    "anthropics/claude-code",
     "google-gemini/gemini-cli",
     "huggingface/transformers",
     "huggingface/huggingface_hub",
@@ -19,7 +20,10 @@
     "cline/cline",
     "modelcontextprotocol/servers",
     "langchain-ai/langchain",
-    "microsoft/markitdown"
+    "microsoft/markitdown",
+    "xai-org/grok",
+    "ollama/ollama",
+    "ggerganov/llama.cpp"
   ],
   "huggingfaceOrgs": [
     "openai",
@@ -34,12 +38,33 @@
     "anthropic"
   ],
   "rssFeeds": [
-    { "id": "openai-news", "url": "https://openai.com/news/rss.xml" },
-    { "id": "anthropic-news", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/master/feeds/anthropic.xml", "optional": true },
-    { "id": "google-ai-blog", "url": "https://blog.google/technology/ai/rss/" },
-    { "id": "huggingface-blog", "url": "https://huggingface.co/blog/feed.xml" },
-    { "id": "simonwillison", "url": "https://simonwillison.net/atom.xml" },
-    { "id": "github-blog", "url": "https://github.blog/ai-and-ml/feed/" }
+    { "id": "openai-news", "url": "https://openai.com/news/rss.xml", "weight": 10, "region": "美国", "kind": "official" },
+    { "id": "anthropic-news", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/master/feeds/anthropic.xml", "optional": true, "weight": 10, "region": "美国", "kind": "official" },
+    { "id": "google-ai-blog", "url": "https://blog.google/technology/ai/rss/", "weight": 9, "region": "美国", "kind": "official" },
+    { "id": "deepmind-blog", "url": "https://deepmind.google/blog/rss.xml", "optional": true, "weight": 9, "region": "英国", "kind": "official" },
+    { "id": "huggingface-blog", "url": "https://huggingface.co/blog/feed.xml", "weight": 8, "region": "全球社区", "kind": "official" },
+    { "id": "simonwillison", "url": "https://simonwillison.net/atom.xml", "optional": true, "weight": 8, "region": "全球社区", "kind": "analysis" },
+    { "id": "github-blog", "url": "https://github.blog/ai-and-ml/feed/", "weight": 7, "region": "美国", "kind": "official" },
+    { "id": "nvidia-blog", "url": "https://blogs.nvidia.com/blog/category/generative-ai/feed/", "optional": true, "weight": 7, "region": "美国", "kind": "official" },
+    { "id": "aws-ml", "url": "https://aws.amazon.com/blogs/machine-learning/feed/", "optional": true, "weight": 6, "region": "美国", "kind": "official" },
+    { "id": "microsoft-ai", "url": "https://blogs.microsoft.com/ai/feed/", "optional": true, "weight": 7, "region": "美国", "kind": "official" },
+    { "id": "meta-ai", "url": "https://engineering.fb.com/category/ml-applications/feed/", "optional": true, "weight": 7, "region": "美国", "kind": "official" },
+    { "id": "langchain-blog", "url": "https://blog.langchain.com/rss/", "optional": true, "weight": 6, "region": "全球社区", "kind": "product" },
+    { "id": "vercel-blog", "url": "https://vercel.com/atom", "optional": true, "weight": 6, "region": "美国", "kind": "product" },
+    { "id": "latent-space", "url": "https://www.latent.space/feed", "optional": true, "weight": 6, "region": "全球社区", "kind": "analysis" },
+    { "id": "interconnects", "url": "https://www.interconnects.ai/feed", "optional": true, "weight": 6, "region": "全球社区", "kind": "analysis" },
+    { "id": "techcrunch-ai", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "optional": true, "weight": 5, "region": "美国", "kind": "press" },
+    { "id": "theverge-ai", "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "optional": true, "weight": 5, "region": "美国", "kind": "press" },
+    { "id": "hn-ai", "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+agent+OR+MCP", "weight": 6, "region": "全球社区", "kind": "community" },
+    { "id": "arxiv-cs-ai", "url": "https://export.arxiv.org/rss/cs.AI", "weight": 7, "region": "全球研究", "kind": "research" },
+    { "id": "arxiv-cs-cl", "url": "https://export.arxiv.org/rss/cs.CL", "weight": 7, "region": "全球研究", "kind": "research" },
+    { "id": "arxiv-cs-lg", "url": "https://export.arxiv.org/rss/cs.LG", "optional": true, "weight": 6, "region": "全球研究", "kind": "research" },
+    { "id": "jiqizhixin", "url": "https://www.jiqizhixin.com/rss", "optional": true, "weight": 7, "region": "中国", "kind": "press" },
+    { "id": "solidot", "url": "https://www.solidot.org/index.rss", "optional": true, "weight": 5, "region": "中国", "kind": "press" },
+    { "id": "infoq-cn", "url": "https://www.infoq.cn/feed", "optional": true, "weight": 5, "region": "中国", "kind": "press" },
+    { "id": "sspai", "url": "https://sspai.com/feed", "optional": true, "weight": 4, "region": "中国", "kind": "press" },
+    { "id": "reddit-localllama", "url": "https://www.reddit.com/r/LocalLLaMA/.rss", "optional": true, "weight": 4, "region": "全球社区", "kind": "community" },
+    { "id": "reddit-machinelearning", "url": "https://www.reddit.com/r/MachineLearning/.rss", "optional": true, "weight": 4, "region": "全球社区", "kind": "community" }
   ],
   "persistentWatch": [
     {
