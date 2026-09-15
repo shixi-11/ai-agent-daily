@@ -151,9 +151,15 @@
   content: "";
 }
 
-.language-more[open] > summary {
+.language-more[open] > summary,
+.language-more[data-current] > summary {
   background: #14213d;
   color: #fff;
+}
+
+.language-more .language-mark {
+  font-size: 12px;
+  letter-spacing: .06em;
 }
 
 .language-more-menu {
@@ -171,15 +177,28 @@
 .language-more-menu a {
   display: flex;
   align-items: center;
+  gap: 10px;
   min-height: 44px;
   padding: 0 14px;
   color: #354052;
   font-size: 13px;
 }
 
+.language-more-menu .language-code {
+  flex: 0 0 28px;
+  color: #5d6877;
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: .06em;
+}
+
 .language-more-menu a:hover,
 .language-more-menu a[aria-current="page"] {
   background: #edf4f2;
+  color: #14213d;
+}
+
+.language-more-menu a[aria-current="page"] .language-code {
   color: #14213d;
 }
 

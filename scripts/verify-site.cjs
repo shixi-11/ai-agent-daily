@@ -154,6 +154,12 @@ if ((englishIndex.match(/class="language-switch"/g) || []).length !== 1) throw n
 if (!chineseIndex.includes('class="language-more"') || !englishIndex.includes('class="language-more"')) {
   throw new Error('中英首页缺少更多语言菜单。');
 }
+if (!chineseIndex.includes('class="language-code"') || !englishIndex.includes('class="language-code"')) {
+  throw new Error('中英首页语言菜单缺少语种标识。');
+}
+if (chineseIndex.includes('data-current="true"') || englishIndex.includes('data-current="true"')) {
+  throw new Error('中英首页不应把更多语言按钮标成当前语言。');
+}
 for (const [label, html] of [['zh', chineseIndex], ['en', englishIndex]]) {
   const block = html.match(/<span class="language-switch"[^>]*>[\s\S]*?<\/span>/);
   if (!block) throw new Error(`${label} 首页缺少 language-switch。`);
@@ -166,6 +172,12 @@ for (const locale of optionalLocales) {
   if (!home.includes(`lang="${locale.htmlLang}"`)) throw new Error(`${locale.id} 首页 html lang 不正确。`);
   if (!home.includes('class="language-switch"') || !home.includes('>中<') || !home.includes('>EN<')) {
     throw new Error(`${locale.id} 首页必须保留中/EN 主切换。`);
+  }
+  if (!home.includes('class="language-code"') || !home.includes(`>${locale.shortLabel}<`)) {
+    throw new Error(`${locale.id} 首页语言切换缺少 ${locale.shortLabel} 标识。`);
+  }
+  if (!home.includes('data-current="true"') || !home.includes(`aria-current="true"`)) {
+    throw new Error(`${locale.id} 首页当前语言未在切换器上标出。`);
   }
   if (!home.includes(`hreflang="${locale.hreflang}"`)) throw new Error(`${locale.id} 首页缺少自身 hreflang。`);
   if (locale.dir === 'rtl' && !/\sdir="rtl"/.test(home)) throw new Error(`${locale.id} 首页缺少 RTL。`);

@@ -12,8 +12,10 @@ let count = 0;
 function scan(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const file = path.join(dir, entry.name);
-    if (entry.isDirectory()) scan(file);
-    else if (entry.name === 'index.html') {
+    if (entry.isDirectory()) {
+      if (entry.name === 'live') continue;
+      scan(file);
+    } else if (entry.name === 'index.html') {
       const html = rewriteDailyText(fs.readFileSync(file, 'utf8'));
       const head = html.split(/<\/head>/i)[0];
       const values = new Map();

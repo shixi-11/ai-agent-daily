@@ -23,13 +23,18 @@ function hreflangLinks(baseUrl, pathsByLocale, availableIds, xDefaultId = 'zh') 
 
 function languageMoreMarkup(locale, pathsByLocale, availableIds, ui) {
   const extras = locales.filter((item) => item.id !== 'zh' && item.id !== 'en');
+  const currentExtra = extras.find((item) => item.id === locale.id) || null;
   const links = extras.map((item) => {
     const href = pathsByLocale[item.id];
     const current = locale.id === item.id ? ' aria-current="page"' : '';
-    return `      <a href="${encodeHtml(href)}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}>${encodeHtml(item.nativeLabel)}</a>`;
+    return `      <a href="${encodeHtml(href)}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}><span class="language-code">${encodeHtml(item.shortLabel)}</span><span class="language-name">${encodeHtml(item.nativeLabel)}</span></a>`;
   }).join('\n');
-  return `<details class="language-more">
-      <summary aria-label="${encodeHtml(ui.moreLanguagesLabel)}"><span aria-hidden="true">···</span></summary>
+  const mark = currentExtra ? encodeHtml(currentExtra.shortLabel) : '···';
+  const currentAttr = currentExtra ? ' data-current="true"' : '';
+  const summaryCurrent = currentExtra ? ' aria-current="true"' : '';
+  const label = currentExtra ? `${ui.languageLabel} · ${currentExtra.nativeLabel}` : ui.moreLanguagesLabel;
+  return `<details class="language-more"${currentAttr}>
+      <summary aria-label="${encodeHtml(label)}"${summaryCurrent}><span class="language-mark" aria-hidden="true">${mark}</span></summary>
       <div class="language-more-menu">
 ${links}
       </div>
@@ -37,18 +42,8 @@ ${links}
 }
 
 function languageMoreForHome(locale, basePath) {
-  const extras = locales.filter((item) => item.id !== 'zh' && item.id !== 'en');
-  const links = extras.map((item) => {
-    const href = localeUrl(item, basePath, '/');
-    const current = locale.id === item.id ? ' aria-current="page"' : '';
-    return `      <a href="${encodeHtml(href)}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}>${encodeHtml(item.nativeLabel)}</a>`;
-  }).join('\n');
-  return `<details class="language-more">
-      <summary aria-label="${encodeHtml(locale.ui.moreLanguagesLabel)}"><span aria-hidden="true">···</span></summary>
-      <div class="language-more-menu">
-${links}
-      </div>
-    </details>`;
+  const pathsByLocale = Object.fromEntries(locales.map((item) => [item.id, localeUrl(item, basePath, '/')]));
+  return languageMoreMarkup(locale, pathsByLocale, null, locale.ui);
 }
 
 function homeHreflangLinks(baseUrl, basePath) {
