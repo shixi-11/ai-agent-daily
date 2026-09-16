@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-17",
-  "generatedAt": "2026-09-16T16:25:57.309Z",
-  "generatedAtShanghai": "2026-09-17 00:25",
-  "collectedAt": "2026-09-16T16:25:57.309Z",
+  "generatedAt": "2026-09-16T16:27:09.297Z",
+  "generatedAtShanghai": "2026-09-17 00:27",
+  "collectedAt": "2026-09-16T16:27:09.297Z",
   "counts": {
-    "rss": 255,
+    "rss": 243,
     "githubReleases": 69,
     "huggingface": 54,
     "hn": 9,
     "showHn": 13,
     "githubSearch": 10,
-    "total": 410
+    "total": 398
   },
   "feedReports": [
     {
@@ -128,9 +128,10 @@
     },
     {
       "id": "hn-show",
-      "ok": true,
-      "count": 12,
-      "error": ""
+      "ok": false,
+      "optional": true,
+      "count": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "producthunt",
@@ -182,16 +183,16 @@
     },
     {
       "id": "reddit-localllama",
-      "ok": true,
-      "count": 12,
-      "error": ""
-    },
-    {
-      "id": "reddit-machinelearning",
       "ok": false,
       "optional": true,
       "count": 0,
       "error": "HTTP 429"
+    },
+    {
+      "id": "reddit-machinelearning",
+      "ok": true,
+      "count": 12,
+      "error": ""
     }
   ],
   "items": [
@@ -548,35 +549,35 @@
       "hasCjk": false
     },
     {
-      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "title": "Stopping AI agent swarms from hacking our systems",
       "category": "model-platform",
       "categoryZh": "模型平台",
       "categoryEn": "Models",
       "section": "features",
-      "region": "美国",
-      "sourceLabel": "openai.com",
-      "sourceTierZh": "官方公告",
-      "sourceTierEn": "Official",
-      "url": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
-      "publishedAt": "2026-09-14",
+      "region": "全球社区",
+      "sourceLabel": "inwom.com",
+      "sourceTierZh": "公开源",
+      "sourceTierEn": "Public source",
+      "url": "https://www.inwom.com/",
+      "publishedAt": "2026-09-16",
       "observedAt": "2026-09-17",
       "origin": "rss",
       "repo": "",
       "stars": 0,
       "license": "",
       "versionLike": false,
-      "whatZh": "openai.com：Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "whatZh": "inwom.com：I don't trust OpenAI, Anthropic, Google, or any other AI lab to be responsible for protecting my systems from the systems they're building, yesterday it was Hu…",
       "whyZh": "新模型或平台接口会改变能做什么、成本多少，以及能不能自己跑。",
       "whoZh": "模型评测、产品接入与研究团队。",
       "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
       "noteZh": "先看原始页面的日期、范围和许可，再决定要不要跟进。",
-      "whatEn": "openai.com: Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "whatEn": "inwom.com: I don't trust OpenAI, Anthropic, Google, or any other AI lab to be responsible for protecting my systems from the systems they're building, yesterday it was Hu…",
       "whyEn": "A new model or platform interface changes what you can do, what it costs, and whether you can run it yourself.",
       "whoEn": "Model evaluators, product teams and researchers.",
       "tryEn": "Open the original link and verify the date, license and stated scope.",
       "noteEn": "Check the original date, scope and license before treating this as settled.",
       "isFeature": false,
-      "score": 21,
+      "score": 22,
       "hasCjk": false
     },
     {
@@ -708,12 +709,12 @@
       "hasCjk": false
     }
   ],
-  "leftover": 236,
+  "leftover": 227,
   "hero": {
     "subjectZh": "模型平台：Introducing Gemini",
     "subjectEn": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "leadZh": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
-    "leadEn": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "leadZh": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "leadEn": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "judgmentZh": "这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。",
     "judgmentEn": "Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue."
   },
