@@ -101,13 +101,7 @@ function navMarkup(locale, basePath) {
     <a href="${live}" aria-current="page">${encodeHtml(liveLabel)}</a>
     <a href="${latest}">${encodeHtml(latestLabel)}</a>
     <a href="${home}#archive">${encodeHtml(archiveLabel)}</a>
-    <span class="language-group">
-    <span class="language-switch" aria-label="${encodeHtml(loc.ui.languageLabel)}">
-      <a href="${liveHref('zh', basePath)}" lang="zh-CN"${locale === 'zh' ? ' aria-current="page"' : ''}>中</a>
-      <a href="${liveHref('en', basePath)}" lang="en"${locale === 'en' ? ' aria-current="page"' : ''}>EN</a>
-    </span>
-    ${more}
-    </span>
+    <span class="language-group">${more}</span>
   </nav>
 </header>`;
 }

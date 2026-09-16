@@ -445,7 +445,7 @@ async function inspectCommon(page, options = {}) {
       dateLines: countLines(document.querySelector('.fact:last-child b')),
       reportCount: document.querySelectorAll('.report-row:not(.is-live)').length,
       navHeight: document.querySelector('.nav-latest, .report-sitenav > a')?.getBoundingClientRect().height || 0,
-      languageHeight: document.querySelector('.language-switch a')?.getBoundingClientRect().height || 0,
+      languageHeight: document.querySelector('.language-switch summary')?.getBoundingClientRect().height || 0,
       brandControlHeight: brandControl?.getBoundingClientRect().height || 0,
       languageSwitchHeight: languageSwitch?.getBoundingClientRect().height || 0,
       heatRowBleeds,

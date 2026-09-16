@@ -108,75 +108,60 @@
   position: relative;
   z-index: 40;
   height: 44px;
-  background: rgba(255, 255, 255, .86);
-  box-shadow: inset 0 0 0 1px #aeb9c6;
 }
 
-.language-switch {
-  display: inline-flex;
-  align-items: stretch;
-  height: 44px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  box-shadow: none;
-}
-
-.language-switch a {
-  display: grid;
-  min-width: 44px;
-  min-height: 44px;
-  place-items: center;
-  padding: 0 8px;
-}
-
-.language-switch a[aria-current="page"] {
-  background: #14213d;
-  color: #fff;
-}
-
+.language-switch,
 .language-more {
   position: relative;
   display: inline-flex;
   align-items: stretch;
   height: 44px;
   margin: 0;
-  border-inline-start: 1px solid #aeb9c6;
+  background: rgba(255, 255, 255, .92);
+  box-shadow: inset 0 0 0 1px #aeb9c6;
 }
 
+.language-switch > summary,
 .language-more > summary {
   list-style: none;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 6px;
-  min-width: 52px;
+  gap: 8px;
   min-height: 44px;
-  padding: 0 12px;
+  padding: 0 12px 0 10px;
   cursor: pointer;
   background: transparent;
   box-shadow: none;
-  font-weight: 850;
+  font-weight: 750;
+  color: #14213d;
 }
 
+.language-switch > summary::-webkit-details-marker,
 .language-more > summary::-webkit-details-marker,
+.language-switch > summary::marker,
 .language-more > summary::marker {
   display: none;
   content: "";
 }
 
-.language-more[open] > summary,
-.language-more[data-current] > summary {
-  background: #14213d;
-  color: #fff;
-}
-
-.language-more .language-mark {
+.language-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
-  letter-spacing: .04em;
+  font-weight: 850;
+  letter-spacing: -.04em;
+  color: #0f5e55;
+  white-space: nowrap;
 }
 
-.language-more .language-caret {
+.language-mark {
+  font-size: 13px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.language-caret {
   width: 0;
   height: 0;
   border: 4px solid transparent;
@@ -190,8 +175,8 @@
   top: calc(100% + 6px);
   inset-inline-end: 0;
   z-index: 50;
-  min-width: 200px;
-  padding: 8px 0;
+  min-width: 196px;
+  padding: 6px 0;
   background: #fff;
   border: 1px solid #d7dfe5;
   box-shadow: 0 18px 40px rgba(20, 33, 61, .14);
@@ -200,28 +185,16 @@
 .language-more-menu a {
   display: flex;
   align-items: center;
-  gap: 10px;
   min-height: 44px;
-  padding: 0 14px;
-  color: #354052;
-  font-size: 13px;
-}
-
-.language-more-menu .language-code {
-  flex: 0 0 28px;
-  color: #5d6877;
-  font-size: 11px;
-  font-weight: 850;
-  letter-spacing: .06em;
+  padding: 0 16px;
+  color: #19243a;
+  font-size: 14px;
+  font-weight: 650;
 }
 
 .language-more-menu a:hover,
 .language-more-menu a[aria-current="page"] {
-  background: #edf4f2;
-  color: #14213d;
-}
-
-.language-more-menu a[aria-current="page"] .language-code {
+  background: #e8eefc;
   color: #14213d;
 }
 
@@ -453,8 +426,8 @@ html[lang="en-US"] .panel-head span {
     display: none;
   }
 
-  .language-switch a {
-    min-width: 44px;
+  .language-switch > summary {
+    padding-inline: 10px;
   }
 
   html[lang="en-US"] .heat-row {

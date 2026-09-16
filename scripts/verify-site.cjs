@@ -149,34 +149,33 @@ for (const indexCheck of [
   }
 }
 
-if ((chineseIndex.match(/class="language-switch"/g) || []).length !== 1) throw new Error('中文首页 language-switch 数量异常。');
-if ((englishIndex.match(/class="language-switch"/g) || []).length !== 1) throw new Error('英文首页 language-switch 数量异常。');
-if (!chineseIndex.includes('class="language-more"') || !englishIndex.includes('class="language-more"')) {
-  throw new Error('中英首页缺少更多语言菜单。');
+if ((chineseIndex.match(/details class="language-switch/g) || []).length !== 1) throw new Error('中文首页 language-switch 数量异常。');
+if ((englishIndex.match(/details class="language-switch/g) || []).length !== 1) throw new Error('英文首页 language-switch 数量异常。');
+if (!chineseIndex.includes('language-more') || !englishIndex.includes('language-more')) {
+  throw new Error('中英首页缺少语言菜单。');
 }
-if (!chineseIndex.includes('class="language-code"') || !englishIndex.includes('class="language-code"')) {
-  throw new Error('中英首页语言菜单缺少语种标识。');
+if (!chineseIndex.includes('language-icon') || !englishIndex.includes('>文A<')) {
+  throw new Error('中英首页语言切换缺少文A标识。');
 }
-if (chineseIndex.includes('data-current="true"') || englishIndex.includes('data-current="true"')) {
-  throw new Error('中英首页不应把更多语言按钮标成当前语言。');
+for (const name of ['简体中文', '繁體中文', 'English', '日本語', '한국어', 'Español', 'Français', 'Deutsch', 'العربية']) {
+  if (!chineseIndex.includes(`>${name}<`) || !englishIndex.includes(`>${name}<`)) {
+    throw new Error(`中英首页语言菜单缺少 ${name}。`);
+  }
 }
-for (const [label, html] of [['zh', chineseIndex], ['en', englishIndex]]) {
-  const block = html.match(/<span class="language-switch"[^>]*>[\s\S]*?<\/span>/);
-  if (!block) throw new Error(`${label} 首页缺少 language-switch。`);
-  if (/language-more/.test(block[0])) throw new Error('更多语言菜单不得放进 .language-switch。');
-  if (!/>中</.test(block[0]) || !/>EN</.test(block[0])) throw new Error(`${label} 首页主切换必须仍是 中 / EN。`);
+if (!chineseIndex.includes('>简体中文<') || !englishIndex.includes('>English<')) {
+  throw new Error('中英首页未显示当前语种全称。');
 }
 
 for (const locale of optionalLocales) {
   const home = readUtf8(path.join(publicRoot, locale.pathPrefix, 'index.html'));
   if (!home.includes(`lang="${locale.htmlLang}"`)) throw new Error(`${locale.id} 首页 html lang 不正确。`);
-  if (!home.includes('class="language-switch"') || !home.includes('>中<') || !home.includes('>EN<')) {
-    throw new Error(`${locale.id} 首页必须保留中/EN 主切换。`);
+  if (!home.includes('language-switch') || !home.includes('>文A<')) {
+    throw new Error(`${locale.id} 首页必须使用语种下拉。`);
   }
-  if (!home.includes('class="language-code"') || !home.includes(`>${locale.shortLabel}<`)) {
-    throw new Error(`${locale.id} 首页语言切换缺少 ${locale.shortLabel} 标识。`);
+  if (!home.includes(`>${locale.nativeLabel}<`)) {
+    throw new Error(`${locale.id} 首页语言切换缺少 ${locale.nativeLabel}。`);
   }
-  if (!home.includes('data-current="true"') || !home.includes(`aria-current="true"`)) {
+  if (!home.includes('aria-current="page"') || !home.includes('aria-current="true"')) {
     throw new Error(`${locale.id} 首页当前语言未在切换器上标出。`);
   }
   if (!home.includes(`hreflang="${locale.hreflang}"`)) throw new Error(`${locale.id} 首页缺少自身 hreflang。`);
@@ -242,8 +241,8 @@ for (const chineseReport of chineseReports) {
   }
   const englishWithoutSwitcherLabel = stripLanguageMore(englishHtml).replaceAll('>中文<', '>ZH<');
   if (/[\u3400-\u9fff]/.test(englishWithoutSwitcherLabel)) throw new Error(`${dateIso} 公开英文页含非切换器中文。`);
-  if (!chineseHtml.includes('class="language-more"') || !englishHtml.includes('class="language-more"')) {
-    throw new Error(`${dateIso} 日期页缺少更多语言菜单。`);
+  if (!chineseHtml.includes('language-more') || !englishHtml.includes('language-more') || !chineseHtml.includes('>文A<')) {
+    throw new Error(`${dateIso} 日期页缺少语种下拉。`);
   }
 
   if (!chineseIndex.includes(String(chineseReport.url)) || !englishIndex.includes(String(englishReport.url))) {
@@ -325,4 +324,4 @@ if (!(vercelConfig.rewrites || []).some((rule) => rule.source === '/daily/(.*)' 
 }
 
 console.log(`验证通过：${chineseReports.length} 期中英双语日报，${totalBytes} 字节，latest=${latestIssueDate}`);
-console.log(`另有 ${optionalLocales.length} 个可选语种首页；中/EN 主切换与更多语言菜单均已核对。`);
+console.log(`另有 ${optionalLocales.length} 个可选语种首页；九语下拉切换已核对。`);

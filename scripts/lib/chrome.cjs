@@ -22,18 +22,15 @@ function hreflangLinks(baseUrl, pathsByLocale, availableIds, xDefaultId = 'zh') 
 }
 
 function languageMoreMarkup(locale, pathsByLocale, availableIds, ui) {
-  const currentExtra = locale.id !== 'zh' && locale.id !== 'en';
-  const mark = currentExtra ? locale.shortLabel : (locale.id === 'en' ? 'More' : '更多');
-  const currentAttr = currentExtra ? ' data-current="true"' : '';
-  const summaryCurrent = currentExtra ? ' aria-current="true"' : '';
-  const label = currentExtra ? `${ui.languageLabel} · ${locale.nativeLabel}` : ui.moreLanguagesLabel;
-  const links = locales.map((item) => {
+  const order = ['zh', 'zh-Hant', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'ar'];
+  const ordered = order.map((id) => locales.find((item) => item.id === id)).filter(Boolean);
+  const links = ordered.map((item) => {
     const href = pathsByLocale[item.id] || localeUrl(item, '/daily', '/');
     const current = locale.id === item.id ? ' aria-current="page"' : '';
-    return `      <a href="${encodeHtml(href)}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}><span class="language-code">${encodeHtml(item.shortLabel)}</span><span class="language-name">${encodeHtml(item.nativeLabel)}</span></a>`;
+    return `      <a href="${encodeHtml(href)}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}>${encodeHtml(item.nativeLabel)}</a>`;
   }).join('\n');
-  return `<details class="language-more"${currentAttr}>
-      <summary aria-label="${encodeHtml(label)}"${summaryCurrent}><span class="language-mark">${encodeHtml(mark)}</span><span class="language-caret" aria-hidden="true"></span></summary>
+  return `<details class="language-switch language-more">
+      <summary aria-label="${encodeHtml(ui.languageLabel)} · ${encodeHtml(locale.nativeLabel)}" aria-current="true"><span class="language-icon" aria-hidden="true">文A</span><span class="language-mark">${encodeHtml(locale.nativeLabel)}</span><span class="language-caret" aria-hidden="true"></span></summary>
       <div class="language-more-menu">
 ${links}
       </div>
@@ -94,15 +91,7 @@ ${hreflangLinks(baseUrl, pathsByLocale, available)}
 
   const homePath = localeUrl(locale, sitePath, '/');
   const latestPath = localeUrl(locale, sitePath, '/latest/');
-  const chinesePath = pathsByLocale.zh;
-  const englishPath = pathsByLocale.en;
-  const chineseCurrent = locale.id === 'zh' ? ' aria-current="page"' : '';
-  const englishCurrent = locale.id === 'en' ? ' aria-current="page"' : '';
-  const more = languageMoreMarkup(locale, { ...pathsByLocale, _basePath: sitePath }, new Set([
-    'zh',
-    'en',
-    ...[...available].filter((id) => id !== 'zh' && id !== 'en'),
-  ]), ui);
+  const more = languageMoreMarkup(locale, pathsByLocale, available, ui);
 
   const nav = `<!-- site:i18n-nav:start -->
 <header class="report-sitebar">
@@ -110,13 +99,7 @@ ${hreflangLinks(baseUrl, pathsByLocale, available)}
   <nav class="report-sitenav" aria-label="${encodeHtml(ui.archiveLabel)}">
     <a href="${latestPath}">${encodeHtml(ui.latestLabel)}</a>
     <a href="${homePath}#archive">${encodeHtml(ui.archiveLabel)}</a>
-    <span class="language-group">
-    <span class="language-switch" aria-label="${encodeHtml(ui.languageLabel)}">
-      <a href="${chinesePath}" lang="zh-CN"${chineseCurrent}>中文</a>
-      <a href="${englishPath}" lang="en"${englishCurrent}>EN</a>
-    </span>
-    ${more}
-    </span>
+    <span class="language-group">${more}</span>
   </nav>
 </header>
 <!-- site:i18n-nav:end -->

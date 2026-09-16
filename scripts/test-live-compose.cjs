@@ -126,7 +126,9 @@ assert.match(page, /如何阅读/);
 assert.match(page, /今日导航/);
 assert.match(page, /<span class="title-en">Agent Daily<\/span>/);
 assert.match(page, /class="filters"/);
-assert.match(page, /class="language-more"/);
+assert.match(page, /language-switch language-more/);
+assert.match(page, /language-icon/);
+assert.match(page, />简体中文</);
 assert.match(page, /href="\/daily\/live\/ja\/"/);
 
 const enPage = renderLiveHtml(briefing, 'en', '/daily');

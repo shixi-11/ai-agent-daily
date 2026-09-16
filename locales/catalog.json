@@ -11,7 +11,7 @@
       "ogLocale": "zh_CN",
       "dir": "ltr",
       "shortLabel": "中",
-      "nativeLabel": "中文",
+      "nativeLabel": "简体中文",
       "pathPrefix": "",
       "contentDir": "zh",
       "kind": "source"
