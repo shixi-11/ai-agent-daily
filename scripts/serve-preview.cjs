@@ -62,9 +62,9 @@ async function refreshLive(force = false) {
 
 function resolvePublic(urlPath) {
   let clean = decodeURIComponent((urlPath || '/').split('?')[0]);
-  if (clean === '/' || clean === '/daily' || clean === '/daily/' || clean === '/ai/agent-daily' || clean === '/ai/agent-daily/') {
-    return path.join(publicRoot, 'live/index.html');
-  }
+  if (clean === '/') return path.join(publicRoot, 'index.html');
+  if (clean === '/daily' || clean === '/daily/') return path.join(publicRoot, 'index.html');
+  if (clean === '/ai/agent-daily' || clean === '/ai/agent-daily/') return path.join(publicRoot, 'index.html');
   if (clean.startsWith('/daily/')) clean = clean.slice('/daily'.length);
   else if (clean.startsWith('/ai/agent-daily/')) clean = clean.slice('/ai/agent-daily'.length);
   const relative = clean.replace(/^\/+/, '');
@@ -126,8 +126,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  const liveZh = new Set(['/', '/daily', '/daily/', '/ai/agent-daily', '/ai/agent-daily/', '/live', '/live/', '/daily/live', '/daily/live/', '/ai/agent-daily/live', '/ai/agent-daily/live/']);
-  if (liveZh.has(pathOnly)) {
+  if (pathOnly === '/live' || pathOnly === '/live/' || pathOnly === '/daily/live' || pathOnly === '/daily/live/' || pathOnly === '/ai/agent-daily/live' || pathOnly === '/ai/agent-daily/live/') {
     const html = liveBriefing ? renderLiveHtml(liveBriefing, 'zh', '/daily') : (resolvePublic('/live/') ? fs.readFileSync(resolvePublic('/live/')) : Buffer.from('雷达正在采集公开源…'));
     res.writeHead(200, { 'content-type': mimeTypes['.html'], 'cache-control': 'no-store' });
     res.end(typeof html === 'string' ? html : html);
@@ -157,9 +156,6 @@ const server = http.createServer((req, res) => {
   let body = fs.readFileSync(filePath);
   if (mime.startsWith('text/html')) {
     let html = body.toString('utf8');
-    if (filePath.endsWith(`${path.sep}index.html`) && (pathOnly === '/' || pathOnly === '/daily/' || pathOnly === '/daily' || pathOnly.endsWith('/en/') || pathOnly === '/en/' || pathOnly.includes('/ai/agent-daily'))) {
-      html = injectHomeLive(html, pathOnly);
-    }
     if (pathOnly.startsWith('/ai/agent-daily')) html = rewriteDailyText(html);
     body = Buffer.from(html);
   }

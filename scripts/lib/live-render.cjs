@@ -351,9 +351,7 @@ function injectAllHomepages(publicRoot, briefing, basePath = '/daily') {
   for (const [relative, locale] of targets) {
     const file = path.join(publicRoot, relative);
     if (!fs.existsSync(file)) continue;
-    const stripLocale = locale === 'zh' || locale === 'zh-Hant' ? 'zh' : 'en';
     let html = fs.readFileSync(file, 'utf8');
-    html = injectHomeLiveStrip(html, briefing, stripLocale, basePath);
     html = injectHomeLiveArchive(html, briefing, locale, basePath);
     html = injectHomeLatestCard(html, briefing, locale, basePath);
     writeUtf8(file, html);
