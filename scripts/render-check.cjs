@@ -24,6 +24,11 @@ const archiveEn = JSON.parse(fs.readFileSync(path.join(publicRoot, 'en', 'archiv
 const reportCount = archiveZh.reports.length;
 const latestDate = archiveZh.latest.date;
 const publicationPath = '/daily';
+const liveLatestPath = path.join(publicRoot, 'live/latest.json');
+const liveBriefing = fs.existsSync(liveLatestPath)
+  ? JSON.parse(fs.readFileSync(liveLatestPath, 'utf8'))
+  : null;
+const liveIsFeatured = Boolean(liveBriefing?.dateIso && liveBriefing.dateIso > latestDate);
 const fixedLayoutRegressionDates = ['2026-07-15'];
 
 const viewports = [
@@ -43,6 +48,7 @@ const locales = [
     home: `${publicationPath}/`,
     title: 'Agent Daily · AI智能体日报',
     latestHref: archiveZh.latest.url,
+    homeLatestHref: liveIsFeatured ? `${publicationPath}/live/` : archiveZh.latest.url,
     currentLang: 'zh-CN',
     archive: archiveZh,
   },
@@ -51,6 +57,7 @@ const locales = [
     home: `${publicationPath}/en/`,
     title: 'Agent Daily · AI智能体日报',
     latestHref: archiveEn.latest.url,
+    homeLatestHref: liveIsFeatured ? `${publicationPath}/live/en/` : archiveEn.latest.url,
     currentLang: 'en',
     archive: archiveEn,
   },
@@ -436,7 +443,7 @@ async function inspectCommon(page, options = {}) {
       htmlLang: document.documentElement.lang,
       monthLines: [...document.querySelectorAll('.month-strip h3')].map(countLines),
       dateLines: countLines(document.querySelector('.fact:last-child b')),
-      reportCount: document.querySelectorAll('.report-row').length,
+      reportCount: document.querySelectorAll('.report-row:not(.is-live)').length,
       navHeight: document.querySelector('.nav-latest, .report-sitenav > a')?.getBoundingClientRect().height || 0,
       languageHeight: document.querySelector('.language-switch a')?.getBoundingClientRect().height || 0,
       brandControlHeight: brandControl?.getBoundingClientRect().height || 0,
@@ -526,7 +533,7 @@ async function inspectHomepage(browser, locale, viewport) {
   };
   if (result.title !== locale.title) throw new Error(`${locale.key}/${viewport.name}: title mismatch`);
   if (result.reportCount !== reportCount) throw new Error(`${locale.key}/${viewport.name}: expected ${reportCount} reports, got ${result.reportCount}`);
-  if (result.latestHref !== locale.latestHref) throw new Error(`${locale.key}/${viewport.name}: latest href mismatch ${result.latestHref}`);
+  if (result.latestHref !== locale.homeLatestHref) throw new Error(`${locale.key}/${viewport.name}: latest href mismatch ${result.latestHref}`);
   if (result.bodyWidth > result.viewportWidth) throw new Error(`${locale.key}/${viewport.name}: horizontal overflow ${result.bodyWidth}/${result.viewportWidth}`);
   if (result.offenders.length) throw new Error(`${locale.key}/${viewport.name}: clipped elements ${JSON.stringify(result.offenders)}`);
   if (result.monthLines.some((lines) => lines !== 1)) throw new Error(`${locale.key}/${viewport.name}: month heading wrapped ${result.monthLines}`);

@@ -41,6 +41,43 @@ const {
   issuePaths,
 } = require('./lib/chrome.cjs');
 
+function loadLiveBriefing() {
+  const livePath = path.join(publicRoot, 'live/latest.json');
+  if (!fs.existsSync(livePath)) return null;
+  try {
+    return JSON.parse(readUtf8(livePath));
+  } catch {
+    return null;
+  }
+}
+
+function liveArchiveItem(briefing) {
+  const date = utcDate(briefing.dateIso);
+  const zhTitle = `AI Agent${briefing.hero.subjectZh}`;
+  const enTitle = `AI Agent ${briefing.hero.subjectEn}`;
+  return {
+    dateIso: briefing.dateIso,
+    date,
+    title: zhTitle,
+    titleEn: enTitle,
+    titleMain: 'AI Agent',
+    titleSubject: briefing.hero.subjectZh,
+    lead: briefing.hero.leadZh,
+    leadEn: briefing.hero.leadEn,
+    url: `${basePath}/live/`,
+    englishUrl: `${basePath}/live/en/`,
+    isLive: true,
+    optionals: Object.fromEntries(optionalLocales.map((locale) => {
+      const chineseLike = locale.id === 'zh-Hant';
+      return [locale.id, {
+        url: chineseLike ? `${basePath}/live/` : `${basePath}/live/en/`,
+        displayTitle: chineseLike ? zhTitle : enTitle,
+        lead: chineseLike ? briefing.hero.leadZh : briefing.hero.leadEn,
+      }];
+    })),
+  };
+}
+
 const args = parseArgs();
 const siteRoot = path.resolve(args['site-root'] || path.resolve(__dirname, '..'));
 const sourceRoot = path.resolve(args['source-root'] || path.join(siteRoot, 'content/zh'));
@@ -259,6 +296,10 @@ for (let index = 0; index < reports.length; index += 1) {
 
 const reportsDescending = [...reports].sort((a, b) => b.dateIso.localeCompare(a.dateIso));
 const latest = reportsDescending[0];
+const liveBriefing = loadLiveBriefing();
+const liveItem = liveBriefing && liveBriefing.dateIso > latest.dateIso ? liveArchiveItem(liveBriefing) : null;
+const archiveItems = liveItem ? [liveItem, ...reportsDescending] : reportsDescending;
+const featured = liveItem || latest;
 const earliest = reports[0];
 const generatedAtRaw = reportsDescending
   .map((report) => ({ at: report.reviewedAtUtc.getTime(), raw: report.reviewedAt }))
@@ -282,7 +323,7 @@ for (const asset of ['agent-daily-social-v1.png', 'report-site.css', 'alux-mark.
   copyDirFile(path.join(assetRoot, asset), path.join(publicAssetRoot, asset));
 }
 
-function archiveMarkup(items, locale, latestDateIso) {
+function archiveMarkup(items, locale, latestDateIso, liveDateIso = '') {
   const groups = new Map();
   for (const report of items) {
     const key = report.dateIso.slice(0, 7);
@@ -302,9 +343,13 @@ function archiveMarkup(items, locale, latestDateIso) {
     lines.push('  </div>');
     lines.push('  <div class="report-list">');
     for (const report of group) {
-      const isLatest = report.dateIso === latestDateIso;
-      const latestClass = isLatest ? ' is-latest' : '';
-      const latestLabel = isLatest ? `<span class="latest-pill">${encodeHtml(locale.ui.latestPill)}</span>` : '';
+      const isLive = Boolean(report.isLive);
+      const isLatest = isLive || (!liveDateIso && report.dateIso === latestDateIso);
+      const latestClass = `${isLatest ? ' is-latest' : ''}${isLive ? ' is-live' : ''}`;
+      const liveAttr = isLive ? ' data-live-row' : '';
+      const pill = isLive
+        ? `<span class="latest-pill">${encodeHtml(locale.ui.todayPill || locale.ui.latestPill)}</span>`
+        : (isLatest ? `<span class="latest-pill">${encodeHtml(locale.ui.latestPill)}</span>` : '');
       const translated = locale.id === 'zh' || locale.id === 'en' || Boolean(report.optionals[locale.id]);
       const url = locale.id === 'zh'
         ? report.url
@@ -328,9 +373,9 @@ function archiveMarkup(items, locale, latestDateIso) {
             ? report.optionals[locale.id].lead
             : report.leadEn;
       const monthShort = formatDate(report.date, locale, 'monthShort');
-      lines.push(`    <a class="report-row${latestClass}" href="${encodeHtml(url)}">`);
+      lines.push(`    <a class="report-row${latestClass}" href="${encodeHtml(url)}"${liveAttr}>`);
       lines.push(`      <time datetime="${report.dateIso}"><b>${String(report.date.getUTCDate()).padStart(2, '0')}</b><span>${encodeHtml(monthShort)}</span></time>`);
-      lines.push(`      <div class="report-copy">${latestLabel}<strong>${encodeHtml(title)}</strong><p>${encodeHtml(lead)}</p></div>`);
+      lines.push(`      <div class="report-copy">${pill}<strong>${encodeHtml(title)}</strong><p>${encodeHtml(lead)}</p></div>`);
       lines.push('      <span class="report-arrow" aria-hidden="true">↗</span>');
       lines.push('    </a>');
     }
@@ -390,8 +435,8 @@ ${entries}
 `;
 }
 
-const chineseArchiveMarkup = archiveMarkup(reportsDescending, localesById.zh, latest.dateIso);
-const englishArchiveMarkup = archiveMarkup(reportsDescending, localesById.en, latest.dateIso);
+const chineseArchiveMarkup = archiveMarkup(archiveItems, localesById.zh, latest.dateIso, liveItem ? liveItem.dateIso : '');
+const englishArchiveMarkup = archiveMarkup(archiveItems, localesById.en, latest.dateIso, liveItem ? liveItem.dateIso : '');
 const chineseDateRange = formatArchiveRange(earliest.date, latest.date, localesById.zh);
 const englishDateRange = formatArchiveRange(earliest.date, latest.date, localesById.en);
 const socialHead = socialPreviewHead(baseUrl, basePath);
@@ -403,12 +448,14 @@ const chineseIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.templa
   '{{SOCIAL_PREVIEW_HEAD}}': socialHead,
   '{{BASE_URL}}': baseUrl,
   '{{BASE_PATH}}': basePath,
-  '{{LATEST_DATE_ISO}}': latest.dateIso,
-  '{{LATEST_DATE_ZH}}': formatDate(latest.date, localesById.zh),
-  '{{LATEST_URL}}': latest.url,
-  '{{LATEST_TITLE_MAIN}}': encodeHtml(latest.titleMain),
-  '{{LATEST_TITLE_SUBJECT}}': encodeHtml(latest.titleSubject),
-  '{{LATEST_LEAD}}': encodeHtml(latest.lead),
+  '{{LATEST_DATE_ISO}}': featured.dateIso,
+  '{{LATEST_DATE_ZH}}': formatDate(featured.date, localesById.zh),
+  '{{LATEST_URL}}': featured.url,
+  '{{LATEST_TITLE_MAIN}}': encodeHtml(featured.titleMain || 'AI Agent'),
+  '{{LATEST_TITLE_SUBJECT}}': encodeHtml(featured.titleSubject || featured.title),
+  '{{LATEST_LEAD}}': encodeHtml(featured.lead),
+  '{{LATEST_KICKER}}': encodeHtml(liveItem ? localesById.zh.ui.todayKicker : localesById.zh.ui.latestLabel),
+  '{{READ_LATEST}}': encodeHtml(liveItem ? localesById.zh.ui.readToday : localesById.zh.ui.readLatest),
   '{{REPORT_COUNT}}': String(reports.length),
   '{{DATE_RANGE}}': encodeHtml(chineseDateRange),
   '{{MONTH_COUNT}}': String(monthCount),
@@ -423,11 +470,13 @@ const englishIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.en.tem
   '{{SOCIAL_PREVIEW_HEAD}}': socialHead,
   '{{BASE_URL}}': baseUrl,
   '{{BASE_PATH}}': basePath,
-  '{{LATEST_DATE_ISO}}': latest.dateIso,
-  '{{LATEST_DATE_EN}}': formatDate(latest.date, localesById.en),
-  '{{LATEST_URL}}': latest.englishUrl,
-  '{{LATEST_TITLE}}': encodeHtml(latest.titleEn),
-  '{{LATEST_LEAD}}': encodeHtml(latest.leadEn),
+  '{{LATEST_DATE_ISO}}': featured.dateIso,
+  '{{LATEST_DATE_EN}}': formatDate(featured.date, localesById.en),
+  '{{LATEST_URL}}': featured.englishUrl,
+  '{{LATEST_TITLE}}': encodeHtml(featured.titleEn),
+  '{{LATEST_LEAD}}': encodeHtml(featured.leadEn),
+  '{{LATEST_KICKER}}': encodeHtml(liveItem ? localesById.en.ui.todayKicker : 'Latest Report'),
+  '{{READ_LATEST}}': encodeHtml(liveItem ? localesById.en.ui.readToday : localesById.en.ui.readLatest),
   '{{REPORT_COUNT}}': String(reports.length),
   '{{DATE_RANGE}}': encodeHtml(englishDateRange),
   '{{MONTH_COUNT}}': String(monthCount),
@@ -464,6 +513,7 @@ for (const locale of optionalLocales) {
     '{{INTRO2_BLOCK}}': intro2,
     '{{UNTRANSLATED_BLOCK}}': untranslatedNote,
     '{{LATEST_LABEL}}': encodeHtml(ui.latestLabel),
+    '{{LATEST_KICKER}}': encodeHtml(liveItem ? ui.todayKicker : ui.latestLabel),
     '{{LIVE_LABEL}}': encodeHtml(ui.liveLabel),
     '{{LIVE_KICKER}}': encodeHtml(ui.liveKicker),
     '{{LIVE_TITLE}}': encodeHtml(ui.liveTitle),
@@ -476,7 +526,7 @@ for (const locale of optionalLocales) {
     '{{FACT_ISSUES}}': encodeHtml(ui.factIssues),
     '{{FACT_MONTHS}}': encodeHtml(ui.factMonths),
     '{{FACT_RANGE}}': encodeHtml(ui.factRange),
-    '{{READ_LATEST}}': encodeHtml(ui.readLatest),
+    '{{READ_LATEST}}': encodeHtml(liveItem ? ui.readToday : ui.readLatest),
     '{{LATEST_PERMALINK}}': encodeHtml(ui.latestPermalink),
     '{{ARCHIVE_TITLE}}': encodeHtml(ui.archiveTitle),
     '{{ARCHIVE_BLURB}}': encodeHtml(ui.archiveBlurb),
@@ -496,15 +546,21 @@ for (const locale of optionalLocales) {
     '{{BASE_URL}}': baseUrl,
     '{{BASE_PATH}}': basePath,
     '{{CANONICAL}}': `${baseUrl}${localeUrl(locale, basePath, '/')}`,
-    '{{LATEST_DATE_ISO}}': latest.dateIso,
-    '{{LATEST_DATE_LOCAL}}': encodeHtml(formatDate(latest.date, locale)),
-    '{{LATEST_URL}}': latestUrl,
-    '{{LATEST_TITLE}}': encodeHtml(latestTitle),
-    '{{LATEST_LEAD}}': encodeHtml(latestLead),
+    '{{LATEST_DATE_ISO}}': featured.dateIso,
+    '{{LATEST_DATE_LOCAL}}': encodeHtml(formatDate(featured.date, locale)),
+    '{{LATEST_URL}}': liveItem
+      ? (locale.id === 'zh-Hant' ? liveItem.url : liveItem.englishUrl)
+      : latestUrl,
+    '{{LATEST_TITLE}}': encodeHtml(liveItem
+      ? (locale.id === 'zh-Hant' ? liveItem.title : liveItem.titleEn)
+      : latestTitle),
+    '{{LATEST_LEAD}}': encodeHtml(liveItem
+      ? (locale.id === 'zh-Hant' ? liveItem.lead : liveItem.leadEn)
+      : latestLead),
     '{{REPORT_COUNT}}': String(reports.length),
     '{{DATE_RANGE}}': encodeHtml(formatArchiveRange(earliest.date, latest.date, locale)),
     '{{MONTH_COUNT}}': String(monthCount),
-    '{{ARCHIVE_GROUPS}}': archiveMarkup(reportsDescending, locale, latest.dateIso),
+    '{{ARCHIVE_GROUPS}}': archiveMarkup(archiveItems, locale, latest.dateIso, liveItem ? liveItem.dateIso : ''),
     '{{GENERATED_AT}}': generatedAtStamp,
   });
   writeUtf8(path.join(publicRoot, localePublicFile(locale, 'index.html')), html);

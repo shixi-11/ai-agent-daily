@@ -69,4 +69,54 @@ assert.equal(fallbackDailyPath('/ko/2026/09/14/'), 'en/2026/09/14/');
 assert.equal(fallbackDailyPath('zh-Hant/latest/'), 'latest/');
 assert.equal(fallbackDailyPath('en/latest'), null);
 assert.equal(fallbackDailyPath('ja'), null);
+
+const { liveArchiveRow, injectHomeLiveArchive, injectHomeLatestCard } = require('./lib/live-render.cjs');
+const liveBriefing = {
+  dateIso: '2026-09-16',
+  hero: {
+    subjectZh: '测试主题',
+    subjectEn: 'Test Subject',
+    leadZh: '中文导语',
+    leadEn: 'English lead',
+  },
+};
+const zhRow = liveArchiveRow(liveBriefing, 'zh');
+assert.match(zhRow, /datetime="2026-09-16"/);
+assert.match(zhRow, /class="report-row is-latest is-live"/);
+assert.match(zhRow, /data-live-row/);
+assert.match(zhRow, />今日</);
+assert.match(zhRow, /href="\/daily\/live\/"/);
+const enRow = liveArchiveRow(liveBriefing, 'en');
+assert.match(enRow, /href="\/daily\/live\/en\/"/);
+assert.match(enRow, />Today</);
+
+const archiveHtml = `<div class="month-strip"><h3>2026年9月</h3><span>14期</span></div>
+  <div class="report-list">
+    <a class="report-row is-latest" href="/daily/2026/09/14/">
+      <div class="report-copy"><span class="latest-pill">最新</span><strong>old</strong></div>
+    </a>
+  </div>`;
+const injected = injectHomeLiveArchive(archiveHtml, liveBriefing, 'zh');
+assert.match(injected, /data-live-row/);
+assert.match(injected, /datetime="2026-09-16"/);
+assert.match(injected, />15期</);
+assert.equal((injected.match(/class="report-row/g) || []).length, 2);
+assert.match(injected, /class="report-row" href="\/daily\/2026\/09\/14\/"/);
+const again = injectHomeLiveArchive(injected, liveBriefing, 'zh');
+assert.equal((again.match(/data-live-row/g) || []).length, 1);
+assert.equal((again.match(/>15期</g) || []).length, 1);
+
+const heroHtml = `<article class="latest">
+          <div class="latest-kicker"><span>最新一期</span><time datetime="2026-09-14">2026年9月14日</time></div>
+          <h2>Old title</h2>
+          <p>Old lead</p>
+          <a class="button" href="/daily/2026/09/14/">阅读最新一期 ↗</a>
+        </article>`;
+const hero = injectHomeLatestCard(heroHtml, liveBriefing, 'zh');
+assert.match(hero, /datetime="2026-09-16"/);
+assert.match(hero, /href="\/daily\/live\/"/);
+assert.match(hero, /阅读今日雷达/);
+assert.match(hero, /中文导语/);
+
 console.log(JSON.stringify({ ok: true, hero: briefing.hero.subjectEn, categories: briefing.items.map((item) => item.category) }));
+

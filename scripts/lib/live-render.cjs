@@ -1,7 +1,7 @@
 'use strict';
 
 const { encodeHtml } = require('./io.cjs');
-const { locales, localeUrl, localesById } = require('./locales.cjs');
+const { locales, localeUrl, localesById, utcDate, formatDate } = require('./locales.cjs');
 const { languageMoreMarkup } = require('./chrome.cjs');
 
 const PAGE_CSS = `
@@ -257,6 +257,68 @@ function renderTeaser(briefing, locale = 'zh') {
   };
 }
 
+function liveArchiveRow(briefing, localeId, basePath = '/daily') {
+  const locale = localesById[localeId] || localesById.en;
+  const isZh = locale.id === 'zh' || locale.id === 'zh-Hant';
+  const date = utcDate(briefing.dateIso);
+  const href = isZh ? `${basePath}/live/` : `${basePath}/live/en/`;
+  const title = isZh ? `AI Agent${briefing.hero.subjectZh}` : `AI Agent ${briefing.hero.subjectEn}`;
+  const lead = isZh ? briefing.hero.leadZh : briefing.hero.leadEn;
+  const pill = locale.ui.todayPill || (isZh ? '今日' : 'Today');
+  const monthShort = formatDate(date, locale, 'monthShort');
+  const day = String(date.getUTCDate()).padStart(2, '0');
+  return `<a class="report-row is-latest is-live" data-live-row href="${encodeHtml(href)}">
+      <time datetime="${briefing.dateIso}"><b>${day}</b><span>${encodeHtml(monthShort)}</span></time>
+      <div class="report-copy"><span class="latest-pill">${encodeHtml(pill)}</span><strong>${encodeHtml(title)}</strong><p>${encodeHtml(lead)}</p></div>
+      <span class="report-arrow" aria-hidden="true">↗</span>
+    </a>`;
+}
+
+function injectHomeLiveArchive(html, briefing, localeId, basePath = '/daily') {
+  if (!html || !briefing?.dateIso || !html.includes('class="report-list"')) return html;
+  const row = liveArchiveRow(briefing, localeId, basePath);
+  if (html.includes('data-live-row')) {
+    return html.replace(/<a class="report-row[^>]*data-live-row[\s\S]*?<\/a>/, row);
+  }
+  let next = html.replace(/<a class="report-row is-latest"/, '<a class="report-row"');
+  next = next.replace(/<div class="report-copy"><span class="latest-pill">[\s\S]*?<\/span>/, '<div class="report-copy">');
+  next = next.replace('<div class="report-list">', `<div class="report-list">\n    ${row}`);
+  next = next.replace(
+    /(<div class="month-strip">[\s\S]*?<span>)(\d+)([^<]*<\/span>)/,
+    (_, prefix, count, suffix) => `${prefix}${Number(count) + 1}${suffix}`,
+  );
+  return next;
+}
+
+function injectHomeLatestCard(html, briefing, localeId, basePath = '/daily') {
+  if (!html || !briefing?.dateIso || !html.includes('class="latest"')) return html;
+  const locale = localesById[localeId] || localesById.en;
+  const isZh = locale.id === 'zh' || locale.id === 'zh-Hant';
+  const href = isZh ? `${basePath}/live/` : `${basePath}/live/en/`;
+  const date = utcDate(briefing.dateIso);
+  const dateLabel = formatDate(date, locale);
+  const kicker = locale.ui.todayKicker || locale.ui.liveLabel;
+  const lead = isZh ? briefing.hero.leadZh : briefing.hero.leadEn;
+  const read = locale.ui.readToday || locale.ui.liveOpen;
+  let next = html.replace(
+    /(<div class="latest-kicker"><span>)[^<]*(<\/span><time datetime=")[^"]*("[^>]*>)[^<]*(<\/time>)/,
+    `$1${encodeHtml(kicker)}$2${briefing.dateIso}$3${encodeHtml(dateLabel)}$4`,
+  );
+  if (next.includes('latest-title-subject')) {
+    next = next.replace(
+      /(<span class="latest-title-subject">)[\s\S]*?(<\/span>)/,
+      `$1${encodeHtml(briefing.hero.subjectZh)}$2`,
+    );
+  } else {
+    const title = isZh ? `AI Agent${briefing.hero.subjectZh}` : `AI Agent ${briefing.hero.subjectEn}`;
+    next = next.replace(/(<article class="latest">[\s\S]*?<h2[^>]*>)[\s\S]*?(<\/h2>)/, `$1${encodeHtml(title)}$2`);
+  }
+  next = next.replace(/(<article class="latest">[\s\S]*?<p>)[\s\S]*?(<\/p>)/, `$1${encodeHtml(lead)}$2`);
+  next = next.replace(/(<article class="latest">[\s\S]*?<a class="button" href=")[^"]+/, `$1${href}`);
+  next = next.replace(/(<article class="latest">[\s\S]*?<a class="button" href="[^"]+">)[\s\S]*?(<\/a>)/, `$1${encodeHtml(read)}$2`);
+  return next;
+}
+
 function injectHomeLiveStrip(html, briefing, locale = 'zh', basePath = '/daily') {
   if (!html || !html.includes('data-live-list') || !briefing?.items?.length) return html;
   const isEn = locale === 'en';
@@ -276,24 +338,32 @@ function injectAllHomepages(publicRoot, briefing, basePath = '/daily') {
   const targets = [
     ['index.html', 'zh'],
     ['en/index.html', 'en'],
-    ['zh-Hant/index.html', 'zh'],
-    ['ja/index.html', 'en'],
-    ['ko/index.html', 'en'],
-    ['es/index.html', 'en'],
-    ['fr/index.html', 'en'],
-    ['de/index.html', 'en'],
-    ['ar/index.html', 'en'],
+    ['zh-Hant/index.html', 'zh-Hant'],
+    ['ja/index.html', 'ja'],
+    ['ko/index.html', 'ko'],
+    ['es/index.html', 'es'],
+    ['fr/index.html', 'fr'],
+    ['de/index.html', 'de'],
+    ['ar/index.html', 'ar'],
   ];
   for (const [relative, locale] of targets) {
     const file = path.join(publicRoot, relative);
     if (!fs.existsSync(file)) continue;
-    writeUtf8(file, injectHomeLiveStrip(fs.readFileSync(file, 'utf8'), briefing, locale, basePath));
+    const stripLocale = locale === 'zh' || locale === 'zh-Hant' ? 'zh' : 'en';
+    let html = fs.readFileSync(file, 'utf8');
+    html = injectHomeLiveStrip(html, briefing, stripLocale, basePath);
+    html = injectHomeLiveArchive(html, briefing, locale, basePath);
+    html = injectHomeLatestCard(html, briefing, locale, basePath);
+    writeUtf8(file, html);
   }
 }
 
 module.exports = {
   renderLiveHtml,
   renderTeaser,
+  liveArchiveRow,
+  injectHomeLiveArchive,
+  injectHomeLatestCard,
   injectHomeLiveStrip,
   injectAllHomepages,
   PAGE_CSS,

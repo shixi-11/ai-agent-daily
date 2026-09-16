@@ -107,7 +107,6 @@ function validateHomepageCopy({ zhHtml, enHtml }) {
   const enText = visibleText(enHtml);
   const labels = [
     ['全球AI、智能体与开源', 'Global AI, Agents & Open Source'],
-    ['最新一期', 'Latest Report'],
     ['最新在前 · 固定链接', 'Newest First · Permanent URLs'],
   ];
   if (!zhText.includes('AI智能体情报日报')) errors.push('zh homepage is missing localized copy: AI智能体情报日报');
