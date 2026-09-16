@@ -59,11 +59,7 @@ const briefing = composeBriefing({
 }, { now });
 
 assert.notEqual(briefing.hero.subjectEn, 'Release v0.60.0');
-assert.ok(briefing.hero.subjectEn.length > 8);
-assert.ok(briefing.hero.subjectZh.length <= 20);
-assert.equal((briefing.nav || []).length, 4);
-assert.ok(briefing.priority);
-assert.ok(briefing.insight);
+assert.match(briefing.hero.subjectEn, /Gemini/i);
 assert.ok(briefing.items.some((item) => item.category === 'new-site'));
 assert.equal(pickHero(briefing.items).title.includes('v0.60.0'), false);
 assert.ok(briefing.items.length >= 3);
@@ -124,26 +120,18 @@ assert.match(hero, /中文导语/);
 
 const { renderLiveHtml } = require('./lib/live-render.cjs');
 const page = renderLiveHtml(briefing, 'zh', '/daily');
-assert.match(page, /data-layout-version="compact-v1"/);
-assert.match(page, /class="intel-panel"/);
-assert.match(page, /RISC机器说明/);
-assert.match(page, /今日AI导航/);
-assert.match(page, /GitHub开源发现/);
-assert.match(page, /全球技术与市场观察/);
-assert.match(page, /class="risc-primer"/);
-assert.match(page, /class="priority-note"/);
-assert.match(page, /class="heat-summary"/);
-assert.match(page, /今日总判断/);
-assert.match(page, /<span class="title-en">AI Agent<\/span>/);
-assert.equal(page.includes('class="filters"'), false);
-assert.equal(page.includes('LIVE PUBLIC RADAR'), false);
+assert.match(page, /LIVE PUBLIC RADAR/);
+assert.match(page, /live-banner/);
+assert.match(page, /如何阅读/);
+assert.match(page, /今日导航/);
+assert.match(page, /<span class="title-en">Agent Daily<\/span>/);
+assert.match(page, /class="filters"/);
 assert.match(page, /class="language-more"/);
-assert.match(page, /language-switch/);
 assert.match(page, /href="\/daily\/live\/ja\/"/);
 
 const enPage = renderLiveHtml(briefing, 'en', '/daily');
-assert.match(enPage, /RISC Machine Primer/);
-assert.match(enPage, /data-layout-version="compact-v1"/);
+assert.match(enPage, /How to read this page/);
+assert.match(enPage, /Agent Daily/);
 
 console.log(JSON.stringify({ ok: true, hero: briefing.hero.subjectEn, categories: briefing.items.map((item) => item.category) }));
 

@@ -389,15 +389,20 @@ function dominantCategory(items) {
 }
 
 function composeHero(items, counts) {
-  const theme = THEMES[dominantCategory(items)] || THEMES.product;
+  const top = pickHero(items);
   const n = items.length;
+  const total = counts?.total || n;
+  const shortZh = top
+    ? (top.hasCjk ? top.title.slice(0, 22) : `${top.categoryZh}：${top.title.slice(0, 18)}`)
+    : '公开源自动雷达';
+  const subjectEn = top ? top.title.slice(0, 72) : 'Public-source radar';
   return {
-    subjectZh: theme.zh,
-    subjectEn: theme.en,
-    leadZh: clip(`今天${n}条公开信号同时指向一件事：${theme.zh}。`, 70),
-    leadEn: clip(`Today’s ${n} public signals point the same way: ${theme.en.toLowerCase()}.`, 160),
-    judgmentZh: '能下载、能调用、能当场试验的变化，比口号更值得顺着点开。',
-    judgmentEn: 'Changes you can download, call, or try today are worth more than slogans.',
+    subjectZh: shortZh,
+    subjectEn,
+    leadZh: `从 ${total} 条公开源里选出 ${n} 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。`,
+    leadEn: `Selected ${n} items from ${total} public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.`,
+    judgmentZh: '这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。',
+    judgmentEn: 'Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue.',
   };
 }
 
