@@ -104,10 +104,12 @@
 
 .language-group {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: stretch;
   position: relative;
   z-index: 40;
-  height: 44px;
+  min-height: 44px;
+  height: auto;
   background: rgba(255, 255, 255, .86);
   box-shadow: inset 0 0 0 1px #aeb9c6;
 }
@@ -136,93 +138,37 @@
 }
 
 .language-more {
-  position: relative;
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: stretch;
-  height: 44px;
-  margin: 0;
-  border-inline-start: 1px solid #aeb9c6;
-}
-
-.language-more > summary {
-  list-style: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  min-width: 52px;
   min-height: 44px;
-  padding: 0 12px;
-  cursor: pointer;
-  background: transparent;
-  box-shadow: none;
-  font-weight: 850;
+  height: auto;
+  margin: 0;
 }
 
-.language-more > summary::-webkit-details-marker,
-.language-more > summary::marker {
-  display: none;
-  content: "";
-}
-
-.language-more[open] > summary,
-.language-more[data-current] > summary {
-  background: #14213d;
-  color: #fff;
-}
-
-.language-more .language-mark {
+.language-more a {
+  display: grid;
+  place-items: center;
+  min-width: 40px;
+  min-height: 44px;
+  padding: 0 6px;
+  border-inline-start: 1px solid #aeb9c6;
+  color: #354052;
   font-size: 12px;
+  font-weight: 850;
   letter-spacing: .04em;
 }
 
-.language-more .language-caret {
-  width: 0;
-  height: 0;
-  border: 4px solid transparent;
-  border-top-color: currentColor;
-  border-bottom-width: 0;
-  margin-top: 2px;
-}
-
-.language-more-menu {
-  position: absolute;
-  top: calc(100% + 6px);
-  inset-inline-end: 0;
-  z-index: 50;
-  min-width: 200px;
-  padding: 8px 0;
-  background: #fff;
-  border: 1px solid #d7dfe5;
-  box-shadow: 0 18px 40px rgba(20, 33, 61, .14);
-}
-
-.language-more-menu a {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-height: 44px;
-  padding: 0 14px;
-  color: #354052;
-  font-size: 13px;
-}
-
-.language-more-menu .language-code {
-  flex: 0 0 28px;
-  color: #5d6877;
-  font-size: 11px;
-  font-weight: 850;
-  letter-spacing: .06em;
-}
-
-.language-more-menu a:hover,
-.language-more-menu a[aria-current="page"] {
+.language-more a:hover {
   background: #edf4f2;
   color: #14213d;
 }
 
-.language-more-menu a[aria-current="page"] .language-code {
-  color: #14213d;
+.language-more a[aria-current="page"],
+.language-more a[aria-current="page"]:hover,
+.language-more[data-current] a[aria-current="page"] {
+  background: #14213d;
+  color: #fff;
 }
 
 .machine-note {

@@ -65,7 +65,9 @@ function removeSiteInjection(html) {
 }
 
 function stripLanguageMore(html) {
-  return html.replace(/<details\b[^>]*class=["'][^"']*\blanguage-more\b[^"']*["'][^>]*>[\s\S]*?<\/details>/gi, '');
+  return html
+    .replace(/<details\b[^>]*class=["'][^"']*\blanguage-more\b[^"']*["'][^>]*>[\s\S]*?<\/details>/gi, '')
+    .replace(/<span\b[^>]*class=["'][^"']*\blanguage-more\b[^"']*["'][^>]*>[\s\S]*?<\/span>/gi, '');
 }
 
 function extractTitleLead(html) {
