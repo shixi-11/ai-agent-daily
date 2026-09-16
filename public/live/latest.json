@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-17",
-  "generatedAt": "2026-09-16T16:16:25.637Z",
-  "generatedAtShanghai": "2026-09-17 00:16",
-  "collectedAt": "2026-09-16T16:16:25.637Z",
+  "generatedAt": "2026-09-16T16:18:57.873Z",
+  "generatedAtShanghai": "2026-09-17 00:18",
+  "collectedAt": "2026-09-16T16:18:57.872Z",
   "counts": {
     "rss": 255,
     "githubReleases": 69,
