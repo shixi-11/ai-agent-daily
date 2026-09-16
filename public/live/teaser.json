@@ -1,12 +1,12 @@
 {
   "zh": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-16T04:58:17.911Z",
-    "generatedAtShanghai": "2026-09-16 12:58",
+    "generatedAt": "2026-09-16T11:49:08.982Z",
+    "generatedAtShanghai": "2026-09-16 19:49",
     "locale": "zh",
     "watching": 16,
     "subject": "模型平台：Introducing Gemini",
-    "lead": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "lead": "从 386 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
@@ -22,27 +22,27 @@
         "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
       },
       {
-        "title": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
-        "source": "blogs.nvidia.com",
-        "category": "硬件架构",
-        "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
-      },
-      {
         "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
         "source": "arxiv.org",
         "category": "研究评测",
         "url": "https://arxiv.org/abs/2609.16215"
+      },
+      {
+        "title": "AI for Societal Impact",
+        "source": "blog.google",
+        "category": "产品功能",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-16T04:58:17.911Z",
-    "generatedAtShanghai": "2026-09-16 12:58",
+    "generatedAt": "2026-09-16T11:49:08.982Z",
+    "generatedAtShanghai": "2026-09-16 19:49",
     "locale": "en",
     "watching": 16,
     "subject": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "lead": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "lead": "Selected 16 items from 386 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
@@ -58,16 +58,16 @@
         "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
       },
       {
-        "title": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
-        "source": "blogs.nvidia.com",
-        "category": "Hardware",
-        "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
-      },
-      {
         "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
         "source": "arxiv.org",
         "category": "Research",
         "url": "https://arxiv.org/abs/2609.16215"
+      },
+      {
+        "title": "AI for Societal Impact",
+        "source": "blog.google",
+        "category": "Products",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/"
       }
     ]
   }
