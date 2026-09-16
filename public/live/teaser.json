@@ -1,8 +1,8 @@
 {
   "zh": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-16T11:49:08.982Z",
-    "generatedAtShanghai": "2026-09-16 19:49",
+    "generatedAt": "2026-09-16T15:54:57.698Z",
+    "generatedAtShanghai": "2026-09-16 23:54",
     "locale": "zh",
     "watching": 16,
     "subject": "模型平台：Introducing Gemini",
@@ -16,10 +16,10 @@
         "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
       },
       {
-        "title": "Your Agent Aced the Task. Will It Do It Again?",
-        "source": "huggingface.co",
+        "title": "Optimizing agent system prompts with Amazon Bedrock AgentCore",
+        "source": "aws.amazon.com",
         "category": "智能体",
-        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+        "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/"
       },
       {
         "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
@@ -28,17 +28,17 @@
         "url": "https://arxiv.org/abs/2609.16215"
       },
       {
-        "title": "AI for Societal Impact",
-        "source": "blog.google",
+        "title": "Helping older adults use AI in everyday life",
+        "source": "openai.com",
         "category": "产品功能",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/"
+        "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-16T11:49:08.982Z",
-    "generatedAtShanghai": "2026-09-16 19:49",
+    "generatedAt": "2026-09-16T15:54:57.698Z",
+    "generatedAtShanghai": "2026-09-16 23:54",
     "locale": "en",
     "watching": 16,
     "subject": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
@@ -52,10 +52,10 @@
         "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
       },
       {
-        "title": "Your Agent Aced the Task. Will It Do It Again?",
-        "source": "huggingface.co",
+        "title": "Optimizing agent system prompts with Amazon Bedrock AgentCore",
+        "source": "aws.amazon.com",
         "category": "Agents",
-        "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
+        "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/"
       },
       {
         "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
@@ -64,10 +64,10 @@
         "url": "https://arxiv.org/abs/2609.16215"
       },
       {
-        "title": "AI for Societal Impact",
-        "source": "blog.google",
+        "title": "Helping older adults use AI in everyday life",
+        "source": "openai.com",
         "category": "Products",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/"
+        "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
       }
     ]
   }
