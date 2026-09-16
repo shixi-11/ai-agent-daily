@@ -1,12 +1,12 @@
 {
   "zh": {
-    "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-16T15:54:57.698Z",
-    "generatedAtShanghai": "2026-09-16 23:54",
+    "dateIso": "2026-09-17",
+    "generatedAt": "2026-09-16T16:09:28.414Z",
+    "generatedAtShanghai": "2026-09-17 00:09",
     "locale": "zh",
     "watching": 16,
-    "subject": "模型平台：Introducing Gemini",
-    "lead": "从 386 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "subject": "新模型走进可调用接口",
+    "lead": "今天16条公开信号同时指向一件事：新模型走进可调用接口。",
     "href": "/daily/live/",
     "items": [
       {
@@ -36,13 +36,13 @@
     ]
   },
   "en": {
-    "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-16T15:54:57.698Z",
-    "generatedAtShanghai": "2026-09-16 23:54",
+    "dateIso": "2026-09-17",
+    "generatedAt": "2026-09-16T16:09:28.414Z",
+    "generatedAtShanghai": "2026-09-17 00:09",
     "locale": "en",
     "watching": 16,
-    "subject": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "lead": "Selected 16 items from 386 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "subject": "New Models Become Callable",
+    "lead": "Today’s 16 public signals point the same way: new models become callable.",
     "href": "/daily/live/en/",
     "items": [
       {

@@ -116,6 +116,10 @@ function isVersionNoise(item) {
 function cleanTitle(item) {
   let title = String(item.title || '').replace(/\s+/g, ' ').trim();
   title = title.replace(/^show hn:\s*/i, '');
+  if (item.repo) {
+    const prefix = String(item.repo).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    title = title.replace(new RegExp(`^${prefix}\\s*:\\s*`), '');
+  }
   if (/^(?:release\s+)?v?\d[\w.-]*$/i.test(title) && item.repo) {
     return `${item.repo} ${title.replace(/^release\s+/i, '')}`;
   }
@@ -124,6 +128,7 @@ function cleanTitle(item) {
   }
   return title;
 }
+
 
 function detectCategory(item) {
   if (item.origin === 'show-hn' || item.origin === 'github-repo' || item.kind === 'new-site') return 'new-site';
@@ -203,6 +208,32 @@ function sourceLabel(item) {
   return host || item.sourceId || 'source';
 }
 
+function sourceTier(item, category) {
+  if (item.origin === 'github-repo') return { zh: '社区新仓库', en: 'Community repo' };
+  if (item.origin === 'show-hn') return { zh: 'Show HN', en: 'Show HN' };
+  if (item.origin === 'github-release') return { zh: '官方发布', en: 'Official release' };
+  if (item.origin === 'huggingface') return { zh: '开放权重', en: 'Open weights' };
+  if (item.origin === 'hacker-news') return { zh: '社区讨论', en: 'Community' };
+  if (category === 'research' || /arxiv\.org/i.test(item.url || '')) return { zh: '论文预印', en: 'Preprint' };
+  if (item.kind === 'official' || /openai\.com|anthropic\.com|blog\.google|deepmind|nvidia\.com|ai\.google|huggingface\.co\/blog/i.test(item.url || '')) {
+    return { zh: '官方公告', en: 'Official' };
+  }
+  return { zh: '公开源', en: 'Public source' };
+}
+
+function sectionOf(category) {
+  if (category === 'open-source' || category === 'new-site') return 'github';
+  if (category === 'research' || category === 'hardware' || category === 'market') return 'world';
+  return 'features';
+}
+
+function clip(text, max) {
+  const value = String(text || '').replace(/\s+/g, ' ').trim();
+  if (value.length <= max) return value;
+  return `${value.slice(0, max - 1)}…`;
+}
+
+
 function composeCopy(item, category, observedAt) {
   const meta = CATEGORIES[category] || CATEGORIES.product;
   const snippet = snippetOf(item);
@@ -224,13 +255,17 @@ function composeCopy(item, category, observedAt) {
     whatZh = `${label} 在公开源发布了「${title}」。`;
     whatEn = `${label} published “${title}” on a public feed.`;
   }
+  const tier = sourceTier(item, category);
   return {
     title,
     category,
     categoryZh: meta.zh,
     categoryEn: meta.en,
+    section: sectionOf(category),
     region: detectRegion(item),
     sourceLabel: label,
+    sourceTierZh: tier.zh,
+    sourceTierEn: tier.en,
     url: item.url,
     publishedAt: published,
     observedAt,
@@ -243,12 +278,12 @@ function composeCopy(item, category, observedAt) {
     whyZh: meta.whyZh,
     whoZh: meta.whoZh,
     tryZh: '打开原始链接，核对发布日期、许可和适用范围。',
-    noteZh: '本条由公开 RSS、GitHub 或 Hugging Face 自动收录，摘要来自原始页面，未经人工精修。',
+    noteZh: '先看原始页面的日期、范围和许可，再决定要不要跟进。',
     whatEn: whatEn.slice(0, 320),
     whyEn: meta.whyEn,
     whoEn: meta.whoEn,
     tryEn: 'Open the original link and verify the date, license and stated scope.',
-    noteEn: 'Collected automatically from a public feed. The summary is from the source page, not a human rewrite.',
+    noteEn: 'Check the original date, scope and license before treating this as settled.',
     isFeature: false,
   };
 }
@@ -308,20 +343,22 @@ function radarCards(items) {
   return Object.entries(groups)
     .sort((a, b) => b[1].length - a[1].length)
     .slice(0, 3)
-    .map(([category, group]) => {
+    .map(([category, group], index) => {
       const meta = CATEGORIES[category];
       const names = [...new Set(group.slice(0, 3).map((item) => item.sourceLabel))];
       const lead = group[0];
-      const source = lead.sourceLabel.length > 14 ? meta.zh : lead.sourceLabel;
-      const titleZh = `${source}有新信号`.slice(0, 20);
+      const shortName = String(lead.sourceLabel || meta.zh).replace(/\.com$/i, '');
+      const titleZh = clip(`${shortName}交出新变化`, 20);
+      const titleEn = clip(`${shortName} ships a new change`, 48);
       return {
         category,
         tagZh: meta.zh,
         tagEn: meta.en,
+        tagTone: index === 0 ? 'green' : index === 1 ? 'amber' : '',
         titleZh,
-        titleEn: `${meta.en} moved`.slice(0, 48),
-        bodyZh: `${names.join('、')} 给出可点击的原始页面，适合对照来源而不是把摘要当结论。`,
-        bodyEn: `${names.join(', ')} published a public page. Treat the original source as the claim, not this summary.`,
+        titleEn,
+        bodyZh: `${names.join('、')} 同时给出可点开的原始页面，适合对照来源，而不是把摘要当结论。`,
+        bodyEn: `${names.join(', ')} published public pages. Treat the original source as the claim, not this summary.`,
       };
     });
 }
@@ -330,6 +367,154 @@ function pickHero(selected) {
   const official = selected.find((item) => /openai|google|deepmind|anthropic|huggingface|nvidia|gemini/i.test(`${item.sourceLabel} ${item.url} ${item.title}`) && !item.versionLike);
   const newsy = selected.find((item) => !item.versionLike && item.category !== 'new-site' && String(item.title || '').length >= 12);
   return official || newsy || selected.find((item) => !item.versionLike) || selected[0] || null;
+}
+
+const THEMES = {
+  agent: { zh: 'Agent把工具权限交出来', en: 'Agents Hand Over Tool Rights' },
+  'model-platform': { zh: '新模型走进可调用接口', en: 'New Models Become Callable' },
+  'open-source': { zh: '开源把可运行代码交出来', en: 'Open Source Ships Running Code' },
+  'new-site': { zh: '新站把新用法先跑起来', en: 'New Sites Try New Uses First' },
+  research: { zh: '评测把方法交给可核对', en: 'Evals Make Methods Checkable' },
+  hardware: { zh: '芯片改写Agent成本', en: 'Chips Rewrite Agent Cost' },
+  product: { zh: '产品把能力装进工作流', en: 'Products Put Capability to Work' },
+  market: { zh: '市场改写供给与分发', en: 'Markets Rewrite Supply Lines' },
+};
+
+function dominantCategory(items) {
+  const counts = {};
+  for (const item of items || []) {
+    counts[item.category] = (counts[item.category] || 0) + (item.isFeature ? 2 : 1);
+  }
+  return Object.entries(counts).sort((a, b) => b[1] - a[1])[0]?.[0] || 'product';
+}
+
+function composeHero(items, counts) {
+  const theme = THEMES[dominantCategory(items)] || THEMES.product;
+  const n = items.length;
+  return {
+    subjectZh: theme.zh,
+    subjectEn: theme.en,
+    leadZh: clip(`今天${n}条公开信号同时指向一件事：${theme.zh}。`, 70),
+    leadEn: clip(`Today’s ${n} public signals point the same way: ${theme.en.toLowerCase()}.`, 160),
+    judgmentZh: '能下载、能调用、能当场试验的变化，比口号更值得顺着点开。',
+    judgmentEn: 'Changes you can download, call, or try today are worth more than slogans.',
+  };
+}
+
+const NAV_LANES = [
+  {
+    cats: ['product', 'agent', 'model-platform'],
+    zh: '产品现场',
+    en: 'Field',
+    lookZh: '看点：能直接上手的产品、模型和 Agent 入口。',
+    lookEn: 'Look for: products, models and agent surfaces you can open today.',
+  },
+  {
+    cats: ['open-source', 'new-site'],
+    zh: '开源新站',
+    en: 'Open',
+    lookZh: '看点：仓库和独立站可以立刻点开验证。',
+    lookEn: 'Look for: repos and new sites you can verify immediately.',
+  },
+  {
+    cats: ['research'],
+    zh: '研究评测',
+    en: 'Research',
+    lookZh: '看点：论文和基准给出可核对的方法。',
+    lookEn: 'Look for: papers and benchmarks with checkable methods.',
+  },
+  {
+    cats: ['hardware', 'market'],
+    zh: '系统市场',
+    en: 'Systems',
+    lookZh: '看点：成本、供给和产业结构的真实变化。',
+    lookEn: 'Look for: real shifts in cost, supply and industry structure.',
+  },
+];
+
+function navLanes(items) {
+  const assigned = new Set();
+  const rows = NAV_LANES.map((lane) => {
+    const group = (items || []).filter((item) => lane.cats.includes(item.category));
+    group.forEach((item) => assigned.add(item.url));
+    return { ...lane, group };
+  });
+  const leftover = (items || []).filter((item) => !assigned.has(item.url));
+  for (const row of rows) {
+    if (!row.group.length && leftover.length) row.group = [leftover.shift()];
+  }
+  const largest = [...rows].sort((a, b) => b.group.length - a.group.length)[0];
+  for (const row of rows) {
+    if (!row.group.length && largest?.group?.length) row.group = largest.group.slice(0, 1);
+  }
+  return rows.map((row) => {
+    const names = [...new Set(row.group.slice(0, 2).map((item) => item.sourceLabel))];
+    const lead = row.group[0];
+    return {
+      labelZh: row.zh,
+      labelEn: row.en,
+      count: row.group.length,
+      factZh: names.length ? `${names.join('、')} 给出可点开的原始页面。` : (lead?.title || '公开源仍有可核对条目。'),
+      factEn: names.length ? `${names.join(', ')} published a public page.` : (lead?.title || 'Public sources still have a checkable item.'),
+      lookZh: row.lookZh,
+      lookEn: row.lookEn,
+    };
+  });
+}
+
+function composePriority(items) {
+  const pick = (items || []).find((item) => item.category === 'new-site' || item.category === 'open-source')
+    || (items || []).find((item) => item.isFeature)
+    || items?.[0];
+  if (!pick) return null;
+  return {
+    brand: pick.sourceLabel,
+    zh: `打开 ${pick.sourceLabel}，核对今天这条公开更新能不能在官方页面上复现。`,
+    en: `Open ${pick.sourceLabel} and check whether today’s public update can be reproduced on the official page.`,
+  };
+}
+
+function composeInsight(items) {
+  const cats = [...new Set((items || []).map((item) => item.categoryZh))].slice(0, 3).join('、');
+  const catsEn = [...new Set((items || []).map((item) => item.categoryEn))].slice(0, 3).join(', ');
+  return {
+    zh: `本期最密的是${cats || '公开源'}。真正有用的读法，是打开原始页面核对日期、许可和能不能当场试用。`,
+    en: `The densest signals sit in ${catsEn || 'public sources'}. Open the original pages and check the date, license and whether you can try it today.`,
+  };
+}
+
+function composeHeatSummary(items, hero) {
+  const n = items.length;
+  const names = [...new Set(items.slice(0, 3).map((item) => item.sourceLabel))];
+  return {
+    titleZh: `主轴：${hero.subjectZh}`,
+    titleEn: `Through-line: ${hero.subjectEn}`,
+    bodyZh: `${n}条信号覆盖${names.join('、')}等公开源。`,
+    bodyEn: `${n} signals cover ${names.join(', ')} and other public sources.`,
+  };
+}
+
+function decorateBriefing(briefing) {
+  const items = briefing.items || [];
+  const hero = composeHero(items, briefing.counts);
+  const tryable = items.filter((item) => item.category !== 'research').length || items.length;
+  return {
+    ...briefing,
+    hero,
+    stats: {
+      watching: items.length,
+      features: items.filter((item) => item.isFeature).length,
+      tryable,
+      openSource: items.filter((item) => item.category === 'open-source' || item.category === 'new-site').length,
+      newSites: items.filter((item) => item.category === 'new-site').length,
+      regions: new Set(items.map((item) => item.region)).size,
+    },
+    nav: navLanes(items),
+    radar: radarCards(items),
+    heat: composeHeatSummary(items, hero),
+    priority: composePriority(items),
+    insight: composeInsight(items),
+  };
 }
 
 function composeBriefing(collected, options = {}) {
@@ -356,17 +541,8 @@ function composeBriefing(collected, options = {}) {
 
   ranked.sort((a, b) => b.score - a.score);
   const selected = pickMix(ranked);
-  const openSource = selected.filter((item) => item.category === 'open-source' || item.category === 'new-site').length;
-  const newSites = selected.filter((item) => item.category === 'new-site').length;
-  const regions = new Set(selected.map((item) => item.region));
-  const features = selected.filter((item) => item.isFeature);
-  const top = pickHero(selected);
-  const shortZh = top
-    ? (top.hasCjk ? top.title.slice(0, 22) : `${top.categoryZh}：${top.title.slice(0, 18)}`)
-    : '公开源自动雷达';
-  const subjectEn = top ? top.title.slice(0, 72) : 'Public-source radar';
 
-  return {
+  return decorateBriefing({
     schemaVersion: 1,
     mode: 'live-public-sources',
     dateIso: observedAt,
@@ -375,30 +551,16 @@ function composeBriefing(collected, options = {}) {
     collectedAt: collected.collectedAt,
     counts: collected.counts,
     feedReports: collected.feedReports,
-    stats: {
-      watching: selected.length,
-      features: features.length,
-      openSource,
-      newSites,
-      regions: regions.size,
-    },
-    hero: {
-      subjectZh: shortZh,
-      subjectEn,
-      leadZh: `从 ${collected.counts?.total || 0} 条公开源里选出 ${selected.length} 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。`,
-      leadEn: `Selected ${selected.length} items from ${collected.counts?.total || 0} public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.`,
-      judgmentZh: '这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。',
-      judgmentEn: 'Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue.',
-    },
-    radar: radarCards(selected),
     items: selected,
     leftover: ranked.length - selected.length,
-  };
+  });
 }
 
 module.exports = {
   composeBriefing,
+  decorateBriefing,
   cleanTitle,
   pickHero,
+  navLanes,
   CATEGORIES,
 };

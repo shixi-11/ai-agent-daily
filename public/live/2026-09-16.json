@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-16",
-  "generatedAt": "2026-09-16T15:54:57.698Z",
-  "generatedAtShanghai": "2026-09-16 23:54",
-  "collectedAt": "2026-09-16T15:54:57.698Z",
+  "generatedAt": "2026-09-16T15:56:00.052Z",
+  "generatedAtShanghai": "2026-09-16 23:56",
+  "collectedAt": "2026-09-16T15:56:00.052Z",
   "counts": {
     "rss": 231,
     "githubReleases": 69,
@@ -199,45 +199,49 @@
   "stats": {
     "watching": 16,
     "features": 6,
+    "tryable": 14,
     "openSource": 3,
     "newSites": 3,
     "regions": 4
   },
   "hero": {
-    "subjectZh": "模型平台：Introducing Gemini",
-    "subjectEn": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-    "leadZh": "从 386 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
-    "leadEn": "Selected 16 items from 386 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
-    "judgmentZh": "这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。",
-    "judgmentEn": "Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue."
+    "subjectZh": "新模型走进可调用接口",
+    "subjectEn": "New Models Become Callable",
+    "leadZh": "今天16条公开信号同时指向一件事：新模型走进可调用接口。",
+    "leadEn": "Today’s 16 public signals point the same way: new models become callable.",
+    "judgmentZh": "能下载、能调用、能当场试验的变化，比口号更值得顺着点开。",
+    "judgmentEn": "Changes you can download, call, or try today are worth more than slogans."
   },
   "radar": [
     {
       "category": "model-platform",
       "tagZh": "模型平台",
       "tagEn": "Models",
-      "titleZh": "模型平台有新信号",
-      "titleEn": "Models moved",
-      "bodyZh": "deepmind.google、openai.com、blogs.nvidia.com 给出可点击的原始页面，适合对照来源而不是把摘要当结论。",
-      "bodyEn": "deepmind.google, openai.com, blogs.nvidia.com published a public page. Treat the original source as the claim, not this summary."
+      "tagTone": "green",
+      "titleZh": "deepmind.google交出新变化",
+      "titleEn": "deepmind.google ships a new change",
+      "bodyZh": "deepmind.google、openai.com、blogs.nvidia.com 同时给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
+      "bodyEn": "deepmind.google, openai.com, blogs.nvidia.com published public pages. Treat the original source as the claim, not this summary."
     },
     {
       "category": "product",
       "tagZh": "产品功能",
       "tagEn": "Products",
-      "titleZh": "openai.com有新信号",
-      "titleEn": "Products moved",
-      "bodyZh": "openai.com、blog.google 给出可点击的原始页面，适合对照来源而不是把摘要当结论。",
-      "bodyEn": "openai.com, blog.google published a public page. Treat the original source as the claim, not this summary."
+      "tagTone": "amber",
+      "titleZh": "openai交出新变化",
+      "titleEn": "openai ships a new change",
+      "bodyZh": "openai.com、blog.google 同时给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
+      "bodyEn": "openai.com, blog.google published public pages. Treat the original source as the claim, not this summary."
     },
     {
       "category": "new-site",
       "tagZh": "新站新项目",
       "tagEn": "New sites",
-      "titleZh": "新站新项目有新信号",
-      "titleEn": "New sites moved",
-      "bodyZh": "FankChen/tracecrate、zhbi98/pcb-layout-design、Matthew0822/ToolReplay 给出可点击的原始页面，适合对照来源而不是把摘要当结论。",
-      "bodyEn": "FankChen/tracecrate, zhbi98/pcb-layout-design, Matthew0822/ToolReplay published a public page. Treat the original source as the claim, not this summary."
+      "tagTone": "",
+      "titleZh": "FankChen/tracecrate…",
+      "titleEn": "FankChen/tracecrate ships a new change",
+      "bodyZh": "FankChen/tracecrate、zhbi98/pcb-layout-design、Matthew0822/ToolReplay 同时给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
+      "bodyEn": "FankChen/tracecrate, zhbi98/pcb-layout-design, Matthew0822/ToolReplay published public pages. Treat the original source as the claim, not this summary."
     }
   ],
   "items": [
@@ -706,5 +710,58 @@
       "hasCjk": false
     }
   ],
-  "leftover": 216
+  "leftover": 216,
+  "nav": [
+    {
+      "labelZh": "产品现场",
+      "labelEn": "Field",
+      "count": 10,
+      "factZh": "deepmind.google、aws.amazon.com 给出可点开的原始页面。",
+      "factEn": "deepmind.google, aws.amazon.com published a public page.",
+      "lookZh": "看点：能直接上手的产品、模型和 Agent 入口。",
+      "lookEn": "Look for: products, models and agent surfaces you can open today."
+    },
+    {
+      "labelZh": "开源新站",
+      "labelEn": "Open",
+      "count": 3,
+      "factZh": "FankChen/tracecrate、zhbi98/pcb-layout-design 给出可点开的原始页面。",
+      "factEn": "FankChen/tracecrate, zhbi98/pcb-layout-design published a public page.",
+      "lookZh": "看点：仓库和独立站可以立刻点开验证。",
+      "lookEn": "Look for: repos and new sites you can verify immediately."
+    },
+    {
+      "labelZh": "研究评测",
+      "labelEn": "Research",
+      "count": 2,
+      "factZh": "arxiv.org 给出可点开的原始页面。",
+      "factEn": "arxiv.org published a public page.",
+      "lookZh": "看点：论文和基准给出可核对的方法。",
+      "lookEn": "Look for: papers and benchmarks with checkable methods."
+    },
+    {
+      "labelZh": "系统市场",
+      "labelEn": "Systems",
+      "count": 1,
+      "factZh": "blogs.nvidia.com 给出可点开的原始页面。",
+      "factEn": "blogs.nvidia.com published a public page.",
+      "lookZh": "看点：成本、供给和产业结构的真实变化。",
+      "lookEn": "Look for: real shifts in cost, supply and industry structure."
+    }
+  ],
+  "heat": {
+    "titleZh": "主轴：新模型走进可调用接口",
+    "titleEn": "Through-line: New Models Become Callable",
+    "bodyZh": "16条信号覆盖deepmind.google、aws.amazon.com、arxiv.org等公开源。",
+    "bodyEn": "16 signals cover deepmind.google, aws.amazon.com, arxiv.org and other public sources."
+  },
+  "priority": {
+    "brand": "FankChen/tracecrate",
+    "zh": "打开 FankChen/tracecrate，核对今天这条公开更新能不能在官方页面上复现。",
+    "en": "Open FankChen/tracecrate and check whether today’s public update can be reproduced on the official page."
+  },
+  "insight": {
+    "zh": "本期最密的是模型平台、智能体、研究评测。真正有用的读法，是打开原始页面核对日期、许可和能不能当场试用。",
+    "en": "The densest signals sit in Models, Agents, Research. Open the original pages and check the date, license and whether you can try it today."
+  }
 }
