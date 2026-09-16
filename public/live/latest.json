@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-17",
-  "generatedAt": "2026-09-16T16:09:28.414Z",
-  "generatedAtShanghai": "2026-09-17 00:09",
-  "collectedAt": "2026-09-16T16:09:28.414Z",
+  "generatedAt": "2026-09-16T16:10:49.238Z",
+  "generatedAtShanghai": "2026-09-17 00:10",
+  "collectedAt": "2026-09-16T16:10:49.238Z",
   "counts": {
     "rss": 255,
     "githubReleases": 69,
     "huggingface": 54,
-    "hn": 9,
+    "hn": 8,
     "showHn": 13,
     "githubSearch": 10,
-    "total": 410
+    "total": 409
   },
   "feedReports": [
     {
@@ -708,7 +708,7 @@
       "hasCjk": false
     }
   ],
-  "leftover": 237,
+  "leftover": 236,
   "hero": {
     "subjectZh": "新模型走进可调用接口",
     "subjectEn": "New Models Become Callable",
