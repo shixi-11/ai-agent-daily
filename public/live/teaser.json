@@ -1,19 +1,19 @@
 {
   "zh": {
     "dateIso": "2026-09-17",
-    "generatedAt": "2026-09-16T16:27:09.297Z",
-    "generatedAtShanghai": "2026-09-17 00:27",
+    "generatedAt": "2026-09-16T17:08:14.193Z",
+    "generatedAtShanghai": "2026-09-17 01:08",
     "locale": "zh",
     "watching": 16,
-    "subject": "模型平台：Introducing Gemini",
+    "subject": "模型平台：‘Now We Can Know E",
     "lead": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
-        "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-        "source": "deepmind.google",
+        "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
+        "source": "blogs.nvidia.com",
         "category": "模型平台",
-        "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
+        "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/"
       },
       {
         "title": "Optimizing agent system prompts with Amazon Bedrock AgentCore",
@@ -28,28 +28,28 @@
         "url": "https://arxiv.org/abs/2609.16215"
       },
       {
-        "title": "Helping older adults use AI in everyday life",
-        "source": "openai.com",
-        "category": "产品功能",
-        "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
+        "title": "langchain==1.4.1",
+        "source": "langchain-ai/langchain",
+        "category": "开源发现",
+        "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-17",
-    "generatedAt": "2026-09-16T16:27:09.297Z",
-    "generatedAtShanghai": "2026-09-17 00:27",
+    "generatedAt": "2026-09-16T17:08:14.193Z",
+    "generatedAtShanghai": "2026-09-17 01:08",
     "locale": "en",
     "watching": 16,
-    "subject": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+    "subject": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dream",
     "lead": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
-        "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-        "source": "deepmind.google",
+        "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
+        "source": "blogs.nvidia.com",
         "category": "Models",
-        "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
+        "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/"
       },
       {
         "title": "Optimizing agent system prompts with Amazon Bedrock AgentCore",
@@ -64,10 +64,10 @@
         "url": "https://arxiv.org/abs/2609.16215"
       },
       {
-        "title": "Helping older adults use AI in everyday life",
-        "source": "openai.com",
-        "category": "Products",
-        "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
+        "title": "langchain==1.4.1",
+        "source": "langchain-ai/langchain",
+        "category": "Open source",
+        "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1"
       }
     ]
   }
