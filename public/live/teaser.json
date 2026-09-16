@@ -1,8 +1,8 @@
 {
   "zh": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-15T23:41:18.193Z",
-    "generatedAtShanghai": "2026-09-16 07:41",
+    "generatedAt": "2026-09-16T04:58:17.911Z",
+    "generatedAtShanghai": "2026-09-16 12:58",
     "locale": "zh",
     "watching": 16,
     "subject": "模型平台：Introducing Gemini",
@@ -16,12 +16,6 @@
         "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
       },
       {
-        "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
-        "source": "arxiv.org",
-        "category": "研究评测",
-        "url": "https://arxiv.org/abs/2609.13356"
-      },
-      {
         "title": "Your Agent Aced the Task. Will It Do It Again?",
         "source": "huggingface.co",
         "category": "智能体",
@@ -32,13 +26,19 @@
         "source": "blogs.nvidia.com",
         "category": "硬件架构",
         "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
+      },
+      {
+        "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
+        "source": "arxiv.org",
+        "category": "研究评测",
+        "url": "https://arxiv.org/abs/2609.16215"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-16",
-    "generatedAt": "2026-09-15T23:41:18.193Z",
-    "generatedAtShanghai": "2026-09-16 07:41",
+    "generatedAt": "2026-09-16T04:58:17.911Z",
+    "generatedAtShanghai": "2026-09-16 12:58",
     "locale": "en",
     "watching": 16,
     "subject": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
@@ -52,12 +52,6 @@
         "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/"
       },
       {
-        "title": "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search",
-        "source": "arxiv.org",
-        "category": "Research",
-        "url": "https://arxiv.org/abs/2609.13356"
-      },
-      {
         "title": "Your Agent Aced the Task. Will It Do It Again?",
         "source": "huggingface.co",
         "category": "Agents",
@@ -68,6 +62,12 @@
         "source": "blogs.nvidia.com",
         "category": "Hardware",
         "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
+      },
+      {
+        "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
+        "source": "arxiv.org",
+        "category": "Research",
+        "url": "https://arxiv.org/abs/2609.16215"
       }
     ]
   }
