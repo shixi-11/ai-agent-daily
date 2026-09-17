@@ -2,17 +2,17 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-17",
-  "generatedAt": "2026-09-17T08:41:01.995Z",
-  "generatedAtShanghai": "2026-09-17 16:41",
-  "collectedAt": "2026-09-17T08:41:01.995Z",
+  "generatedAt": "2026-09-17T11:52:52.843Z",
+  "generatedAtShanghai": "2026-09-17 19:52",
+  "collectedAt": "2026-09-17T11:52:52.842Z",
   "counts": {
-    "rss": 255,
+    "rss": 243,
     "githubReleases": 69,
     "huggingface": 54,
     "hn": 9,
     "showHn": 13,
     "githubSearch": 10,
-    "total": 410
+    "total": 398
   },
   "feedReports": [
     {
@@ -128,9 +128,10 @@
     },
     {
       "id": "hn-show",
-      "ok": true,
-      "count": 12,
-      "error": ""
+      "ok": false,
+      "optional": true,
+      "count": 0,
+      "error": "The operation was aborted due to timeout"
     },
     {
       "id": "producthunt",
@@ -722,7 +723,7 @@
         },
         "ko": {
           "title": "인공지능으로 광고를 재현하는 것",
-          "what": "Sponsored Agents, 마케팅 담당자 도구 및 HubSpot 및 Shopify와의 통합을 포함한 OpenAI에서 AI에 기반한 새로운 광고 경험을 탐구하십시오.",
+          "what": "Sponsored Agents, 마케팅 담당자 도구 및 HubSpot 및 Shopify와의 통합을 포함한 OpenAI에서 AI 기반의 새로운 광고 경험을 탐구하십시오.",
           "why": "배송된 기능은 로드맵뿐만 아니라 일상적인 사용량을 변화시킵니다.",
           "who": "제품 관리자, 앱 개발자 및 전력 사용자",
           "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
@@ -886,236 +887,6 @@
       "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
     },
     {
-      "title": "FankChen/tracecrate",
-      "titleEn": "FankChen/tracecrate",
-      "titleZh": "FankChen/tracecrate",
-      "category": "new-site",
-      "categoryZh": "新站新项目",
-      "categoryEn": "New sites",
-      "categoryI18n": {
-        "zh": "新站新项目",
-        "en": "New sites",
-        "ja": "新しいサイト",
-        "ko": "새 사이트",
-        "es": "Sitios nuevos",
-        "fr": "Nouveaux sites",
-        "de": "Neue Sites",
-        "ar": "مواقع جديدة",
-        "zh-Hant": "新站新專案"
-      },
-      "section": "github",
-      "region": "全球社区",
-      "regionZh": "全球社区",
-      "regionEn": "Global",
-      "regionI18n": {
-        "zh": "全球社区",
-        "en": "Global",
-        "ja": "グローバル",
-        "ko": "글로벌",
-        "es": "Global",
-        "fr": "Mondial",
-        "de": "Global",
-        "ar": "عالمي",
-        "zh-Hant": "全球社群"
-      },
-      "sourceLabel": "FankChen/tracecrate",
-      "sourceTierZh": "社区新仓库",
-      "sourceTierEn": "Community repo",
-      "url": "https://github.com/FankChen/tracecrate",
-      "publishedAt": "2026-09-10",
-      "observedAt": "2026-09-17",
-      "origin": "github-repo",
-      "repo": "FankChen/tracecrate",
-      "stars": 137,
-      "license": "MIT",
-      "versionLike": false,
-      "snippetEn": "Local-first AI agent trace workbench. Inspect Claude Code, Codex and OTLP logs, compare runs, and export privacy-conscious reports. No backend or API keys.",
-      "whatZh": "新公开仓库 FankChen/tracecrate。当地第一人工智能代理跟踪工作台。 检查Claude Code、Codex和OTLP日志,比较运行,并出口隐私意识报告。 没有后端或API键。",
-      "whyZh": "新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。",
-      "whoZh": "愿意动手试新工具的开发者和独立作者。",
-      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
-      "noteZh": "先看原始页面的日期、范围和许可，再决定要不要跟进。",
-      "whatEn": "New public repository FankChen/tracecrate. Local-first AI agent trace workbench. Inspect Claude Code, Codex and OTLP logs, compare runs, and export privacy-conscious reports. No backend or API keys.",
-      "whyEn": "A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.",
-      "whoEn": "Developers and indie builders who try new tools early.",
-      "tryEn": "Open the original link and verify the date, license and stated scope.",
-      "noteEn": "Check the original date, scope and license before treating this as settled.",
-      "isFeature": false,
-      "i18n": {
-        "ja": {
-          "title": "FankChen/tracecrate",
-          "what": "ローカル・ファースト AI エージェントの追跡作業台 Claude Code、Codex、OTLPのログをチェックし、ランを比較し、プライバシーを意識するレポートを輸出する。 バックエンドやAPI キーがない",
-          "why": "新たに公開された repo、 Show HN、または製品サイトは実験で利用されることが多いが大手の研究室ではまだ取り扱っていない。",
-          "who": "開発者や独立開発者新しく道具を早期に試す",
-          "try": "元のリンクを開いて、日付、ライセンス、および指定された範囲を確認します。",
-          "note": "契約書に契約書を書き込む前に元の日付、範囲、ライセンスを確認する"
-        },
-        "ko": {
-          "title": "FankChen/tracecrate",
-          "what": "로컬 AI 에이전트 최초로 작업 테이블을 추적합니다. Claude Code, Codex 및 OTLP 로그를 검사하고, 실행을 비교하고, 개인정보를 인식하는 보고서를 수출합니다. 백엔드나 API 키가 없습니다.",
-          "why": "새로운 공개된 repo, Show HN 또는 제품 사이트는 종종 대형 연구소가 아직 다루지 않은 사용 실험입니다.",
-          "who": "개발자와 인디 빌더들이 새로운 도구를 일찍 시도합니다.",
-          "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
-          "note": "이 문제를 해결하기 전에 원래 날짜와 범위와 면허를 확인하세요."
-        },
-        "es": {
-          "title": "FankChen/tracecrate",
-          "what": "El primer agente de IA local rastrear el escritorio. Inspeccionar los registros Claude Code, Codex y OTLP, comparar las carreras y exportar informes conscientes de la privacidad. No hay contrarreloj ni claves API.",
-          "why": "Un nuevo repositorio público, Show HN o sitio de productos a menudo es un experimento de uso que los grandes laboratorios aún no han cubierto.",
-          "who": "Desarrolladores e in-indie constructores que prueban nuevas herramientas temprano.",
-          "try": "Abre el enlace original y verifique la fecha, licencia y alcance indicado.",
-          "note": "Compruebe la fecha original, el alcance y la licencia antes de tratar esto como resuelto."
-        },
-        "fr": {
-          "title": "FankChen/tracecrate",
-          "what": "Le premier agent d'IA local à tracer le bureau de travail. Inspectez les journaux Claude Code, Codex et OTLP, comparez les circuits et exportez des rapports conscients de la confidentialité. Pas de backend ou de clés API.",
-          "why": "Un référencement public, Show HN ou site de produit, est souvent une expérience d'utilisation que les grands laboratoires n'ont pas encore couverte.",
-          "who": "Des développeurs et des constructeurs indépendants qui essaient de nouveaux outils tôt.",
-          "try": "Ouvrez le lien original et vérifiez la date, la licence et la portée indiquées.",
-          "note": "Vérifiez la date, la portée et la licence originales avant de traiter cela comme réglé."
-        },
-        "de": {
-          "title": "FankChen/tracecrate",
-          "what": "Ein lokaler KI-Agent, der die Arbeitsplatte verfolgt. Überprüfen Sie die Logs von Claude Code, Codex und OTLP, vergleichen Sie die Laufzeiten und exportieren Sie Datenschutzbewusste Berichte. Keine Backend- oder API-Schlüssel.",
-          "why": "Ein neues öffentliches Repo, Show HN oder Produkt-Website ist oft ein Nutzungsexperiment, das die großen Labors noch nicht abgedeckt haben.",
-          "who": "Entwickler und Indie-Bauherren, die neue Werkzeuge früh ausprobieren.",
-          "try": "Öffnen Sie den Originallink und überprüfen Sie das Datum, die Lizenz und den angegebenen Umfang.",
-          "note": "Überprüfen Sie das ursprüngliche Datum, den Umfang und die Lizenz, bevor Sie dies als vereinbar betrachten."
-        },
-        "ar": {
-          "title": "FankChen/tracecrate",
-          "what": "وكيل الذكاء الاصطناعي المحلي الأول يلاحق مكتب العمل تحقق من سجلات Claude Code و Codex و OTLP ، ومقارنة الجرائد ، وتصدير تقارير واعية بالخصوصية. لا يوجد خلفية أو مفاتيح API",
-          "why": "إن إعادة الإعلان العامة الجديدة، أو Show HN أو موقع المنتج غالباً ما تكون تجربة استخدام لم تغطي المختبرات الكبيرة بعد.",
-          "who": "المطورون والمبنيون المستقلون الذين يجرون أدوات جديدة مبكراً",
-          "try": "افتح الرابط الأصلي وتحقق من التاريخ والترخيص والمقياس المذكور.",
-          "note": "تحقق من التاريخ الأصلي ومدى و الترخيص قبل التعامل مع هذا كما تسوية."
-        }
-      },
-      "score": 23.279758172802474,
-      "hasCjk": false,
-      "titleHant": "FankChen/tracecrate",
-      "whatHant": "新公開倉庫 FankChen/tracecrate。當地第一人工智慧代理跟蹤工作臺。 檢查Claude Code、Codex和OTLP日誌,比較執行,並出口隱私意識報告。 沒有後端或API鍵。",
-      "whyHant": "新出現的公開倉庫、Show HN 或產品站，往往是還沒被大廠覆蓋的用法實驗。",
-      "whoHant": "願意動手試新工具的開發者和獨立作者。",
-      "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
-      "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
-    },
-    {
-      "title": "Deiko – point at your screen, talk, and hand the brief to your agent",
-      "titleEn": "Deiko – point at your screen, talk, and hand the brief to your agent",
-      "titleZh": "Deiko - 点击你的屏幕,说话,并把短片交给你的经纪人",
-      "category": "new-site",
-      "categoryZh": "新站新项目",
-      "categoryEn": "New sites",
-      "categoryI18n": {
-        "zh": "新站新项目",
-        "en": "New sites",
-        "ja": "新しいサイト",
-        "ko": "새 사이트",
-        "es": "Sitios nuevos",
-        "fr": "Nouveaux sites",
-        "de": "Neue Sites",
-        "ar": "مواقع جديدة",
-        "zh-Hant": "新站新專案"
-      },
-      "section": "github",
-      "region": "全球社区",
-      "regionZh": "全球社区",
-      "regionEn": "Global",
-      "regionI18n": {
-        "zh": "全球社区",
-        "en": "Global",
-        "ja": "グローバル",
-        "ko": "글로벌",
-        "es": "Global",
-        "fr": "Mondial",
-        "de": "Global",
-        "ar": "عالمي",
-        "zh-Hant": "全球社群"
-      },
-      "sourceLabel": "deiko.app",
-      "sourceTierZh": "公开源",
-      "sourceTierEn": "Public source",
-      "url": "https://deiko.app/",
-      "publishedAt": "2026-09-16",
-      "observedAt": "2026-09-17",
-      "origin": "rss",
-      "repo": "",
-      "stars": 0,
-      "license": "",
-      "versionLike": false,
-      "snippetEn": "macOS, 0.4.5, free to try: curl -fsSL https://deiko.app/install.sh | sh I kept losing time explaining my own screen to Claude Code. Screenshot, crop, paste, th…",
-      "whatZh": "macOS,0.4.5,可以自由地尝试:卷曲-fsSL https://deiko.app/install.sh背我一直在浪费时间解释我自己的屏幕给Claude Code。 屏幕拍摄、作物、意大利面包",
-      "whyZh": "新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。",
-      "whoZh": "愿意动手试新工具的开发者和独立作者。",
-      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
-      "noteZh": "先看原始页面的日期、范围和许可，再决定要不要跟进。",
-      "whatEn": "macOS, 0.4.5, free to try: curl -fsSL https://deiko.app/install.sh | sh I kept losing time explaining my own screen to Claude Code. Screenshot, crop, paste, th…",
-      "whyEn": "A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.",
-      "whoEn": "Developers and indie builders who try new tools early.",
-      "tryEn": "Open the original link and verify the date, license and stated scope.",
-      "noteEn": "Check the original date, scope and license before treating this as settled.",
-      "isFeature": false,
-      "i18n": {
-        "ja": {
-          "title": "デイコ - 画面を向けて話し、その説明書を代理人に渡す",
-          "what": "時間を無駄にしていました。 Claude Codeに自分のスクリーンを説明して。 スクリーンショット収穫パスタテープ",
-          "why": "新たに公開された repo、 Show HN、または製品サイトは実験で利用されることが多いが大手の研究室ではまだ取り扱っていない。",
-          "who": "開発者や独立開発者新しく道具を早期に試す",
-          "try": "元のリンクを開いて、日付、ライセンス、および指定された範囲を確認します。",
-          "note": "契約書に契約書を書き込む前に元の日付、範囲、ライセンスを確認する"
-        },
-        "ko": {
-          "title": "데이코 - 화면 을 가리켜 말 하고, 브리프 를 에이전트 에게 넘겨 주",
-          "what": "macOS, 0.4.5, 무료 테스트: curl -fsSL https://deiko.app/install.sh sh 제 자신의 화면을 Claude Code에 설명하는 시간을 계속 낭비했습니다. 스크린샷, 크로프, 페이스트, th...",
-          "why": "새로운 공개된 repo, Show HN 또는 제품 사이트는 종종 대형 연구소가 아직 다루지 않은 사용 실험입니다.",
-          "who": "개발자와 인디 빌더들이 새로운 도구를 일찍 시도합니다.",
-          "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
-          "note": "이 문제를 해결하기 전에 원래 날짜와 범위와 면허를 확인하세요."
-        },
-        "es": {
-          "title": "Deiko - apunta a tu pantalla, habla y entrega el informe a tu agente",
-          "what": "MacOS, 0.4.5, libre para probar: curl -fsSL https://deiko.app/install.sh sh No dejé de perder tiempo explicando mi propia pantalla a Claude Code. Captura de pantalla, recorte, pasta, th...",
-          "why": "Un nuevo repositorio público, Show HN o sitio de productos a menudo es un experimento de uso que los grandes laboratorios aún no han cubierto.",
-          "who": "Desarrolladores e in-indie constructores que prueban nuevas herramientas temprano.",
-          "try": "Abre el enlace original y verifique la fecha, licencia y alcance indicado.",
-          "note": "Compruebe la fecha original, el alcance y la licencia antes de tratar esto como resuelto."
-        },
-        "fr": {
-          "title": "Deiko - pointez votre écran, parlez et remettez le brief à votre agent",
-          "what": "macOS, 0.4.5, gratuit à essayer: curl -fsSL https://deiko.app/install.sh.sh J'ai continué à perdre du temps à expliquer mon propre écran à Claude Code. Capture d'écran, coupure, pâte, th...",
-          "why": "Un référencement public, Show HN ou site de produit, est souvent une expérience d'utilisation que les grands laboratoires n'ont pas encore couverte.",
-          "who": "Des développeurs et des constructeurs indépendants qui essaient de nouveaux outils tôt.",
-          "try": "Ouvrez le lien original et vérifiez la date, la licence et la portée indiquées.",
-          "note": "Vérifiez la date, la portée et la licence originales avant de traiter cela comme réglé."
-        },
-        "de": {
-          "title": "Deiko - zeigen Sie auf Ihren Bildschirm, sprechen Sie und übergeben Sie Ihren Agenten den Brief",
-          "what": "MacOS, 0.4.5, kostenlos auszuprobieren: curl -fsSL https://deiko.app/install.sh.sh Ich verlor ständig Zeit damit, meinem eigenen Bildschirm zu erklären. Bildschirm, Pflanzen, Pfeifen, die...",
-          "why": "Ein neues öffentliches Repo, Show HN oder Produkt-Website ist oft ein Nutzungsexperiment, das die großen Labors noch nicht abgedeckt haben.",
-          "who": "Entwickler und Indie-Bauherren, die neue Werkzeuge früh ausprobieren.",
-          "try": "Öffnen Sie den Originallink und überprüfen Sie das Datum, die Lizenz und den angegebenen Umfang.",
-          "note": "Überprüfen Sie das ursprüngliche Datum, den Umfang und die Lizenz, bevor Sie dies als vereinbar betrachten."
-        },
-        "ar": {
-          "title": "ديكو - اشير إلى الشاشة، تحدث، وتسلم المعلومات إلى وكيلك",
-          "what": "macOS، 0.4.5, مجاناً لمحاولة: curl -fsSL https://deiko.app/install.sh.sh كنت أضييع الوقت في شرح شاشة شاشتي الخاصة لـ Claude Code. صورة شاشة، قصة، لصق، th...",
-          "why": "إن إعادة الإعلان العامة الجديدة، أو Show HN أو موقع المنتج غالباً ما تكون تجربة استخدام لم تغطي المختبرات الكبيرة بعد.",
-          "who": "المطورون والمبنيون المستقلون الذين يجرون أدوات جديدة مبكراً",
-          "try": "افتح الرابط الأصلي وتحقق من التاريخ والترخيص والمقياس المذكور.",
-          "note": "تحقق من التاريخ الأصلي ومدى و الترخيص قبل التعامل مع هذا كما تسوية."
-        }
-      },
-      "score": 23,
-      "hasCjk": false,
-      "titleHant": "Deiko - 點選你的螢幕,說話,並把短片交給你的經紀人",
-      "whatHant": "macOS,0.4.5,可以自由地嘗試:捲曲-fsSL https://deiko.app/install.sh揹我一直在浪費時間解釋我自己的螢幕給Claude Code。 螢幕拍攝、作物、義大利麵包",
-      "whyHant": "新出現的公開倉庫、Show HN 或產品站，往往是還沒被大廠覆蓋的用法實驗。",
-      "whoHant": "願意動手試新工具的開發者和獨立作者。",
-      "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
-      "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
-    },
-    {
       "title": "awlevin/typesafe-computer-use",
       "titleEn": "awlevin/typesafe-computer-use",
       "titleZh": "awlevin/typesafe-computer-use",
@@ -1156,7 +927,7 @@
       "observedAt": "2026-09-17",
       "origin": "github-repo",
       "repo": "awlevin/typesafe-computer-use",
-      "stars": 115,
+      "stars": 127,
       "license": "MIT",
       "versionLike": false,
       "snippetEn": "Computer use for about $0.0002 a step: OCR the screen, classify the next action with TypeSafe, click. macOS.",
@@ -1221,10 +992,240 @@
           "note": "تحقق من التاريخ الأصلي ومدى و الترخيص قبل التعامل مع هذا كما تسوية."
         }
       },
-      "score": 22.128915978453836,
+      "score": 22.214419939295738,
       "hasCjk": false,
       "titleHant": "awlevin/typesafe-computer-use",
       "whatHant": "新公開倉庫 awlevin/typesafe-computer-use。計算機使用約為每步0.0002美元: OCR螢幕,用TypeSafe分類下一個動作,點選。 macOS。",
+      "whyHant": "新出現的公開倉庫、Show HN 或產品站，往往是還沒被大廠覆蓋的用法實驗。",
+      "whoHant": "願意動手試新工具的開發者和獨立作者。",
+      "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
+      "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
+    },
+    {
+      "title": "zhbi98/pcb-layout-design",
+      "titleEn": "zhbi98/pcb-layout-design",
+      "titleZh": "zhbi98/pcb-layout-design",
+      "category": "new-site",
+      "categoryZh": "新站新项目",
+      "categoryEn": "New sites",
+      "categoryI18n": {
+        "zh": "新站新项目",
+        "en": "New sites",
+        "ja": "新しいサイト",
+        "ko": "새 사이트",
+        "es": "Sitios nuevos",
+        "fr": "Nouveaux sites",
+        "de": "Neue Sites",
+        "ar": "مواقع جديدة",
+        "zh-Hant": "新站新專案"
+      },
+      "section": "github",
+      "region": "全球社区",
+      "regionZh": "全球社区",
+      "regionEn": "Global",
+      "regionI18n": {
+        "zh": "全球社区",
+        "en": "Global",
+        "ja": "グローバル",
+        "ko": "글로벌",
+        "es": "Global",
+        "fr": "Mondial",
+        "de": "Global",
+        "ar": "عالمي",
+        "zh-Hant": "全球社群"
+      },
+      "sourceLabel": "zhbi98/pcb-layout-design",
+      "sourceTierZh": "社区新仓库",
+      "sourceTierEn": "Community repo",
+      "url": "https://github.com/zhbi98/pcb-layout-design",
+      "publishedAt": "2026-09-13",
+      "observedAt": "2026-09-17",
+      "origin": "github-repo",
+      "repo": "zhbi98/pcb-layout-design",
+      "stars": 80,
+      "license": "",
+      "versionLike": false,
+      "snippetEn": "【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自动布线 Skill",
+      "whatZh": "新公开仓库 zhbi98/pcb-layout-design。【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自动布线 Skill",
+      "whyZh": "新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。",
+      "whoZh": "愿意动手试新工具的开发者和独立作者。",
+      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
+      "noteZh": "先看原始页面的日期、范围和许可，再决定要不要跟进。",
+      "whatEn": "New public repository zhbi98/pcb-layout-design. 【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自动布线 Skill",
+      "whyEn": "A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.",
+      "whoEn": "Developers and indie builders who try new tools early.",
+      "tryEn": "Open the original link and verify the date, license and stated scope.",
+      "noteEn": "Check the original date, scope and license before treating this as settled.",
+      "isFeature": false,
+      "i18n": {
+        "ja": {
+          "title": "zhbi98/pcb-layout-design",
+          "what": "CodexPCBレイアウトスキル GPT-6 アストラ x KiCad10。 PCB 自动布线技能",
+          "why": "新たに公開された repo、 Show HN、または製品サイトは実験で利用されることが多いが大手の研究室ではまだ取り扱っていない。",
+          "who": "開発者や独立開発者新しく道具を早期に試す",
+          "try": "元のリンクを開いて、日付、ライセンス、および指定された範囲を確認します。",
+          "note": "契約書に契約書を書き込む前に元の日付、範囲、ライセンスを確認する"
+        },
+        "ko": {
+          "title": "zhbi98/pcb-layout-design",
+          "what": "Codex PCB 레이아웃 기술 GPT-6 아스트라 x KiCad10. PCB 자동布线 기술",
+          "why": "새로운 공개된 repo, Show HN 또는 제품 사이트는 종종 대형 연구소가 아직 다루지 않은 사용 실험입니다.",
+          "who": "개발자와 인디 빌더들이 새로운 도구를 일찍 시도합니다.",
+          "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
+          "note": "이 문제를 해결하기 전에 원래 날짜와 범위와 면허를 확인하세요."
+        },
+        "es": {
+          "title": "zhbi98/pcb-layout-design",
+          "what": "Codex Habilidad de diseño de PCB GPT-6 Astra x KiCad10. Capacitación de PCB",
+          "why": "Un nuevo repositorio público, Show HN o sitio de productos a menudo es un experimento de uso que los grandes laboratorios aún no han cubierto.",
+          "who": "Desarrolladores e in-indie constructores que prueban nuevas herramientas temprano.",
+          "try": "Abre el enlace original y verifique la fecha, licencia y alcance indicado.",
+          "note": "Compruebe la fecha original, el alcance y la licencia antes de tratar esto como resuelto."
+        },
+        "fr": {
+          "title": "zhbi98/pcb-layout-design",
+          "what": "Codex Capacité de mise en page des circuits imprimés GPT-6 Astra x KiCad10. Capacité de fabrication de circuits imprimés",
+          "why": "Un référencement public, Show HN ou site de produit, est souvent une expérience d'utilisation que les grands laboratoires n'ont pas encore couverte.",
+          "who": "Des développeurs et des constructeurs indépendants qui essaient de nouveaux outils tôt.",
+          "try": "Ouvrez le lien original et vérifiez la date, la licence et la portée indiquées.",
+          "note": "Vérifiez la date, la portée et la licence originales avant de traiter cela comme réglé."
+        },
+        "de": {
+          "title": "zhbi98/pcb-layout-design",
+          "what": "Codex PCB Layout Skill GPT-6 Astra x KiCad10. PCB Selbstbestimmung",
+          "why": "Ein neues öffentliches Repo, Show HN oder Produkt-Website ist oft ein Nutzungsexperiment, das die großen Labors noch nicht abgedeckt haben.",
+          "who": "Entwickler und Indie-Bauherren, die neue Werkzeuge früh ausprobieren.",
+          "try": "Öffnen Sie den Originallink und überprüfen Sie das Datum, die Lizenz und den angegebenen Umfang.",
+          "note": "Überprüfen Sie das ursprüngliche Datum, den Umfang und die Lizenz, bevor Sie dies als vereinbar betrachten."
+        },
+        "ar": {
+          "title": "zhbi98/pcb-layout-design",
+          "what": "Codex مهارات ترتيب PCB GPT-6 آسترة x KiCad10. المهارات الكهربائية",
+          "why": "إن إعادة الإعلان العامة الجديدة، أو Show HN أو موقع المنتج غالباً ما تكون تجربة استخدام لم تغطي المختبرات الكبيرة بعد.",
+          "who": "المطورون والمبنيون المستقلون الذين يجرون أدوات جديدة مبكراً",
+          "try": "افتح الرابط الأصلي وتحقق من التاريخ والترخيص والمقياس المذكور.",
+          "note": "تحقق من التاريخ الأصلي ومدى و الترخيص قبل التعامل مع هذا كما تسوية."
+        }
+      },
+      "score": 21.8169700377573,
+      "hasCjk": true,
+      "titleHant": "zhbi98/pcb-layout-design",
+      "whatHant": "新公開倉庫 zhbi98/pcb-layout-design。【Codex PCB Layout Skill】GPT-6 Astra x KiCad10. PCB 自動佈線 Skill",
+      "whyHant": "新出現的公開倉庫、Show HN 或產品站，往往是還沒被大廠覆蓋的用法實驗。",
+      "whoHant": "願意動手試新工具的開發者和獨立作者。",
+      "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
+      "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
+    },
+    {
+      "title": "modelscope/ms-cookbook",
+      "titleEn": "modelscope/ms-cookbook",
+      "titleZh": "modelscope/ms-cookbook",
+      "category": "new-site",
+      "categoryZh": "新站新项目",
+      "categoryEn": "New sites",
+      "categoryI18n": {
+        "zh": "新站新项目",
+        "en": "New sites",
+        "ja": "新しいサイト",
+        "ko": "새 사이트",
+        "es": "Sitios nuevos",
+        "fr": "Nouveaux sites",
+        "de": "Neue Sites",
+        "ar": "مواقع جديدة",
+        "zh-Hant": "新站新專案"
+      },
+      "section": "github",
+      "region": "全球社区",
+      "regionZh": "全球社区",
+      "regionEn": "Global",
+      "regionI18n": {
+        "zh": "全球社区",
+        "en": "Global",
+        "ja": "グローバル",
+        "ko": "글로벌",
+        "es": "Global",
+        "fr": "Mondial",
+        "de": "Global",
+        "ar": "عالمي",
+        "zh-Hant": "全球社群"
+      },
+      "sourceLabel": "modelscope/ms-cookbook",
+      "sourceTierZh": "社区新仓库",
+      "sourceTierEn": "Community repo",
+      "url": "https://github.com/modelscope/ms-cookbook",
+      "publishedAt": "2026-09-11",
+      "observedAt": "2026-09-17",
+      "origin": "github-repo",
+      "repo": "modelscope/ms-cookbook",
+      "stars": 249,
+      "license": "Apache-2.0",
+      "versionLike": false,
+      "snippetEn": "魔搭紫皮书｜ModelScope Cookbook：面向开发者的开源模型应用实战指南，覆盖模型选型、推理、微调、评测、RAG、Agent 与 AIGC，从跑通第一个模型到构建实际应用。",
+      "whatZh": "新公开仓库 modelscope/ms-cookbook。魔搭紫皮书｜ModelScope Cookbook：面向开发者的开源模型应用实战指南，覆盖模型选型、推理、微调、评测、RAG、Agent 与 AIGC，从跑通第一个模型到构建实际应用。",
+      "whyZh": "新出现的公开仓库、Show HN 或产品站，往往是还没被大厂覆盖的用法实验。",
+      "whoZh": "愿意动手试新工具的开发者和独立作者。",
+      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
+      "noteZh": "先看原始页面的日期、范围和许可，再决定要不要跟进。",
+      "whatEn": "New public repository modelscope/ms-cookbook. 魔搭紫皮书｜ModelScope Cookbook：面向开发者的开源模型应用实战指南，覆盖模型选型、推理、微调、评测、RAG、Agent 与 AIGC，从跑通第一个模型到构建实际应用。",
+      "whyEn": "A newly public repo, Show HN or product site is often a usage experiment the big labs have not covered yet.",
+      "whoEn": "Developers and indie builders who try new tools early.",
+      "tryEn": "Open the original link and verify the date, license and stated scope.",
+      "noteEn": "Check the original date, scope and license before treating this as settled.",
+      "isFeature": false,
+      "i18n": {
+        "ja": {
+          "title": "modelscope/ms-cookbook",
+          "what": "図書モデルスクープ図書:開発者の開源モデル応用实战指南、モデル選択型、推理、微调、評測、RAG、AgentとAIGCを覆う、最初のモデルから実際のアプリケーションを構築するまでの面",
+          "why": "新たに公開された repo、 Show HN、または製品サイトは実験で利用されることが多いが大手の研究室ではまだ取り扱っていない。",
+          "who": "開発者や独立開発者新しく道具を早期に試す",
+          "try": "元のリンクを開いて、日付、ライセンス、および指定された範囲を確認します。",
+          "note": "契約書に契約書を書き込む前に元の日付、範囲、ライセンスを確認する"
+        },
+        "ko": {
+          "title": "modelscope/ms-cookbook",
+          "what": "魔搭紫皮书 ModelScope Cookbook:面向开发者开源模型应用实战指南,覆盖模型选型、推理、微调、评测、RAG、Agent와 AIGC, 1차 모델을 실행하는 것부터 실제 응용 프로그램을 구축하는 것까지",
+          "why": "새로운 공개된 repo, Show HN 또는 제품 사이트는 종종 대형 연구소가 아직 다루지 않은 사용 실험입니다.",
+          "who": "개발자와 인디 빌더들이 새로운 도구를 일찍 시도합니다.",
+          "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
+          "note": "이 문제를 해결하기 전에 원래 날짜와 범위와 면허를 확인하세요."
+        },
+        "es": {
+          "title": "modelscope/ms-cookbook",
+          "what": "魔搭紫皮书与ModelScope Cookbook:面向开发者开源模型应用实战指南,覆盖模型选型、推理、微调、评测、RAG、Agent与AIGC, desde la carrera del primer modelo hasta la construcción de una aplicación real。",
+          "why": "Un nuevo repositorio público, Show HN o sitio de productos a menudo es un experimento de uso que los grandes laboratorios aún no han cubierto.",
+          "who": "Desarrolladores e in-indie constructores que prueban nuevas herramientas temprano.",
+          "try": "Abre el enlace original y verifique la fecha, licencia y alcance indicado.",
+          "note": "Compruebe la fecha original, el alcance y la licencia antes de tratar esto como resuelto."
+        },
+        "fr": {
+          "title": "modelscope/ms-cookbook",
+          "what": "魔搭紫皮书 魔搭蓝皮书 模型Scope Cookbook: face vers le développeur open source模型应用实战指南, couvrir le modèle sélectionnement, la réflexion, la révision, l'évaluation, le RAG, l'agent et l'AIGC, de la première mise en œuvre du modèle à la construction de l'application réelle.",
+          "why": "Un référencement public, Show HN ou site de produit, est souvent une expérience d'utilisation que les grands laboratoires n'ont pas encore couverte.",
+          "who": "Des développeurs et des constructeurs indépendants qui essaient de nouveaux outils tôt.",
+          "try": "Ouvrez le lien original et vérifiez la date, la licence et la portée indiquées.",
+          "note": "Vérifiez la date, la portée et la licence originales avant de traiter cela comme réglé."
+        },
+        "de": {
+          "title": "modelscope/ms-cookbook",
+          "what": "魔搭紫皮书 模标库库库库:面向开发者开源模型应用实战指南,覆盖模型选型、推理、微调、评测、RAG、Agent mit AIGC, vom ersten Modell bis zur Konstruktion der praktischen Anwendung",
+          "why": "Ein neues öffentliches Repo, Show HN oder Produkt-Website ist oft ein Nutzungsexperiment, das die großen Labors noch nicht abgedeckt haben.",
+          "who": "Entwickler und Indie-Bauherren, die neue Werkzeuge früh ausprobieren.",
+          "try": "Öffnen Sie den Originallink und überprüfen Sie das Datum, die Lizenz und den angegebenen Umfang.",
+          "note": "Überprüfen Sie das ursprüngliche Datum, den Umfang und die Lizenz, bevor Sie dies als vereinbar betrachten."
+        },
+        "ar": {
+          "title": "modelscope/ms-cookbook",
+          "what": "魔搭紫皮书 魔搭蓝皮书 模型Scope Cookbook:面向开发者开源模型应用实战指南,覆盖模型选型、推理、微调、评测、RAG、Agent与AIGC,从跑通第一模型到构建实际应用──",
+          "why": "إن إعادة الإعلان العامة الجديدة، أو Show HN أو موقع المنتج غالباً ما تكون تجربة استخدام لم تغطي المختبرات الكبيرة بعد.",
+          "who": "المطورون والمبنيون المستقلون الذين يجرون أدوات جديدة مبكراً",
+          "try": "افتح الرابط الأصلي وتحقق من التاريخ والترخيص والمقياس المذكور.",
+          "note": "تحقق من التاريخ الأصلي ومدى و الترخيص قبل التعامل مع هذا كما تسوية."
+        }
+      },
+      "score": 19.795880017344075,
+      "hasCjk": true,
+      "titleHant": "modelscope/ms-cookbook",
+      "whatHant": "新公開倉庫 modelscope/ms-cookbook。魔搭紫皮書｜ModelScope Cookbook：面向開發者的開源模型應用實戰指南，覆蓋模型選型、推理、微調、評測、RAG、Agent 與 AIGC，從跑通第一個模型到構建實際應用。",
       "whyHant": "新出現的公開倉庫、Show HN 或產品站，往往是還沒被大廠覆蓋的用法實驗。",
       "whoHant": "願意動手試新工具的開發者和獨立作者。",
       "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
@@ -1806,121 +1807,6 @@
       "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
     },
     {
-      "title": "How workers are unlocking new ways of working",
-      "titleEn": "How workers are unlocking new ways of working",
-      "titleZh": "工人如何打开新的工作方式",
-      "category": "product",
-      "categoryZh": "产品功能",
-      "categoryEn": "Products",
-      "categoryI18n": {
-        "zh": "产品功能",
-        "en": "Products",
-        "ja": "製品",
-        "ko": "제품",
-        "es": "Productos",
-        "fr": "Produits",
-        "de": "Produkte",
-        "ar": "منتجات",
-        "zh-Hant": "產品功能"
-      },
-      "section": "features",
-      "region": "美国",
-      "regionZh": "美国",
-      "regionEn": "United States",
-      "regionI18n": {
-        "zh": "美国",
-        "en": "United States",
-        "ja": "米国",
-        "ko": "미국",
-        "es": "Estados Unidos",
-        "fr": "États-Unis",
-        "de": "Vereinigte Staaten",
-        "ar": "الولايات المتحدة",
-        "zh-Hant": "美國"
-      },
-      "sourceLabel": "openai.com",
-      "sourceTierZh": "官方公告",
-      "sourceTierEn": "Official",
-      "url": "https://openai.com/index/unlocking-new-ways-of-working",
-      "publishedAt": "2026-09-16",
-      "observedAt": "2026-09-17",
-      "origin": "rss",
-      "repo": "",
-      "stars": 0,
-      "license": "",
-      "versionLike": false,
-      "snippetEn": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-      "whatZh": "新的OpenAI经济研究显示了工人如何使用人工智能超越传统角色,哪些新活动成为他们工作的反复出现部分。",
-      "whyZh": "真正上线的功能会改变日常用法，而不只是路线图。",
-      "whoZh": "产品经理、应用开发者与重度使用者。",
-      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
-      "noteZh": "先看原始页面的日期、范围和许可，再决定要不要跟进。",
-      "whatEn": "New OpenAI Economic Research shows how workers use AI beyond traditional roles and which new activities become recurring parts of their work.",
-      "whyEn": "Shipped features change daily usage, not just a roadmap.",
-      "whoEn": "Product managers, app developers and power users.",
-      "tryEn": "Open the original link and verify the date, license and stated scope.",
-      "noteEn": "Check the original date, scope and license before treating this as settled.",
-      "isFeature": false,
-      "i18n": {
-        "ja": {
-          "title": "労働者が新しい働き方を解き放つ方法",
-          "what": "新しいOpenAI経済研究では、従来の役割を超えて労働者が人工知能をどのように利用し、新しい活動が彼らの仕事の繰り返しの一部になるかを示しています。",
-          "why": "送られた機能は日常使用を変えるだけでなくロードマップも変えるのです",
-          "who": "製品管理者、アプリ開発者、電力利用者",
-          "try": "元のリンクを開いて、日付、ライセンス、および指定された範囲を確認します。",
-          "note": "契約書に契約書を書き込む前に元の日付、範囲、ライセンスを確認する"
-        },
-        "ko": {
-          "title": "노동자들이 새로운 방법들을 어떻게 발견하고 있는지",
-          "what": "새로운 OpenAI 경제 연구는 노동자들이 전통적인 역할 이외의 인공지능을 어떻게 사용하는지, 어떤 새로운 활동들이 그들의 업무의 반복적인 일부가 되는지를 보여줍니다.",
-          "why": "배송된 기능은 로드맵뿐만 아니라 일상적인 사용량을 변화시킵니다.",
-          "who": "제품 관리자, 앱 개발자 및 전력 사용자",
-          "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
-          "note": "이 문제를 해결하기 전에 원래 날짜와 범위와 면허를 확인하세요."
-        },
-        "es": {
-          "title": "Cómo los trabajadores están desbloqueando nuevas formas de trabajar",
-          "what": "La nueva investigación económica OpenAI muestra cómo los trabajadores utilizan la IA más allá de los roles tradicionales y qué nuevas actividades se convierten en partes recurrentes de su trabajo.",
-          "why": "Las características enviadas cambian el uso diario, no sólo una hoja de ruta.",
-          "who": "Gerenciadores de productos, desarrolladores de aplicaciones y usuarios de energía.",
-          "try": "Abre el enlace original y verifique la fecha, licencia y alcance indicado.",
-          "note": "Compruebe la fecha original, el alcance y la licencia antes de tratar esto como resuelto."
-        },
-        "fr": {
-          "title": "Comment les travailleurs découvrent de nouvelles façons de travailler",
-          "what": "La nouvelle recherche économique OpenAI montre comment les travailleurs utilisent l'IA au-delà des rôles traditionnels et quelles nouvelles activités deviennent des parties récurrentes de leur travail.",
-          "why": "Les fonctionnalités expédiées changent l'utilisation quotidienne, pas seulement une feuille de route.",
-          "who": "Gestionnaires de produits, développeurs d'applications et utilisateurs d'énergie.",
-          "try": "Ouvrez le lien original et vérifiez la date, la licence et la portée indiquées.",
-          "note": "Vérifiez la date, la portée et la licence originales avant de traiter cela comme réglé."
-        },
-        "de": {
-          "title": "Wie Arbeiter neue Arbeitsweisen entdecken",
-          "what": "Die neue OpenAI-Economic Research zeigt, wie Arbeitnehmer KI über traditionelle Rollen hinaus nutzen und welche neuen Aktivitäten wiederkehrende Teile ihrer Arbeit werden.",
-          "why": "Die versandten Funktionen ändern den täglichen Gebrauch, nicht nur eine Fahrkarte.",
-          "who": "Produktmanager, App-Entwickler und Power-User.",
-          "try": "Öffnen Sie den Originallink und überprüfen Sie das Datum, die Lizenz und den angegebenen Umfang.",
-          "note": "Überprüfen Sie das ursprüngliche Datum, den Umfang und die Lizenz, bevor Sie dies als vereinbar betrachten."
-        },
-        "ar": {
-          "title": "كيف يفتح العمال طرق جديدة للعمل",
-          "what": "يظهر البحث الاقتصادي الجديد OpenAI كيف يستخدم العمال الذكاء الاصطناعي خارج الأدوار التقليدية وأي أنشطة جديدة تصبح جزءا متكررا من عملهم.",
-          "why": "الميزات التي تم إرسالها تغير استخدامها اليومي، ليس فقط خريطة طريق.",
-          "who": "مدراء المنتجات ومطوري التطبيقات ومستخدمي الطاقة.",
-          "try": "افتح الرابط الأصلي وتحقق من التاريخ والترخيص والمقياس المذكور.",
-          "note": "تحقق من التاريخ الأصلي ومدى و الترخيص قبل التعامل مع هذا كما تسوية."
-        }
-      },
-      "score": 22,
-      "hasCjk": false,
-      "titleHant": "工人如何開啟新的工作方式",
-      "whatHant": "新的OpenAI經濟研究顯示了工人如何使用人工智慧超越傳統角色,哪些新活動成為他們工作的反覆出現部分。",
-      "whyHant": "真正上線的功能會改變日常用法，而不只是路線圖。",
-      "whoHant": "產品經理、應用開發者與重度使用者。",
-      "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
-      "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
-    },
-    {
       "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
       "titleEn": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
       "titleZh": "介绍Gemini 3.8 Live 和 3.8 Live 延长思考",
@@ -2034,60 +1920,175 @@
       "whoHant": "模型評測、產品接入與研究團隊。",
       "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
       "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
+    },
+    {
+      "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
+      "titleEn": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
+      "titleZh": "\"现在我们可以知道一切,做任何事情,\" Jensen Huang在Dreamforce说",
+      "category": "model-platform",
+      "categoryZh": "模型平台",
+      "categoryEn": "Models",
+      "categoryI18n": {
+        "zh": "模型平台",
+        "en": "Models",
+        "ja": "モデル",
+        "ko": "모델",
+        "es": "Modelos",
+        "fr": "Modèles",
+        "de": "Modelle",
+        "ar": "نماذج",
+        "zh-Hant": "模型平台"
+      },
+      "section": "features",
+      "region": "美国",
+      "regionZh": "美国",
+      "regionEn": "United States",
+      "regionI18n": {
+        "zh": "美国",
+        "en": "United States",
+        "ja": "米国",
+        "ko": "미국",
+        "es": "Estados Unidos",
+        "fr": "États-Unis",
+        "de": "Vereinigte Staaten",
+        "ar": "الولايات المتحدة",
+        "zh-Hant": "美國"
+      },
+      "sourceLabel": "blogs.nvidia.com",
+      "sourceTierZh": "官方公告",
+      "sourceTierEn": "Official",
+      "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/",
+      "publishedAt": "2026-09-15",
+      "observedAt": "2026-09-17",
+      "origin": "rss",
+      "repo": "",
+      "stars": 0,
+      "license": "",
+      "versionLike": false,
+      "snippetEn": "Know everything. Do anything. That was the message NVIDIA founder and CEO Jensen Huang brought to Salesforce Dreamforce Tuesday, joining CEO Marc Benioff onsta…",
+      "whatZh": "知道一切。 做任何事情。 这是NVIDIA创始人兼首席执行官Jensen Huang向S Salesforce Dreamforce星期二带来的信息,加入首席执行人Marc Benioff。",
+      "whyZh": "新模型或平台接口会改变能做什么、成本多少，以及能不能自己跑。",
+      "whoZh": "模型评测、产品接入与研究团队。",
+      "tryZh": "打开原始链接，核对发布日期、许可和适用范围。",
+      "noteZh": "先看原始页面的日期、范围和许可，再决定要不要跟进。",
+      "whatEn": "Know everything. Do anything. That was the message NVIDIA founder and CEO Jensen Huang brought to Salesforce Dreamforce Tuesday, joining CEO Marc Benioff onsta…",
+      "whyEn": "A new model or platform interface changes what you can do, what it costs, and whether you can run it yourself.",
+      "whoEn": "Model evaluators, product teams and researchers.",
+      "tryEn": "Open the original link and verify the date, license and stated scope.",
+      "noteEn": "Check the original date, scope and license before treating this as settled.",
+      "isFeature": false,
+      "i18n": {
+        "ja": {
+          "title": "\"今は何でも知れ何でもできる\" ジェンセン・フアングはドリームフォースで",
+          "what": "全てを知っている何でもするゼックス0Qの創始者兼CEO ジェンセン・ハングが営業フォース・ドリームフォースに周二のメッセージを届けました",
+          "why": "新しいモデルやプラットフォームインターフェースは実行できるもの、費用、そして自分で実行できるかどうかを変えるのです",
+          "who": "モデル評価者、製品チーム、研究者",
+          "try": "元のリンクを開いて、日付、ライセンス、および指定された範囲を確認します。",
+          "note": "契約書に契約書を書き込む前に元の日付、範囲、ライセンスを確認する"
+        },
+        "ko": {
+          "title": "'이제 우리는 모든 것을 알고 모든 것을 할 수 있습니다.'",
+          "what": "모든 걸 알고 있어 뭐든 해 NVIDIA의 창업자이자 CEO인 제센 허랑이 세일즈포스 드림포스에 선보인 메시지는 바로 그 메시지입니다.",
+          "why": "새로운 모델이나 플랫폼 인터페이스는 당신이 할 수 있는 일을 변화시키고, 비용이 얼마나 들며, 당신이 직접 실행할 수 있는지 변화시킵니다.",
+          "who": "모델 평가자, 제품 팀 및 연구자",
+          "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
+          "note": "이 문제를 해결하기 전에 원래 날짜와 범위와 면허를 확인하세요."
+        },
+        "es": {
+          "title": "\"Ahora podemos saberlo todo y hacerlo todo\", dice Jensen Huang en Dreamforce",
+          "what": "Conozco todo. Haz lo que quieras. Ese fue el mensaje que el fundador y CEO de NVIDIA, Jensen Huang, trajo a Salesforce Dreamforce el martes, uniéndose al CEO Marc Benioff en el...",
+          "why": "Un nuevo modelo o interfaz de plataforma cambia lo que puedes hacer, cuánto cuesta y si puedes ejecutarlo tú mismo.",
+          "who": "Los evaluadores de modelos, los equipos de productos y los investigadores.",
+          "try": "Abre el enlace original y verifique la fecha, licencia y alcance indicado.",
+          "note": "Compruebe la fecha original, el alcance y la licencia antes de tratar esto como resuelto."
+        },
+        "fr": {
+          "title": "\"Maintenant, nous pouvons tout savoir et tout faire\", dit Jensen Huang à Dreamforce",
+          "what": "Je sais tout. Fais n'importe quoi. C'était le message que le fondateur et PDG de NVIDIA, Jensen Huang, a apporté mardi à Salesforce Dreamforce, rejoignant le PDG Marc Benioff sur...",
+          "why": "Un nouveau modèle ou une nouvelle interface de plateforme change ce que vous pouvez faire, ce qu'il coûte et si vous pouvez le faire vous-même.",
+          "who": "Évaluateurs de modèles, équipes de produits et chercheurs.",
+          "try": "Ouvrez le lien original et vérifiez la date, la licence et la portée indiquées.",
+          "note": "Vérifiez la date, la portée et la licence originales avant de traiter cela comme réglé."
+        },
+        "de": {
+          "title": "\"Jetzt können wir alles wissen und alles tun\", sagt Jensen Huang bei Dreamforce",
+          "what": "Ich weiß alles. - Mach alles. Das war die Botschaft, die NVIDIA-Gründer und CEO Jensen Huang am Dienstag an Salesforce Dreamforce gebracht hat, der CEO Marc Benioff auf der...",
+          "why": "Ein neues Modell oder eine Plattform-Schnittstelle verändert, was Sie tun können, was es kostet und ob Sie es selbst ausführen können.",
+          "who": "Modellbewertungsbeamte, Produktteams und Forscher.",
+          "try": "Öffnen Sie den Originallink und überprüfen Sie das Datum, die Lizenz und den angegebenen Umfang.",
+          "note": "Überprüfen Sie das ursprüngliche Datum, den Umfang und die Lizenz, bevor Sie dies als vereinbar betrachten."
+        },
+        "ar": {
+          "title": "\"الآن يمكننا معرفة كل شيء وفعل أي شيء\" يقول جينسن هوانغ في \"دريم فورس\"",
+          "what": "تعرف كل شيء افعل أي شيء هذه كانت الرسالة التي جلبها مؤسس ومدير شركة \"زكس أو كيو\" \"جينسن هوانغ\" إلى \"سايلزفورس دريم فورس\" يوم الثلاثاء، للانضمام إلى الرئيس التنفيذي \"مارك بينيوف\" في...",
+          "why": "نموذج جديد أو واجهة منصة تغير ما يمكنك القيام به، ما تكلفة، وما إذا كنت يمكن تشغيله بنفسك.",
+          "who": "المقيّمون النموذجيون وفريق المنتجات والباحثين.",
+          "try": "افتح الرابط الأصلي وتحقق من التاريخ والترخيص والمقياس المذكور.",
+          "note": "تحقق من التاريخ الأصلي ومدى و الترخيص قبل التعامل مع هذا كما تسوية."
+        }
+      },
+      "score": 22,
+      "hasCjk": false,
+      "titleHant": "\"現在我們可以知道一切,做任何事情,\" Jensen Huang在Dreamforce說",
+      "whatHant": "知道一切。 做任何事情。 這是NVIDIA創始人兼執行長Jensen Huang向S Salesforce Dreamforce星期二帶來的資訊,加入首席執行人Marc Benioff。",
+      "whyHant": "新模型或平臺介面會改變能做什麼、成本多少，以及能不能自己跑。",
+      "whoHant": "模型評測、產品接入與研究團隊。",
+      "tryHant": "開啟原始連結，核對釋出日期、許可和適用範圍。",
+      "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
     }
   ],
-  "leftover": 241,
+  "leftover": 229,
   "hero": {
     "subjectZh": "产品把能力装进工作流",
     "subjectEn": "Products Put Capability to Work",
-    "leadZh": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
-    "leadEn": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "leadZh": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "leadEn": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "judgmentZh": "这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。",
     "judgmentEn": "Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue.",
     "i18n": {
       "zh": {
         "subject": "产品把能力装进工作流",
-        "lead": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+        "lead": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
         "judgment": "这些条目来自可点击的原始页面，不是付费接口，也不是模型代写。把它当雷达，不当已经精修的刊物正文。"
       },
       "en": {
         "subject": "Products Put Capability to Work",
-        "lead": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+        "lead": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
         "judgment": "Every item points at a public page. This is a radar assembled without paid APIs or an editorial model, not a human-rewritten magazine issue."
       },
       "ja": {
         "subject": "製品が能力を現場に入れる",
-        "lead": "公式ブログ、GitHub、新しいリポジトリ、Show HN、論文源の公開 410 件から 16 件を選びました。",
+        "lead": "公式ブログ、GitHub、新しいリポジトリ、Show HN、論文源の公開 398 件から 16 件を選びました。",
         "judgment": "各項目は公開ページにリンクしています。有料APIやモデル代筆ではなく、レーダーとして読んでください。精修済みの誌面ではありません。"
       },
       "ko": {
         "subject": "제품이 능력을 업무에 심다",
-        "lead": "공식 블로그, GitHub, 새 저장소, Show HN, 논문 피드의 공개 410건에서 16건을 골랐습니다.",
+        "lead": "공식 블로그, GitHub, 새 저장소, Show HN, 논문 피드의 공개 398건에서 16건을 골랐습니다.",
         "judgment": "각 항목은 공개 페이지로 연결됩니다. 유료 API나 모델 대필이 아닙니다. 정제한 잡지 기사가 아니라 레이더로 읽으세요."
       },
       "es": {
         "subject": "Los productos ponen la capacidad a trabajar",
-        "lead": "Elegimos 16 de 410 registros públicos de blogs oficiales, GitHub, repos nuevos, Show HN y papers.",
+        "lead": "Elegimos 16 de 398 registros públicos de blogs oficiales, GitHub, repos nuevos, Show HN y papers.",
         "judgment": "Cada pieza apunta a una página pública. Es un radar sin APIs de pago ni un modelo editorial; no es un número de revista reescrito."
       },
       "fr": {
         "subject": "Les produits mettent la capacité au travail",
-        "lead": "16 items retenus parmi 410 sources publiques : blogs officiels, GitHub, nouveaux dépôts, Show HN et papiers.",
+        "lead": "16 items retenus parmi 398 sources publiques : blogs officiels, GitHub, nouveaux dépôts, Show HN et papiers.",
         "judgment": "Chaque item pointe vers une page publique. C’est un radar sans API payante ni modèle éditorial, pas un numéro de magazine réécrit."
       },
       "de": {
         "subject": "Produkte bringen Fähigkeit in den Ablauf",
-        "lead": "16 von 410 öffentlichen Quellen: offizielle Blogs, GitHub, neue Repos, Show HN und Papers.",
+        "lead": "16 von 398 öffentlichen Quellen: offizielle Blogs, GitHub, neue Repos, Show HN und Papers.",
         "judgment": "Jeder Eintrag zeigt auf eine öffentliche Seite. Das ist ein Radar ohne bezahlte APIs oder Editorial-Modell, keine redigierte Magazinausgabe."
       },
       "ar": {
         "subject": "المنتجات تضع القدرة في العمل",
-        "lead": "اختيرت 16 مواد من أصل 410 سجلاً عاماً عبر المدونات الرسمية وGitHub والمستودعات الجديدة وShow HN والأوراق.",
+        "lead": "اختيرت 16 مواد من أصل 398 سجلاً عاماً عبر المدونات الرسمية وGitHub والمستودعات الجديدة وShow HN والأوراق.",
         "judgment": "كل مادة تشير إلى صفحة علنية. هذا رادار بلا واجهات مدفوعة أو نموذج تحريري، وليس عدد مجلة معاد الصياغة."
       },
       "zh-Hant": {
         "subject": "產品把能力裝進工作流",
-        "lead": "從 410 條公開源裡選出 16 條，覆蓋官方部落格、GitHub、新倉庫、Show HN 與論文源。",
+        "lead": "從 398 條公開源裡選出 16 條，覆蓋官方部落格、GitHub、新倉庫、Show HN 與論文源。",
         "judgment": "這些條目來自可點選的原始頁面，不是付費介面，也不是模型代寫。把它當雷達，不當已經精修的刊物正文。"
       }
     }
@@ -2114,8 +2115,8 @@
       "labelZh": "开源新站",
       "labelEn": "Open",
       "count": 3,
-      "factZh": "FankChen/tracecrate、deiko.app 给出可点开的原始页面。",
-      "factEn": "FankChen/tracecrate, deiko.app published a public page.",
+      "factZh": "awlevin/typesafe-computer-use、zhbi98/pcb-layout-design 给出可点开的原始页面。",
+      "factEn": "awlevin/typesafe-computer-use, zhbi98/pcb-layout-design published a public page.",
       "lookZh": "看点：仓库和独立站可以立刻点开验证。",
       "lookEn": "Look for: repos and new sites you can verify immediately."
     },
@@ -2140,50 +2141,6 @@
   ],
   "radar": [
     {
-      "category": "product",
-      "tagZh": "产品功能",
-      "tagEn": "Products",
-      "tagI18n": {
-        "zh": "产品功能",
-        "en": "Products",
-        "ja": "製品",
-        "ko": "제품",
-        "es": "Productos",
-        "fr": "Produits",
-        "de": "Produkte",
-        "ar": "منتجات",
-        "zh-Hant": "產品功能"
-      },
-      "tagTone": "green",
-      "titleZh": "在日常生活中帮助老年人使用人工智能",
-      "titleEn": "Helping older adults use AI in everyday life",
-      "bodyZh": "openai.com 给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
-      "bodyEn": "openai.com published public pages. Treat the original source as the claim, not this summary.",
-      "bodyI18n": {
-        "zh": "openai.com 给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
-        "en": "openai.com published public pages. Treat the original source as the claim, not this summary.",
-        "ja": "openai.com が公開ページを出しています。要約ではなく原典を見てください。",
-        "ko": "openai.com가 공개 페이지를 올렸습니다. 요약이 아니라 원문을 확인하세요.",
-        "es": "openai.com publicó páginas públicas. Trate la fuente original como la afirmación, no este resumen.",
-        "fr": "openai.com a publié des pages publiques. Prenez la source originale, pas ce résumé.",
-        "de": "openai.com hat öffentliche Seiten veröffentlicht. Nimm die Originalquelle, nicht diese Kurzfassung.",
-        "ar": "نشر openai.com صفحات علنية. اعتبر المصدر الأصلي هو الادعاء، لا هذا الملخص.",
-        "zh-Hant": "openai.com 給出可點開的原始頁面，適合對照來源，而不是把摘要當結論。"
-      },
-      "titleI18n": {
-        "zh": "在日常生活中帮助老年人使用人工智能",
-        "zh-Hant": "在日常生活中幫助老年人使用人工智慧",
-        "en": "Helping older adults use AI in everyday life",
-        "ja": "大人達に日常生活でAIを使用するのを助ける",
-        "ko": "일상생활에서 인공지능을 사용하는 노인을 돕는 것",
-        "es": "Ayudar a los adultos mayores a utilizar la IA en la vida cotidiana",
-        "fr": "Aider les personnes âgées à utiliser l'IA dans leur vie quotidienne",
-        "de": "Helft älteren Erwachsenen, KI im Alltag zu nutzen",
-        "ar": "مساعدة البالغين في استخدام الذكاء الاصطناعي في الحياة اليومية"
-      },
-      "leadUrl": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
-    },
-    {
       "category": "model-platform",
       "tagZh": "模型平台",
       "tagEn": "Models",
@@ -2198,7 +2155,7 @@
         "ar": "نماذج",
         "zh-Hant": "模型平台"
       },
-      "tagTone": "amber",
+      "tagTone": "green",
       "titleZh": "我们的报告模型对齐失败的框架",
       "titleEn": "Our framework for reporting model misalignment",
       "bodyZh": "openai.com、aws.amazon.com、deepmind.google 给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
@@ -2242,7 +2199,7 @@
         "ar": "وكلاء",
         "zh-Hant": "智慧體"
       },
-      "tagTone": "",
+      "tagTone": "amber",
       "titleZh": "使用Copilot将GitHub迁移到Rust",
       "titleEn": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
       "bodyZh": "github.blog、aws.amazon.com 给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
@@ -2270,6 +2227,50 @@
         "ar": "الهجرة من GitHub Copilot runtime إلى Rust، باستخدام Copilot"
       },
       "leadUrl": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
+    },
+    {
+      "category": "research",
+      "tagZh": "研究评测",
+      "tagEn": "Research",
+      "tagI18n": {
+        "zh": "研究评测",
+        "en": "Research",
+        "ja": "研究",
+        "ko": "연구",
+        "es": "Investigación",
+        "fr": "Recherche",
+        "de": "Forschung",
+        "ar": "بحث",
+        "zh-Hant": "研究評測"
+      },
+      "tagTone": "",
+      "titleZh": "EvolveTrade:自我发展的经验政策精炼 LLM 交易代理",
+      "titleEn": "EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM …",
+      "bodyZh": "arxiv.org 给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
+      "bodyEn": "arxiv.org published public pages. Treat the original source as the claim, not this summary.",
+      "bodyI18n": {
+        "zh": "arxiv.org 给出可点开的原始页面，适合对照来源，而不是把摘要当结论。",
+        "en": "arxiv.org published public pages. Treat the original source as the claim, not this summary.",
+        "ja": "arxiv.org が公開ページを出しています。要約ではなく原典を見てください。",
+        "ko": "arxiv.org가 공개 페이지를 올렸습니다. 요약이 아니라 원문을 확인하세요.",
+        "es": "arxiv.org publicó páginas públicas. Trate la fuente original como la afirmación, no este resumen.",
+        "fr": "arxiv.org a publié des pages publiques. Prenez la source originale, pas ce résumé.",
+        "de": "arxiv.org hat öffentliche Seiten veröffentlicht. Nimm die Originalquelle, nicht diese Kurzfassung.",
+        "ar": "نشر arxiv.org صفحات علنية. اعتبر المصدر الأصلي هو الادعاء، لا هذا الملخص.",
+        "zh-Hant": "arxiv.org 給出可點開的原始頁面，適合對照來源，而不是把摘要當結論。"
+      },
+      "titleI18n": {
+        "zh": "EvolveTrade:自我发展的经验政策精炼 LLM 交易代理",
+        "zh-Hant": "EvolveTrade:自我發展的經驗政策精煉 LLM 交易代理",
+        "en": "EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM …",
+        "ja": "EvolveTrade:自律開発のLLM取引代理人に対する経験に基づく政策の整頓",
+        "ko": "에볼브 트레이드: 자발적인 LLM 거래 에이전트들을 위한 경험에 기반한 정책 정비",
+        "es": "EvolveTrade: Refinamiento de las políticas basadas en la experiencia pa…",
+        "fr": "EvolveTrade: Réfinition des politiques axées sur l'expérience pour les …",
+        "de": "EvolveTrade: Erfahrungsorientierte Politikverfeinerung für sich selbst …",
+        "ar": "EvolveTrade: تعديل السياسات القائمة على الخبرة لوكلاء التداول الذاتيين …"
+      },
+      "leadUrl": "https://arxiv.org/abs/2609.17632"
     }
   ],
   "heat": {
@@ -2279,9 +2280,9 @@
     "bodyEn": "16 signals cover openai.com, github.blog, arxiv.org and other public sources."
   },
   "priority": {
-    "brand": "FankChen/tracecrate",
-    "zh": "打开 FankChen/tracecrate，核对今天这条公开更新能不能在官方页面上复现。",
-    "en": "Open FankChen/tracecrate and check whether today’s public update can be reproduced on the official page."
+    "brand": "awlevin/typesafe-computer-use",
+    "zh": "打开 awlevin/typesafe-computer-use，核对今天这条公开更新能不能在官方页面上复现。",
+    "en": "Open awlevin/typesafe-computer-use and check whether today’s public update can be reproduced on the official page."
   },
   "insight": {
     "zh": "本期最密的是模型平台、智能体、研究评测。真正有用的读法，是打开原始页面核对日期、许可和能不能当场试用。",
