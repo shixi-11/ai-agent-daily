@@ -1,19 +1,126 @@
 {
   "version": 1,
   "lock": [
-    "Agent Daily", "AI Agent Daily", "ALUX AI Agent Daily", "AI Agent", "ALUX", "GitHub", "GitHub Stars", "Hugging Face", "HuggingFace",
-    "OpenAI", "Anthropic", "Claude", "GPT", "Gemini", "DeepSeek", "DeepSelect", "DeepJIT",
-    "Cohere", "PyTorch", "CUDA", "Ascend", "BF16", "FP8", "Apache-2.0", "MIT", "MCP",
-    "Show HN", "Pinocchio", "Intern-S2", "Meta Muse", "Muse", "AgentSpork", "ClientCoded",
-    "Learnlance", "Swobu", "RunBoth", "WearableQA", "vLLM", "H100", "WhatsApp",
-    "Messages API", "Agent SDK", "Managed Agents", "Shop Pay", "1Password",
-    "RISC", "TopK", "NPU", "GPU", "SQL", "HTML", "HTTPS", "API", "SDK", "VM"
+    "misalignment",
+    "Copilot runtime",
+    "GitHub Copilot",
+    "Claude Code",
+    "ChatGPT",
+    "Sponsored Agents",
+    "Copilot",
+    "LangChain",
+    "langchain",
+    "Shopify",
+    "HubSpot",
+    "AARP",
+    "Rust",
+    "arXiv",
+    "Codex",
+    "AgentCore",
+    "NVIDIA",
+    "AWS",
+    "EKS",
+    "FSDP",
+    "NeMo",
+    "LLM",
+    "OTLP",
+    "KiCad",
+    "TypeSafe",
+    "GraphEcho",
+    "OpenClaw",
+    "Agent Daily",
+    "AI Agent Daily",
+    "ALUX AI Agent Daily",
+    "AI Agent",
+    "ALUX",
+    "GitHub",
+    "GitHub Stars",
+    "Hugging Face",
+    "HuggingFace",
+    "OpenAI",
+    "Anthropic",
+    "Claude",
+    "GPT",
+    "Gemini",
+    "DeepSeek",
+    "DeepSelect",
+    "DeepJIT",
+    "Cohere",
+    "PyTorch",
+    "CUDA",
+    "Ascend",
+    "BF16",
+    "FP8",
+    "Apache-2.0",
+    "MIT",
+    "MCP",
+    "Show HN",
+    "Pinocchio",
+    "Intern-S2",
+    "Meta Muse",
+    "Muse",
+    "AgentSpork",
+    "ClientCoded",
+    "Learnlance",
+    "Swobu",
+    "RunBoth",
+    "WearableQA",
+    "vLLM",
+    "H100",
+    "WhatsApp",
+    "Messages API",
+    "Agent SDK",
+    "Managed Agents",
+    "Shop Pay",
+    "1Password",
+    "RISC",
+    "TopK",
+    "NPU",
+    "GPU",
+    "SQL",
+    "HTML",
+    "HTTPS",
+    "API",
+    "SDK",
+    "VM"
   ],
   "prephrases": [
-    ["\\bmodel weights\\b", "model checkpoints"],
-    ["\\bBF16 weights\\b", "BF16 checkpoints"],
-    ["\\bofficial weights\\b", "official checkpoints"],
-    ["\\bthe official weights\\b", "the official checkpoints"]
+    [
+      "\\bmodel weights\\b",
+      "model checkpoints"
+    ],
+    [
+      "\\bBF16 weights\\b",
+      "BF16 checkpoints"
+    ],
+    [
+      "\\bofficial weights\\b",
+      "official checkpoints"
+    ],
+    [
+      "\\bthe official weights\\b",
+      "the official checkpoints"
+    ],
+    [
+      "\\bships a new change\\b",
+      "published a public update"
+    ],
+    [
+      "\\bhands-on\\b",
+      "practical in-person"
+    ],
+    [
+      "\\bThe post\\s*[.…]*$",
+      ""
+    ],
+    [
+      "\\bmodel misalignment\\b",
+      "model alignment failures"
+    ],
+    [
+      "\\b Copilot runtime\\b",
+      " Copilot runtime"
+    ]
   ],
   "labels": {
     "What changed:": {
@@ -176,10 +283,38 @@
       "de": "Offizielle Forschung",
       "ar": "بحث رسمي"
     },
-    "China": { "ja": "中国", "ko": "중국", "es": "China", "fr": "Chine", "de": "China", "ar": "الصين" },
-    "United States": { "ja": "米国", "ko": "미국", "es": "Estados Unidos", "fr": "États-Unis", "de": "Vereinigte Staaten", "ar": "الولايات المتحدة" },
-    "Canada": { "ja": "カナダ", "ko": "캐나다", "es": "Canadá", "fr": "Canada", "de": "Kanada", "ar": "كندا" },
-    "Global": { "ja": "グローバル", "ko": "글로벌", "es": "Global", "fr": "Mondial", "de": "Global", "ar": "عالمي" },
+    "China": {
+      "ja": "中国",
+      "ko": "중국",
+      "es": "China",
+      "fr": "Chine",
+      "de": "China",
+      "ar": "الصين"
+    },
+    "United States": {
+      "ja": "米国",
+      "ko": "미국",
+      "es": "Estados Unidos",
+      "fr": "États-Unis",
+      "de": "Vereinigte Staaten",
+      "ar": "الولايات المتحدة"
+    },
+    "Canada": {
+      "ja": "カナダ",
+      "ko": "캐나다",
+      "es": "Canadá",
+      "fr": "Canada",
+      "de": "Kanada",
+      "ar": "كندا"
+    },
+    "Global": {
+      "ja": "グローバル",
+      "ko": "글로벌",
+      "es": "Global",
+      "fr": "Mondial",
+      "de": "Global",
+      "ar": "عالمي"
+    },
     "This issue’s takeaway:": {
       "ja": "今号の要点：",
       "ko": "이번 호의 핵심:",

@@ -1,8 +1,16 @@
 'use strict';
 
+const fs = require('fs');
+const path = require('path');
 const { encodeHtml } = require('./io.cjs');
 const { locales, localeUrl, localesById, utcDate, formatDate } = require('./locales.cjs');
 const { languageMoreMarkup } = require('./chrome.cjs');
+
+const liveChrome = JSON.parse(fs.readFileSync(path.join(__dirname, '../../locales/live-chrome.json'), 'utf8'));
+
+function chromeOf(locale) {
+  return liveChrome[locale] || liveChrome.en;
+}
 
 const PAGE_CSS = `
 :root{--ink:#111827;--muted:#5b6575;--subtle:#7a8493;--bg:#f5f7fa;--panel:#fff;--line:#d9e0e7;--line-strong:#aeb9c6;--indigo:#22356f;--teal:#0f766e;--navy:#14213d;--soft:#e7edf2}
@@ -106,59 +114,112 @@ function navMarkup(locale, basePath) {
 </header>`;
 }
 
+function itemPack(item, locale) {
+  const pack = item.i18n && item.i18n[locale];
+  if (locale === 'zh') {
+    return {
+      title: item.titleZh || item.title,
+      what: item.whatZh,
+      why: item.whyZh,
+      who: item.whoZh,
+      try: item.tryZh,
+      note: item.noteZh,
+      region: (item.regionI18n && item.regionI18n.zh) || item.regionZh || item.region,
+      category: (item.categoryI18n && item.categoryI18n.zh) || item.categoryZh,
+    };
+  }
+  if (locale === 'zh-Hant') {
+    return {
+      title: item.titleHant || item.titleZh || item.title,
+      what: item.whatHant || item.whatZh,
+      why: item.whyHant || item.whyZh,
+      who: item.whoHant || item.whoZh,
+      try: item.tryHant || item.tryZh,
+      note: item.noteHant || item.noteZh,
+      region: (item.regionI18n && item.regionI18n['zh-Hant']) || item.regionZh || item.region,
+      category: (item.categoryI18n && item.categoryI18n['zh-Hant']) || item.categoryZh,
+    };
+  }
+  if (locale === 'en') {
+    return {
+      title: item.titleEn || item.title,
+      what: item.whatEn,
+      why: item.whyEn,
+      who: item.whoEn,
+      try: item.tryEn,
+      note: item.noteEn,
+      region: (item.regionI18n && item.regionI18n.en) || item.regionEn || item.region,
+      category: (item.categoryI18n && item.categoryI18n.en) || item.categoryEn,
+    };
+  }
+  return {
+    title: (pack && pack.title) || item.titleEn || item.title,
+    what: (pack && pack.what) || item.whatEn,
+    why: (pack && pack.why) || item.whyEn,
+    who: (pack && pack.who) || item.whoEn,
+    try: (pack && pack.try) || item.tryEn,
+    note: (pack && pack.note) || item.noteEn,
+    region: (item.regionI18n && item.regionI18n[locale]) || item.regionEn || item.region,
+    category: (item.categoryI18n && item.categoryI18n[locale]) || item.categoryEn,
+  };
+}
+
 function cardMarkup(item, index, locale) {
-  const isEn = locale !== 'zh' && locale !== 'zh-Hant';
-  const cat = isEn ? item.categoryEn : item.categoryZh;
-  const what = isEn ? item.whatEn : item.whatZh;
-  const why = isEn ? item.whyEn : item.whyZh;
-  const who = isEn ? item.whoEn : item.whoZh;
-  const tryIt = isEn ? item.tryEn : item.tryZh;
-  const note = isEn ? item.noteEn : item.noteZh;
-  const happened = isEn ? 'What happened' : '发生了什么';
-  const matters = isEn ? 'Why it matters' : '为什么值得关注';
-  const care = isEn ? 'Who should care' : '适合谁看';
-  const tryLabel = isEn ? 'Try it' : '试试看';
-  const noteLabel = isEn ? 'Keep in mind' : '注意点';
+  const ui = chromeOf(locale);
+  const pack = itemPack(item, locale);
   const stars = item.stars ? `<span>GitHub Stars ${item.stars}</span>` : '';
   const license = item.license ? `<span>${encodeHtml(item.license)}</span>` : '';
   const lead = item.isFeature
-    ? `<span class="lead-kicker">${isEn ? 'LEAD' : '今日重点'}</span>`
+    ? `<span class="lead-kicker">${encodeHtml(ui.leadKicker)}</span>`
     : '';
   return `<article class="signal${item.isFeature ? ' signal-lead' : ''}" data-category="${encodeHtml(item.category)}">
   <div>
     ${lead}
-    <div class="meta"><span>${String(index + 1).padStart(2, '0')}</span><span>${encodeHtml(item.sourceLabel)}</span><span>${encodeHtml(item.region)}</span><span>${encodeHtml(item.publishedAt)} / ${encodeHtml(item.observedAt)}</span><span>${encodeHtml(cat)}</span>${stars}${license}<a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">source</a></div>
-    <h3>${encodeHtml(item.title)}</h3>
-    <p><strong>${happened}：</strong>${encodeHtml(what)}</p>
-    <p><strong>${matters}：</strong>${encodeHtml(why)}</p>
-    <p><strong>${care}：</strong>${encodeHtml(who)}</p>
+    <div class="meta"><span>${String(index + 1).padStart(2, '0')}</span><span>${encodeHtml(item.sourceLabel)}</span><span>${encodeHtml(pack.region)}</span><span>${encodeHtml(item.publishedAt)} / ${encodeHtml(item.observedAt)}</span><span>${encodeHtml(pack.category)}</span>${stars}${license}<a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">${encodeHtml(ui.sourceLink)}</a></div>
+    <h3>${encodeHtml(pack.title)}</h3>
+    <p><strong>${encodeHtml(ui.happened)}${encodeHtml(ui.colon)}</strong>${encodeHtml(pack.what)}</p>
+    <p><strong>${encodeHtml(ui.matters)}${encodeHtml(ui.colon)}</strong>${encodeHtml(pack.why)}</p>
+    <p><strong>${encodeHtml(ui.care)}${encodeHtml(ui.colon)}</strong>${encodeHtml(pack.who)}</p>
   </div>
-  <aside class="side"><strong>${tryLabel}</strong><p>${encodeHtml(tryIt)}</p><strong>${noteLabel}</strong><p>${encodeHtml(note)}</p></aside>
+  <aside class="side"><strong>${encodeHtml(ui.try)}</strong><p>${encodeHtml(pack.try)}</p><strong>${encodeHtml(ui.note)}</strong><p>${encodeHtml(pack.note)}</p></aside>
 </article>`;
 }
 
+function radarTitle(card, locale) {
+  if (locale === 'zh') return card.titleZh;
+  if (locale === 'en') return card.titleEn;
+  if (card.titleI18n && card.titleI18n[locale]) return card.titleI18n[locale];
+  if (locale === 'zh-Hant') return card.titleZh;
+  return card.titleEn;
+}
+
+function radarBodyText(card, locale) {
+  if (card.bodyI18n && card.bodyI18n[locale]) return card.bodyI18n[locale];
+  if (locale === 'zh' || locale === 'zh-Hant') return card.bodyZh;
+  return card.bodyEn;
+}
+
+function radarTag(card, locale) {
+  if (card.tagI18n && card.tagI18n[locale]) return card.tagI18n[locale];
+  if (locale === 'zh' || locale === 'zh-Hant') return card.tagZh;
+  return card.tagEn;
+}
+
 function renderLiveHtml(briefing, locale = 'zh', basePath = '/daily') {
-  const zh = locale === 'zh' || locale === 'zh-Hant';
-  const isEn = !zh;
   const loc = localesById[locale] || localesById.zh;
-  const title = isEn
-    ? `${briefing.dateIso} · Live Agent Radar`
-    : `${briefing.dateIso}｜今日自动雷达`;
-  const filters = [
-    ['all', isEn ? 'All' : '全部'],
-    ['new-site', isEn ? 'New sites' : '新站'],
-    ['model-platform', isEn ? 'Models' : '模型'],
-    ['open-source', isEn ? 'Open source' : '开源'],
-    ['agent', isEn ? 'Agents' : '智能体'],
-    ['research', isEn ? 'Research' : '研究'],
-    ['product', isEn ? 'Products' : '产品'],
-  ];
-  const radar = (briefing.radar || []).map((card, index) => `<article class="item"><span class="tag tag-${encodeHtml(card.category || '')}${index === 0 ? ' green' : ''}">${encodeHtml(isEn ? card.tagEn : card.tagZh)}</span><h3>${encodeHtml(isEn ? card.titleEn : card.titleZh)}</h3><p>${encodeHtml(isEn ? card.bodyEn : card.bodyZh)}</p></article>`).join('');
+  const ui = chromeOf(locale);
+  const copy = heroCopy(briefing, locale);
+  const title = `${briefing.dateIso}${locale === 'en' ? ' · ' : '｜'}${ui.pageTitle}`;
+  const filters = Object.entries(ui.filters);
+  const radar = (briefing.radar || []).map((card, index) => `<article class="item"><span class="tag tag-${encodeHtml(card.category || '')}${index === 0 ? ' green' : ''}">${encodeHtml(radarTag(card, locale))}</span><h3>${encodeHtml(radarTitle(card, locale))}</h3><p>${encodeHtml(radarBodyText(card, locale))}</p></article>`).join('');
   const features = briefing.items.filter((item) => item.isFeature);
   const rest = briefing.items.filter((item) => !item.isFeature);
-  const sources = briefing.items.map((item) => `<li><a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">${encodeHtml(item.sourceLabel)}：${encodeHtml(item.title)}</a></li>`).join('');
+  const sources = briefing.items.map((item) => `<li><a href="${encodeHtml(item.url)}" target="_blank" rel="noopener">${encodeHtml(item.sourceLabel)}${ui.colon}${encodeHtml(itemPack(item, locale).title)}</a></li>`).join('');
   const scanned = briefing.feedReports?.filter((row) => row.ok).length || 0;
   const failed = briefing.feedReports?.filter((row) => !row.ok && !row.optional).length || 0;
+  const note = (locale !== 'zh' && locale !== 'en' && loc.ui.machineNote)
+    ? `<p class="machine-note">${encodeHtml(loc.ui.machineNote)}</p>`
+    : '';
 
   return `<!doctype html>
 <html lang="${loc.htmlLang}"${loc.dir === 'rtl' ? ' dir="rtl"' : ''}>
@@ -166,7 +227,7 @@ function renderLiveHtml(briefing, locale = 'zh', basePath = '/daily') {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${encodeHtml(title)}</title>
-  <meta name="description" content="${encodeHtml(isEn ? briefing.hero.leadEn : briefing.hero.leadZh)}">
+  <meta name="description" content="${encodeHtml(copy.lead)}">
   <link rel="icon" type="image/png" href="${basePath}/assets/alux-favicon.png">
   <link rel="stylesheet" href="${basePath}/assets/report-site.css">
   <style>${PAGE_CSS}</style>
@@ -174,32 +235,33 @@ function renderLiveHtml(briefing, locale = 'zh', basePath = '/daily') {
 <body>
 ${navMarkup(locale, basePath)}
 <main class="page" data-live-page>
-  <div class="live-banner"><b>LIVE</b><span>${encodeHtml(briefing.dateIso)}</span><span>${isEn ? 'Public RSS / GitHub / Show HN' : '公开 RSS · GitHub · Show HN'}</span><span>${isEn ? 'Updated' : '更新'} ${encodeHtml(briefing.generatedAtShanghai)}</span></div>
+  <div class="live-banner"><b>LIVE</b><span>${encodeHtml(briefing.dateIso)}</span><span>${encodeHtml(ui.banner)}</span><span>${encodeHtml(ui.updated)} ${encodeHtml(briefing.generatedAtShanghai)}</span></div>
   <section class="hero">
     <div>
-      <h1><span class="title-en">Agent Daily</span><span class="title-cn">${encodeHtml(isEn ? briefing.hero.subjectEn : briefing.hero.subjectZh)}</span></h1>
-      <p class="lead">${encodeHtml(isEn ? briefing.hero.leadEn : briefing.hero.leadZh)}</p>
+      <h1><span class="title-en">Agent Daily</span><span class="title-cn">${encodeHtml(copy.subject)}</span></h1>
+      <p class="lead">${encodeHtml(copy.lead)}</p>
+      ${note}
       <div class="stats">
-        <div class="stat"><b>${briefing.stats.watching}</b><span>${isEn ? 'Worth watching' : '值得关注'}</span></div>
-        <div class="stat"><b>${briefing.stats.features}</b><span>${isEn ? 'Lead items' : '重点条目'}</span></div>
-        <div class="stat"><b>${briefing.stats.openSource}</b><span>${isEn ? 'Open source' : '开源发现'}</span></div>
-        <div class="stat"><b>${briefing.stats.regions}</b><span>${isEn ? 'Regions' : '覆盖区域'}</span></div>
+        <div class="stat"><b>${briefing.stats.watching}</b><span>${encodeHtml(ui.watching)}</span></div>
+        <div class="stat"><b>${briefing.stats.features}</b><span>${encodeHtml(ui.leadItems)}</span></div>
+        <div class="stat"><b>${briefing.stats.openSource}</b><span>${encodeHtml(ui.openSource)}</span></div>
+        <div class="stat"><b>${briefing.stats.regions}</b><span>${encodeHtml(ui.regions)}</span></div>
       </div>
-      <div class="judgment"><strong>${isEn ? 'How to read this page: ' : '如何阅读：'}</strong>${encodeHtml(isEn ? briefing.hero.judgmentEn : briefing.hero.judgmentZh)}</div>
+      <div class="judgment"><strong>${encodeHtml(ui.howToRead)}</strong>${encodeHtml(copy.judgment)}</div>
     </div>
     <aside class="intel">
-      <div class="panel-head"><strong>${isEn ? "Today's map" : '今日导航'}</strong><span>${isEn ? 'Auto-ranked public sources' : '按公开源自动排序'}</span></div>
-      <p class="status">${isEn ? `Scanned ${scanned} feeds` : `已扫描 ${scanned} 路公共源`}${failed ? (isEn ? `, ${failed} required feeds missed` : `，${failed} 路必选源未取到`) : ''}.</p>
-      <div class="heat-list">${(briefing.radar || []).map((card) => `<div class="heat-row"><div><strong>${encodeHtml(isEn ? card.tagEn : card.tagZh)}</strong></div><div><p>${encodeHtml(isEn ? card.bodyEn : card.bodyZh)}</p></div></div>`).join('')}</div>
+      <div class="panel-head"><strong>${encodeHtml(ui.todayMap)}</strong><span>${encodeHtml(ui.mapHint)}</span></div>
+      <p class="status">${encodeHtml(ui.scanned.replace('{n}', String(scanned)))}${failed ? encodeHtml(ui.missed.replace('{n}', String(failed))) : ''}.</p>
+      <div class="heat-list">${(briefing.radar || []).map((card) => `<div class="heat-row"><div><strong>${encodeHtml(radarTag(card, locale))}</strong></div><div><p>${encodeHtml(radarBodyText(card, locale))}</p></div></div>`).join('')}</div>
     </aside>
   </section>
   <div class="filters" role="tablist">${filters.map(([id, label], index) => `<button type="button" data-filter="${id}" aria-pressed="${index === 0 ? 'true' : 'false'}">${encodeHtml(label)}</button>`).join('')}</div>
-  <section class="section"><h2>${isEn ? 'Signal radar' : 'AI Agent雷达'}</h2><div class="radar">${radar}</div></section>
-  <section class="section"><h2>${isEn ? 'Lead items' : '值得关注的新功能'}</h2><div class="signals">${features.map((item, index) => cardMarkup(item, index, locale)).join('')}</div></section>
-  <section class="section"><h2>${isEn ? 'More public signals' : '更多公开信号'}</h2><div class="signals">${rest.map((item, index) => cardMarkup(item, index + features.length, locale)).join('')}</div>
-    <div class="note">${isEn ? 'Editorial issues remain in the archive. This page never calls GPT, OpenClaw or a paid news API.' : '精编日报仍在历史归档里。本页不调用 GPT、OpenClaw，也不走付费新闻接口。'}</div>
+  <section class="section"><h2>${encodeHtml(ui.radar)}</h2><div class="radar">${radar}</div></section>
+  <section class="section"><h2>${encodeHtml(ui.leadSection)}</h2><div class="signals">${features.map((item, index) => cardMarkup(item, index, locale)).join('')}</div></section>
+  <section class="section"><h2>${encodeHtml(ui.moreSection)}</h2><div class="signals">${rest.map((item, index) => cardMarkup(item, index + features.length, locale)).join('')}</div>
+    <div class="note">${encodeHtml(ui.editorial)}</div>
   </section>
-  <section class="section"><h2>${isEn ? 'Sources' : '来源'}</h2><ol class="sources">${sources}</ol></section>
+  <section class="section"><h2>${encodeHtml(ui.sources)}</h2><ol class="sources">${sources}</ol></section>
 </main>
 <script>
 (() => {
@@ -241,25 +303,41 @@ function renderTeaser(briefing, locale = 'zh') {
     generatedAtShanghai: briefing.generatedAtShanghai,
     locale,
     watching: briefing.stats.watching,
-    subject: locale === 'en' ? briefing.hero.subjectEn : briefing.hero.subjectZh,
-    lead: locale === 'en' ? briefing.hero.leadEn : briefing.hero.leadZh,
-    href: locale === 'en' ? '/daily/live/en/' : '/daily/live/',
+    subject: heroCopy(briefing, locale).subject,
+    lead: heroCopy(briefing, locale).lead,
+    href: liveHref(locale, '/daily'),
     items: briefing.items.slice(0, 4).map((item) => ({
-      title: item.title,
+      title: itemPack(item, locale).title,
       source: item.sourceLabel,
-      category: locale === 'en' ? item.categoryEn : item.categoryZh,
+      category: itemPack(item, locale).category,
       url: item.url,
     })),
   };
+}
+
+function heroCopy(briefing, localeId) {
+  const pack = briefing.hero?.i18n?.[localeId];
+  if (pack?.subject) {
+    return {
+      subject: pack.subject,
+      lead: pack.lead,
+      judgment: pack.judgment || briefing.hero.judgmentZh || briefing.hero.judgmentEn,
+    };
+  }
+  if (localeId === 'zh' || localeId === 'zh-Hant') {
+    return { subject: briefing.hero.subjectZh, lead: briefing.hero.leadZh, judgment: briefing.hero.judgmentZh };
+  }
+  return { subject: briefing.hero.subjectEn, lead: briefing.hero.leadEn, judgment: briefing.hero.judgmentEn };
 }
 
 function liveArchiveRow(briefing, localeId, basePath = '/daily') {
   const locale = localesById[localeId] || localesById.en;
   const isZh = locale.id === 'zh' || locale.id === 'zh-Hant';
   const date = utcDate(briefing.dateIso);
-  const href = isZh ? `${basePath}/live/` : `${basePath}/live/en/`;
-  const title = isZh ? `AI Agent${briefing.hero.subjectZh}` : `AI Agent ${briefing.hero.subjectEn}`;
-  const lead = isZh ? briefing.hero.leadZh : briefing.hero.leadEn;
+  const href = liveHref(locale.id, basePath);
+  const copy = heroCopy(briefing, locale.id);
+  const title = isZh ? `AI Agent${copy.subject}` : `AI Agent ${copy.subject}`;
+  const lead = copy.lead;
   const pill = locale.ui.todayPill || (isZh ? '今日' : 'Today');
   const monthShort = formatDate(date, locale, 'monthShort');
   const day = String(date.getUTCDate()).padStart(2, '0');
@@ -290,24 +368,29 @@ function injectHomeLatestCard(html, briefing, localeId, basePath = '/daily') {
   if (!html || !briefing?.dateIso || !html.includes('class="latest"')) return html;
   const locale = localesById[localeId] || localesById.en;
   const isZh = locale.id === 'zh' || locale.id === 'zh-Hant';
-  const href = isZh ? `${basePath}/live/` : `${basePath}/live/en/`;
+  const copy = heroCopy(briefing, locale.id);
+  const href = liveHref(locale.id, basePath);
   const date = utcDate(briefing.dateIso);
   const dateLabel = formatDate(date, locale);
   const kicker = locale.ui.todayKicker || locale.ui.liveLabel;
-  const lead = isZh ? briefing.hero.leadZh : briefing.hero.leadEn;
+  const lead = copy.lead;
   const read = locale.ui.readToday || locale.ui.liveOpen;
+  const fullTitle = isZh ? `AI Agent${copy.subject}` : `AI Agent ${copy.subject}`;
   let next = html.replace(
     /(<div class="latest-kicker"><span>)[^<]*(<\/span><time datetime=")[^"]*("[^>]*>)[^<]*(<\/time>)/,
     `$1${encodeHtml(kicker)}$2${briefing.dateIso}$3${encodeHtml(dateLabel)}$4`,
   );
   if (next.includes('latest-title-subject')) {
     next = next.replace(
+      /(<h2[^>]*aria-label=")[^"]*(")/,
+      `$1${encodeHtml(`AI Agent · ${copy.subject}`)}$2`,
+    );
+    next = next.replace(
       /(<span class="latest-title-subject">)[\s\S]*?(<\/span>)/,
-      `$1${encodeHtml(briefing.hero.subjectZh)}$2`,
+      `$1${encodeHtml(copy.subject)}$2`,
     );
   } else {
-    const title = isZh ? `AI Agent${briefing.hero.subjectZh}` : `AI Agent ${briefing.hero.subjectEn}`;
-    next = next.replace(/(<article class="latest">[\s\S]*?<h2[^>]*>)[\s\S]*?(<\/h2>)/, `$1${encodeHtml(title)}$2`);
+    next = next.replace(/(<article class="latest">[\s\S]*?<h2[^>]*>)[\s\S]*?(<\/h2>)/, `$1${encodeHtml(fullTitle)}$2`);
   }
   next = next.replace(/(<article class="latest">[\s\S]*?<p>)[\s\S]*?(<\/p>)/, `$1${encodeHtml(lead)}$2`);
   next = next.replace(/(<article class="latest">[\s\S]*?<a class="button" href=")[^"]+/, `$1${href}`);

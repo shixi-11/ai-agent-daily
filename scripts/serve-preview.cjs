@@ -6,7 +6,6 @@ const fs = require('fs');
 const path = require('path');
 const { rewriteDailyText, fallbackDailyPath } = require('./daily-public-presentation.cjs');
 const { generateLive } = require('./generate-live.cjs');
-const { renderLiveHtml } = require('./lib/live-render.cjs');
 
 const siteRoot = path.resolve(__dirname, '..');
 const publicRoot = path.join(siteRoot, 'public');
@@ -123,19 +122,6 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' });
     res.end(JSON.stringify(payload));
     if (urlPath.includes('refresh=1')) refreshLive().catch(() => {});
-    return;
-  }
-
-  if (pathOnly === '/live' || pathOnly === '/live/' || pathOnly === '/daily/live' || pathOnly === '/daily/live/' || pathOnly === '/ai/agent-daily/live' || pathOnly === '/ai/agent-daily/live/') {
-    const html = liveBriefing ? renderLiveHtml(liveBriefing, 'zh', '/daily') : (resolvePublic('/live/') ? fs.readFileSync(resolvePublic('/live/')) : Buffer.from('雷达正在采集公开源…'));
-    res.writeHead(200, { 'content-type': mimeTypes['.html'], 'cache-control': 'no-store' });
-    res.end(typeof html === 'string' ? html : html);
-    return;
-  }
-  if (pathOnly === '/live/en' || pathOnly === '/live/en/' || pathOnly === '/daily/live/en' || pathOnly === '/daily/live/en/' || pathOnly === '/ai/agent-daily/live/en' || pathOnly === '/ai/agent-daily/live/en/') {
-    const html = liveBriefing ? renderLiveHtml(liveBriefing, 'en', '/daily') : 'Live radar is collecting public sources…';
-    res.writeHead(200, { 'content-type': mimeTypes['.html'], 'cache-control': 'no-store' });
-    res.end(html);
     return;
   }
 

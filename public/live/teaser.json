@@ -1,48 +1,48 @@
 {
   "zh": {
     "dateIso": "2026-09-17",
-    "generatedAt": "2026-09-17T05:01:06.387Z",
-    "generatedAtShanghai": "2026-09-17 13:01",
+    "generatedAt": "2026-09-17T08:39:47.423Z",
+    "generatedAtShanghai": "2026-09-17 16:39",
     "locale": "zh",
     "watching": 16,
-    "subject": "模型平台：Our framework for ",
-    "lead": "从 386 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "subject": "产品把能力装进工作流",
+    "lead": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
-        "title": "Our framework for reporting model misalignment",
+        "title": "我们的报告模型对齐失败的框架",
         "source": "openai.com",
         "category": "模型平台",
         "url": "https://openai.com/index/model-misalignment-reporting-framework"
       },
       {
-        "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
+        "title": "使用Copilot将GitHub迁移到Rust",
         "source": "github.blog",
         "category": "智能体",
         "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
       },
       {
-        "title": "EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM Trading Agents",
+        "title": "EvolveTrade:自我发展的经验政策精炼 LLM 交易代理",
         "source": "arxiv.org",
         "category": "研究评测",
         "url": "https://arxiv.org/abs/2609.17632"
       },
       {
-        "title": "langchain==1.4.1",
-        "source": "langchain-ai/langchain",
-        "category": "开源发现",
-        "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1"
+        "title": "在日常生活中帮助老年人使用人工智能",
+        "source": "openai.com",
+        "category": "产品功能",
+        "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-17",
-    "generatedAt": "2026-09-17T05:01:06.387Z",
-    "generatedAtShanghai": "2026-09-17 13:01",
+    "generatedAt": "2026-09-17T08:39:47.423Z",
+    "generatedAtShanghai": "2026-09-17 16:39",
     "locale": "en",
     "watching": 16,
-    "subject": "Our framework for reporting model misalignment",
-    "lead": "Selected 16 items from 386 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "subject": "Products Put Capability to Work",
+    "lead": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
@@ -64,10 +64,10 @@
         "url": "https://arxiv.org/abs/2609.17632"
       },
       {
-        "title": "langchain==1.4.1",
-        "source": "langchain-ai/langchain",
-        "category": "Open source",
-        "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1"
+        "title": "Helping older adults use AI in everyday life",
+        "source": "openai.com",
+        "category": "Products",
+        "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
       }
     ]
   }

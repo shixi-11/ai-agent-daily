@@ -2,13 +2,15 @@
 'use strict';
 
 const assert = require('assert');
-const { composeBriefing, cleanTitle, pickHero } = require('./lib/live-compose.cjs');
+const { composeBriefing, cleanTitle, pickHero, shouldMintTitle } = require('./lib/live-compose.cjs');
 
 const now = new Date('2026-09-16T02:00:00Z');
 const recent = new Date(now.getTime() - 6 * 3600 * 1000);
 
 assert.equal(cleanTitle({ title: 'Release v0.60.0', repo: 'sst/opencode' }), 'sst/opencode v0.60.0');
-assert.equal(cleanTitle({ title: 'Show HN: Local Agent Desk' }), 'Local Agent Desk');
+assert.equal(cleanTitle({ title: 'langchain==1.4.1', repo: 'langchain-ai/langchain' }), 'langchain-ai/langchain 1.4.1');
+assert.equal(shouldMintTitle('langchain-ai/langchain 1.4.1'), false);
+assert.equal(shouldMintTitle('Our framework for reporting model misalignment'), true);
 
 const briefing = composeBriefing({
   collectedAt: now.toISOString(),
@@ -59,10 +61,17 @@ const briefing = composeBriefing({
 }, { now });
 
 assert.notEqual(briefing.hero.subjectEn, 'Release v0.60.0');
-assert.match(briefing.hero.subjectEn, /Gemini/i);
+assert.match(briefing.hero.subjectZh, /模型|接口|Agent|开源|产品/);
+assert.equal(briefing.hero.subjectZh.includes('Our framework'), false);
+assert.match(briefing.hero.subjectEn, /Model|Callable|Agent|Open Source|Product/i);
+assert.ok(!/ $/.test(briefing.hero.subjectZh));
 assert.ok(briefing.items.some((item) => item.category === 'new-site'));
 assert.equal(pickHero(briefing.items).title.includes('v0.60.0'), false);
-assert.ok(briefing.items.length >= 3);
+assert.ok(briefing.items.every((item) => item.regionEn));
+assert.ok(briefing.radar.every((card) => !/ships a new change|交出新变化/.test(`${card.titleEn}${card.titleZh}`)));
+assert.ok(briefing.hero.i18n.ja.subject);
+assert.ok(!briefing.hero.i18n.ja.subject.includes('  '));
+assert.match(briefing.hero.i18n.zh.subject, /产品|模型|Agent|开源/);
 const { fallbackDailyPath } = require('./daily-public-presentation.cjs');
 assert.equal(fallbackDailyPath('ja/latest'), 'en/latest/');
 assert.equal(fallbackDailyPath('/ko/2026/09/14/'), 'en/2026/09/14/');

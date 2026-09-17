@@ -9,6 +9,7 @@ const { readUtf8, writeUtf8 } = require('./io.cjs');
 const MINT_ENDPOINT = 'https://cxserver.wikimedia.org/v2/translate';
 const USER_AGENT = 'AgentDaily/1.0 (https://shixilin.com/ai/agent-daily; alignment-preserving archive translation)';
 const TARGETS = {
+  zh: 'zh',
   ja: 'ja',
   ko: 'ko',
   es: 'es',
@@ -30,7 +31,7 @@ function loadGlossary(siteRoot) {
 }
 
 function cacheKey(locale, text) {
-  return crypto.createHash('sha256').update(`${locale}\n${text}`).digest('hex');
+  return crypto.createHash('sha256').update(`v4\n${locale}\n${text}`).digest('hex');
 }
 
 function readCache(siteRoot, locale, text) {
@@ -81,32 +82,99 @@ async function mintTranslate(html, from, to) {
   return payload.contents;
 }
 
+const AMP = String.fromCharCode(38);
+
 function encodeWrap(text) {
   return String(text)
-    .replace(/&/g, '&')
-    .replace(/</g, '<')
-    .replace(/>/g, '>');
+    .replace(new RegExp(AMP, 'g'), `${AMP}amp;`)
+    .replace(/</g, `${AMP}lt;`)
+    .replace(/>/g, `${AMP}gt;`);
 }
 
 function decodeWrap(text) {
   return String(text)
     .replace(/<[^>]+>/g, '')
-    .replace(/&/g, '&')
-    .replace(/</g, '<')
-    .replace(/>/g, '>')
-    .replace(/"/g, '"')
-    .replace(/&#39;|'/g, "'")
+    .replace(new RegExp(`${AMP}amp;`, 'g'), AMP)
+    .replace(new RegExp(`${AMP}lt;`, 'g'), '<')
+    .replace(new RegExp(`${AMP}gt;`, 'g'), '>')
+    .replace(new RegExp(`${AMP}quot;`, 'g'), '"')
+    .replace(new RegExp(`${AMP}#39;|${AMP}apos;`, 'g'), "'")
     .trim();
+}
+
+function tidyTranslation(locale, text) {
+  let next = String(text || '')
+    .replace(/\u2047/g, '')
+    .replace(/([A-Za-z0-9])。(com|org|io|ai|dev|net|blog|co)\b/gi, '.$2')
+    .replace(/。(\s*)(com|org|io|ai|dev|net|blog)\b/gi, '.$2')
+    .replace(/(\d)。(\d)/g, '$1.$2');
+  if (locale === 'ja' || locale === 'zh') {
+    next = next.replace(/([\u3400-\u9fff\u3040-\u30ff])\s+(?=[\u3400-\u9fff\u3040-\u30ff])/g, '$1');
+  }
+  if (locale === 'ja') {
+    next = next.replace(/\s+([はがをにのとでもへやか])/g, '$1').replace(/([はがをにのとでもへやか])\s+/g, '$1');
+  }
+  return next.replace(/[ \t]+/g, ' ').trim();
+}
+
+function extraLocks(text) {
+  const hosts = String(text).match(/\b[\w.-]+\.(?:com|org|io|ai|dev|net|blog|co)\b/gi) || [];
+  const repos = String(text).match(/\b[\w.-]+\/[\w.-]+\b/g) || [];
+  return [...hosts, ...repos];
+}
+
+function lockSegment(text, locks) {
+  const terms = [...new Set([...(locks || []), ...extraLocks(text)])]
+    .filter((term) => term && String(term).length >= 2)
+    .sort((a, b) => b.length - a.length);
+  const found = [];
+  let next = String(text);
+  for (const term of terms) {
+    if (!next.includes(term)) continue;
+    const token = `ZX${found.length}Q`;
+    next = next.split(term).join(token);
+    found.push(term);
+  }
+  return { text: next, found };
+}
+
+function unlockSegment(text, found) {
+  let next = String(text);
+  found.forEach((term, index) => {
+    next = next.replace(new RegExp(`ZX\\s*${index}\\s*Q`, 'gi'), term);
+  });
+  return next
+    .replace(/副驾驶/g, 'Copilot')
+    .replace(/コピロット/g, 'Copilot')
+    .replace(/코피로트/g, 'Copilot')
+    .replace(/\bCopilote\b/g, 'Copilot')
+    .replace(/Shofox/g, 'Shopify')
+    .replace(/克劳德代码/g, 'Claude Code')
+    .replace(/クロッドコード/g, 'Claude Code');
+}
+
+function applyPrephrases(text, prephrases) {
+  let next = String(text);
+  for (const [pattern, replacement] of prephrases || []) {
+    next = next.replace(new RegExp(pattern, 'gi'), replacement);
+  }
+  return next;
 }
 
 async function translateSegments(siteRoot, locale, segments, options = {}) {
   const from = options.from || 'en';
   const to = TARGETS[locale];
   if (!to) throw new Error(`不支持的语种：${locale}`);
+  let glossary;
+  try {
+    glossary = loadGlossary(siteRoot);
+  } catch {
+    glossary = { lock: [], prephrases: [] };
+  }
   const pending = [];
   const output = segments.map((text) => {
     const cached = readCache(siteRoot, locale, text);
-    if (cached != null) return cached;
+    if (cached != null) return tidyTranslation(locale, cached);
     pending.push(text);
     return null;
   });
@@ -128,7 +196,8 @@ async function translateSegments(siteRoot, locale, segments, options = {}) {
 
   const translated = new Map();
   for (const batch of batches) {
-    const wrapped = `<div>${batch.map((text, index) => `<p id="s${index}">${encodeWrap(text)}</p>`).join('')}</div>`;
+    const locked = batch.map((text) => lockSegment(applyPrephrases(text, glossary.prephrases), glossary.lock));
+    const wrapped = `<div>${locked.map((item, index) => `<p id="s${index}">${encodeWrap(item.text)}</p>`).join('')}</div>`;
     let resultHtml;
     let lastError;
     for (let attempt = 0; attempt < 3; attempt += 1) {
@@ -144,7 +213,8 @@ async function translateSegments(siteRoot, locale, segments, options = {}) {
     if (lastError) throw lastError;
     batch.forEach((text, index) => {
       const match = resultHtml.match(new RegExp(`<p id="s${index}"[^>]*>([\\s\\S]*?)</p>`, 'i'));
-      const value = match ? decodeWrap(match[1]) : '';
+      const raw = match ? decodeWrap(match[1]) : '';
+      const value = tidyTranslation(locale, unlockSegment(raw, locked[index].found));
       if (!value) throw new Error(`MinT 丢了片段：${text.slice(0, 80)}`);
       translated.set(text, value);
       writeCache(siteRoot, locale, text, value);
@@ -160,6 +230,7 @@ module.exports = {
   loadGlossary,
   convertOpenCcHtml,
   translateSegments,
+  tidyTranslation,
   readCache,
   writeCache,
 };

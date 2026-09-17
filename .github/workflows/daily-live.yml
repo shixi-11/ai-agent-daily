@@ -12,6 +12,9 @@ on:
       - 'scripts/lib/live-collect.cjs'
       - 'scripts/lib/live-compose.cjs'
       - 'scripts/lib/live-render.cjs'
+      - 'scripts/lib/translate.cjs'
+      - 'locales/glossary.json'
+      - 'locales/live-chrome.json'
       - '.github/workflows/daily-live.yml'
 
 permissions:
@@ -25,6 +28,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OpenCC
+        run: pip install opencc-python-reimplemented
       - name: Collect public sources and write live briefing
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

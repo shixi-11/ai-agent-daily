@@ -1,7 +1,7 @@
 'use strict';
 
 const { encodeHtml } = require('./io.cjs');
-const { loadGlossary, convertOpenCcHtml, translateSegments } = require('./translate.cjs');
+const { loadGlossary, convertOpenCcHtml, translateSegments, tidyTranslation } = require('./translate.cjs');
 
 const TAG_SPLIT = /(<[^>]+>)/;
 const SKIP = /^(?:[\d\s.,:+\-/%#]+|v?\d[\w.+-]*|GitHub Stars \d+|License(?: not declared)?|许可证(?:未声明)?)$/i;
@@ -115,15 +115,15 @@ async function alignFromEnglish(siteRoot, locale, englishBody, note) {
     let previous = '';
     parts[job.index] = job.pieces.map((piece) => {
       let value = piece.type === 'lock' ? piece.value : (piece.uid == null ? piece.value : translated[piece.uid]);
-      if (previous && /[\p{L}\p{N}]$/u.test(previous) && /^[\p{L}\p{N}]/u.test(value)) {
+      if (previous && /[A-Za-z0-9]$/.test(previous) && /^[A-Za-z0-9]/.test(value)) {
         value = ` ${value}`;
       }
       previous = value;
       return value;
     }).join('');
   }
-  const body = injectMachineNote(parts.join(''), note);
-  if (/[¤⟦⁇]|\[\[L\d+/.test(body)) throw new Error(`${locale} 译文残留占位符`);
+  const body = tidyTranslation(locale, injectMachineNote(parts.join(''), note).replace(/\u2047/g, ''));
+  if (/[¤⟦]|\[\[L\d+/.test(body)) throw new Error(`${locale} 译文残留占位符`);
   return body;
 }
 
