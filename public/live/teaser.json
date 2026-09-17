@@ -1,12 +1,12 @@
 {
   "zh": {
     "dateIso": "2026-09-18",
-    "generatedAt": "2026-09-17T17:08:31.658Z",
-    "generatedAtShanghai": "2026-09-18 01:08",
+    "generatedAt": "2026-09-17T21:30:47.816Z",
+    "generatedAtShanghai": "2026-09-18 05:30",
     "locale": "zh",
     "watching": 16,
-    "subject": "新模型走进可调用接口",
-    "lead": "从 386 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "subject": "Agent把工具权限交出来",
+    "lead": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
@@ -28,21 +28,21 @@
         "url": "https://arxiv.org/abs/2609.17632"
       },
       {
-        "title": "桌面v0.0.29",
-        "source": "cline/cline",
-        "category": "开源发现",
-        "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.29"
+        "title": "引入法律的阿斯特拉",
+        "source": "openai.com",
+        "category": "产品功能",
+        "url": "https://openai.com/index/astra-for-law"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-18",
-    "generatedAt": "2026-09-17T17:08:31.658Z",
-    "generatedAtShanghai": "2026-09-18 01:08",
+    "generatedAt": "2026-09-17T21:30:47.816Z",
+    "generatedAtShanghai": "2026-09-18 05:30",
     "locale": "en",
     "watching": 16,
-    "subject": "New Models Become Callable",
-    "lead": "Selected 16 items from 386 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "subject": "Agents Hand Over Tool Rights",
+    "lead": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
@@ -64,10 +64,10 @@
         "url": "https://arxiv.org/abs/2609.17632"
       },
       {
-        "title": "Desktop v0.0.29",
-        "source": "cline/cline",
-        "category": "Open source",
-        "url": "https://github.com/cline/cline/releases/tag/desktop-v0.0.29"
+        "title": "Introducing Astra for Law",
+        "source": "openai.com",
+        "category": "Products",
+        "url": "https://openai.com/index/astra-for-law"
       }
     ]
   }
