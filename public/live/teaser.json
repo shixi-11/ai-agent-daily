@@ -1,31 +1,31 @@
 {
   "zh": {
     "dateIso": "2026-09-17",
-    "generatedAt": "2026-09-16T21:25:58.864Z",
-    "generatedAtShanghai": "2026-09-17 05:25",
+    "generatedAt": "2026-09-17T05:01:06.387Z",
+    "generatedAtShanghai": "2026-09-17 13:01",
     "locale": "zh",
     "watching": 16,
-    "subject": "模型平台：‘Now We Can Know E",
+    "subject": "模型平台：Our framework for ",
     "lead": "从 386 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
-        "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
-        "source": "blogs.nvidia.com",
+        "title": "Our framework for reporting model misalignment",
+        "source": "openai.com",
         "category": "模型平台",
-        "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/"
+        "url": "https://openai.com/index/model-misalignment-reporting-framework"
       },
       {
-        "title": "Optimizing agent system prompts with Amazon Bedrock AgentCore",
-        "source": "aws.amazon.com",
+        "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
+        "source": "github.blog",
         "category": "智能体",
-        "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/"
+        "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
       },
       {
-        "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
+        "title": "EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM Trading Agents",
         "source": "arxiv.org",
         "category": "研究评测",
-        "url": "https://arxiv.org/abs/2609.16215"
+        "url": "https://arxiv.org/abs/2609.17632"
       },
       {
         "title": "langchain==1.4.1",
@@ -37,31 +37,31 @@
   },
   "en": {
     "dateIso": "2026-09-17",
-    "generatedAt": "2026-09-16T21:25:58.864Z",
-    "generatedAtShanghai": "2026-09-17 05:25",
+    "generatedAt": "2026-09-17T05:01:06.387Z",
+    "generatedAtShanghai": "2026-09-17 13:01",
     "locale": "en",
     "watching": 16,
-    "subject": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dream",
+    "subject": "Our framework for reporting model misalignment",
     "lead": "Selected 16 items from 386 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
-        "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
-        "source": "blogs.nvidia.com",
+        "title": "Our framework for reporting model misalignment",
+        "source": "openai.com",
         "category": "Models",
-        "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/"
+        "url": "https://openai.com/index/model-misalignment-reporting-framework"
       },
       {
-        "title": "Optimizing agent system prompts with Amazon Bedrock AgentCore",
-        "source": "aws.amazon.com",
+        "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
+        "source": "github.blog",
         "category": "Agents",
-        "url": "https://aws.amazon.com/blogs/machine-learning/optimizing-agent-system-prompts-with-amazon-bedrock-agentcore/"
+        "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
       },
       {
-        "title": "Where Should the KV Cache Live? Placement Policies Across GPU, CPU, and SSD for Long-Lived Sessions",
+        "title": "EvolveTrade: Experience-Driven Policy Refinement for Self-Evolving LLM Trading Agents",
         "source": "arxiv.org",
         "category": "Research",
-        "url": "https://arxiv.org/abs/2609.16215"
+        "url": "https://arxiv.org/abs/2609.17632"
       },
       {
         "title": "langchain==1.4.1",
