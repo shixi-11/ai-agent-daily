@@ -23,21 +23,21 @@
     },
     {
       "date": "2026-09-13",
-      "title": "AI Agent — Evidence Beyond the Model",
-      "lead": "One model edits speech, compact encoders retrieve pages, and a recording assistant inspects frames. Small experiments also expose their methods, limits, and failures.",
-      "url": "/daily/en/2026/09/13/",
+      "title": "AI Agent — دليل خارج النموذج",
+      "lead": "أحد النماذج يعدل الكلام، و الكودرات الموحدة تستعيد الصفحات، و مساعد تسجيل يفتش الإطار. تجارب صغيرة تكشف أيضاً عن أساليبها ومحدودها وفشلها.",
+      "url": "/daily/ar/2026/09/13/",
       "alternateUrl": "/daily/2026/09/13/",
-      "publicPath": null,
-      "translated": false
+      "publicPath": "ar/2026/09/13/index.html",
+      "translated": true
     },
     {
       "date": "2026-09-12",
-      "title": "AI Agent — Keep Working After Generation",
-      "lead": "Rooms can be measured, image workflows rewired, and scientific predictions searched. Today's focus is not just what AI generates, but how its outputs can be checked, changed, and put to use.",
-      "url": "/daily/en/2026/09/12/",
+      "title": "AI Agent — استمر في العمل بعد الأجيال",
+      "lead": "يمكن قياس الغرف، وإعادة تشكيل عمليات الصورة، والتحقيق في التنبؤات العلمية. التركيز اليوم ليس فقط على ما يولده الذكاء الاصطناعي، ولكن كيف يمكن التحقق من نتائجها وتغييرها وتطبيقها.",
+      "url": "/daily/ar/2026/09/12/",
       "alternateUrl": "/daily/2026/09/12/",
-      "publicPath": null,
-      "translated": false
+      "publicPath": "ar/2026/09/12/index.html",
+      "translated": true
     },
     {
       "date": "2026-09-11",

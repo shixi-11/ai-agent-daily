@@ -23,21 +23,21 @@
     },
     {
       "date": "2026-09-13",
-      "title": "AI Agent — Evidence Beyond the Model",
-      "lead": "One model edits speech, compact encoders retrieve pages, and a recording assistant inspects frames. Small experiments also expose their methods, limits, and failures.",
-      "url": "/daily/en/2026/09/13/",
+      "title": "AI Agent — 모델 이 아닌 증거",
+      "lead": "한 모델은 음성 편집, 컴팩트 코더는 페이지를 검색하고, 녹음 보조자는 프레임을 검사합니다. 작은 실험은 또한 그들의 방법, 한계, 그리고 실패를 드러냅니다.",
+      "url": "/daily/ko/2026/09/13/",
       "alternateUrl": "/daily/2026/09/13/",
-      "publicPath": null,
-      "translated": false
+      "publicPath": "ko/2026/09/13/index.html",
+      "translated": true
     },
     {
       "date": "2026-09-12",
-      "title": "AI Agent — Keep Working After Generation",
-      "lead": "Rooms can be measured, image workflows rewired, and scientific predictions searched. Today's focus is not just what AI generates, but how its outputs can be checked, changed, and put to use.",
-      "url": "/daily/en/2026/09/12/",
+      "title": "AI Agent — 세대 후 세대 를 계속 하여 일 하라",
+      "lead": "방은 측정되고 이미지 작업 흐름이 재전선되고 과학적인 예측이 검색될 수 있습니다. 오늘날의 관심은 인공지능이 무엇을 생성하는지에 대한 것이 아니라 그 출력을 어떻게 검사하고 변경하고 활용할 수 있는지에 관한 것입니다.",
+      "url": "/daily/ko/2026/09/12/",
       "alternateUrl": "/daily/2026/09/12/",
-      "publicPath": null,
-      "translated": false
+      "publicPath": "ko/2026/09/12/index.html",
+      "translated": true
     },
     {
       "date": "2026-09-11",

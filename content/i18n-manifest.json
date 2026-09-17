@@ -796,6 +796,24 @@
         "translationSha256": "47daf5502b6329f163f277c0133670fa3aef455c6e58529590e3f9e910f55d8c",
         "sourceSha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
         "generatedAt": "2026-09-15T23:43:47.806Z"
+      },
+      "ko": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260912.body.html",
+        "translationSha256": "22e4d88caf57d5a0e8e752b022ee92b27658fd9aebcd3ae65c1ee1c703a013e6",
+        "sourceSha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
+        "generatedAt": "2026-09-17T08:41:55.063Z"
+      },
+      "ar": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260912.body.html",
+        "translationSha256": "ba86806c10c14fa84236d977b1c23f9c15413193c712bdc2c3da0cb1b2f94940",
+        "sourceSha256": "d5cec4a73392ef3b1cc127caa075a4c08a0eaecbc7529ed8434c7228852f55e6",
+        "generatedAt": "2026-09-17T08:42:37.961Z"
       }
     },
     "2026-09-13": {
@@ -834,6 +852,24 @@
         "translationSha256": "d1d67ce8828ee9d3c257710b1c9e0f4fee9044ca27bc624ea3235bf6de13608e",
         "sourceSha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
         "generatedAt": "2026-09-15T23:45:54.277Z"
+      },
+      "ko": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260913.body.html",
+        "translationSha256": "81f7b7ecda1d1accbeca038784f5f004522ac6e19be79dcb8adcc9772e083a56",
+        "sourceSha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
+        "generatedAt": "2026-09-17T08:43:15.829Z"
+      },
+      "ar": {
+        "status": "generated",
+        "engine": "wikimedia-mint",
+        "source": "en",
+        "translationFile": "20260913.body.html",
+        "translationSha256": "a28edd51c2d53488eb34eda8d859a7699513f00d84b5b956192a8c0067e2a090",
+        "sourceSha256": "93413c2dbf951823d797d52ab4e6c55ec6e30f23e060532de2e045683cc41c5f",
+        "generatedAt": "2026-09-17T08:43:41.162Z"
       }
     },
     "2026-09-14": {
