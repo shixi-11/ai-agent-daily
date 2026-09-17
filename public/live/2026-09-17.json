@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "mode": "live-public-sources",
   "dateIso": "2026-09-17",
-  "generatedAt": "2026-09-17T08:39:47.423Z",
-  "generatedAtShanghai": "2026-09-17 16:39",
-  "collectedAt": "2026-09-17T08:39:47.423Z",
+  "generatedAt": "2026-09-17T08:41:01.995Z",
+  "generatedAtShanghai": "2026-09-17 16:41",
+  "collectedAt": "2026-09-17T08:41:01.995Z",
   "counts": {
     "rss": 255,
     "githubReleases": 69,
@@ -500,7 +500,7 @@
         },
         "es": {
           "title": "EvolveTrade: Refinamiento de las políticas basadas en la experiencia para los agentes comerciales LLM que se desarrollan por sí mismos",
-          "what": "Los agentes de comercio de modelos de lenguaje grande (LLM) pueden combinar datos de mercado, noticias y análisis ejecutables, pero su comportamiento a menudo está controlado por escritos a mano estáticos...",
+          "what": "Los agentes de comercio de modelos de lenguaje grande (LLM) pueden combinar datos de mercado, noticias y análisis ejecutables, pero su comportamiento a menudo está controlado por escritos a mano estáticos ...",
           "why": "Los documentos y los índices de referencia ofrecen métodos que puedes comprobar, no sólo una demostración de producto.",
           "who": "Equipos de investigación, evaluación y informática científica.",
           "try": "Abre el enlace original y verifique la fecha, licencia y alcance indicado.",
@@ -508,7 +508,7 @@
         },
         "fr": {
           "title": "EvolveTrade: Réfinition des politiques axées sur l'expérience pour les agents de trading LLM qui évoluent eux-mêmes",
-          "what": "Les agents de trading du modèle grand langage (LLM) peuvent combiner les données du marché, les nouvelles et l'analyse exécutable, mais leur comportement est souvent contrôlé par des écritures manuelles statiques...",
+          "what": "Les agents de trading du modèle grand langage (LLM) peuvent combiner des données de marché, des nouvelles et des analyses exécutables, mais leur comportement est souvent contrôlé par des écritures manuelles statiques...",
           "why": "Les documents et les références offrent des méthodes que vous pouvez vérifier, pas seulement une démonstration de produit.",
           "who": "Des équipes de recherche, d'évaluation et de calcul scientifique.",
           "try": "Ouvrez le lien original et vérifiez la date, la licence et la portée indiquées.",
@@ -722,7 +722,7 @@
         },
         "ko": {
           "title": "인공지능으로 광고를 재현하는 것",
-          "what": "Sponsored Agents, 마케팅 담당자 도구 및 HubSpot 및 Shopify와의 통합을 포함한 OpenAI에서 AI 기반의 새로운 광고 경험을 탐구하십시오.",
+          "what": "Sponsored Agents, 마케팅 담당자 도구 및 HubSpot 및 Shopify와의 통합을 포함한 OpenAI에서 AI에 기반한 새로운 광고 경험을 탐구하십시오.",
           "why": "배송된 기능은 로드맵뿐만 아니라 일상적인 사용량을 변화시킵니다.",
           "who": "제품 관리자, 앱 개발자 및 전력 사용자",
           "try": "원래 링크를 열고 날짜, 라이선스 및 명시된 범위를 확인합니다.",
@@ -2036,7 +2036,7 @@
       "noteHant": "先看原始頁面的日期、範圍和許可，再決定要不要跟進。"
     }
   ],
-  "leftover": 240,
+  "leftover": 241,
   "hero": {
     "subjectZh": "产品把能力装进工作流",
     "subjectEn": "Products Put Capability to Work",
