@@ -1,8 +1,8 @@
 {
   "zh": {
     "dateIso": "2026-09-19",
-    "generatedAt": "2026-09-18T16:33:14.260Z",
-    "generatedAtShanghai": "2026-09-19 00:33",
+    "generatedAt": "2026-09-18T21:00:03.432Z",
+    "generatedAtShanghai": "2026-09-19 05:00",
     "locale": "zh",
     "watching": 16,
     "subject": "新模型走进可调用接口",
@@ -37,8 +37,8 @@
   },
   "en": {
     "dateIso": "2026-09-19",
-    "generatedAt": "2026-09-18T16:33:14.260Z",
-    "generatedAtShanghai": "2026-09-19 00:33",
+    "generatedAt": "2026-09-18T21:00:03.432Z",
+    "generatedAtShanghai": "2026-09-19 05:00",
     "locale": "en",
     "watching": 16,
     "subject": "New Models Become Callable",
