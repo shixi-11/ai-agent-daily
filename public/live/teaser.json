@@ -1,19 +1,25 @@
 {
   "zh": {
-    "dateIso": "2026-09-18",
-    "generatedAt": "2026-09-18T11:28:21.281Z",
-    "generatedAtShanghai": "2026-09-18 19:28",
+    "dateIso": "2026-09-19",
+    "generatedAt": "2026-09-18T16:33:14.260Z",
+    "generatedAtShanghai": "2026-09-19 00:33",
     "locale": "zh",
     "watching": 16,
-    "subject": "评测把方法交给可核对",
-    "lead": "从 410 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "subject": "新模型走进可调用接口",
+    "lead": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
-        "title": "在Amazon Quick上实施MCP工具的深入防守授权",
+        "title": "在亚马逊SageMaker人工智能上使用编码代理的Hugging Face模型",
         "source": "aws.amazon.com",
         "category": "模型平台",
-        "url": "https://aws.amazon.com/blogs/machine-learning/implementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick/"
+        "url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/"
+      },
+      {
+        "title": "你应该读取代码,RAG是否死了,技能是否杀死了MCP?",
+        "source": "github.blog",
+        "category": "智能体",
+        "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
       },
       {
         "title": "在LLM中对工具幻觉的封闭世界分辨率",
@@ -26,30 +32,30 @@
         "source": "openai.com",
         "category": "市场信号",
         "url": "https://openai.com/index/cooley-gopublic"
-      },
-      {
-        "title": "使用Copilot将GitHub迁移到Rust",
-        "source": "github.blog",
-        "category": "智能体",
-        "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
       }
     ]
   },
   "en": {
-    "dateIso": "2026-09-18",
-    "generatedAt": "2026-09-18T11:28:21.281Z",
-    "generatedAtShanghai": "2026-09-18 19:28",
+    "dateIso": "2026-09-19",
+    "generatedAt": "2026-09-18T16:33:14.260Z",
+    "generatedAtShanghai": "2026-09-19 00:33",
     "locale": "en",
     "watching": 16,
-    "subject": "Evals Make Methods Checkable",
-    "lead": "Selected 16 items from 410 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "subject": "New Models Become Callable",
+    "lead": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
-        "title": "Implementing defense-in-depth authorization for MCP tools on Amazon Quick",
+        "title": "Deploy Hugging Face models on Amazon SageMaker AI with coding agents",
         "source": "aws.amazon.com",
         "category": "Models",
-        "url": "https://aws.amazon.com/blogs/machine-learning/implementing-defense-in-depth-authorization-for-mcp-tools-on-amazon-quick/"
+        "url": "https://aws.amazon.com/blogs/machine-learning/deploy-hugging-face-models-on-amazon-sagemaker-ai-with-coding-agents/"
+      },
+      {
+        "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+        "source": "github.blog",
+        "category": "Agents",
+        "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
       },
       {
         "title": "Closed-World Resolution Against Tool Hallucination in LLM Agents",
@@ -62,12 +68,6 @@
         "source": "openai.com",
         "category": "Market",
         "url": "https://openai.com/index/cooley-gopublic"
-      },
-      {
-        "title": "Migrating the GitHub Copilot runtime to Rust, using Copilot",
-        "source": "github.blog",
-        "category": "Agents",
-        "url": "https://github.blog/ai-and-ml/generative-ai/migrating-the-github-copilot-runtime-to-rust-using-copilot/"
       }
     ]
   }
