@@ -1,12 +1,12 @@
 {
   "zh": {
-    "dateIso": "2026-09-19",
-    "generatedAt": "2026-09-19T15:58:01.631Z",
-    "generatedAtShanghai": "2026-09-19 23:58",
+    "dateIso": "2026-09-20",
+    "generatedAt": "2026-09-19T20:50:34.579Z",
+    "generatedAtShanghai": "2026-09-20 04:50",
     "locale": "zh",
     "watching": 16,
     "subject": "新模型走进可调用接口",
-    "lead": "从 386 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "lead": "从 370 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
@@ -36,13 +36,13 @@
     ]
   },
   "en": {
-    "dateIso": "2026-09-19",
-    "generatedAt": "2026-09-19T15:58:01.631Z",
-    "generatedAtShanghai": "2026-09-19 23:58",
+    "dateIso": "2026-09-20",
+    "generatedAt": "2026-09-19T20:50:34.579Z",
+    "generatedAtShanghai": "2026-09-20 04:50",
     "locale": "en",
     "watching": 16,
     "subject": "New Models Become Callable",
-    "lead": "Selected 16 items from 386 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "lead": "Selected 16 items from 370 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
