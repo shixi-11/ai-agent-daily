@@ -1,12 +1,12 @@
 {
   "zh": {
     "dateIso": "2026-09-20",
-    "generatedAt": "2026-09-19T20:50:34.579Z",
-    "generatedAtShanghai": "2026-09-20 04:50",
+    "generatedAt": "2026-09-19T23:14:55.639Z",
+    "generatedAtShanghai": "2026-09-20 07:14",
     "locale": "zh",
     "watching": 16,
     "subject": "新模型走进可调用接口",
-    "lead": "从 370 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "lead": "从 362 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
@@ -22,27 +22,27 @@
         "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
       },
       {
-        "title": "亚马逊SageMaker推理: 2026年至今的发射在评论中",
-        "source": "aws.amazon.com",
-        "category": "硬件架构",
-        "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/"
-      },
-      {
         "title": "介绍澳大利亚青年安全计划",
         "source": "openai.com",
         "category": "产品功能",
         "url": "https://openai.com/index/australian-youth-safety-blueprint"
+      },
+      {
+        "title": "腐蚀-v0.156.0-阿尔法.9",
+        "source": "openai/codex",
+        "category": "开源发现",
+        "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.9"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-20",
-    "generatedAt": "2026-09-19T20:50:34.579Z",
-    "generatedAtShanghai": "2026-09-20 04:50",
+    "generatedAt": "2026-09-19T23:14:55.639Z",
+    "generatedAtShanghai": "2026-09-20 07:14",
     "locale": "en",
     "watching": 16,
     "subject": "New Models Become Callable",
-    "lead": "Selected 16 items from 370 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "lead": "Selected 16 items from 362 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
@@ -58,16 +58,16 @@
         "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
       },
       {
-        "title": "Amazon SageMaker Inference: 2026 year-to-date launches in review",
-        "source": "aws.amazon.com",
-        "category": "Hardware",
-        "url": "https://aws.amazon.com/blogs/machine-learning/amazon-sagemaker-inference-2026-year-to-date-launches-in-review/"
-      },
-      {
         "title": "Introducing the Australian Youth Safety Blueprint",
         "source": "openai.com",
         "category": "Products",
         "url": "https://openai.com/index/australian-youth-safety-blueprint"
+      },
+      {
+        "title": "rust-v0.156.0-alpha.9",
+        "source": "openai/codex",
+        "category": "Open source",
+        "url": "https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.9"
       }
     ]
   }
