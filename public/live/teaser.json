@@ -1,12 +1,12 @@
 {
   "zh": {
     "dateIso": "2026-09-19",
-    "generatedAt": "2026-09-18T23:23:04.483Z",
-    "generatedAtShanghai": "2026-09-19 07:23",
+    "generatedAt": "2026-09-19T04:45:44.515Z",
+    "generatedAtShanghai": "2026-09-19 12:45",
     "locale": "zh",
     "watching": 16,
     "subject": "新模型走进可调用接口",
-    "lead": "从 398 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
+    "lead": "从 350 条公开源里选出 16 条，覆盖官方博客、GitHub、新仓库、Show HN 与论文源。",
     "href": "/daily/live/",
     "items": [
       {
@@ -22,27 +22,27 @@
         "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
       },
       {
-        "title": "在LLM中对工具幻觉的封闭世界分辨率",
-        "source": "arxiv.org",
-        "category": "研究评测",
-        "url": "https://arxiv.org/abs/2609.19425"
-      },
-      {
         "title": "库利如何加速IPO与ChatGPT的工作",
         "source": "openai.com",
         "category": "市场信号",
         "url": "https://openai.com/index/cooley-gopublic"
+      },
+      {
+        "title": "新专家加入谷歌的AI &#38; Economy团队",
+        "source": "blog.google",
+        "category": "产品功能",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/"
       }
     ]
   },
   "en": {
     "dateIso": "2026-09-19",
-    "generatedAt": "2026-09-18T23:23:04.483Z",
-    "generatedAtShanghai": "2026-09-19 07:23",
+    "generatedAt": "2026-09-19T04:45:44.515Z",
+    "generatedAtShanghai": "2026-09-19 12:45",
     "locale": "en",
     "watching": 16,
     "subject": "New Models Become Callable",
-    "lead": "Selected 16 items from 398 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
+    "lead": "Selected 16 items from 350 public-source records across official blogs, GitHub, new repos, Show HN and paper feeds.",
     "href": "/daily/live/en/",
     "items": [
       {
@@ -58,16 +58,16 @@
         "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/"
       },
       {
-        "title": "Closed-World Resolution Against Tool Hallucination in LLM Agents",
-        "source": "arxiv.org",
-        "category": "Research",
-        "url": "https://arxiv.org/abs/2609.19425"
-      },
-      {
         "title": "How Cooley is accelerating IPO work with ChatGPT",
         "source": "openai.com",
         "category": "Market",
         "url": "https://openai.com/index/cooley-gopublic"
+      },
+      {
+        "title": "New experts join Google’s AI & Economy team",
+        "source": "blog.google",
+        "category": "Products",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/expanding-ai-economy-research-bench/"
       }
     ]
   }
