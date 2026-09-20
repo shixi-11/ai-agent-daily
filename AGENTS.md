@@ -151,3 +151,7 @@ YYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/
 ## 日报模型与同步校验
 
 日报主任务和内容恢复必须从 `automation/task-contract.json.runtimeProfile` 读取 Astra low 配置，并在调用模型前执行 `scripts/verify-runtime-profile.cjs`，校验宿主允许列表。不得在 shell 中另写模型常量。迁移或同步后必须执行该检查；Telegram 通道可连接不代表日报模型任务可运行。
+
+## 2026-09-21 逐期收藏合同
+
+首页为汇总，每一期中英文都保留独立日期地址；latest只是可移动入口。日常发布只新增一期，禁止删除或覆盖已发布源稿、把日期链接替换为latest、只保留最新一期归档。过去期刊保持现状，不自动补期或批量重写。每台机器发布前必须同步origin/main并执行scripts/publish.cjs的归档保护门禁；禁止force-push。历史更正需要另行明确授权与审查，不得在日常任务里绕过保护。持续改进执行docs/IMPROVEMENT_PLAN.md，不增加第二套正文发布者。

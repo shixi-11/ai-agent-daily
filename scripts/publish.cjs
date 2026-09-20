@@ -20,8 +20,14 @@ function run(command, commandArgs, options = {}) {
   return result;
 }
 
+// Fetch the shared authority first: a stale machine must not publish over it.
+run('git', ['fetch', 'origin', 'main', '--quiet']);
+if (run('git', ['merge-base', '--is-ancestor', 'origin/main', 'HEAD'], {allowFail:true}).status !== 0) {
+  throw new Error('Local checkout is behind or diverges from origin/main. Synchronize before publishing; never force-push a daily issue.');
+}
 run(process.execPath, [path.join(__dirname, 'sync-reports.cjs'), '--site-root', siteRoot], { stdio: 'inherit' });
 run(process.execPath, [path.join(__dirname, 'verify-site.cjs'), '--site-root', siteRoot], { stdio: 'inherit' });
+run(process.execPath, [path.join(__dirname, 'verify-archive-history.cjs'), '--base-ref', 'origin/main'], {stdio:'inherit'});
 run(process.execPath, [path.join(__dirname, 'render-check.cjs')], { stdio: 'inherit' });
 
 const gitCheck = run('git', ['rev-parse', '--is-inside-work-tree'], { allowFail: true });

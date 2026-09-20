@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict');
+const {validateHistory}=require('./verify-archive-history.cjs');
+const old={'content/zh/20260920_test.html':'zh old','content/en/20260920.body.html':'en old'};
+const fresh={...old,'content/zh/20260921_test.html':'zh new','content/en/20260921.body.html':'en new'};
+const archive=(en=false,dates=['2026-09-20','2026-09-21'])=>({reports:dates.map(date=>({date,url:`/daily/${en?'en/':''}${date.replaceAll('-','/')}/`}))});
+const check=files=>validateHistory(old,files,archive(),archive(true));
+assert.deepEqual(check(fresh),[]);
+assert.ok(check({...fresh,'content/zh/20260920_test.html':'overwritten'}).length);
+const deleted={...fresh};delete deleted['content/en/20260920.body.html'];assert.ok(check(deleted).length);
+assert.ok(validateHistory(old,fresh,archive(false,['2026-09-21']),archive(true)).length);
+const latestOnly=archive();latestOnly.reports[0].url='/daily/latest/';assert.ok(validateHistory(old,fresh,latestOnly,archive(true)).length);
+assert.ok(validateHistory(old,fresh,{reports:[...archive().reports,archive().reports[0]]},archive(true)).length);
+console.log('Archive preservation: append passes; overwrite, deletion, latest-only and duplicate archives blocked.');
