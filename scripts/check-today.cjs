@@ -1,60 +1,28 @@
 #!/usr/bin/env node
 'use strict';
-
 const fs = require('fs');
 const path = require('path');
+const { createHash } = require('crypto');
 const { parseArgs } = require('./lib/io.cjs');
 const { shanghaiParts, shanghaiDateIso } = require('./lib/locales.cjs');
-
 const args = parseArgs();
-const siteRoot = path.resolve(args['site-root'] || path.resolve(__dirname, '..'));
-const deadlineHour = Number(args['deadline-hour'] || 22);
+const root = path.resolve(args['site-root'] || path.resolve(__dirname, '..'));
 const now = shanghaiParts();
 const today = shanghaiDateIso();
-const yesterdayDate = new Date(Date.now() - 24 * 60 * 60 * 1000);
-const yesterday = shanghaiDateIso(yesterdayDate);
-const required = now.hour >= deadlineHour ? today : yesterday;
-const compact = required.replace(/-/g, '');
-const sourceFile = path.join(siteRoot, 'content/zh', `${compact}_ALUX_AI智能体情报日报.html`);
-const translationFile = path.join(siteRoot, 'content/en', `${compact}.body.html`);
-const liveFile = path.join(siteRoot, 'public/live/latest.json');
-
-function exists(file) {
-  return fs.existsSync(file) && fs.statSync(file).isFile();
+const required = now.hour >= Number(args['deadline-hour'] || 22)
+  ? today : shanghaiDateIso(new Date(Date.now() - 86400000));
+const manifest = JSON.parse(fs.readFileSync(path.join(root, 'content/en/translation-manifest.json'), 'utf8'));
+const report = manifest.reports.filter(r => r.date >= required && r.date <= today).sort((a,b) => b.date.localeCompare(a.date))[0];
+function matches(dir, file, hash) {
+  if (!file || !hash) return false;
+  const absolute = path.join(root, 'content', dir, file);
+  return fs.existsSync(absolute) && fs.statSync(absolute).size > 0 &&
+    createHash('sha256').update(fs.readFileSync(absolute)).digest('hex') === hash;
 }
-
-function liveDate() {
-  if (!exists(liveFile)) return '';
-  try {
-    return JSON.parse(fs.readFileSync(liveFile, 'utf8')).dateIso || '';
-  } catch {
-    return '';
-  }
+if (!report || report.status !== 'reviewed' ||
+    !matches('zh', report.sourceFile, report.sourceSha256) ||
+    !matches('en', report.translationFile, report.translationSha256)) {
+  console.error(`Missing verified bilingual issue: required=${required}, today=${today}`);
+  process.exit(1);
 }
-
-const live = liveDate();
-const liveOk = live === today || live === required;
-const editorialOk = exists(sourceFile) && exists(translationFile);
-
-console.log(`watchdog shanghai=${today} ${String(now.hour).padStart(2, '0')}:${String(now.minute).padStart(2, '0')} required=${required} live=${live || 'missing'}`);
-
-if (liveOk) {
-  console.log(`live radar present: ${live}`);
-  if (!editorialOk) {
-    console.log(`editorial archive still waiting for ${required}; automatic page is the live radar.`);
-  } else {
-    console.log(`issue present: ${path.basename(sourceFile)}`);
-  }
-  process.exit(0);
-}
-
-if (editorialOk) {
-  console.log(`issue present: ${path.basename(sourceFile)}`);
-  process.exit(0);
-}
-
-console.error(`missing live radar and editorial issue for ${required}`);
-console.error(`zh: ${exists(sourceFile) ? 'ok' : 'missing'}`);
-console.error(`en: ${exists(translationFile) ? 'ok' : 'missing'}`);
-console.error(`live: ${live || 'missing'}`);
-process.exit(1);
+console.log(`Verified bilingual issue: ${report.date}; required=${required}`);

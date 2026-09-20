@@ -22,19 +22,11 @@ function hreflangLinks(baseUrl, pathsByLocale, availableIds, xDefaultId = 'zh') 
 }
 
 function languageMoreMarkup(locale, pathsByLocale, availableIds, ui) {
-  const order = ['zh', 'zh-Hant', 'en', 'ja', 'ko', 'es', 'fr', 'de', 'ar'];
-  const ordered = order.map((id) => locales.find((item) => item.id === id)).filter(Boolean);
-  const links = ordered.map((item) => {
-    const href = pathsByLocale[item.id] || localeUrl(item, '/daily', '/');
+  const links = locales.filter(item => !availableIds || availableIds.has(item.id)).map(item => {
     const current = locale.id === item.id ? ' aria-current="page"' : '';
-    return `      <a href="${encodeHtml(href)}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}>${encodeHtml(item.nativeLabel)}</a>`;
-  }).join('\n');
-  return `<details class="language-switch language-more">
-      <summary aria-label="${encodeHtml(ui.languageLabel)} · ${encodeHtml(locale.nativeLabel)}" aria-current="true"><span class="language-icon" aria-hidden="true">文A</span><span class="language-mark">${encodeHtml(locale.nativeLabel)}</span><span class="language-caret" aria-hidden="true"></span></summary>
-      <div class="language-more-menu">
-${links}
-      </div>
-    </details>`;
+    return `<a href="${encodeHtml(pathsByLocale[item.id])}" lang="${item.hreflang}" hreflang="${item.hreflang}"${current}>${encodeHtml(item.shortLabel)}</a>`;
+  }).join('');
+  return `<span class="language-switch" aria-label="${encodeHtml(ui.languageLabel)}">${links}</span>`;
 }
 
 function languageMoreForHome(locale, basePath) {

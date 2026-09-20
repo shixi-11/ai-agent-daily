@@ -25,7 +25,7 @@ node scripts/verify-site.cjs
 node scripts/render-check.cjs
 ```
 
-`scripts/*.ps1` 是调用上述 Node 脚本的薄封装。GitHub Actions 的 `collect.yml` 只采集公开信号，不写正文、不提交；`watchdog.yml` 在中国标准时间 22:00 之后检查当天中英母稿是否入库。内容权威源仍是 `content/zh` 与 `content/en`；可选语种正文放在 `content/{locale}/YYYYMMDD.body.html`，并由 `content/i18n-manifest.json` 标记 `reviewed` 后才生成日期页。9 个语种首页始终生成。顶栏 `.language-switch` 只保留 中/EN，其它语种必须放在旁边的 `.language-more`，以免破坏 `render-check.cjs`。
+`scripts/*.ps1` 是调用上述 Node 脚本的薄封装。站点只发布简体中文与经过独立审校的英文，顶栏固定为 中 / EN。`content/zh` 与 `content/en` 是唯一内容权威源；首页、最新页、归档和通知必须指向同一正式期数。GitHub Actions 的 `collect.yml` 只采集公开信号，不写正文、不提交；`watchdog.yml` 检查正式中英稿、审校状态及哈希。不得恢复机器翻译自动提交或让自动雷达替代正式日报。OpenClaw 保留一套主任务、验收和恢复任务，不另建重复调度。
 
 
 负责在其他电脑生成并提交日报的专用 Agent，必须额外阅读 `docs/DOMAIN_ROUTING.md`。DNS 已完成配置，日常发布不得修改 DNS；它只需按合同生成中英内容、重建站点、推送 `main`，再同时验证新主地址与旧域名兼容入口。

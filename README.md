@@ -1,70 +1,35 @@
-# AI Agent Daily
+# Agent Daily · AI智能体日报
 
-代码仓库：[shixi-11/ai-agent-daily](https://github.com/shixi-11/ai-agent-daily)。旧仓库名 `alux-ai-agent-daily` 由 GitHub 保留跳转；已有克隆建议更新 origin。Vercel 源站地址和本地工作目录属于现有部署/自动化的兼容名称，不随本次仓库改名变更。
+由 [光之十一](https://shixilin.com/) 出品，关注重要新模型、AI Agent、开源项目，以及好玩、实用的新发现。
 
-## 2026-09-06 个人域名展示合同（优先于下方历史说明）
+[中文首页](https://shixilin.com/ai/agent-daily) · [English](https://shixilin.com/ai/agent-daily/en/) · [最新一期](https://shixilin.com/ai/agent-daily/latest/)
 
-对外主入口为 https://shixilin.com/ai/agent-daily ，浏览器必须停留在此域名；英文、日期页和资源使用该路径的对应子路径。两个旧域名保留，以单次 308 跳到个人域名对应页面，查询参数保留。收藏名称与浏览器标题去掉 ALUX，汇总首页为 Agent Daily · AI智能体日报。
+## 内容与语言
 
-日报仍由本仓库发布，稳定源站为 https://alux-ai-agent-daily.vercel.app 。个人站服务端读取源站，并统一转换站内路径、canonical、hreflang、sitemap 和收藏标题。源站默认域名不得重定向到个人站，以免循环。为保留历史哈希与现有生成合同，本仓库原始构建产物继续使用 /daily 和旧域名；它们属于内部兼容格式，个人域名实际响应使用新地址。部署门禁比较经过 scripts/daily-public-presentation.cjs 确定性转换后的完整正文哈希，不能跳过内容一致性验证。
+每期保留简体中文与美式英语两个版本，共享事实、数字、结构和来源。英文经过初译、独立审校及润色。顶栏使用 **中 / EN**，切换到同一期。
 
-维护转换规则时同步个人站 lib/agent-daily.js 和本仓库 scripts/daily-public-presentation.cjs。普通每日发布不需要改 DNS，也不需要重新部署个人站；源站内容更新后个人站缓存通常 60 秒刷新。现有任务的兼容链接可继续使用且会自动进入个人域名；历史内容和已发通知不批量重写。
+首页、最新页和归档统一来自正式稿件，不再由自动雷达覆盖，也不自动发布未经审校的机器翻译。每期日期链接长期保留。
 
+## 仓库结构
 
-# ALUX AI智能体情报日报
+- `content/zh/`：中文正式母稿。
+- `content/en/`：英文母稿与审校哈希清单。
+- `templates/`、`assets/`：版式与共享样式。
+- `scripts/`：构建、内容验收、响应式检查及发布。
+- `public/`：脚本生成的部署成品，不直接编辑。
 
-### ALUX AI Agent Intelligence Daily
+```bash
+node scripts/sync-reports.cjs
+node scripts/verify-site.cjs
+node scripts/render-check.cjs
+```
 
-追踪全球 AI 新功能、AI Agent、开源项目与技术市场变化，<br>
-从大厂更新到小众 GitHub 实验，挑出真正好玩、有用、值得看的东西。
+日常发布使用 `node scripts/publish.cjs`。维护变更与每日内容分开提交；只在内容、独立审校、渲染及公开仓库边界检查通过后推送。推送后还须验证正式域名，再发送通知。
 
-[中文首页](https://ai.alux.network/daily/) · [English](https://ai.alux.network/daily/en/) · [中文最新一期](https://ai.alux.network/daily/latest/) · [English Latest](https://ai.alux.network/daily/en/latest/) · [ALUX](https://alux.network/)
+## 自动化与域名
 
-</div>
+OpenClaw 负责正式日报，使用统一的 Astra low 配置，以及一套主任务、验收和恢复调度。GitHub Actions 只负责公开信号采集和正式日报完整性监测，不能另写一份竞争首页的内容。
 
-## 关于本刊
+主入口为 `https://shixilin.com/ai/agent-daily`。旧域名及历史地址保留并永久跳转到对应个人域名页面。稳定 Vercel 源站与内部 `/daily/` 路径用于部署兼容，不改 DNS。
 
-本仓库是 **ALUX AI智能体情报日报** 的官方发布与长期归档仓库。本刊面向全球 AI、AI Agent、开发者、产品、基础设施、技术与商业读者，关注新功能、开源、Skills、软硬件、系统架构和全球市场的真正变化。
-
-每一期均以公开资料、官方发布与可核验来源为基础，提炼值得长期追踪的行业信号，并保留原始来源链接。中文版与英文版共享相同的事实、数字、结构、来源和证据边界；英文不是浏览器即时机翻，而是经过分析、初译、审校与润色的 en-US 刊物级版本。
-
-## 核心关注
-
-- **新功能与新产品**：模型、平台、AI Agent 产品和真正改变用法的更新。
-- **GitHub 与 Skills**：开源项目、MCP、工具库、Skills 与有意思的小实验。
-- **软件、硬件与架构**：训练、推理、安全、运行时、芯片和系统设计。
-- **全球市场**：商业模式、生态和产业结构变化。融资只在能说明实质变化时入选，不设独立窗口。
-- **RISC 方法**：保留生产级 Agent 的机体、大脑、免疫与社会四系统说明，不对每条新闻强制打分。
-
-## 阅读入口
-
-| 内容 | 中文 | English |
-| --- | --- | --- |
-| 首页与完整归档 | [中文站](https://ai.alux.network/daily/) | [English Site](https://ai.alux.network/daily/en/) |
-| 始终指向最新一期 | [中文最新一期](https://ai.alux.network/daily/latest/) | [English Latest](https://ai.alux.network/daily/en/latest/) |
-| 固定日期地址 | `/daily/YYYY/MM/DD/` | `/daily/en/YYYY/MM/DD/` |
-| 机器可读归档 | [中文归档数据](https://ai.alux.network/daily/archive.json) | [English Archive Data](https://ai.alux.network/daily/en/archive.json) |
-
-顶栏中/EN 之外，首页还提供繁中、日、韩、西、法、德、阿 7 个语种入口。可选语种日期页只在该期已审译文入库后生成，不回写历史 72 期。Linux 重建站点：`node scripts/sync-reports.cjs && node scripts/verify-site.cjs`。
-
-每期固定日期地址长期保留，不被后续日报覆盖。首页可以直接查看最新一期，也可以按日期查阅全部历史日报。
-
-## 编辑与出版原则
-
-- **来源可核验**：优先采用官方发布、官方技术资料、论文与可靠商业来源，并在正文中保留原始链接。
-- **事实有边界**：明确区分已经交付的行业能力、可借鉴的方法以及 ALUX 尚待建设的部分。
-- **中英内容一致**：两种语言共享相同的事实、数字、结构与来源，不因翻译扩大或缩减结论。
-- **英文刊物级精译**：英文版面向全球 AI Agent、基础设施、技术与商业读者，使用专业、简洁、准确、权威的美式英语。
-- **历史长期可查**：每期保留独立日期地址，方便引用、回溯与核验。
-
-## 公开仓库
-
-本仓库持续保存中英文日报内容、站点文件与历史发布记录，便于长期归档、版本追踪和公开查阅。正式对外主地址为 [ai.alux.network/daily](https://ai.alux.network/daily/)；原地址 [ai-agent-daily.alux.network](https://ai-agent-daily.alux.network/) 作为永久兼容入口保留，既有收藏、历史链接与二维码仍可继续使用。
-
-## 维护与自动化
-
-如需接管日报生成、翻译、构建或自动发布，请从 [`AGENTS.md`](./AGENTS.md) 开始；自动化任务接管与升级见 [`AUTOMATION.md`](./AUTOMATION.md)，完整运维说明见 [`docs/OPERATIONS.md`](./docs/OPERATIONS.md)。
-
-## 内容说明
-
-本刊内容用于行业研究与技术观察。公开来源与外部链接保留在各期正文中，相关商标与名称归其各自权利人所有。
+维护前阅读 [AGENTS.md](AGENTS.md)、[自动化合同](AUTOMATION.md)、[运维说明](docs/OPERATIONS.md) 和 [域名路由合同](docs/DOMAIN_ROUTING.md)。来源证据、运行日志、发送账本与凭据不进入公开仓库。

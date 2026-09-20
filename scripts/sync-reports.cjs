@@ -41,43 +41,6 @@ const {
   issuePaths,
 } = require('./lib/chrome.cjs');
 
-function loadLiveBriefing() {
-  const livePath = path.join(publicRoot, 'live/latest.json');
-  if (!fs.existsSync(livePath)) return null;
-  try {
-    return JSON.parse(readUtf8(livePath));
-  } catch {
-    return null;
-  }
-}
-
-function liveArchiveItem(briefing) {
-  const date = utcDate(briefing.dateIso);
-  const zhTitle = `AI Agent${briefing.hero.subjectZh}`;
-  const enTitle = `AI Agent ${briefing.hero.subjectEn}`;
-  return {
-    dateIso: briefing.dateIso,
-    date,
-    title: zhTitle,
-    titleEn: enTitle,
-    titleMain: 'AI Agent',
-    titleSubject: briefing.hero.subjectZh,
-    lead: briefing.hero.leadZh,
-    leadEn: briefing.hero.leadEn,
-    url: `${basePath}/live/`,
-    englishUrl: `${basePath}/live/en/`,
-    isLive: true,
-    optionals: Object.fromEntries(optionalLocales.map((locale) => {
-      const chineseLike = locale.id === 'zh-Hant';
-      return [locale.id, {
-        url: chineseLike ? `${basePath}/live/` : `${basePath}/live/en/`,
-        displayTitle: chineseLike ? zhTitle : enTitle,
-        lead: chineseLike ? briefing.hero.leadZh : briefing.hero.leadEn,
-      }];
-    })),
-  };
-}
-
 const args = parseArgs();
 const siteRoot = path.resolve(args['site-root'] || path.resolve(__dirname, '..'));
 const sourceRoot = path.resolve(args['source-root'] || path.join(siteRoot, 'content/zh'));
@@ -85,6 +48,10 @@ const translationRoot = path.resolve(args['translation-root'] || path.join(siteR
 const baseUrl = String(args['base-url'] || 'https://ai.alux.network').replace(/\/$/, '');
 const basePath = `/${String(args['base-path'] || '/daily').replace(/^\/|\/$/g, '')}`;
 const publicRoot = path.join(siteRoot, 'public');
+// Retire generated machine translations and the competing live feed.
+for (const retired of ['zh-Hant', 'ja', 'ko', 'es', 'fr', 'de', 'ar', 'live']) {
+  fs.rmSync(path.join(publicRoot, retired), { recursive: true, force: true });
+}
 const templateRoot = path.join(siteRoot, 'templates');
 const assetRoot = path.join(siteRoot, 'assets');
 const manifestPath = path.join(translationRoot, 'translation-manifest.json');
@@ -99,7 +66,6 @@ for (const directory of [sourceRoot, templateRoot, assetRoot, translationRoot]) 
 for (const file of [
   path.join(templateRoot, 'index.template.html'),
   path.join(templateRoot, 'index.en.template.html'),
-  path.join(templateRoot, 'index.i18n.template.html'),
   path.join(templateRoot, '404.template.html'),
   path.join(assetRoot, 'report-site.css'),
   manifestPath,
@@ -296,10 +262,9 @@ for (let index = 0; index < reports.length; index += 1) {
 
 const reportsDescending = [...reports].sort((a, b) => b.dateIso.localeCompare(a.dateIso));
 const latest = reportsDescending[0];
-const liveBriefing = loadLiveBriefing();
-const liveItem = liveBriefing && liveBriefing.dateIso > latest.dateIso ? liveArchiveItem(liveBriefing) : null;
-const archiveItems = liveItem ? [liveItem, ...reportsDescending] : reportsDescending;
-const featured = liveItem || latest;
+// Only reviewed formal issues may be featured.
+const archiveItems = reportsDescending;
+const featured = latest;
 const earliest = reports[0];
 const generatedAtRaw = reportsDescending
   .map((report) => ({ at: report.reviewedAtUtc.getTime(), raw: report.reviewedAt }))
@@ -323,7 +288,7 @@ for (const asset of ['agent-daily-social-v1.png', 'report-site.css', 'alux-mark.
   copyDirFile(path.join(assetRoot, asset), path.join(publicAssetRoot, asset));
 }
 
-function archiveMarkup(items, locale, latestDateIso, liveDateIso = '') {
+function archiveMarkup(items, locale, latestDateIso) {
   const groups = new Map();
   for (const report of items) {
     const key = report.dateIso.slice(0, 7);
@@ -343,13 +308,9 @@ function archiveMarkup(items, locale, latestDateIso, liveDateIso = '') {
     lines.push('  </div>');
     lines.push('  <div class="report-list">');
     for (const report of group) {
-      const isLive = Boolean(report.isLive);
-      const isLatest = isLive || (!liveDateIso && report.dateIso === latestDateIso);
-      const latestClass = `${isLatest ? ' is-latest' : ''}${isLive ? ' is-live' : ''}`;
-      const liveAttr = isLive ? ' data-live-row' : '';
-      const pill = isLive
-        ? `<span class="latest-pill">${encodeHtml(locale.ui.todayPill || locale.ui.latestPill)}</span>`
-        : (isLatest ? `<span class="latest-pill">${encodeHtml(locale.ui.latestPill)}</span>` : '');
+      const isLatest = report.dateIso === latestDateIso;
+      const latestClass = isLatest ? ' is-latest' : '';
+      const pill = isLatest ? `<span class="latest-pill">${encodeHtml(locale.ui.latestPill)}</span>` : '';
       const translated = locale.id === 'zh' || locale.id === 'en' || Boolean(report.optionals[locale.id]);
       const url = locale.id === 'zh'
         ? report.url
@@ -373,7 +334,7 @@ function archiveMarkup(items, locale, latestDateIso, liveDateIso = '') {
             ? report.optionals[locale.id].lead
             : report.leadEn;
       const monthShort = formatDate(report.date, locale, 'monthShort');
-      lines.push(`    <a class="report-row${latestClass}" href="${encodeHtml(url)}"${liveAttr}>`);
+      lines.push(`    <a class="report-row${latestClass}" href="${encodeHtml(url)}">`);
       lines.push(`      <time datetime="${report.dateIso}"><b>${String(report.date.getUTCDate()).padStart(2, '0')}</b><span>${encodeHtml(monthShort)}</span></time>`);
       lines.push(`      <div class="report-copy">${pill}<strong>${encodeHtml(title)}</strong><p>${encodeHtml(lead)}</p></div>`);
       lines.push('      <span class="report-arrow" aria-hidden="true">↗</span>');
@@ -435,8 +396,8 @@ ${entries}
 `;
 }
 
-const chineseArchiveMarkup = archiveMarkup(archiveItems, localesById.zh, latest.dateIso, liveItem ? liveItem.dateIso : '');
-const englishArchiveMarkup = archiveMarkup(archiveItems, localesById.en, latest.dateIso, liveItem ? liveItem.dateIso : '');
+const chineseArchiveMarkup = archiveMarkup(archiveItems, localesById.zh, latest.dateIso);
+const englishArchiveMarkup = archiveMarkup(archiveItems, localesById.en, latest.dateIso);
 const chineseDateRange = formatArchiveRange(earliest.date, latest.date, localesById.zh);
 const englishDateRange = formatArchiveRange(earliest.date, latest.date, localesById.en);
 const socialHead = socialPreviewHead(baseUrl, basePath);
@@ -454,8 +415,8 @@ const chineseIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.templa
   '{{LATEST_TITLE_MAIN}}': encodeHtml(featured.titleMain || 'AI Agent'),
   '{{LATEST_TITLE_SUBJECT}}': encodeHtml(featured.titleSubject || featured.title),
   '{{LATEST_LEAD}}': encodeHtml(featured.lead),
-  '{{LATEST_KICKER}}': encodeHtml(liveItem ? localesById.zh.ui.todayKicker : localesById.zh.ui.latestLabel),
-  '{{READ_LATEST}}': encodeHtml(liveItem ? localesById.zh.ui.readToday : localesById.zh.ui.readLatest),
+  '{{LATEST_KICKER}}': encodeHtml(localesById.zh.ui.latestLabel),
+  '{{READ_LATEST}}': encodeHtml(localesById.zh.ui.readLatest),
   '{{REPORT_COUNT}}': String(reports.length),
   '{{DATE_RANGE}}': encodeHtml(chineseDateRange),
   '{{MONTH_COUNT}}': String(monthCount),
@@ -475,8 +436,8 @@ const englishIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.en.tem
   '{{LATEST_URL}}': featured.englishUrl,
   '{{LATEST_TITLE}}': encodeHtml(featured.titleEn),
   '{{LATEST_LEAD}}': encodeHtml(featured.leadEn),
-  '{{LATEST_KICKER}}': encodeHtml(liveItem ? localesById.en.ui.todayKicker : 'Latest Report'),
-  '{{READ_LATEST}}': encodeHtml(liveItem ? localesById.en.ui.readToday : localesById.en.ui.readLatest),
+  '{{LATEST_KICKER}}': encodeHtml('Latest Report'),
+  '{{READ_LATEST}}': encodeHtml(localesById.en.ui.readLatest),
   '{{REPORT_COUNT}}': String(reports.length),
   '{{DATE_RANGE}}': encodeHtml(englishDateRange),
   '{{MONTH_COUNT}}': String(monthCount),
@@ -484,118 +445,6 @@ const englishIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.en.tem
   '{{GENERATED_AT}}': generatedAtStamp,
 });
 writeUtf8(path.join(publicRoot, 'en/index.html'), englishIndex);
-
-const i18nTemplate = readUtf8(path.join(templateRoot, 'index.i18n.template.html'));
-for (const locale of optionalLocales) {
-  const ui = locale.ui;
-  const translatedLatest = reportsDescending.find((report) => report.optionals[locale.id]);
-  const fallback = fallbackLocale(locale);
-  const fallbackLatestPath = localeUrl(fallback, basePath, '/latest/');
-  const fallbackIssuePath = fallback.id === 'zh' ? latest.url : latest.englishUrl;
-  const latestTitle = translatedLatest ? translatedLatest.optionals[locale.id].displayTitle : latest.titleEn;
-  const latestLead = translatedLatest ? translatedLatest.optionals[locale.id].lead : latest.leadEn;
-  const latestUrl = translatedLatest ? translatedLatest.optionals[locale.id].url : fallbackIssuePath;
-  const latestHref = translatedLatest ? localeUrl(locale, basePath, '/latest/') : fallbackLatestPath;
-  const untranslatedNote = translatedLatest
-    ? ''
-    : `<p class="intro untranslated-note">${encodeHtml(ui.untranslated)}</p>`;
-  const intro2 = ui.intro2 ? `<p class="intro">${encodeHtml(ui.intro2)}</p>` : '';
-  const dirAttr = locale.dir === 'rtl' ? ' dir="rtl"' : '';
-  const html = fillTemplate(i18nTemplate, {
-    '{{HTML_LANG}}': locale.htmlLang,
-    '{{DIR_ATTR}}': dirAttr,
-    '{{OG_LOCALE}}': locale.ogLocale,
-    '{{BRAND}}': encodeHtml(ui.brand),
-    '{{BRAND_TAGLINE}}': encodeHtml(ui.brandTagline),
-    '{{HOME_TITLE_HTML}}': ui.homeTitleHtml,
-    '{{HOME_SUBTITLE}}': encodeHtml(ui.homeSubtitle),
-    '{{INTRO1}}': encodeHtml(ui.intro1),
-    '{{INTRO2_BLOCK}}': intro2,
-    '{{UNTRANSLATED_BLOCK}}': untranslatedNote,
-    '{{LATEST_LABEL}}': encodeHtml(ui.latestLabel),
-    '{{LATEST_KICKER}}': encodeHtml(liveItem ? ui.todayKicker : ui.latestLabel),
-    '{{LIVE_LABEL}}': encodeHtml(ui.liveLabel),
-    '{{LIVE_KICKER}}': encodeHtml(ui.liveKicker),
-    '{{LIVE_TITLE}}': encodeHtml(ui.liveTitle),
-    '{{LIVE_BLURB}}': encodeHtml(ui.liveBlurb),
-    '{{LIVE_OPEN}}': encodeHtml(ui.liveOpen),
-    '{{LIVE_HREF}}': locale.id === 'en' ? `${basePath}/live/en/` : `${basePath}/live/`,
-    '{{ARCHIVE_LABEL}}': encodeHtml(ui.archiveLabel),
-    '{{LANGUAGE_LABEL}}': encodeHtml(ui.languageLabel),
-    '{{OWNER_NAV}}': encodeHtml(ui.ownerNav),
-    '{{FACT_ISSUES}}': encodeHtml(ui.factIssues),
-    '{{FACT_MONTHS}}': encodeHtml(ui.factMonths),
-    '{{FACT_RANGE}}': encodeHtml(ui.factRange),
-    '{{READ_LATEST}}': encodeHtml(liveItem ? ui.readToday : ui.readLatest),
-    '{{LATEST_PERMALINK}}': encodeHtml(ui.latestPermalink),
-    '{{ARCHIVE_TITLE}}': encodeHtml(ui.archiveTitle),
-    '{{ARCHIVE_BLURB}}': encodeHtml(ui.archiveBlurb),
-    '{{ARCHIVE_NOTE}}': encodeHtml(ui.archiveNote),
-    '{{LAST_UPDATED}}': encodeHtml(ui.lastUpdated),
-    '{{ARCHIVE_MANIFEST}}': encodeHtml(ui.archiveManifest),
-    '{{SUPPORT_LABEL}}': encodeHtml(ui.supportLabel),
-    '{{SUPPORT_URL}}': encodeHtml(ui.supportUrl),
-    '{{SOCIAL_TITLE}}': encodeHtml(ui.socialTitle),
-    '{{SOCIAL_DESCRIPTION}}': encodeHtml(ui.socialDescription),
-    '{{HOME_HREF}}': localeUrl(locale, basePath, '/'),
-    '{{LATEST_HREF}}': latestHref,
-    '{{ARCHIVE_JSON_HREF}}': localeUrl(locale, basePath, '/').replace(/\/$/, '/archive.json'),
-    '{{HREFLANG_LINKS}}': hreflangHome,
-    '{{LANGUAGE_MORE}}': languageMoreForHome(locale, basePath),
-    '{{SOCIAL_PREVIEW_HEAD}}': socialHead,
-    '{{BASE_URL}}': baseUrl,
-    '{{BASE_PATH}}': basePath,
-    '{{CANONICAL}}': `${baseUrl}${localeUrl(locale, basePath, '/')}`,
-    '{{LATEST_DATE_ISO}}': featured.dateIso,
-    '{{LATEST_DATE_LOCAL}}': encodeHtml(formatDate(featured.date, locale)),
-    '{{LATEST_URL}}': liveItem
-      ? (locale.id === 'zh-Hant' ? liveItem.url : liveItem.englishUrl)
-      : latestUrl,
-    '{{LATEST_TITLE}}': encodeHtml(liveItem
-      ? (locale.id === 'zh-Hant' ? liveItem.title : liveItem.titleEn)
-      : latestTitle),
-    '{{LATEST_LEAD}}': encodeHtml(liveItem
-      ? (locale.id === 'zh-Hant' ? liveItem.lead : liveItem.leadEn)
-      : latestLead),
-    '{{REPORT_COUNT}}': String(reports.length),
-    '{{DATE_RANGE}}': encodeHtml(formatArchiveRange(earliest.date, latest.date, locale)),
-    '{{MONTH_COUNT}}': String(monthCount),
-    '{{ARCHIVE_GROUPS}}': archiveMarkup(archiveItems, locale, latest.dateIso, liveItem ? liveItem.dateIso : ''),
-    '{{GENERATED_AT}}': generatedAtStamp,
-  });
-  writeUtf8(path.join(publicRoot, localePublicFile(locale, 'index.html')), html);
-
-  const payload = {
-    schemaVersion: 3,
-    locale: locale.bcp47,
-    generatedAt: generatedAtRaw.raw,
-    baseUrl,
-    publicationPath: locale.pathPrefix ? `${basePath}/${locale.pathPrefix}` : basePath,
-    publicationUrl: `${baseUrl}${localeUrl(locale, basePath, '/')}`,
-    latest: {
-      date: latest.dateIso,
-      url: latestUrl,
-      latestUrl: translatedLatest ? localeUrl(locale, basePath, '/latest/') : fallbackLatestPath,
-      alternateUrl: latest.url,
-    },
-    reports: reportsDescending.map((report) => {
-      const translated = Boolean(report.optionals[locale.id]);
-      return {
-        date: report.dateIso,
-        title: translated ? report.optionals[locale.id].displayTitle : report.titleEn,
-        lead: translated ? report.optionals[locale.id].lead : report.leadEn,
-        url: translated
-          ? report.optionals[locale.id].url
-          : (fallbackLocale(locale).id === 'zh' ? report.url : report.englishUrl),
-        alternateUrl: report.url,
-        publicPath: translated ? report.optionals[locale.id].publicPath : null,
-        translated,
-      };
-    }),
-  };
-  writeUtf8(path.join(publicRoot, localePublicFile(locale, 'archive.json')), `${JSON.stringify(payload, null, 2)}\n`);
-  writeUtf8(path.join(publicRoot, localePublicFile(locale, 'feed.xml')), rssXml(locale, reportsDescending));
-}
 
 const chineseArchivePayload = {
   schemaVersion: 3,
@@ -690,18 +539,8 @@ writeUtf8(path.join(publicRoot, 'robots.txt'), `User-agent: *\nAllow: ${basePath
 const notFoundTemplate = readUtf8(path.join(templateRoot, '404.template.html')).replaceAll('{{BASE_PATH}}', basePath);
 writeUtf8(path.join(publicRoot, '404.html'), notFoundTemplate);
 
-try {
-  const { injectAllHomepages } = require('./lib/live-render.cjs');
-  const liveLatest = path.join(publicRoot, 'live/latest.json');
-  if (fs.existsSync(liveLatest)) {
-    injectAllHomepages(publicRoot, JSON.parse(fs.readFileSync(liveLatest, 'utf8')), basePath);
-  }
-} catch (error) {
-  console.warn(`live teaser inject skipped: ${error.message}`);
-}
-
 const optionalCount = reports.reduce((sum, report) => sum + Object.keys(report.optionals).length, 0);
 console.log(`已同步 ${reports.length} 期中英双语日报：${earliest.dateIso} 至 ${latest.dateIso}`);
-console.log(`可选语种已发布日期页 ${optionalCount} 篇；9 个语种首页已生成。`);
+console.log(`可选语种已发布日期页 ${optionalCount} 篇；中英首页已生成。`);
 console.log(`最新固定归档：${latest.url} / ${latest.englishUrl}`);
 console.log(`最新入口：${basePath}/latest/ / ${basePath}/en/latest/`);

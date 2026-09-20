@@ -6,13 +6,18 @@ const path = require('path');
 const { spawnSync } = require('child_process');
 const { readUtf8, sha256File, encodeHtml, walkFiles, parseArgs } = require('./lib/io.cjs');
 const { locales, localesById, optionalLocales, localeUrl, formatArchiveRange, shanghaiStamp, utcDate } = require('./lib/locales.cjs');
-const { convertToUtcDateTime, assertTranslationBody, stripLanguageMore } = require('./lib/html.cjs');
+const { convertToUtcDateTime, assertTranslationBody } = require('./lib/html.cjs');
 
 const args = parseArgs();
 const siteRoot = path.resolve(args['site-root'] || path.resolve(__dirname, '..'));
 const chineseRoot = path.join(siteRoot, 'content/zh');
 const englishRoot = path.join(siteRoot, 'content/en');
 const publicRoot = path.join(siteRoot, 'public');
+if (locales.map(locale => locale.id).join(',') !== 'zh,en') throw new Error('Only reviewed Chinese and English are supported.');
+for (const retired of ['zh-Hant', 'ja', 'ko', 'es', 'fr', 'de', 'ar', 'live']) {
+  if (fs.existsSync(path.join(publicRoot, retired))) throw new Error(`Retired generated content remains: ${retired}`);
+}
+
 const baseUrl = 'https://ai.alux.network';
 const basePath = '/daily';
 const legacyBaseUrl = 'https://ai-agent-daily.alux.network';
@@ -149,22 +154,15 @@ for (const indexCheck of [
   }
 }
 
-if ((chineseIndex.match(/details class="language-switch/g) || []).length !== 1) throw new Error('中文首页 language-switch 数量异常。');
-if ((englishIndex.match(/details class="language-switch/g) || []).length !== 1) throw new Error('英文首页 language-switch 数量异常。');
-if (!chineseIndex.includes('language-more') || !englishIndex.includes('language-more')) {
-  throw new Error('中英首页缺少语言菜单。');
+function assertBilingualSwitch(html, label) {
+  const switches = [...html.matchAll(/<span class="language-switch"[^>]*>([\s\S]*?)<\/span>/g)];
+  if (switches.length !== 1) throw new Error(`${label}: expected one bilingual switch`);
+  const links = switches[0][1].match(/<a\b/g) || [];
+  if (links.length !== 2 || !switches[0][1].includes('>中</a>') || !switches[0][1].includes('>EN</a>')) throw new Error(`${label}: expected 中 / EN`);
+  if ((switches[0][1].match(/aria-current="page"/g) || []).length !== 1) throw new Error(`${label}: current language missing`);
 }
-if (!chineseIndex.includes('language-icon') || !englishIndex.includes('>文A<')) {
-  throw new Error('中英首页语言切换缺少文A标识。');
-}
-for (const name of ['简体中文', '繁體中文', 'English', '日本語', '한국어', 'Español', 'Français', 'Deutsch', 'العربية']) {
-  if (!chineseIndex.includes(`>${name}<`) || !englishIndex.includes(`>${name}<`)) {
-    throw new Error(`中英首页语言菜单缺少 ${name}。`);
-  }
-}
-if (!chineseIndex.includes('>简体中文<') || !englishIndex.includes('>English<')) {
-  throw new Error('中英首页未显示当前语种全称。');
-}
+assertBilingualSwitch(chineseIndex, 'Chinese home');
+assertBilingualSwitch(englishIndex, 'English home');
 
 for (const locale of optionalLocales) {
   const home = readUtf8(path.join(publicRoot, locale.pathPrefix, 'index.html'));
@@ -239,11 +237,10 @@ for (const chineseReport of chineseReports) {
   if (!chineseHtml.includes(`href="${englishReport.url}"`) || !englishHtml.includes(`href="${chineseReport.url}"`)) {
     throw new Error(`${dateIso} 语言切换未指向同一期。`);
   }
-  const englishWithoutSwitcherLabel = stripLanguageMore(englishHtml).replaceAll('>中文<', '>ZH<');
+  const englishWithoutSwitcherLabel = englishHtml.replace(/<span class="language-switch"[^>]*>[\s\S]*?<\/span>/g, '');
   if (/[\u3400-\u9fff]/.test(englishWithoutSwitcherLabel)) throw new Error(`${dateIso} 公开英文页含非切换器中文。`);
-  if (!chineseHtml.includes('language-more') || !englishHtml.includes('language-more') || !chineseHtml.includes('>文A<')) {
-    throw new Error(`${dateIso} 日期页缺少语种下拉。`);
-  }
+  assertBilingualSwitch(chineseHtml, `${dateIso} Chinese`);
+  assertBilingualSwitch(englishHtml, `${dateIso} English`);
 
   if (!chineseIndex.includes(String(chineseReport.url)) || !englishIndex.includes(String(englishReport.url))) {
     throw new Error(`${dateIso} 中英首页缺少日期链接。`);
@@ -324,4 +321,4 @@ if (!(vercelConfig.rewrites || []).some((rule) => rule.source === '/daily/(.*)' 
 }
 
 console.log(`验证通过：${chineseReports.length} 期中英双语日报，${totalBytes} 字节，latest=${latestIssueDate}`);
-console.log(`另有 ${optionalLocales.length} 个可选语种首页；九语下拉切换已核对。`);
+console.log(`另有 ${optionalLocales.length} 个可选语种首页；中 / EN 切换已核对。`);

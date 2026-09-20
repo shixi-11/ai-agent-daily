@@ -1,7 +1,10 @@
 {
   "version": 1,
   "defaultLocale": "zh",
-  "requiredLocales": ["zh", "en"],
+  "requiredLocales": [
+    "zh",
+    "en"
+  ],
   "locales": [
     {
       "id": "zh",
@@ -28,97 +31,6 @@
       "pathPrefix": "en",
       "contentDir": "en",
       "kind": "required-translation"
-    },
-    {
-      "id": "zh-Hant",
-      "bcp47": "zh-Hant",
-      "htmlLang": "zh-Hant",
-      "hreflang": "zh-Hant",
-      "ogLocale": "zh_Hant",
-      "dir": "ltr",
-      "shortLabel": "繁",
-      "nativeLabel": "繁體中文",
-      "pathPrefix": "zh-Hant",
-      "contentDir": "zh-Hant",
-      "kind": "optional-translation"
-    },
-    {
-      "id": "ja",
-      "bcp47": "ja-JP",
-      "htmlLang": "ja",
-      "hreflang": "ja",
-      "ogLocale": "ja_JP",
-      "dir": "ltr",
-      "shortLabel": "JA",
-      "nativeLabel": "日本語",
-      "pathPrefix": "ja",
-      "contentDir": "ja",
-      "kind": "optional-translation"
-    },
-    {
-      "id": "ko",
-      "bcp47": "ko-KR",
-      "htmlLang": "ko",
-      "hreflang": "ko",
-      "ogLocale": "ko_KR",
-      "dir": "ltr",
-      "shortLabel": "KO",
-      "nativeLabel": "한국어",
-      "pathPrefix": "ko",
-      "contentDir": "ko",
-      "kind": "optional-translation"
-    },
-    {
-      "id": "es",
-      "bcp47": "es-ES",
-      "htmlLang": "es",
-      "hreflang": "es",
-      "ogLocale": "es_ES",
-      "dir": "ltr",
-      "shortLabel": "ES",
-      "nativeLabel": "Español",
-      "pathPrefix": "es",
-      "contentDir": "es",
-      "kind": "optional-translation"
-    },
-    {
-      "id": "fr",
-      "bcp47": "fr-FR",
-      "htmlLang": "fr",
-      "hreflang": "fr",
-      "ogLocale": "fr_FR",
-      "dir": "ltr",
-      "shortLabel": "FR",
-      "nativeLabel": "Français",
-      "pathPrefix": "fr",
-      "contentDir": "fr",
-      "kind": "optional-translation"
-    },
-    {
-      "id": "de",
-      "bcp47": "de-DE",
-      "htmlLang": "de",
-      "hreflang": "de",
-      "ogLocale": "de_DE",
-      "dir": "ltr",
-      "shortLabel": "DE",
-      "nativeLabel": "Deutsch",
-      "pathPrefix": "de",
-      "contentDir": "de",
-      "kind": "optional-translation"
-    },
-    {
-      "id": "ar",
-      "bcp47": "ar",
-      "htmlLang": "ar",
-      "hreflang": "ar",
-      "ogLocale": "ar",
-      "dir": "rtl",
-      "shortLabel": "AR",
-      "nativeLabel": "العربية",
-      "pathPrefix": "ar",
-      "contentDir": "ar",
-      "kind": "optional-translation"
     }
   ]
 }

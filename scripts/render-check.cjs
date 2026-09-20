@@ -24,11 +24,7 @@ const archiveEn = JSON.parse(fs.readFileSync(path.join(publicRoot, 'en', 'archiv
 const reportCount = archiveZh.reports.length;
 const latestDate = archiveZh.latest.date;
 const publicationPath = '/daily';
-const liveLatestPath = path.join(publicRoot, 'live/latest.json');
-const liveBriefing = fs.existsSync(liveLatestPath)
-  ? JSON.parse(fs.readFileSync(liveLatestPath, 'utf8'))
-  : null;
-const liveIsFeatured = Boolean(liveBriefing?.dateIso && liveBriefing.dateIso > latestDate);
+
 const fixedLayoutRegressionDates = ['2026-07-15'];
 
 const viewports = [
@@ -48,7 +44,7 @@ const locales = [
     home: `${publicationPath}/`,
     title: 'Agent Daily · AI智能体日报',
     latestHref: archiveZh.latest.url,
-    homeLatestHref: liveIsFeatured ? `${publicationPath}/live/` : archiveZh.latest.url,
+    homeLatestHref: archiveZh.latest.url,
     currentLang: 'zh-CN',
     archive: archiveZh,
   },
@@ -57,7 +53,7 @@ const locales = [
     home: `${publicationPath}/en/`,
     title: 'Agent Daily · AI智能体日报',
     latestHref: archiveEn.latest.url,
-    homeLatestHref: liveIsFeatured ? `${publicationPath}/live/en/` : archiveEn.latest.url,
+    homeLatestHref: archiveEn.latest.url,
     currentLang: 'en',
     archive: archiveEn,
   },
@@ -445,7 +441,7 @@ async function inspectCommon(page, options = {}) {
       dateLines: countLines(document.querySelector('.fact:last-child b')),
       reportCount: document.querySelectorAll('.report-row:not(.is-live)').length,
       navHeight: document.querySelector('.nav-latest, .report-sitenav > a')?.getBoundingClientRect().height || 0,
-      languageHeight: document.querySelector('.language-switch summary')?.getBoundingClientRect().height || 0,
+      languageHeight: document.querySelector('.language-switch a[aria-current="page"]')?.getBoundingClientRect().height || 0,
       brandControlHeight: brandControl?.getBoundingClientRect().height || 0,
       languageSwitchHeight: languageSwitch?.getBoundingClientRect().height || 0,
       heatRowBleeds,
