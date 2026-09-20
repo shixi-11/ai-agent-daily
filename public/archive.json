@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-14T01:48:50.5530140Z",
+  "generatedAt": "2026-09-20T09:30:40.597589+00:00",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-14",
-    "url": "/daily/2026/09/14/",
+    "date": "2026-09-20",
+    "url": "/daily/2026/09/20/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/14/"
+    "alternateUrl": "/daily/en/2026/09/20/"
   },
   "reports": [
+    {
+      "date": "2026-09-20",
+      "title": "AI Agent多模态助手走进现场",
+      "lead": "千问与Gemini扩展音视频助手的工作边界，互动世界带来新玩法，公共数据与专业工具提供具体入口。",
+      "url": "/daily/2026/09/20/",
+      "alternateUrl": "/daily/en/2026/09/20/",
+      "publicPath": "2026/09/20/index.html",
+      "sourceFile": "20260920_ALUX_AI智能体情报日报.html",
+      "sha256": "aa45e281ca332196658db37dc600fac1791e748de667b367378166d1b717c07c",
+      "publicSha256": "bb2eff65215a4d9ed986daee85a967a3e2116a3054c62a813a4fc029b641814d"
+    },
     {
       "date": "2026-09-14",
       "title": "AI Agent从能力展示到可核验的工作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/14/index.html",
       "sourceFile": "20260914_ALUX_AI智能体情报日报.html",
       "sha256": "71b1cefeda3ca3f0bf683927bd00a970b335546b5b30fe3308f0e051de697b73",
-      "publicSha256": "7110138331e8fe8b0f5c816678feef73ee1c4bb88621679f5f72196eed344e3c"
+      "publicSha256": "ad00072f1df80d54d47ca40991a0c5e3b1f8896f308e126dacaac26b72e76adf"
     },
     {
       "date": "2026-09-13",

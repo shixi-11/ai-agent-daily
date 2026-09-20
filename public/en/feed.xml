@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-20 AI Agent — Multimodal Agents Get Practical</title>
+      <link>https://ai.alux.network/daily/en/2026/09/20/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/20/</guid>
+      <pubDate>Sat, 19 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Qwen and Gemini expand audiovisual workflows. Interactive worlds offer new ways to create, while public data and specialist tools provide practical entry points.</description>
+    </item>
+    <item>
       <title>2026-09-14 AI Agent — Capabilities become verifiable work</title>
       <link>https://ai.alux.network/daily/en/2026/09/14/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/14/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/16/</guid>
       <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
       <description>Today’s highest-value changes are not about model parameters. They are about run state: tests, invocation identity, approval rounds, compaction forks, terminal exceptions, and context budgets are gaining verifiable boundaries.</description>
-    </item>
-    <item>
-      <title>2026-08-15 AI Agent — Provenance and capability determine execution</title>
-      <link>https://ai.alux.network/daily/en/2026/08/15/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/15/</guid>
-      <pubDate>Fri, 14 Aug 2026 16:00:00 GMT</pubDate>
-      <description>The consequential shift is not another tool. Browser origin, tool capability, executed evidence, observation completeness, and recovery scope are becoming the criteria that determine whether an agent action may continue.</description>
     </item>
   </channel>
 </rss>

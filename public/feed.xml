@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-20 AI Agent多模态助手走进现场</title>
+      <link>https://ai.alux.network/daily/2026/09/20/</link>
+      <guid>https://ai.alux.network/daily/2026/09/20/</guid>
+      <pubDate>Sat, 19 Sep 2026 16:00:00 GMT</pubDate>
+      <description>千问与Gemini扩展音视频助手的工作边界，互动世界带来新玩法，公共数据与专业工具提供具体入口。</description>
+    </item>
+    <item>
       <title>2026-09-14 AI Agent从能力展示到可核验的工作</title>
       <link>https://ai.alux.network/daily/2026/09/14/</link>
       <guid>https://ai.alux.network/daily/2026/09/14/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/16/</guid>
       <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天的高价值变化不在模型参数，而在运行状态：测试、调用身份、审批轮次、压缩分叉、终止异常与上下文预算开始拥有可核验边界。</description>
-    </item>
-    <item>
-      <title>2026-08-15 AI Agent来源能力决定执行</title>
-      <link>https://ai.alux.network/daily/2026/08/15/</link>
-      <guid>https://ai.alux.network/daily/2026/08/15/</guid>
-      <pubDate>Fri, 14 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天最值得看的不是工具又多了什么，而是浏览器来源、工具能力、执行见证、观察完整性与恢复范围开始决定一次 Agent 动作是否有资格继续。</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-14T01:48:50.5530140Z",
+  "generatedAt": "2026-09-20T09:30:40.597589+00:00",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-14",
-    "url": "/daily/en/2026/09/14/",
+    "date": "2026-09-20",
+    "url": "/daily/en/2026/09/20/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/14/"
+    "alternateUrl": "/daily/2026/09/20/"
   },
   "reports": [
+    {
+      "date": "2026-09-20",
+      "title": "AI Agent — Multimodal Agents Get Practical",
+      "lead": "Qwen and Gemini expand audiovisual workflows. Interactive worlds offer new ways to create, while public data and specialist tools provide practical entry points.",
+      "url": "/daily/en/2026/09/20/",
+      "alternateUrl": "/daily/2026/09/20/",
+      "publicPath": "en/2026/09/20/index.html",
+      "sourceFile": "20260920.body.html",
+      "sha256": "a6c3bec9f6473161f2b45b5b6a4014ff65fdd020754183266883bbbaa28c98e0",
+      "publicSha256": "dbec63f7fc225a85f5593b299c54abb6d9e6aa50a47f192882c7148d9f7596e7"
+    },
     {
       "date": "2026-09-14",
       "title": "AI Agent — Capabilities become verifiable work",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/14/index.html",
       "sourceFile": "20260914.body.html",
       "sha256": "fd24f8fe09dd3c849071fb26757f76af5195a888a204cf37422bef62950fcabc",
-      "publicSha256": "4029bd415cfedbf187e97be3ce612335639c5242b7b37554dc0a3af93ebf8abd"
+      "publicSha256": "e8b992be808bcbcc2ce42e09615b7db232f3b3606edb56e7a6b1d680ede9c75a"
     },
     {
       "date": "2026-09-13",
