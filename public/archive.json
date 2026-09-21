@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-20T09:30:40.597589+00:00",
+  "generatedAt": "2026-09-21T17:08:56+08:00",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-20",
-    "url": "/daily/2026/09/20/",
+    "date": "2026-09-21",
+    "url": "/daily/2026/09/21/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/20/"
+    "alternateUrl": "/daily/en/2026/09/21/"
   },
   "reports": [
+    {
+      "date": "2026-09-21",
+      "title": "AI Agent创作可修改执行可复验",
+      "lead": "透明图层、可编辑乐谱与带引用笔记，让创作有处可改；一致性评测与持续学习，则追问Agent能否反复做对。",
+      "url": "/daily/2026/09/21/",
+      "alternateUrl": "/daily/en/2026/09/21/",
+      "publicPath": "2026/09/21/index.html",
+      "sourceFile": "20260921_ALUX_AI智能体情报日报.html",
+      "sha256": "81e4c062906c732c7e0c53ddd8902d543596a181992dae67b1a2b673aee9895f",
+      "publicSha256": "82b15ebf2c2a54bcf44606a160c8afa2a75cb3d076c3858b731760cd77b41142"
+    },
     {
       "date": "2026-09-20",
       "title": "AI Agent多模态助手走进现场",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/20/index.html",
       "sourceFile": "20260920_ALUX_AI智能体情报日报.html",
       "sha256": "aa45e281ca332196658db37dc600fac1791e748de667b367378166d1b717c07c",
-      "publicSha256": "bb2eff65215a4d9ed986daee85a967a3e2116a3054c62a813a4fc029b641814d"
+      "publicSha256": "a00c6acb50ce30a4f3c91ea8fff64ce1c48d98e84027b2379dbb82c802d02b75"
     },
     {
       "date": "2026-09-14",

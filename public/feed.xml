@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-21 AI Agent创作可修改执行可复验</title>
+      <link>https://ai.alux.network/daily/2026/09/21/</link>
+      <guid>https://ai.alux.network/daily/2026/09/21/</guid>
+      <pubDate>Sun, 20 Sep 2026 16:00:00 GMT</pubDate>
+      <description>透明图层、可编辑乐谱与带引用笔记，让创作有处可改；一致性评测与持续学习，则追问Agent能否反复做对。</description>
+    </item>
+    <item>
       <title>2026-09-20 AI Agent多模态助手走进现场</title>
       <link>https://ai.alux.network/daily/2026/09/20/</link>
       <guid>https://ai.alux.network/daily/2026/09/20/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/17/</guid>
       <pubDate>Sun, 16 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天最值得看的，不是又多了多少功能，而是超时、断网、身份注入、会话分叉、守护进程恢复与工具失败开始被写成可核验边界。</description>
-    </item>
-    <item>
-      <title>2026-08-16 AI Agent运行状态开始可验证</title>
-      <link>https://ai.alux.network/daily/2026/08/16/</link>
-      <guid>https://ai.alux.network/daily/2026/08/16/</guid>
-      <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天的高价值变化不在模型参数，而在运行状态：测试、调用身份、审批轮次、压缩分叉、终止异常与上下文预算开始拥有可核验边界。</description>
     </item>
   </channel>
 </rss>

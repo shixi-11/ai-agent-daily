@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-20T09:30:40.597589+00:00",
+  "generatedAt": "2026-09-21T17:08:56+08:00",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-20",
-    "url": "/daily/en/2026/09/20/",
+    "date": "2026-09-21",
+    "url": "/daily/en/2026/09/21/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/20/"
+    "alternateUrl": "/daily/2026/09/21/"
   },
   "reports": [
+    {
+      "date": "2026-09-21",
+      "title": "AI Agent — Creative Control, Repeatable Results",
+      "lead": "Transparent images, editable scores, and traceable notes make creative work easier to revise. Agent research asks whether improvements survive repeated use.",
+      "url": "/daily/en/2026/09/21/",
+      "alternateUrl": "/daily/2026/09/21/",
+      "publicPath": "en/2026/09/21/index.html",
+      "sourceFile": "20260921.body.html",
+      "sha256": "0b2be85f4f9aba978bc42eccad403bb30af0d22482cc41a3a9b8e3edf15038a8",
+      "publicSha256": "065d06bd399efe9e756fced76c399b637b1be47e23c66c8f6422f7948fe24bf2"
+    },
     {
       "date": "2026-09-20",
       "title": "AI Agent — Multimodal Agents Get Practical",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/20/index.html",
       "sourceFile": "20260920.body.html",
       "sha256": "a6c3bec9f6473161f2b45b5b6a4014ff65fdd020754183266883bbbaa28c98e0",
-      "publicSha256": "dbec63f7fc225a85f5593b299c54abb6d9e6aa50a47f192882c7148d9f7596e7"
+      "publicSha256": "51e730f8689b205b9bec6be3836c762a808a32d089817b260f61b94a3d81c0fc"
     },
     {
       "date": "2026-09-14",

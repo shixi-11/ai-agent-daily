@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-21 AI Agent — Creative Control, Repeatable Results</title>
+      <link>https://ai.alux.network/daily/en/2026/09/21/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/21/</guid>
+      <pubDate>Sun, 20 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Transparent images, editable scores, and traceable notes make creative work easier to revise. Agent research asks whether improvements survive repeated use.</description>
+    </item>
+    <item>
       <title>2026-09-20 AI Agent — Multimodal Agents Get Practical</title>
       <link>https://ai.alux.network/daily/en/2026/09/20/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/20/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/17/</guid>
       <pubDate>Sun, 16 Aug 2026 16:00:00 GMT</pubDate>
       <description>The day's most consequential changes are not new features. Timeouts, network isolation, identity injection, session forks, daemon recovery, and tool failures are becoming explicit, testable boundaries.</description>
-    </item>
-    <item>
-      <title>2026-08-16 AI Agent — Run State Becomes Verifiable</title>
-      <link>https://ai.alux.network/daily/en/2026/08/16/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/16/</guid>
-      <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Today’s highest-value changes are not about model parameters. They are about run state: tests, invocation identity, approval rounds, compaction forks, terminal exceptions, and context budgets are gaining verifiable boundaries.</description>
     </item>
   </channel>
 </rss>
