@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-23 AI Agent — Cheaper Models, Leaner Execution</title>
+      <link>https://ai.alux.network/daily/en/2026/09/23/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/23/</guid>
+      <pubDate>Tue, 22 Sep 2026 16:00:00 GMT</pubDate>
+      <description>New models widen the price range, while open weights offer research starting points. Video tools, robot simulations, and asynchronous agents show how capabilities reach practical workflows.</description>
+    </item>
+    <item>
       <title>2026-09-21 AI Agent — Creative Control, Repeatable Results</title>
       <link>https://ai.alux.network/daily/en/2026/09/21/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/21/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/18/</guid>
       <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
       <description>The day’s most consequential pattern is shared across Codex, Claude Code, Google ADK, Qwen Code, Browser Use, and Langfuse: permissions, sessions, recovery, and failure are moving from implicit behavior into explicit contracts.</description>
-    </item>
-    <item>
-      <title>2026-08-17 AI Agent — Boundaries Become Runtime Contracts</title>
-      <link>https://ai.alux.network/daily/en/2026/08/17/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/17/</guid>
-      <pubDate>Sun, 16 Aug 2026 16:00:00 GMT</pubDate>
-      <description>The day's most consequential changes are not new features. Timeouts, network isolation, identity injection, session forks, daemon recovery, and tool failures are becoming explicit, testable boundaries.</description>
     </item>
   </channel>
 </rss>

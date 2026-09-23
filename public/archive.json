@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-21T17:08:56+08:00",
+  "generatedAt": "2026-09-23T00:29:14.068Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-21",
-    "url": "/daily/2026/09/21/",
+    "date": "2026-09-23",
+    "url": "/daily/2026/09/23/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/21/"
+    "alternateUrl": "/daily/en/2026/09/23/"
   },
   "reports": [
+    {
+      "date": "2026-09-23",
+      "title": "AI Agent模型降本与执行提效",
+      "lead": "新模型拉开价格梯度，开放权重提供研究起点；视频编辑、机器人试玩与异步执行，让能力如何变成可用工具更具体。",
+      "url": "/daily/2026/09/23/",
+      "alternateUrl": "/daily/en/2026/09/23/",
+      "publicPath": "2026/09/23/index.html",
+      "sourceFile": "20260923_ALUX_AI智能体情报日报.html",
+      "sha256": "19d1315c29157e91f10177d881f38c211ca58e432ea07ea5eb9b5815bc6b24b4",
+      "publicSha256": "8bd467033734510aa50c78ed17bcf970469e9219e0c86efae21d20639fa270d6"
+    },
     {
       "date": "2026-09-21",
       "title": "AI Agent创作可修改执行可复验",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/21/index.html",
       "sourceFile": "20260921_ALUX_AI智能体情报日报.html",
       "sha256": "81e4c062906c732c7e0c53ddd8902d543596a181992dae67b1a2b673aee9895f",
-      "publicSha256": "82b15ebf2c2a54bcf44606a160c8afa2a75cb3d076c3858b731760cd77b41142"
+      "publicSha256": "add597200e6bbb02aaf77a4378d9c89a02c5601ef75384744e378412f7f6b29c"
     },
     {
       "date": "2026-09-20",

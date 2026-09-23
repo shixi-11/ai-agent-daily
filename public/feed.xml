@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-23 AI Agent模型降本与执行提效</title>
+      <link>https://ai.alux.network/daily/2026/09/23/</link>
+      <guid>https://ai.alux.network/daily/2026/09/23/</guid>
+      <pubDate>Tue, 22 Sep 2026 16:00:00 GMT</pubDate>
+      <description>新模型拉开价格梯度，开放权重提供研究起点；视频编辑、机器人试玩与异步执行，让能力如何变成可用工具更具体。</description>
+    </item>
+    <item>
       <title>2026-09-21 AI Agent创作可修改执行可复验</title>
       <link>https://ai.alux.network/daily/2026/09/21/</link>
       <guid>https://ai.alux.network/daily/2026/09/21/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/18/</guid>
       <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天最值得看的，是 Codex、Claude Code、Google ADK、Qwen Code、Browser Use 与 Langfuse 同时把权限、会话、恢复和失败从隐含行为改写成显式合同。</description>
-    </item>
-    <item>
-      <title>2026-08-17 AI Agent边界成为运行合同</title>
-      <link>https://ai.alux.network/daily/2026/08/17/</link>
-      <guid>https://ai.alux.network/daily/2026/08/17/</guid>
-      <pubDate>Sun, 16 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天最值得看的，不是又多了多少功能，而是超时、断网、身份注入、会话分叉、守护进程恢复与工具失败开始被写成可核验边界。</description>
     </item>
   </channel>
 </rss>

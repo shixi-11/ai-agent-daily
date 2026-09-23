@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-21T17:08:56+08:00",
+  "generatedAt": "2026-09-23T00:29:14.068Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-21",
-    "url": "/daily/en/2026/09/21/",
+    "date": "2026-09-23",
+    "url": "/daily/en/2026/09/23/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/21/"
+    "alternateUrl": "/daily/2026/09/23/"
   },
   "reports": [
+    {
+      "date": "2026-09-23",
+      "title": "AI Agent — Cheaper Models, Leaner Execution",
+      "lead": "New models widen the price range, while open weights offer research starting points. Video tools, robot simulations, and asynchronous agents show how capabilities reach practical workflows.",
+      "url": "/daily/en/2026/09/23/",
+      "alternateUrl": "/daily/2026/09/23/",
+      "publicPath": "en/2026/09/23/index.html",
+      "sourceFile": "20260923.body.html",
+      "sha256": "64d9e36d0ae215dac79a68bbc82817075ff6fca58d17036784538bd6db02d5cc",
+      "publicSha256": "8b7fd00fe4bd0b9aadd7405a706881feb6d5a2e6ed0cc44ecacd78a4426f5b2f"
+    },
     {
       "date": "2026-09-21",
       "title": "AI Agent — Creative Control, Repeatable Results",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/21/index.html",
       "sourceFile": "20260921.body.html",
       "sha256": "0b2be85f4f9aba978bc42eccad403bb30af0d22482cc41a3a9b8e3edf15038a8",
-      "publicSha256": "065d06bd399efe9e756fced76c399b637b1be47e23c66c8f6422f7948fe24bf2"
+      "publicSha256": "69b5003beb24f1f28901496f30d5ac01cf09b56e34dd016a90865bafaa2fcc16"
     },
     {
       "date": "2026-09-20",
