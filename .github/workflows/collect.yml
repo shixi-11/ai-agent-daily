@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Verify collector health, retry and concurrency behavior
+        run: node --test scripts/collect-signals.test.cjs
       - name: Collect GitHub / Hugging Face / RSS
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

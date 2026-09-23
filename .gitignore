@@ -4,3 +4,4 @@ output/
 .vercel/
 .env*
 content/_mt-cache/
+collectors/out/
