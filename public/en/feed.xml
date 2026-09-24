@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-24 AI Agent — Models Act, Teams Collaborate</title>
+      <link>https://ai.alux.network/daily/en/2026/09/24/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/24/</guid>
+      <pubDate>Wed, 23 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Robots learn actions, speech models track speakers, and documents expand on demand. Creative rooms and shared memory help assistants carry work forward.</description>
+    </item>
+    <item>
       <title>2026-09-23 AI Agent — Cheaper Models, Leaner Execution</title>
       <link>https://ai.alux.network/daily/en/2026/09/23/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/23/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/20/</guid>
       <pubDate>Wed, 19 Aug 2026 16:00:00 GMT</pubDate>
       <description>Today’s most consequential shifts are not in conversational ability: guardrails, network egress, sessions, memory, and run evidence are beginning to constrain execution directly.</description>
-    </item>
-    <item>
-      <title>2026-08-18 AI Agent — Permissions and Recovery Tighten Together</title>
-      <link>https://ai.alux.network/daily/en/2026/08/18/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/18/</guid>
-      <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
-      <description>The day’s most consequential pattern is shared across Codex, Claude Code, Google ADK, Qwen Code, Browser Use, and Langfuse: permissions, sessions, recovery, and failure are moving from implicit behavior into explicit contracts.</description>
     </item>
   </channel>
 </rss>

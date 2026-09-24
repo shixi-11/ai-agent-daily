@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-23T00:29:14.068Z",
+  "generatedAt": "2026-09-24T00:22:52.774Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-23",
-    "url": "/daily/2026/09/23/",
+    "date": "2026-09-24",
+    "url": "/daily/2026/09/24/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/23/"
+    "alternateUrl": "/daily/en/2026/09/24/"
   },
   "reports": [
+    {
+      "date": "2026-09-24",
+      "title": "AI Agent模型走进动作与协作",
+      "lead": "机器人学动作，语音分清谁在说话，文档按需展开；创作房间与共享记忆，让助手开始理解一件事如何接着做。",
+      "url": "/daily/2026/09/24/",
+      "alternateUrl": "/daily/en/2026/09/24/",
+      "publicPath": "2026/09/24/index.html",
+      "sourceFile": "20260924_ALUX_AI智能体情报日报.html",
+      "sha256": "dede113e99d486498d4fd5cbef0f2be7de1a8fd7f302694fcadcf7a97a59bdf9",
+      "publicSha256": "dc435520c54463cfd31d87730a3aa9fbd3372546555410a6feb7d8290575cf3d"
+    },
     {
       "date": "2026-09-23",
       "title": "AI Agent模型降本与执行提效",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/23/index.html",
       "sourceFile": "20260923_ALUX_AI智能体情报日报.html",
       "sha256": "19d1315c29157e91f10177d881f38c211ca58e432ea07ea5eb9b5815bc6b24b4",
-      "publicSha256": "8bd467033734510aa50c78ed17bcf970469e9219e0c86efae21d20639fa270d6"
+      "publicSha256": "5ccae652bb2e747e8f1e7c4a845aaccbce5149b155818feaa8070f179d02e613"
     },
     {
       "date": "2026-09-21",

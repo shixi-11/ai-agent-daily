@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-24 AI Agent模型走进动作与协作</title>
+      <link>https://ai.alux.network/daily/2026/09/24/</link>
+      <guid>https://ai.alux.network/daily/2026/09/24/</guid>
+      <pubDate>Wed, 23 Sep 2026 16:00:00 GMT</pubDate>
+      <description>机器人学动作，语音分清谁在说话，文档按需展开；创作房间与共享记忆，让助手开始理解一件事如何接着做。</description>
+    </item>
+    <item>
       <title>2026-09-23 AI Agent模型降本与执行提效</title>
       <link>https://ai.alux.network/daily/2026/09/23/</link>
       <guid>https://ai.alux.network/daily/2026/09/23/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/20/</guid>
       <pubDate>Wed, 19 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天最有价值的变化不在模型更会说，而在护栏、网络出口、会话、记忆和运行证据开始直接约束真实执行。</description>
-    </item>
-    <item>
-      <title>2026-08-18 AI Agent权限与恢复同轴收紧</title>
-      <link>https://ai.alux.network/daily/2026/08/18/</link>
-      <guid>https://ai.alux.network/daily/2026/08/18/</guid>
-      <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天最值得看的，是 Codex、Claude Code、Google ADK、Qwen Code、Browser Use 与 Langfuse 同时把权限、会话、恢复和失败从隐含行为改写成显式合同。</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-23T00:29:14.068Z",
+  "generatedAt": "2026-09-24T00:22:52.774Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-23",
-    "url": "/daily/en/2026/09/23/",
+    "date": "2026-09-24",
+    "url": "/daily/en/2026/09/24/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/23/"
+    "alternateUrl": "/daily/2026/09/24/"
   },
   "reports": [
+    {
+      "date": "2026-09-24",
+      "title": "AI Agent — Models Act, Teams Collaborate",
+      "lead": "Robots learn actions, speech models track speakers, and documents expand on demand. Creative rooms and shared memory help assistants carry work forward.",
+      "url": "/daily/en/2026/09/24/",
+      "alternateUrl": "/daily/2026/09/24/",
+      "publicPath": "en/2026/09/24/index.html",
+      "sourceFile": "20260924.body.html",
+      "sha256": "f0e1244ad0ab6940b712f051d39dea470986511a5e1c12ece27321c2c00e36e9",
+      "publicSha256": "56f4b6eb20ae66ddba7a93f89d233d2bd13ceb8bf22dc5a7b7c578a33d10182c"
+    },
     {
       "date": "2026-09-23",
       "title": "AI Agent — Cheaper Models, Leaner Execution",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/23/index.html",
       "sourceFile": "20260923.body.html",
       "sha256": "64d9e36d0ae215dac79a68bbc82817075ff6fca58d17036784538bd6db02d5cc",
-      "publicSha256": "8b7fd00fe4bd0b9aadd7405a706881feb6d5a2e6ed0cc44ecacd78a4426f5b2f"
+      "publicSha256": "6503fa47372a56cd4f8c6afc93891eb894216e48ba2ae6262208db9604838183"
     },
     {
       "date": "2026-09-21",
