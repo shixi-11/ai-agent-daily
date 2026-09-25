@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-24T00:22:52.774Z",
+  "generatedAt": "2026-09-25T00:46:07.389Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-24",
-    "url": "/daily/2026/09/24/",
+    "date": "2026-09-25",
+    "url": "/daily/2026/09/25/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/24/"
+    "alternateUrl": "/daily/en/2026/09/25/"
   },
   "reports": [
+    {
+      "date": "2026-09-25",
+      "title": "AI Agent助手的表达开始分工",
+      "lead": "实时形象能边聊边办事，决策模型直接给概率；从陪你学习到解释代码，助手正在寻找比聊天框更合适的表达。",
+      "url": "/daily/2026/09/25/",
+      "alternateUrl": "/daily/en/2026/09/25/",
+      "publicPath": "2026/09/25/index.html",
+      "sourceFile": "20260925_ALUX_AI智能体情报日报.html",
+      "sha256": "b9ac8ac5e659f1851b52dcd639e43cbc0c3fcdcf177da0072afb9deda21de868",
+      "publicSha256": "0a43ef4eb9740a475a314bf7990a35de06a04cf3cb90b1ceff10d384dfea3497"
+    },
     {
       "date": "2026-09-24",
       "title": "AI Agent模型走进动作与协作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/24/index.html",
       "sourceFile": "20260924_ALUX_AI智能体情报日报.html",
       "sha256": "dede113e99d486498d4fd5cbef0f2be7de1a8fd7f302694fcadcf7a97a59bdf9",
-      "publicSha256": "dc435520c54463cfd31d87730a3aa9fbd3372546555410a6feb7d8290575cf3d"
+      "publicSha256": "176dba61887005a4b6f892c45596d4f66d3c2323f386564f6e0c011454c998c8"
     },
     {
       "date": "2026-09-23",

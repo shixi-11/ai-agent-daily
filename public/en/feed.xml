@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-25 AI Agent — New Faces, Clearer Decisions</title>
+      <link>https://ai.alux.network/daily/en/2026/09/25/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/25/</guid>
+      <pubDate>Thu, 24 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Live avatars converse while tools work; decision models return probabilities. From guided learning to code review, assistants are finding interfaces beyond the chat box.</description>
+    </item>
+    <item>
       <title>2026-09-24 AI Agent — Models Act, Teams Collaborate</title>
       <link>https://ai.alux.network/daily/en/2026/09/24/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/24/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/21/</guid>
       <pubDate>Thu, 20 Aug 2026 16:00:00 GMT</pubDate>
       <description>Eight shifts that materially affect the user experience: multitasking, recovery, secret handling, observable memory, local inference, and confidential GPUs.</description>
-    </item>
-    <item>
-      <title>2026-08-20 AI Agent — Control Planes Move Into the Runtime</title>
-      <link>https://ai.alux.network/daily/en/2026/08/20/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/20/</guid>
-      <pubDate>Wed, 19 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Today’s most consequential shifts are not in conversational ability: guardrails, network egress, sessions, memory, and run evidence are beginning to constrain execution directly.</description>
     </item>
   </channel>
 </rss>

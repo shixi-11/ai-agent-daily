@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-24T00:22:52.774Z",
+  "generatedAt": "2026-09-25T00:46:07.389Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-24",
-    "url": "/daily/en/2026/09/24/",
+    "date": "2026-09-25",
+    "url": "/daily/en/2026/09/25/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/24/"
+    "alternateUrl": "/daily/2026/09/25/"
   },
   "reports": [
+    {
+      "date": "2026-09-25",
+      "title": "AI Agent — New Faces, Clearer Decisions",
+      "lead": "Live avatars converse while tools work; decision models return probabilities. From guided learning to code review, assistants are finding interfaces beyond the chat box.",
+      "url": "/daily/en/2026/09/25/",
+      "alternateUrl": "/daily/2026/09/25/",
+      "publicPath": "en/2026/09/25/index.html",
+      "sourceFile": "20260925.body.html",
+      "sha256": "db73c7d6983f8a32e322bbffa6d000891bb576e75afce059f0cee538297d5fd8",
+      "publicSha256": "026b844e6c1473b982b7d5ef067c1a64ae113a8c7ccfd505a8993adb83221120"
+    },
     {
       "date": "2026-09-24",
       "title": "AI Agent — Models Act, Teams Collaborate",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/24/index.html",
       "sourceFile": "20260924.body.html",
       "sha256": "f0e1244ad0ab6940b712f051d39dea470986511a5e1c12ece27321c2c00e36e9",
-      "publicSha256": "56f4b6eb20ae66ddba7a93f89d233d2bd13ceb8bf22dc5a7b7c578a33d10182c"
+      "publicSha256": "ea4b0bc1e4a3e5eb7847e757cc3042865219d1f7445266dea5877e6ea4580dbe"
     },
     {
       "date": "2026-09-23",
