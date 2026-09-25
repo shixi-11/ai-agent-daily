@@ -22,6 +22,7 @@ test('normalizes valid candidates and deduplicates URLs', () => {
   });
   assert.equal(snapshot.candidateCount, 3);
   assert.deepEqual(snapshot.candidates.map((item) => item.sourceType), ['github-release', 'github-commit', 'huggingface-model']);
+  assert.equal(new Set(snapshot.candidates.map((item) => item.id)).size, snapshot.candidateCount);
   assert.equal(snapshot.ageMinutes, 20);
   assert.equal(snapshot.artifactHealth.totalSources, 3);
 });

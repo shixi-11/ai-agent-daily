@@ -3,6 +3,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { parseArgs, writeUtf8 } = require('./lib/io.cjs');
 
 function assertValidArtifact(artifact, { targetDate, now = new Date(), maxAgeMinutes = 180 }) {
@@ -23,7 +24,7 @@ function assertValidArtifact(artifact, { targetDate, now = new Date(), maxAgeMin
 }
 
 function candidateId(sourceType, sourceId, url) {
-  return Buffer.from(`${sourceType}:${sourceId}:${url}`).toString('base64url').slice(0, 24);
+  return crypto.createHash('sha256').update(`${sourceType}:${sourceId}:${url}`).digest('hex').slice(0, 24);
 }
 
 function buildCandidate({ sourceType, sourceId, title, url, publishedAt }) {
@@ -83,6 +84,9 @@ function flattenCandidates(artifact) {
 function prepareSnapshot(artifact, options) {
   const freshness = assertValidArtifact(artifact, options);
   const candidates = flattenCandidates(artifact);
+  if (new Set(candidates.map((candidate) => candidate.id)).size !== candidates.length) {
+    throw new Error('collector candidate IDs are not unique');
+  }
   return {
     schemaVersion: 1,
     targetDate: options.targetDate,
