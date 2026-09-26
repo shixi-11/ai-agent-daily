@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-26 AI Agent — AI Moves Beyond Chat</title>
+      <link>https://ai.alux.network/daily/en/2026/09/26/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/26/</guid>
+      <pubDate>Fri, 25 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Copilot moves toward persistent work, while PixVerse and Horizon expand interactive creation. Local decisions, screen parsing, and faster visual inference supply more of the components needed to act.</description>
+    </item>
+    <item>
       <title>2026-09-25 AI Agent — New Faces, Clearer Decisions</title>
       <link>https://ai.alux.network/daily/en/2026/09/25/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/25/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/22/</guid>
       <pubDate>Fri, 21 Aug 2026 16:00:00 GMT</pubDate>
       <description>Eight changes ask the same practical question: how can agents wait, recover, install, upgrade, and operate real interfaces more reliably?</description>
-    </item>
-    <item>
-      <title>2026-08-21 AI Agents — Tools Are Becoming Systems</title>
-      <link>https://ai.alux.network/daily/en/2026/08/21/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/21/</guid>
-      <pubDate>Thu, 20 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Eight shifts that materially affect the user experience: multitasking, recovery, secret handling, observable memory, local inference, and confidential GPUs.</description>
     </item>
   </channel>
 </rss>

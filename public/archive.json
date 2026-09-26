@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-25T00:46:07.389Z",
+  "generatedAt": "2026-09-26T00:32:35.967Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-25",
-    "url": "/daily/2026/09/25/",
+    "date": "2026-09-26",
+    "url": "/daily/2026/09/26/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/25/"
+    "alternateUrl": "/daily/en/2026/09/26/"
   },
   "reports": [
+    {
+      "date": "2026-09-26",
+      "title": "AI Agent从对话走向可操作世界",
+      "lead": "Copilot尝试持续办事，PixVerse与Horizon拓展互动创作；本地决策、屏幕识别和视觉推理则补齐执行所需的组件。",
+      "url": "/daily/2026/09/26/",
+      "alternateUrl": "/daily/en/2026/09/26/",
+      "publicPath": "2026/09/26/index.html",
+      "sourceFile": "20260926_ALUX_AI智能体情报日报.html",
+      "sha256": "45a1877afa9de4b849ff4d16faf4c1c9f456c4bdba1b865a6c3de609cb5cc41a",
+      "publicSha256": "a65ad5896019f5c8d7cee617e700dfbd5e139e31aaccd2d2b4026a366ddd7b6e"
+    },
     {
       "date": "2026-09-25",
       "title": "AI Agent助手的表达开始分工",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/25/index.html",
       "sourceFile": "20260925_ALUX_AI智能体情报日报.html",
       "sha256": "b9ac8ac5e659f1851b52dcd639e43cbc0c3fcdcf177da0072afb9deda21de868",
-      "publicSha256": "0a43ef4eb9740a475a314bf7990a35de06a04cf3cb90b1ceff10d384dfea3497"
+      "publicSha256": "86171773e008992fb4d95b56be07e749ff92497cbff69d7ca98cd47d5f9cd03f"
     },
     {
       "date": "2026-09-24",

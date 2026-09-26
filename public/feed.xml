@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-26 AI Agent从对话走向可操作世界</title>
+      <link>https://ai.alux.network/daily/2026/09/26/</link>
+      <guid>https://ai.alux.network/daily/2026/09/26/</guid>
+      <pubDate>Fri, 25 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Copilot尝试持续办事，PixVerse与Horizon拓展互动创作；本地决策、屏幕识别和视觉推理则补齐执行所需的组件。</description>
+    </item>
+    <item>
       <title>2026-09-25 AI Agent助手的表达开始分工</title>
       <link>https://ai.alux.network/daily/2026/09/25/</link>
       <guid>https://ai.alux.network/daily/2026/09/25/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/22/</guid>
       <pubDate>Fri, 21 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天的八条变化都在追问同一件事：Agent如何更稳地等待、恢复、安装、升级和操作真实界面。</description>
-    </item>
-    <item>
-      <title>2026-08-21 AI Agent工具开始长出系统感</title>
-      <link>https://ai.alux.network/daily/2026/08/21/</link>
-      <guid>https://ai.alux.network/daily/2026/08/21/</guid>
-      <pubDate>Thu, 20 Aug 2026 16:00:00 GMT</pubDate>
-      <description>这一期看八个真正影响使用体验的变化：多任务、恢复、安全凭据、可观察记忆、本地推理与机密 GPU。</description>
     </item>
   </channel>
 </rss>
