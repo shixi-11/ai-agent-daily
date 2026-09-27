@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-27 AI Agent从图纸走进真实空间</title>
+      <link>https://ai.alux.network/daily/2026/09/27/</link>
+      <guid>https://ai.alux.network/daily/2026/09/27/</guid>
+      <pubDate>Sat, 26 Sep 2026 16:00:00 GMT</pubDate>
+      <description>助手开始读懂图上的位置，机器人学会找回视野外的物品；当工具走向行动，记忆、执行环境与判断分数都需要更明确的边界。</description>
+    </item>
+    <item>
       <title>2026-09-26 AI Agent从对话走向可操作世界</title>
       <link>https://ai.alux.network/daily/2026/09/26/</link>
       <guid>https://ai.alux.network/daily/2026/09/26/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/23/</guid>
       <pubDate>Sat, 22 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天的八条变化说明，Agent能否可靠工作，越来越取决于会话、权限、工具入口、科研流程和内存基础。</description>
-    </item>
-    <item>
-      <title>2026-08-22 AI Agent可靠性来到用户面前</title>
-      <link>https://ai.alux.network/daily/2026/08/22/</link>
-      <guid>https://ai.alux.network/daily/2026/08/22/</guid>
-      <pubDate>Fri, 21 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天的八条变化都在追问同一件事：Agent如何更稳地等待、恢复、安装、升级和操作真实界面。</description>
     </item>
   </channel>
 </rss>

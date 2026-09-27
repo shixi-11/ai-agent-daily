@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-26T00:32:35.967Z",
+  "generatedAt": "2026-09-27T00:46:40.312Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-26",
-    "url": "/daily/2026/09/26/",
+    "date": "2026-09-27",
+    "url": "/daily/2026/09/27/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/26/"
+    "alternateUrl": "/daily/en/2026/09/27/"
   },
   "reports": [
+    {
+      "date": "2026-09-27",
+      "title": "AI Agent从图纸走进真实空间",
+      "lead": "助手开始读懂图上的位置，机器人学会找回视野外的物品；当工具走向行动，记忆、执行环境与判断分数都需要更明确的边界。",
+      "url": "/daily/2026/09/27/",
+      "alternateUrl": "/daily/en/2026/09/27/",
+      "publicPath": "2026/09/27/index.html",
+      "sourceFile": "20260927_ALUX_AI智能体情报日报.html",
+      "sha256": "83ad2f7fd67b7da85290b24878249a18ed9e9ebbabb69a66d7ff3b232ddabbf2",
+      "publicSha256": "eba5b3cb4ad197f281e404be2e412e7b2268625f360aef4c63a2a7c5fa9e551b"
+    },
     {
       "date": "2026-09-26",
       "title": "AI Agent从对话走向可操作世界",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/26/index.html",
       "sourceFile": "20260926_ALUX_AI智能体情报日报.html",
       "sha256": "45a1877afa9de4b849ff4d16faf4c1c9f456c4bdba1b865a6c3de609cb5cc41a",
-      "publicSha256": "a65ad5896019f5c8d7cee617e700dfbd5e139e31aaccd2d2b4026a366ddd7b6e"
+      "publicSha256": "41e8934e6730cc701e36c5e2c60e4220444f653179ebc98df7205ff2c1628e69"
     },
     {
       "date": "2026-09-25",

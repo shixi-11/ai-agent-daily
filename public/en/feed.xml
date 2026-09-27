@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-27 AI Agent — Diagrams Meet Physical Space</title>
+      <link>https://ai.alux.network/daily/en/2026/09/27/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/27/</guid>
+      <pubDate>Sat, 26 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Assistants gain finer control over diagrams, while robots retrieve objects outside their view. As tools move into action, memory, execution environments, and decision scores need clearer boundaries.</description>
+    </item>
+    <item>
       <title>2026-09-26 AI Agent — AI Moves Beyond Chat</title>
       <link>https://ai.alux.network/daily/en/2026/09/26/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/26/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/23/</guid>
       <pubDate>Sat, 22 Aug 2026 16:00:00 GMT</pubDate>
       <description>Eight changes show that reliable agents increasingly depend on sessions, permissions, tool gateways, research discipline, and memory infrastructure.</description>
-    </item>
-    <item>
-      <title>2026-08-22 AI Agents — Reliability Moves Into View</title>
-      <link>https://ai.alux.network/daily/en/2026/08/22/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/22/</guid>
-      <pubDate>Fri, 21 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Eight changes ask the same practical question: how can agents wait, recover, install, upgrade, and operate real interfaces more reliably?</description>
     </item>
   </channel>
 </rss>

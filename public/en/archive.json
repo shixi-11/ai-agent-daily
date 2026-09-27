@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-26T00:32:35.967Z",
+  "generatedAt": "2026-09-27T00:46:40.312Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-26",
-    "url": "/daily/en/2026/09/26/",
+    "date": "2026-09-27",
+    "url": "/daily/en/2026/09/27/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/26/"
+    "alternateUrl": "/daily/2026/09/27/"
   },
   "reports": [
+    {
+      "date": "2026-09-27",
+      "title": "AI Agent — Diagrams Meet Physical Space",
+      "lead": "Assistants gain finer control over diagrams, while robots retrieve objects outside their view. As tools move into action, memory, execution environments, and decision scores need clearer boundaries.",
+      "url": "/daily/en/2026/09/27/",
+      "alternateUrl": "/daily/2026/09/27/",
+      "publicPath": "en/2026/09/27/index.html",
+      "sourceFile": "20260927.body.html",
+      "sha256": "a4cecbf5e6bae1da5b46dc2e9307bafe90b71c8803b4855d8baeeea38ec0ba72",
+      "publicSha256": "0d13ee6d876d6afe56c8d79b1bc40497a4ab84b5409049f3608ef7a0febc03d0"
+    },
     {
       "date": "2026-09-26",
       "title": "AI Agent — AI Moves Beyond Chat",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/26/index.html",
       "sourceFile": "20260926.body.html",
       "sha256": "7adf22a5004f2aa15370a934bf104a4de4488f1090c1eeb093d77be0ff31b269",
-      "publicSha256": "6ef36b0cacaf98f8fb8578c5facd16b3cfefe751172a5f5e4b20047d2215d1b4"
+      "publicSha256": "a1100ed299028a645e677eadf0a38dca161d53df0bb8aeb3224d3a000624071a"
     },
     {
       "date": "2026-09-25",
