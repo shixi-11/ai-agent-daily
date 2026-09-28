@@ -39,7 +39,7 @@
   ],
   "rssFeeds": [
     { "id": "openai-news", "url": "https://openai.com/news/rss.xml", "weight": 10, "region": "美国", "kind": "official" },
-    { "id": "anthropic-news", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/master/feeds/anthropic.xml", "optional": true, "weight": 10, "region": "美国", "kind": "official" },
+    { "id": "anthropic-news", "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/master/feeds/anthropic.xml", "optional": true, "weight": 6, "region": "美国", "kind": "mirror", "evidenceRole": "discovery-only", "originalPublisher": "Anthropic" },
     { "id": "google-ai-blog", "url": "https://blog.google/technology/ai/rss/", "weight": 9, "region": "美国", "kind": "official" },
     { "id": "deepmind-blog", "url": "https://deepmind.google/blog/rss.xml", "optional": true, "weight": 9, "region": "英国", "kind": "official" },
     { "id": "huggingface-blog", "url": "https://huggingface.co/blog/feed.xml", "weight": 8, "region": "全球社区", "kind": "official" },

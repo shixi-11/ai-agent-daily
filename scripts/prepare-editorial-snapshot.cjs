@@ -27,7 +27,7 @@ function candidateId(sourceType, sourceId, url) {
   return crypto.createHash('sha256').update(`${sourceType}:${sourceId}:${url}`).digest('hex').slice(0, 24);
 }
 
-function buildCandidate({ sourceType, sourceId, title, url, publishedAt }) {
+function buildCandidate({ sourceType, sourceId, title, url, publishedAt, sourceKind, evidenceRole, feedUrl, sourceRegion }) {
   const cleanTitle = String(title || '').replace(/\s+/g, ' ').trim();
   const cleanUrl = String(url || '').trim();
   if (!cleanTitle || !/^https:\/\//i.test(cleanUrl)) return null;
@@ -38,7 +38,24 @@ function buildCandidate({ sourceType, sourceId, title, url, publishedAt }) {
     publishedAt: publishedAt || null,
     sourceType,
     sourceId,
+    sourceKind,
+    evidenceRole,
+    ...(feedUrl ? { feedUrl } : {}),
+    ...(sourceRegion ? { sourceRegion } : {}),
   };
+}
+
+function rssEvidenceRole(kind) {
+  return ({
+    official: 'primary-publisher',
+    product: 'primary-publisher',
+    research: 'primary-research-index',
+    analysis: 'secondary-analysis',
+    press: 'secondary-press',
+    community: 'discovery-lead',
+    'new-site': 'discovery-lead',
+    mirror: 'mirror-lead',
+  })[kind] || 'unclassified-lead';
 }
 
 function flattenCandidates(artifact) {
@@ -48,12 +65,14 @@ function flattenCandidates(artifact) {
       candidates.push(buildCandidate({
         sourceType: 'github-release', sourceId: repo.repo,
         title: release.name || release.tag, url: release.url, publishedAt: release.publishedAt,
+        sourceKind: 'repository', evidenceRole: 'primary-release',
       }));
     }
     for (const commit of Array.isArray(repo.commits) ? repo.commits : []) {
       candidates.push(buildCandidate({
         sourceType: 'github-commit', sourceId: repo.repo,
         title: commit.message, url: commit.url, publishedAt: commit.date,
+        sourceKind: 'repository', evidenceRole: 'primary-change',
       }));
     }
   }
@@ -62,6 +81,7 @@ function flattenCandidates(artifact) {
       candidates.push(buildCandidate({
         sourceType: 'huggingface-model', sourceId: org.org,
         title: model.id, url: model.url, publishedAt: model.lastModified,
+        sourceKind: 'model-hub', evidenceRole: 'primary-model-card',
       }));
     }
   }
@@ -70,6 +90,10 @@ function flattenCandidates(artifact) {
       candidates.push(buildCandidate({
         sourceType: 'rss-item', sourceId: feed.id,
         title: item.title, url: item.url, publishedAt: item.date,
+        sourceKind: feed.kind || 'unspecified',
+        evidenceRole: feed.evidenceRole || rssEvidenceRole(feed.kind),
+        feedUrl: feed.url,
+        sourceRegion: feed.region,
       }));
     }
   }
@@ -89,6 +113,7 @@ function prepareSnapshot(artifact, options) {
   }
   return {
     schemaVersion: 1,
+    sourceTaxonomyVersion: 1,
     targetDate: options.targetDate,
     collectedAt: freshness.collectedAt,
     preparedAt: (options.now || new Date()).toISOString(),
@@ -132,4 +157,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { assertValidArtifact, flattenCandidates, prepareSnapshot };
+module.exports = { assertValidArtifact, flattenCandidates, prepareSnapshot, rssEvidenceRole };

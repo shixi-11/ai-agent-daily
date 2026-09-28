@@ -239,12 +239,21 @@ function parseFeed(xml, limit = 8) {
 }
 
 async function collectRss(feed) {
+  const metadata = {
+    id: feed.id,
+    url: feed.url,
+    kind: feed.kind || 'unspecified',
+    region: feed.region || null,
+    weight: Number(feed.weight || 0),
+    ...(feed.evidenceRole ? { evidenceRole: feed.evidenceRole } : {}),
+    ...(feed.originalPublisher ? { originalPublisher: feed.originalPublisher } : {}),
+  };
   try {
     const xml = await fetchWithPolicy(feed.url, { headers: { 'user-agent': 'ai-agent-daily-collector' } });
-    return { id: feed.id, url: feed.url, items: parseFeed(xml) };
+    return { ...metadata, items: parseFeed(xml) };
   } catch (error) {
-    if (feed.optional) return { id: feed.id, optional: true, skipped: error.status || null, error: String(error.message) };
-    return { id: feed.id, url: feed.url, error: String(error.message) };
+    if (feed.optional) return { ...metadata, optional: true, skipped: error.status || null, error: String(error.message) };
+    return { ...metadata, error: String(error.message) };
   }
 }
 
@@ -274,6 +283,7 @@ async function main() {
     rss,
     sourceHealth,
     persistentWatch: watchlist.persistentWatch || [],
+    sourceTaxonomyVersion: 1,
   };
   const outFile = path.join(outDir, `${payload.shanghaiDate}.json`);
   writeUtf8(outFile, `${JSON.stringify(payload, null, 2)}\n`);
