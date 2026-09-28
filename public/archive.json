@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-27T00:46:40.312Z",
+  "generatedAt": "2026-09-28T00:51:30.037Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-27",
-    "url": "/daily/2026/09/27/",
+    "date": "2026-09-28",
+    "url": "/daily/2026/09/28/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/27/"
+    "alternateUrl": "/daily/en/2026/09/28/"
   },
   "reports": [
+    {
+      "date": "2026-09-28",
+      "title": "AI Agent缩短从判断到行动的距离",
+      "lead": "模型压缩推理，游戏角色记住关系，采样器与机械手把能力交到现实接口上。今天的12条观察，看AI怎样缩短从判断到动作的距离。",
+      "url": "/daily/2026/09/28/",
+      "alternateUrl": "/daily/en/2026/09/28/",
+      "publicPath": "2026/09/28/index.html",
+      "sourceFile": "20260928_ALUX_AI智能体情报日报.html",
+      "sha256": "f4a2932a966ccda64b1b0f1f99172dcb924109707cf48468fbe832be9e0ba7bb",
+      "publicSha256": "395c644bd7b7a6e326feeeefe619b9e73bab11badcf9c8e20259a743598500fa"
+    },
     {
       "date": "2026-09-27",
       "title": "AI Agent从图纸走进真实空间",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/27/index.html",
       "sourceFile": "20260927_ALUX_AI智能体情报日报.html",
       "sha256": "83ad2f7fd67b7da85290b24878249a18ed9e9ebbabb69a66d7ff3b232ddabbf2",
-      "publicSha256": "eba5b3cb4ad197f281e404be2e412e7b2268625f360aef4c63a2a7c5fa9e551b"
+      "publicSha256": "8bd5fa28d982e472162ee304a05bd07450b358cc0f2d9ddb08c46a39d5c4056b"
     },
     {
       "date": "2026-09-26",

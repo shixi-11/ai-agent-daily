@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-27T00:46:40.312Z",
+  "generatedAt": "2026-09-28T00:51:30.037Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-27",
-    "url": "/daily/en/2026/09/27/",
+    "date": "2026-09-28",
+    "url": "/daily/en/2026/09/28/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/27/"
+    "alternateUrl": "/daily/2026/09/28/"
   },
   "reports": [
+    {
+      "date": "2026-09-28",
+      "title": "AI Agent — Less Wasted Work, More Action",
+      "lead": "Models shorten reasoning, game characters remember relationships, and samplers and robot hands put AI-related capabilities into physical interfaces. Twelve stories trace the distance from decisions to actions.",
+      "url": "/daily/en/2026/09/28/",
+      "alternateUrl": "/daily/2026/09/28/",
+      "publicPath": "en/2026/09/28/index.html",
+      "sourceFile": "20260928.body.html",
+      "sha256": "32ccb7f37aaac2d6b80545cd7b8b533ed69eee3a8e74021cf1a3579696090dc3",
+      "publicSha256": "2e9794dfdd87706f39fdd823a9908d8cc3a756aaec0c75bc404411e5b8b042bc"
+    },
     {
       "date": "2026-09-27",
       "title": "AI Agent — Diagrams Meet Physical Space",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/27/index.html",
       "sourceFile": "20260927.body.html",
       "sha256": "a4cecbf5e6bae1da5b46dc2e9307bafe90b71c8803b4855d8baeeea38ec0ba72",
-      "publicSha256": "0d13ee6d876d6afe56c8d79b1bc40497a4ab84b5409049f3608ef7a0febc03d0"
+      "publicSha256": "ca7e284e31e88488480268ce9dcd7b81f499fcd56e186f651e00ea07a8b438ee"
     },
     {
       "date": "2026-09-26",

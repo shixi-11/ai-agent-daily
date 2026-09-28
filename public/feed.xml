@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-28 AI Agent缩短从判断到行动的距离</title>
+      <link>https://ai.alux.network/daily/2026/09/28/</link>
+      <guid>https://ai.alux.network/daily/2026/09/28/</guid>
+      <pubDate>Sun, 27 Sep 2026 16:00:00 GMT</pubDate>
+      <description>模型压缩推理，游戏角色记住关系，采样器与机械手把能力交到现实接口上。今天的12条观察，看AI怎样缩短从判断到动作的距离。</description>
+    </item>
+    <item>
       <title>2026-09-27 AI Agent从图纸走进真实空间</title>
       <link>https://ai.alux.network/daily/2026/09/27/</link>
       <guid>https://ai.alux.network/daily/2026/09/27/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/24/</guid>
       <pubDate>Sun, 23 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天九条变化把同一问题推到台前：Agent要真正可用，恢复、授权、证据和执行环境必须一起成立。</description>
-    </item>
-    <item>
-      <title>2026-08-23 AI Agent边界成为产品</title>
-      <link>https://ai.alux.network/daily/2026/08/23/</link>
-      <guid>https://ai.alux.network/daily/2026/08/23/</guid>
-      <pubDate>Sat, 22 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天的八条变化说明，Agent能否可靠工作，越来越取决于会话、权限、工具入口、科研流程和内存基础。</description>
     </item>
   </channel>
 </rss>

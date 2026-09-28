@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-28 AI Agent — Less Wasted Work, More Action</title>
+      <link>https://ai.alux.network/daily/en/2026/09/28/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/28/</guid>
+      <pubDate>Sun, 27 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Models shorten reasoning, game characters remember relationships, and samplers and robot hands put AI-related capabilities into physical interfaces. Twelve stories trace the distance from decisions to actions.</description>
+    </item>
+    <item>
       <title>2026-09-27 AI Agent — Diagrams Meet Physical Space</title>
       <link>https://ai.alux.network/daily/en/2026/09/27/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/27/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/24/</guid>
       <pubDate>Sun, 23 Aug 2026 16:00:00 GMT</pubDate>
       <description>Nine changes converge on one point: for agents to be genuinely useful, recovery, authorization, evidence, and the execution environment must work as one.</description>
-    </item>
-    <item>
-      <title>2026-08-23 AI Agents — Boundaries Become the Product</title>
-      <link>https://ai.alux.network/daily/en/2026/08/23/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/23/</guid>
-      <pubDate>Sat, 22 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Eight changes show that reliable agents increasingly depend on sessions, permissions, tool gateways, research discipline, and memory infrastructure.</description>
     </item>
   </channel>
 </rss>
