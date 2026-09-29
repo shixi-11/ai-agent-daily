@@ -27,15 +27,31 @@ function candidateId(sourceType, sourceId, url) {
   return crypto.createHash('sha256').update(`${sourceType}:${sourceId}:${url}`).digest('hex').slice(0, 24);
 }
 
-function buildCandidate({ sourceType, sourceId, title, url, publishedAt, sourceKind, evidenceRole, feedUrl, sourceRegion }) {
+function canonicalizeCandidateUrl(input) {
+  const url = new URL(String(input || '').trim());
+  url.hash = '';
+  for (const key of [...url.searchParams.keys()]) {
+    if (/^(?:utm_[a-z]+|ref|source|campaign)$/i.test(key)) url.searchParams.delete(key);
+  }
+  url.searchParams.sort();
+  if (url.pathname.length > 1) url.pathname = url.pathname.replace(/\/+$/, '');
+  return url.toString();
+}
+
+function buildCandidate({ sourceType, sourceId, title, url, publishedAt, sourceTimestamp, sourceTimestampType, sourceKind, evidenceRole, feedUrl, sourceRegion }) {
   const cleanTitle = String(title || '').replace(/\s+/g, ' ').trim();
   const cleanUrl = String(url || '').trim();
   if (!cleanTitle || !/^https:\/\//i.test(cleanUrl)) return null;
+  const canonicalUrl = canonicalizeCandidateUrl(cleanUrl);
   return {
-    id: candidateId(sourceType, sourceId, cleanUrl),
+    id: candidateId(sourceType, sourceId, canonicalUrl),
+    eventKey: crypto.createHash('sha256').update(`event:${canonicalUrl}`).digest('hex').slice(0, 24),
     title: cleanTitle,
     url: cleanUrl,
+    canonicalUrl,
     publishedAt: publishedAt || null,
+    sourceTimestamp: sourceTimestamp || publishedAt || null,
+    sourceTimestampType: sourceTimestampType || (publishedAt ? 'published' : 'unknown'),
     sourceType,
     sourceId,
     sourceKind,
@@ -65,13 +81,15 @@ function flattenCandidates(artifact) {
       candidates.push(buildCandidate({
         sourceType: 'github-release', sourceId: repo.repo,
         title: release.name || release.tag, url: release.url, publishedAt: release.publishedAt,
+        sourceTimestamp: release.publishedAt, sourceTimestampType: 'published',
         sourceKind: 'repository', evidenceRole: 'primary-release',
       }));
     }
     for (const commit of Array.isArray(repo.commits) ? repo.commits : []) {
       candidates.push(buildCandidate({
         sourceType: 'github-commit', sourceId: repo.repo,
-        title: commit.message, url: commit.url, publishedAt: commit.date,
+        title: commit.message, url: commit.url,
+        sourceTimestamp: commit.date, sourceTimestampType: 'commit-authored',
         sourceKind: 'repository', evidenceRole: 'primary-change',
       }));
     }
@@ -80,7 +98,8 @@ function flattenCandidates(artifact) {
     for (const model of Array.isArray(org.models) ? org.models : []) {
       candidates.push(buildCandidate({
         sourceType: 'huggingface-model', sourceId: org.org,
-        title: model.id, url: model.url, publishedAt: model.lastModified,
+        title: model.id, url: model.url,
+        sourceTimestamp: model.lastModified, sourceTimestampType: 'last-modified',
         sourceKind: 'model-hub', evidenceRole: 'primary-model-card',
       }));
     }
@@ -89,7 +108,8 @@ function flattenCandidates(artifact) {
     for (const item of Array.isArray(feed.items) ? feed.items : []) {
       candidates.push(buildCandidate({
         sourceType: 'rss-item', sourceId: feed.id,
-        title: item.title, url: item.url, publishedAt: item.date,
+        title: item.title, url: item.url,
+        sourceTimestamp: item.date, sourceTimestampType: 'feed-declared',
         sourceKind: feed.kind || 'unspecified',
         evidenceRole: feed.evidenceRole || rssEvidenceRole(feed.kind),
         feedUrl: feed.url,
@@ -99,15 +119,18 @@ function flattenCandidates(artifact) {
   }
   const seen = new Set();
   return candidates.filter(Boolean).filter((candidate) => {
-    if (seen.has(candidate.url)) return false;
-    seen.add(candidate.url);
+    if (seen.has(candidate.canonicalUrl)) return false;
+    seen.add(candidate.canonicalUrl);
     return true;
   });
 }
 
 function prepareSnapshot(artifact, options) {
   const freshness = assertValidArtifact(artifact, options);
-  const candidates = flattenCandidates(artifact);
+  const candidates = flattenCandidates(artifact).map((candidate) => ({
+    ...candidate,
+    observedAt: freshness.collectedAt,
+  }));
   if (new Set(candidates.map((candidate) => candidate.id)).size !== candidates.length) {
     throw new Error('collector candidate IDs are not unique');
   }
@@ -157,4 +180,4 @@ if (require.main === module) {
   }
 }
 
-module.exports = { assertValidArtifact, flattenCandidates, prepareSnapshot, rssEvidenceRole };
+module.exports = { assertValidArtifact, canonicalizeCandidateUrl, flattenCandidates, prepareSnapshot, rssEvidenceRole };

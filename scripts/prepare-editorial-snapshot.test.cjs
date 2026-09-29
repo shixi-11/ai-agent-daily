@@ -2,7 +2,7 @@
 
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { prepareSnapshot, rssEvidenceRole } = require('./prepare-editorial-snapshot.cjs');
+const { canonicalizeCandidateUrl, prepareSnapshot, rssEvidenceRole } = require('./prepare-editorial-snapshot.cjs');
 
 function artifact(overrides = {}) {
   return {
@@ -11,7 +11,7 @@ function artifact(overrides = {}) {
     sourceHealth: { schemaVersion: 1, status: 'degraded', counts: { success: 3 }, sources: [{}, {}, {}] },
     github: [{ repo: 'owner/repo', releases: [{ name: 'v2', url: 'https://github.com/owner/repo/releases/v2', publishedAt: '2026-09-23T22:00:00Z' }], commits: [{ message: 'ship it', url: 'https://github.com/owner/repo/commit/1', date: '2026-09-23T21:00:00Z' }] }],
     huggingface: [{ org: 'owner', models: [{ id: 'owner/model', url: 'https://huggingface.co/owner/model', lastModified: '2026-09-23T20:00:00Z' }] }],
-    rss: [{ id: 'feed', url: 'https://mirror.example/feed.xml', kind: 'mirror', evidenceRole: 'discovery-only', region: 'Global', items: [{ title: 'duplicate release', url: 'https://github.com/owner/repo/releases/v2', date: '2026-09-23T22:00:00Z' }, { title: 'mirrored lead', url: 'https://example.com/lead', date: '2026-09-23T23:00:00Z' }, { title: '', url: 'https://example.com/empty' }] }],
+    rss: [{ id: 'feed', url: 'https://mirror.example/feed.xml', kind: 'mirror', evidenceRole: 'discovery-only', region: 'Global', items: [{ title: 'duplicate release', url: 'https://github.com/owner/repo/releases/v2?utm_source=mirror', date: '2026-09-23T22:00:00Z' }, { title: 'mirrored lead', url: 'https://example.com/lead', date: '2026-09-23T23:00:00Z' }, { title: '', url: 'https://example.com/empty' }] }],
     ...overrides,
   };
 }
@@ -23,20 +23,33 @@ test('normalizes valid candidates and deduplicates URLs', () => {
   assert.equal(snapshot.candidateCount, 4);
   assert.deepEqual(snapshot.candidates.map((item) => item.sourceType), ['github-release', 'github-commit', 'huggingface-model', 'rss-item']);
   assert.equal(new Set(snapshot.candidates.map((item) => item.id)).size, snapshot.candidateCount);
-  assert.deepEqual(snapshot.candidates.at(-1), {
-    id: snapshot.candidates.at(-1).id,
+  const mirrored = snapshot.candidates.at(-1);
+  assert.deepEqual({
+    title: mirrored.title,
+    canonicalUrl: mirrored.canonicalUrl,
+    publishedAt: mirrored.publishedAt,
+    sourceTimestamp: mirrored.sourceTimestamp,
+    sourceTimestampType: mirrored.sourceTimestampType,
+    sourceType: mirrored.sourceType,
+    sourceKind: mirrored.sourceKind,
+    evidenceRole: mirrored.evidenceRole,
+    observedAt: mirrored.observedAt,
+  }, {
     title: 'mirrored lead',
-    url: 'https://example.com/lead',
-    publishedAt: '2026-09-23T23:00:00Z',
+    canonicalUrl: 'https://example.com/lead',
+    publishedAt: null,
+    sourceTimestamp: '2026-09-23T23:00:00Z',
+    sourceTimestampType: 'feed-declared',
     sourceType: 'rss-item',
-    sourceId: 'feed',
     sourceKind: 'mirror',
     evidenceRole: 'discovery-only',
-    feedUrl: 'https://mirror.example/feed.xml',
-    sourceRegion: 'Global',
+    observedAt: artifact().collectedAt,
   });
   assert.equal(snapshot.ageMinutes, 20);
   assert.equal(snapshot.artifactHealth.totalSources, 3);
+  assert.ok(snapshot.candidates.every((item) => item.observedAt === artifact().collectedAt));
+  assert.equal(snapshot.candidates.find((item) => item.sourceType === 'huggingface-model').sourceTimestampType, 'last-modified');
+  assert.equal(snapshot.candidates.find((item) => item.sourceType === 'huggingface-model').publishedAt, null);
 });
 
 test('rejects stale, wrong-date and failed artifacts', () => {
@@ -56,4 +69,8 @@ test('classifies RSS feeds by evidence role without promoting mirrors', () => {
   assert.equal(rssEvidenceRole('press'), 'secondary-press');
   assert.equal(rssEvidenceRole('community'), 'discovery-lead');
   assert.equal(rssEvidenceRole('mirror'), 'mirror-lead');
+});
+
+test('canonical URLs remove tracking without erasing meaningful parameters', () => {
+  assert.equal(canonicalizeCandidateUrl('https://example.com/item/?utm_source=x&id=7#top'), 'https://example.com/item?id=7');
 });
