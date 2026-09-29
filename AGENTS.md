@@ -15,7 +15,7 @@
 
 本文件是所有继续维护者的第一入口。克隆或同步仓库后，先读本文件，再读 `README.md`、`AUTOMATION.md`、`docs/OPERATIONS.md`、`docs/DOMAIN_ROUTING.md`、`docs/RESPONSIVE_LAYOUT_STANDARD.md`、`docs/PUBLIC_REPOSITORY_BOUNDARY.md` 与 `docs/SHARE_CARD_STANDARD.md`。OpenClaw Agent 还必须读 `automation/OPENCLAW_DAILY_TASK.md`，并用该合同升级现有定时任务的正文。
 
-当前自动化合同版本为 `3.8.0`。OpenClaw 发现现有日报任务没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.8.0]` 时，必须保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得另建一个重复任务。日报主任务使用 `openai/gpt-6-astra`、`thinking=low`、标准速度并禁用 fallback；验收与恢复继续按各自无模型 command payload 执行，只有内容级恢复才唤起同一模型。
+当前自动化合同版本为 `3.8.0`。OpenClaw 发现现有日报任务没有 `[ALUX_DAILY_CONTRACT_VERSION: 3.8.0]` 时，必须保留原任务 ID、执行时间、时区和凭据，只替换任务正文并完成一次 dry run；不得另建一个重复任务。日报主任务使用 `openai/gpt-6.1-sol`、`thinking=low`、标准速度并禁用 fallback；验收与恢复继续按各自无模型 command payload 执行，只有内容级恢复才唤起同一模型。
 
 Linux / CI 发布链以 Node 为准，不再依赖本机 PowerShell：
 
@@ -150,7 +150,7 @@ YYYY-MM-DD： https://ai.alux.network/daily/YYYY/MM/DD/
 
 ## 日报模型与同步校验
 
-日报主任务和内容恢复必须从 `automation/task-contract.json.runtimeProfile` 读取 Astra low 配置，并在调用模型前执行 `scripts/verify-runtime-profile.cjs`，校验宿主允许列表。不得在 shell 中另写模型常量。迁移或同步后必须执行该检查；Telegram 通道可连接不代表日报模型任务可运行。
+日报主任务和内容恢复必须从 `automation/task-contract.json.runtimeProfile` 读取 GPT-6.1 SOL low 配置，并在调用模型前执行 `scripts/verify-runtime-profile.cjs`，校验宿主允许列表。不得在 shell 中另写模型常量。迁移或同步后必须执行该检查；Telegram 通道可连接不代表日报模型任务可运行。
 
 ## 2026-09-21 逐期收藏合同
 
