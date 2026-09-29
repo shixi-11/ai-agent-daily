@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-28T00:51:30.037Z",
+  "generatedAt": "2026-09-29T00:51:15.458Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-28",
-    "url": "/daily/en/2026/09/28/",
+    "date": "2026-09-29",
+    "url": "/daily/en/2026/09/29/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/28/"
+    "alternateUrl": "/daily/2026/09/29/"
   },
   "reports": [
+    {
+      "date": "2026-09-29",
+      "title": "AI Agent — AI Enters Real Workflows",
+      "lead": "Sonnet and Holo4 gain capabilities, Shopify adds checkout tools, and small models and spare computers find new uses. The practical test is whether tasks can be completed with meaningful controls.",
+      "url": "/daily/en/2026/09/29/",
+      "alternateUrl": "/daily/2026/09/29/",
+      "publicPath": "en/2026/09/29/index.html",
+      "sourceFile": "20260929.body.html",
+      "sha256": "021b8956e1bbef71289495fc0879b0a82a4d056440081e58f244d866296afdba",
+      "publicSha256": "38d686d23985070b3125c109487e8b26202eca7da671a8b264f64a0ba1f23b5e"
+    },
     {
       "date": "2026-09-28",
       "title": "AI Agent — Less Wasted Work, More Action",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/28/index.html",
       "sourceFile": "20260928.body.html",
       "sha256": "32ccb7f37aaac2d6b80545cd7b8b533ed69eee3a8e74021cf1a3579696090dc3",
-      "publicSha256": "2e9794dfdd87706f39fdd823a9908d8cc3a756aaec0c75bc404411e5b8b042bc"
+      "publicSha256": "d6d36cf6b88c9f30a245a38a5e4e5043d6515b36672dd1ddb629c7a32585b698"
     },
     {
       "date": "2026-09-27",

@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-09-29 AI Agent智能体走进真实工作流</title>
+      <link>https://ai.alux.network/daily/2026/09/29/</link>
+      <guid>https://ai.alux.network/daily/2026/09/29/</guid>
+      <pubDate>Mon, 28 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Sonnet与Holo4更新能力，Shopify开放结账工具，小模型和闲置电脑也有了新玩法。真正的考验，是任务能否完成、过程能否受控。</description>
+    </item>
+    <item>
       <title>2026-09-28 AI Agent缩短从判断到行动的距离</title>
       <link>https://ai.alux.network/daily/2026/09/28/</link>
       <guid>https://ai.alux.network/daily/2026/09/28/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/25/</guid>
       <pubDate>Mon, 24 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天七条信号显示：开放权重、完整 Harness、可安装 Skills 与机器证明，正在把 AI 从能力展示推向可检查系统。</description>
-    </item>
-    <item>
-      <title>2026-08-24 AI Agent恢复必须带着证据</title>
-      <link>https://ai.alux.network/daily/2026/08/24/</link>
-      <guid>https://ai.alux.network/daily/2026/08/24/</guid>
-      <pubDate>Sun, 23 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天九条变化把同一问题推到台前：Agent要真正可用，恢复、授权、证据和执行环境必须一起成立。</description>
     </item>
   </channel>
 </rss>

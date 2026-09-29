@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-28T00:51:30.037Z",
+  "generatedAt": "2026-09-29T00:51:15.458Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-28",
-    "url": "/daily/2026/09/28/",
+    "date": "2026-09-29",
+    "url": "/daily/2026/09/29/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/28/"
+    "alternateUrl": "/daily/en/2026/09/29/"
   },
   "reports": [
+    {
+      "date": "2026-09-29",
+      "title": "AI Agent智能体走进真实工作流",
+      "lead": "Sonnet与Holo4更新能力，Shopify开放结账工具，小模型和闲置电脑也有了新玩法。真正的考验，是任务能否完成、过程能否受控。",
+      "url": "/daily/2026/09/29/",
+      "alternateUrl": "/daily/en/2026/09/29/",
+      "publicPath": "2026/09/29/index.html",
+      "sourceFile": "20260929_ALUX_AI智能体情报日报.html",
+      "sha256": "2fdf20ebf5b62c7ada3afc9a8d6d1eec76427c7aaf0228be732064464eeb3ba9",
+      "publicSha256": "70b9545845e9bd2f9092dd986ba354283419cebe834095269938cc909f669e10"
+    },
     {
       "date": "2026-09-28",
       "title": "AI Agent缩短从判断到行动的距离",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/28/index.html",
       "sourceFile": "20260928_ALUX_AI智能体情报日报.html",
       "sha256": "f4a2932a966ccda64b1b0f1f99172dcb924109707cf48468fbe832be9e0ba7bb",
-      "publicSha256": "395c644bd7b7a6e326feeeefe619b9e73bab11badcf9c8e20259a743598500fa"
+      "publicSha256": "bb74fc41fe917502ece713cbb1f971ad0aa81e864e51521361257c67643300b1"
     },
     {
       "date": "2026-09-27",

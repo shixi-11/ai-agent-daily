@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-09-29 AI Agent — AI Enters Real Workflows</title>
+      <link>https://ai.alux.network/daily/en/2026/09/29/</link>
+      <guid>https://ai.alux.network/daily/en/2026/09/29/</guid>
+      <pubDate>Mon, 28 Sep 2026 16:00:00 GMT</pubDate>
+      <description>Sonnet and Holo4 gain capabilities, Shopify adds checkout tools, and small models and spare computers find new uses. The practical test is whether tasks can be completed with meaningful controls.</description>
+    </item>
+    <item>
       <title>2026-09-28 AI Agent — Less Wasted Work, More Action</title>
       <link>https://ai.alux.network/daily/en/2026/09/28/</link>
       <guid>https://ai.alux.network/daily/en/2026/09/28/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/25/</guid>
       <pubDate>Mon, 24 Aug 2026 16:00:00 GMT</pubDate>
       <description>Seven signals point to open weights, complete harnesses, installable Skills, and machine proofs moving AI beyond capability demos toward inspectable systems.</description>
-    </item>
-    <item>
-      <title>2026-08-24 AI Agent — Recovery Needs Evidence</title>
-      <link>https://ai.alux.network/daily/en/2026/08/24/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/24/</guid>
-      <pubDate>Sun, 23 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Nine changes converge on one point: for agents to be genuinely useful, recovery, authorization, evidence, and the execution environment must work as one.</description>
     </item>
   </channel>
 </rss>
