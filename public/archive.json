@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-09-29T00:51:15.458Z",
+  "generatedAt": "2026-10-04T01:29:34.891Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-09-29",
-    "url": "/daily/2026/09/29/",
+    "date": "2026-10-04",
+    "url": "/daily/2026/10/04/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/09/29/"
+    "alternateUrl": "/daily/en/2026/10/04/"
   },
   "reports": [
+    {
+      "date": "2026-10-04",
+      "title": "AI Agent模型升级与结果验收",
+      "lead": "12条信号串起新模型、检索、科学报告与视频实验，也把Agent的完成标准拉回可验证结果。",
+      "url": "/daily/2026/10/04/",
+      "alternateUrl": "/daily/en/2026/10/04/",
+      "publicPath": "2026/10/04/index.html",
+      "sourceFile": "20261004_ALUX_AI智能体情报日报.html",
+      "sha256": "d44813a0636e7dc3c979278f8e76c5638d4c1a308e4350e4de6cb526f45ded8e",
+      "publicSha256": "a27dc4565929f4def3b299dbe4e41194ebdfe7e255296355aa4bdaaedd9fc295"
+    },
     {
       "date": "2026-09-29",
       "title": "AI Agent智能体走进真实工作流",
@@ -21,7 +32,7 @@
       "publicPath": "2026/09/29/index.html",
       "sourceFile": "20260929_ALUX_AI智能体情报日报.html",
       "sha256": "2fdf20ebf5b62c7ada3afc9a8d6d1eec76427c7aaf0228be732064464eeb3ba9",
-      "publicSha256": "70b9545845e9bd2f9092dd986ba354283419cebe834095269938cc909f669e10"
+      "publicSha256": "bcc9f262581f7a0bd4ee31d893a09797bff6b874982df90fe01e06438fd0a54f"
     },
     {
       "date": "2026-09-28",

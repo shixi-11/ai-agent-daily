@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-09-29T00:51:15.458Z",
+  "generatedAt": "2026-10-04T01:29:34.891Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-09-29",
-    "url": "/daily/en/2026/09/29/",
+    "date": "2026-10-04",
+    "url": "/daily/en/2026/10/04/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/09/29/"
+    "alternateUrl": "/daily/2026/10/04/"
   },
   "reports": [
+    {
+      "date": "2026-10-04",
+      "title": "AI Agent — Better models, stronger checks",
+      "lead": "Twelve developments connect new models with retrieval, scientific reports, and video experiments—and bring the focus back to verifiable agent outcomes.",
+      "url": "/daily/en/2026/10/04/",
+      "alternateUrl": "/daily/2026/10/04/",
+      "publicPath": "en/2026/10/04/index.html",
+      "sourceFile": "20261004.body.html",
+      "sha256": "bc387b72b9384616972beaaec59b70a3c456d1c22028803895363c58781554e0",
+      "publicSha256": "2fac82f9ef8825054e36e4c92e64d744d3d9882c5490fee275235153763fc3a0"
+    },
     {
       "date": "2026-09-29",
       "title": "AI Agent — AI Enters Real Workflows",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/09/29/index.html",
       "sourceFile": "20260929.body.html",
       "sha256": "021b8956e1bbef71289495fc0879b0a82a4d056440081e58f244d866296afdba",
-      "publicSha256": "38d686d23985070b3125c109487e8b26202eca7da671a8b264f64a0ba1f23b5e"
+      "publicSha256": "7da3a036742715be2fe217b6d050d2af80d8fc8206338d23a3044d6491d76c9e"
     },
     {
       "date": "2026-09-28",

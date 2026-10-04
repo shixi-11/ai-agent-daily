@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-04 AI Agent模型升级与结果验收</title>
+      <link>https://ai.alux.network/daily/2026/10/04/</link>
+      <guid>https://ai.alux.network/daily/2026/10/04/</guid>
+      <pubDate>Sat, 03 Oct 2026 16:00:00 GMT</pubDate>
+      <description>12条信号串起新模型、检索、科学报告与视频实验，也把Agent的完成标准拉回可验证结果。</description>
+    </item>
+    <item>
       <title>2026-09-29 AI Agent智能体走进真实工作流</title>
       <link>https://ai.alux.network/daily/2026/09/29/</link>
       <guid>https://ai.alux.network/daily/2026/09/29/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/26/</guid>
       <pubDate>Tue, 25 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天六条信号同时指向一件事：Agent 正把行业权限、本地记忆与专用芯片接进真实工作。</description>
-    </item>
-    <item>
-      <title>2026-08-25 AI Agent开放正在从模型长到系统</title>
-      <link>https://ai.alux.network/daily/2026/08/25/</link>
-      <guid>https://ai.alux.network/daily/2026/08/25/</guid>
-      <pubDate>Mon, 24 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天七条信号显示：开放权重、完整 Harness、可安装 Skills 与机器证明，正在把 AI 从能力展示推向可检查系统。</description>
     </item>
   </channel>
 </rss>
