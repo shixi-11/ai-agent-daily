@@ -6,7 +6,7 @@
   "automationTimezone": "preserve-existing",
   "siteDisplayTimezone": "Asia/Shanghai",
   "runtimeProfile": {
-    "model": "openai/gpt-6.1-sol",
+    "model": "openai/gpt-6-astra",
     "thinking": "low",
     "speed": "standard",
     "fallbacks": []
