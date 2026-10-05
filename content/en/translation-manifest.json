@@ -739,6 +739,15 @@
       "translationSha256": "bc387b72b9384616972beaaec59b70a3c456d1c22028803895363c58781554e0",
       "status": "reviewed",
       "reviewedAt": "2026-10-04T01:29:34.891Z"
+    },
+    {
+      "date": "2026-10-05",
+      "sourceFile": "20261005_ALUX_AI智能体情报日报.html",
+      "translationFile": "20261005.body.html",
+      "sourceSha256": "c73599985fca338df1886c24f049c5694fd96ec5afc468428e55f3fe74ea0f29",
+      "translationSha256": "e7091393e9b467113434efc17713bc50c79e51ccf709aa51c158a4bbc879d008",
+      "status": "reviewed",
+      "reviewedAt": "2026-10-05T00:24:12.360Z"
     }
   ]
 }

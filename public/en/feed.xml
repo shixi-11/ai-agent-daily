@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-05 AI Agent — Agents enter everyday tools</title>
+      <link>https://ai.alux.network/daily/en/2026/10/05/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/05/</guid>
+      <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Twelve developments bring agents to homemade devices, local media libraries, voice interfaces, and business data.</description>
+    </item>
+    <item>
       <title>2026-10-04 AI Agent — Better models, stronger checks</title>
       <link>https://ai.alux.network/daily/en/2026/10/04/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/04/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/27/</guid>
       <pubDate>Wed, 26 Aug 2026 16:00:00 GMT</pubDate>
       <description>Seven signals show agents moving beyond single-session assistants toward production systems that coordinate tasks, Skills, evaluation, and hardware.</description>
-    </item>
-    <item>
-      <title>2026-08-26 AI Agents — Enter Real Work</title>
-      <link>https://ai.alux.network/daily/en/2026/08/26/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/26/</guid>
-      <pubDate>Tue, 25 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Six signals point in one direction: agents are bringing industry permissions, local memory, and custom silicon into real workflows.</description>
     </item>
   </channel>
 </rss>

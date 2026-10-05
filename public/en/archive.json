@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-04T01:29:34.891Z",
+  "generatedAt": "2026-10-05T00:24:12.360Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-04",
-    "url": "/daily/en/2026/10/04/",
+    "date": "2026-10-05",
+    "url": "/daily/en/2026/10/05/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/04/"
+    "alternateUrl": "/daily/2026/10/05/"
   },
   "reports": [
+    {
+      "date": "2026-10-05",
+      "title": "AI Agent — Agents enter everyday tools",
+      "lead": "Twelve developments bring agents to homemade devices, local media libraries, voice interfaces, and business data.",
+      "url": "/daily/en/2026/10/05/",
+      "alternateUrl": "/daily/2026/10/05/",
+      "publicPath": "en/2026/10/05/index.html",
+      "sourceFile": "20261005.body.html",
+      "sha256": "e7091393e9b467113434efc17713bc50c79e51ccf709aa51c158a4bbc879d008",
+      "publicSha256": "621419de03f9d259392fbbb679b44f4a5f731dc29e2584c69094f0a64e095875"
+    },
     {
       "date": "2026-10-04",
       "title": "AI Agent — Better models, stronger checks",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/04/index.html",
       "sourceFile": "20261004.body.html",
       "sha256": "bc387b72b9384616972beaaec59b70a3c456d1c22028803895363c58781554e0",
-      "publicSha256": "2fac82f9ef8825054e36e4c92e64d744d3d9882c5490fee275235153763fc3a0"
+      "publicSha256": "61ff298d5aa09b0885f9ba80540bbd5eb7b4fa21674b6300e1b8e11f27da6cea"
     },
     {
       "date": "2026-09-29",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-04T01:29:34.891Z",
+  "generatedAt": "2026-10-05T00:24:12.360Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-04",
-    "url": "/daily/2026/10/04/",
+    "date": "2026-10-05",
+    "url": "/daily/2026/10/05/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/04/"
+    "alternateUrl": "/daily/en/2026/10/05/"
   },
   "reports": [
+    {
+      "date": "2026-10-05",
+      "title": "AI Agent助手走进设备与日常",
+      "lead": "12条消息看助手怎样连接自制设备、本地影像、语音与业务数据，也看这些新入口的真实使用条件。",
+      "url": "/daily/2026/10/05/",
+      "alternateUrl": "/daily/en/2026/10/05/",
+      "publicPath": "2026/10/05/index.html",
+      "sourceFile": "20261005_ALUX_AI智能体情报日报.html",
+      "sha256": "c73599985fca338df1886c24f049c5694fd96ec5afc468428e55f3fe74ea0f29",
+      "publicSha256": "7201740195ef71ba401d4ea94ba137fabd7b32e22744dbee5f3d0faa31971d44"
+    },
     {
       "date": "2026-10-04",
       "title": "AI Agent模型升级与结果验收",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/04/index.html",
       "sourceFile": "20261004_ALUX_AI智能体情报日报.html",
       "sha256": "d44813a0636e7dc3c979278f8e76c5638d4c1a308e4350e4de6cb526f45ded8e",
-      "publicSha256": "a27dc4565929f4def3b299dbe4e41194ebdfe7e255296355aa4bdaaedd9fc295"
+      "publicSha256": "f6b0d627ac7293bbb2f22ec9c802cb06cc3fcfe91e42a7fb05e52faac2636406"
     },
     {
       "date": "2026-09-29",

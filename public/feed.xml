@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-05 AI Agent助手走进设备与日常</title>
+      <link>https://ai.alux.network/daily/2026/10/05/</link>
+      <guid>https://ai.alux.network/daily/2026/10/05/</guid>
+      <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
+      <description>12条消息看助手怎样连接自制设备、本地影像、语音与业务数据，也看这些新入口的真实使用条件。</description>
+    </item>
+    <item>
       <title>2026-10-04 AI Agent模型升级与结果验收</title>
       <link>https://ai.alux.network/daily/2026/10/04/</link>
       <guid>https://ai.alux.network/daily/2026/10/04/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/27/</guid>
       <pubDate>Wed, 26 Aug 2026 16:00:00 GMT</pubDate>
       <description>今天七条信号说明：Agent 正从单会话助手，变成任务、Skills、评测与芯片协同的生产系统。</description>
-    </item>
-    <item>
-      <title>2026-08-26 AI Agent从通用助手走进专业现场</title>
-      <link>https://ai.alux.network/daily/2026/08/26/</link>
-      <guid>https://ai.alux.network/daily/2026/08/26/</guid>
-      <pubDate>Tue, 25 Aug 2026 16:00:00 GMT</pubDate>
-      <description>今天六条信号同时指向一件事：Agent 正把行业权限、本地记忆与专用芯片接进真实工作。</description>
     </item>
   </channel>
 </rss>
