@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-05T00:24:12.360Z",
+  "generatedAt": "2026-10-06T00:26:59.340Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-05",
-    "url": "/daily/2026/10/05/",
+    "date": "2026-10-06",
+    "url": "/daily/2026/10/06/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/05/"
+    "alternateUrl": "/daily/en/2026/10/06/"
   },
   "reports": [
+    {
+      "date": "2026-10-06",
+      "title": "AI Agent从模型预告到可验证的工作",
+      "lead": "12条消息连接模型预告、企业助手与代码审查，也带来钢琴听辨、跨图编辑和游戏决策演示。",
+      "url": "/daily/2026/10/06/",
+      "alternateUrl": "/daily/en/2026/10/06/",
+      "publicPath": "2026/10/06/index.html",
+      "sourceFile": "20261006_ALUX_AI智能体情报日报.html",
+      "sha256": "292b375c42273e034c2116040d0bb8f44209f58c1fbcfa9a650316e7bbadb28b",
+      "publicSha256": "30d5f62e53404a490c76814d114859523b2262d99983fa84f4284dd384528f17"
+    },
     {
       "date": "2026-10-05",
       "title": "AI Agent助手走进设备与日常",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/05/index.html",
       "sourceFile": "20261005_ALUX_AI智能体情报日报.html",
       "sha256": "c73599985fca338df1886c24f049c5694fd96ec5afc468428e55f3fe74ea0f29",
-      "publicSha256": "7201740195ef71ba401d4ea94ba137fabd7b32e22744dbee5f3d0faa31971d44"
+      "publicSha256": "a4cd1dba4f5354b4d690b81756df9519ce61f70fbc40e7ea08b794469f10d734"
     },
     {
       "date": "2026-10-04",

@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-06 AI Agent — Testing agents</title>
+      <link>https://ai.alux.network/daily/en/2026/10/06/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/06/</guid>
+      <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Twelve developments span model previews, enterprise agents, code review, and creative demos—with practical ways to inspect what each can do.</description>
+    </item>
+    <item>
       <title>2026-10-05 AI Agent — Agents enter everyday tools</title>
       <link>https://ai.alux.network/daily/en/2026/10/05/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/05/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/28/</guid>
       <pubDate>Thu, 27 Aug 2026 16:00:00 GMT</pubDate>
       <description>Eight signals push agents deeper into the system stack: restricted execution, forked collaboration, file memory, geographic inference, specialized CPUs, and planetary prediction.</description>
-    </item>
-    <item>
-      <title>2026-08-27 AI Agents — Build on Open Systems</title>
-      <link>https://ai.alux.network/daily/en/2026/08/27/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/27/</guid>
-      <pubDate>Wed, 26 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Seven signals show agents moving beyond single-session assistants toward production systems that coordinate tasks, Skills, evaluation, and hardware.</description>
     </item>
   </channel>
 </rss>

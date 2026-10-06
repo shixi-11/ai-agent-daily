@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-05T00:24:12.360Z",
+  "generatedAt": "2026-10-06T00:26:59.340Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-05",
-    "url": "/daily/en/2026/10/05/",
+    "date": "2026-10-06",
+    "url": "/daily/en/2026/10/06/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/05/"
+    "alternateUrl": "/daily/2026/10/06/"
   },
   "reports": [
+    {
+      "date": "2026-10-06",
+      "title": "AI Agent — Testing agents",
+      "lead": "Twelve developments span model previews, enterprise agents, code review, and creative demos—with practical ways to inspect what each can do.",
+      "url": "/daily/en/2026/10/06/",
+      "alternateUrl": "/daily/2026/10/06/",
+      "publicPath": "en/2026/10/06/index.html",
+      "sourceFile": "20261006.body.html",
+      "sha256": "c8a1bd3aea97dddf8f15b2e9daa4f4e0504482a895418c0232370662a01923be",
+      "publicSha256": "75414d02cb98cf7deb491f71ce13a48d49e3faac0bac8233e5af907fb7b404c9"
+    },
     {
       "date": "2026-10-05",
       "title": "AI Agent — Agents enter everyday tools",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/05/index.html",
       "sourceFile": "20261005.body.html",
       "sha256": "e7091393e9b467113434efc17713bc50c79e51ccf709aa51c158a4bbc879d008",
-      "publicSha256": "621419de03f9d259392fbbb679b44f4a5f731dc29e2584c69094f0a64e095875"
+      "publicSha256": "1a4316d7fabc9844d2592cac159e33e85893d11ea1ba9c2ce1b677f6ed75f152"
     },
     {
       "date": "2026-10-04",
