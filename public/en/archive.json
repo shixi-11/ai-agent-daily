@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-06T00:26:59.340Z",
+  "generatedAt": "2026-10-07T00:19:57.202Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-06",
-    "url": "/daily/en/2026/10/06/",
+    "date": "2026-10-07",
+    "url": "/daily/en/2026/10/07/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/06/"
+    "alternateUrl": "/daily/2026/10/07/"
   },
   "reports": [
+    {
+      "date": "2026-10-07",
+      "title": "AI Agent — Models meet everyday work",
+      "lead": "This issue covers 13 updates on model previews, cross-media search, and image editing, alongside email, gardening, voice travel, and hardware experiments.",
+      "url": "/daily/en/2026/10/07/",
+      "alternateUrl": "/daily/2026/10/07/",
+      "publicPath": "en/2026/10/07/index.html",
+      "sourceFile": "20261007.body.html",
+      "sha256": "314e8c4a3d725576de7786e7df66a2b7c3c545743406026e14a1e94a2b170a08",
+      "publicSha256": "8c2b99aa38c37703147c7c40ebf312a65a64d43cfdbc6409a3afc3b9332abe26"
+    },
     {
       "date": "2026-10-06",
       "title": "AI Agent — Testing agents",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/06/index.html",
       "sourceFile": "20261006.body.html",
       "sha256": "c8a1bd3aea97dddf8f15b2e9daa4f4e0504482a895418c0232370662a01923be",
-      "publicSha256": "75414d02cb98cf7deb491f71ce13a48d49e3faac0bac8233e5af907fb7b404c9"
+      "publicSha256": "69d1fc7bfe91e3925c9760c1ea7bcfeb4a68178517a9659b438deecc096b31a1"
     },
     {
       "date": "2026-10-05",

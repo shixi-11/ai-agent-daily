@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-07 AI Agent模型走向日常工作</title>
+      <link>https://ai.alux.network/daily/2026/10/07/</link>
+      <guid>https://ai.alux.network/daily/2026/10/07/</guid>
+      <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
+      <description>13条消息覆盖模型预览、跨媒体检索与图片编辑，也把邮件、园艺、语音旅行和硬件实验带到眼前。</description>
+    </item>
+    <item>
       <title>2026-10-06 AI Agent从模型预告到可验证的工作</title>
       <link>https://ai.alux.network/daily/2026/10/06/</link>
       <guid>https://ai.alux.network/daily/2026/10/06/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/08/29/</guid>
       <pubDate>Fri, 28 Aug 2026 16:00:00 GMT</pubDate>
       <description>八条信号同时指向一件事：会话、评测、缓存、交易与故障域，正被写成 Agent 系统里的明确控制面。</description>
-    </item>
-    <item>
-      <title>2026-08-28 AI Agent从会话走向系统</title>
-      <link>https://ai.alux.network/daily/2026/08/28/</link>
-      <guid>https://ai.alux.network/daily/2026/08/28/</guid>
-      <pubDate>Thu, 27 Aug 2026 16:00:00 GMT</pubDate>
-      <description>八条信号把 Agent 推入更深的系统层：受限运行、分叉协作、文件记忆、地域计算、专用 CPU 与行星级预测。</description>
     </item>
   </channel>
 </rss>

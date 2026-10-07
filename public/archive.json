@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-06T00:26:59.340Z",
+  "generatedAt": "2026-10-07T00:19:57.202Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-06",
-    "url": "/daily/2026/10/06/",
+    "date": "2026-10-07",
+    "url": "/daily/2026/10/07/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/06/"
+    "alternateUrl": "/daily/en/2026/10/07/"
   },
   "reports": [
+    {
+      "date": "2026-10-07",
+      "title": "AI Agent模型走向日常工作",
+      "lead": "13条消息覆盖模型预览、跨媒体检索与图片编辑，也把邮件、园艺、语音旅行和硬件实验带到眼前。",
+      "url": "/daily/2026/10/07/",
+      "alternateUrl": "/daily/en/2026/10/07/",
+      "publicPath": "2026/10/07/index.html",
+      "sourceFile": "20261007_ALUX_AI智能体情报日报.html",
+      "sha256": "052cc8241b851dfa738f7e6cb4a78fa161da826e585fc5171f0ee5b3bf61fbd6",
+      "publicSha256": "8630d1138bd46c5e01e84c1d96f6a715e58ec47769e9c938dd7c8f5b5972a760"
+    },
     {
       "date": "2026-10-06",
       "title": "AI Agent从模型预告到可验证的工作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/06/index.html",
       "sourceFile": "20261006_ALUX_AI智能体情报日报.html",
       "sha256": "292b375c42273e034c2116040d0bb8f44209f58c1fbcfa9a650316e7bbadb28b",
-      "publicSha256": "30d5f62e53404a490c76814d114859523b2262d99983fa84f4284dd384528f17"
+      "publicSha256": "d535d949ea2421884006b9a271646c05607a2fffcce82d69602a259d3145e70e"
     },
     {
       "date": "2026-10-05",
