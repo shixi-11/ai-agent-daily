@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-07T00:19:57.202Z",
+  "generatedAt": "2026-10-08T00:20:23.876Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-07",
-    "url": "/daily/2026/10/07/",
+    "date": "2026-10-08",
+    "url": "/daily/2026/10/08/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/07/"
+    "alternateUrl": "/daily/en/2026/10/08/"
   },
   "reports": [
+    {
+      "date": "2026-10-08",
+      "title": "AI Agent助手走出聊天框",
+      "lead": "12条消息连接低价模型、本地决策与桌面工具，也带来可玩的游戏、可听的语言课和新的Windows硬件。",
+      "url": "/daily/2026/10/08/",
+      "alternateUrl": "/daily/en/2026/10/08/",
+      "publicPath": "2026/10/08/index.html",
+      "sourceFile": "20261008_ALUX_AI智能体情报日报.html",
+      "sha256": "96d9cb6b8fb9ea3a09b8374bec4aa272f20df53b9706690cddb76c14c82d90a3",
+      "publicSha256": "57605f91c1483691d8ad85d9fee8fad913f3fdb9f6c39ac0d770ac01b4d60e69"
+    },
     {
       "date": "2026-10-07",
       "title": "AI Agent模型走向日常工作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/07/index.html",
       "sourceFile": "20261007_ALUX_AI智能体情报日报.html",
       "sha256": "052cc8241b851dfa738f7e6cb4a78fa161da826e585fc5171f0ee5b3bf61fbd6",
-      "publicSha256": "8630d1138bd46c5e01e84c1d96f6a715e58ec47769e9c938dd7c8f5b5972a760"
+      "publicSha256": "9317c4cdee45c60d396c2e2e6841f3d9cd05456946ee2bfd503a40d46c0749ca"
     },
     {
       "date": "2026-10-06",

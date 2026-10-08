@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-07T00:19:57.202Z",
+  "generatedAt": "2026-10-08T00:20:23.876Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-07",
-    "url": "/daily/en/2026/10/07/",
+    "date": "2026-10-08",
+    "url": "/daily/en/2026/10/08/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/07/"
+    "alternateUrl": "/daily/2026/10/08/"
   },
   "reports": [
+    {
+      "date": "2026-10-08",
+      "title": "AI Agent — AI moves beyond the chat box",
+      "lead": "Twelve updates cover lower-cost models, local decisions, playable games, voice input, and Windows hardware.",
+      "url": "/daily/en/2026/10/08/",
+      "alternateUrl": "/daily/2026/10/08/",
+      "publicPath": "en/2026/10/08/index.html",
+      "sourceFile": "20261008.body.html",
+      "sha256": "fa47257eb41d87967f0a8e336e24ecf6a91626ffd9468dc7e88ad78fe94084be",
+      "publicSha256": "a1a82c447a6f2db4a2317aa9d2186106519fa28e3c362e26a695704928bd08b1"
+    },
     {
       "date": "2026-10-07",
       "title": "AI Agent — Models meet everyday work",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/07/index.html",
       "sourceFile": "20261007.body.html",
       "sha256": "314e8c4a3d725576de7786e7df66a2b7c3c545743406026e14a1e94a2b170a08",
-      "publicSha256": "8c2b99aa38c37703147c7c40ebf312a65a64d43cfdbc6409a3afc3b9332abe26"
+      "publicSha256": "339901c71c7b0f3c75184d7dd353d7bfc2b89bff0928b4bcd358812c578a0804"
     },
     {
       "date": "2026-10-06",

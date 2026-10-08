@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-08 AI Agent — AI moves beyond the chat box</title>
+      <link>https://ai.alux.network/daily/en/2026/10/08/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/08/</guid>
+      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Twelve updates cover lower-cost models, local decisions, playable games, voice input, and Windows hardware.</description>
+    </item>
+    <item>
       <title>2026-10-07 AI Agent — Models meet everyday work</title>
       <link>https://ai.alux.network/daily/en/2026/10/07/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/07/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/30/</guid>
       <pubDate>Sat, 29 Aug 2026 16:00:00 GMT</pubDate>
       <description>Nine signals map the path from tool results, durable operations, and training-rollout alignment to media pipelines and model contracts. AI engineering is gaining the explicit boundaries required for maintainable delivery.</description>
-    </item>
-    <item>
-      <title>2026-08-29 AI Agents — Gain a Control Plane</title>
-      <link>https://ai.alux.network/daily/en/2026/08/29/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/29/</guid>
-      <pubDate>Fri, 28 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Eight signals point in one direction: sessions, evaluation, cache placement, transactions, and failure domains are becoming explicit control surfaces for agent systems.</description>
     </item>
   </channel>
 </rss>
