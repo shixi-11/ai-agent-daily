@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-09 AI Agent — AI work needs verifiable results</title>
+      <link>https://ai.alux.network/daily/en/2026/10/09/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/09/</guid>
+      <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Thirteen updates connect enterprise agents, local creative tools, model access, and research that examines whether generated results hold up.</description>
+    </item>
+    <item>
       <title>2026-10-08 AI Agent — AI moves beyond the chat box</title>
       <link>https://ai.alux.network/daily/en/2026/10/08/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/08/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/08/31/</guid>
       <pubDate>Sun, 30 Aug 2026 16:00:00 GMT</pubDate>
       <description>Seven signals—from reconnect handling and replay-state cleanup to browser inference, spatial vision, and population-aware speech evaluation—bring production boundaries into sharper focus.</description>
-    </item>
-    <item>
-      <title>2026-08-30 AI Agent — Open Stacks Move Into Delivery</title>
-      <link>https://ai.alux.network/daily/en/2026/08/30/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/30/</guid>
-      <pubDate>Sat, 29 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Nine signals map the path from tool results, durable operations, and training-rollout alignment to media pipelines and model contracts. AI engineering is gaining the explicit boundaries required for maintainable delivery.</description>
     </item>
   </channel>
 </rss>

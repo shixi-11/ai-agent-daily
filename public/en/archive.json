@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-08T00:20:23.876Z",
+  "generatedAt": "2026-10-09T00:55:38.884Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-08",
-    "url": "/daily/en/2026/10/08/",
+    "date": "2026-10-09",
+    "url": "/daily/en/2026/10/09/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/08/"
+    "alternateUrl": "/daily/2026/10/09/"
   },
   "reports": [
+    {
+      "date": "2026-10-09",
+      "title": "AI Agent — AI work needs verifiable results",
+      "lead": "Thirteen updates connect enterprise agents, local creative tools, model access, and research that examines whether generated results hold up.",
+      "url": "/daily/en/2026/10/09/",
+      "alternateUrl": "/daily/2026/10/09/",
+      "publicPath": "en/2026/10/09/index.html",
+      "sourceFile": "20261009.body.html",
+      "sha256": "55e4a46a973e3a83e25dc61e6b2f70f0d4c915efcef8d80e502be3a9d9cedbeb",
+      "publicSha256": "df0ece7ccff4baf750f2e86a0f817d3934553e6b1136a54e63e769961aed37ad"
+    },
     {
       "date": "2026-10-08",
       "title": "AI Agent — AI moves beyond the chat box",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/08/index.html",
       "sourceFile": "20261008.body.html",
       "sha256": "fa47257eb41d87967f0a8e336e24ecf6a91626ffd9468dc7e88ad78fe94084be",
-      "publicSha256": "a1a82c447a6f2db4a2317aa9d2186106519fa28e3c362e26a695704928bd08b1"
+      "publicSha256": "745bc7b78dc7a2819c268b7da877890e01bd15e9d899a524b54912e457132091"
     },
     {
       "date": "2026-10-07",
