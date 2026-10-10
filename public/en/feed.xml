@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-10 AI Agent — Small models enter creative tools and devices</title>
+      <link>https://ai.alux.network/daily/en/2026/10/10/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/10/</guid>
+      <pubDate>Fri, 09 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Twelve updates span eight-step image generation, multimodal parsing, and Arabic transcription, plus tools that make parts, generate terrain, and give small devices a voice.</description>
+    </item>
+    <item>
       <title>2026-10-09 AI Agent — AI work needs verifiable results</title>
       <link>https://ai.alux.network/daily/en/2026/10/09/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/09/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/01/</guid>
       <pubDate>Mon, 31 Aug 2026 16:00:00 GMT</pubDate>
       <description>Eight signals connect visual agents, framework security, skill governance, and open medical models to advertising as a new AI revenue base.</description>
-    </item>
-    <item>
-      <title>2026-08-31 AI Agent — Production Boundaries Emerge</title>
-      <link>https://ai.alux.network/daily/en/2026/08/31/</link>
-      <guid>https://ai.alux.network/daily/en/2026/08/31/</guid>
-      <pubDate>Sun, 30 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Seven signals—from reconnect handling and replay-state cleanup to browser inference, spatial vision, and population-aware speech evaluation—bring production boundaries into sharper focus.</description>
     </item>
   </channel>
 </rss>

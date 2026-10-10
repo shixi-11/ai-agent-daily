@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-09T00:55:38.884Z",
+  "generatedAt": "2026-10-10T00:17:23.512Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-09",
-    "url": "/daily/2026/10/09/",
+    "date": "2026-10-10",
+    "url": "/daily/2026/10/10/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/09/"
+    "alternateUrl": "/daily/en/2026/10/10/"
   },
   "reports": [
+    {
+      "date": "2026-10-10",
+      "title": "AI Agent小模型走进创作与设备",
+      "lead": "12条消息，从八步生图、多模态解析到阿拉伯语转写，也有能做零件、造地形和让小设备开口的工具。",
+      "url": "/daily/2026/10/10/",
+      "alternateUrl": "/daily/en/2026/10/10/",
+      "publicPath": "2026/10/10/index.html",
+      "sourceFile": "20261010_ALUX_AI智能体情报日报.html",
+      "sha256": "ae48ec7bca37672b86135afe6612a3ac07304fd54b5e7a55af2a478abe4eae29",
+      "publicSha256": "6029dd9ad6899280bb63c9d86f970992811da527f9a61cae8c6a0164a4e88477"
+    },
     {
       "date": "2026-10-09",
       "title": "AI Agent交付之后还要验收",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/09/index.html",
       "sourceFile": "20261009_ALUX_AI智能体情报日报.html",
       "sha256": "f99f2be8dc46f08a40acd0bbff5bef33161a790c8aff7fbe27e3dba8e70f341b",
-      "publicSha256": "ddba8601824861f0146a71a6eef5a59e7987cbe0a358ac235a65b917f37ed453"
+      "publicSha256": "4a99b6d3cae3c29b222e8f1338fcac0052d355fa6fd317120b0232f5e7cf8fef"
     },
     {
       "date": "2026-10-08",

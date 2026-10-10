@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-09T00:55:38.884Z",
+  "generatedAt": "2026-10-10T00:17:23.512Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-09",
-    "url": "/daily/en/2026/10/09/",
+    "date": "2026-10-10",
+    "url": "/daily/en/2026/10/10/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/09/"
+    "alternateUrl": "/daily/2026/10/10/"
   },
   "reports": [
+    {
+      "date": "2026-10-10",
+      "title": "AI Agent — Small models enter creative tools and devices",
+      "lead": "Twelve updates span eight-step image generation, multimodal parsing, and Arabic transcription, plus tools that make parts, generate terrain, and give small devices a voice.",
+      "url": "/daily/en/2026/10/10/",
+      "alternateUrl": "/daily/2026/10/10/",
+      "publicPath": "en/2026/10/10/index.html",
+      "sourceFile": "20261010.body.html",
+      "sha256": "e00a6779388917968d9015daf8f5e0d9465ea702264613381c2b9283499cd8df",
+      "publicSha256": "d00bd04ed4eeaa739357f65e12209f157e79bbddedab45a805cb2dea19f17b46"
+    },
     {
       "date": "2026-10-09",
       "title": "AI Agent — AI work needs verifiable results",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/09/index.html",
       "sourceFile": "20261009.body.html",
       "sha256": "55e4a46a973e3a83e25dc61e6b2f70f0d4c915efcef8d80e502be3a9d9cedbeb",
-      "publicSha256": "df0ece7ccff4baf750f2e86a0f817d3934553e6b1136a54e63e769961aed37ad"
+      "publicSha256": "7074ed92408ac315d64701f206903551eb84e18eeaa2340efa796e7bea4f92c7"
     },
     {
       "date": "2026-10-08",
