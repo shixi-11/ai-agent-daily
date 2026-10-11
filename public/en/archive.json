@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-10T00:17:23.512Z",
+  "generatedAt": "2026-10-11T00:18:40.677Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-10",
-    "url": "/daily/en/2026/10/10/",
+    "date": "2026-10-11",
+    "url": "/daily/en/2026/10/11/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/10/"
+    "alternateUrl": "/daily/2026/10/11/"
   },
   "reports": [
+    {
+      "date": "2026-10-11",
+      "title": "AI Agent — Decisions beyond generated text",
+      "lead": "Twelve updates explore decision encoders, a neural-circuit desktop fly, reading maps, local meeting notes, and the cost of serving real workloads.",
+      "url": "/daily/en/2026/10/11/",
+      "alternateUrl": "/daily/2026/10/11/",
+      "publicPath": "en/2026/10/11/index.html",
+      "sourceFile": "20261011.body.html",
+      "sha256": "711e99c24aadb64829909411d4f719402f7d296365e6c9e1eec94398d2b8d0f8",
+      "publicSha256": "0b91ad4c59d4def1282e77a1462ee537337ebcd63a36071715f28b9b50ff768c"
+    },
     {
       "date": "2026-10-10",
       "title": "AI Agent — Small models enter creative tools and devices",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/10/index.html",
       "sourceFile": "20261010.body.html",
       "sha256": "e00a6779388917968d9015daf8f5e0d9465ea702264613381c2b9283499cd8df",
-      "publicSha256": "d00bd04ed4eeaa739357f65e12209f157e79bbddedab45a805cb2dea19f17b46"
+      "publicSha256": "a80bf420f7d13abf971e51a1f10597551bff234daf978571167bad2e2fe19c99"
     },
     {
       "date": "2026-10-09",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-10T00:17:23.512Z",
+  "generatedAt": "2026-10-11T00:18:40.677Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-10",
-    "url": "/daily/2026/10/10/",
+    "date": "2026-10-11",
+    "url": "/daily/2026/10/11/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/10/"
+    "alternateUrl": "/daily/en/2026/10/11/"
   },
   "reports": [
+    {
+      "date": "2026-10-11",
+      "title": "AI Agent选择模型与可见交互",
+      "lead": "12条消息：决策编码器、神经回路桌面果蝇、哲学阅读地图与本地会议文档，也看真实请求怎样改变推理成本。",
+      "url": "/daily/2026/10/11/",
+      "alternateUrl": "/daily/en/2026/10/11/",
+      "publicPath": "2026/10/11/index.html",
+      "sourceFile": "20261011_ALUX_AI智能体情报日报.html",
+      "sha256": "5e8921ae80eda5b82bf90804e8c3a990fad6404459fac4f6d7b0adba2fd79d2c",
+      "publicSha256": "5893ecd2360789eb5c3f9e49ca1b1ebf237a0ee6c60685b23a15bb469986a868"
+    },
     {
       "date": "2026-10-10",
       "title": "AI Agent小模型走进创作与设备",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/10/index.html",
       "sourceFile": "20261010_ALUX_AI智能体情报日报.html",
       "sha256": "ae48ec7bca37672b86135afe6612a3ac07304fd54b5e7a55af2a478abe4eae29",
-      "publicSha256": "6029dd9ad6899280bb63c9d86f970992811da527f9a61cae8c6a0164a4e88477"
+      "publicSha256": "8d0c3e46b969a7777d2c49daa8575b7130370fd6ea7e62ac209c102f2f71180a"
     },
     {
       "date": "2026-10-09",

@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-11 AI Agent — Decisions beyond generated text</title>
+      <link>https://ai.alux.network/daily/en/2026/10/11/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/11/</guid>
+      <pubDate>Sat, 10 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Twelve updates explore decision encoders, a neural-circuit desktop fly, reading maps, local meeting notes, and the cost of serving real workloads.</description>
+    </item>
+    <item>
       <title>2026-10-10 AI Agent — Small models enter creative tools and devices</title>
       <link>https://ai.alux.network/daily/en/2026/10/10/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/10/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/02/</guid>
       <pubDate>Tue, 01 Sep 2026 16:00:00 GMT</pubDate>
       <description>Eight signals connect context management, tool budgets, and inference queues to a cyber-defense loop powered by more than 50 agents.</description>
-    </item>
-    <item>
-      <title>2026-09-01 AI Agent — Production Defaults Are Rewritten</title>
-      <link>https://ai.alux.network/daily/en/2026/09/01/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/01/</guid>
-      <pubDate>Mon, 31 Aug 2026 16:00:00 GMT</pubDate>
-      <description>Eight signals connect visual agents, framework security, skill governance, and open medical models to advertising as a new AI revenue base.</description>
     </item>
   </channel>
 </rss>
