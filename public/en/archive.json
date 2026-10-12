@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-11T00:18:40.677Z",
+  "generatedAt": "2026-10-12T00:17:37.077Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-11",
-    "url": "/daily/en/2026/10/11/",
+    "date": "2026-10-12",
+    "url": "/daily/en/2026/10/12/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/11/"
+    "alternateUrl": "/daily/2026/10/12/"
   },
   "reports": [
+    {
+      "date": "2026-10-12",
+      "title": "AI Agent — Tools you can inspect",
+      "lead": "Twelve updates span inspectable sandboxes, planning benchmarks, interactive explanations, image search, language practice, and street-view audio tours.",
+      "url": "/daily/en/2026/10/12/",
+      "alternateUrl": "/daily/2026/10/12/",
+      "publicPath": "en/2026/10/12/index.html",
+      "sourceFile": "20261012.body.html",
+      "sha256": "92ff77a80172565a42a0585e6561ffab33cd596cb481a519726adb1af64301dc",
+      "publicSha256": "bf3206d8e47635dafe2daf7f16d02c20a5d65bf91f74eda5eb0c53d6d1f523b0"
+    },
     {
       "date": "2026-10-11",
       "title": "AI Agent — Decisions beyond generated text",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/11/index.html",
       "sourceFile": "20261011.body.html",
       "sha256": "711e99c24aadb64829909411d4f719402f7d296365e6c9e1eec94398d2b8d0f8",
-      "publicSha256": "0b91ad4c59d4def1282e77a1462ee537337ebcd63a36071715f28b9b50ff768c"
+      "publicSha256": "06fa776cefacd6d1de4e58e2a14d8842fd9cb9c3eb9a4e3cc97f50b56e72fbe6"
     },
     {
       "date": "2026-10-10",

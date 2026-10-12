@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-12 AI Agent小工具里的真实进展</title>
+      <link>https://ai.alux.network/daily/2026/10/12/</link>
+      <guid>https://ai.alux.network/daily/2026/10/12/</guid>
+      <pubDate>Sun, 11 Oct 2026 16:00:00 GMT</pubDate>
+      <description>12条消息：能检查的沙箱、会暴露绕路的评测，以及可交互百科、图片检索、语言练习和街景语音导览。</description>
+    </item>
+    <item>
       <title>2026-10-11 AI Agent选择模型与可见交互</title>
       <link>https://ai.alux.network/daily/2026/10/11/</link>
       <guid>https://ai.alux.network/daily/2026/10/11/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/03/</guid>
       <pubDate>Wed, 02 Sep 2026 16:00:00 GMT</pubDate>
       <description>九条信号从组织级 MCP、失败可见性与跨区推理，连到漏洞修复和代码文档的生产闭环。</description>
-    </item>
-    <item>
-      <title>2026-09-02 AI Agent上下文与执行边界同时收紧</title>
-      <link>https://ai.alux.network/daily/2026/09/02/</link>
-      <guid>https://ai.alux.network/daily/2026/09/02/</guid>
-      <pubDate>Tue, 01 Sep 2026 16:00:00 GMT</pubDate>
-      <description>八条信号从上下文管理、工具预算与推理队列，连到五十多个安全 Agent 组成的攻防闭环。</description>
     </item>
   </channel>
 </rss>

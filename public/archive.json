@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-11T00:18:40.677Z",
+  "generatedAt": "2026-10-12T00:17:37.077Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-11",
-    "url": "/daily/2026/10/11/",
+    "date": "2026-10-12",
+    "url": "/daily/2026/10/12/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/11/"
+    "alternateUrl": "/daily/en/2026/10/12/"
   },
   "reports": [
+    {
+      "date": "2026-10-12",
+      "title": "AI Agent小工具里的真实进展",
+      "lead": "12条消息：能检查的沙箱、会暴露绕路的评测，以及可交互百科、图片检索、语言练习和街景语音导览。",
+      "url": "/daily/2026/10/12/",
+      "alternateUrl": "/daily/en/2026/10/12/",
+      "publicPath": "2026/10/12/index.html",
+      "sourceFile": "20261012_ALUX_AI智能体情报日报.html",
+      "sha256": "c07352d5454486a468514337796b64a22ed53966507873b396e00c10c348a42c",
+      "publicSha256": "a840021a82d4edff64bef247c12eb37664a72e6d445afd8e9ce0797ab64bd112"
+    },
     {
       "date": "2026-10-11",
       "title": "AI Agent选择模型与可见交互",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/11/index.html",
       "sourceFile": "20261011_ALUX_AI智能体情报日报.html",
       "sha256": "5e8921ae80eda5b82bf90804e8c3a990fad6404459fac4f6d7b0adba2fd79d2c",
-      "publicSha256": "5893ecd2360789eb5c3f9e49ca1b1ebf237a0ee6c60685b23a15bb469986a868"
+      "publicSha256": "cacb1142ae8cfd8f8d0038e7033f4396d257f5e10451e5c5619bf7addde23e21"
     },
     {
       "date": "2026-10-10",
