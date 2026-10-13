@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-12T00:17:37.077Z",
+  "generatedAt": "2026-10-13T00:20:11.185Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-12",
-    "url": "/daily/en/2026/10/12/",
+    "date": "2026-10-13",
+    "url": "/daily/en/2026/10/13/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/12/"
+    "alternateUrl": "/daily/2026/10/13/"
   },
   "reports": [
+    {
+      "date": "2026-10-13",
+      "title": "AI Agent — Picking Up Where Work Left Off",
+      "lead": "Thirteen updates: Meta introduces models with memory, MiniCPM explores phone deployment, workspaces can be saved, and music and spoken ideas become editable work.",
+      "url": "/daily/en/2026/10/13/",
+      "alternateUrl": "/daily/2026/10/13/",
+      "publicPath": "en/2026/10/13/index.html",
+      "sourceFile": "20261013.body.html",
+      "sha256": "d4c7944f4f8d5a4f2c430f7054fe59478cf4d81ed1c64fa706279649f09765db",
+      "publicSha256": "e58022f7e3b6d04fd79f20fa6f43e329f60c9a51ac1d584b7fbc93f2c5af5d6a"
+    },
     {
       "date": "2026-10-12",
       "title": "AI Agent — Tools you can inspect",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/12/index.html",
       "sourceFile": "20261012.body.html",
       "sha256": "92ff77a80172565a42a0585e6561ffab33cd596cb481a519726adb1af64301dc",
-      "publicSha256": "bf3206d8e47635dafe2daf7f16d02c20a5d65bf91f74eda5eb0c53d6d1f523b0"
+      "publicSha256": "76d2e34441293185b09c7faabb570d6ccf14f3bb57bac03a37d7dd07f6aa0eba"
     },
     {
       "date": "2026-10-11",

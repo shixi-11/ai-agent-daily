@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-13 AI Agent把工作接续下去</title>
+      <link>https://ai.alux.network/daily/2026/10/13/</link>
+      <guid>https://ai.alux.network/daily/2026/10/13/</guid>
+      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
+      <description>13条消息：Meta推出记忆型模型，MiniCPM探索手机部署；工作区能存档，音乐和口述想法也有了可编辑的落点。</description>
+    </item>
+    <item>
       <title>2026-10-12 AI Agent小工具里的真实进展</title>
       <link>https://ai.alux.network/daily/2026/10/12/</link>
       <guid>https://ai.alux.network/daily/2026/10/12/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/04/</guid>
       <pubDate>Thu, 03 Sep 2026 16:00:00 GMT</pubDate>
       <description>九条信号从资源即代码、跨工具记忆与漏洞身份，连到开放模型入口、本地算力池和科学重建。</description>
-    </item>
-    <item>
-      <title>2026-09-03 AI Agent权限失败与地域路由</title>
-      <link>https://ai.alux.network/daily/2026/09/03/</link>
-      <guid>https://ai.alux.network/daily/2026/09/03/</guid>
-      <pubDate>Wed, 02 Sep 2026 16:00:00 GMT</pubDate>
-      <description>九条信号从组织级 MCP、失败可见性与跨区推理，连到漏洞修复和代码文档的生产闭环。</description>
     </item>
   </channel>
 </rss>

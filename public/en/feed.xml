@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-13 AI Agent — Picking Up Where Work Left Off</title>
+      <link>https://ai.alux.network/daily/en/2026/10/13/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/13/</guid>
+      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Thirteen updates: Meta introduces models with memory, MiniCPM explores phone deployment, workspaces can be saved, and music and spoken ideas become editable work.</description>
+    </item>
+    <item>
       <title>2026-10-12 AI Agent — Tools you can inspect</title>
       <link>https://ai.alux.network/daily/en/2026/10/12/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/12/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/04/</guid>
       <pubDate>Thu, 03 Sep 2026 16:00:00 GMT</pubDate>
       <description>Nine signals connect infrastructure as code, cross-tool memory, and finding identity to model distribution, local compute pools, and scientific reconstruction.</description>
-    </item>
-    <item>
-      <title>2026-09-03 AI Agent — Permissions, Failures, Routing Move Into the Control Plane</title>
-      <link>https://ai.alux.network/daily/en/2026/09/03/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/03/</guid>
-      <pubDate>Wed, 02 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Nine signals connect managed MCP, visible failure, and cross-region inference to production loops for vulnerability repair and code documentation.</description>
     </item>
   </channel>
 </rss>

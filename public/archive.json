@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-12T00:17:37.077Z",
+  "generatedAt": "2026-10-13T00:20:11.185Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-12",
-    "url": "/daily/2026/10/12/",
+    "date": "2026-10-13",
+    "url": "/daily/2026/10/13/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/12/"
+    "alternateUrl": "/daily/en/2026/10/13/"
   },
   "reports": [
+    {
+      "date": "2026-10-13",
+      "title": "AI Agent把工作接续下去",
+      "lead": "13条消息：Meta推出记忆型模型，MiniCPM探索手机部署；工作区能存档，音乐和口述想法也有了可编辑的落点。",
+      "url": "/daily/2026/10/13/",
+      "alternateUrl": "/daily/en/2026/10/13/",
+      "publicPath": "2026/10/13/index.html",
+      "sourceFile": "20261013_ALUX_AI智能体情报日报.html",
+      "sha256": "5dfc8205f917ff93cd148c1dc3bb0308a7cd44b022b82ddf952c1d3fb59aea3d",
+      "publicSha256": "dbab00cef94f5bc3a08709af804f17d73bbe15014e03bb5a32d053133115da96"
+    },
     {
       "date": "2026-10-12",
       "title": "AI Agent小工具里的真实进展",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/12/index.html",
       "sourceFile": "20261012_ALUX_AI智能体情报日报.html",
       "sha256": "c07352d5454486a468514337796b64a22ed53966507873b396e00c10c348a42c",
-      "publicSha256": "a840021a82d4edff64bef247c12eb37664a72e6d445afd8e9ce0797ab64bd112"
+      "publicSha256": "9925edf15db286ca9824ed95562ce658884d821fa041f61dc04280aaa2247133"
     },
     {
       "date": "2026-10-11",
