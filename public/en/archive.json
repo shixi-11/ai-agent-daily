@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-13T00:20:11.185Z",
+  "generatedAt": "2026-10-14T00:20:46.864Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-13",
-    "url": "/daily/en/2026/10/13/",
+    "date": "2026-10-14",
+    "url": "/daily/en/2026/10/14/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/13/"
+    "alternateUrl": "/daily/2026/10/14/"
   },
   "reports": [
+    {
+      "date": "2026-10-14",
+      "title": "AI Agent — Choosing Where AI Runs",
+      "lead": "Fourteen updates: Argon expands access, Liquid releases local-agent weights, voice direction gets finer, and budgeting questions can stay on your Mac.",
+      "url": "/daily/en/2026/10/14/",
+      "alternateUrl": "/daily/2026/10/14/",
+      "publicPath": "en/2026/10/14/index.html",
+      "sourceFile": "20261014.body.html",
+      "sha256": "470f9a92bae29787f02bab334865a9026c1ff9773e87186e58bf86ad1fc68083",
+      "publicSha256": "888582fc86a3724ffd46fe2c83f445e67d4fd507709fb381ebac21aeccc8e123"
+    },
     {
       "date": "2026-10-13",
       "title": "AI Agent — Picking Up Where Work Left Off",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/13/index.html",
       "sourceFile": "20261013.body.html",
       "sha256": "d4c7944f4f8d5a4f2c430f7054fe59478cf4d81ed1c64fa706279649f09765db",
-      "publicSha256": "e58022f7e3b6d04fd79f20fa6f43e329f60c9a51ac1d584b7fbc93f2c5af5d6a"
+      "publicSha256": "2d7f473bd58ed10565ec00872da044a731f9de13625580c88c8b31e6250ef145"
     },
     {
       "date": "2026-10-12",

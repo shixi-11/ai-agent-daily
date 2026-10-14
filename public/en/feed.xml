@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-14 AI Agent — Choosing Where AI Runs</title>
+      <link>https://ai.alux.network/daily/en/2026/10/14/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/14/</guid>
+      <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Fourteen updates: Argon expands access, Liquid releases local-agent weights, voice direction gets finer, and budgeting questions can stay on your Mac.</description>
+    </item>
+    <item>
       <title>2026-10-13 AI Agent — Picking Up Where Work Left Off</title>
       <link>https://ai.alux.network/daily/en/2026/10/13/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/13/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/05/</guid>
       <pubDate>Fri, 04 Sep 2026 16:00:00 GMT</pubDate>
       <description>Eight signals link skill costs, session ownership, and stateless MCP with cluster control planes, memory cleanup, and cross-population modeling limits.</description>
-    </item>
-    <item>
-      <title>2026-09-04 AI Agent — Control, Memory &amp; Local Compute Become Assets</title>
-      <link>https://ai.alux.network/daily/en/2026/09/04/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/04/</guid>
-      <pubDate>Thu, 03 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Nine signals connect infrastructure as code, cross-tool memory, and finding identity to model distribution, local compute pools, and scientific reconstruction.</description>
     </item>
   </channel>
 </rss>

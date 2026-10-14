@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-13T00:20:11.185Z",
+  "generatedAt": "2026-10-14T00:20:46.864Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-13",
-    "url": "/daily/2026/10/13/",
+    "date": "2026-10-14",
+    "url": "/daily/2026/10/14/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/13/"
+    "alternateUrl": "/daily/en/2026/10/14/"
   },
   "reports": [
+    {
+      "date": "2026-10-14",
+      "title": "AI Agent选择运行的地方",
+      "lead": "14条消息：Argon扩大开放，Liquid发布本地Agent权重；配音能逐词指导，私人账本也能在本机回答问题。",
+      "url": "/daily/2026/10/14/",
+      "alternateUrl": "/daily/en/2026/10/14/",
+      "publicPath": "2026/10/14/index.html",
+      "sourceFile": "20261014_ALUX_AI智能体情报日报.html",
+      "sha256": "4ac5090b1d35a22fab0bf633ff479d1ea513794e49fcb692891407b7ea083a9c",
+      "publicSha256": "f33cb209a3484cfe7990b073e5d11b9022badc6951c1c5b81c375c217b239c0d"
+    },
     {
       "date": "2026-10-13",
       "title": "AI Agent把工作接续下去",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/13/index.html",
       "sourceFile": "20261013_ALUX_AI智能体情报日报.html",
       "sha256": "5dfc8205f917ff93cd148c1dc3bb0308a7cd44b022b82ddf952c1d3fb59aea3d",
-      "publicSha256": "dbab00cef94f5bc3a08709af804f17d73bbe15014e03bb5a32d053133115da96"
+      "publicSha256": "e4c81ef716c1b75e9ca02627532bf28228f1cadd129b8fa4e9b3bff4332aa5b4"
     },
     {
       "date": "2026-10-12",
