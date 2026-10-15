@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-15 AI Agent — Show What Changed</title>
+      <link>https://ai.alux.network/daily/en/2026/10/15/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/15/</guid>
+      <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Fourteen updates: new Ling and Grok voice models, quantized image weights, state-based agent tests, and creative tools for dubbing, learning, and animated mascots.</description>
+    </item>
+    <item>
       <title>2026-10-14 AI Agent — Choosing Where AI Runs</title>
       <link>https://ai.alux.network/daily/en/2026/10/14/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/14/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/06/</guid>
       <pubDate>Sat, 05 Sep 2026 16:00:00 GMT</pubDate>
       <description>Sixteen signals put new models, voice pipelines, interactive worlds, browser compute, and robotics research on the same map.</description>
-    </item>
-    <item>
-      <title>2026-09-05 AI Agent — Skills, Sessions, Operations: Boundaries Redrawn</title>
-      <link>https://ai.alux.network/daily/en/2026/09/05/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/05/</guid>
-      <pubDate>Fri, 04 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Eight signals link skill costs, session ownership, and stateless MCP with cluster control planes, memory cleanup, and cross-population modeling limits.</description>
     </item>
   </channel>
 </rss>

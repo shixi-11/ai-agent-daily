@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-14T00:20:46.864Z",
+  "generatedAt": "2026-10-15T00:21:48.317Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-14",
-    "url": "/daily/2026/10/14/",
+    "date": "2026-10-15",
+    "url": "/daily/2026/10/15/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/14/"
+    "alternateUrl": "/daily/en/2026/10/15/"
   },
   "reports": [
+    {
+      "date": "2026-10-15",
+      "title": "AI Agent让结果经得起检查",
+      "lead": "14条消息：Ling与Grok语音更新，图像权重走向低精度部署；Agent用状态验收，创作工具把配音、讲解与吉祥物做得更细。",
+      "url": "/daily/2026/10/15/",
+      "alternateUrl": "/daily/en/2026/10/15/",
+      "publicPath": "2026/10/15/index.html",
+      "sourceFile": "20261015_ALUX_AI智能体情报日报.html",
+      "sha256": "804169755e379f2d090eb0f5e570b62a00b519deb10ba14fbeddb642c9f33f9c",
+      "publicSha256": "5c9d205c628c7d6a1daf0217d01f11cedfb6525fa6dd8f8a0d5000012df9a49b"
+    },
     {
       "date": "2026-10-14",
       "title": "AI Agent选择运行的地方",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/14/index.html",
       "sourceFile": "20261014_ALUX_AI智能体情报日报.html",
       "sha256": "4ac5090b1d35a22fab0bf633ff479d1ea513794e49fcb692891407b7ea083a9c",
-      "publicSha256": "f33cb209a3484cfe7990b073e5d11b9022badc6951c1c5b81c375c217b239c0d"
+      "publicSha256": "24b4b4d06b7366e11270ae5a5dc77a9e102c98095f45f7ea8d759cc48b1a0e0f"
     },
     {
       "date": "2026-10-13",

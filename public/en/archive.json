@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-14T00:20:46.864Z",
+  "generatedAt": "2026-10-15T00:21:48.317Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-14",
-    "url": "/daily/en/2026/10/14/",
+    "date": "2026-10-15",
+    "url": "/daily/en/2026/10/15/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/14/"
+    "alternateUrl": "/daily/2026/10/15/"
   },
   "reports": [
+    {
+      "date": "2026-10-15",
+      "title": "AI Agent — Show What Changed",
+      "lead": "Fourteen updates: new Ling and Grok voice models, quantized image weights, state-based agent tests, and creative tools for dubbing, learning, and animated mascots.",
+      "url": "/daily/en/2026/10/15/",
+      "alternateUrl": "/daily/2026/10/15/",
+      "publicPath": "en/2026/10/15/index.html",
+      "sourceFile": "20261015.body.html",
+      "sha256": "06613ba311d546e79d141b8669cbbc87a3170ad240d964b3b757f3de6a7600fd",
+      "publicSha256": "4f9ed4c7ee351de4f73a3edafa94e30ea5eb1d7a271e56565f6bc33e3a7b45f8"
+    },
     {
       "date": "2026-10-14",
       "title": "AI Agent — Choosing Where AI Runs",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/14/index.html",
       "sourceFile": "20261014.body.html",
       "sha256": "470f9a92bae29787f02bab334865a9026c1ff9773e87186e58bf86ad1fc68083",
-      "publicSha256": "888582fc86a3724ffd46fe2c83f445e67d4fd507709fb381ebac21aeccc8e123"
+      "publicSha256": "9afb6e389b46cd448bb10a64e8b83983a5fd37d16d8551bcf349d8321262734c"
     },
     {
       "date": "2026-10-13",
