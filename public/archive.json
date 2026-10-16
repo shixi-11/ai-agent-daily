@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-15T00:21:48.317Z",
+  "generatedAt": "2026-10-16T00:21:27.062Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-15",
-    "url": "/daily/2026/10/15/",
+    "date": "2026-10-16",
+    "url": "/daily/2026/10/16/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/15/"
+    "alternateUrl": "/daily/en/2026/10/16/"
   },
   "reports": [
+    {
+      "date": "2026-10-16",
+      "title": "AI Agent开放模型各展所长",
+      "lead": "15条消息：大模型走向双机桌面，小模型专攻预测与声音；图像学排版，助手改乐谱，科研工作台接入三维结构。",
+      "url": "/daily/2026/10/16/",
+      "alternateUrl": "/daily/en/2026/10/16/",
+      "publicPath": "2026/10/16/index.html",
+      "sourceFile": "20261016_ALUX_AI智能体情报日报.html",
+      "sha256": "502bcbe3fcefe540ee118fefb79ecf51ede7555e6e7ed94bdf6d54f602bba505",
+      "publicSha256": "61c6b44bdebc8e3f71a9eda94669d05671d9545bcab204afddbe935ff894eec1"
+    },
     {
       "date": "2026-10-15",
       "title": "AI Agent让结果经得起检查",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/15/index.html",
       "sourceFile": "20261015_ALUX_AI智能体情报日报.html",
       "sha256": "804169755e379f2d090eb0f5e570b62a00b519deb10ba14fbeddb642c9f33f9c",
-      "publicSha256": "5c9d205c628c7d6a1daf0217d01f11cedfb6525fa6dd8f8a0d5000012df9a49b"
+      "publicSha256": "72f6dc967b0fffa7f2cc177f2b8a6047e0a17e632e82419a7b1e8c45368e7149"
     },
     {
       "date": "2026-10-14",

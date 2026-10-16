@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-16 AI Agent开放模型各展所长</title>
+      <link>https://ai.alux.network/daily/2026/10/16/</link>
+      <guid>https://ai.alux.network/daily/2026/10/16/</guid>
+      <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
+      <description>15条消息：大模型走向双机桌面，小模型专攻预测与声音；图像学排版，助手改乐谱，科研工作台接入三维结构。</description>
+    </item>
+    <item>
       <title>2026-10-15 AI Agent让结果经得起检查</title>
       <link>https://ai.alux.network/daily/2026/10/15/</link>
       <guid>https://ai.alux.network/daily/2026/10/15/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/07/</guid>
       <pubDate>Sun, 06 Sep 2026 16:00:00 GMT</pubDate>
       <description>从说话人识别、道路规划到三维拓扑与新型芯片，模型周边的感知和执行系统正在变厚。</description>
-    </item>
-    <item>
-      <title>2026-09-06 AI Agent模型走进真实世界</title>
-      <link>https://ai.alux.network/daily/2026/09/06/</link>
-      <guid>https://ai.alux.network/daily/2026/09/06/</guid>
-      <pubDate>Sat, 05 Sep 2026 16:00:00 GMT</pubDate>
-      <description>十六条信号把新模型、语音管线、互动世界、浏览器算力和机器人研究放到同一张地图上。</description>
     </item>
   </channel>
 </rss>

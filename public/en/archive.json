@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-15T00:21:48.317Z",
+  "generatedAt": "2026-10-16T00:21:27.062Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-15",
-    "url": "/daily/en/2026/10/15/",
+    "date": "2026-10-16",
+    "url": "/daily/en/2026/10/16/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/15/"
+    "alternateUrl": "/daily/2026/10/16/"
   },
   "reports": [
+    {
+      "date": "2026-10-16",
+      "title": "AI Agent — Open Models Find Their Roles",
+      "lead": "Fifteen updates: large models reach two-Mac setups, small models specialize in forecasting and speech, images guide layouts, assistants edit scores, and science workbenches add 3D views.",
+      "url": "/daily/en/2026/10/16/",
+      "alternateUrl": "/daily/2026/10/16/",
+      "publicPath": "en/2026/10/16/index.html",
+      "sourceFile": "20261016.body.html",
+      "sha256": "985abb5ec03e8626554a974e84077262826fc006dd4570248a467f7c9c8180c5",
+      "publicSha256": "d455b30795252d458c4c555be8733408f2f0bc5e3f6c41822199618db15fe902"
+    },
     {
       "date": "2026-10-15",
       "title": "AI Agent — Show What Changed",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/15/index.html",
       "sourceFile": "20261015.body.html",
       "sha256": "06613ba311d546e79d141b8669cbbc87a3170ad240d964b3b757f3de6a7600fd",
-      "publicSha256": "4f9ed4c7ee351de4f73a3edafa94e30ea5eb1d7a271e56565f6bc33e3a7b45f8"
+      "publicSha256": "fafa4f1cc7f40ec71984ea76a509bd625b70521ee03a97a89fc88c8a2caefe5f"
     },
     {
       "date": "2026-10-14",
