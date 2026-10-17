@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-16T00:21:27.062Z",
+  "generatedAt": "2026-10-17T00:19:11.311Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-16",
-    "url": "/daily/en/2026/10/16/",
+    "date": "2026-10-17",
+    "url": "/daily/en/2026/10/17/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/16/"
+    "alternateUrl": "/daily/2026/10/17/"
   },
   "reports": [
+    {
+      "date": "2026-10-17",
+      "title": "AI Agent — See Clearly, Then Act in Time",
+      "lead": "Open weights reach deployment, while memory and voice become dedicated components. Smaller tools give agents practical skills, from filing documents to finding weekend plans.",
+      "url": "/daily/en/2026/10/17/",
+      "alternateUrl": "/daily/2026/10/17/",
+      "publicPath": "en/2026/10/17/index.html",
+      "sourceFile": "20261017.body.html",
+      "sha256": "796bbe25f3f3cf14430a05db33f52d214fd7902a5c68de2f57261ea590f226ea",
+      "publicSha256": "7d3f8d10cc39a9b052dc4dda3d63d3ad41a718c1ebc4a1af9b28564c76896581"
+    },
     {
       "date": "2026-10-16",
       "title": "AI Agent — Open Models Find Their Roles",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/16/index.html",
       "sourceFile": "20261016.body.html",
       "sha256": "985abb5ec03e8626554a974e84077262826fc006dd4570248a467f7c9c8180c5",
-      "publicSha256": "d455b30795252d458c4c555be8733408f2f0bc5e3f6c41822199618db15fe902"
+      "publicSha256": "e4207075101cf8fd4250cff396c4d983577cde7ca44ab0bffe2ebebaad18f7b1"
     },
     {
       "date": "2026-10-15",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-16T00:21:27.062Z",
+  "generatedAt": "2026-10-17T00:19:11.311Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-16",
-    "url": "/daily/2026/10/16/",
+    "date": "2026-10-17",
+    "url": "/daily/2026/10/17/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/16/"
+    "alternateUrl": "/daily/en/2026/10/17/"
   },
   "reports": [
+    {
+      "date": "2026-10-17",
+      "title": "AI Agent看清之后及时行动",
+      "lead": "开放权重走到实际部署，记忆与语音成为独立组件；从整理文件到找周末活动，小产品也在给Agent补上具体本领。",
+      "url": "/daily/2026/10/17/",
+      "alternateUrl": "/daily/en/2026/10/17/",
+      "publicPath": "2026/10/17/index.html",
+      "sourceFile": "20261017_ALUX_AI智能体情报日报.html",
+      "sha256": "af2c4d72c4c76b47e932532757cae786609038f7ce92784cb51aa82ec3ad84b5",
+      "publicSha256": "ca7932cdfa29f8011f9fed797cd58df29f9266825214d7167c1f94cdd9a29f79"
+    },
     {
       "date": "2026-10-16",
       "title": "AI Agent开放模型各展所长",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/16/index.html",
       "sourceFile": "20261016_ALUX_AI智能体情报日报.html",
       "sha256": "502bcbe3fcefe540ee118fefb79ecf51ede7555e6e7ed94bdf6d54f602bba505",
-      "publicSha256": "61c6b44bdebc8e3f71a9eda94669d05671d9545bcab204afddbe935ff894eec1"
+      "publicSha256": "f2b98231a7293611586363450196df54dd4e72d5eb0247221931ec63999044db"
     },
     {
       "date": "2026-10-15",

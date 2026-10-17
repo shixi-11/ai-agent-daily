@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-17 AI Agent — See Clearly, Then Act in Time</title>
+      <link>https://ai.alux.network/daily/en/2026/10/17/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/17/</guid>
+      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Open weights reach deployment, while memory and voice become dedicated components. Smaller tools give agents practical skills, from filing documents to finding weekend plans.</description>
+    </item>
+    <item>
       <title>2026-10-16 AI Agent — Open Models Find Their Roles</title>
       <link>https://ai.alux.network/daily/en/2026/10/16/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/16/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/08/</guid>
       <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
       <description>From machine-checked proofs and durable task boards to local documents and secret injection, agents are turning answers into work that can be inspected, resumed, and governed.</description>
-    </item>
-    <item>
-      <title>2026-09-07 AI Agent — The Agent Body Takes Shape</title>
-      <link>https://ai.alux.network/daily/en/2026/09/07/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/07/</guid>
-      <pubDate>Sun, 06 Sep 2026 16:00:00 GMT</pubDate>
-      <description>From speaker identification and road planning to 3D topology and new chips, the perception and execution stacks around AI models are becoming more substantial.</description>
     </item>
   </channel>
 </rss>
