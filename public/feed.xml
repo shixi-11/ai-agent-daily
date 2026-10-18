@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-18 AI Agent把想法变成可操作的东西</title>
+      <link>https://ai.alux.network/daily/2026/10/18/</link>
+      <guid>https://ai.alux.network/daily/2026/10/18/</guid>
+      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
+      <description>模型开始兼顾速度与输出成本，创作工具把文字、照片和声音接入具体动作；从三维重建到硬件搭建，新的入口正在变小、变近。</description>
+    </item>
+    <item>
       <title>2026-10-17 AI Agent看清之后及时行动</title>
       <link>https://ai.alux.network/daily/2026/10/17/</link>
       <guid>https://ai.alux.network/daily/2026/10/17/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/09/</guid>
       <pubDate>Tue, 08 Sep 2026 16:00:00 GMT</pubDate>
       <description>从图像意图、形式化证明到实验反馈与工具护栏，智能体正在把生成能力接进可检查、可恢复的工作链。</description>
-    </item>
-    <item>
-      <title>2026-09-08 AI Agent智能体交付可验证结果</title>
-      <link>https://ai.alux.network/daily/2026/09/08/</link>
-      <guid>https://ai.alux.network/daily/2026/09/08/</guid>
-      <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
-      <description>从机器证明、持久任务板到本地文档与凭据注入，智能体正在把答案变成可复查、可恢复、可治理的工作。</description>
     </item>
   </channel>
 </rss>

@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-18 AI Agent — Turn Ideas into Something You Can Use</title>
+      <link>https://ai.alux.network/daily/en/2026/10/18/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/18/</guid>
+      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Models address speed and output costs, while tools turn text, photos, and speech into concrete actions. New entry points make 3D reconstruction and hardware projects easier to approach.</description>
+    </item>
+    <item>
       <title>2026-10-17 AI Agent — See Clearly, Then Act in Time</title>
       <link>https://ai.alux.network/daily/en/2026/10/17/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/17/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/09/</guid>
       <pubDate>Tue, 08 Sep 2026 16:00:00 GMT</pubDate>
       <description>From visual intent and formal proofs to experimental feedback and tool guardrails, agent capabilities are entering workflows that can be inspected, resumed, and governed.</description>
-    </item>
-    <item>
-      <title>2026-09-08 AI Agent — Agents Deliver Verifiable Work</title>
-      <link>https://ai.alux.network/daily/en/2026/09/08/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/08/</guid>
-      <pubDate>Mon, 07 Sep 2026 16:00:00 GMT</pubDate>
-      <description>From machine-checked proofs and durable task boards to local documents and secret injection, agents are turning answers into work that can be inspected, resumed, and governed.</description>
     </item>
   </channel>
 </rss>

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-17T00:19:11.311Z",
+  "generatedAt": "2026-10-18T00:18:27.996Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-17",
-    "url": "/daily/en/2026/10/17/",
+    "date": "2026-10-18",
+    "url": "/daily/en/2026/10/18/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/17/"
+    "alternateUrl": "/daily/2026/10/18/"
   },
   "reports": [
+    {
+      "date": "2026-10-18",
+      "title": "AI Agent — Turn Ideas into Something You Can Use",
+      "lead": "Models address speed and output costs, while tools turn text, photos, and speech into concrete actions. New entry points make 3D reconstruction and hardware projects easier to approach.",
+      "url": "/daily/en/2026/10/18/",
+      "alternateUrl": "/daily/2026/10/18/",
+      "publicPath": "en/2026/10/18/index.html",
+      "sourceFile": "20261018.body.html",
+      "sha256": "a81d3666b6db0bb319eee13ff22bb2b4ec93d53d448f6cf54f5d3410123e572c",
+      "publicSha256": "49394e61b1ca39b63a51a186038e6a3b4bab4fc1ea082151e871eb4a3a9c3d61"
+    },
     {
       "date": "2026-10-17",
       "title": "AI Agent — See Clearly, Then Act in Time",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/17/index.html",
       "sourceFile": "20261017.body.html",
       "sha256": "796bbe25f3f3cf14430a05db33f52d214fd7902a5c68de2f57261ea590f226ea",
-      "publicSha256": "7d3f8d10cc39a9b052dc4dda3d63d3ad41a718c1ebc4a1af9b28564c76896581"
+      "publicSha256": "cfc6fc150dbdf55a55906e0ffe22a493bdc73bdaf69de960aba5c90aa09fddfe"
     },
     {
       "date": "2026-10-16",

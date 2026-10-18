@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-17T00:19:11.311Z",
+  "generatedAt": "2026-10-18T00:18:27.996Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-17",
-    "url": "/daily/2026/10/17/",
+    "date": "2026-10-18",
+    "url": "/daily/2026/10/18/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/17/"
+    "alternateUrl": "/daily/en/2026/10/18/"
   },
   "reports": [
+    {
+      "date": "2026-10-18",
+      "title": "AI Agent把想法变成可操作的东西",
+      "lead": "模型开始兼顾速度与输出成本，创作工具把文字、照片和声音接入具体动作；从三维重建到硬件搭建，新的入口正在变小、变近。",
+      "url": "/daily/2026/10/18/",
+      "alternateUrl": "/daily/en/2026/10/18/",
+      "publicPath": "2026/10/18/index.html",
+      "sourceFile": "20261018_ALUX_AI智能体情报日报.html",
+      "sha256": "650b1413895cc2a6a372dd50baf9e76102d2ee0d27ac0883519bb9b58ac3f89d",
+      "publicSha256": "ebefe0bed7dbfd76d36ea49c84954727c52e6644020012f735dba7f46fa8deda"
+    },
     {
       "date": "2026-10-17",
       "title": "AI Agent看清之后及时行动",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/17/index.html",
       "sourceFile": "20261017_ALUX_AI智能体情报日报.html",
       "sha256": "af2c4d72c4c76b47e932532757cae786609038f7ce92784cb51aa82ec3ad84b5",
-      "publicSha256": "ca7932cdfa29f8011f9fed797cd58df29f9266825214d7167c1f94cdd9a29f79"
+      "publicSha256": "784571df190a535531b3f1576c4918002bd7d56a985b351cdab8c2bc67b62a76"
     },
     {
       "date": "2026-10-16",
