@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-18T00:18:27.996Z",
+  "generatedAt": "2026-10-19T00:21:48.733Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-18",
-    "url": "/daily/en/2026/10/18/",
+    "date": "2026-10-19",
+    "url": "/daily/en/2026/10/19/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/18/"
+    "alternateUrl": "/daily/2026/10/19/"
   },
   "reports": [
+    {
+      "date": "2026-10-19",
+      "title": "AI Agent — Results You Can Inspect",
+      "lead": "Material weights, speech turns, and brick connections gain inspectable entry points. From hiring simulations to philanthropic equity, the useful distinction is between evidence and commitment.",
+      "url": "/daily/en/2026/10/19/",
+      "alternateUrl": "/daily/2026/10/19/",
+      "publicPath": "en/2026/10/19/index.html",
+      "sourceFile": "20261019.body.html",
+      "sha256": "905a2626d46072c881b344fcd5c64cf856f291fc3fef66c2e1b42b56ee48a985",
+      "publicSha256": "d43fb9eec479a10c96baac25de09727b6df567978c21e433289fac802921918f"
+    },
     {
       "date": "2026-10-18",
       "title": "AI Agent — Turn Ideas into Something You Can Use",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/18/index.html",
       "sourceFile": "20261018.body.html",
       "sha256": "a81d3666b6db0bb319eee13ff22bb2b4ec93d53d448f6cf54f5d3410123e572c",
-      "publicSha256": "49394e61b1ca39b63a51a186038e6a3b4bab4fc1ea082151e871eb4a3a9c3d61"
+      "publicSha256": "92a9efd0c71996fc9d59ac00cf07ae7e98ce1b02a58fc6685ccd9a6741c98d1a"
     },
     {
       "date": "2026-10-17",

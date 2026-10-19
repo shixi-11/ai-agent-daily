@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-19 AI Agent让结果经得起检查</title>
+      <link>https://ai.alux.network/daily/2026/10/19/</link>
+      <guid>https://ai.alux.network/daily/2026/10/19/</guid>
+      <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
+      <description>材料权重、语音轮次与积木连接都有了可检查的入口；从招聘模拟到公益股权，今天更值得看的是证据与承诺之间的距离。</description>
+    </item>
+    <item>
       <title>2026-10-18 AI Agent把想法变成可操作的东西</title>
       <link>https://ai.alux.network/daily/2026/10/18/</link>
       <guid>https://ai.alux.network/daily/2026/10/18/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/10/</guid>
       <pubDate>Wed, 09 Sep 2026 16:00:00 GMT</pubDate>
       <description>Suno v6 从局部改曲开始，动画、广告和视频工具提供更细的编辑入口；研究 Agent 则迎来长时间任务的新检验。</description>
-    </item>
-    <item>
-      <title>2026-09-09 AI Agent智能体进入验证闭环</title>
-      <link>https://ai.alux.network/daily/2026/09/09/</link>
-      <guid>https://ai.alux.network/daily/2026/09/09/</guid>
-      <pubDate>Tue, 08 Sep 2026 16:00:00 GMT</pubDate>
-      <description>从图像意图、形式化证明到实验反馈与工具护栏，智能体正在把生成能力接进可检查、可恢复的工作链。</description>
     </item>
   </channel>
 </rss>

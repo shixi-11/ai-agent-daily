@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-19 AI Agent — Results You Can Inspect</title>
+      <link>https://ai.alux.network/daily/en/2026/10/19/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/19/</guid>
+      <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Material weights, speech turns, and brick connections gain inspectable entry points. From hiring simulations to philanthropic equity, the useful distinction is between evidence and commitment.</description>
+    </item>
+    <item>
       <title>2026-10-18 AI Agent — Turn Ideas into Something You Can Use</title>
       <link>https://ai.alux.network/daily/en/2026/10/18/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/18/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/10/</guid>
       <pubDate>Wed, 09 Sep 2026 16:00:00 GMT</pubDate>
       <description>Suno v6 introduces targeted song edits, while animation, ad, and video tools add precise controls. Research agents face new tests of sustained performance.</description>
-    </item>
-    <item>
-      <title>2026-09-09 AI Agent — Agents Enter Verification Loops</title>
-      <link>https://ai.alux.network/daily/en/2026/09/09/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/09/</guid>
-      <pubDate>Tue, 08 Sep 2026 16:00:00 GMT</pubDate>
-      <description>From visual intent and formal proofs to experimental feedback and tool guardrails, agent capabilities are entering workflows that can be inspected, resumed, and governed.</description>
     </item>
   </channel>
 </rss>

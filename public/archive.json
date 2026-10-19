@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-18T00:18:27.996Z",
+  "generatedAt": "2026-10-19T00:21:48.733Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-18",
-    "url": "/daily/2026/10/18/",
+    "date": "2026-10-19",
+    "url": "/daily/2026/10/19/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/18/"
+    "alternateUrl": "/daily/en/2026/10/19/"
   },
   "reports": [
+    {
+      "date": "2026-10-19",
+      "title": "AI Agent让结果经得起检查",
+      "lead": "材料权重、语音轮次与积木连接都有了可检查的入口；从招聘模拟到公益股权，今天更值得看的是证据与承诺之间的距离。",
+      "url": "/daily/2026/10/19/",
+      "alternateUrl": "/daily/en/2026/10/19/",
+      "publicPath": "2026/10/19/index.html",
+      "sourceFile": "20261019_ALUX_AI智能体情报日报.html",
+      "sha256": "10bbc6ccad5c6989d35e00f10b155eb48932126982970974adfee462f7617b1a",
+      "publicSha256": "51db7ef24126915614a5054c06e6d0141e787a1ed1602483f649786d7e5bd87f"
+    },
     {
       "date": "2026-10-18",
       "title": "AI Agent把想法变成可操作的东西",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/18/index.html",
       "sourceFile": "20261018_ALUX_AI智能体情报日报.html",
       "sha256": "650b1413895cc2a6a372dd50baf9e76102d2ee0d27ac0883519bb9b58ac3f89d",
-      "publicSha256": "ebefe0bed7dbfd76d36ea49c84954727c52e6644020012f735dba7f46fa8deda"
+      "publicSha256": "46b0aa4fed4103c25886aa2c505963681a747101d900e6f3ccf74a42826a94c9"
     },
     {
       "date": "2026-10-17",
