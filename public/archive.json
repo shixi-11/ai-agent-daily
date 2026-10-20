@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-19T00:21:48.733Z",
+  "generatedAt": "2026-10-20T00:16:38.120Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-19",
-    "url": "/daily/2026/10/19/",
+    "date": "2026-10-20",
+    "url": "/daily/2026/10/20/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/19/"
+    "alternateUrl": "/daily/en/2026/10/20/"
   },
   "reports": [
+    {
+      "date": "2026-10-20",
+      "title": "AI Agent把等待与依赖减下来",
+      "lead": "新模型压低调用成本，开放权重细分部署档位；从会说话的肖像到儿童阅读，AI正试着把复杂能力放进更具体的日常入口。",
+      "url": "/daily/2026/10/20/",
+      "alternateUrl": "/daily/en/2026/10/20/",
+      "publicPath": "2026/10/20/index.html",
+      "sourceFile": "20261020_ALUX_AI智能体情报日报.html",
+      "sha256": "730fd32e8d43229fc73d194437c19f8ef3f33d5c1cda53e45f2b77ee849138bf",
+      "publicSha256": "50d799c2fdcb48e2b29a208ad02fe595ecdb0110502219638dc7768b0f4939ee"
+    },
     {
       "date": "2026-10-19",
       "title": "AI Agent让结果经得起检查",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/19/index.html",
       "sourceFile": "20261019_ALUX_AI智能体情报日报.html",
       "sha256": "10bbc6ccad5c6989d35e00f10b155eb48932126982970974adfee462f7617b1a",
-      "publicSha256": "51db7ef24126915614a5054c06e6d0141e787a1ed1602483f649786d7e5bd87f"
+      "publicSha256": "a0ca3c201c682ae2f02b11f53a2b959bf06335e4b6e3f925bf36e62644480337"
     },
     {
       "date": "2026-10-18",

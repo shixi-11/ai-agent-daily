@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-20 AI Agent把等待与依赖减下来</title>
+      <link>https://ai.alux.network/daily/2026/10/20/</link>
+      <guid>https://ai.alux.network/daily/2026/10/20/</guid>
+      <pubDate>Mon, 19 Oct 2026 16:00:00 GMT</pubDate>
+      <description>新模型压低调用成本，开放权重细分部署档位；从会说话的肖像到儿童阅读，AI正试着把复杂能力放进更具体的日常入口。</description>
+    </item>
+    <item>
       <title>2026-10-19 AI Agent让结果经得起检查</title>
       <link>https://ai.alux.network/daily/2026/10/19/</link>
       <guid>https://ai.alux.network/daily/2026/10/19/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/11/</guid>
       <pubDate>Thu, 10 Sep 2026 16:00:00 GMT</pubDate>
       <description>DeepSeek 更新视觉架构，GPT‑Live‑1 开放语音 API；翻译、三维头像与月球探索，让模型能力有了更具体的去处。</description>
-    </item>
-    <item>
-      <title>2026-09-10 AI Agent创作有了更多控制</title>
-      <link>https://ai.alux.network/daily/2026/09/10/</link>
-      <guid>https://ai.alux.network/daily/2026/09/10/</guid>
-      <pubDate>Wed, 09 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Suno v6 从局部改曲开始，动画、广告和视频工具提供更细的编辑入口；研究 Agent 则迎来长时间任务的新检验。</description>
     </item>
   </channel>
 </rss>

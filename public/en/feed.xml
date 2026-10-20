@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-20 AI Agent — Less Waiting and Dependence</title>
+      <link>https://ai.alux.network/daily/en/2026/10/20/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/20/</guid>
+      <pubDate>Mon, 19 Oct 2026 16:00:00 GMT</pubDate>
+      <description>New models cut API costs and refine deployment choices. Talking portraits, phone agents, and phonics stories put complex capabilities into more specific everyday experiences.</description>
+    </item>
+    <item>
       <title>2026-10-19 AI Agent — Results You Can Inspect</title>
       <link>https://ai.alux.network/daily/en/2026/10/19/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/19/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/11/</guid>
       <pubDate>Thu, 10 Sep 2026 16:00:00 GMT</pubDate>
       <description>DeepSeek updates its vision architecture and GPT‑Live‑1 opens API access. Translation, 3D avatars, and lunar science give model capabilities more specific uses.</description>
-    </item>
-    <item>
-      <title>2026-09-10 AI Agent — More control for creators</title>
-      <link>https://ai.alux.network/daily/en/2026/09/10/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/10/</guid>
-      <pubDate>Wed, 09 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Suno v6 introduces targeted song edits, while animation, ad, and video tools add precise controls. Research agents face new tests of sustained performance.</description>
     </item>
   </channel>
 </rss>
