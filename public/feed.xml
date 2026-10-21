@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-21 AI Agent语音走近个人工具</title>
+      <link>https://ai.alux.network/daily/2026/10/21/</link>
+      <guid>https://ai.alux.network/daily/2026/10/21/</guid>
+      <pubDate>Tue, 20 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Voxtral 3扩展语音能力，小项目把照片、笔记和桌面变成可操作的入口；系统研究则追问，哪些状态值得保留。</description>
+    </item>
+    <item>
       <title>2026-10-20 AI Agent把等待与依赖减下来</title>
       <link>https://ai.alux.network/daily/2026/10/20/</link>
       <guid>https://ai.alux.network/daily/2026/10/20/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/12/</guid>
       <pubDate>Fri, 11 Sep 2026 16:00:00 GMT</pubDate>
       <description>房间能测量，图像流程能重接，科研预测能查询。今天的重点不只是生成什么，而是结果还能怎样检查、修改与使用。</description>
-    </item>
-    <item>
-      <title>2026-09-11 AI Agent新模型走进真实场景</title>
-      <link>https://ai.alux.network/daily/2026/09/11/</link>
-      <guid>https://ai.alux.network/daily/2026/09/11/</guid>
-      <pubDate>Thu, 10 Sep 2026 16:00:00 GMT</pubDate>
-      <description>DeepSeek 更新视觉架构，GPT‑Live‑1 开放语音 API；翻译、三维头像与月球探索，让模型能力有了更具体的去处。</description>
     </item>
   </channel>
 </rss>

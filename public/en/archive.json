@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-20T00:16:38.120Z",
+  "generatedAt": "2026-10-21T00:19:45.865Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-20",
-    "url": "/daily/en/2026/10/20/",
+    "date": "2026-10-21",
+    "url": "/daily/en/2026/10/21/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/20/"
+    "alternateUrl": "/daily/2026/10/21/"
   },
   "reports": [
+    {
+      "date": "2026-10-21",
+      "title": "AI Agent — Voice Meets Personal Tools",
+      "lead": "Voxtral 3 expands voice capabilities as small projects turn photos, notes, and desktops into places to act. Systems research asks which state is worth keeping.",
+      "url": "/daily/en/2026/10/21/",
+      "alternateUrl": "/daily/2026/10/21/",
+      "publicPath": "en/2026/10/21/index.html",
+      "sourceFile": "20261021.body.html",
+      "sha256": "8f8d5eb3681e195c753de7f6c7b5102935c86b1b00e20f15aca11c1f84054669",
+      "publicSha256": "02c3a50c157032aa6055107bae25246faa64c90237825af908b39e8077a4b795"
+    },
     {
       "date": "2026-10-20",
       "title": "AI Agent — Less Waiting and Dependence",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/20/index.html",
       "sourceFile": "20261020.body.html",
       "sha256": "6912c40c837b6ba122acc38e7027e52ec3453e7f65c6b8fa548ea6207ccf0ed3",
-      "publicSha256": "1d885dae1e115c9144fa7c3b57502fa18a2aa659a3719ecf77c92fea60a74c28"
+      "publicSha256": "2286665dd4300d3aa45cf925c462c568dc9b63c1df6c61b56292b66e52ab8daf"
     },
     {
       "date": "2026-10-19",

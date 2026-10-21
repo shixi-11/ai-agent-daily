@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-20T00:16:38.120Z",
+  "generatedAt": "2026-10-21T00:19:45.865Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-20",
-    "url": "/daily/2026/10/20/",
+    "date": "2026-10-21",
+    "url": "/daily/2026/10/21/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/20/"
+    "alternateUrl": "/daily/en/2026/10/21/"
   },
   "reports": [
+    {
+      "date": "2026-10-21",
+      "title": "AI Agent语音走近个人工具",
+      "lead": "Voxtral 3扩展语音能力，小项目把照片、笔记和桌面变成可操作的入口；系统研究则追问，哪些状态值得保留。",
+      "url": "/daily/2026/10/21/",
+      "alternateUrl": "/daily/en/2026/10/21/",
+      "publicPath": "2026/10/21/index.html",
+      "sourceFile": "20261021_ALUX_AI智能体情报日报.html",
+      "sha256": "e1b9fca931aa1db28096ebe7f0cce000ec252111cc367163a004b10f5a47f385",
+      "publicSha256": "fc32dc20d68d6604b6135ca6513c5b4eaa4da7955e722aef229ef2342112aeb5"
+    },
     {
       "date": "2026-10-20",
       "title": "AI Agent把等待与依赖减下来",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/20/index.html",
       "sourceFile": "20261020_ALUX_AI智能体情报日报.html",
       "sha256": "730fd32e8d43229fc73d194437c19f8ef3f33d5c1cda53e45f2b77ee849138bf",
-      "publicSha256": "50d799c2fdcb48e2b29a208ad02fe595ecdb0110502219638dc7768b0f4939ee"
+      "publicSha256": "ceb4c6cd8b043a715214b1b51d1868035457413709a6a7bb3097d58e9b28ba10"
     },
     {
       "date": "2026-10-19",
