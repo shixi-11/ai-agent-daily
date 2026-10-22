@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-21T00:19:45.865Z",
+  "generatedAt": "2026-10-22T00:21:16.208833+00:00",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-21",
-    "url": "/daily/en/2026/10/21/",
+    "date": "2026-10-22",
+    "url": "/daily/en/2026/10/22/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/21/"
+    "alternateUrl": "/daily/2026/10/22/"
   },
   "reports": [
+    {
+      "date": "2026-10-22",
+      "title": "AI Agent — Models Get Practical",
+      "lead": "Flint brings tool calling to local devices, Rerank 5 isolates relevant passages, and Claude Duet tries to organize work proactively. Small projects turn screens, speech, and an old game into new ways to interact.",
+      "url": "/daily/en/2026/10/22/",
+      "alternateUrl": "/daily/2026/10/22/",
+      "publicPath": "en/2026/10/22/index.html",
+      "sourceFile": "20261022.body.html",
+      "sha256": "7c34ab01211227bd9188d037b8fc2dafaf245c707c9b69b46424192bd2626af5",
+      "publicSha256": "7e873bd1c6e3ad5af74cde1920135fd8a8def3450b4b501b604f2bd8430c5436"
+    },
     {
       "date": "2026-10-21",
       "title": "AI Agent — Voice Meets Personal Tools",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/21/index.html",
       "sourceFile": "20261021.body.html",
       "sha256": "8f8d5eb3681e195c753de7f6c7b5102935c86b1b00e20f15aca11c1f84054669",
-      "publicSha256": "02c3a50c157032aa6055107bae25246faa64c90237825af908b39e8077a4b795"
+      "publicSha256": "3a525151a203b2eb50f47636a8bdcb1b3e4419340fc3d8ef7a9f6cf88c1502ed"
     },
     {
       "date": "2026-10-20",

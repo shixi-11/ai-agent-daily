@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-22 AI Agent模型走入具体工作</title>
+      <link>https://ai.alux.network/daily/2026/10/22/</link>
+      <guid>https://ai.alux.network/daily/2026/10/22/</guid>
+      <pubDate>Wed, 21 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Flint走向本地工具调用，Rerank 5筛出相关段落，Claude Duet试着提前整理事项。小项目则把屏幕、声音与老游戏变成新的操作入口。</description>
+    </item>
+    <item>
       <title>2026-10-21 AI Agent语音走近个人工具</title>
       <link>https://ai.alux.network/daily/2026/10/21/</link>
       <guid>https://ai.alux.network/daily/2026/10/21/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/13/</guid>
       <pubDate>Sat, 12 Sep 2026 16:00:00 GMT</pubDate>
       <description>一套声音模型能改录音，小型编码器能找文档，录屏助手能看帧。今天也看那些公开方法、限制和失败的小实验。</description>
-    </item>
-    <item>
-      <title>2026-09-12 AI Agent生成之后还可继续改</title>
-      <link>https://ai.alux.network/daily/2026/09/12/</link>
-      <guid>https://ai.alux.network/daily/2026/09/12/</guid>
-      <pubDate>Fri, 11 Sep 2026 16:00:00 GMT</pubDate>
-      <description>房间能测量，图像流程能重接，科研预测能查询。今天的重点不只是生成什么，而是结果还能怎样检查、修改与使用。</description>
     </item>
   </channel>
 </rss>
