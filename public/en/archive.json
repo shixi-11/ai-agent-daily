@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-22T00:21:16.208833+00:00",
+  "generatedAt": "2026-10-23T00:25:43.382Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-22",
-    "url": "/daily/en/2026/10/22/",
+    "date": "2026-10-23",
+    "url": "/daily/en/2026/10/23/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/22/"
+    "alternateUrl": "/daily/2026/10/23/"
   },
   "reports": [
+    {
+      "date": "2026-10-23",
+      "title": "AI Agent — Decisions Meet Actions",
+      "lead": "Decision APIs reach general availability, design models plan layouts, and password managers help authorize agents. Small projects reconnect code, voice messages, and workspaces.",
+      "url": "/daily/en/2026/10/23/",
+      "alternateUrl": "/daily/2026/10/23/",
+      "publicPath": "en/2026/10/23/index.html",
+      "sourceFile": "20261023.body.html",
+      "sha256": "33671185cc27cbf72930fb8de5ecdc3f31b90394ea44107283f3c70786e221f6",
+      "publicSha256": "0bdcefa01c7c20f7d7ab23f85e240b62f81566fcde73e0ba93052e36c265c5be"
+    },
     {
       "date": "2026-10-22",
       "title": "AI Agent — Models Get Practical",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/22/index.html",
       "sourceFile": "20261022.body.html",
       "sha256": "7c34ab01211227bd9188d037b8fc2dafaf245c707c9b69b46424192bd2626af5",
-      "publicSha256": "7e873bd1c6e3ad5af74cde1920135fd8a8def3450b4b501b604f2bd8430c5436"
+      "publicSha256": "f75585323cb168c8eee63410a8f0f7923858176db6106cb6458f96e264a62910"
     },
     {
       "date": "2026-10-21",

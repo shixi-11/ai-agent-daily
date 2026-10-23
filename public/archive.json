@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-22T00:21:16.208833+00:00",
+  "generatedAt": "2026-10-23T00:25:43.382Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-22",
-    "url": "/daily/2026/10/22/",
+    "date": "2026-10-23",
+    "url": "/daily/2026/10/23/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/22/"
+    "alternateUrl": "/daily/en/2026/10/23/"
   },
   "reports": [
+    {
+      "date": "2026-10-23",
+      "title": "AI Agent让判断接上行动",
+      "lead": "决策接口走向正式服务，设计模型先安排版式，密码管理器参与账号授权。小项目把代码、语音和工作空间重新连接起来。",
+      "url": "/daily/2026/10/23/",
+      "alternateUrl": "/daily/en/2026/10/23/",
+      "publicPath": "2026/10/23/index.html",
+      "sourceFile": "20261023_ALUX_AI智能体情报日报.html",
+      "sha256": "a27ff738a5480bbb2db985d9513d21ee99c8394ef36bdc4b657c227b26a9a952",
+      "publicSha256": "9594c6c184874d6031d05c03d561430eef618ac952f378b97a3656c5e5f2623f"
+    },
     {
       "date": "2026-10-22",
       "title": "AI Agent模型走入具体工作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/22/index.html",
       "sourceFile": "20261022_ALUX_AI智能体情报日报.html",
       "sha256": "e656f1e31f8c9e72d6a6b7fdc5925b6d97e8227374319168d73b844b35c552f2",
-      "publicSha256": "8d4bafb52c4571c43a5dd0d250e1c203389063faf67b14a20125e4daff806237"
+      "publicSha256": "fd53ee20586fe62227f86f0ded6f95dc386d5977bcc108f0224702893888673a"
     },
     {
       "date": "2026-10-21",

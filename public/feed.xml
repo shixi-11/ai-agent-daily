@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-23 AI Agent让判断接上行动</title>
+      <link>https://ai.alux.network/daily/2026/10/23/</link>
+      <guid>https://ai.alux.network/daily/2026/10/23/</guid>
+      <pubDate>Thu, 22 Oct 2026 16:00:00 GMT</pubDate>
+      <description>决策接口走向正式服务，设计模型先安排版式，密码管理器参与账号授权。小项目把代码、语音和工作空间重新连接起来。</description>
+    </item>
+    <item>
       <title>2026-10-22 AI Agent模型走入具体工作</title>
       <link>https://ai.alux.network/daily/2026/10/22/</link>
       <guid>https://ai.alux.network/daily/2026/10/22/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/14/</guid>
       <pubDate>Sun, 13 Sep 2026 16:00:00 GMT</pubDate>
       <description>正式权重、专用推理引擎与独立应用一起出现，值得看的不只是什么能做，还有怎样运行、如何核对。</description>
-    </item>
-    <item>
-      <title>2026-09-13 AI Agent模型之外的可见证据</title>
-      <link>https://ai.alux.network/daily/2026/09/13/</link>
-      <guid>https://ai.alux.network/daily/2026/09/13/</guid>
-      <pubDate>Sat, 12 Sep 2026 16:00:00 GMT</pubDate>
-      <description>一套声音模型能改录音，小型编码器能找文档，录屏助手能看帧。今天也看那些公开方法、限制和失败的小实验。</description>
     </item>
   </channel>
 </rss>
