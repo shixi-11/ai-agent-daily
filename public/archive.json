@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-23T00:25:43.382Z",
+  "generatedAt": "2026-10-24T00:36:46.343Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-23",
-    "url": "/daily/2026/10/23/",
+    "date": "2026-10-24",
+    "url": "/daily/2026/10/24/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/23/"
+    "alternateUrl": "/daily/en/2026/10/24/"
   },
   "reports": [
+    {
+      "date": "2026-10-24",
+      "title": "AI Agent能力走出对话框",
+      "lead": "Kimi把三维创作带进新模型，MiniMax放出权重，纯语音模型尝试自然接话。Agent也开始改电视、修图，并接受更具体的权限与故障检验。",
+      "url": "/daily/2026/10/24/",
+      "alternateUrl": "/daily/en/2026/10/24/",
+      "publicPath": "2026/10/24/index.html",
+      "sourceFile": "20261024_ALUX_AI智能体情报日报.html",
+      "sha256": "bdce03fe6e06bab41ce83c86b93ca8de427accb058b8b0123a7fdb8e9f901c5b",
+      "publicSha256": "8c8d86e2cc9b69a1459c533807001d03ff56fb1a389932dde2d16156a014a2c8"
+    },
     {
       "date": "2026-10-23",
       "title": "AI Agent让判断接上行动",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/23/index.html",
       "sourceFile": "20261023_ALUX_AI智能体情报日报.html",
       "sha256": "a27ff738a5480bbb2db985d9513d21ee99c8394ef36bdc4b657c227b26a9a952",
-      "publicSha256": "9594c6c184874d6031d05c03d561430eef618ac952f378b97a3656c5e5f2623f"
+      "publicSha256": "9a95bdf4044c38166188ffcc9134d1246d3c58543b0fef9b650d04abc8397994"
     },
     {
       "date": "2026-10-22",

@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-24 AI Agent — Capabilities Beyond Chat</title>
+      <link>https://ai.alux.network/daily/en/2026/10/24/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/24/</guid>
+      <pubDate>Fri, 23 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Kimi adds 3D creation, MiniMax releases weights, and an audio-only model explores natural conversation. Agents also reach TVs and image editors, with more concrete permission and failure checks.</description>
+    </item>
+    <item>
       <title>2026-10-23 AI Agent — Decisions Meet Actions</title>
       <link>https://ai.alux.network/daily/en/2026/10/23/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/23/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/20/</guid>
       <pubDate>Sat, 19 Sep 2026 16:00:00 GMT</pubDate>
       <description>Qwen and Gemini expand audiovisual workflows. Interactive worlds offer new ways to create, while public data and specialist tools provide practical entry points.</description>
-    </item>
-    <item>
-      <title>2026-09-14 AI Agent — Capabilities become verifiable work</title>
-      <link>https://ai.alux.network/daily/en/2026/09/14/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/14/</guid>
-      <pubDate>Sun, 13 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Official model weights, specialized inference engines, and standalone applications are arriving together. What matters is not just what they can do, but how they run and how their results can be checked.</description>
     </item>
   </channel>
 </rss>

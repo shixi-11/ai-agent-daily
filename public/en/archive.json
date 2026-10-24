@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-23T00:25:43.382Z",
+  "generatedAt": "2026-10-24T00:36:46.343Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-23",
-    "url": "/daily/en/2026/10/23/",
+    "date": "2026-10-24",
+    "url": "/daily/en/2026/10/24/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/23/"
+    "alternateUrl": "/daily/2026/10/24/"
   },
   "reports": [
+    {
+      "date": "2026-10-24",
+      "title": "AI Agent — Capabilities Beyond Chat",
+      "lead": "Kimi adds 3D creation, MiniMax releases weights, and an audio-only model explores natural conversation. Agents also reach TVs and image editors, with more concrete permission and failure checks.",
+      "url": "/daily/en/2026/10/24/",
+      "alternateUrl": "/daily/2026/10/24/",
+      "publicPath": "en/2026/10/24/index.html",
+      "sourceFile": "20261024.body.html",
+      "sha256": "8d29ff9ca2787496674211fb8bbb3d268baf484619a8471d1836bdbb1f3e9cb9",
+      "publicSha256": "cee0e8164bce8b834dc61455f47d0872ef58f2f289e10418e23b26e0f06d1e4d"
+    },
     {
       "date": "2026-10-23",
       "title": "AI Agent — Decisions Meet Actions",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/23/index.html",
       "sourceFile": "20261023.body.html",
       "sha256": "33671185cc27cbf72930fb8de5ecdc3f31b90394ea44107283f3c70786e221f6",
-      "publicSha256": "0bdcefa01c7c20f7d7ab23f85e240b62f81566fcde73e0ba93052e36c265c5be"
+      "publicSha256": "87e24b5d2f48e81495e44e268cba1be37333c717af4f7e965b01f446757ade9c"
     },
     {
       "date": "2026-10-22",
