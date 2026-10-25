@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-25 AI Agent — Collaboration You Can Inspect</title>
+      <link>https://ai.alux.network/daily/en/2026/10/25/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/25/</guid>
+      <pubDate>Sat, 24 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Microsoft opens thousand-agent experiments, while parametric CAD gains a shared control layer. Reading, music discovery, and collaborative art reach everyday users; local training and speech tools expose more checks.</description>
+    </item>
+    <item>
       <title>2026-10-24 AI Agent — Capabilities Beyond Chat</title>
       <link>https://ai.alux.network/daily/en/2026/10/24/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/24/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/21/</guid>
       <pubDate>Sun, 20 Sep 2026 16:00:00 GMT</pubDate>
       <description>Transparent images, editable scores, and traceable notes make creative work easier to revise. Agent research asks whether improvements survive repeated use.</description>
-    </item>
-    <item>
-      <title>2026-09-20 AI Agent — Multimodal Agents Get Practical</title>
-      <link>https://ai.alux.network/daily/en/2026/09/20/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/20/</guid>
-      <pubDate>Sat, 19 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Qwen and Gemini expand audiovisual workflows. Interactive worlds offer new ways to create, while public data and specialist tools provide practical entry points.</description>
     </item>
   </channel>
 </rss>

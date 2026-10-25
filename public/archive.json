@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-24T00:36:46.343Z",
+  "generatedAt": "2026-10-25T00:19:04.669Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-24",
-    "url": "/daily/2026/10/24/",
+    "date": "2026-10-25",
+    "url": "/daily/2026/10/25/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/24/"
+    "alternateUrl": "/daily/en/2026/10/25/"
   },
   "reports": [
+    {
+      "date": "2026-10-25",
+      "title": "AI Agent让协作留下可检查的过程",
+      "lead": "微软开放千级Agent协作实验，参数化CAD接上统一操作接口。听书、音乐探索与共享画布走进日常，本地训练和语音框架则把检验步骤摆到台前。",
+      "url": "/daily/2026/10/25/",
+      "alternateUrl": "/daily/en/2026/10/25/",
+      "publicPath": "2026/10/25/index.html",
+      "sourceFile": "20261025_ALUX_AI智能体情报日报.html",
+      "sha256": "fff845ab358be474054ce98e21cdf0f753effafe4e6d2d110bad0b26fbff812a",
+      "publicSha256": "e0fde33e8d494535668bd3a8f43928ef06e933bb3e344f85dbd51f16dcbd3ae7"
+    },
     {
       "date": "2026-10-24",
       "title": "AI Agent能力走出对话框",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/24/index.html",
       "sourceFile": "20261024_ALUX_AI智能体情报日报.html",
       "sha256": "bdce03fe6e06bab41ce83c86b93ca8de427accb058b8b0123a7fdb8e9f901c5b",
-      "publicSha256": "8c8d86e2cc9b69a1459c533807001d03ff56fb1a389932dde2d16156a014a2c8"
+      "publicSha256": "d6340677c954dfd7a4df4ebecbfe9a7840c53365d066c4d9e87323bcf373765a"
     },
     {
       "date": "2026-10-23",

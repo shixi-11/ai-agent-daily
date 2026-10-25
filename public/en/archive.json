@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-24T00:36:46.343Z",
+  "generatedAt": "2026-10-25T00:19:04.669Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-24",
-    "url": "/daily/en/2026/10/24/",
+    "date": "2026-10-25",
+    "url": "/daily/en/2026/10/25/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/24/"
+    "alternateUrl": "/daily/2026/10/25/"
   },
   "reports": [
+    {
+      "date": "2026-10-25",
+      "title": "AI Agent — Collaboration You Can Inspect",
+      "lead": "Microsoft opens thousand-agent experiments, while parametric CAD gains a shared control layer. Reading, music discovery, and collaborative art reach everyday users; local training and speech tools expose more checks.",
+      "url": "/daily/en/2026/10/25/",
+      "alternateUrl": "/daily/2026/10/25/",
+      "publicPath": "en/2026/10/25/index.html",
+      "sourceFile": "20261025.body.html",
+      "sha256": "9e901014cafce758a5c3c86a05c03f77af171e9febc2ef66e857613eecbe56c3",
+      "publicSha256": "c7c92d1eb2ba2d77c39ddd8458c0335aea7c9932fc44b9e6d414a887e0809292"
+    },
     {
       "date": "2026-10-24",
       "title": "AI Agent — Capabilities Beyond Chat",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/24/index.html",
       "sourceFile": "20261024.body.html",
       "sha256": "8d29ff9ca2787496674211fb8bbb3d268baf484619a8471d1836bdbb1f3e9cb9",
-      "publicSha256": "cee0e8164bce8b834dc61455f47d0872ef58f2f289e10418e23b26e0f06d1e4d"
+      "publicSha256": "59683b3af87c5eb6d9ea97fa98d7777b3b9069982e02de2c77dc41a9b9e330e3"
     },
     {
       "date": "2026-10-23",
