@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-26 AI Agent — Turning Answers into Useful Work</title>
+      <link>https://ai.alux.network/daily/en/2026/10/26/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/26/</guid>
+      <pubDate>Sun, 25 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Nanbeige releases a 33B teacher model, UMA adds scientific checkpoints, and Blender tools, Latin speech, and batch simulation turn model capabilities into tangible results.</description>
+    </item>
+    <item>
       <title>2026-10-25 AI Agent — Collaboration You Can Inspect</title>
       <link>https://ai.alux.network/daily/en/2026/10/25/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/25/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/23/</guid>
       <pubDate>Tue, 22 Sep 2026 16:00:00 GMT</pubDate>
       <description>New models widen the price range, while open weights offer research starting points. Video tools, robot simulations, and asynchronous agents show how capabilities reach practical workflows.</description>
-    </item>
-    <item>
-      <title>2026-09-21 AI Agent — Creative Control, Repeatable Results</title>
-      <link>https://ai.alux.network/daily/en/2026/09/21/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/21/</guid>
-      <pubDate>Sun, 20 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Transparent images, editable scores, and traceable notes make creative work easier to revise. Agent research asks whether improvements survive repeated use.</description>
     </item>
   </channel>
 </rss>

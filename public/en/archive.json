@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-25T00:19:04.669Z",
+  "generatedAt": "2026-10-26T00:28:17.762Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-25",
-    "url": "/daily/en/2026/10/25/",
+    "date": "2026-10-26",
+    "url": "/daily/en/2026/10/26/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/25/"
+    "alternateUrl": "/daily/2026/10/26/"
   },
   "reports": [
+    {
+      "date": "2026-10-26",
+      "title": "AI Agent — Turning Answers into Useful Work",
+      "lead": "Nanbeige releases a 33B teacher model, UMA adds scientific checkpoints, and Blender tools, Latin speech, and batch simulation turn model capabilities into tangible results.",
+      "url": "/daily/en/2026/10/26/",
+      "alternateUrl": "/daily/2026/10/26/",
+      "publicPath": "en/2026/10/26/index.html",
+      "sourceFile": "20261026.body.html",
+      "sha256": "87e7d2156dff08871da1d5ffc1974df7c204958da3cde5ef83fc8d70bc6a14e4",
+      "publicSha256": "582e7fb22c87e313ca6f77bb7d7d35ed8d6c31b91006d6812be1c98da63503a4"
+    },
     {
       "date": "2026-10-25",
       "title": "AI Agent — Collaboration You Can Inspect",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/25/index.html",
       "sourceFile": "20261025.body.html",
       "sha256": "9e901014cafce758a5c3c86a05c03f77af171e9febc2ef66e857613eecbe56c3",
-      "publicSha256": "c7c92d1eb2ba2d77c39ddd8458c0335aea7c9932fc44b9e6d414a887e0809292"
+      "publicSha256": "aba62ea4cf7a4fd2af91e1587d9ac61381d5c90fdf75cd3b475c97e6b45eb52e"
     },
     {
       "date": "2026-10-24",

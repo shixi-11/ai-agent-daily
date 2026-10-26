@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-25T00:19:04.669Z",
+  "generatedAt": "2026-10-26T00:28:17.762Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-25",
-    "url": "/daily/2026/10/25/",
+    "date": "2026-10-26",
+    "url": "/daily/2026/10/26/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/25/"
+    "alternateUrl": "/daily/en/2026/10/26/"
   },
   "reports": [
+    {
+      "date": "2026-10-26",
+      "title": "AI Agent从生成答案到留下可用成果",
+      "lead": "南北阁开放33B教师模型，UMA增加科学计算权重；Blender节点、拉丁语语音与批量仿真，让模型能力落到具体材料。",
+      "url": "/daily/2026/10/26/",
+      "alternateUrl": "/daily/en/2026/10/26/",
+      "publicPath": "2026/10/26/index.html",
+      "sourceFile": "20261026_ALUX_AI智能体情报日报.html",
+      "sha256": "0df13a0d19108abc8f89a18b074f987a3ea3fc9657542ceb63791c7d845fc1ed",
+      "publicSha256": "3da0d86219171aea90ccd3ec070ee89cd42629d7f6e4c91f11df3041727dd753"
+    },
     {
       "date": "2026-10-25",
       "title": "AI Agent让协作留下可检查的过程",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/25/index.html",
       "sourceFile": "20261025_ALUX_AI智能体情报日报.html",
       "sha256": "fff845ab358be474054ce98e21cdf0f753effafe4e6d2d110bad0b26fbff812a",
-      "publicSha256": "e0fde33e8d494535668bd3a8f43928ef06e933bb3e344f85dbd51f16dcbd3ae7"
+      "publicSha256": "0401269dc541b28fd113d93518eed32068e7bc3f4359012be3cb1f6e7e0cfffc"
     },
     {
       "date": "2026-10-24",
