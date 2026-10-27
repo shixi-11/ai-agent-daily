@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-26T00:28:17.762Z",
+  "generatedAt": "2026-10-27T08:28:32.846Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-26",
-    "url": "/daily/en/2026/10/26/",
+    "date": "2026-10-27",
+    "url": "/daily/en/2026/10/27/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/26/"
+    "alternateUrl": "/daily/2026/10/27/"
   },
   "reports": [
+    {
+      "date": "2026-10-27",
+      "title": "AI Agent — Making Agent Work Easier to Check",
+      "lead": "Terra adds a visual automation option, while ThinkingBox trains against final task states. Editing tools, braille music, and classroom games make AI use more tangible and inspectable.",
+      "url": "/daily/en/2026/10/27/",
+      "alternateUrl": "/daily/2026/10/27/",
+      "publicPath": "en/2026/10/27/index.html",
+      "sourceFile": "20261027.body.html",
+      "sha256": "f35df93dde172eda1afea33df0f127d11584321d16b64f8b6408a093b9b2f85b",
+      "publicSha256": "c04ae05693d9b99a34c98af25a6fbb7a60b6d6a8c89c4f2c23e58c309a9bc4d5"
+    },
     {
       "date": "2026-10-26",
       "title": "AI Agent — Turning Answers into Useful Work",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/26/index.html",
       "sourceFile": "20261026.body.html",
       "sha256": "87e7d2156dff08871da1d5ffc1974df7c204958da3cde5ef83fc8d70bc6a14e4",
-      "publicSha256": "582e7fb22c87e313ca6f77bb7d7d35ed8d6c31b91006d6812be1c98da63503a4"
+      "publicSha256": "ba7d0c612f167ec939a1675d7bc08442c648a90aec9d55cb918d01ca4bb9cf66"
     },
     {
       "date": "2026-10-25",

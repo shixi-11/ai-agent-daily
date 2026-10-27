@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-27 AI Agent — Making Agent Work Easier to Check</title>
+      <link>https://ai.alux.network/daily/en/2026/10/27/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/27/</guid>
+      <pubDate>Mon, 26 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Terra adds a visual automation option, while ThinkingBox trains against final task states. Editing tools, braille music, and classroom games make AI use more tangible and inspectable.</description>
+    </item>
+    <item>
       <title>2026-10-26 AI Agent — Turning Answers into Useful Work</title>
       <link>https://ai.alux.network/daily/en/2026/10/26/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/26/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/24/</guid>
       <pubDate>Wed, 23 Sep 2026 16:00:00 GMT</pubDate>
       <description>Robots learn actions, speech models track speakers, and documents expand on demand. Creative rooms and shared memory help assistants carry work forward.</description>
-    </item>
-    <item>
-      <title>2026-09-23 AI Agent — Cheaper Models, Leaner Execution</title>
-      <link>https://ai.alux.network/daily/en/2026/09/23/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/23/</guid>
-      <pubDate>Tue, 22 Sep 2026 16:00:00 GMT</pubDate>
-      <description>New models widen the price range, while open weights offer research starting points. Video tools, robot simulations, and asynchronous agents show how capabilities reach practical workflows.</description>
     </item>
   </channel>
 </rss>

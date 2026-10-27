@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-26T00:28:17.762Z",
+  "generatedAt": "2026-10-27T08:28:32.846Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-26",
-    "url": "/daily/2026/10/26/",
+    "date": "2026-10-27",
+    "url": "/daily/2026/10/27/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/26/"
+    "alternateUrl": "/daily/en/2026/10/27/"
   },
   "reports": [
+    {
+      "date": "2026-10-27",
+      "title": "AI Agent智能体学会自查工作",
+      "lead": "Terra扩展视觉操作选择，ThinkingBox把任务终态变成奖励；从剪辑、盲文钢琴到课堂游戏，AI的用法正变得具体而可检查。",
+      "url": "/daily/2026/10/27/",
+      "alternateUrl": "/daily/en/2026/10/27/",
+      "publicPath": "2026/10/27/index.html",
+      "sourceFile": "20261027_ALUX_AI智能体情报日报.html",
+      "sha256": "ebcf481972d7da0801a8bc37b1086083830c1b39f35c721f025c69c082b95c19",
+      "publicSha256": "b1c44be3cc57664ad28aeb207ee5f7f913c87b9deb4672a1944d840e69bba9bb"
+    },
     {
       "date": "2026-10-26",
       "title": "AI Agent从生成答案到留下可用成果",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/26/index.html",
       "sourceFile": "20261026_ALUX_AI智能体情报日报.html",
       "sha256": "0df13a0d19108abc8f89a18b074f987a3ea3fc9657542ceb63791c7d845fc1ed",
-      "publicSha256": "3da0d86219171aea90ccd3ec070ee89cd42629d7f6e4c91f11df3041727dd753"
+      "publicSha256": "9fd4ed2e5fd3eb88d39292568d522e60176ebbb30b7f0f9122262d043edf15f6"
     },
     {
       "date": "2026-10-25",
