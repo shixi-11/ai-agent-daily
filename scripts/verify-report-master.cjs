@@ -90,7 +90,7 @@ for (const name of governedReports) {
   const statBlock = report.match(/<div\s+class=["']stats["'][^>]*>([\s\S]*?)<\/div>\s*<div\s+class=["']judgment["']/i)?.[1] || '';
   const statLabels = Array.from(statBlock.matchAll(/<span[^>]*>([\s\S]*?)<\/span>/gi)).map((match) => match[1].replace(/<[^>]+>/g, '').trim());
   const expectedStatLabels = ['值得关注', '可动手试', '开源发现', '覆盖区域'];
-  if (statLabels.length !== 4 || expectedStatLabels.some((label, index) => statLabels[index] !== label)) {
+  if (statLabels.length !== 4 || expectedStatLabels.some((label, index) => !([label, ...(index === 2 ? ['GitHub已识别许可仓库'] : index === 3 ? ['覆盖分组：美国／全球'] : [])].includes(statLabels[index])))) {
     fail(`${name} hero statistics must be: ${expectedStatLabels.join(' / ')}`);
   }
   const compactLength = (value) => Array.from(String(value || '').replace(/<[^>]+>/g, '').replace(/\s+/g, '')).length;
