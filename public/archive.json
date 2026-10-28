@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-27T08:28:32.846Z",
+  "generatedAt": "2026-10-28T00:21:12.461Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-27",
-    "url": "/daily/2026/10/27/",
+    "date": "2026-10-28",
+    "url": "/daily/2026/10/28/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/27/"
+    "alternateUrl": "/daily/en/2026/10/28/"
   },
   "reports": [
+    {
+      "date": "2026-10-28",
+      "title": "AI Agent模型走向可控交互",
+      "lead": "小模型走进设备，世界模型接受指令，视频研究开始留下可追溯的材料。今天看能力如何开放，也看谁能真正上手。",
+      "url": "/daily/2026/10/28/",
+      "alternateUrl": "/daily/en/2026/10/28/",
+      "publicPath": "2026/10/28/index.html",
+      "sourceFile": "20261028_ALUX_AI智能体情报日报.html",
+      "sha256": "bb3abcabb1e80027fc49599a1b576e684c203c936395a65f695bde6d3b0af245",
+      "publicSha256": "b8340efaf350d4f8e2eca9c186f7aca15d9acc2ec77240c2512a298a03d464b4"
+    },
     {
       "date": "2026-10-27",
       "title": "AI Agent智能体学会自查工作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/27/index.html",
       "sourceFile": "20261027_ALUX_AI智能体情报日报.html",
       "sha256": "ebcf481972d7da0801a8bc37b1086083830c1b39f35c721f025c69c082b95c19",
-      "publicSha256": "b1c44be3cc57664ad28aeb207ee5f7f913c87b9deb4672a1944d840e69bba9bb"
+      "publicSha256": "e9406c07fd9761f9f19ebe7865bcc81eec3b9b27a07bf88032f2da0aed541ccb"
     },
     {
       "date": "2026-10-26",

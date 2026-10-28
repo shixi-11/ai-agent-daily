@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-28 AI Agent — Models Become More Controllable</title>
+      <link>https://ai.alux.network/daily/en/2026/10/28/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/28/</guid>
+      <pubDate>Tue, 27 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Small models move onto devices, world models respond to instructions, and video research leaves a clearer evidence trail. The question is not just what works, but who can use it.</description>
+    </item>
+    <item>
       <title>2026-10-27 AI Agent — Making Agent Work Easier to Check</title>
       <link>https://ai.alux.network/daily/en/2026/10/27/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/27/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/25/</guid>
       <pubDate>Thu, 24 Sep 2026 16:00:00 GMT</pubDate>
       <description>Live avatars converse while tools work; decision models return probabilities. From guided learning to code review, assistants are finding interfaces beyond the chat box.</description>
-    </item>
-    <item>
-      <title>2026-09-24 AI Agent — Models Act, Teams Collaborate</title>
-      <link>https://ai.alux.network/daily/en/2026/09/24/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/24/</guid>
-      <pubDate>Wed, 23 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Robots learn actions, speech models track speakers, and documents expand on demand. Creative rooms and shared memory help assistants carry work forward.</description>
     </item>
   </channel>
 </rss>

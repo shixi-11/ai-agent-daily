@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-27T08:28:32.846Z",
+  "generatedAt": "2026-10-28T00:21:12.461Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-27",
-    "url": "/daily/en/2026/10/27/",
+    "date": "2026-10-28",
+    "url": "/daily/en/2026/10/28/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/27/"
+    "alternateUrl": "/daily/2026/10/28/"
   },
   "reports": [
+    {
+      "date": "2026-10-28",
+      "title": "AI Agent — Models Become More Controllable",
+      "lead": "Small models move onto devices, world models respond to instructions, and video research leaves a clearer evidence trail. The question is not just what works, but who can use it.",
+      "url": "/daily/en/2026/10/28/",
+      "alternateUrl": "/daily/2026/10/28/",
+      "publicPath": "en/2026/10/28/index.html",
+      "sourceFile": "20261028.body.html",
+      "sha256": "0244475c2148752a521f23e81166e7cff4693a0a07d6c076ada56079d40ead8d",
+      "publicSha256": "b59b9c7a0335f39185e0dd52ac000f4cc88d76e2fb208ee9bd38106af7549185"
+    },
     {
       "date": "2026-10-27",
       "title": "AI Agent — Making Agent Work Easier to Check",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/27/index.html",
       "sourceFile": "20261027.body.html",
       "sha256": "f35df93dde172eda1afea33df0f127d11584321d16b64f8b6408a093b9b2f85b",
-      "publicSha256": "c04ae05693d9b99a34c98af25a6fbb7a60b6d6a8c89c4f2c23e58c309a9bc4d5"
+      "publicSha256": "5c3a453873dea26c98fcca69a45bf0275bf7c63ec369ae4be8d3f7a1f73e0e3a"
     },
     {
       "date": "2026-10-26",
