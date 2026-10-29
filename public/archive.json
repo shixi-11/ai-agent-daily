@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-28T00:21:12.461Z",
+  "generatedAt": "2026-10-29T00:27:50.567Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-28",
-    "url": "/daily/2026/10/28/",
+    "date": "2026-10-29",
+    "url": "/daily/2026/10/29/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/28/"
+    "alternateUrl": "/daily/en/2026/10/29/"
   },
   "reports": [
+    {
+      "date": "2026-10-29",
+      "title": "AI Agent声音接入工作流程",
+      "lead": "实时对话、长音频转写与音频选择题，各自跨过不同的使用门槛。今天看模型怎样接入工作，也看推理系统交出了什么。",
+      "url": "/daily/2026/10/29/",
+      "alternateUrl": "/daily/en/2026/10/29/",
+      "publicPath": "2026/10/29/index.html",
+      "sourceFile": "20261029_ALUX_AI智能体情报日报.html",
+      "sha256": "e351a9d8719def3ad48e324eac9544fbfb3d71888bb6186d1df5f140da04c45f",
+      "publicSha256": "a4c25a862a48f675bccd3b20e2e4bb94ca86ffa8e0d51bf8c26988da968b4933"
+    },
     {
       "date": "2026-10-28",
       "title": "AI Agent模型走向可控交互",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/28/index.html",
       "sourceFile": "20261028_ALUX_AI智能体情报日报.html",
       "sha256": "bb3abcabb1e80027fc49599a1b576e684c203c936395a65f695bde6d3b0af245",
-      "publicSha256": "b8340efaf350d4f8e2eca9c186f7aca15d9acc2ec77240c2512a298a03d464b4"
+      "publicSha256": "4c3f00238fd5996fbde29add562ecb100369502ae2e5027d66a38d1ef28f25d9"
     },
     {
       "date": "2026-10-27",

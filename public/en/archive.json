@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-28T00:21:12.461Z",
+  "generatedAt": "2026-10-29T00:27:50.567Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-28",
-    "url": "/daily/en/2026/10/28/",
+    "date": "2026-10-29",
+    "url": "/daily/en/2026/10/29/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/28/"
+    "alternateUrl": "/daily/2026/10/29/"
   },
   "reports": [
+    {
+      "date": "2026-10-29",
+      "title": "AI Agent — Voice Enters the Workflow",
+      "lead": "Live conversation, long-form transcription, and multiple-choice audio analysis each come with different requirements. This issue examines how models fit into work—and what their inference systems actually provide.",
+      "url": "/daily/en/2026/10/29/",
+      "alternateUrl": "/daily/2026/10/29/",
+      "publicPath": "en/2026/10/29/index.html",
+      "sourceFile": "20261029.body.html",
+      "sha256": "95fe6434c27029b66d1b1091595e3cca25e5639fd57821a154179ca5536b3378",
+      "publicSha256": "2ec46b94037e68155e8aa789a7d989dc7aacaeed8df4c0f0093066441c176c9a"
+    },
     {
       "date": "2026-10-28",
       "title": "AI Agent — Models Become More Controllable",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/28/index.html",
       "sourceFile": "20261028.body.html",
       "sha256": "0244475c2148752a521f23e81166e7cff4693a0a07d6c076ada56079d40ead8d",
-      "publicSha256": "b59b9c7a0335f39185e0dd52ac000f4cc88d76e2fb208ee9bd38106af7549185"
+      "publicSha256": "c42e121cda99d6349cca18d5d3a5572b6bd3fcedfcde4339d9e3959a54a0f192"
     },
     {
       "date": "2026-10-27",

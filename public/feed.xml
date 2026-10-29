@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-29 AI Agent声音接入工作流程</title>
+      <link>https://ai.alux.network/daily/2026/10/29/</link>
+      <guid>https://ai.alux.network/daily/2026/10/29/</guid>
+      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
+      <description>实时对话、长音频转写与音频选择题，各自跨过不同的使用门槛。今天看模型怎样接入工作，也看推理系统交出了什么。</description>
+    </item>
+    <item>
       <title>2026-10-28 AI Agent模型走向可控交互</title>
       <link>https://ai.alux.network/daily/2026/10/28/</link>
       <guid>https://ai.alux.network/daily/2026/10/28/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/26/</guid>
       <pubDate>Fri, 25 Sep 2026 16:00:00 GMT</pubDate>
       <description>Copilot尝试持续办事，PixVerse与Horizon拓展互动创作；本地决策、屏幕识别和视觉推理则补齐执行所需的组件。</description>
-    </item>
-    <item>
-      <title>2026-09-25 AI Agent助手的表达开始分工</title>
-      <link>https://ai.alux.network/daily/2026/09/25/</link>
-      <guid>https://ai.alux.network/daily/2026/09/25/</guid>
-      <pubDate>Thu, 24 Sep 2026 16:00:00 GMT</pubDate>
-      <description>实时形象能边聊边办事，决策模型直接给概率；从陪你学习到解释代码，助手正在寻找比聊天框更合适的表达。</description>
     </item>
   </channel>
 </rss>

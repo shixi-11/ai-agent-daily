@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-29 AI Agent — Voice Enters the Workflow</title>
+      <link>https://ai.alux.network/daily/en/2026/10/29/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/29/</guid>
+      <pubDate>Wed, 28 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Live conversation, long-form transcription, and multiple-choice audio analysis each come with different requirements. This issue examines how models fit into work—and what their inference systems actually provide.</description>
+    </item>
+    <item>
       <title>2026-10-28 AI Agent — Models Become More Controllable</title>
       <link>https://ai.alux.network/daily/en/2026/10/28/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/28/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/26/</guid>
       <pubDate>Fri, 25 Sep 2026 16:00:00 GMT</pubDate>
       <description>Copilot moves toward persistent work, while PixVerse and Horizon expand interactive creation. Local decisions, screen parsing, and faster visual inference supply more of the components needed to act.</description>
-    </item>
-    <item>
-      <title>2026-09-25 AI Agent — New Faces, Clearer Decisions</title>
-      <link>https://ai.alux.network/daily/en/2026/09/25/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/25/</guid>
-      <pubDate>Thu, 24 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Live avatars converse while tools work; decision models return probabilities. From guided learning to code review, assistants are finding interfaces beyond the chat box.</description>
     </item>
   </channel>
 </rss>
