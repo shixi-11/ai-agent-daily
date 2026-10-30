@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-29T00:27:50.567Z",
+  "generatedAt": "2026-10-30T00:25:41.067Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-29",
-    "url": "/daily/en/2026/10/29/",
+    "date": "2026-10-30",
+    "url": "/daily/en/2026/10/30/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/29/"
+    "alternateUrl": "/daily/2026/10/30/"
   },
   "reports": [
+    {
+      "date": "2026-10-30",
+      "title": "AI Agent — Results You Can Inspect",
+      "lead": "Weights, tests, and small experiments make model capabilities easier to inspect. This issue covers self-hosting alongside new ways to work with speech, films, and games.",
+      "url": "/daily/en/2026/10/30/",
+      "alternateUrl": "/daily/2026/10/30/",
+      "publicPath": "en/2026/10/30/index.html",
+      "sourceFile": "20261030.body.html",
+      "sha256": "1b1d21935867d872b261f2cf89b0c8fc137047bcaba03c30734b21eef1192f5b",
+      "publicSha256": "f1b3cf18cece710fd7651bc7df154a775838cf1691be97685265b2a00ea17d12"
+    },
     {
       "date": "2026-10-29",
       "title": "AI Agent — Voice Enters the Workflow",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/29/index.html",
       "sourceFile": "20261029.body.html",
       "sha256": "95fe6434c27029b66d1b1091595e3cca25e5639fd57821a154179ca5536b3378",
-      "publicSha256": "2ec46b94037e68155e8aa789a7d989dc7aacaeed8df4c0f0093066441c176c9a"
+      "publicSha256": "4dc70dada3afd6e6236e71889c1c8462c347d731ce2233af215ef231359c2054"
     },
     {
       "date": "2026-10-28",

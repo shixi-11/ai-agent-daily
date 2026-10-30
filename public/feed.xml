@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-10-30 AI Agent让模型交出可检查的结果</title>
+      <link>https://ai.alux.network/daily/2026/10/30/</link>
+      <guid>https://ai.alux.network/daily/2026/10/30/</guid>
+      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
+      <description>权重、测试和小实验，把模型能力变成读者能检查的东西。今天看自主部署的进展，也看声音、短片与游戏里的新玩法。</description>
+    </item>
+    <item>
       <title>2026-10-29 AI Agent声音接入工作流程</title>
       <link>https://ai.alux.network/daily/2026/10/29/</link>
       <guid>https://ai.alux.network/daily/2026/10/29/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/09/27/</guid>
       <pubDate>Sat, 26 Sep 2026 16:00:00 GMT</pubDate>
       <description>助手开始读懂图上的位置，机器人学会找回视野外的物品；当工具走向行动，记忆、执行环境与判断分数都需要更明确的边界。</description>
-    </item>
-    <item>
-      <title>2026-09-26 AI Agent从对话走向可操作世界</title>
-      <link>https://ai.alux.network/daily/2026/09/26/</link>
-      <guid>https://ai.alux.network/daily/2026/09/26/</guid>
-      <pubDate>Fri, 25 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Copilot尝试持续办事，PixVerse与Horizon拓展互动创作；本地决策、屏幕识别和视觉推理则补齐执行所需的组件。</description>
     </item>
   </channel>
 </rss>
