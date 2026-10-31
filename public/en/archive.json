@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-30T00:25:41.067Z",
+  "generatedAt": "2026-10-31T00:26:36.222Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-30",
-    "url": "/daily/en/2026/10/30/",
+    "date": "2026-10-31",
+    "url": "/daily/en/2026/10/31/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/30/"
+    "alternateUrl": "/daily/2026/10/31/"
   },
   "reports": [
+    {
+      "date": "2026-10-31",
+      "title": "AI Agent — Connecting Models to Real Actions",
+      "lead": "From biological research and audio scenes to desktops, robots, and telescopes, AI is taking on more actions. The revealing details are how those actions are executed, checked, and constrained.",
+      "url": "/daily/en/2026/10/31/",
+      "alternateUrl": "/daily/2026/10/31/",
+      "publicPath": "en/2026/10/31/index.html",
+      "sourceFile": "20261031.body.html",
+      "sha256": "5519acd5726d5f7e107caf7159234fb053bdc8584bf962eca80bcc7be32d336f",
+      "publicSha256": "c0229132a15f531f7d0f261c547c38639281650c5906920c30e7e99d07ba110a"
+    },
     {
       "date": "2026-10-30",
       "title": "AI Agent — Results You Can Inspect",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/30/index.html",
       "sourceFile": "20261030.body.html",
       "sha256": "1b1d21935867d872b261f2cf89b0c8fc137047bcaba03c30734b21eef1192f5b",
-      "publicSha256": "f1b3cf18cece710fd7651bc7df154a775838cf1691be97685265b2a00ea17d12"
+      "publicSha256": "a34b5ab2511b7bde9375ee9ef5ca34ff6170753b96cb5fe694316b0bb5646089"
     },
     {
       "date": "2026-10-29",

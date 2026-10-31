@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-30T00:25:41.067Z",
+  "generatedAt": "2026-10-31T00:26:36.222Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-30",
-    "url": "/daily/2026/10/30/",
+    "date": "2026-10-31",
+    "url": "/daily/2026/10/31/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/30/"
+    "alternateUrl": "/daily/en/2026/10/31/"
   },
   "reports": [
+    {
+      "date": "2026-10-31",
+      "title": "AI Agent让模型接上真实动作",
+      "lead": "从生物研究与声音场景，到桌面、机器人和望远镜，AI正在接入更多动作。真正值得看的，是每一步怎样被执行、检查与限制。",
+      "url": "/daily/2026/10/31/",
+      "alternateUrl": "/daily/en/2026/10/31/",
+      "publicPath": "2026/10/31/index.html",
+      "sourceFile": "20261031_ALUX_AI智能体情报日报.html",
+      "sha256": "6e502a67f6bbb665d99be4812b67eb4590be97540074404727fe49b654e64d67",
+      "publicSha256": "36e846249140af847e6874fa71b6703830aeeefa81ee35b703ae6e5ee576ffa3"
+    },
     {
       "date": "2026-10-30",
       "title": "AI Agent让模型交出可检查的结果",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/30/index.html",
       "sourceFile": "20261030_ALUX_AI智能体情报日报.html",
       "sha256": "645d14942a940942a4ea738525411823857d79827d5f75da8247d7644b55fefb",
-      "publicSha256": "7d9b973bb1281bcbd7a631492bf485f3c74a5b8609e8dcbb2084ce87195bc6ff"
+      "publicSha256": "24aabc72d535d5091e888063aba34b0aa4b62f0d57a8d9d65dc5b5eb57bd63f6"
     },
     {
       "date": "2026-10-29",

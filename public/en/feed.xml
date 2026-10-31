@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-10-31 AI Agent — Connecting Models to Real Actions</title>
+      <link>https://ai.alux.network/daily/en/2026/10/31/</link>
+      <guid>https://ai.alux.network/daily/en/2026/10/31/</guid>
+      <pubDate>Fri, 30 Oct 2026 16:00:00 GMT</pubDate>
+      <description>From biological research and audio scenes to desktops, robots, and telescopes, AI is taking on more actions. The revealing details are how those actions are executed, checked, and constrained.</description>
+    </item>
+    <item>
       <title>2026-10-30 AI Agent — Results You Can Inspect</title>
       <link>https://ai.alux.network/daily/en/2026/10/30/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/30/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/28/</guid>
       <pubDate>Sun, 27 Sep 2026 16:00:00 GMT</pubDate>
       <description>Models shorten reasoning, game characters remember relationships, and samplers and robot hands put AI-related capabilities into physical interfaces. Twelve stories trace the distance from decisions to actions.</description>
-    </item>
-    <item>
-      <title>2026-09-27 AI Agent — Diagrams Meet Physical Space</title>
-      <link>https://ai.alux.network/daily/en/2026/09/27/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/27/</guid>
-      <pubDate>Sat, 26 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Assistants gain finer control over diagrams, while robots retrieve objects outside their view. As tools move into action, memory, execution environments, and decision scores need clearer boundaries.</description>
     </item>
   </channel>
 </rss>
