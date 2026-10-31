@@ -28,7 +28,7 @@ node scripts/render-check.cjs
 
 ## 自动化与域名
 
-OpenClaw 负责正式日报，使用统一的 Astra low 配置，以及一套主任务、验收和恢复调度。GitHub Actions 只负责公开信号采集和正式日报完整性监测，不能另写一份竞争首页的内容。
+OpenClaw 负责正式日报，使用统一的 SOL medium 配置，以及一套主任务、验收和恢复调度。GitHub Actions 只负责公开信号采集和正式日报完整性监测，不能另写一份竞争首页的内容。
 
 主入口为 `https://shixilin.com/ai/agent-daily`。旧域名及历史地址保留并永久跳转到对应个人域名页面。稳定 Vercel 源站与内部 `/daily/` 路径用于部署兼容，不改 DNS。
 
