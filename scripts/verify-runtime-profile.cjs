@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 function verify(config, contract, agentId) {
   const profile = contract.runtimeProfile;
-  if (profile?.model !== 'openai/gpt-6-astra' || profile?.thinking !== 'low' || !Array.isArray(profile.fallbacks) || profile.fallbacks.length) throw new Error('Daily requires openai/gpt-6-astra, thinking=low and no fallbacks.');
+  if (profile?.model !== 'openai/gpt-6.1-sol' || profile?.thinking !== 'low' || !Array.isArray(profile.fallbacks) || profile.fallbacks.length) throw new Error('Daily requires openai/gpt-6.1-sol, thinking=low and no fallbacks.');
   const agents = config.agents || {};
   const entry = agents.entries?.[agentId] || agents.list?.find(a => a.id === agentId) || {};
   const policy = entry.modelPolicy ?? agents.defaults?.modelPolicy;
