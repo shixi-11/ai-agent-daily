@@ -7,7 +7,7 @@
   "siteDisplayTimezone": "Asia/Shanghai",
   "runtimeProfile": {
     "model": "openai/gpt-6.1-sol",
-    "thinking": "low",
+    "thinking": "medium",
     "speed": "standard",
     "fallbacks": []
   },
