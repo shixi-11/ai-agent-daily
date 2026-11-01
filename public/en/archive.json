@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-10-31T00:26:36.222Z",
+  "generatedAt": "2026-11-01T00:21:47.872Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-10-31",
-    "url": "/daily/en/2026/10/31/",
+    "date": "2026-11-01",
+    "url": "/daily/en/2026/11/01/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/10/31/"
+    "alternateUrl": "/daily/2026/11/01/"
   },
   "reports": [
+    {
+      "date": "2026-11-01",
+      "title": "AI Agent — Silent Input Meets Robotics",
+      "lead": "Lips become an input device, a boot sector runs a neural network, and robots need matching calibration. Research agents face a different test: separating discovery from retrieval. Specific settings reveal both uses and limits.",
+      "url": "/daily/en/2026/11/01/",
+      "alternateUrl": "/daily/2026/11/01/",
+      "publicPath": "en/2026/11/01/index.html",
+      "sourceFile": "20261101.body.html",
+      "sha256": "aec5fa068f92e31042cd8a2d7b0a7dc59ff4e3cf3ff7776537e8dc95d60d401e",
+      "publicSha256": "27965d2969e2a41eb7722c9703104b12bd30d576433bf876c50c3930d5ccdcbb"
+    },
     {
       "date": "2026-10-31",
       "title": "AI Agent — Connecting Models to Real Actions",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/10/31/index.html",
       "sourceFile": "20261031.body.html",
       "sha256": "5519acd5726d5f7e107caf7159234fb053bdc8584bf962eca80bcc7be32d336f",
-      "publicSha256": "c0229132a15f531f7d0f261c547c38639281650c5906920c30e7e99d07ba110a"
+      "publicSha256": "7aa70092da451938527490d5c631d66a542dcd371b4b11525dc062a38d5b8175"
     },
     {
       "date": "2026-10-30",

@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-10-31T00:26:36.222Z",
+  "generatedAt": "2026-11-01T00:21:47.872Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-10-31",
-    "url": "/daily/2026/10/31/",
+    "date": "2026-11-01",
+    "url": "/daily/2026/11/01/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/10/31/"
+    "alternateUrl": "/daily/en/2026/11/01/"
   },
   "reports": [
+    {
+      "date": "2026-11-01",
+      "title": "AI Agent从无声输入到机器人",
+      "lead": "嘴唇可以输入，启动扇区也能跑神经网络；机器人要对齐标定，科研Agent要分清发现与检索。今天从具体场景看模型的用处与边界。",
+      "url": "/daily/2026/11/01/",
+      "alternateUrl": "/daily/en/2026/11/01/",
+      "publicPath": "2026/11/01/index.html",
+      "sourceFile": "20261101_ALUX_AI智能体情报日报.html",
+      "sha256": "384d5b38af8043ca3c36e7bb2fb7e7105f3d7acc408cd75273df48ca37418b91",
+      "publicSha256": "6de830ed076237efbbb3ea9d0a126e0f28d20fb6d3786d0f868532dd0bd1c6bc"
+    },
     {
       "date": "2026-10-31",
       "title": "AI Agent让模型接上真实动作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/10/31/index.html",
       "sourceFile": "20261031_ALUX_AI智能体情报日报.html",
       "sha256": "6e502a67f6bbb665d99be4812b67eb4590be97540074404727fe49b654e64d67",
-      "publicSha256": "36e846249140af847e6874fa71b6703830aeeefa81ee35b703ae6e5ee576ffa3"
+      "publicSha256": "58d93c85959860109f6726d89620a90a3eb05e559a73ac0819dc587e1ff32cdc"
     },
     {
       "date": "2026-10-30",

@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-01 AI Agent — Silent Input Meets Robotics</title>
+      <link>https://ai.alux.network/daily/en/2026/11/01/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/01/</guid>
+      <pubDate>Sat, 31 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Lips become an input device, a boot sector runs a neural network, and robots need matching calibration. Research agents face a different test: separating discovery from retrieval. Specific settings reveal both uses and limits.</description>
+    </item>
+    <item>
       <title>2026-10-31 AI Agent — Connecting Models to Real Actions</title>
       <link>https://ai.alux.network/daily/en/2026/10/31/</link>
       <guid>https://ai.alux.network/daily/en/2026/10/31/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/09/29/</guid>
       <pubDate>Mon, 28 Sep 2026 16:00:00 GMT</pubDate>
       <description>Sonnet and Holo4 gain capabilities, Shopify adds checkout tools, and small models and spare computers find new uses. The practical test is whether tasks can be completed with meaningful controls.</description>
-    </item>
-    <item>
-      <title>2026-09-28 AI Agent — Less Wasted Work, More Action</title>
-      <link>https://ai.alux.network/daily/en/2026/09/28/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/28/</guid>
-      <pubDate>Sun, 27 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Models shorten reasoning, game characters remember relationships, and samplers and robot hands put AI-related capabilities into physical interfaces. Twelve stories trace the distance from decisions to actions.</description>
     </item>
   </channel>
 </rss>
