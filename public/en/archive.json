@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-01T00:21:47.872Z",
+  "generatedAt": "2026-11-02T00:19:23.393Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-01",
-    "url": "/daily/en/2026/11/01/",
+    "date": "2026-11-02",
+    "url": "/daily/en/2026/11/02/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/01/"
+    "alternateUrl": "/daily/2026/11/02/"
   },
   "reports": [
+    {
+      "date": "2026-11-02",
+      "title": "AI Agent — Speech Tools Meet Evidence",
+      "lead": "Translation models process speech as it arrives, while creative tools expose more controls. Paper edits, quotations, and computer tasks face a related demand: results need specific checks.",
+      "url": "/daily/en/2026/11/02/",
+      "alternateUrl": "/daily/2026/11/02/",
+      "publicPath": "en/2026/11/02/index.html",
+      "sourceFile": "20261102.body.html",
+      "sha256": "3a73743b22a8282ed5a2e42f982f7f0507beb8f7b7de132954bed44bcc3fe6af",
+      "publicSha256": "56c443f014aea2374241a51ca625b875541a450b77d72ba5fd0056fed59fde40"
+    },
     {
       "date": "2026-11-01",
       "title": "AI Agent — Silent Input Meets Robotics",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/01/index.html",
       "sourceFile": "20261101.body.html",
       "sha256": "aec5fa068f92e31042cd8a2d7b0a7dc59ff4e3cf3ff7776537e8dc95d60d401e",
-      "publicSha256": "27965d2969e2a41eb7722c9703104b12bd30d576433bf876c50c3930d5ccdcbb"
+      "publicSha256": "6f32460525beeb5ff526ef0beecaf301c4311f17fc0732c252d58bd763242896"
     },
     {
       "date": "2026-10-31",

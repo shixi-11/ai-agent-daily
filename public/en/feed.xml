@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-02 AI Agent — Speech Tools Meet Evidence</title>
+      <link>https://ai.alux.network/daily/en/2026/11/02/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/02/</guid>
+      <pubDate>Sun, 01 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Translation models process speech as it arrives, while creative tools expose more controls. Paper edits, quotations, and computer tasks face a related demand: results need specific checks.</description>
+    </item>
+    <item>
       <title>2026-11-01 AI Agent — Silent Input Meets Robotics</title>
       <link>https://ai.alux.network/daily/en/2026/11/01/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/01/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/04/</guid>
       <pubDate>Sat, 03 Oct 2026 16:00:00 GMT</pubDate>
       <description>Twelve developments connect new models with retrieval, scientific reports, and video experiments—and bring the focus back to verifiable agent outcomes.</description>
-    </item>
-    <item>
-      <title>2026-09-29 AI Agent — AI Enters Real Workflows</title>
-      <link>https://ai.alux.network/daily/en/2026/09/29/</link>
-      <guid>https://ai.alux.network/daily/en/2026/09/29/</guid>
-      <pubDate>Mon, 28 Sep 2026 16:00:00 GMT</pubDate>
-      <description>Sonnet and Holo4 gain capabilities, Shopify adds checkout tools, and small models and spare computers find new uses. The practical test is whether tasks can be completed with meaningful controls.</description>
     </item>
   </channel>
 </rss>

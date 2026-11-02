@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-01T00:21:47.872Z",
+  "generatedAt": "2026-11-02T00:19:23.393Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-01",
-    "url": "/daily/2026/11/01/",
+    "date": "2026-11-02",
+    "url": "/daily/2026/11/02/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/01/"
+    "alternateUrl": "/daily/en/2026/11/02/"
   },
   "reports": [
+    {
+      "date": "2026-11-02",
+      "title": "AI Agent从实时同传到结果核验",
+      "lead": "同传模型边听边译，创作工具开放更多控制；从论文修改、资料引文到电脑操作，助手交出的结果也开始接受更具体的检查。",
+      "url": "/daily/2026/11/02/",
+      "alternateUrl": "/daily/en/2026/11/02/",
+      "publicPath": "2026/11/02/index.html",
+      "sourceFile": "20261102_ALUX_AI智能体情报日报.html",
+      "sha256": "01e3865c1def6e6f544286798bb548f503d31bf73e37401c4cf9ad16855fed3b",
+      "publicSha256": "1fe64e5b76509b2c7b22db04a6f32965be8b7b386812576f89868686dece03a5"
+    },
     {
       "date": "2026-11-01",
       "title": "AI Agent从无声输入到机器人",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/01/index.html",
       "sourceFile": "20261101_ALUX_AI智能体情报日报.html",
       "sha256": "384d5b38af8043ca3c36e7bb2fb7e7105f3d7acc408cd75273df48ca37418b91",
-      "publicSha256": "6de830ed076237efbbb3ea9d0a126e0f28d20fb6d3786d0f868532dd0bd1c6bc"
+      "publicSha256": "4e01796bb51d103f669725d0a8f8b2ea9368d1c64f4882db773a62387b2bb1cc"
     },
     {
       "date": "2026-10-31",
