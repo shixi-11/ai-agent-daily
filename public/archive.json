@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-02T00:19:23.393Z",
+  "generatedAt": "2026-11-03T00:22:18.193Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-02",
-    "url": "/daily/2026/11/02/",
+    "date": "2026-11-03",
+    "url": "/daily/2026/11/03/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/02/"
+    "alternateUrl": "/daily/en/2026/11/03/"
   },
   "reports": [
+    {
+      "date": "2026-11-03",
+      "title": "AI Agent从轻量创作到团队协作",
+      "lead": "小语音模型能叹气，桌面视频工具开放源码，团队编码原型公开协作流程。新接口也在重划对话、任务与记忆的分工。",
+      "url": "/daily/2026/11/03/",
+      "alternateUrl": "/daily/en/2026/11/03/",
+      "publicPath": "2026/11/03/index.html",
+      "sourceFile": "20261103_ALUX_AI智能体情报日报.html",
+      "sha256": "7be68a056a757a4511df8604d59f03586bda5574c3d11ab50b518bdbb64f5eed",
+      "publicSha256": "ca0e5463cf01d4d377e25026be031f2c5033171c1ff6c03ef30513e71023506e"
+    },
     {
       "date": "2026-11-02",
       "title": "AI Agent从实时同传到结果核验",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/02/index.html",
       "sourceFile": "20261102_ALUX_AI智能体情报日报.html",
       "sha256": "01e3865c1def6e6f544286798bb548f503d31bf73e37401c4cf9ad16855fed3b",
-      "publicSha256": "1fe64e5b76509b2c7b22db04a6f32965be8b7b386812576f89868686dece03a5"
+      "publicSha256": "9405da0fb65a36fe39b8f91ff050bdb98cd6c7223997c4983e6e6622ebd6dc14"
     },
     {
       "date": "2026-11-01",

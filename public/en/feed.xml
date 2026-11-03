@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-03 AI Agent — Creative Tools Meet Teamwork</title>
+      <link>https://ai.alux.network/daily/en/2026/11/03/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/03/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Small speech models add sighs, desktop video tools open their code, and a team coding prototype exposes its workflow. New interfaces also separate conversations, tasks, and memory.</description>
+    </item>
+    <item>
       <title>2026-11-02 AI Agent — Speech Tools Meet Evidence</title>
       <link>https://ai.alux.network/daily/en/2026/11/02/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/02/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/05/</guid>
       <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
       <description>Twelve developments bring agents to homemade devices, local media libraries, voice interfaces, and business data.</description>
-    </item>
-    <item>
-      <title>2026-10-04 AI Agent — Better models, stronger checks</title>
-      <link>https://ai.alux.network/daily/en/2026/10/04/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/04/</guid>
-      <pubDate>Sat, 03 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Twelve developments connect new models with retrieval, scientific reports, and video experiments—and bring the focus back to verifiable agent outcomes.</description>
     </item>
   </channel>
 </rss>

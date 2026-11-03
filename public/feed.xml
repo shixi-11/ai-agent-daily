@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-03 AI Agent从轻量创作到团队协作</title>
+      <link>https://ai.alux.network/daily/2026/11/03/</link>
+      <guid>https://ai.alux.network/daily/2026/11/03/</guid>
+      <pubDate>Mon, 02 Nov 2026 16:00:00 GMT</pubDate>
+      <description>小语音模型能叹气，桌面视频工具开放源码，团队编码原型公开协作流程。新接口也在重划对话、任务与记忆的分工。</description>
+    </item>
+    <item>
       <title>2026-11-02 AI Agent从实时同传到结果核验</title>
       <link>https://ai.alux.network/daily/2026/11/02/</link>
       <guid>https://ai.alux.network/daily/2026/11/02/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/05/</guid>
       <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
       <description>12条消息看助手怎样连接自制设备、本地影像、语音与业务数据，也看这些新入口的真实使用条件。</description>
-    </item>
-    <item>
-      <title>2026-10-04 AI Agent模型升级与结果验收</title>
-      <link>https://ai.alux.network/daily/2026/10/04/</link>
-      <guid>https://ai.alux.network/daily/2026/10/04/</guid>
-      <pubDate>Sat, 03 Oct 2026 16:00:00 GMT</pubDate>
-      <description>12条信号串起新模型、检索、科学报告与视频实验，也把Agent的完成标准拉回可验证结果。</description>
     </item>
   </channel>
 </rss>

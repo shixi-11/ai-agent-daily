@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-02T00:19:23.393Z",
+  "generatedAt": "2026-11-03T00:22:18.193Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-02",
-    "url": "/daily/en/2026/11/02/",
+    "date": "2026-11-03",
+    "url": "/daily/en/2026/11/03/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/02/"
+    "alternateUrl": "/daily/2026/11/03/"
   },
   "reports": [
+    {
+      "date": "2026-11-03",
+      "title": "AI Agent — Creative Tools Meet Teamwork",
+      "lead": "Small speech models add sighs, desktop video tools open their code, and a team coding prototype exposes its workflow. New interfaces also separate conversations, tasks, and memory.",
+      "url": "/daily/en/2026/11/03/",
+      "alternateUrl": "/daily/2026/11/03/",
+      "publicPath": "en/2026/11/03/index.html",
+      "sourceFile": "20261103.body.html",
+      "sha256": "775fa3e9838ae4ac952610588c8e9ea46f7c606019360918d7b00a4182bf65db",
+      "publicSha256": "8ac37cb5ca218c88f4752c551eaf5a032398139536a2197a55ea281864775880"
+    },
     {
       "date": "2026-11-02",
       "title": "AI Agent — Speech Tools Meet Evidence",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/02/index.html",
       "sourceFile": "20261102.body.html",
       "sha256": "3a73743b22a8282ed5a2e42f982f7f0507beb8f7b7de132954bed44bcc3fe6af",
-      "publicSha256": "56c443f014aea2374241a51ca625b875541a450b77d72ba5fd0056fed59fde40"
+      "publicSha256": "f4c0b682fb94a1c60b1f860da005b93dfd20b31413622c75771b7d24e198252e"
     },
     {
       "date": "2026-11-01",
