@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-04 AI Agent — Creative Control Meets Runtime Design</title>
+      <link>https://ai.alux.network/daily/en/2026/11/04/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/04/</guid>
+      <pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate>
+      <description>References guide video and sound, coding agents gain a canvas, and a research model opens full weights. Identity, caching, and release boundaries shape what works beyond the demo.</description>
+    </item>
+    <item>
       <title>2026-11-03 AI Agent — Creative Tools Meet Teamwork</title>
       <link>https://ai.alux.network/daily/en/2026/11/03/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/03/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/06/</guid>
       <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
       <description>Twelve developments span model previews, enterprise agents, code review, and creative demos—with practical ways to inspect what each can do.</description>
-    </item>
-    <item>
-      <title>2026-10-05 AI Agent — Agents enter everyday tools</title>
-      <link>https://ai.alux.network/daily/en/2026/10/05/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/05/</guid>
-      <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Twelve developments bring agents to homemade devices, local media libraries, voice interfaces, and business data.</description>
     </item>
   </channel>
 </rss>

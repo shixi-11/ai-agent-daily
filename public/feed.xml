@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-04 AI Agent从创作画布到运行边界</title>
+      <link>https://ai.alux.network/daily/2026/11/04/</link>
+      <guid>https://ai.alux.network/daily/2026/11/04/</guid>
+      <pubDate>Tue, 03 Nov 2026 16:00:00 GMT</pubDate>
+      <description>参考素材引导声画，编码助手进入画布，科研模型开放完整权重。另一条线索是身份、缓存与发布边界如何支撑长期工作。</description>
+    </item>
+    <item>
       <title>2026-11-03 AI Agent从轻量创作到团队协作</title>
       <link>https://ai.alux.network/daily/2026/11/03/</link>
       <guid>https://ai.alux.network/daily/2026/11/03/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/06/</guid>
       <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
       <description>12条消息连接模型预告、企业助手与代码审查，也带来钢琴听辨、跨图编辑和游戏决策演示。</description>
-    </item>
-    <item>
-      <title>2026-10-05 AI Agent助手走进设备与日常</title>
-      <link>https://ai.alux.network/daily/2026/10/05/</link>
-      <guid>https://ai.alux.network/daily/2026/10/05/</guid>
-      <pubDate>Sun, 04 Oct 2026 16:00:00 GMT</pubDate>
-      <description>12条消息看助手怎样连接自制设备、本地影像、语音与业务数据，也看这些新入口的真实使用条件。</description>
     </item>
   </channel>
 </rss>

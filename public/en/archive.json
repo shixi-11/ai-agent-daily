@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-03T00:22:18.193Z",
+  "generatedAt": "2026-11-04T00:16:44.082Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-03",
-    "url": "/daily/en/2026/11/03/",
+    "date": "2026-11-04",
+    "url": "/daily/en/2026/11/04/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/03/"
+    "alternateUrl": "/daily/2026/11/04/"
   },
   "reports": [
+    {
+      "date": "2026-11-04",
+      "title": "AI Agent — Creative Control Meets Runtime Design",
+      "lead": "References guide video and sound, coding agents gain a canvas, and a research model opens full weights. Identity, caching, and release boundaries shape what works beyond the demo.",
+      "url": "/daily/en/2026/11/04/",
+      "alternateUrl": "/daily/2026/11/04/",
+      "publicPath": "en/2026/11/04/index.html",
+      "sourceFile": "20261104.body.html",
+      "sha256": "f8fb4768800992eb230e97c3abc89158a4088f7e70d177159e5116bdcf7e3a13",
+      "publicSha256": "1547c4714ad070819039e1ff73696e4dd65c08e2561dd709c987a7f74db9a97b"
+    },
     {
       "date": "2026-11-03",
       "title": "AI Agent — Creative Tools Meet Teamwork",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/03/index.html",
       "sourceFile": "20261103.body.html",
       "sha256": "775fa3e9838ae4ac952610588c8e9ea46f7c606019360918d7b00a4182bf65db",
-      "publicSha256": "8ac37cb5ca218c88f4752c551eaf5a032398139536a2197a55ea281864775880"
+      "publicSha256": "5aabea05c0fce8fc7f3281f1d046998cc007d34e2b9a8254699ec297df6ea91b"
     },
     {
       "date": "2026-11-02",

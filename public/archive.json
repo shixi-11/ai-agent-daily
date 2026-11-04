@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-03T00:22:18.193Z",
+  "generatedAt": "2026-11-04T00:16:44.082Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-03",
-    "url": "/daily/2026/11/03/",
+    "date": "2026-11-04",
+    "url": "/daily/2026/11/04/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/03/"
+    "alternateUrl": "/daily/en/2026/11/04/"
   },
   "reports": [
+    {
+      "date": "2026-11-04",
+      "title": "AI Agent从创作画布到运行边界",
+      "lead": "参考素材引导声画，编码助手进入画布，科研模型开放完整权重。另一条线索是身份、缓存与发布边界如何支撑长期工作。",
+      "url": "/daily/2026/11/04/",
+      "alternateUrl": "/daily/en/2026/11/04/",
+      "publicPath": "2026/11/04/index.html",
+      "sourceFile": "20261104_ALUX_AI智能体情报日报.html",
+      "sha256": "a7f02a91bf9ba9b7ce98dea748b24d0728f4ad17cb33aac83bed40159d656ced",
+      "publicSha256": "69b4416e847821dc06e87f618abc622ef56eed524feaf4c71712ec899031909d"
+    },
     {
       "date": "2026-11-03",
       "title": "AI Agent从轻量创作到团队协作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/03/index.html",
       "sourceFile": "20261103_ALUX_AI智能体情报日报.html",
       "sha256": "7be68a056a757a4511df8604d59f03586bda5574c3d11ab50b518bdbb64f5eed",
-      "publicSha256": "ca0e5463cf01d4d377e25026be031f2c5033171c1ff6c03ef30513e71023506e"
+      "publicSha256": "1d692ad7239a538c60bf5d4955f3dbc611231a2ddc4751839a439681f36d4c82"
     },
     {
       "date": "2026-11-02",
