@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-04T00:16:44.082Z",
+  "generatedAt": "2026-11-05T00:25:57.943Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-04",
-    "url": "/daily/en/2026/11/04/",
+    "date": "2026-11-05",
+    "url": "/daily/en/2026/11/05/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/04/"
+    "alternateUrl": "/daily/2026/11/05/"
   },
   "reports": [
+    {
+      "date": "2026-11-05",
+      "title": "AI Agent — Editable Media, Resumable Agents",
+      "lead": "Hy4 adds vision and computer use; GPT Image gains vectors and animation. Native runtimes and small creative tools bring agent capabilities closer to usable workflows.",
+      "url": "/daily/en/2026/11/05/",
+      "alternateUrl": "/daily/2026/11/05/",
+      "publicPath": "en/2026/11/05/index.html",
+      "sourceFile": "20261105.body.html",
+      "sha256": "c96558dc0dcaca31c45d78c5ddc580d614749244366ff77d761e5bea5986f6d7",
+      "publicSha256": "f74260bc8ff8170236cac9c01b61c5b7cfd819ebf9d46411b7156f42b8bccf93"
+    },
     {
       "date": "2026-11-04",
       "title": "AI Agent — Creative Control Meets Runtime Design",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/04/index.html",
       "sourceFile": "20261104.body.html",
       "sha256": "f8fb4768800992eb230e97c3abc89158a4088f7e70d177159e5116bdcf7e3a13",
-      "publicSha256": "1547c4714ad070819039e1ff73696e4dd65c08e2561dd709c987a7f74db9a97b"
+      "publicSha256": "ef48dd4ab98720a68c06ccfcdca4a7cc3bc562bccc663f411a96b2f4bea6b736"
     },
     {
       "date": "2026-11-03",

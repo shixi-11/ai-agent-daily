@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-05 AI Agent创作入口与执行凭据</title>
+      <link>https://ai.alux.network/daily/2026/11/05/</link>
+      <guid>https://ai.alux.network/daily/2026/11/05/</guid>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Hy4加入视觉与电脑操作，GPT Image走向矢量与动图；另一边，原生运行时和小型创作工具让Agent更容易接进真实流程。</description>
+    </item>
+    <item>
       <title>2026-11-04 AI Agent从创作画布到运行边界</title>
       <link>https://ai.alux.network/daily/2026/11/04/</link>
       <guid>https://ai.alux.network/daily/2026/11/04/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/07/</guid>
       <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
       <description>13条消息覆盖模型预览、跨媒体检索与图片编辑，也把邮件、园艺、语音旅行和硬件实验带到眼前。</description>
-    </item>
-    <item>
-      <title>2026-10-06 AI Agent从模型预告到可验证的工作</title>
-      <link>https://ai.alux.network/daily/2026/10/06/</link>
-      <guid>https://ai.alux.network/daily/2026/10/06/</guid>
-      <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
-      <description>12条消息连接模型预告、企业助手与代码审查，也带来钢琴听辨、跨图编辑和游戏决策演示。</description>
     </item>
   </channel>
 </rss>

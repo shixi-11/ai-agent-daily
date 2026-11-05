@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-04T00:16:44.082Z",
+  "generatedAt": "2026-11-05T00:25:57.943Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-04",
-    "url": "/daily/2026/11/04/",
+    "date": "2026-11-05",
+    "url": "/daily/2026/11/05/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/04/"
+    "alternateUrl": "/daily/en/2026/11/05/"
   },
   "reports": [
+    {
+      "date": "2026-11-05",
+      "title": "AI Agent创作入口与执行凭据",
+      "lead": "Hy4加入视觉与电脑操作，GPT Image走向矢量与动图；另一边，原生运行时和小型创作工具让Agent更容易接进真实流程。",
+      "url": "/daily/2026/11/05/",
+      "alternateUrl": "/daily/en/2026/11/05/",
+      "publicPath": "2026/11/05/index.html",
+      "sourceFile": "20261105_ALUX_AI智能体情报日报.html",
+      "sha256": "eba10040fed9748cca2a26fa88080bc468bb4a7c480792696ddd0200ca842b35",
+      "publicSha256": "29c4aea7b1ef749aff17caf431751b783a2d1593758790cb047e8ccb53ca6d27"
+    },
     {
       "date": "2026-11-04",
       "title": "AI Agent从创作画布到运行边界",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/04/index.html",
       "sourceFile": "20261104_ALUX_AI智能体情报日报.html",
       "sha256": "a7f02a91bf9ba9b7ce98dea748b24d0728f4ad17cb33aac83bed40159d656ced",
-      "publicSha256": "69b4416e847821dc06e87f618abc622ef56eed524feaf4c71712ec899031909d"
+      "publicSha256": "d667d9f093d621aac6eb99b05dc8740c2dd12995fc7086bfd59feedf6aa84dbb"
     },
     {
       "date": "2026-11-03",

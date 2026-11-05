@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-05 AI Agent — Editable Media, Resumable Agents</title>
+      <link>https://ai.alux.network/daily/en/2026/11/05/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/05/</guid>
+      <pubDate>Wed, 04 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Hy4 adds vision and computer use; GPT Image gains vectors and animation. Native runtimes and small creative tools bring agent capabilities closer to usable workflows.</description>
+    </item>
+    <item>
       <title>2026-11-04 AI Agent — Creative Control Meets Runtime Design</title>
       <link>https://ai.alux.network/daily/en/2026/11/04/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/04/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/07/</guid>
       <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
       <description>This issue covers 13 updates on model previews, cross-media search, and image editing, alongside email, gardening, voice travel, and hardware experiments.</description>
-    </item>
-    <item>
-      <title>2026-10-06 AI Agent — Testing agents</title>
-      <link>https://ai.alux.network/daily/en/2026/10/06/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/06/</guid>
-      <pubDate>Mon, 05 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Twelve developments span model previews, enterprise agents, code review, and creative demos—with practical ways to inspect what each can do.</description>
     </item>
   </channel>
 </rss>
