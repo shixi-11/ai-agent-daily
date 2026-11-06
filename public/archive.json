@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-05T00:25:57.943Z",
+  "generatedAt": "2026-11-06T00:23:20.612Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-05",
-    "url": "/daily/2026/11/05/",
+    "date": "2026-11-06",
+    "url": "/daily/2026/11/06/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/05/"
+    "alternateUrl": "/daily/en/2026/11/06/"
   },
   "reports": [
+    {
+      "date": "2026-11-06",
+      "title": "AI Agent可续改的创作",
+      "lead": "视频可以接着改，收藏能沿出处扩展，游戏世界由自己的Agent带路；安全与记忆研究则提醒我们，能力还要经得起核查。",
+      "url": "/daily/2026/11/06/",
+      "alternateUrl": "/daily/en/2026/11/06/",
+      "publicPath": "2026/11/06/index.html",
+      "sourceFile": "20261106_ALUX_AI智能体情报日报.html",
+      "sha256": "4d59996945ea5af5a7154fb80e9051db523f3028b8450e15cd75d6e7a632ee06",
+      "publicSha256": "d17a0532dcca34b6344c637a27c640bd76629ef91ba4c3ce4b65d220ae5e4ab6"
+    },
     {
       "date": "2026-11-05",
       "title": "AI Agent创作入口与执行凭据",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/05/index.html",
       "sourceFile": "20261105_ALUX_AI智能体情报日报.html",
       "sha256": "eba10040fed9748cca2a26fa88080bc468bb4a7c480792696ddd0200ca842b35",
-      "publicSha256": "29c4aea7b1ef749aff17caf431751b783a2d1593758790cb047e8ccb53ca6d27"
+      "publicSha256": "4b09307594a2fe17cca3064995f83715b6b1372543e7fde1c32178412b68a66d"
     },
     {
       "date": "2026-11-04",

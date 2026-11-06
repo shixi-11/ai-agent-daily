@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-05T00:25:57.943Z",
+  "generatedAt": "2026-11-06T00:23:20.612Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-05",
-    "url": "/daily/en/2026/11/05/",
+    "date": "2026-11-06",
+    "url": "/daily/en/2026/11/06/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/05/"
+    "alternateUrl": "/daily/2026/11/06/"
   },
   "reports": [
+    {
+      "date": "2026-11-06",
+      "title": "AI Agent — Creation You Can Keep Revising",
+      "lead": "Revise a video, follow a saved source, or explore a world with your own agent. New security and memory work asks whether those capabilities withstand verification.",
+      "url": "/daily/en/2026/11/06/",
+      "alternateUrl": "/daily/2026/11/06/",
+      "publicPath": "en/2026/11/06/index.html",
+      "sourceFile": "20261106.body.html",
+      "sha256": "d78843ff05ee3a3cb3055919005287139c58ff6af3340cd181780925e0152779",
+      "publicSha256": "337c10a4dc8766f2dc1c287ba9f22d68e867029dee8ccdfad5b6bac957f8a11b"
+    },
     {
       "date": "2026-11-05",
       "title": "AI Agent — Editable Media, Resumable Agents",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/05/index.html",
       "sourceFile": "20261105.body.html",
       "sha256": "c96558dc0dcaca31c45d78c5ddc580d614749244366ff77d761e5bea5986f6d7",
-      "publicSha256": "f74260bc8ff8170236cac9c01b61c5b7cfd819ebf9d46411b7156f42b8bccf93"
+      "publicSha256": "e87a7313f5cdf350e99a77cd49cb284f0715692e8fa0b6f33c1e5ff487b28e4f"
     },
     {
       "date": "2026-11-04",

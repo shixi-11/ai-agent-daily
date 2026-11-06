@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-06 AI Agent — Creation You Can Keep Revising</title>
+      <link>https://ai.alux.network/daily/en/2026/11/06/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/06/</guid>
+      <pubDate>Thu, 05 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Revise a video, follow a saved source, or explore a world with your own agent. New security and memory work asks whether those capabilities withstand verification.</description>
+    </item>
+    <item>
       <title>2026-11-05 AI Agent — Editable Media, Resumable Agents</title>
       <link>https://ai.alux.network/daily/en/2026/11/05/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/05/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/08/</guid>
       <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
       <description>Twelve updates cover lower-cost models, local decisions, playable games, voice input, and Windows hardware.</description>
-    </item>
-    <item>
-      <title>2026-10-07 AI Agent — Models meet everyday work</title>
-      <link>https://ai.alux.network/daily/en/2026/10/07/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/07/</guid>
-      <pubDate>Tue, 06 Oct 2026 16:00:00 GMT</pubDate>
-      <description>This issue covers 13 updates on model previews, cross-media search, and image editing, alongside email, gardening, voice travel, and hardware experiments.</description>
     </item>
   </channel>
 </rss>
