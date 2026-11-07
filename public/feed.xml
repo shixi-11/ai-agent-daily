@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-07 AI Agent让模型接入真实结构</title>
+      <link>https://ai.alux.network/daily/2026/11/07/</link>
+      <guid>https://ai.alux.network/daily/2026/11/07/</guid>
+      <pubDate>Fri, 06 Nov 2026 16:00:00 GMT</pubDate>
+      <description>新模型接入科学特征与多人对话，乐高源码变成机构动画，个人助手长出常驻界面；GPU与授权也在细分边界。</description>
+    </item>
+    <item>
       <title>2026-11-06 AI Agent可续改的创作</title>
       <link>https://ai.alux.network/daily/2026/11/06/</link>
       <guid>https://ai.alux.network/daily/2026/11/06/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/09/</guid>
       <pubDate>Thu, 08 Oct 2026 16:00:00 GMT</pubDate>
       <description>13条消息连接企业Agent、本地创作与模型新入口，也追问一个具体问题：生成的结果，怎样经得起检查？</description>
-    </item>
-    <item>
-      <title>2026-10-08 AI Agent助手走出聊天框</title>
-      <link>https://ai.alux.network/daily/2026/10/08/</link>
-      <guid>https://ai.alux.network/daily/2026/10/08/</guid>
-      <pubDate>Wed, 07 Oct 2026 16:00:00 GMT</pubDate>
-      <description>12条消息连接低价模型、本地决策与桌面工具，也带来可玩的游戏、可听的语言课和新的Windows硬件。</description>
     </item>
   </channel>
 </rss>

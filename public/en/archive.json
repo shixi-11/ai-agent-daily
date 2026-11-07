@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-06T00:23:20.612Z",
+  "generatedAt": "2026-11-07T00:19:45.011Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-06",
-    "url": "/daily/en/2026/11/06/",
+    "date": "2026-11-07",
+    "url": "/daily/en/2026/11/07/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/06/"
+    "alternateUrl": "/daily/2026/11/07/"
   },
   "reports": [
+    {
+      "date": "2026-11-07",
+      "title": "AI Agent — Models Meet Concrete Structures",
+      "lead": "New models connect scientific features and group conversations. LEGO source becomes animation, personal assistants gain persistent interfaces, and infrastructure draws finer boundaries.",
+      "url": "/daily/en/2026/11/07/",
+      "alternateUrl": "/daily/2026/11/07/",
+      "publicPath": "en/2026/11/07/index.html",
+      "sourceFile": "20261107.body.html",
+      "sha256": "00375328f8f9c0c468a0ac6301c91761eceb1b6d0c38228b0a9cad2970623021",
+      "publicSha256": "1e7544beb85175486dec11a8aca821eab173dcc8e495ab9010a510ec5e0cfe08"
+    },
     {
       "date": "2026-11-06",
       "title": "AI Agent — Creation You Can Keep Revising",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/06/index.html",
       "sourceFile": "20261106.body.html",
       "sha256": "d78843ff05ee3a3cb3055919005287139c58ff6af3340cd181780925e0152779",
-      "publicSha256": "337c10a4dc8766f2dc1c287ba9f22d68e867029dee8ccdfad5b6bac957f8a11b"
+      "publicSha256": "58cdc876f8e16461fdd6783d5fb01839cbf0206336a0b119f307f5a934249e79"
     },
     {
       "date": "2026-11-05",

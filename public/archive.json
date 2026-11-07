@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-06T00:23:20.612Z",
+  "generatedAt": "2026-11-07T00:19:45.011Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-06",
-    "url": "/daily/2026/11/06/",
+    "date": "2026-11-07",
+    "url": "/daily/2026/11/07/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/06/"
+    "alternateUrl": "/daily/en/2026/11/07/"
   },
   "reports": [
+    {
+      "date": "2026-11-07",
+      "title": "AI Agent让模型接入真实结构",
+      "lead": "新模型接入科学特征与多人对话，乐高源码变成机构动画，个人助手长出常驻界面；GPU与授权也在细分边界。",
+      "url": "/daily/2026/11/07/",
+      "alternateUrl": "/daily/en/2026/11/07/",
+      "publicPath": "2026/11/07/index.html",
+      "sourceFile": "20261107_ALUX_AI智能体情报日报.html",
+      "sha256": "853f5f7cac93d11cb2890b3dfce0171ed6036aff79d5bb0b78819a70ceb14fba",
+      "publicSha256": "a411a0cca94eeac91bf612eef09f12399a8f63b1d1cfa84031d25526da5cbfda"
+    },
     {
       "date": "2026-11-06",
       "title": "AI Agent可续改的创作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/06/index.html",
       "sourceFile": "20261106_ALUX_AI智能体情报日报.html",
       "sha256": "4d59996945ea5af5a7154fb80e9051db523f3028b8450e15cd75d6e7a632ee06",
-      "publicSha256": "d17a0532dcca34b6344c637a27c640bd76629ef91ba4c3ce4b65d220ae5e4ab6"
+      "publicSha256": "0ca71d3847c4cb94913de5ad47f48dd23bbf7551535221a92551775e0b67ad50"
     },
     {
       "date": "2026-11-05",
