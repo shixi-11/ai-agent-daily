@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-07T00:19:45.011Z",
+  "generatedAt": "2026-11-08T00:23:01.427Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-07",
-    "url": "/daily/en/2026/11/07/",
+    "date": "2026-11-08",
+    "url": "/daily/en/2026/11/08/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/07/"
+    "alternateUrl": "/daily/2026/11/08/"
   },
   "reports": [
+    {
+      "date": "2026-11-08",
+      "title": "AI Agent — Creative Tools Deliver Editable Results",
+      "lead": "Local audiovisual generation, editable music projects, and reusable web edits offer new uses. Office skills gain a permissive license, while training and execution gain concrete updates.",
+      "url": "/daily/en/2026/11/08/",
+      "alternateUrl": "/daily/2026/11/08/",
+      "publicPath": "en/2026/11/08/index.html",
+      "sourceFile": "20261108.body.html",
+      "sha256": "c8287ccf21d5020bf39dca004c964d46f88472fda8c203de4080c618ca28aa45",
+      "publicSha256": "776743d8b9fc97c29fe1a5313d16836347aca3a8be315e19123d4821f20c7217"
+    },
     {
       "date": "2026-11-07",
       "title": "AI Agent — Models Meet Concrete Structures",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/07/index.html",
       "sourceFile": "20261107.body.html",
       "sha256": "00375328f8f9c0c468a0ac6301c91761eceb1b6d0c38228b0a9cad2970623021",
-      "publicSha256": "1e7544beb85175486dec11a8aca821eab173dcc8e495ab9010a510ec5e0cfe08"
+      "publicSha256": "ca9f4ea584c61149905e73e388d8b987aab9ee36340560fb9bd2007f17ad9374"
     },
     {
       "date": "2026-11-06",

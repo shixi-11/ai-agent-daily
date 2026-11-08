@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-07T00:19:45.011Z",
+  "generatedAt": "2026-11-08T00:23:01.427Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-07",
-    "url": "/daily/2026/11/07/",
+    "date": "2026-11-08",
+    "url": "/daily/2026/11/08/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/07/"
+    "alternateUrl": "/daily/en/2026/11/08/"
   },
   "reports": [
+    {
+      "date": "2026-11-08",
+      "title": "AI Agent把创作交给可编辑的工具",
+      "lead": "轻量声画模型、可编辑编曲与网页改造带来新玩法；Office技能许可放开，训练、CPU与无线回路也有具体变化。",
+      "url": "/daily/2026/11/08/",
+      "alternateUrl": "/daily/en/2026/11/08/",
+      "publicPath": "2026/11/08/index.html",
+      "sourceFile": "20261108_ALUX_AI智能体情报日报.html",
+      "sha256": "dc5612ebe44e29304e3b3397949e711c75a4805ebe4c3b0798b1d8924335f650",
+      "publicSha256": "f8008c3685265207eb1894ecbee6bcda1e17d94d219f6afe66b5d8771d178e02"
+    },
     {
       "date": "2026-11-07",
       "title": "AI Agent让模型接入真实结构",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/07/index.html",
       "sourceFile": "20261107_ALUX_AI智能体情报日报.html",
       "sha256": "853f5f7cac93d11cb2890b3dfce0171ed6036aff79d5bb0b78819a70ceb14fba",
-      "publicSha256": "a411a0cca94eeac91bf612eef09f12399a8f63b1d1cfa84031d25526da5cbfda"
+      "publicSha256": "05e3521c150508e330d29faa6ea567847126aaea0b3c0b82142d126f1151e4a0"
     },
     {
       "date": "2026-11-06",
