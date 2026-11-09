@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-08T00:23:01.427Z",
+  "generatedAt": "2026-11-09T00:37:25.440Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-08",
-    "url": "/daily/2026/11/08/",
+    "date": "2026-11-09",
+    "url": "/daily/2026/11/09/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/08/"
+    "alternateUrl": "/daily/en/2026/11/09/"
   },
   "reports": [
+    {
+      "date": "2026-11-09",
+      "title": "AI Agent把过程交给人来检查",
+      "lead": "科研助手留下计算路径，生活应用解释过滤与动作，协作工具把问题交回人。今天看十二条可检查、可追问的新变化。",
+      "url": "/daily/2026/11/09/",
+      "alternateUrl": "/daily/en/2026/11/09/",
+      "publicPath": "2026/11/09/index.html",
+      "sourceFile": "20261109_ALUX_AI智能体情报日报.html",
+      "sha256": "1aab6d943fe0349f70dd67178f5371d721dd37c1acc913d34e8d5b7f2ff9a291",
+      "publicSha256": "3b7b013257b69abe94a7662da04ec0e0769b509a59b9ad0035bd3c6efd8e8681"
+    },
     {
       "date": "2026-11-08",
       "title": "AI Agent把创作交给可编辑的工具",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/08/index.html",
       "sourceFile": "20261108_ALUX_AI智能体情报日报.html",
       "sha256": "dc5612ebe44e29304e3b3397949e711c75a4805ebe4c3b0798b1d8924335f650",
-      "publicSha256": "f8008c3685265207eb1894ecbee6bcda1e17d94d219f6afe66b5d8771d178e02"
+      "publicSha256": "4c381a8c87393c5cfb02e9cb89520927ef7aa59d872972fdd98ee004e1f607c4"
     },
     {
       "date": "2026-11-07",

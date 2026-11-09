@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-08T00:23:01.427Z",
+  "generatedAt": "2026-11-09T00:37:25.440Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-08",
-    "url": "/daily/en/2026/11/08/",
+    "date": "2026-11-09",
+    "url": "/daily/en/2026/11/09/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/08/"
+    "alternateUrl": "/daily/2026/11/09/"
   },
   "reports": [
+    {
+      "date": "2026-11-09",
+      "title": "AI Agent — Agents Make Their Work Inspectable",
+      "lead": "Scientific tools expose calculations, personal apps surface decisions, and collaboration tools return questions to people. Twelve updates make the next step easier to inspect.",
+      "url": "/daily/en/2026/11/09/",
+      "alternateUrl": "/daily/2026/11/09/",
+      "publicPath": "en/2026/11/09/index.html",
+      "sourceFile": "20261109.body.html",
+      "sha256": "f30d3a77eca27daca68c2de2a31b78d167f614576966ddaca217fee5c00e5009",
+      "publicSha256": "7a5a757f4702605c3f0238afdc97c6ba5576314699632d4cb57da3913334daed"
+    },
     {
       "date": "2026-11-08",
       "title": "AI Agent — Creative Tools Deliver Editable Results",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/08/index.html",
       "sourceFile": "20261108.body.html",
       "sha256": "c8287ccf21d5020bf39dca004c964d46f88472fda8c203de4080c618ca28aa45",
-      "publicSha256": "776743d8b9fc97c29fe1a5313d16836347aca3a8be315e19123d4821f20c7217"
+      "publicSha256": "a468f928198a17391b90f537dafbf99c15781710dba773b606be4a8bf34a36f6"
     },
     {
       "date": "2026-11-07",

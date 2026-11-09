@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-09 AI Agent — Agents Make Their Work Inspectable</title>
+      <link>https://ai.alux.network/daily/en/2026/11/09/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/09/</guid>
+      <pubDate>Sun, 08 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Scientific tools expose calculations, personal apps surface decisions, and collaboration tools return questions to people. Twelve updates make the next step easier to inspect.</description>
+    </item>
+    <item>
       <title>2026-11-08 AI Agent — Creative Tools Deliver Editable Results</title>
       <link>https://ai.alux.network/daily/en/2026/11/08/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/08/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/11/</guid>
       <pubDate>Sat, 10 Oct 2026 16:00:00 GMT</pubDate>
       <description>Twelve updates explore decision encoders, a neural-circuit desktop fly, reading maps, local meeting notes, and the cost of serving real workloads.</description>
-    </item>
-    <item>
-      <title>2026-10-10 AI Agent — Small models enter creative tools and devices</title>
-      <link>https://ai.alux.network/daily/en/2026/10/10/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/10/</guid>
-      <pubDate>Fri, 09 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Twelve updates span eight-step image generation, multimodal parsing, and Arabic transcription, plus tools that make parts, generate terrain, and give small devices a voice.</description>
     </item>
   </channel>
 </rss>
