@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-09T00:37:25.440Z",
+  "generatedAt": "2026-11-10T00:23:30.515Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-09",
-    "url": "/daily/2026/11/09/",
+    "date": "2026-11-10",
+    "url": "/daily/2026/11/10/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/09/"
+    "alternateUrl": "/daily/en/2026/11/10/"
   },
   "reports": [
+    {
+      "date": "2026-11-10",
+      "title": "AI Agent让不同执行层各司其职",
+      "lead": "大模型攻坚，检索接口按需分配推理，机器人先在仿真里练习。今天看能力怎样接进具体工作，也看哪些结果仍需验证。",
+      "url": "/daily/2026/11/10/",
+      "alternateUrl": "/daily/en/2026/11/10/",
+      "publicPath": "2026/11/10/index.html",
+      "sourceFile": "20261110_ALUX_AI智能体情报日报.html",
+      "sha256": "03986f0e932e5096e6f6a1c04dd0024a1a20749bd0b2946cf61d44b2cb6552b1",
+      "publicSha256": "b0110bd4118d25aa06efbffbf5b46556f22640790808e36133b79968bc43104f"
+    },
     {
       "date": "2026-11-09",
       "title": "AI Agent把过程交给人来检查",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/09/index.html",
       "sourceFile": "20261109_ALUX_AI智能体情报日报.html",
       "sha256": "1aab6d943fe0349f70dd67178f5371d721dd37c1acc913d34e8d5b7f2ff9a291",
-      "publicSha256": "3b7b013257b69abe94a7662da04ec0e0769b509a59b9ad0035bd3c6efd8e8681"
+      "publicSha256": "1066fd8ccaf835f06852123307f8b837201cdfe225e343d66277ef74a3eea8cc"
     },
     {
       "date": "2026-11-08",

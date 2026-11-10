@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-09T00:37:25.440Z",
+  "generatedAt": "2026-11-10T00:23:30.515Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-09",
-    "url": "/daily/en/2026/11/09/",
+    "date": "2026-11-10",
+    "url": "/daily/en/2026/11/10/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/09/"
+    "alternateUrl": "/daily/2026/11/10/"
   },
   "reports": [
+    {
+      "date": "2026-11-10",
+      "title": "AI Agent — Give Each Execution Layer Its Job",
+      "lead": "Stronger models tackle hard problems, retrieval budgets match the question, and robots practice in simulation. Today’s changes connect capability to specific work—and expose what still needs checking.",
+      "url": "/daily/en/2026/11/10/",
+      "alternateUrl": "/daily/2026/11/10/",
+      "publicPath": "en/2026/11/10/index.html",
+      "sourceFile": "20261110.body.html",
+      "sha256": "270cbcb9e1e21de5d047f75d49d1b87224966b36c7f585e04b5e92a7b1aa1d49",
+      "publicSha256": "9d32c56a43958ac312ba214523cefa453a9b86d8976ac21a46ab558f31fe1ed8"
+    },
     {
       "date": "2026-11-09",
       "title": "AI Agent — Agents Make Their Work Inspectable",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/09/index.html",
       "sourceFile": "20261109.body.html",
       "sha256": "f30d3a77eca27daca68c2de2a31b78d167f614576966ddaca217fee5c00e5009",
-      "publicSha256": "7a5a757f4702605c3f0238afdc97c6ba5576314699632d4cb57da3913334daed"
+      "publicSha256": "f50bb381959ed64247fac9888fb7a794d806d70d1a08b8acf3532cedc2570c55"
     },
     {
       "date": "2026-11-08",
