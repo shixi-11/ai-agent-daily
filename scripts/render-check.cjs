@@ -538,7 +538,7 @@ async function inspectHomepage(browser, locale, viewport) {
   if (!result.logoLoaded || result.logoSrc !== '/daily/assets/shixi-mark.png' || result.favicon !== '/daily/assets/shixi-favicon.png') {
     throw new Error(`${locale.key}/${viewport.name}: site logo/favicon missing`);
   }
-  if (result.logoAppearance.background !== 'rgb(255, 255, 255)' ||
+  if (result.logoAppearance.background !== 'rgba(0, 0, 0, 0)' ||
       result.logoAppearance.imageWidth < 26 ||
       result.logoAppearance.filter !== 'none') {
     throw new Error(`${locale.key}/${viewport.name}: framed site page mark drifted ${JSON.stringify(result.logoAppearance)}`);

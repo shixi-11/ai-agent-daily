@@ -26,7 +26,7 @@ const home = {
 };
 assert.deepEqual(validateHomepageCopy(home), []);
 for (const [zh, en] of [
-  ['全球AI、智能体与开源', 'Global AI, Agents & Open Source'],
+  ['模型 · 工具 · 开源 · 行业', 'Models · Tools · Open Source · Industry'],
   ['最新在前 · 固定链接', 'Newest First · Permanent URLs'],
 ]) {
   assert(home.zhHtml.includes(zh));
@@ -42,8 +42,8 @@ assert(!home.zhHtml.includes('ALUX情报'));
 assert(!home.zhHtml.includes('日报归档'));
 assert(!home.enHtml.includes('ALUX Intelligence'));
 assert(!home.enHtml.includes('Daily Archive'));
-assert(validateHomepageCopy({ ...home, enHtml: home.enHtml.replace('Global AI, Agents &amp; Open Source', '全球AI、智能体与开源') })
+assert(validateHomepageCopy({ ...home, enHtml: home.enHtml.replaceAll('Models · Tools · Open Source · Industry', '模型 · 工具 · 开源 · 行业') })
   .some((error) => error.includes('en homepage')));
-assert.deepEqual(validateHomepageCopy({ ...home, zhHtml: home.zhHtml + '<!-- Global AI, Agents & Open Source --><script>const title = "Daily Archive";</script>' }), []);
+assert.deepEqual(validateHomepageCopy({ ...home, zhHtml: home.zhHtml + '<!-- Models · Tools · Open Source · Industry --><script>const title = "Daily Archive";</script>' }), []);
 
 process.stdout.write('Locale copy gate tests passed\n');
