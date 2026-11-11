@@ -109,9 +109,9 @@ function validateHomepageCopy({ zhHtml, enHtml }) {
     ['全球AI、智能体与开源', 'Global AI, Agents & Open Source'],
     ['最新在前 · 固定链接', 'Newest First · Permanent URLs'],
   ];
-  if (!zhText.includes('ALUX AI资讯日报')) errors.push('zh homepage is missing localized copy: ALUX AI资讯日报');
-  if (!zhText.includes('ALUX AI NEWS DAILY')) errors.push('zh homepage is missing English brand subtitle: ALUX AI NEWS DAILY');
-  if (!enText.includes('ALUX AI News Daily')) errors.push('en homepage is missing English brand: ALUX AI News Daily');
+  if (!zhText.includes('AI资讯日报')) errors.push('zh homepage is missing localized copy: AI资讯日报');
+  if (!zhText.includes('AI NEWS DAILY')) errors.push('zh homepage is missing English brand subtitle: AI NEWS DAILY');
+  if (!enText.includes('AI News Daily')) errors.push('en homepage is missing English brand: AI News Daily');
   for (const retired of ['ALUX情报', '日报归档']) {
     if (zhText.includes(retired)) errors.push(`zh homepage still contains retired hero eyebrow: ${retired}`);
   }

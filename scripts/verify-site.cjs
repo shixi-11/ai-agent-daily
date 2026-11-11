@@ -49,8 +49,8 @@ const requiredFiles = [
   'robots.txt',
   '404.html',
   'assets/report-site.css',
-  'assets/alux-mark.png',
-  'assets/alux-favicon.png',
+  'assets/shixi-mark.png',
+  'assets/shixi-favicon.png',
 ].map((relative) => path.join(publicRoot, relative));
 requiredFiles.push(path.join(englishRoot, 'translation-manifest.json'), path.join(siteRoot, 'vercel.json'));
 for (const locale of optionalLocales) {
@@ -122,8 +122,8 @@ const generatedAtStamp = shanghaiStamp(archiveGeneratedAt);
 if (!chineseIndex.includes(generatedAtStamp) || !englishIndex.includes(generatedAtStamp)) {
   throw new Error('中英首页的最近更新时间没有与翻译审核清单同步。');
 }
-if (!/<title>ALUX AI资讯日报<\/title>/.test(chineseIndex)) throw new Error('中文首页站名不正确。');
-if (!/<title>ALUX AI News Daily<\/title>/.test(englishIndex)) throw new Error('英文首页站名不正确。');
+if (!/<title>AI资讯日报<\/title>/.test(chineseIndex)) throw new Error('中文首页站名不正确。');
+if (!/<title>AI News Daily<\/title>/.test(englishIndex)) throw new Error('英文首页站名不正确。');
 
 const archiveDates = chineseReports.map((report) => utcDate(String(report.date))).sort((a, b) => a - b);
 const expectedChineseDateRange = formatArchiveRange(archiveDates[0], archiveDates.at(-1), localesById.zh);
@@ -144,8 +144,8 @@ for (const homeCheck of [
   }
 }
 for (const indexCheck of [
-  { html: chineseIndex, required: ['href="/daily/en/"', 'hreflang="en"', '/daily/assets/alux-mark.png', '/daily/assets/alux-favicon.png'] },
-  { html: englishIndex, required: ['href="/daily/"', 'hreflang="zh-CN"', '/daily/assets/alux-mark.png', '/daily/assets/alux-favicon.png'] },
+  { html: chineseIndex, required: ['href="/daily/en/"', 'hreflang="en"', '/daily/assets/shixi-mark.png', '/daily/assets/shixi-favicon.png'] },
+  { html: englishIndex, required: ['href="/daily/"', 'hreflang="zh-CN"', '/daily/assets/shixi-mark.png', '/daily/assets/shixi-favicon.png'] },
 ]) {
   for (const required of indexCheck.required) {
     if (!indexCheck.html.toLowerCase().includes(required.toLowerCase())) {
@@ -222,7 +222,7 @@ for (const chineseReport of chineseReports) {
   const englishHtml = readUtf8(englishPublicPath);
   for (const html of [chineseHtml, englishHtml]) {
     if (/(?:src|href)\s*=\s*["'](?:file:|[a-z]:[\\/])/i.test(html)) throw new Error(`${dateIso} 公开页含本地引用。`);
-    for (const required of ['site:i18n-head:start', 'site:i18n-nav:start', 'site:issue-footer:start', '/daily/assets/alux-mark.png', '/daily/assets/alux-favicon.png']) {
+    for (const required of ['site:i18n-head:start', 'site:i18n-nav:start', 'site:issue-footer:start', '/daily/assets/shixi-mark.png', '/daily/assets/shixi-favicon.png']) {
       if (!html.toLowerCase().includes(required.toLowerCase())) throw new Error(`${dateIso} 公开页缺少：${required}`);
     }
     if (html.toLowerCase().includes(legacyBaseUrl.toLowerCase())) throw new Error(`${dateIso} 公开页仍把旧域名作为页面地址。`);
@@ -260,9 +260,9 @@ if (sha256File(path.join(publicRoot, 'latest/index.html')) !== String(latestZh.p
   throw new Error('中英 latest 与最新日期页不一致。');
 }
 
-for (const assetName of ['alux-mark.png', 'alux-favicon.png']) {
+for (const assetName of ['shixi-mark.png', 'shixi-favicon.png']) {
   if (sha256File(path.join(siteRoot, 'assets', assetName)) !== sha256File(path.join(publicRoot, 'assets', assetName))) {
-    throw new Error(`ALUX 品牌资产源文件与公开资产不一致：${assetName}`);
+    throw new Error(`站点品牌资产源文件与公开资产不一致：${assetName}`);
   }
 }
 

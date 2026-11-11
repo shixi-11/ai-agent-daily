@@ -1,4 +1,4 @@
-# ALUX AI资讯日报
+# AI资讯日报
 
 由 [光之十一](https://shixilin.com/) 出品，关注重要新模型、AI Agent、开源项目，以及好玩、实用的新发现。
 

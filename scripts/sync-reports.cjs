@@ -284,7 +284,7 @@ for (const locale of optionalLocales) {
 
 const publicAssetRoot = path.join(publicRoot, 'assets');
 fs.mkdirSync(publicAssetRoot, { recursive: true });
-for (const asset of ['agent-daily-social-zh-v2.png', 'agent-daily-social-en-v2.png', 'report-site.css', 'alux-mark.png', 'alux-favicon.png']) {
+for (const asset of ['agent-daily-social-zh-v3.png', 'agent-daily-social-en-v3.png', 'report-site.css', 'shixi-mark.png', 'shixi-favicon.png', 'homepage.css', 'daily-landscape-v3.webp']) {
   copyDirFile(path.join(assetRoot, asset), path.join(publicAssetRoot, asset));
 }
 

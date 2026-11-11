@@ -42,7 +42,7 @@ const locales = [
   {
     key: 'zh',
     home: `${publicationPath}/`,
-    title: 'ALUX AI资讯日报',
+    title: 'AI资讯日报',
     latestHref: archiveZh.latest.url,
     homeLatestHref: archiveZh.latest.url,
     currentLang: 'zh-CN',
@@ -51,7 +51,7 @@ const locales = [
   {
     key: 'en',
     home: `${publicationPath}/en/`,
-    title: 'ALUX AI News Daily',
+    title: 'AI News Daily',
     latestHref: archiveEn.latest.url,
     homeLatestHref: archiveEn.latest.url,
     currentLang: 'en',
@@ -535,17 +535,17 @@ async function inspectHomepage(browser, locale, viewport) {
   if (result.monthLines.some((lines) => lines !== 1)) throw new Error(`${locale.key}/${viewport.name}: month heading wrapped ${result.monthLines}`);
   if (result.dateLines !== 1) throw new Error(`${locale.key}/${viewport.name}: archive range wrapped to ${result.dateLines} lines`);
   if (result.dateRangeBleed) throw new Error(`${locale.key}/${viewport.name}: archive range escaped its fact cell ${JSON.stringify(result.dateRangeBleed)}`);
-  if (!result.logoLoaded || result.logoSrc !== '/daily/assets/alux-mark.png' || result.favicon !== '/daily/assets/alux-favicon.png') {
-    throw new Error(`${locale.key}/${viewport.name}: ALUX logo/favicon missing`);
+  if (!result.logoLoaded || result.logoSrc !== '/daily/assets/shixi-mark.png' || result.favicon !== '/daily/assets/shixi-favicon.png') {
+    throw new Error(`${locale.key}/${viewport.name}: site logo/favicon missing`);
   }
   if (result.logoAppearance.background !== 'rgb(255, 255, 255)' ||
       result.logoAppearance.imageWidth < 26 ||
       result.logoAppearance.filter !== 'none') {
-    throw new Error(`${locale.key}/${viewport.name}: framed ALUX page mark drifted ${JSON.stringify(result.logoAppearance)}`);
+    throw new Error(`${locale.key}/${viewport.name}: framed site page mark drifted ${JSON.stringify(result.logoAppearance)}`);
   }
-  if (!result.faviconSurface || !result.faviconSurface.cornersAreWhite ||
-      result.faviconSurface.opaquePixels !== 1024 || result.faviconSurface.darkPixels < 24) {
-    throw new Error(`${locale.key}/${viewport.name}: favicon is not an opaque white-backed ALUX mark ${JSON.stringify(result.faviconSurface)}`);
+  if (!result.faviconSurface || result.faviconSurface.naturalWidth !== 96 || result.faviconSurface.naturalHeight !== 96 ||
+      result.faviconSurface.opaquePixels < 24 || result.faviconSurface.darkPixels < 24) {
+    throw new Error(`${locale.key}/${viewport.name}: favicon does not match the site mark dimensions and visible detail ${JSON.stringify(result.faviconSurface)}`);
   }
   if (result.factBalance.some(({ top, bottom }) => Math.abs((top - 2) - bottom) > 1.5)) {
     throw new Error(`${locale.key}/${viewport.name}: archive facts are not vertically centered ${JSON.stringify(result.factBalance)}`);
@@ -692,19 +692,19 @@ async function inspectReport(browser, locale, viewport, url, capture) {
   if (result.bodyWidth > result.viewportWidth) throw new Error(`${locale.key}/${viewport.name}${url}: horizontal overflow ${result.bodyWidth}/${result.viewportWidth}`);
   if (result.offenders.length) throw new Error(`${locale.key}/${viewport.name}${url}: clipped elements ${JSON.stringify(result.offenders)}`);
   if (result.sitebar !== 1 || result.footer !== 1) throw new Error(`${locale.key}/${viewport.name}${url}: site navigation missing`);
-  if (!result.logoLoaded) throw new Error(`${locale.key}/${viewport.name}${url}: ALUX logo missing`);
+  if (!result.logoLoaded) throw new Error(`${locale.key}/${viewport.name}${url}: site logo missing`);
   if (result.logoAppearance.background !== 'rgb(255, 255, 255)' ||
       result.logoAppearance.imageWidth < 26 ||
       result.logoAppearance.filter !== 'none') {
-    throw new Error(`${locale.key}/${viewport.name}${url}: framed ALUX page mark drifted ${JSON.stringify(result.logoAppearance)}`);
+    throw new Error(`${locale.key}/${viewport.name}${url}: framed site page mark drifted ${JSON.stringify(result.logoAppearance)}`);
   }
   if (!result.alternate) throw new Error(`${locale.key}/${viewport.name}${url}: language alternate missing`);
   if (!result.canonical?.startsWith('https://ai.alux.network/daily/')) throw new Error(`${locale.key}/${viewport.name}${url}: canonical mismatch`);
   if (result.externalLinks === 0) throw new Error(`${locale.key}/${viewport.name}${url}: external sources missing`);
-  if (result.favicon !== '/daily/assets/alux-favicon.png') throw new Error(`${locale.key}/${viewport.name}${url}: favicon missing`);
-  if (!result.faviconSurface || !result.faviconSurface.cornersAreWhite ||
-      result.faviconSurface.opaquePixels !== 1024 || result.faviconSurface.darkPixels < 24) {
-    throw new Error(`${locale.key}/${viewport.name}${url}: favicon is not an opaque white-backed ALUX mark ${JSON.stringify(result.faviconSurface)}`);
+  if (result.favicon !== '/daily/assets/shixi-favicon.png') throw new Error(`${locale.key}/${viewport.name}${url}: favicon missing`);
+  if (!result.faviconSurface || result.faviconSurface.naturalWidth !== 96 || result.faviconSurface.naturalHeight !== 96 ||
+      result.faviconSurface.opaquePixels < 24 || result.faviconSurface.darkPixels < 24) {
+    throw new Error(`${locale.key}/${viewport.name}${url}: favicon does not match the site mark dimensions and visible detail ${JSON.stringify(result.faviconSurface)}`);
   }
   if (result.heatRowBleeds.length) throw new Error(`${locale.key}/${viewport.name}${url}: heat-row label overlap ${JSON.stringify(result.heatRowBleeds)}`);
   if (result.panelHeadBleeds.length) throw new Error(`${locale.key}/${viewport.name}${url}: panel-head overlap ${JSON.stringify(result.panelHeadBleeds)}`);

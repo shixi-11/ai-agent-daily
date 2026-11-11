@@ -4,7 +4,7 @@ const path = require('node:path');
 const { rewriteDailyText } = require('./daily-public-presentation.cjs');
 const root = path.resolve(__dirname, '..');
 const images = Object.fromEntries(['zh', 'en'].map(localeId => {
-  const name = `agent-daily-social-${localeId}-v2.png`;
+  const name = `agent-daily-social-${localeId}-v3.png`;
   const bytes = fs.readFileSync(path.join(root, 'assets', name));
   assert.ok(bytes.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10])), 'Invalid PNG');
   assert.ok(bytes.equals(fs.readFileSync(path.join(root, 'public/assets', name))), 'Published image differs');
@@ -41,7 +41,7 @@ function scan(dir) {
       for (const key of ['og:title', 'og:type', 'og:url', 'og:description', 'og:image:alt']) {
         assert.ok(values.get(key), `${file}: missing ${key}`);
       }
-      assert.ok(values.get('og:title').startsWith(file.includes(`${path.sep}en${path.sep}`) ? 'ALUX AI News Daily' : 'ALUX AI资讯日报'), file);
+      assert.ok(values.get('og:title').startsWith(file.includes(`${path.sep}en${path.sep}`) ? 'AI News Daily' : 'AI资讯日报'), file);
       count++;
     }
   }

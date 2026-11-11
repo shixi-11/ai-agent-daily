@@ -74,8 +74,8 @@ ${socialHead}
 ${hreflangLinks(baseUrl, pathsByLocale, available)}
 <meta property="og:locale" content="${locale.ogLocale}">
 <meta property="og:url" content="${encodeHtml(canonicalUrl)}">
-<link rel="icon" type="image/png" href="${sitePath}/assets/alux-favicon.png">
-<link rel="apple-touch-icon" href="${sitePath}/assets/alux-favicon.png">
+<link rel="icon" type="image/png" href="${sitePath}/assets/shixi-favicon.png">
+<link rel="apple-touch-icon" href="${sitePath}/assets/shixi-favicon.png">
 <link rel="stylesheet" href="${sitePath}/assets/report-site.css">
 <!-- site:i18n-head:end -->
 `;
@@ -88,7 +88,7 @@ ${hreflangLinks(baseUrl, pathsByLocale, available)}
 
   const nav = `<!-- site:i18n-nav:start -->
 <header class="report-sitebar">
-  <a class="report-sitebrand" href="${homePath}"><span class="report-sitebrand-mark" aria-hidden="true"><img src="${sitePath}/assets/alux-mark.png" alt=""></span><span class="report-sitebrand-copy"><span>${encodeHtml(ui.brand)}</span><small>${encodeHtml(ui.brandTagline)}</small></span></a>
+  <a class="report-sitebrand" href="${homePath}"><span class="report-sitebrand-mark" aria-hidden="true"><img src="${sitePath}/assets/shixi-mark.png" alt=""></span><span class="report-sitebrand-copy"><span>${encodeHtml(ui.brand)}</span><small>${encodeHtml(ui.brandTagline)}</small></span></a>
   <nav class="report-sitenav" aria-label="${encodeHtml(ui.archiveLabel)}">
     <a href="${latestPath}">${encodeHtml(ui.latestLabel)}</a>
     <a href="${homePath}#archive">${encodeHtml(ui.archiveLabel)}</a>

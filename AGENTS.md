@@ -1,14 +1,14 @@
-# ALUX AI News Daily · Agent 接班说明
+# AI News Daily · Agent 接班说明
 
 仓库公开名称为 `shixi-11/ai-agent-daily`，正式 origin 为 `https://github.com/shixi-11/ai-agent-daily.git`；旧仓库地址由 GitHub 重定向。Vercel 稳定源站和既有本地路径仍保留兼容名称，不能机械替换所有 `alux-ai-agent-daily` 字符串。
 
 ## 2026-09-06 个人域名展示合同（优先于下方历史说明）
 
-对外主入口为 https://shixilin.com/ai/agent-daily ，浏览器必须停留在此域名；英文、日期页和资源使用该路径的对应子路径。两个旧域名保留，以单次 308 跳到个人域名对应页面，查询参数保留。中文站名为 ALUX AI资讯日报，英文站名为 ALUX AI News Daily；首页、日期页与分享元信息统一使用对应语言站名。中英首页模板的 title 与 og:title 必须直接使用对应语言站名，包括 Vercel 源站；不得仅依赖个人站代理转换。
+对外主入口为 https://shixilin.com/ai/agent-daily ，浏览器必须停留在此域名；英文、日期页和资源使用该路径的对应子路径。两个旧域名保留，以单次 308 跳到个人域名对应页面，查询参数保留。中文站名为 AI资讯日报，英文站名为 AI News Daily；首页、日期页与分享元信息统一使用对应语言站名。中英首页模板的 title 与 og:title 必须直接使用对应语言站名，包括 Vercel 源站；不得仅依赖个人站代理转换。
 
 日报仍由本仓库发布，稳定源站为 https://alux-ai-agent-daily.vercel.app 。个人站服务端读取源站，并统一转换站内路径、canonical、hreflang、sitemap 和收藏标题。源站默认域名不得重定向到个人站，以免循环。为保留历史哈希与现有生成合同，本仓库原始构建产物继续使用 /daily 和旧域名；它们属于内部兼容格式，个人域名实际响应使用新地址。部署门禁比较经过 scripts/daily-public-presentation.cjs 确定性转换后的完整正文哈希，不能跳过内容一致性验证。
 
-从 2026-09-06 起的新一期日报仅在页脚署名：中文 `ALUX AI资讯日报 · 由光之十一出品`，英文 `ALUX AI News Daily · Published by Shixi Lin`，作者名链接 `https://shixilin.com/`。由共享构建脚本按期刊日期注入当日及之后的日期页与最新页；此前历史期刊保留原页脚，不在每篇顶部重复添加个人主页入口。
+从 2026-09-06 起的新一期日报仅在页脚署名：中文 `AI资讯日报 · 由光之十一出品`，英文 `AI News Daily · Published by Shixi Lin`，作者名链接 `https://shixilin.com/`。由共享构建脚本按期刊日期注入当日及之后的日期页与最新页；此前历史期刊保留原页脚，不在每篇顶部重复添加个人主页入口。
 
 维护转换规则时同步个人站 lib/agent-daily.js 和本仓库 scripts/daily-public-presentation.cjs。普通每日发布不需要改 DNS，也不需要重新部署个人站；源站内容更新后个人站缓存通常 60 秒刷新。现有任务的兼容链接可继续使用且会自动进入个人域名；历史内容和已发通知不批量重写。
 
@@ -102,9 +102,9 @@ node scripts/render-check.cjs
 - 顶栏 Logo 外框与语言切换外框统一为 `44px` 高并垂直对齐，每个语言按钮保留至少 `44px` 点击高度。
 - 日报页顶栏分隔线、品牌区和正文内容网格必须对齐；桌面、平板、手机分别跟随正文的 `22px`、`14px`、`10px` 内边距。
 - 语言切换必须指向同一期；`canonical` 与 `hreflang` 必须正确。
-- 中文站名固定为 `ALUX AI资讯日报`。历史母稿文件名保持原样，显示名称由共享构建脚本统一。
+- 中文站名固定为 `AI资讯日报`。历史母稿文件名保持原样，显示名称由共享构建脚本统一。
 - 首页固定界面文案按页面语言完整本地化：中文版副标题使用 `全球AI、智能体与开源`，眉题、最新一期、归档说明与页脚均使用中文；英文首页保留对应英文。`ALUX`、`AI`、`GitHub` 等品牌或技术专名及 `EN` 语言按钮不作机械翻译。模板和构建后的首页必须通过 `verify-locale-copy.cjs` 检查。
-- 英文站名固定为 `ALUX AI News Daily`，公开链接固定使用 `https://ai.alux.network/daily/`，不得用 Vercel 预览域名替代。
+- 英文站名固定为 `AI News Daily`，公开链接固定使用 `https://ai.alux.network/daily/`，不得用 Vercel 预览域名替代。
 - `https://ai-agent-daily.alux.network/` 只作为永久兼容入口；旧首页、英文页、最新页和日期页必须以单次永久重定向到新主地址下的对应路径，不得形成跳转链或返回 404。
 - 对外扫码卡只交付 3:4、3072×4096、RGB JPG；二维码和版式必须通过 `docs/SHARE_CARD_STANDARD.md` 的压缩扫码门禁。
 

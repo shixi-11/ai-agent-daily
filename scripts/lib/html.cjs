@@ -125,8 +125,8 @@ function assertTranslationBody({ bodyFragment, sourceHtml, dateIso, localeId = '
   }
 }
 
-function socialPreviewHead(baseUrl, basePath, siteName = 'ALUX AI资讯日报', localeId = 'zh') {
-  const imageName = `agent-daily-social-${localeId === 'en' ? 'en' : 'zh'}-v2.png`;
+function socialPreviewHead(baseUrl, basePath, siteName = 'AI资讯日报', localeId = 'zh') {
+  const imageName = `agent-daily-social-${localeId === 'en' ? 'en' : 'zh'}-v3.png`;
   const image = fs.readFileSync(path.join(__dirname, '../../assets', imageName));
   const width = image.readUInt32BE(16);
   const height = image.readUInt32BE(20);
