@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-10T00:23:30.515Z",
+  "generatedAt": "2026-11-11T00:26:02.452Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-10",
-    "url": "/daily/2026/11/10/",
+    "date": "2026-11-11",
+    "url": "/daily/2026/11/11/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/10/"
+    "alternateUrl": "/daily/en/2026/11/11/"
   },
   "reports": [
+    {
+      "date": "2026-11-11",
+      "title": "AI Agent能力扩展与可核验证据",
+      "lead": "旗舰模型扩大访问，图像工具照顾连续修改，机器人走进工厂试点。今天也看Agent怎样证明代码、检验题目和尊重明确偏好。",
+      "url": "/daily/2026/11/11/",
+      "alternateUrl": "/daily/en/2026/11/11/",
+      "publicPath": "2026/11/11/index.html",
+      "sourceFile": "20261111_ALUX_AI智能体情报日报.html",
+      "sha256": "fa27b77be2468aaf910d2652da98e30fc68537262a226cc17c80ca74f27cabb5",
+      "publicSha256": "33057af54c0e3c094a2b2cd5118a07c89fad35b1ceb7fc85106ad682ec83b10a"
+    },
     {
       "date": "2026-11-10",
       "title": "AI Agent让不同执行层各司其职",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/10/index.html",
       "sourceFile": "20261110_ALUX_AI智能体情报日报.html",
       "sha256": "03986f0e932e5096e6f6a1c04dd0024a1a20749bd0b2946cf61d44b2cb6552b1",
-      "publicSha256": "b0110bd4118d25aa06efbffbf5b46556f22640790808e36133b79968bc43104f"
+      "publicSha256": "4e262d10f05f9e5a1e47539a6e0fc4f695fec336ea3184ce38b43b3aa76c5e85"
     },
     {
       "date": "2026-11-09",

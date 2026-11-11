@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-10T00:23:30.515Z",
+  "generatedAt": "2026-11-11T00:26:02.452Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-10",
-    "url": "/daily/en/2026/11/10/",
+    "date": "2026-11-11",
+    "url": "/daily/en/2026/11/11/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/10/"
+    "alternateUrl": "/daily/2026/11/11/"
   },
   "reports": [
+    {
+      "date": "2026-11-11",
+      "title": "AI Agent — More Capability, More Checkable Evidence",
+      "lead": "Frontier models broaden access, image tools support iterative edits, and robots enter factory pilots. Agents also produce proofs, validate exercises, and act on explicit preferences.",
+      "url": "/daily/en/2026/11/11/",
+      "alternateUrl": "/daily/2026/11/11/",
+      "publicPath": "en/2026/11/11/index.html",
+      "sourceFile": "20261111.body.html",
+      "sha256": "cabf47049eeb6a6dc39aa8381cf1ee449350d5697296366ad88c009ca3809809",
+      "publicSha256": "7bd6c3b1da57b8986f4bfd8ffd80df757dd2edc5f74eb4be72ee5b4d4b8338ef"
+    },
     {
       "date": "2026-11-10",
       "title": "AI Agent — Give Each Execution Layer Its Job",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/10/index.html",
       "sourceFile": "20261110.body.html",
       "sha256": "270cbcb9e1e21de5d047f75d49d1b87224966b36c7f585e04b5e92a7b1aa1d49",
-      "publicSha256": "9d32c56a43958ac312ba214523cefa453a9b86d8976ac21a46ab558f31fe1ed8"
+      "publicSha256": "73a06dc46c811c5efd653ce0ddcaf75a4d12ca9842f953fe5756da49b3b4f84e"
     },
     {
       "date": "2026-11-09",
