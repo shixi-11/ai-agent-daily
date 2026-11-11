@@ -3,11 +3,13 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { rewriteDailyText } = require('./daily-public-presentation.cjs');
 const root = path.resolve(__dirname, '..');
-const imageName = 'agent-daily-social-v1.png';
-const original = fs.readFileSync(path.join(root, 'assets', imageName));
-assert.ok(original.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10])), 'Invalid PNG');
-assert.ok(original.equals(fs.readFileSync(path.join(root, 'public/assets', imageName))), 'Published image differs');
-const width = original.readUInt32BE(16), height = original.readUInt32BE(20);
+const images = Object.fromEntries(['zh', 'en'].map(localeId => {
+  const name = `agent-daily-social-${localeId}-v2.png`;
+  const bytes = fs.readFileSync(path.join(root, 'assets', name));
+  assert.ok(bytes.subarray(0, 8).equals(Buffer.from([137,80,78,71,13,10,26,10])), 'Invalid PNG');
+  assert.ok(bytes.equals(fs.readFileSync(path.join(root, 'public/assets', name))), 'Published image differs');
+  return [localeId, { name, width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) }];
+}));
 let count = 0;
 function scan(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -27,6 +29,8 @@ function scan(dir) {
           values.set(key, attrs.content);
         }
       }
+      const localeId = file.includes(`${path.sep}en${path.sep}`) ? 'en' : 'zh';
+      const { name: imageName, width, height } = images[localeId];
       const expected = `https://shixilin.com/ai/agent-daily/assets/${imageName}`;
       assert.equal(values.get('og:image'), expected, file);
       assert.equal(values.get('twitter:image'), expected, file);
@@ -43,4 +47,4 @@ function scan(dir) {
   }
 }
 scan(path.join(root, 'public'));
-console.log(`Social preview verified: ${count} pages; ${width}×${height} PNG; personal-domain image URLs`);
+console.log(`Social preview verified: ${count} pages; localized native-size PNGs; personal-domain image URLs`);

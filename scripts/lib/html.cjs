@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require('path');
 const { encodeHtml, htmlText, classCount, externalLinks } = require('./io.cjs');
 
 function convertToUtcDateTime(value) {
@@ -123,19 +125,23 @@ function assertTranslationBody({ bodyFragment, sourceHtml, dateIso, localeId = '
   }
 }
 
-function socialPreviewHead(baseUrl, basePath, siteName = 'ALUX AI资讯日报') {
-  const imageUrl = `${baseUrl.replace(/\/$/, '')}/${basePath.replace(/^\/|\/$/g, '')}/assets/agent-daily-social-v1.png`;
+function socialPreviewHead(baseUrl, basePath, siteName = 'ALUX AI资讯日报', localeId = 'zh') {
+  const imageName = `agent-daily-social-${localeId === 'en' ? 'en' : 'zh'}-v2.png`;
+  const image = fs.readFileSync(path.join(__dirname, '../../assets', imageName));
+  const width = image.readUInt32BE(16);
+  const height = image.readUInt32BE(20);
+  const imageUrl = `${baseUrl.replace(/\/$/, '')}/${basePath.replace(/^\/|\/$/g, '')}/assets/${imageName}`;
   return `<meta name="application-name" content="${encodeHtml(siteName)}">
 <meta name="apple-mobile-web-app-title" content="${encodeHtml(siteName)}">
 <meta property="og:site_name" content="${encodeHtml(siteName)}">
 <meta property="og:image" content="${encodeHtml(imageUrl)}">
 <meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1734">
-<meta property="og:image:height" content="907">
-<meta property="og:image:alt" content="${encodeHtml(siteName)} — AI news by Shixi Lin, with an orbital glass sphere">
+<meta property="og:image:width" content="${width}">
+<meta property="og:image:height" content="${height}">
+<meta property="og:image:alt" content="${encodeHtml(siteName)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="${encodeHtml(imageUrl)}">
-<meta name="twitter:image:alt" content="${encodeHtml(siteName)} — AI news by Shixi Lin, with an orbital glass sphere">`;
+<meta name="twitter:image:alt" content="${encodeHtml(siteName)}">`;
 }
 
 function stripSocialMeta(html) {

@@ -58,7 +58,7 @@ function addReportSiteChrome({
   const sitePath = `/${basePath.replace(/^\/|\/$/g, '')}`;
   const canonicalPath = pathsByLocale[locale.id];
   const canonicalUrl = `${base}${canonicalPath}`;
-  const socialHead = socialPreviewHead(baseUrl, basePath, locale.ui.brand);
+  const socialHead = socialPreviewHead(baseUrl, basePath, locale.ui.brand, locale.id);
   const ui = locale.ui;
   const socialTitle = `${ui.socialTitle} | ${dateIso}`;
   const socialDescription = ui.socialDescription;

@@ -284,7 +284,7 @@ for (const locale of optionalLocales) {
 
 const publicAssetRoot = path.join(publicRoot, 'assets');
 fs.mkdirSync(publicAssetRoot, { recursive: true });
-for (const asset of ['agent-daily-social-v1.png', 'report-site.css', 'alux-mark.png', 'alux-favicon.png']) {
+for (const asset of ['agent-daily-social-zh-v2.png', 'agent-daily-social-en-v2.png', 'report-site.css', 'alux-mark.png', 'alux-favicon.png']) {
   copyDirFile(path.join(assetRoot, asset), path.join(publicAssetRoot, asset));
 }
 
@@ -406,7 +406,7 @@ const hreflangHome = homeHreflangLinks(baseUrl, basePath);
 const chineseIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.template.html')), {
   '{{HREFLANG_LINKS}}': hreflangHome,
   '{{LANGUAGE_MORE}}': languageMoreForHome(localesById.zh, basePath),
-  '{{SOCIAL_PREVIEW_HEAD}}': socialPreviewHead(baseUrl, basePath, localesById.zh.ui.brand),
+  '{{SOCIAL_PREVIEW_HEAD}}': socialPreviewHead(baseUrl, basePath, localesById.zh.ui.brand, 'zh'),
   '{{BASE_URL}}': baseUrl,
   '{{BASE_PATH}}': basePath,
   '{{LATEST_DATE_ISO}}': featured.dateIso,
@@ -428,7 +428,7 @@ writeUtf8(path.join(publicRoot, 'index.html'), chineseIndex);
 const englishIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.en.template.html')), {
   '{{HREFLANG_LINKS}}': hreflangHome,
   '{{LANGUAGE_MORE}}': languageMoreForHome(localesById.en, basePath),
-  '{{SOCIAL_PREVIEW_HEAD}}': socialPreviewHead(baseUrl, basePath, localesById.en.ui.brand),
+  '{{SOCIAL_PREVIEW_HEAD}}': socialPreviewHead(baseUrl, basePath, localesById.en.ui.brand, 'en'),
   '{{BASE_URL}}': baseUrl,
   '{{BASE_PATH}}': basePath,
   '{{LATEST_DATE_ISO}}': featured.dateIso,
