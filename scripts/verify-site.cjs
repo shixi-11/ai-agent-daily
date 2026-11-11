@@ -122,8 +122,8 @@ const generatedAtStamp = shanghaiStamp(archiveGeneratedAt);
 if (!chineseIndex.includes(generatedAtStamp) || !englishIndex.includes(generatedAtStamp)) {
   throw new Error('中英首页的最近更新时间没有与翻译审核清单同步。');
 }
-if (!/<title>Agent Daily · AI智能体日报<\/title>/.test(chineseIndex)) throw new Error('中文首页站名不正确。');
-if (!/<title>Agent Daily · AI智能体日报<\/title>/.test(englishIndex)) throw new Error('英文首页站名不正确。');
+if (!/<title>ALUX AI资讯日报<\/title>/.test(chineseIndex)) throw new Error('中文首页站名不正确。');
+if (!/<title>ALUX AI News Daily<\/title>/.test(englishIndex)) throw new Error('英文首页站名不正确。');
 
 const archiveDates = chineseReports.map((report) => utcDate(String(report.date))).sort((a, b) => a - b);
 const expectedChineseDateRange = formatArchiveRange(archiveDates[0], archiveDates.at(-1), localesById.zh);

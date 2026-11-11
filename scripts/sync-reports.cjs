@@ -213,7 +213,7 @@ for (let index = 0; index < reports.length; index += 1) {
   const englishPage = addReportSiteChrome({
     html: setHtmlTitle(
       setDocumentBody(report.sourceHtml, report.englishBody),
-      `${report.dateIso} ALUX AI Agent Intelligence Daily`,
+      `${report.dateIso} ${localesById.en.ui.brand}`,
     ),
     locale: localesById.en,
     baseUrl,
@@ -400,13 +400,13 @@ const chineseArchiveMarkup = archiveMarkup(archiveItems, localesById.zh, latest.
 const englishArchiveMarkup = archiveMarkup(archiveItems, localesById.en, latest.dateIso);
 const chineseDateRange = formatArchiveRange(earliest.date, latest.date, localesById.zh);
 const englishDateRange = formatArchiveRange(earliest.date, latest.date, localesById.en);
-const socialHead = socialPreviewHead(baseUrl, basePath);
+
 const hreflangHome = homeHreflangLinks(baseUrl, basePath);
 
 const chineseIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.template.html')), {
   '{{HREFLANG_LINKS}}': hreflangHome,
   '{{LANGUAGE_MORE}}': languageMoreForHome(localesById.zh, basePath),
-  '{{SOCIAL_PREVIEW_HEAD}}': socialHead,
+  '{{SOCIAL_PREVIEW_HEAD}}': socialPreviewHead(baseUrl, basePath, localesById.zh.ui.brand),
   '{{BASE_URL}}': baseUrl,
   '{{BASE_PATH}}': basePath,
   '{{LATEST_DATE_ISO}}': featured.dateIso,
@@ -428,7 +428,7 @@ writeUtf8(path.join(publicRoot, 'index.html'), chineseIndex);
 const englishIndex = fillTemplate(readUtf8(path.join(templateRoot, 'index.en.template.html')), {
   '{{HREFLANG_LINKS}}': hreflangHome,
   '{{LANGUAGE_MORE}}': languageMoreForHome(localesById.en, basePath),
-  '{{SOCIAL_PREVIEW_HEAD}}': socialHead,
+  '{{SOCIAL_PREVIEW_HEAD}}': socialPreviewHead(baseUrl, basePath, localesById.en.ui.brand),
   '{{BASE_URL}}': baseUrl,
   '{{BASE_PATH}}': basePath,
   '{{LATEST_DATE_ISO}}': featured.dateIso,

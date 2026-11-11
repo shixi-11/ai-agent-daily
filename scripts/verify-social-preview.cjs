@@ -37,7 +37,7 @@ function scan(dir) {
       for (const key of ['og:title', 'og:type', 'og:url', 'og:description', 'og:image:alt']) {
         assert.ok(values.get(key), `${file}: missing ${key}`);
       }
-      assert.ok(!/ALUX/i.test(values.get('og:title')), file);
+      assert.ok(values.get('og:title').startsWith(file.includes(`${path.sep}en${path.sep}`) ? 'ALUX AI News Daily' : 'ALUX AI资讯日报'), file);
       count++;
     }
   }

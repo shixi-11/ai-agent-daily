@@ -51,13 +51,14 @@ function addReportSiteChrome({
   nextPath = '',
 }) {
   let page = removeSiteInjection(html);
+  page = page.replace(/ALUX AI智能体情报日报|AI智能体情报日报|ALUX AI Agent Intelligence Daily|AI Agent Intelligence Daily/g, locale.ui.brand);
   page = setHtmlLanguage(page, locale.htmlLang);
   page = setHtmlDir(page, locale.dir);
   const base = baseUrl.replace(/\/$/, '');
   const sitePath = `/${basePath.replace(/^\/|\/$/g, '')}`;
   const canonicalPath = pathsByLocale[locale.id];
   const canonicalUrl = `${base}${canonicalPath}`;
-  const socialHead = socialPreviewHead(baseUrl, basePath);
+  const socialHead = socialPreviewHead(baseUrl, basePath, locale.ui.brand);
   const ui = locale.ui;
   const socialTitle = `${ui.socialTitle} | ${dateIso}`;
   const socialDescription = ui.socialDescription;

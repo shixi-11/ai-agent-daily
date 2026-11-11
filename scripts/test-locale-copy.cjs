@@ -33,7 +33,7 @@ for (const [zh, en] of [
   assert(validateHomepageCopy({ ...home, zhHtml: home.zhHtml.replace(zh, en) })
     .some((error) => error.includes('untranslated UI copy')), `must reject untranslated label: ${en}`);
 }
-assert(home.zhHtml.includes('AI智能体情报日报<small lang="en">AI AGENT INTELLIGENCE DAILY</small>'));
+assert(home.zhHtml.includes('ALUX AI资讯日报<small lang="en">ALUX AI NEWS DAILY</small>'));
 assert(home.zhHtml.includes('/assets/alux-mark.png'));
 assert(home.enHtml.includes('/assets/alux-mark.png'));
 assert(home.zhHtml.includes('/assets/alux-favicon.png'));

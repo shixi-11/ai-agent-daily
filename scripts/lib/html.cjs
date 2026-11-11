@@ -123,17 +123,19 @@ function assertTranslationBody({ bodyFragment, sourceHtml, dateIso, localeId = '
   }
 }
 
-function socialPreviewHead(baseUrl, basePath) {
+function socialPreviewHead(baseUrl, basePath, siteName = 'ALUX AI资讯日报') {
   const imageUrl = `${baseUrl.replace(/\/$/, '')}/${basePath.replace(/^\/|\/$/g, '')}/assets/agent-daily-social-v1.png`;
-  return `<meta property="og:site_name" content="Agent Daily">
+  return `<meta name="application-name" content="${encodeHtml(siteName)}">
+<meta name="apple-mobile-web-app-title" content="${encodeHtml(siteName)}">
+<meta property="og:site_name" content="${encodeHtml(siteName)}">
 <meta property="og:image" content="${encodeHtml(imageUrl)}">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1734">
 <meta property="og:image:height" content="907">
-<meta property="og:image:alt" content="Agent Daily — AI news by Shixi Lin, with an orbital glass sphere">
+<meta property="og:image:alt" content="${encodeHtml(siteName)} — AI news by Shixi Lin, with an orbital glass sphere">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="${encodeHtml(imageUrl)}">
-<meta name="twitter:image:alt" content="Agent Daily — AI news by Shixi Lin, with an orbital glass sphere">`;
+<meta name="twitter:image:alt" content="${encodeHtml(siteName)} — AI news by Shixi Lin, with an orbital glass sphere">`;
 }
 
 function stripSocialMeta(html) {
