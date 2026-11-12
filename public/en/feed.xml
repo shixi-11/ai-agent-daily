@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-12 AI Agent — Specialized Decisions, Shared Work</title>
+      <link>https://ai.alux.network/daily/en/2026/11/12/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/12/</guid>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <description>New models separate decisions, research, and generation. Collaboration tools turn discussion into usable interfaces, while local tools bring fresh resource tradeoffs.</description>
+    </item>
+    <item>
       <title>2026-11-11 AI Agent — More Capability, More Checkable Evidence</title>
       <link>https://ai.alux.network/daily/en/2026/11/11/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/11/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/14/</guid>
       <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
       <description>Fourteen updates: Argon expands access, Liquid releases local-agent weights, voice direction gets finer, and budgeting questions can stay on your Mac.</description>
-    </item>
-    <item>
-      <title>2026-10-13 AI Agent — Picking Up Where Work Left Off</title>
-      <link>https://ai.alux.network/daily/en/2026/10/13/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/13/</guid>
-      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Thirteen updates: Meta introduces models with memory, MiniCPM explores phone deployment, workspaces can be saved, and music and spoken ideas become editable work.</description>
     </item>
   </channel>
 </rss>

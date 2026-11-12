@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-12 AI Agent专用判断与共享操作</title>
+      <link>https://ai.alux.network/daily/2026/11/12/</link>
+      <guid>https://ai.alux.network/daily/2026/11/12/</guid>
+      <pubDate>Wed, 11 Nov 2026 16:00:00 GMT</pubDate>
+      <description>新模型把判断、研究和生成分开，协作工具把讨论变成可操作界面。本期也看本地创作、家居规则与算力调优怎样保留人的控制。</description>
+    </item>
+    <item>
       <title>2026-11-11 AI Agent能力扩展与可核验证据</title>
       <link>https://ai.alux.network/daily/2026/11/11/</link>
       <guid>https://ai.alux.network/daily/2026/11/11/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/14/</guid>
       <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
       <description>14条消息：Argon扩大开放，Liquid发布本地Agent权重；配音能逐词指导，私人账本也能在本机回答问题。</description>
-    </item>
-    <item>
-      <title>2026-10-13 AI Agent把工作接续下去</title>
-      <link>https://ai.alux.network/daily/2026/10/13/</link>
-      <guid>https://ai.alux.network/daily/2026/10/13/</guid>
-      <pubDate>Mon, 12 Oct 2026 16:00:00 GMT</pubDate>
-      <description>13条消息：Meta推出记忆型模型，MiniCPM探索手机部署；工作区能存档，音乐和口述想法也有了可编辑的落点。</description>
     </item>
   </channel>
 </rss>

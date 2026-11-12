@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-11T00:26:02.452Z",
+  "generatedAt": "2026-11-12T00:23:03.062Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-11",
-    "url": "/daily/en/2026/11/11/",
+    "date": "2026-11-12",
+    "url": "/daily/en/2026/11/12/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/11/"
+    "alternateUrl": "/daily/2026/11/12/"
   },
   "reports": [
+    {
+      "date": "2026-11-12",
+      "title": "AI Agent — Specialized Decisions, Shared Work",
+      "lead": "New models separate decisions, research, and generation. Collaboration tools turn discussion into usable interfaces, while local tools bring fresh resource tradeoffs.",
+      "url": "/daily/en/2026/11/12/",
+      "alternateUrl": "/daily/2026/11/12/",
+      "publicPath": "en/2026/11/12/index.html",
+      "sourceFile": "20261112.body.html",
+      "sha256": "0c625010fc97f1dad96ade8dd6c41165a1ebd793179634d7accc33da1403837f",
+      "publicSha256": "5f6cac1abfaac947e1cff5da5cee4ced2f067808a16b4fe6fd8588f3f081c881"
+    },
     {
       "date": "2026-11-11",
       "title": "AI Agent — More Capability, More Checkable Evidence",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/11/index.html",
       "sourceFile": "20261111.body.html",
       "sha256": "cabf47049eeb6a6dc39aa8381cf1ee449350d5697296366ad88c009ca3809809",
-      "publicSha256": "518b8cd115a4b674f51e8b1d071ab49bea6b8ce532198420994902652807632f"
+      "publicSha256": "24a4d237625381af80348bcbd35ea7d286e947a73800f82a4031a263a5f9cb2c"
     },
     {
       "date": "2026-11-10",

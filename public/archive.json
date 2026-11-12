@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-11T00:26:02.452Z",
+  "generatedAt": "2026-11-12T00:23:03.062Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-11",
-    "url": "/daily/2026/11/11/",
+    "date": "2026-11-12",
+    "url": "/daily/2026/11/12/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/11/"
+    "alternateUrl": "/daily/en/2026/11/12/"
   },
   "reports": [
+    {
+      "date": "2026-11-12",
+      "title": "AI Agent专用判断与共享操作",
+      "lead": "新模型把判断、研究和生成分开，协作工具把讨论变成可操作界面。本期也看本地创作、家居规则与算力调优怎样保留人的控制。",
+      "url": "/daily/2026/11/12/",
+      "alternateUrl": "/daily/en/2026/11/12/",
+      "publicPath": "2026/11/12/index.html",
+      "sourceFile": "20261112_ALUX_AI智能体情报日报.html",
+      "sha256": "a2a7ef57b52c6a78a2fe4d8589c9f9629fe51f90f83564fa4afcf9374652fde7",
+      "publicSha256": "6b220389af3f63cbbb5bd610b5fa55972c1c7f329313070faa8290f70e12d3af"
+    },
     {
       "date": "2026-11-11",
       "title": "AI Agent能力扩展与可核验证据",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/11/index.html",
       "sourceFile": "20261111_ALUX_AI智能体情报日报.html",
       "sha256": "fa27b77be2468aaf910d2652da98e30fc68537262a226cc17c80ca74f27cabb5",
-      "publicSha256": "8052b8b3f36c57bb6a337e5e8c2134e982b4e8b45e001a651516480abfbd729a"
+      "publicSha256": "95417f632740913c2b98e71452acc728f42817ed1b5df0841b7f106388de31fa"
     },
     {
       "date": "2026-11-10",
