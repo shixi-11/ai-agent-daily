@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-13 AI Agent — Runtime Boundaries, Editable Results</title>
+      <link>https://ai.alux.network/daily/en/2026/11/13/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/13/</guid>
+      <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Hydrogen reaches GA, agent platforms clarify deployment layers, and creative tools deliver outputs that can move into the next production step.</description>
+    </item>
+    <item>
       <title>2026-11-12 AI Agent — Specialized Decisions, Shared Work</title>
       <link>https://ai.alux.network/daily/en/2026/11/12/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/12/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/15/</guid>
       <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
       <description>Fourteen updates: new Ling and Grok voice models, quantized image weights, state-based agent tests, and creative tools for dubbing, learning, and animated mascots.</description>
-    </item>
-    <item>
-      <title>2026-10-14 AI Agent — Choosing Where AI Runs</title>
-      <link>https://ai.alux.network/daily/en/2026/10/14/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/14/</guid>
-      <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Fourteen updates: Argon expands access, Liquid releases local-agent weights, voice direction gets finer, and budgeting questions can stay on your Mac.</description>
     </item>
   </channel>
 </rss>

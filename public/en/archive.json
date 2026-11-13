@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-12T00:23:03.062Z",
+  "generatedAt": "2026-11-13T00:26:28.165Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-12",
-    "url": "/daily/en/2026/11/12/",
+    "date": "2026-11-13",
+    "url": "/daily/en/2026/11/13/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/12/"
+    "alternateUrl": "/daily/2026/11/13/"
   },
   "reports": [
+    {
+      "date": "2026-11-13",
+      "title": "AI Agent — Runtime Boundaries, Editable Results",
+      "lead": "Hydrogen reaches GA, agent platforms clarify deployment layers, and creative tools deliver outputs that can move into the next production step.",
+      "url": "/daily/en/2026/11/13/",
+      "alternateUrl": "/daily/2026/11/13/",
+      "publicPath": "en/2026/11/13/index.html",
+      "sourceFile": "20261113.body.html",
+      "sha256": "87c908bd3da303ae2b44da6e28aceac6a4cf1e5233724ca5ed044734fede0ae8",
+      "publicSha256": "60ed8087390091c68a490ee701fc5a56f16db95e73663d33313165832ade35a0"
+    },
     {
       "date": "2026-11-12",
       "title": "AI Agent — Specialized Decisions, Shared Work",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/12/index.html",
       "sourceFile": "20261112.body.html",
       "sha256": "0c625010fc97f1dad96ade8dd6c41165a1ebd793179634d7accc33da1403837f",
-      "publicSha256": "5f6cac1abfaac947e1cff5da5cee4ced2f067808a16b4fe6fd8588f3f081c881"
+      "publicSha256": "10261e82245be0f61e7ecc25740f68d2495347519dfea8b9bfd6a448b5a41738"
     },
     {
       "date": "2026-11-11",

@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-13 AI Agent运行边界与可编辑成果</title>
+      <link>https://ai.alux.network/daily/2026/11/13/</link>
+      <guid>https://ai.alux.network/daily/2026/11/13/</guid>
+      <pubDate>Thu, 12 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Hydrogen正式开放，托管Agent把部署层拆得更清楚；从小说角色到游戏骨骼，创作工具也开始交付能继续加工的结果。</description>
+    </item>
+    <item>
       <title>2026-11-12 AI Agent专用判断与共享操作</title>
       <link>https://ai.alux.network/daily/2026/11/12/</link>
       <guid>https://ai.alux.network/daily/2026/11/12/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/15/</guid>
       <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
       <description>14条消息：Ling与Grok语音更新，图像权重走向低精度部署；Agent用状态验收，创作工具把配音、讲解与吉祥物做得更细。</description>
-    </item>
-    <item>
-      <title>2026-10-14 AI Agent选择运行的地方</title>
-      <link>https://ai.alux.network/daily/2026/10/14/</link>
-      <guid>https://ai.alux.network/daily/2026/10/14/</guid>
-      <pubDate>Tue, 13 Oct 2026 16:00:00 GMT</pubDate>
-      <description>14条消息：Argon扩大开放，Liquid发布本地Agent权重；配音能逐词指导，私人账本也能在本机回答问题。</description>
     </item>
   </channel>
 </rss>

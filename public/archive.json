@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-12T00:23:03.062Z",
+  "generatedAt": "2026-11-13T00:26:28.165Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-12",
-    "url": "/daily/2026/11/12/",
+    "date": "2026-11-13",
+    "url": "/daily/2026/11/13/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/12/"
+    "alternateUrl": "/daily/en/2026/11/13/"
   },
   "reports": [
+    {
+      "date": "2026-11-13",
+      "title": "AI Agent运行边界与可编辑成果",
+      "lead": "Hydrogen正式开放，托管Agent把部署层拆得更清楚；从小说角色到游戏骨骼，创作工具也开始交付能继续加工的结果。",
+      "url": "/daily/2026/11/13/",
+      "alternateUrl": "/daily/en/2026/11/13/",
+      "publicPath": "2026/11/13/index.html",
+      "sourceFile": "20261113_ALUX_AI智能体情报日报.html",
+      "sha256": "9c1c9490582c554d3f7e66571b5ccea54dbab955baafa10130ea642980a5bfcb",
+      "publicSha256": "4fe922d6475e2f0b6e1d5e28af512f0a8412d6875584546f7b25f211a68af514"
+    },
     {
       "date": "2026-11-12",
       "title": "AI Agent专用判断与共享操作",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/12/index.html",
       "sourceFile": "20261112_ALUX_AI智能体情报日报.html",
       "sha256": "a2a7ef57b52c6a78a2fe4d8589c9f9629fe51f90f83564fa4afcf9374652fde7",
-      "publicSha256": "6b220389af3f63cbbb5bd610b5fa55972c1c7f329313070faa8290f70e12d3af"
+      "publicSha256": "3b7e6f7df6bae9cbf4d98a7e01d33de3cb3eb6588679d0bd7a2f99b81bb55124"
     },
     {
       "date": "2026-11-11",
