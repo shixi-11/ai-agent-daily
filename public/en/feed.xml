@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-14 AI Agent — Application APIs Meet Real Execution</title>
+      <link>https://ai.alux.network/daily/en/2026/11/14/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/14/</guid>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek opens application APIs while local inference and embroidery tools reach into real workflows. This issue also examines agent startup, model routing, and checkable desktop collaboration.</description>
+    </item>
+    <item>
       <title>2026-11-13 AI Agent — Runtime Boundaries, Editable Results</title>
       <link>https://ai.alux.network/daily/en/2026/11/13/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/13/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/16/</guid>
       <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
       <description>Fifteen updates: large models reach two-Mac setups, small models specialize in forecasting and speech, images guide layouts, assistants edit scores, and science workbenches add 3D views.</description>
-    </item>
-    <item>
-      <title>2026-10-15 AI Agent — Show What Changed</title>
-      <link>https://ai.alux.network/daily/en/2026/10/15/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/15/</guid>
-      <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Fourteen updates: new Ling and Grok voice models, quantized image weights, state-based agent tests, and creative tools for dubbing, learning, and animated mascots.</description>
     </item>
   </channel>
 </rss>

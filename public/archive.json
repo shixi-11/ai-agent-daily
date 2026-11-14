@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-13T00:26:28.165Z",
+  "generatedAt": "2026-11-14T00:20:37.015Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-13",
-    "url": "/daily/2026/11/13/",
+    "date": "2026-11-14",
+    "url": "/daily/2026/11/14/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/13/"
+    "alternateUrl": "/daily/en/2026/11/14/"
   },
   "reports": [
+    {
+      "date": "2026-11-14",
+      "title": "AI Agent应用接口与实际执行",
+      "lead": "DeepSeek开放应用API，本地推理和刺绣工具连接真实工作。今天也看Agent启动、模型路由与桌面协作怎样把执行过程变得可检查。",
+      "url": "/daily/2026/11/14/",
+      "alternateUrl": "/daily/en/2026/11/14/",
+      "publicPath": "2026/11/14/index.html",
+      "sourceFile": "20261114_ALUX_AI智能体情报日报.html",
+      "sha256": "f19ca85ed1bfe69a9951fc2c66e7d2507d8f5f62231253ec91d6c91f28afdce8",
+      "publicSha256": "c2e3784d491b9e41252c3cdd5621fd33d1de8b3ea7f8beca76450811f6b632db"
+    },
     {
       "date": "2026-11-13",
       "title": "AI Agent运行边界与可编辑成果",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/13/index.html",
       "sourceFile": "20261113_ALUX_AI智能体情报日报.html",
       "sha256": "9c1c9490582c554d3f7e66571b5ccea54dbab955baafa10130ea642980a5bfcb",
-      "publicSha256": "4fe922d6475e2f0b6e1d5e28af512f0a8412d6875584546f7b25f211a68af514"
+      "publicSha256": "63f5ae4032b32903bbb30e053b8c67155820d7a921adeac4b01955720412d251"
     },
     {
       "date": "2026-11-12",

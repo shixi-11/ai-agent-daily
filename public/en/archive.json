@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-13T00:26:28.165Z",
+  "generatedAt": "2026-11-14T00:20:37.015Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-13",
-    "url": "/daily/en/2026/11/13/",
+    "date": "2026-11-14",
+    "url": "/daily/en/2026/11/14/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/13/"
+    "alternateUrl": "/daily/2026/11/14/"
   },
   "reports": [
+    {
+      "date": "2026-11-14",
+      "title": "AI Agent — Application APIs Meet Real Execution",
+      "lead": "DeepSeek opens application APIs while local inference and embroidery tools reach into real workflows. This issue also examines agent startup, model routing, and checkable desktop collaboration.",
+      "url": "/daily/en/2026/11/14/",
+      "alternateUrl": "/daily/2026/11/14/",
+      "publicPath": "en/2026/11/14/index.html",
+      "sourceFile": "20261114.body.html",
+      "sha256": "b045e112e495534deb57a2a4d3017278fbd95683893d1d2a8dfcb4400c4bb977",
+      "publicSha256": "92aebbf34ff046b6c8ea421331c78c1af63002f4f9f8ea87d004da39aa0c92db"
+    },
     {
       "date": "2026-11-13",
       "title": "AI Agent — Runtime Boundaries, Editable Results",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/13/index.html",
       "sourceFile": "20261113.body.html",
       "sha256": "87c908bd3da303ae2b44da6e28aceac6a4cf1e5233724ca5ed044734fede0ae8",
-      "publicSha256": "60ed8087390091c68a490ee701fc5a56f16db95e73663d33313165832ade35a0"
+      "publicSha256": "822dddcf8e059f05e1e35b7cf174e5373d3a050a96c4626304df9831b8675718"
     },
     {
       "date": "2026-11-12",

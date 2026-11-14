@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-14 AI Agent应用接口与实际执行</title>
+      <link>https://ai.alux.network/daily/2026/11/14/</link>
+      <guid>https://ai.alux.network/daily/2026/11/14/</guid>
+      <pubDate>Fri, 13 Nov 2026 16:00:00 GMT</pubDate>
+      <description>DeepSeek开放应用API，本地推理和刺绣工具连接真实工作。今天也看Agent启动、模型路由与桌面协作怎样把执行过程变得可检查。</description>
+    </item>
+    <item>
       <title>2026-11-13 AI Agent运行边界与可编辑成果</title>
       <link>https://ai.alux.network/daily/2026/11/13/</link>
       <guid>https://ai.alux.network/daily/2026/11/13/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/16/</guid>
       <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
       <description>15条消息：大模型走向双机桌面，小模型专攻预测与声音；图像学排版，助手改乐谱，科研工作台接入三维结构。</description>
-    </item>
-    <item>
-      <title>2026-10-15 AI Agent让结果经得起检查</title>
-      <link>https://ai.alux.network/daily/2026/10/15/</link>
-      <guid>https://ai.alux.network/daily/2026/10/15/</guid>
-      <pubDate>Wed, 14 Oct 2026 16:00:00 GMT</pubDate>
-      <description>14条消息：Ling与Grok语音更新，图像权重走向低精度部署；Agent用状态验收，创作工具把配音、讲解与吉祥物做得更细。</description>
     </item>
   </channel>
 </rss>
