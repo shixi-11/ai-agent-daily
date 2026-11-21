@@ -6,6 +6,13 @@
     <description>New AI models, products and interesting discoveries. Published by Shixi Lin.</description>
     <language>en</language>
     <item>
+      <title>2026-11-21 AI Agent — Models Meet Real Workflows</title>
+      <link>https://ai.alux.network/daily/en/2026/11/21/</link>
+      <guid>https://ai.alux.network/daily/en/2026/11/21/</guid>
+      <pubDate>Fri, 20 Nov 2026 16:00:00 GMT</pubDate>
+      <description>New models compete on complete-task costs. Open weights, interactive worlds, local voice notes, and tiny creative tools turn that competition into things readers can try.</description>
+    </item>
+    <item>
       <title>2026-11-14 AI Agent — Application APIs Meet Real Execution</title>
       <link>https://ai.alux.network/daily/en/2026/11/14/</link>
       <guid>https://ai.alux.network/daily/en/2026/11/14/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/en/2026/10/17/</guid>
       <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
       <description>Open weights reach deployment, while memory and voice become dedicated components. Smaller tools give agents practical skills, from filing documents to finding weekend plans.</description>
-    </item>
-    <item>
-      <title>2026-10-16 AI Agent — Open Models Find Their Roles</title>
-      <link>https://ai.alux.network/daily/en/2026/10/16/</link>
-      <guid>https://ai.alux.network/daily/en/2026/10/16/</guid>
-      <pubDate>Thu, 15 Oct 2026 16:00:00 GMT</pubDate>
-      <description>Fifteen updates: large models reach two-Mac setups, small models specialize in forecasting and speech, images guide layouts, assistants edit scores, and science workbenches add 3D views.</description>
     </item>
   </channel>
 </rss>

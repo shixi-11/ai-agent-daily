@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-14T00:20:37.015Z",
+  "generatedAt": "2026-11-21T00:49:12.149Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-14",
-    "url": "/daily/2026/11/14/",
+    "date": "2026-11-21",
+    "url": "/daily/2026/11/21/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/14/"
+    "alternateUrl": "/daily/en/2026/11/21/"
   },
   "reports": [
+    {
+      "date": "2026-11-21",
+      "title": "AI Agent从模型能力到可用流程",
+      "lead": "新模型开始比较整项工作成本，开放权重补齐本地流程。交互世界、语音笔记与像素小工具，则把能力变化带到日常体验。",
+      "url": "/daily/2026/11/21/",
+      "alternateUrl": "/daily/en/2026/11/21/",
+      "publicPath": "2026/11/21/index.html",
+      "sourceFile": "20261121_ALUX_AI智能体情报日报.html",
+      "sha256": "66249e149e75a6a1b2dc335350eb613ee193ed8650dd304163640f27e3706daa",
+      "publicSha256": "94e50f0cbc54cb672a3cc8cb67cfe74cbd75e9f3f8577a2e9bce40abdc2dd109"
+    },
     {
       "date": "2026-11-14",
       "title": "AI Agent应用接口与实际执行",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/14/index.html",
       "sourceFile": "20261114_ALUX_AI智能体情报日报.html",
       "sha256": "f19ca85ed1bfe69a9951fc2c66e7d2507d8f5f62231253ec91d6c91f28afdce8",
-      "publicSha256": "c2e3784d491b9e41252c3cdd5621fd33d1de8b3ea7f8beca76450811f6b632db"
+      "publicSha256": "c4810f23526c65d6db73a9198a49479645ef949ff723c8b92656687fcdbd6875"
     },
     {
       "date": "2026-11-13",
