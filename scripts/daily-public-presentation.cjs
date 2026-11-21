@@ -1,24 +1,3 @@
-// Public social-image variants from shixilin presentation contract.
-const images = {
-  "/assets/ai/daily-zh.png": {
-    "variants": [
-      {
-        "src": "/assets/responsive/assets-ai-daily-zh-1600-e482828609ab.webp",
-        "width": 1600,
-        "height": 900
-      }
-    ]
-  },
-  "/assets/ai/daily-en.png": {
-    "variants": [
-      {
-        "src": "/assets/responsive/assets-ai-daily-en-1600-158616270b2f.jpg",
-        "width": 1600,
-        "height": 900
-      }
-    ]
-  }
-};
 // Keep in sync with shixilin lib/agent-daily.js. Only presentation changes; historical sources stay intact.
 const PUBLIC_PATH = '/ai/agent-daily';
 const PUBLIC_URL = `https://shixilin.com${PUBLIC_PATH}`;
@@ -32,9 +11,10 @@ function rewriteDailyText(text) {
     .replace(/<head\b[^>]*>[\s\S]*?<\/head>/i, head => {
       const language = text.match(/<html\b[^>]*\blang\s*=\s*["']([^"']+)["']/i)?.[1] || 'zh';
       const chinese = /^zh(?:-|$)/i.test(language);
-      const image = images[`/assets/ai/daily-${chinese ? 'zh' : 'en'}.png`].variants.at(-1);
-      const imageUrl = new URL(image.src, PUBLIC_URL).href;
-      const imageType = { jpg: 'image/jpeg', png: 'image/png', webp: 'image/webp' }[image.src.split('.').at(-1)];
+      // Social crawlers use the localized native PNGs served by the daily origin.
+      const imageUrl = `${PUBLIC_URL}/assets/agent-daily-social-${chinese ? 'zh' : 'en'}-v3.png`;
+      const image = { width: 1672, height: 941 };
+      const imageType = 'image/png';
       const alt = chinese ? 'AI资讯日报 · 光之十一' : 'AI News Daily · Shixi Lin';
       const siteName = chinese ? 'AI资讯日报' : 'AI News Daily';
       const application = ['application-name', 'apple-mobile-web-app-title'].map(name =>
