@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-23 AI Agent协作过程与可查结果</title>
+      <link>https://ai.alux.network/daily/2026/11/23/</link>
+      <guid>https://ai.alux.network/daily/2026/11/23/</guid>
+      <pubDate>Sun, 22 Nov 2026 16:00:00 GMT</pubDate>
+      <description>团队流程开始共用任务状态，文档答案可以逐字段回查。本地声画组件、跟稿翻页和单词小星球，则提供更轻巧的体验入口。</description>
+    </item>
+    <item>
       <title>2026-11-21 AI Agent从模型能力到可用流程</title>
       <link>https://ai.alux.network/daily/2026/11/21/</link>
       <guid>https://ai.alux.network/daily/2026/11/21/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/18/</guid>
       <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
       <description>模型开始兼顾速度与输出成本，创作工具把文字、照片和声音接入具体动作；从三维重建到硬件搭建，新的入口正在变小、变近。</description>
-    </item>
-    <item>
-      <title>2026-10-17 AI Agent看清之后及时行动</title>
-      <link>https://ai.alux.network/daily/2026/10/17/</link>
-      <guid>https://ai.alux.network/daily/2026/10/17/</guid>
-      <pubDate>Fri, 16 Oct 2026 16:00:00 GMT</pubDate>
-      <description>开放权重走到实际部署，记忆与语音成为独立组件；从整理文件到找周末活动，小产品也在给Agent补上具体本领。</description>
     </item>
   </channel>
 </rss>

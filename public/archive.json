@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-21T00:49:12.149Z",
+  "generatedAt": "2026-11-23T02:33:59.863Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-21",
-    "url": "/daily/2026/11/21/",
+    "date": "2026-11-23",
+    "url": "/daily/2026/11/23/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/21/"
+    "alternateUrl": "/daily/en/2026/11/23/"
   },
   "reports": [
+    {
+      "date": "2026-11-23",
+      "title": "AI Agent协作过程与可查结果",
+      "lead": "团队流程开始共用任务状态，文档答案可以逐字段回查。本地声画组件、跟稿翻页和单词小星球，则提供更轻巧的体验入口。",
+      "url": "/daily/2026/11/23/",
+      "alternateUrl": "/daily/en/2026/11/23/",
+      "publicPath": "2026/11/23/index.html",
+      "sourceFile": "20261123_ALUX_AI智能体情报日报.html",
+      "sha256": "760273a93ce430b70418789b158f052f1564a4f1ab254039ab813729775ce155",
+      "publicSha256": "fa12382733d29ae88253328fbbe59b5c18142dfeeea64ddea52a79f1cef20a89"
+    },
     {
       "date": "2026-11-21",
       "title": "AI Agent从模型能力到可用流程",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/21/index.html",
       "sourceFile": "20261121_ALUX_AI智能体情报日报.html",
       "sha256": "66249e149e75a6a1b2dc335350eb613ee193ed8650dd304163640f27e3706daa",
-      "publicSha256": "94e50f0cbc54cb672a3cc8cb67cfe74cbd75e9f3f8577a2e9bce40abdc2dd109"
+      "publicSha256": "2bccd8b5f2edec3162b1c2c97d57718f933d768c83a113bbfb4acdb16060f6f2"
     },
     {
       "date": "2026-11-14",
