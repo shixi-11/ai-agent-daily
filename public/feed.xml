@@ -6,6 +6,13 @@
     <description>新模型、新产品与有趣发现。由光之十一出品。</description>
     <language>zh-CN</language>
     <item>
+      <title>2026-11-24 AI Agent连接范围与验证边界</title>
+      <link>https://ai.alux.network/daily/2026/11/24/</link>
+      <guid>https://ai.alux.network/daily/2026/11/24/</guid>
+      <pubDate>Mon, 23 Nov 2026 16:00:00 GMT</pubDate>
+      <description>语音助手边交谈边等任务，搜索开始读取账户上下文；Linux临时防护、零留存审计与数学证明，则给不同结果划出验证边界。</description>
+    </item>
+    <item>
       <title>2026-11-23 AI Agent协作过程与可查结果</title>
       <link>https://ai.alux.network/daily/2026/11/23/</link>
       <guid>https://ai.alux.network/daily/2026/11/23/</guid>
@@ -207,13 +214,6 @@
       <guid>https://ai.alux.network/daily/2026/10/19/</guid>
       <pubDate>Sun, 18 Oct 2026 16:00:00 GMT</pubDate>
       <description>材料权重、语音轮次与积木连接都有了可检查的入口；从招聘模拟到公益股权，今天更值得看的是证据与承诺之间的距离。</description>
-    </item>
-    <item>
-      <title>2026-10-18 AI Agent把想法变成可操作的东西</title>
-      <link>https://ai.alux.network/daily/2026/10/18/</link>
-      <guid>https://ai.alux.network/daily/2026/10/18/</guid>
-      <pubDate>Sat, 17 Oct 2026 16:00:00 GMT</pubDate>
-      <description>模型开始兼顾速度与输出成本，创作工具把文字、照片和声音接入具体动作；从三维重建到硬件搭建，新的入口正在变小、变近。</description>
     </item>
   </channel>
 </rss>

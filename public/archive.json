@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "zh-CN",
-  "generatedAt": "2026-11-23T02:33:59.863Z",
+  "generatedAt": "2026-11-24T00:23:47.698Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily",
   "publicationUrl": "https://ai.alux.network/daily/",
   "latest": {
-    "date": "2026-11-23",
-    "url": "/daily/2026/11/23/",
+    "date": "2026-11-24",
+    "url": "/daily/2026/11/24/",
     "latestUrl": "/daily/latest/",
-    "alternateUrl": "/daily/en/2026/11/23/"
+    "alternateUrl": "/daily/en/2026/11/24/"
   },
   "reports": [
+    {
+      "date": "2026-11-24",
+      "title": "AI Agent连接范围与验证边界",
+      "lead": "语音助手边交谈边等任务，搜索开始读取账户上下文；Linux临时防护、零留存审计与数学证明，则给不同结果划出验证边界。",
+      "url": "/daily/2026/11/24/",
+      "alternateUrl": "/daily/en/2026/11/24/",
+      "publicPath": "2026/11/24/index.html",
+      "sourceFile": "20261124_ALUX_AI智能体情报日报.html",
+      "sha256": "5b2a44fc555fdc72d0ccf70360ea9765f25a9201bde3a881a9b517f40daf5adb",
+      "publicSha256": "b96b703edafb2969e9955324bb4cad6c11786577eec7b5e6934c4075681ca670"
+    },
     {
       "date": "2026-11-23",
       "title": "AI Agent协作过程与可查结果",
@@ -21,7 +32,7 @@
       "publicPath": "2026/11/23/index.html",
       "sourceFile": "20261123_ALUX_AI智能体情报日报.html",
       "sha256": "760273a93ce430b70418789b158f052f1564a4f1ab254039ab813729775ce155",
-      "publicSha256": "fa12382733d29ae88253328fbbe59b5c18142dfeeea64ddea52a79f1cef20a89"
+      "publicSha256": "1d16675f2c36598aa1798cdabdefc79acec7a0f116720edd6a7a79c2438231f6"
     },
     {
       "date": "2026-11-21",

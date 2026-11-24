@@ -1,17 +1,28 @@
 {
   "schemaVersion": 3,
   "locale": "en-US",
-  "generatedAt": "2026-11-23T02:33:59.863Z",
+  "generatedAt": "2026-11-24T00:23:47.698Z",
   "baseUrl": "https://ai.alux.network",
   "publicationPath": "/daily/en",
   "publicationUrl": "https://ai.alux.network/daily/en/",
   "latest": {
-    "date": "2026-11-23",
-    "url": "/daily/en/2026/11/23/",
+    "date": "2026-11-24",
+    "url": "/daily/en/2026/11/24/",
     "latestUrl": "/daily/en/latest/",
-    "alternateUrl": "/daily/2026/11/23/"
+    "alternateUrl": "/daily/2026/11/24/"
   },
   "reports": [
+    {
+      "date": "2026-11-24",
+      "title": "AI Agent — Context, Controls, and Proof",
+      "lead": "Voice assistants keep talking while tasks run, and search gains account context. Linux shields, zero-retention audits, and mathematical proofs each set different limits on what can be verified.",
+      "url": "/daily/en/2026/11/24/",
+      "alternateUrl": "/daily/2026/11/24/",
+      "publicPath": "en/2026/11/24/index.html",
+      "sourceFile": "20261124.body.html",
+      "sha256": "5b1e8827c9c3fc842fc8c5e5500febe330bc091c72de53b939d780683daffc5a",
+      "publicSha256": "3816f43d85f0187b3a789f3ca844b06e752a708b95369906222404c25165844e"
+    },
     {
       "date": "2026-11-23",
       "title": "AI Agent — Shared Work, Checkable Results",
@@ -21,7 +32,7 @@
       "publicPath": "en/2026/11/23/index.html",
       "sourceFile": "20261123.body.html",
       "sha256": "987d2a835d170cc838850de0598d36fd99f5e4be549ce7ea8eee468c4c463525",
-      "publicSha256": "129f1ae7ea64073ab1c913943e2dcf90171415babbe4094a32d2372a36d4d075"
+      "publicSha256": "5545820489878ff60796dc1018629bd22778acba6dee7cf3689b6d15a3e8bc7d"
     },
     {
       "date": "2026-11-21",
